@@ -14,11 +14,11 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,md}": [
+    "*.{js,jsx,ts,tsx,css}": [
       "npm run lint:fix",
       "npm run prettier:write"
     ],
-    "*.json": [
+    "*.{json,md}": [
       "npm run prettier:write"
     ]
   },
