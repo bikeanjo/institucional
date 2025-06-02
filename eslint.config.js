@@ -7,7 +7,6 @@ import reactDom from "eslint-plugin-react-dom";
 import tseslint from "typescript-eslint";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
-import jest from "eslint-plugin-jest";
 
 export default tseslint.config(
   { ignores: ["dist"] },
@@ -22,7 +21,6 @@ export default tseslint.config(
       ecmaVersion: 2020,
       globals: {
         ...globals.browser,
-        ...globals.jest,
       },
       parserOptions: {
         project: ["./tsconfig.node.json", "./tsconfig.app.json"],
@@ -37,7 +35,6 @@ export default tseslint.config(
       "react-refresh": reactRefresh,
       "react-x": reactX,
       "react-dom": reactDom,
-      jest,
       prettier: prettierPlugin,
     },
     rules: {
@@ -48,7 +45,6 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
-      ...jest.configs.recommended.rules,
       "prettier/prettier": "warn",
     },
   },
