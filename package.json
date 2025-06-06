@@ -27,9 +27,17 @@
     ]
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@mui/material": "^7.1.1",
+    "@mui/styled-engine-sc": "^7.1.1",
+    "material-icons": "^1.13.14",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.6.1"
+    "react-router": "^7.6.1",
+    "styled-components": "^6.1.18"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.0",
