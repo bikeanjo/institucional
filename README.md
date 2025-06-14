@@ -1,21 +1,59 @@
+<p align="center">
+  <img alt="Bike Anjo" src="./docs/bikeanjo.png" width="150">
+</p>
+
 # Bike Anjo
 
-This is a project made with React using typescript.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24e8262d-04a5-4bd3-a5c6-d93d156c279c/deploy-status)](https://app.netlify.com/projects/bikeanjo/deploys)
 
-## Installation
+# Technologies
+
+- [Vite](https://vite.dev)
+- [React](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+
+# Installation
+
+Install project dependencies:
 
 ```bash
-  # Http
-  git clone https://github.com/bikeanjo/institucional.git
-  # OR SSH
-  git clone git@github.com:bikeanjo/institucional.git
+npm install
 ```
 
-Then go into the project's folder and run:
+## Tests
+
+Install Playwright browsers:
 
 ```bash
-  npm install
-  npm run dev
+npx playwright install
+```
+
+Install Playwright operating system dependencies:
+
+```bash
+sudo npx playwright install-deps
+```
+
+# Usage
+
+Run the project locally:
+
+```bash
+npm run dev
+```
+
+## Tests
+
+Run unit tests:
+
+```bash
+npm run test
+```
+
+Run E2E tests:
+
+```bash
+npm run test:e2e
 ```
 
 ## Storybook
@@ -23,11 +61,9 @@ Then go into the project's folder and run:
 To start Storybook and view the UI components in development, run:
 
 ```bash
-  npm run storybook
+npm run storybook
 ```
 
-To execute tests with playwright use npx run:
+# License
 
-```
-  npx playwright install
-```
+Code under license [GPL-3.0](LICENSE.md).
