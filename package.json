@@ -13,6 +13,7 @@
     "prettier:write": "prettier . --write",
     "prepare": "husky",
     "test": "npx vitest --passWithNoTests",
+    "test:e2e": "npx playwright test",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
