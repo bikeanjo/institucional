@@ -12,7 +12,7 @@ import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
 
 export default tseslint.config(
-  { ignores: ["dist"] },
+  { ignores: ["dist/**", "storybook-static/**", "playwright.config.ts"] },
   {
     extends: [
       js.configs.recommended,
