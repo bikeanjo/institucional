@@ -10,6 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       "@assets/*": ["./src/assets/*"]
-    }
+    },
+    "outDir": "dist"
   }
 }
