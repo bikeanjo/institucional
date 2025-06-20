@@ -9,7 +9,7 @@ import {
   faLinkedinIn,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { SocialIcon } from "../Footer/socialIcon";
+import { SocialIcon } from "./socialIcon";
 import "material-icons/iconfont/material-icons.css";
 
 const Footer: React.FC = () => {
