@@ -3,6 +3,15 @@ import colors from "./tokens/colors";
 
 const { palette } = createTheme();
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 375,
+      md: 900,
+      lg: 1200,
+      xl: 1440,
+    },
+  },
   cssVariables: true,
   typography: {
     fontFamily: ["Roboto", "sans-serif"].join(","),
