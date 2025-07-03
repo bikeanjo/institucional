@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && cp _redirects dist/",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --max-warnings=0 --ext .js,.jsx,.ts,.tsx .",
     "preview": "vite preview",
