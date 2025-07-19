@@ -19,6 +19,7 @@ const Hero = styled.div<HeroProps>`
     props.secondary && "var(--mui-palette-secondary-main)"};
   gap: ${(props) => props.gap};
   height: 232px;
+
   h2 {
     color: #486284;
     font-size: 48px;
