@@ -35,6 +35,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.1.1",
     "@mui/styled-engine-sc": "^7.1.1",
     "material-icons": "^1.13.14",
