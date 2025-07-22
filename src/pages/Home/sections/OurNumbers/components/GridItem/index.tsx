@@ -3,18 +3,30 @@ import styled from "styled-components";
 interface GridItemProps {
   column?: boolean;
   gap?: string;
+  center?: boolean;
+  height?: string;
+  padding?: string;
 }
 
 const GridItem = styled.div<GridItemProps>`
-  padding: 20px 36px;
   display: flex;
-  height: 100%;
+  height: ${(props) => props.height};
   flex-direction: ${(props) => (props.column ? "column" : "row")};
   background-color: var(--mui-palette-secondary-main);
   border-radius: 1rem;
-  align-items: baseline;
+  jusitfy-content: center;
   color: black;
   gap: ${(props) => props.gap};
+
+  ${({ theme }) => theme.breakpoints.up("xs")} {
+    align-items: ${(props) => (props.center ? "center" : "baseline")};
+    padding: ${(props) => props.padding};
+  }
+
+  ${({ theme }) => theme.breakpoints.up("xl")} {
+    align-items: baseline;
+    padding: 20px 36px;
+  }
 `;
 
 export default GridItem;

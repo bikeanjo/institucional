@@ -18,12 +18,12 @@ function ProjectThatMoveUs(): ReactNode {
       <Box
         sx={{
           textAlign: "center",
-          width: "1036px",
+          width: { xs: "343px", lg: "1036px" },
           display: "flex",
           flexDirection: "column",
         }}
       >
-        <Title variant="h2">Projetos que nos movem</Title>
+        <Title variant="h2">Iniciativas que nos movem</Title>
         <SubTitle>
           Cada projeto é uma forma de transformar cidades, conheça nosso
           trabalho. Além de ensinar a pedalar, atuamos em diversas frentes.
@@ -31,9 +31,13 @@ function ProjectThatMoveUs(): ReactNode {
       </Box>
       <Box
         display="flex"
-        width="1032px"
         overflow="hidden"
-        sx={{ gap: 5, marginTop: "8px" }}
+        sx={{
+          gap: { xs: 2, lg: 5 },
+          marginTop: "8px",
+          width: { xs: "360px", md: "800px", lg: "1032px" },
+          paddingInline: { xs: "32px" },
+        }}
       >
         <ProjectBox>
           <img src={EBA} alt="Logo Escola Bike Anjo" />
@@ -216,6 +220,23 @@ function ProjectThatMoveUs(): ReactNode {
           </ProjectInfo>
         </ProjectBox>
       </Box>
+      <Button
+        sx={{
+          backgroundColor: "var(--mui-palette-neutral-700)",
+          color: "var(--mui-palette-neutral-100)",
+          padding: "16px 24px",
+          height: { xs: 40 },
+          width: { xs: "215px" },
+          borderRadius: { xs: "10px", lg: "8px" },
+          textTransform: "none",
+          "&:hover": {
+            backgroundColor: "var(--mui-palette-neutral-100)",
+            color: "var(--mui-palette-neutral-900)",
+          },
+        }}
+      >
+        <Typography fontWeight={600}>Veja Nossas Iniciativas</Typography>
+      </Button>
     </Container>
   );
 }

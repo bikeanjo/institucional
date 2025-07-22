@@ -20,18 +20,23 @@ const Header: React.FC = () => {
         sx={{
           justifyContent: "space-between",
           borderBottomWidth: "1px",
-          height: "80px",
+          height: { xs: "54px", lg: "80px" },
           py: 2,
           px: 5,
-          gap: "32px",
+          gap: { xs: "16px", lg: "32px" },
         }}
       >
-        <img src={logo} alt="Logo Bike Anjo" width={51.06} height={48} />
+        <Box
+          component="img"
+          src={logo}
+          alt="Logo Bike Anjo"
+          sx={{ width: { xs: 40.42, lg: 51.06 }, height: { xs: 38, lg: 48 } }}
+        />
 
         {/* Search */}
         <Box
           sx={{
-            display: "flex",
+            display: { xs: "none", lg: "flex" },
             alignItems: "center",
             width: 403,
             height: "48px",
@@ -39,7 +44,7 @@ const Header: React.FC = () => {
             borderRadius: "8px",
             py: 1.5,
             px: 2,
-            gap: 1.5,
+            gap: { xs: "16px", lg: 1.5 },
           }}
         >
           <span
@@ -55,7 +60,7 @@ const Header: React.FC = () => {
         <Box
           component="nav"
           sx={{
-            display: "flex",
+            display: { xs: "none", lg: "flex" },
             alignItems: "center",
             gap: "32px",
             whiteSpace: "nowrap",
@@ -111,25 +116,25 @@ const Header: React.FC = () => {
           </Typography>
         </Box>
 
-        {/* Botão Doar */}
-        <Button
-          sx={{
-            width: 130,
-            height: 43,
-            backgroundColor: "#486284",
-            borderRadius: "10px",
-            padding: "19px 48px",
-            fontWeight: 600,
-            textTransform: "none",
-            fontSize: "16px",
-            color: "neutral-100",
-          }}
-        >
-          Doar
-        </Button>
+        <Box display="flex" flexDirection={"row"} alignItems={"center"}>
+          {/* Botão Doar */}
+          <Button
+            sx={{
+              width: { xs: 72, xl: 130 },
+              height: { xs: 25, xl: 43 },
+              backgroundColor: "#486284",
+              borderRadius: "10px",
+              padding: { xs: "0px", lg: "19px 48px" },
+              fontWeight: 600,
+              textTransform: "none",
+              fontSize: { xs: "12px", lg: "16px" },
+              color: "neutral-100",
+            }}
+          >
+            Doe
+          </Button>
 
-        {/* Login */}
-        <Box>
+          {/* Login */}
           <Login />
         </Box>
       </Toolbar>
