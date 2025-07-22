@@ -32,18 +32,18 @@ export default function Login() {
       <Box sx={{ display: "flex", textAlign: "center" }}>
         <IconButton
           onClick={handleOpenMenu}
-          size="small"
           sx={{ ml: 2 }}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
         >
-          <span
+          <Box
+            component="span"
             className="material-icons-outlined"
-            style={{ fontSize: 50, color: "#4d5b7c" }}
+            sx={{ fontSize: { xs: 35, xl: 50 }, color: "#4d5b7c" }}
           >
             account_circle
-          </span>
+          </Box>
         </IconButton>
       </Box>
       <Menu

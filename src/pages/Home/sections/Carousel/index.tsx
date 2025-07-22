@@ -9,23 +9,25 @@ import StepsCarousel from "../../../../assets/images/steps-carousel.png";
 
 function Carousel(): ReactNode {
   return (
-    <Container secondary padding="90px 202px 40px" height="calc(100vh - 80px)">
+    <Container secondary carrousel>
       <Box
         sx={{
           textAlign: "center",
-          width: "1036px",
+          width: { xs: "343px", lg: "1036px" },
           position: "relative",
-          height: "254px",
+          height: { xs: "133px", lg: "254px" },
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <img
+        <Box
+          component="img"
           src={LeftArrow}
           alt="Seta para a esquerda"
-          style={{
+          sx={{
+            display: { xs: "none", lg: "flex" },
             position: "absolute",
             left: "-100px",
             width: "36px",
@@ -33,20 +35,28 @@ function Carousel(): ReactNode {
             top: "calc(50% - 18px)",
           }}
         />
-        <Box sx={{ display: "flex", flexDirection: "column", gap: "32px" }}>
-          <Title variant="h2">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: { xs: "24px", lg: "32px" },
+          }}
+        >
+          <Title variant="h2" carrousel>
             Uma comunidade que pedala por um futuro melhor
           </Title>
-          <SubTitle fontWeight={400}>
+          <SubTitle fontWeight={400} carrousel>
             Conectamos pessoas dispostas a ajudar com quem precisa de apoio para
             pedalar, oferecendo orientação, rotas seguras e acompanhamento no
             percurso.
           </SubTitle>
         </Box>
-        <img
+        <Box
+          component="img"
           src={RightArrow}
           alt="Seta para a direita"
-          style={{
+          sx={{
+            display: { xs: "none", lg: "flex" },
             position: "absolute",
             right: "-100px",
             width: "36px",
@@ -56,21 +66,26 @@ function Carousel(): ReactNode {
         />
       </Box>
       <Box
-        height="56px"
         sx={{
-          marginTop: "54px",
-          marginBottom: "54px",
+          marginTop: { xs: "24px", lg: "54px" },
+          marginBottom: { xs: "24px", lg: "54px" },
           display: "flex",
-          flexDirection: "row",
-          gap: "255px",
+          alignItems: "center",
+          flexDirection: { xs: "column", lg: "row" },
+          gap: { xs: "16px", lg: "255px" },
+          width: { xs: "100%", lg: "auto" },
+          height: { xs: "96px", lg: "56px" },
+          padding: "0px 16px",
         }}
       >
         <Button
           sx={{
             backgroundColor: "var(--mui-palette-neutral-700)",
             color: "var(--mui-palette-neutral-100)",
-            padding: "12px 24px",
-            borderRadius: "8px",
+            padding: "16px 24px",
+            height: { xs: 40, lg: 56 },
+            width: { xs: "100%", sm: 185, lg: 185 },
+            borderRadius: { xs: "4px", lg: "8px" },
             textTransform: "none",
             "&:hover": {
               backgroundColor: "var(--mui-palette-neutral-100)",
@@ -85,7 +100,9 @@ function Carousel(): ReactNode {
             backgroundColor: "var(--mui-palette-neutral-100)",
             color: "var(--mui-palette-neutral-900)",
             padding: "12px 24px",
-            borderRadius: "8px",
+            height: { xs: 40, xl: 56 },
+            width: { xs: "100%", sm: 185, lg: 185 },
+            borderRadius: { xs: "4px", lg: "8px" },
             textTransform: "none",
             "&:hover": {
               backgroundColor: "var(--mui-palette-neutral-700)",
@@ -96,7 +113,15 @@ function Carousel(): ReactNode {
           <Typography>Ensinar a pedalar</Typography>
         </Button>
       </Box>
-      <img src={StepsCarousel} alt="Passos do Carrossel" />
+      <Box
+        component="img"
+        src={StepsCarousel}
+        alt="Passos do Carrossel"
+        sx={{
+          width: { xs: "48px", lg: "75px" },
+          height: { xs: "8px", lg: "15px" },
+        }}
+      />
     </Container>
   );
 }

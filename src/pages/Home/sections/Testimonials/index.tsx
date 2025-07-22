@@ -13,15 +13,24 @@ function Testimonials(): ReactNode {
       <SubTitle>
         Histórias reais de quem já transformou sua relação com a bicicleta.
       </SubTitle>
-      <Box sx={{ display: "flex", gap: 4 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: { xs: "start", md: "center" },
+          gap: { xs: 1, md: 4 },
+          width: { xs: "350px", md: "800px", lg: "1030px" },
+          overflow: "hidden",
+        }}
+      >
         <Card
           sx={{
-            width: 499,
-            height: 249,
+            width: { xs: 299, lg: 499 },
+            height: { xs: 308, lg: 249 },
             marginTop: 5,
             padding: "21px 30px",
             borderRadius: 2,
             display: "flex",
+            flexShrink: "0",
             flexDirection: "column",
             boxShadow: "none",
           }}
@@ -83,12 +92,13 @@ function Testimonials(): ReactNode {
         </Card>
         <Card
           sx={{
-            width: 499,
-            height: 249,
+            width: { xs: 299, lg: 499 },
+            height: { xs: 308, lg: 249 },
             marginTop: 5,
             padding: "21px 30px",
             borderRadius: 2,
             display: "flex",
+            flexShrink: "0",
             flexDirection: "column",
             boxShadow: "none",
           }}
