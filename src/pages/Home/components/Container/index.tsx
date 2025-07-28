@@ -34,7 +34,7 @@ const Container = styled.div<ContainerProps>`
     height: ${({ height }) => height || "auto"};
   }
 
-  ${({ theme }) => theme.breakpoints.up("xl")} {
+  ${({ theme }) => theme.breakpoints.up("lg")} {
     padding: ${({ carrousel }) => (carrousel ? "90px 202px 40px" : "64px 0px")};
     height: ${({ carrousel }) => carrousel && "calc(100vh - 80px)"};
   }

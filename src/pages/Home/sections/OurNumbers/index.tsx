@@ -10,21 +10,21 @@ function OurNumbers(): ReactNode {
       <Title variant="h2">Nossos números</Title>
       <Grid
         container
-        spacing={{ xs: 1, xl: 2 }}
-        sx={{ width: { xs: 343, xl: 1032 } }}
+        spacing={{ xs: 1, md: 2 }}
+        sx={{ width: { xs: 343, md: 800, lg: 1032 } }}
       >
         <Grid size={12}>
           <GridItem gap="20px" center padding="16px">
             <Typography
               color="tertiary"
-              sx={{ fontSize: { xs: 53, xl: 104 } }}
+              sx={{ fontSize: { xs: 53, md: 104 } }}
               lineHeight={1}
               fontWeight={500}
             >
               9450
             </Typography>
             <Typography
-              sx={{ fontSize: { xs: 16, xl: 32 } }}
+              sx={{ fontSize: { xs: 16, md: 32 } }}
               fontWeight={500}
               width={{ xs: 150, sm: "100%" }}
             >
@@ -33,16 +33,16 @@ function OurNumbers(): ReactNode {
           </GridItem>
         </Grid>
         <Grid size={8}>
-          <GridItem column={true} padding="16px">
+          <GridItem column={true} padding="16px" height="100%">
             <Typography
               color="tertiary"
-              sx={{ fontSize: { xs: 58, xl: 136 } }}
-              lineHeight={{ xs: 0.9, xl: 1 }}
+              sx={{ fontSize: { xs: 58, md: 136 } }}
+              lineHeight={{ xs: 0.9, md: 1 }}
               fontWeight={500}
             >
               40.013
             </Typography>
-            <Typography sx={{ fontSize: { xs: 16, xl: 32 } }} fontWeight={500}>
+            <Typography sx={{ fontSize: { xs: 16, md: 32 } }} fontWeight={500}>
               pessoas atendidas
             </Typography>
           </GridItem>
@@ -51,44 +51,44 @@ function OurNumbers(): ReactNode {
           <GridItem column center padding="9px" height="100%">
             <Typography
               color="tertiary"
-              sx={{ fontSize: { xs: 42, xl: 80 } }}
+              sx={{ fontSize: { xs: 42, md: 80 } }}
               lineHeight={1}
               fontWeight={500}
               height="100%"
             >
               40KG
             </Typography>
-            <Typography sx={{ fontSize: { xs: 14, xl: 32 } }} fontWeight={500}>
+            <Typography sx={{ fontSize: { xs: 14, md: 32 } }} fontWeight={500}>
               a menos de CO&#8322; na atmosfera
             </Typography>
           </GridItem>
         </Grid>
-        <Grid size={{ xs: 6, xl: 5 }}>
+        <Grid size={{ xs: 6, md: 5 }}>
           <GridItem gap="8px" center padding="16px 6px">
             <Typography
               color="tertiary"
-              sx={{ fontSize: { xs: 40, xl: 64 } }}
+              sx={{ fontSize: { xs: 40, md: 64 } }}
               lineHeight={1}
               fontWeight={500}
             >
               40
             </Typography>
-            <Typography sx={{ fontSize: { xs: 14, xl: 16 } }} fontWeight={500}>
+            <Typography sx={{ fontSize: { xs: 14, md: 16 } }} fontWeight={500}>
               países pedalando com a gente
             </Typography>
           </GridItem>
         </Grid>
-        <Grid size={{ xs: 6, xl: 7 }}>
+        <Grid size={{ xs: 6, md: 7 }}>
           <GridItem gap="8px" center padding="16px 6px" height="100%">
             <Typography
               color="tertiary"
-              sx={{ fontSize: { xs: 42, xl: 64 } }}
+              sx={{ fontSize: { xs: 42, md: 64 } }}
               lineHeight={1}
               fontWeight={500}
             >
               899
             </Typography>
-            <Typography sx={{ fontSize: { xs: 13, xl: 16 } }} fontWeight={500}>
+            <Typography sx={{ fontSize: { xs: 13, md: 16 } }} fontWeight={500}>
               cidades impactadas
             </Typography>
           </GridItem>

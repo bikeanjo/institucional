@@ -14,7 +14,7 @@ const GridItem = styled.div<GridItemProps>`
   flex-direction: ${(props) => (props.column ? "column" : "row")};
   background-color: var(--mui-palette-secondary-main);
   border-radius: 1rem;
-  jusitfy-content: center;
+  justify-content: center;
   color: black;
   gap: ${(props) => props.gap};
 
@@ -23,7 +23,14 @@ const GridItem = styled.div<GridItemProps>`
     padding: ${(props) => props.padding};
   }
 
-  ${({ theme }) => theme.breakpoints.up("xl")} {
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    justify-content: center;
+    align-items: ${(props) => (props.center ? "center" : "baseline")};
+    padding: 20px 36px;
+  }
+
+  ${({ theme }) => theme.breakpoints.up("lg")} {
+    justify-content: start;
     align-items: baseline;
     padding: 20px 36px;
   }
