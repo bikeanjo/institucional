@@ -7,13 +7,24 @@ import {
   Button,
   InputBase,
   Divider,
+  Drawer,
 } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 import logo from "../../../../assets/icons/logo-bike-anjo.svg";
 import Login from "./Login";
 import { NavMenu } from "./MenuItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 const Header: React.FC = () => {
+  const icon: IconDefinition = faBars;
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setOpen(newOpen);
+  };
+
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar
@@ -24,14 +35,34 @@ const Header: React.FC = () => {
           py: 2,
           px: 5,
           gap: { xs: "16px", lg: "32px" },
+          backgroundColor: "white",
+          zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       >
         <Box
-          component="img"
-          src={logo}
-          alt="Logo Bike Anjo"
-          sx={{ width: { xs: 40.42, lg: 51.06 }, height: { xs: 38, lg: 48 } }}
-        />
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={2}
+        >
+          <Box
+            display={{ xs: "flex", lg: "none" }}
+            justifyContent={"center"}
+            alignItems={"center"}
+            sx={{
+              cursor: "pointer",
+            }}
+            onClick={toggleDrawer(true)}
+          >
+            <FontAwesomeIcon icon={icon} fontSize={28} color="#4d5b7c" />
+          </Box>
+          <Box
+            component="img"
+            src={logo}
+            alt="Logo Bike Anjo"
+            sx={{ width: { xs: 40.42, lg: 51.06 }, height: { xs: 38, lg: 48 } }}
+          />
+        </Box>
 
         {/* Search */}
         <Box
@@ -139,6 +170,50 @@ const Header: React.FC = () => {
         </Box>
       </Toolbar>
       <Divider />
+      <Drawer
+        open={open}
+        onClose={toggleDrawer(false)}
+        anchor="top"
+        ModalProps={{
+          keepMounted: true,
+        }}
+        sx={{
+          "& .MuiDrawer-paper": {
+            top: "0px",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            mt: "72px",
+            mb: "16px",
+            mx: "auto",
+            display: "flex",
+            alignItems: "center",
+            width: "calc(100% - 48px)",
+            height: "48px",
+            backgroundColor: "#E2E8F0",
+            borderRadius: "8px",
+            py: 1.5,
+            px: 2,
+            zIndex: "inherit",
+            gap: { xs: "16px", lg: 1.5 },
+          }}
+        >
+          <Box
+            className="material-icons"
+            sx={{
+              fontSize: 24,
+              color: "#486284",
+              fontWeight: "bold",
+              zIndex: "inherit",
+            }}
+          >
+            search
+          </Box>
+          <InputBase fullWidth />
+        </Box>
+      </Drawer>
     </AppBar>
   );
 };
