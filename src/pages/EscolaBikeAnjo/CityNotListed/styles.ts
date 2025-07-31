@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  width: 100%;
   margin: 40px auto;
   max-width: 1248px;
   justify-content: center;
@@ -25,17 +26,26 @@ export const Sub = styled.p`
 
 export const StepsContainer = styled.div`
   margin: 40px auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 24px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const StepItem = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
 
   .step-card {
+    width: 100%;
     max-width: 400px;
   }
 `;
