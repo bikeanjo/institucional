@@ -1,6 +1,5 @@
 import { StepCard } from "../../DicasParaPedalar/components/Card";
-import { Sub, Title, Wrapper } from "./styles";
-import Grid from "@mui/material/Grid";
+import { StepItem, StepsContainer, Sub, Title, Wrapper } from "./styles";
 
 interface Step {
   number: number;
@@ -24,29 +23,18 @@ export default function CityNotListed({
       <Title>{title}</Title>
       <Sub>{sub}</Sub>
 
-      <Grid container spacing={3}>
+      <StepsContainer>
         {steps.map((step) => (
-          <Grid
-            item
-            key={step.number}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              "& .step-card": {
-                width: "100%",
-                maxWidth: "400px",
-              },
-            }}
-          >
+          <StepItem key={step.number}>
             <StepCard
               className="step-card"
               number={step.number}
               title={step.title}
               description={step.description}
             />
-          </Grid>
+          </StepItem>
         ))}
-      </Grid>
+      </StepsContainer>
     </Wrapper>
   );
 }

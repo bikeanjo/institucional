@@ -23,3 +23,29 @@ export const Sub = styled.p`
   margin: 16px 0 40px;
   text-align: center;
 `;
+
+export const StepsContainer = styled.div`
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 24px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const StepItem = styled.div`
+  display: flex;
+  justify-content: center;
+
+  .step-card {
+    width: 100%;
+    max-width: 400px;
+  }
+`;
