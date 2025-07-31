@@ -1,3 +1,4 @@
+import type { HTMLAttributes } from "react";
 import {
   Card,
   Description,
@@ -7,7 +8,7 @@ import {
   TopSection,
 } from "./styles";
 
-interface StepCardProps {
+interface StepCardProps extends HTMLAttributes<HTMLDivElement> {
   number: number;
   title: string;
   subtitle?: string;
@@ -21,9 +22,10 @@ export function StepCard({
   subtitle,
   description,
   variant = "default",
+  className,
 }: StepCardProps) {
   return (
-    <Card>
+    <Card className={className}>
       <TopSection $variant={variant}>
         <Number>{number}</Number>
         <Title>{title}</Title>

@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 40px 96px;
+  margin: 40px auto;
   max-width: 1248px;
-  position: relative;
   justify-content: center;
 `;
 
@@ -24,49 +23,25 @@ export const Sub = styled.p`
   text-align: center;
 `;
 
-export const CarouselContainer = styled.div`
+export const StepsContainer = styled.div`
+  margin: 40px auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 24px;
-  position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-
-  p {
-    font-weight: 500;
-  }
 `;
 
-export const Cards = styled.div`
+export const StepItem = styled.div`
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 24px;
-  scroll-behavior: smooth;
+  justify-content: center;
+  width: 100%;
 
-  &::-webkit-scrollbar {
-    display: none;
+  .step-card {
+    max-width: 400px;
   }
-`;
-
-export const Arrow = styled.button<{ direction?: "left" | "right" }>`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  margin: 0 -80px;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  ${({ direction }) => direction === "left" && `left: 0;`}
-  ${({ direction }) => direction === "right" && `right: 0;`}
 `;
 
 export const ButtonContainer = styled.div`
-  margin: 40px 0;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
