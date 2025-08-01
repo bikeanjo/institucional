@@ -8,6 +8,9 @@ import {
   InputBase,
   Divider,
   Drawer,
+  AccordionSummary,
+  Accordion,
+  AccordionDetails,
 } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 import logo from "../../../../assets/icons/logo-bike-anjo.svg";
@@ -16,13 +19,14 @@ import { NavMenu } from "./MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
   const [open, setOpen] = React.useState(false);
 
-  const toggleDrawer = (newOpen: boolean) => () => {
-    setOpen(newOpen);
+  const toggleDrawer = () => () => {
+    setOpen((prev) => !prev);
   };
 
   return (
@@ -52,7 +56,7 @@ const Header: React.FC = () => {
             sx={{
               cursor: "pointer",
             }}
-            onClick={toggleDrawer(true)}
+            onClick={toggleDrawer()}
           >
             <FontAwesomeIcon icon={icon} fontSize={28} color="#4d5b7c" />
           </Box>
@@ -172,7 +176,7 @@ const Header: React.FC = () => {
       <Divider />
       <Drawer
         open={open}
-        onClose={toggleDrawer(false)}
+        onClose={toggleDrawer()}
         anchor="top"
         ModalProps={{
           keepMounted: true,
@@ -186,32 +190,755 @@ const Header: React.FC = () => {
         <Box
           sx={{
             mt: "72px",
-            mb: "16px",
-            mx: "auto",
             display: "flex",
-            alignItems: "center",
-            width: "calc(100% - 48px)",
-            height: "48px",
-            backgroundColor: "#E2E8F0",
-            borderRadius: "8px",
-            py: 1.5,
-            px: 2,
+            flexDirection: "column",
+            justifyContent: "center",
+            width: "100%",
             zIndex: "inherit",
-            gap: { xs: "16px", lg: 1.5 },
           }}
         >
           <Box
-            className="material-icons"
             sx={{
-              fontSize: 24,
-              color: "#486284",
-              fontWeight: "bold",
-              zIndex: "inherit",
+              height: "54px",
+              display: "flex",
+              alignItems: "center",
+              mx: "auto",
+              width: "calc(100% - 48px)",
+              backgroundColor: "#E2E8F0",
+              py: 1.5,
+              px: 2,
+              borderRadius: "8px",
             }}
           >
-            search
+            <Box
+              className="material-icons"
+              sx={{
+                fontSize: 24,
+                color: "#486284",
+                fontWeight: "bold",
+                zIndex: "inherit",
+              }}
+            >
+              search
+            </Box>
+            <InputBase fullWidth />
           </Box>
-          <InputBase fullWidth />
+          <Accordion
+            elevation={0}
+            disableGutters
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              backgroundColor: "transparent",
+              "&:before": {
+                display: "none !important",
+              },
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon sx={{ color: "#486284" }} />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+              sx={{
+                height: "54px",
+                padding: "0px 24px",
+                margin: 0,
+                backgroundColor: "transparent",
+                minHeight: 0,
+                "&.Mui-expanded": {
+                  minHeight: "unset",
+                },
+                "& .MuiAccordionSummary-content.Mui-expanded": {
+                  margin: 0,
+                },
+              }}
+              slotProps={{ content: { sx: { margin: 0 } } }}
+            >
+              <Typography
+                component="span"
+                fontWeight={600}
+                fontSize={"16px"}
+                color="#486284"
+              >
+                Ofereça Ajuda
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "8px 0px",
+                backgroundColor: "transparent",
+                color: "#486284",
+              }}
+            >
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontWeight={600}
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Como Pessoa
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Doe
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Seja Voluntário
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Faça nossa preparação
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Dicas para Bike Anjo
+                  </Typography>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Ajude como instituição
+                </Typography>
+              </Box>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            elevation={0}
+            disableGutters
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              backgroundColor: "transparent",
+              "&:before": {
+                display: "none !important",
+              },
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon sx={{ color: "#486284" }} />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+              sx={{
+                height: "54px",
+                padding: "0px 24px",
+                margin: 0,
+                backgroundColor: "transparent",
+                minHeight: 0,
+                "&.Mui-expanded": {
+                  minHeight: "unset",
+                },
+                "& .MuiAccordionSummary-content.Mui-expanded": {
+                  margin: 0,
+                },
+              }}
+              slotProps={{ content: { sx: { margin: 0 } } }}
+            >
+              <Typography
+                component="span"
+                fontWeight={600}
+                fontSize={"16px"}
+                color="#486284"
+              >
+                Receba Ajuda
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "8px 0px",
+                backgroundColor: "transparent",
+                color: "#486284",
+              }}
+            >
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Como Nós Ajudamos
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Dicas para Pedalar
+                </Typography>
+              </Box>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            elevation={0}
+            disableGutters
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              backgroundColor: "transparent",
+              "&:before": {
+                display: "none !important",
+              },
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon sx={{ color: "#486284" }} />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+              sx={{
+                height: "54px",
+                padding: "0px 24px",
+                margin: 0,
+                backgroundColor: "transparent",
+                minHeight: 0,
+                "&.Mui-expanded": {
+                  minHeight: "unset",
+                },
+                "& .MuiAccordionSummary-content.Mui-expanded": {
+                  margin: 0,
+                },
+              }}
+              slotProps={{ content: { sx: { margin: 0 } } }}
+            >
+              <Typography
+                component="span"
+                fontWeight={600}
+                fontSize={"16px"}
+                color="#486284"
+              >
+                Iniciativas
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "8px 0px",
+                backgroundColor: "transparent",
+                color: "#486284",
+              }}
+            >
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontWeight={600}
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Projetos
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Escola Bike Anjo
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Bike Anjas
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Pedala ou Repassa
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    De Bike para o Trabalho
+                  </Typography>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontWeight={600}
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Campanhas
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Dia Mundial Sem Carro
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    height: "54px",
+                    display: "flex",
+                    padding: "0px 24px",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    fontSize={"16px"}
+                    color="#486284"
+                  >
+                    Bicicleta nos Planos
+                  </Typography>
+                </Box>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Anjos na Sua Cidade
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Veja todas as iniciativas
+                </Typography>
+              </Box>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            elevation={0}
+            disableGutters
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              backgroundColor: "transparent",
+              "&:before": {
+                display: "none !important",
+              },
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon sx={{ color: "#486284" }} />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+              sx={{
+                height: "54px",
+                padding: "0px 24px",
+                margin: 0,
+                backgroundColor: "transparent",
+                minHeight: 0,
+                "&.Mui-expanded": {
+                  minHeight: "unset",
+                },
+                "& .MuiAccordionSummary-content.Mui-expanded": {
+                  margin: 0,
+                },
+              }}
+              slotProps={{ content: { sx: { margin: 0 } } }}
+            >
+              <Typography
+                component="span"
+                fontWeight={600}
+                fontSize={"16px"}
+                color="#486284"
+              >
+                Sobre Nós
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "8px 0px",
+                backgroundColor: "transparent",
+                color: "#486284",
+              }}
+            >
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Como funciona
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Quem somos
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Redes Sociais
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Bike Anjo na Mídia
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  background: "#EDEDED",
+                  height: "54px",
+                  padding: "0px 24px",
+                  display: "flex",
+                  alignContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color="#486284"
+                >
+                  Blog
+                </Typography>
+              </Box>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            elevation={0}
+            disableGutters
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              backgroundColor: "transparent",
+              "&:before": {
+                display: "none !important",
+              },
+            }}
+          >
+            <AccordionSummary
+              aria-controls="panel1-content"
+              id="panel1-header"
+              sx={{
+                height: "54px",
+                padding: "0px 24px",
+                margin: 0,
+                backgroundColor: "transparent",
+                minHeight: 0,
+                "&.Mui-expanded": {
+                  minHeight: "unset",
+                },
+                "& .MuiAccordionSummary-content.Mui-expanded": {
+                  margin: 0,
+                },
+              }}
+              slotProps={{ content: { sx: { margin: 0 } } }}
+            >
+              <Typography
+                component="span"
+                fontWeight={600}
+                fontSize={"16px"}
+                color="#486284"
+              >
+                Contato
+              </Typography>
+            </AccordionSummary>
+          </Accordion>
         </Box>
       </Drawer>
     </AppBar>
