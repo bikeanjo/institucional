@@ -5,6 +5,7 @@ import UnavailablePage from "./pages/UnavailablePage/UnavailablePage";
 import SocialMedia from "./pages/SocialMedia";
 import DicasParaPedalar from "./pages/DicasParaPedalar";
 import DicasParaBikeAnjo from "./pages/DicasParaBikeAnjo";
+import PedalaOuRepassa from "./pages/PedalaOuRepassa";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/socialmedia" element={<SocialMedia />} />
           <Route path="/dicasbikeanjo" element={<DicasParaBikeAnjo />} />
+          <Route path="/pedalaourepassa" element={<PedalaOuRepassa />} />
           <Route path="*" element={<UnavailablePage />} />
-          <Route path="dicas" element={<DicasParaPedalar />} />
+          <Route path="/dicasparapedalar" element={<DicasParaPedalar />} />
         </Route>
       </Routes>
     </>
