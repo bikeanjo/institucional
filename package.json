@@ -38,6 +38,7 @@
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.1.1",
     "@mui/styled-engine-sc": "^7.1.1",
+    "lucide-react": "^0.536.0",
     "material-icons": "^1.13.14",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
