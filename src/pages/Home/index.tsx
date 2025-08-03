@@ -5,11 +5,13 @@ import Partners from "./sections/Partners";
 import Carousel from "./sections/Carousel";
 import WhereAreWe from "./sections/WhereAreWe";
 import ProjectThatMoveUs from "./sections/ProjectThatMoveUs";
+import FAQ from "./sections/FAQ";
 
 function Home(): ReactNode {
   return (
     <>
       <Carousel />
+      <FAQ />
       <WhereAreWe />
       <ProjectThatMoveUs />
       <OurNumbers />
