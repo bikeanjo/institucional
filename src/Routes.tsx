@@ -5,6 +5,7 @@ import UnavailablePage from "./pages/UnavailablePage/UnavailablePage";
 import SocialMedia from "./pages/SocialMedia";
 import DicasParaPedalar from "./pages/DicasParaPedalar";
 import DicasParaBikeAnjo from "./pages/DicasParaBikeAnjo";
+import Contact from "./pages/Contato";
 import EscolaBikeAnjo from "./pages/EscolaBikeAnjo";
 import PedalaOuRepassa from "./pages/PedalaOuRepassa";
 
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/socialmedia" element={<SocialMedia />} />
           <Route path="/dicasbikeanjo" element={<DicasParaBikeAnjo />} />
+          <Route path="/contato" element={<Contact />} />
           <Route path="/escolabikeanjo" element={<EscolaBikeAnjo />} />
           <Route path="/pedalaourepassa" element={<PedalaOuRepassa />} />
           <Route path="*" element={<UnavailablePage />} />
