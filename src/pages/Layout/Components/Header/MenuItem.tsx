@@ -2,40 +2,45 @@ import React, { useState } from "react";
 import { Box, Typography, Menu, MenuItem } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 
-interface NavMenuItem {
+export interface NavMenuItem {
   label: string;
   bold?: boolean;
   submenu?: NavMenuItem[];
 }
 
 interface NavMenuProps {
-  label: string;
-  items: NavMenuItem[];
   columns?: number;
+  item:
+    | {
+        title: string;
+        children: (
+          | {
+              title: string;
+              children: {
+                title: string;
+              }[];
+            }
+          | {
+              title: string;
+              children?: undefined;
+            }
+        )[];
+      }
+    | {
+        title: string;
+        children?: undefined;
+      };
 }
 
-export const NavMenu: React.FC<NavMenuProps> = ({ label, items, columns }) => {
+export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [submenuAnchorEl, setSubmenuAnchorEl] = useState<null | HTMLElement>(
-    null,
-  );
   const open = Boolean(anchorEl);
-  const openSubmenu = Boolean(submenuAnchorEl);
 
   const handleOpenMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
   const handleCloseMenu = () => {
     setAnchorEl(null);
-    setSubmenuAnchorEl(null);
-  };
-
-  const handleOpenSubmenu = (event: React.MouseEvent<HTMLElement>) => {
-    event.stopPropagation();
-    setSubmenuAnchorEl(event.currentTarget);
-  };
-  const handleCloseSubmenu = () => {
-    setSubmenuAnchorEl(null);
   };
 
   return (
@@ -51,7 +56,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ label, items, columns }) => {
           onClick={handleOpenMenu}
           sx={{ display: "flex", alignItems: "center", gap: "4px" }}
         >
-          <Typography fontWeight={600}>{label}</Typography>
+          <Typography fontWeight={600}>{item.title}</Typography>
           <span className="material-icons">keyboard_arrow_down</span>
         </Box>
 
@@ -103,86 +108,69 @@ export const NavMenu: React.FC<NavMenuProps> = ({ label, items, columns }) => {
           transformOrigin={{ horizontal: "left", vertical: "top" }}
           anchorOrigin={{ horizontal: "left", vertical: "top" }}
         >
-          {items.map((item) => {
-            const hasSubmenu = item.label === "Conteúdo";
-
-            return (
-              <MenuItem
-                key={item.label}
-                onClick={hasSubmenu ? handleOpenSubmenu : handleCloseMenu}
-                sx={{
-                  p: 0,
-                  fontWeight: item.bold ? 600 : 400,
-                  color: "#262626",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  width: "100%",
-                  "&:hover": {
-                    backgroundColor: "#D9D9D9",
-                  },
-                }}
-              >
-                <Box
-                  sx={{ display: "flex", alignItems: "center", gap: "80px" }}
+          {Array.isArray(item.children) &&
+            item.children.length > 0 &&
+            item.children.map((subItem) => (
+              <React.Fragment key={subItem.title}>
+                <MenuItem
+                  onClick={handleCloseMenu}
+                  sx={{
+                    p: 0,
+                    fontWeight: 600,
+                    color: "#262626",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    width: "100%",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                      textDecoration: "underline",
+                    },
+                  }}
                 >
-                  {item.label}
-                  {hasSubmenu && (
-                    <span className="material-icons" style={{ fontSize: 18 }}>
-                      keyboard_arrow_right
-                    </span>
-                  )}
-                </Box>
-              </MenuItem>
-            );
-          })}
-        </Menu>
-
-        <Menu
-          anchorEl={submenuAnchorEl}
-          open={openSubmenu}
-          onClose={handleCloseSubmenu}
-          anchorOrigin={{ horizontal: "right", vertical: "top" }}
-          transformOrigin={{ horizontal: "left", vertical: "top" }}
-          slotProps={{
-            paper: {
-              elevation: 0,
-              sx: {
-                overflow: "visible",
-                backgroundColor: "#D9D9D9",
-                borderRadius: "8px",
-                p: "16px 24px 24px 24px",
-              },
-            },
-          }}
-          MenuListProps={{
-            disablePadding: true,
-            sx: {
-              display: "flex",
-              flexDirection: "column",
-              gap: "16px",
-            },
-          }}
-        >
-          {[
-            "Blog",
-            "Matérias",
-            "Dicas para pedalar",
-            "Dicas para BikeAnjo",
-          ].map((subItem) => (
-            <MenuItem
-              key={subItem}
-              onClick={handleCloseMenu}
-              sx={{
-                p: 0,
-                color: "#262626",
-                justifyContent: "flex-start",
-                "&:hover": { backgroundColor: "#F5F5F5" },
-              }}
-            >
-              {subItem}
-            </MenuItem>
-          ))}
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "80px",
+                    }}
+                  >
+                    {subItem.title}
+                  </Box>
+                </MenuItem>
+                {Array.isArray(subItem.children) &&
+                  subItem.children.length > 0 &&
+                  subItem.children.map((lastItem) => (
+                    <MenuItem
+                      key={lastItem.title}
+                      onClick={handleCloseMenu}
+                      sx={{
+                        p: 0,
+                        fontWeight: 400,
+                        color: "#262626",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        width: "100%",
+                        "&:hover": {
+                          backgroundColor: "transparent",
+                          textDecoration: "underline",
+                        },
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "80px",
+                        }}
+                      >
+                        {lastItem.title}
+                      </Box>
+                    </MenuItem>
+                  ))}
+              </React.Fragment>
+            ))}
         </Menu>
       </Box>
     </React.Fragment>

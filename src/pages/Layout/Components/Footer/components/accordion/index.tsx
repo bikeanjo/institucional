@@ -13,10 +13,12 @@ const Accordion = ({
   title,
   gridItem,
   children,
+  contato,
 }: {
   title: string;
   gridItem: string;
   children: ReactNode;
+  contato: boolean;
 }) => {
   const theme = useTheme();
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
@@ -39,7 +41,7 @@ const Accordion = ({
       expanded={expanded}
       onChange={handleChange}
       sx={{
-        display: "flex",
+        display: { xs: "flex", lg: contato ? "none" : "flex" },
         flexDirection: "column",
         gap: "16px",
         gridArea: gridItem,
@@ -50,7 +52,7 @@ const Accordion = ({
       }}
     >
       <AccordionSummary
-        expandIcon={isLargeScreen ? null : <ExpandMoreIcon />}
+        expandIcon={isLargeScreen || contato ? null : <ExpandMoreIcon />}
         aria-controls="panel1-content"
         id="panel1-header"
         sx={{
@@ -74,7 +76,7 @@ const Accordion = ({
       </AccordionSummary>
       <AccordionDetails
         sx={{
-          display: "flex",
+          display: contato ? "none" : "flex",
           flexDirection: "column",
           padding: "8px 0px",
           backgroundColor: "#F8F8F8",

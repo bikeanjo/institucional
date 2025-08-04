@@ -1,3 +1,4 @@
+/* eslint-disable react-x/no-array-index-key */
 import React from "react";
 import { Box, Typography, Divider } from "@mui/material";
 import Logo from "../../../../assets/icons/logo-bike-anjo.svg";
@@ -10,8 +11,17 @@ import {
 import { SocialIcon } from "./socialIcon";
 import "material-icons/iconfont/material-icons.css";
 import Accordion from "./components/accordion";
+import { menuItems } from "../../menuItems";
 
 const Footer: React.FC = () => {
+  const gridNames: Record<string, string> = {
+    "Ofereça Ajuda": "offer",
+    "Receba Ajuda": "receive",
+    Iniciativas: "iniciatives",
+    "Sobre Nós": "about",
+    Contato: "contato",
+  };
+
   return (
     <Box
       component="footer"
@@ -85,6 +95,7 @@ const Footer: React.FC = () => {
             xs: `
                   'offer receive'
                   'about iniciatives'
+                  'contato contato'
                 `,
             lg: `
                   'offer iniciatives about'
@@ -99,83 +110,37 @@ const Footer: React.FC = () => {
           justifyContent={"center"}
           my={{ xs: "16px", lg: "0px" }}
         >
-          <Accordion title="Ofereça Ajuda" gridItem="offer">
-            <Typography fontWeight={600} fontSize={"15px"}>
-              Como Pessoa
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Doe
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Seja Voluntário
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Faça nossa preparação
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Dicas para Bike Anjo
-            </Typography>
-            <Typography fontWeight={600} fontSize={"15px"}>
-              Ajude como Instituição
-            </Typography>
-          </Accordion>
-          <Accordion title="Receba Ajuda" gridItem="receive">
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Como Nós Ajudamos
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Dicas para Pedalar
-            </Typography>
-          </Accordion>
-          <Accordion title="Iniciativas" gridItem="iniciatives">
-            <Typography fontWeight={600} fontSize={"15px"}>
-              Projetos
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Escola Bike Anjo
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Bike Anjas
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Pedala ou Repassa
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              De Bike ao Trabalho
-            </Typography>
-            <Typography fontWeight={600} fontSize={"15px"}>
-              Campanhas
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Dia Mundial Sem Carro
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Bicicleta nos Planos
-            </Typography>
-            <Typography fontWeight={600} fontSize={"15px"}>
-              Anjos na Sua Cidade
-            </Typography>
-            <Typography fontWeight={600} fontSize={"15px"}>
-              Veja Todas as Iniciativas
-            </Typography>
-          </Accordion>
-          <Accordion title="Sobre Nós" gridItem="about">
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Como Funciona
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Quem Somos
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Redes Sociais
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Blog
-            </Typography>
-            <Typography fontWeight={400} fontSize={"15px"}>
-              Bike Anjo na Mídia
-            </Typography>
-          </Accordion>
+          {menuItems.map((item, idx) => (
+            <Accordion
+              title={item.title}
+              gridItem={gridNames[item.title]}
+              key={idx + " menu-item"}
+              contato={item.title === "Contato"}
+            >
+              {Array.isArray(item.children) && item.children.length > 0 && (
+                <React.Fragment>
+                  {item.children.map((subItem, subIdx) => (
+                    <React.Fragment key={subIdx + " submenu-item"}>
+                      <Typography fontWeight={600} fontSize={"15px"}>
+                        {subItem.title}
+                      </Typography>
+                      {Array.isArray(subItem.children) &&
+                        subItem.children.length > 0 &&
+                        subItem.children.map((lastItem, lastIdx) => (
+                          <Typography
+                            fontWeight={400}
+                            fontSize={"15px"}
+                            key={lastIdx + " submenu-item"}
+                          >
+                            {lastItem.title}
+                          </Typography>
+                        ))}
+                    </React.Fragment>
+                  ))}
+                </React.Fragment>
+              )}
+            </Accordion>
+          ))}
         </Box>
       </Box>
       <Divider
