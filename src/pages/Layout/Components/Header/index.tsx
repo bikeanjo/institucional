@@ -21,6 +21,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { menuItems } from "../../menuItems";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
@@ -29,65 +30,6 @@ const Header: React.FC = () => {
   const toggleDrawer = () => () => {
     setOpen((prev) => !prev);
   };
-
-  const mobileItems = [
-    {
-      title: "Ofereça Ajuda",
-      children: [
-        {
-          title: "Como Pessoa",
-          children: [
-            { title: "Doe" },
-            { title: "Seja Voluntário" },
-            { title: "Faça nossa preparação" },
-            { title: "Dicas para Bike Anjo" },
-          ],
-        },
-        { title: "Ajude como instituição" },
-      ],
-    },
-    {
-      title: "Receba Ajuda",
-      children: [
-        { title: "Como Nós Ajudamos" },
-        { title: "Dicas para Pedalar" },
-      ],
-    },
-    {
-      title: "Iniciativas",
-      children: [
-        {
-          title: "Projetos",
-          children: [
-            { title: "Escola Bike Anjo" },
-            { title: "Bike Anjas" },
-            { title: "Pedala ou Repassa" },
-            { title: "De Bike para o Trabalho" },
-          ],
-        },
-        {
-          title: "Campanhas",
-          children: [
-            { title: "Dia Mundial Sem Carro" },
-            { title: "Bicicleta nos Planos" },
-          ],
-        },
-        { title: "Anjos na Sua Cidade" },
-        { title: "Veja todas as iniciativas" },
-      ],
-    },
-    {
-      title: "Sobre Nós",
-      children: [
-        { title: "Como funciona" },
-        { title: "Quem somos" },
-        { title: "Redes Sociais" },
-        { title: "Bike Anjo na Mídia" },
-        { title: "Blog" },
-      ],
-    },
-    { title: "Contato" },
-  ];
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
@@ -161,54 +103,9 @@ const Header: React.FC = () => {
             whiteSpace: "nowrap",
           }}
         >
-          <NavMenu
-            label="Ofereça Ajuda"
-            items={[
-              { label: "Como Pessoa", bold: true },
-              { label: "Doe", bold: false },
-              { label: "Seja Voluntário", bold: false },
-              { label: "Faça nossa preparação", bold: false },
-              { label: "Ajude como Instituição", bold: true },
-            ]}
-          />
-
-          <Typography fontWeight={600} sx={{ cursor: "pointer" }}>
-            Receba Ajuda
-          </Typography>
-
-          <NavMenu
-            label="Iniciativas"
-            columns={2}
-            items={[
-              { label: "Projetos", bold: true },
-              { label: "Escola Bike Anjo", bold: false },
-              { label: "Bike Anjas", bold: false },
-              { label: "Pedala ou Repassa", bold: false },
-              { label: "De Bike para o Trabalho", bold: false },
-              { label: "Campanhas", bold: true },
-              { label: "Dia Mundial Sem Carro", bold: false },
-              { label: "Bicicleta nos Planos", bold: false },
-              { label: "Eventos", bold: true },
-              { label: "Veja todas as Iniciativas", bold: true },
-            ]}
-          />
-
-          <NavMenu
-            label="Sobre Nós"
-            items={[
-              { label: "Redes Sociais", bold: false },
-              { label: "Como Funciona", bold: false },
-              { label: "Conteúdo", bold: false },
-              { label: "Quem somos", bold: false },
-              { label: "Nossos valores", bold: false },
-              { label: "Onde estamos", bold: false },
-              { label: "Transparência", bold: false },
-            ]}
-          />
-
-          <Typography fontWeight={600} sx={{ cursor: "pointer" }}>
-            Contato
-          </Typography>
+          {menuItems.map((item, idx) => (
+            <NavMenu key={idx + " menu-item"} item={item} />
+          ))}
         </Box>
 
         <Box display="flex" flexDirection={"row"} alignItems={"center"}>
@@ -283,7 +180,7 @@ const Header: React.FC = () => {
             </Box>
             <InputBase fullWidth />
           </Box>
-          {mobileItems.map((item, idx) => {
+          {menuItems.map((item, idx) => {
             return (
               <Accordion
                 key={idx + " accordion-item"}
