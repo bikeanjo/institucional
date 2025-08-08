@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout/layout";
 import UnavailablePage from "./pages/UnavailablePage/UnavailablePage";
@@ -8,24 +8,36 @@ import DicasParaBikeAnjo from "./pages/DicasParaBikeAnjo";
 import Contact from "./pages/Contato";
 import EscolaBikeAnjo from "./pages/EscolaBikeAnjo";
 import PedalaOuRepassa from "./pages/PedalaOuRepassa";
+import { useEffect } from "react";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/socialmedia" element={<SocialMedia />} />
-          <Route path="/dicasbikeanjo" element={<DicasParaBikeAnjo />} />
+          <Route path="/social-media" element={<SocialMedia />} />
+          <Route path="/dicas-bike-anjo" element={<DicasParaBikeAnjo />} />
           <Route path="/contato" element={<Contact />} />
-          <Route path="/escolabikeanjo" element={<EscolaBikeAnjo />} />
-          <Route path="/pedalaourepassa" element={<PedalaOuRepassa />} />
+          <Route path="/escola-bike-anjo" element={<EscolaBikeAnjo />} />
+          <Route path="/pedala-ou-repassa" element={<PedalaOuRepassa />} />
+          <Route path="/dicas-para-pedalar" element={<DicasParaPedalar />} />
           <Route path="*" element={<UnavailablePage />} />
-          <Route path="/dicasparapedalar" element={<DicasParaPedalar />} />
         </Route>
       </Routes>
     </>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 export default App;
