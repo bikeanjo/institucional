@@ -22,6 +22,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { menuItems } from "../../menuItems";
+import { Link } from "../Link";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
@@ -62,12 +63,17 @@ const Header: React.FC = () => {
           >
             <FontAwesomeIcon icon={icon} fontSize={28} color="#4d5b7c" />
           </Box>
-          <Box
-            component="img"
-            src={logo}
-            alt="Logo Bike Anjo"
-            sx={{ width: { xs: 40.42, lg: 51.06 }, height: { xs: 38, lg: 48 } }}
-          />
+          <Link to="/">
+            <Box
+              component="img"
+              src={logo}
+              alt="Logo Bike Anjo"
+              sx={{
+                width: { xs: 40.42, lg: 51.06 },
+                height: { xs: 38, lg: 48 },
+              }}
+            />
+          </Link>
         </Box>
 
         {/* Search */}
@@ -265,7 +271,11 @@ const Header: React.FC = () => {
                               fontSize={"16px"}
                               color="#486284"
                             >
-                              {subItem.title}
+                              {subItem.url ? (
+                                <Link to={subItem.url}>{subItem.title}</Link>
+                              ) : (
+                                subItem.title
+                              )}
                             </Typography>
                           </Box>
                           {Array.isArray(subItem.children) &&
@@ -287,7 +297,13 @@ const Header: React.FC = () => {
                                   fontSize={"16px"}
                                   color="#486284"
                                 >
-                                  {lastItem.title}
+                                  {lastItem.url ? (
+                                    <Link to={lastItem.url}>
+                                      {lastItem.title}
+                                    </Link>
+                                  ) : (
+                                    lastItem.title
+                                  )}
                                 </Typography>
                               </Box>
                             ))}

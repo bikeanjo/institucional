@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Typography, Menu, MenuItem } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
+import { Link } from "../Link";
 
 export interface NavMenuItem {
   label: string;
@@ -8,28 +9,15 @@ export interface NavMenuItem {
   submenu?: NavMenuItem[];
 }
 
+interface CustomMenuItem {
+  title: string;
+  url?: string;
+  children?: CustomMenuItem[];
+}
+
 interface NavMenuProps {
   columns?: number;
-  item:
-    | {
-        title: string;
-        children: (
-          | {
-              title: string;
-              children: {
-                title: string;
-              }[];
-            }
-          | {
-              title: string;
-              children?: undefined;
-            }
-        )[];
-      }
-    | {
-        title: string;
-        children?: undefined;
-      };
+  item: CustomMenuItem;
 }
 
 export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
@@ -116,7 +104,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                   onClick={handleCloseMenu}
                   sx={{
                     p: 0,
-                    fontWeight: 600,
+                    fontWeight: subItem.url ? 400 : 600,
                     color: "#262626",
                     display: "flex",
                     alignItems: "center",
@@ -124,7 +112,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                     width: "100%",
                     "&:hover": {
                       backgroundColor: "transparent",
-                      textDecoration: "underline",
+                      textDecoration: subItem.url ? "underline" : "none",
                     },
                   }}
                 >
@@ -135,7 +123,11 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                       gap: "80px",
                     }}
                   >
-                    {subItem.title}
+                    {subItem.url ? (
+                      <Link to={subItem.url}>{subItem.title}</Link>
+                    ) : (
+                      subItem.title
+                    )}
                   </Box>
                 </MenuItem>
                 {Array.isArray(subItem.children) &&
@@ -154,7 +146,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                         width: "100%",
                         "&:hover": {
                           backgroundColor: "transparent",
-                          textDecoration: "underline",
+                          textDecoration: lastItem.url ? "underline" : "none",
                         },
                       }}
                     >
@@ -165,7 +157,11 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                           gap: "80px",
                         }}
                       >
-                        {lastItem.title}
+                        {lastItem.url ? (
+                          <Link to={lastItem.url}>{lastItem.title}</Link>
+                        ) : (
+                          lastItem.title
+                        )}
                       </Box>
                     </MenuItem>
                   ))}

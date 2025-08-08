@@ -12,6 +12,7 @@ import { SocialIcon } from "./socialIcon";
 import "material-icons/iconfont/material-icons.css";
 import Accordion from "./components/accordion";
 import { menuItems } from "../../menuItems";
+import { Link } from "../Link";
 
 const Footer: React.FC = () => {
   const gridNames: Record<string, string> = {
@@ -122,7 +123,11 @@ const Footer: React.FC = () => {
                   {item.children.map((subItem, subIdx) => (
                     <React.Fragment key={subIdx + " submenu-item"}>
                       <Typography fontWeight={600} fontSize={"15px"}>
-                        {subItem.title}
+                        {subItem.url ? (
+                          <Link to={subItem.url}>{subItem.title}</Link>
+                        ) : (
+                          subItem.title
+                        )}
                       </Typography>
                       {Array.isArray(subItem.children) &&
                         subItem.children.length > 0 &&
@@ -132,7 +137,11 @@ const Footer: React.FC = () => {
                             fontSize={"15px"}
                             key={lastIdx + " submenu-item"}
                           >
-                            {lastItem.title}
+                            {lastItem.url ? (
+                              <Link to={lastItem.url}>{lastItem.title}</Link>
+                            ) : (
+                              lastItem.title
+                            )}
                           </Typography>
                         ))}
                     </React.Fragment>
