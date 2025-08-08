@@ -6,12 +6,13 @@ import {
   Box,
   Typography,
   Button,
-  InputBase,
   Divider,
   Drawer,
   AccordionSummary,
   Accordion,
   AccordionDetails,
+  Autocomplete,
+  TextField,
 } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 import logo from "../../../../assets/icons/logo-bike-anjo.svg";
@@ -21,7 +22,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { menuItems } from "../../menuItems";
+import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
 
 const Header: React.FC = () => {
@@ -31,6 +32,28 @@ const Header: React.FC = () => {
   const toggleDrawer = () => () => {
     setOpen((prev) => !prev);
   };
+
+  function extractOptions(menu: MenuItem[], startId = 1) {
+    let options: { label: string; id: number; url: string }[] = [];
+    let id = startId;
+
+    for (const item of menu) {
+      if (item.url && item.url.trim() !== "") {
+        options.push({ label: item.title, id: id++, url: item.url });
+      }
+      if (item.children) {
+        const { options: childOptions, lastId } = extractOptions(
+          item.children,
+          id,
+        );
+        options = options.concat(childOptions);
+        id = lastId;
+      }
+    }
+    return { options, lastId: id };
+  }
+
+  const { options } = extractOptions(menuItems);
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
@@ -77,7 +100,48 @@ const Header: React.FC = () => {
         </Box>
 
         {/* Search */}
-        <Box
+        <Autocomplete
+          disablePortal
+          options={options}
+          popupIcon={null}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              placeholder="Buscar..."
+              InputProps={{
+                ...params.InputProps,
+                startAdornment: (
+                  <>
+                    <span
+                      className="material-icons"
+                      style={{
+                        fontSize: 24,
+                        color: "#486284",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      search
+                    </span>
+                    {params.InputProps.startAdornment}
+                  </>
+                ),
+              }}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { border: "none" },
+                  backgroundColor: "#E2E8F0",
+                  borderRadius: "8px",
+                  height: "48px",
+                  paddingLeft: "8px",
+                },
+              }}
+            />
+          )}
+          renderOption={(props, option) => (
+            <li {...props}>
+              <Link to={option.url}>{option.label}</Link>
+            </li>
+          )}
           sx={{
             display: { xs: "none", lg: "flex" },
             alignItems: "center",
@@ -88,16 +152,9 @@ const Header: React.FC = () => {
             py: 1.5,
             px: 2,
             gap: { xs: "16px", lg: 1.5 },
+            border: "none",
           }}
-        >
-          <span
-            className="material-icons"
-            style={{ fontSize: 24, color: "#486284", fontWeight: "bold" }}
-          >
-            search
-          </span>
-          <InputBase fullWidth />
-        </Box>
+        />
 
         {/* Nav */}
         <Box
@@ -160,32 +217,62 @@ const Header: React.FC = () => {
             zIndex: "inherit",
           }}
         >
-          <Box
+          <Autocomplete
+            disablePortal
+            options={options}
+            popupIcon={null}
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                placeholder="Buscar..."
+                InputProps={{
+                  ...params.InputProps,
+                  startAdornment: (
+                    <>
+                      <span
+                        className="material-icons"
+                        style={{
+                          fontSize: 24,
+                          color: "#486284",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        search
+                      </span>
+                      {params.InputProps.startAdornment}
+                    </>
+                  ),
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { border: "none" },
+                    backgroundColor: "#E2E8F0",
+                    borderRadius: "8px",
+                    height: "48px",
+                    paddingLeft: "8px",
+                  },
+                }}
+              />
+            )}
+            renderOption={(props, option) => (
+              <li {...props}>
+                <Link to={option.url}>{option.label}</Link>
+              </li>
+            )}
             sx={{
-              height: "54px",
-              display: "flex",
+              display: { xs: "flex", lg: "none" },
               alignItems: "center",
-              mx: "auto",
-              width: "calc(100% - 48px)",
+              width: "96%",
+              height: "48px",
               backgroundColor: "#E2E8F0",
+              borderRadius: "8px",
               py: 1.5,
               px: 2,
-              borderRadius: "8px",
+              gap: { xs: "16px", lg: 1.5 },
+              border: "none",
+              margin: "auto",
             }}
-          >
-            <Box
-              className="material-icons"
-              sx={{
-                fontSize: 24,
-                color: "#486284",
-                fontWeight: "bold",
-                zIndex: "inherit",
-              }}
-            >
-              search
-            </Box>
-            <InputBase fullWidth />
-          </Box>
+          />
           {menuItems.map((item, idx) => {
             return (
               <Accordion
