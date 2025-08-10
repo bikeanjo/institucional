@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import Title from "../../components/Title";
-import Container from "../../components/Container";
+import Title from "../../Home/components/Title";
+import Container from "../../Home/components/Container";
 import { Box, Grid } from "@mui/material";
 import itauImage from "@assets/images/Home/Partners/itau.png";
 import ccaImage from "@assets/images/Home/Partners/cca.png";
@@ -8,10 +8,12 @@ import tembiciImage from "@assets/images/Home/Partners/tembici.png";
 import ccImage from "@assets/images/Home/Partners/cc.png";
 import ucbImage from "@assets/images/Home/Partners/ucb.png";
 
-function Partners(): ReactNode {
+function Partners({ home }: { home?: boolean }): ReactNode {
   return (
     <Container gap="48px">
-      <Title variant="h2">Parceiros</Title>
+      <Title variant="h2" display={home ? "flex" : "none"}>
+        Parceiros
+      </Title>
       <Grid
         container
         spacing={2}

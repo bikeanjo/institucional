@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Hero from "../Home/components/Hero";
+import Header from "../Components/Header";
 import ButtonBack from "./ButtonBack";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
@@ -49,9 +49,9 @@ const findCitySteps = [
 function PedalaOuRepassa(): ReactNode {
   return (
     <>
-      <Hero secondary>
+      <Header secondary>
         <h2>Pedala ou Repassa</h2>
-      </Hero>
+      </Header>
       <div>
         <ButtonBack />
         <AboutPedalaOuRepassa />

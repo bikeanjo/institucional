@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Hero from "../Home/components/Hero";
+import Header from "../Components/Header";
 import CarouselAttentionCards from "./components/CarouselAttentionCards";
 import SupportLinksSection from "./components/Links";
 import CarouselTipCards from "./components/CarouselTipCards";
@@ -77,9 +77,9 @@ const attentionSteps = [
 function CyclingTips(): ReactNode {
   return (
     <>
-      <Hero secondary>
+      <Header secondary>
         <h2>Dicas para Pedalar</h2>
-      </Hero>
+      </Header>
       <div>
         <CarouselTipCards
           title="Dicas para começar por conta própria"

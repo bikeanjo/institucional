@@ -9,6 +9,7 @@ import Contact from "./pages/Contato";
 import EscolaBikeAnjo from "./pages/EscolaBikeAnjo";
 import PedalaOuRepassa from "./pages/PedalaOuRepassa";
 import { useEffect } from "react";
+import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route
+            path="/ajude-como-instituicao"
+            element={<AjudeComoInstituicao />}
+          />
           <Route path="/social-media" element={<SocialMedia />} />
           <Route path="/dicas-bike-anjo" element={<DicasParaBikeAnjo />} />
           <Route path="/contato" element={<Contact />} />

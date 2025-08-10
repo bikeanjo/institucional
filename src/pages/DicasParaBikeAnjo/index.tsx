@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Hero from "../Home/components/Hero";
+import Header from "../Components/Header";
 import SupportLinksSection from "./components/Links";
 import CarouselTeachingCards from "./components/CarouselTeachingCards";
 import SocialContent from "./components/SocialContent";
@@ -54,9 +54,9 @@ const teachingSteps = [
 function CyclingTips(): ReactNode {
   return (
     <>
-      <Hero secondary>
+      <Header secondary>
         <h2>Dicas para Bike Anjo</h2>
-      </Hero>
+      </Header>
       <div>
         <CarouselTeachingCards
           title="Como ensinar alguém a pedalar"
