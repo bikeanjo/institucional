@@ -11,6 +11,7 @@ import PedalaOuRepassa from "./pages/PedalaOuRepassa";
 import { useEffect } from "react";
 import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
 import Doacao from "./pages/Doacao";
+import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
           <Route path="/pedala-ou-repassa" element={<PedalaOuRepassa />} />
           <Route path="/dicas-para-pedalar" element={<DicasParaPedalar />} />
           <Route path="*" element={<UnavailablePage />} />
+          <Route
+            path="/dia-mundial-sem-carro"
+            element={<DiaMundialSemCarro />}
+          />
         </Route>
       </Routes>
     </>
