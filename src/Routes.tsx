@@ -10,6 +10,7 @@ import EscolaBikeAnjo from "./pages/EscolaBikeAnjo";
 import PedalaOuRepassa from "./pages/PedalaOuRepassa";
 import { useEffect } from "react";
 import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
+import Doacao from "./pages/Doacao";
 import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           />
           <Route path="/social-media" element={<SocialMedia />} />
           <Route path="/dicas-bike-anjo" element={<DicasParaBikeAnjo />} />
+          <Route path="/doacao" element={<Doacao />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/escola-bike-anjo" element={<EscolaBikeAnjo />} />
           <Route path="/pedala-ou-repassa" element={<PedalaOuRepassa />} />
