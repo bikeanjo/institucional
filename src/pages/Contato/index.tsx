@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
-import Hero from "../Home/components/Hero";
+import Header from "../Components/Header";
 import { Typography, Box } from "@mui/material";
 import { Form } from "./components/Form";
 
 function Contact(): ReactNode {
   return (
     <>
-      <Hero secondary>
+      <Header secondary>
         <h2>Contato</h2>
-      </Hero>
+      </Header>
       <Box sx={{ margin: "80px 204px", gap: "40px" }}>
         <Typography sx={{ fontSize: { xs: 13, md: 16 } }} fontWeight={400}>
           Este é o canal direto com a equipe da associação Bike Anjo. Aqui você

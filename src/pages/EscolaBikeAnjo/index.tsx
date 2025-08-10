@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Hero from "../Home/components/Hero";
+import Header from "../Components/Header";
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import ButtonBack from "./ButtonBack";
 import AboutEBA from "./AboutEBA";
@@ -30,9 +30,9 @@ const findCitySteps = [
 function EscolaBikeAnjo(): ReactNode {
   return (
     <>
-      <Hero secondary>
+      <Header secondary>
         <h2>Escola Bike Anjo (EBA)</h2>
-      </Hero>
+      </Header>
       <div>
         <ButtonBack />
         <AboutEBA />

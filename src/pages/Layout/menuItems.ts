@@ -11,7 +11,7 @@ export const menuItems: MenuItem[] = [
           { title: "Dicas para Bike Anjo", url: "/dicas-bike-anjo" },
         ],
       },
-      { title: "Ajude como instituição", url: "" },
+      { title: "Ajude como instituição", url: "/ajude-como-instituicao" },
     ],
   },
   {
