@@ -4,10 +4,11 @@ import styled from "styled-components";
 interface SubTitleProps {
   desktopOnly?: boolean;
   mobileCenter?: boolean;
+  center?: boolean;
 }
 
 const SubTitle = styled(Typography)<SubTitleProps>(
-  ({ theme, desktopOnly, mobileCenter = false }) => ({
+  ({ theme, desktopOnly, mobileCenter = false, center = false }) => ({
     fontWeight: 600,
     wordBreak: "break-word",
     color: "black",
@@ -19,16 +20,16 @@ const SubTitle = styled(Typography)<SubTitleProps>(
       width: "100%",
       padding: "0px 16px",
       display: desktopOnly && desktopOnly != undefined ? "none" : "flex",
-      textAlign: mobileCenter ? "center" : "initial",
+      textAlign: mobileCenter || center ? "center" : "initial",
     },
 
     [theme.breakpoints.up("lg")]: {
       fontSize: "32px",
       alignItems: "flex-start",
-      width: "fit-content",
+      width: center ? "center" : "fit-content",
       padding: "0px",
       display: desktopOnly || desktopOnly == undefined ? "flex" : "none",
-      textAlign: "initial",
+      textAlign: center ? "center" : "initial",
     },
   }),
 );
