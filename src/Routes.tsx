@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
 import Doacao from "./pages/Doacao";
 import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
+import HowItWorks from "./pages/HowItWorks";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             path="/dia-mundial-sem-carro"
             element={<DiaMundialSemCarro />}
           />
+          <Route path="/como-funciona" element={<HowItWorks />} />
         </Route>
       </Routes>
     </>
