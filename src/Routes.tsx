@@ -11,6 +11,7 @@ import PedalaOuRepassa from "./pages/PedalaOuRepassa";
 import { useEffect } from "react";
 import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
 import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
+import BikeAnjas from "./pages/BikeAnjas";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             path="/dia-mundial-sem-carro"
             element={<DiaMundialSemCarro />}
           />
+          <Route path="/bike-anjas" element={<BikeAnjas />} />
         </Route>
       </Routes>
     </>
