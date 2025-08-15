@@ -5,7 +5,7 @@ export const menuItems: MenuItem[] = [
       {
         title: "Como Pessoa",
         children: [
-          { title: "Doe", url: "" },
+          { title: "Doe", url: "/doacao" },
           { title: "Seja Voluntário", url: "" },
           { title: "Faça nossa preparação", url: "" },
           { title: "Dicas para Bike Anjo", url: "/dicas-bike-anjo" },

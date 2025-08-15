@@ -1,7 +1,11 @@
 import { Button as MuiButton } from "@mui/material";
 import styled from "styled-components";
 
-const Button = styled(MuiButton)(({ theme }) => ({
+interface ButtonProps {
+  center?: boolean;
+}
+
+const Button = styled(MuiButton)<ButtonProps>(({ theme, center = false }) => ({
   backgroundColor: "black",
   width: "fit-content",
   color: "white",
@@ -17,7 +21,7 @@ const Button = styled(MuiButton)(({ theme }) => ({
 
   [theme.breakpoints.up("lg")]: {
     padding: "16px 40px 16px 40px",
-    margin: 0,
+    margin: center ? "auto" : 0,
   },
 }));
 
