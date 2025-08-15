@@ -25,6 +25,7 @@ const Container = styled.div<ContainerProps>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: ${({ theme, secondary }) =>
     secondary ? theme.palette.secondary.main : "transparent"};
   gap: ${({ gap }) => gap || "unset"};

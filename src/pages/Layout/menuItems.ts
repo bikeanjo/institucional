@@ -17,7 +17,7 @@ export const menuItems: MenuItem[] = [
   {
     title: "Receba Ajuda",
     children: [
-      { title: "Como Nós Ajudamos", url: "" },
+      { title: "Como Nós Ajudamos", url: "/como-nos-ajudamos" },
       { title: "Dicas para Pedalar", url: "/dicas-para-pedalar" },
     ],
   },
@@ -28,7 +28,7 @@ export const menuItems: MenuItem[] = [
         title: "Projetos",
         children: [
           { title: "Escola Bike Anjo", url: "/escola-bike-anjo" },
-          { title: "Bike Anjas", url: "" },
+          { title: "Bike Anjas", url: "/bike-anjas" },
           { title: "Pedala ou Repassa", url: "/pedala-ou-repassa" },
           { title: "De Bike para o Trabalho", url: "" },
         ],
@@ -36,7 +36,7 @@ export const menuItems: MenuItem[] = [
       {
         title: "Campanhas",
         children: [
-          { title: "Dia Mundial Sem Carro", url: "" },
+          { title: "Dia Mundial Sem Carro", url: "/dia-mundial-sem-carro" },
           { title: "Bicicleta nos Planos", url: "" },
         ],
       },
@@ -47,7 +47,7 @@ export const menuItems: MenuItem[] = [
   {
     title: "Sobre Nós",
     children: [
-      { title: "Como funciona", url: "" },
+      { title: "Como funciona", url: "/como-funciona" },
       { title: "Quem somos", url: "" },
       { title: "Redes Sociais", url: "/social-media" },
       { title: "Bike Anjo na Mídia", url: "" },

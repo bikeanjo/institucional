@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
@@ -11,8 +11,64 @@ import bikeNaPeriferia from "../../../../assets/images/bike-na-periferia.png";
 import deBikeAoTrabalho from "../../../../assets/images/de-bike-ao-trabalho.png";
 import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
+import "material-icons/iconfont/material-icons.css";
+import { Carrousel, Controls } from "./style";
 
 function ProjectThatMoveUs(): ReactNode {
+  const carrousel = useRef<HTMLDivElement | null>(null);
+  const cardsInfo: {
+    imageUrl: string;
+    title: string;
+    subtitle: string;
+  }[] = [
+    {
+      imageUrl: EBA,
+      title: "Escola Bike Anjo",
+      subtitle: "Aulas e oficinas para iniciantes",
+    },
+    {
+      imageUrl: bikeAnjas,
+      title: "Bike Anjas",
+      subtitle: "Apoio entre mulheres ciclistas",
+    },
+    {
+      imageUrl: bikeAnje,
+      title: "Bike Anje",
+      subtitle: "Espaço seguro para pessoas LGBTQIAPN+",
+    },
+    {
+      imageUrl: bikeNaEscola,
+      title: "Bike na Escola",
+      subtitle: "Educação sobre bike nas escolas",
+    },
+    {
+      imageUrl: bikeNaPeriferia,
+      title: "Bike na Periferia",
+      subtitle: "Ações em territórios periféricos",
+    },
+    {
+      imageUrl: deBikeAoTrabalho,
+      title: "De Bike ao Trabalho",
+      subtitle: "Mobilidade no trajeto casa ao trabalho",
+    },
+  ];
+
+  const gap = 40;
+  const cardWidth = 285.267;
+  const itensPerView = 3;
+
+  const turnLeft = () => {
+    if (carrousel.current) {
+      carrousel.current.scrollLeft -= (cardWidth + gap) * itensPerView;
+    }
+  };
+
+  const turnRight = () => {
+    if (carrousel.current) {
+      carrousel.current.scrollLeft += (cardWidth + gap) * itensPerView;
+    }
+  };
+
   return (
     <Container gap="32px">
       <Box
@@ -29,9 +85,8 @@ function ProjectThatMoveUs(): ReactNode {
           trabalho. Além de ensinar a pedalar, atuamos em diversas frentes.
         </SubTitle>
       </Box>
-      <Box
-        display="flex"
-        overflow="hidden"
+      <Carrousel
+        ref={carrousel}
         sx={{
           gap: { xs: 2, lg: 5 },
           marginTop: "8px",
@@ -39,187 +94,48 @@ function ProjectThatMoveUs(): ReactNode {
           paddingInline: { xs: "32px" },
         }}
       >
-        <ProjectBox>
-          <img src={EBA} alt="Logo Escola Bike Anjo" />
-          <ProjectInfo>
-            <Typography
-              fontWeight={700}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-            >
-              Escola Bike Anjo
-            </Typography>
-            <Typography
-              fontWeight={500}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-              align="center"
-            >
-              Aulas e oficinas para iniciantes
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                color: "var(--mui-palette-title-main)",
-              }}
-            >
-              <Typography fontWeight={700} fontSize={18.6}>
-                Conheça
+        {cardsInfo.map((card) => (
+          <ProjectBox key={card.title}>
+            <img src={card.imageUrl} alt={"Logo " + card.title} />
+            <ProjectInfo>
+              <Typography
+                fontWeight={700}
+                fontSize={18.6}
+                color="var(--mui-palette-neutral-800)"
+              >
+                {card.title}
               </Typography>
-            </Button>
-          </ProjectInfo>
-        </ProjectBox>
-        <ProjectBox>
-          <img src={bikeAnjas} alt="Logo Bike Anjas" />
-          <ProjectInfo>
-            <Typography
-              fontWeight={700}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-            >
-              Bike Anjas
-            </Typography>
-            <Typography
-              fontWeight={500}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-              align="center"
-            >
-              Apoio entre mulheres ciclistas
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                color: "var(--mui-palette-title-main)",
-              }}
-            >
-              <Typography fontWeight={700} fontSize={18.6}>
-                Conheça
+              <Typography
+                fontWeight={500}
+                fontSize={18.6}
+                color="var(--mui-palette-neutral-800)"
+                align="center"
+              >
+                {card.subtitle}
               </Typography>
-            </Button>
-          </ProjectInfo>
-        </ProjectBox>
-        <ProjectBox>
-          <img src={bikeAnje} alt="Logo Bike Anje" />
-          <ProjectInfo>
-            <Typography
-              fontWeight={700}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-            >
-              Bike Anje
-            </Typography>
-            <Typography
-              fontWeight={500}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-              align="center"
-            >
-              Espaço seguro para pessoas LGBTQIAPN+
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                color: "var(--mui-palette-title-main)",
-              }}
-            >
-              <Typography fontWeight={700} fontSize={18.6}>
-                Conheça
-              </Typography>
-            </Button>
-          </ProjectInfo>
-        </ProjectBox>
-        <ProjectBox>
-          <img src={bikeNaEscola} alt="Logo Bike na Escola" />
-          <ProjectInfo>
-            <Typography
-              fontWeight={700}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-            >
-              Bike na Escola
-            </Typography>
-            <Typography
-              fontWeight={500}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-              align="center"
-            >
-              Educação sobre bike nas escolas
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                color: "var(--mui-palette-title-main)",
-              }}
-            >
-              <Typography fontWeight={700} fontSize={18.6}>
-                Conheça
-              </Typography>
-            </Button>
-          </ProjectInfo>
-        </ProjectBox>
-        <ProjectBox>
-          <img src={bikeNaPeriferia} alt="Logo Bike na Periferia" />
-          <ProjectInfo>
-            <Typography
-              fontWeight={700}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-            >
-              Bike na Periferia
-            </Typography>
-            <Typography
-              fontWeight={500}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-              align="center"
-            >
-              Ações em territórios periféricos
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                color: "var(--mui-palette-title-main)",
-              }}
-            >
-              <Typography fontWeight={700} fontSize={18.6}>
-                Conheça
-              </Typography>
-            </Button>
-          </ProjectInfo>
-        </ProjectBox>
-        <ProjectBox>
-          <img src={deBikeAoTrabalho} alt="Logo De Bike ao Trabalho" />
-          <ProjectInfo>
-            <Typography
-              fontWeight={700}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-            >
-              De Bike ao Trabalho
-            </Typography>
-            <Typography
-              fontWeight={500}
-              fontSize={18.6}
-              color="var(--mui-palette-neutral-800)"
-              align="center"
-            >
-              Mobilidade no trajeto casa ao trabalho
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "transparent",
-                color: "var(--mui-palette-title-main)",
-              }}
-            >
-              <Typography fontWeight={700} fontSize={18.6}>
-                Conheça
-              </Typography>
-            </Button>
-          </ProjectInfo>
-        </ProjectBox>
-      </Box>
+              <Button
+                sx={{
+                  backgroundColor: "transparent",
+                  color: "var(--mui-palette-title-main)",
+                }}
+              >
+                <Typography fontWeight={700} fontSize={18.6}>
+                  Conheça
+                </Typography>
+              </Button>
+            </ProjectInfo>
+          </ProjectBox>
+        ))}
+      </Carrousel>
+      <Controls>
+        <span className="material-icons left" onClick={turnLeft}>
+          arrow_back_ios_new
+        </span>
+        <span className="material-icons right" onClick={turnRight}>
+          arrow_forward_ios
+        </span>
+      </Controls>
+
       <Button
         sx={{
           backgroundColor: "var(--mui-palette-neutral-700)",
