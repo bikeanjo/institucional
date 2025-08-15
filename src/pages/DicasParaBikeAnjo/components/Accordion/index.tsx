@@ -90,6 +90,7 @@ export function QuestionAccordion({
             margin: 0,
             fontSize: "16px",
             fontWeight: 600,
+            whiteSpace: "pre-line",
           }}
         >
           {content}

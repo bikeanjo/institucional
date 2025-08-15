@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
 import Doacao from "./pages/Doacao";
 import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
+import BikeAnjas from "./pages/BikeAnjas";
 import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
 
@@ -38,6 +39,7 @@ function App() {
             path="/dia-mundial-sem-carro"
             element={<DiaMundialSemCarro />}
           />
+          <Route path="/bike-anjas" element={<BikeAnjas />} />
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
         </Route>
