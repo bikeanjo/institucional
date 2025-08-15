@@ -13,6 +13,7 @@ import AjudeComoInstituicao from "./pages/AjudeComoInstituicao";
 import Doacao from "./pages/Doacao";
 import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
 import HowWeHelp from "./pages/ComoNósAjudamos";
+import HowItWorks from "./pages/HowItWorks";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             element={<DiaMundialSemCarro />}
           />
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
+          <Route path="/como-funciona" element={<HowItWorks />} />
         </Route>
       </Routes>
     </>
