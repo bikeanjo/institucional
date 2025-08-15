@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import { ProjectCards } from "./components/ProjectCards";
 import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
+import Button from "../Components/Button";
 
 const Iniciativas: React.FC = () => {
   return (
@@ -43,6 +44,26 @@ const Iniciativas: React.FC = () => {
             </p>
           </Text>
           <Events />
+        </Box>
+        <Box paddingY={{ xs: "16px", md: "40px" }}>
+          <Subtitle>
+            <h2>Veja nossa playlist de dicas!</h2>
+          </Subtitle>
+          <Text>
+            <p>
+              Seja você iniciante ou já com alguma experiência, nossa playlist
+              de vídeos tem dicas práticas pra tornar sua pedalada mais segura,
+              leve e divertida. Aqui a gente compartilha o que aprendeu na rua,
+              com carinho e sem complicação, do jeitinho Bike Anjo.
+            </p>
+          </Text>
+          <Box
+            display={"flex"}
+            alignItems={{ xs: "center", md: "left" }}
+            justifyContent={{ xs: "center", md: "left" }}
+          >
+            <Button>Acessar a Playlist</Button>
+          </Box>
         </Box>
       </Box>
     </>
