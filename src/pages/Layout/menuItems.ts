@@ -41,7 +41,7 @@ export const menuItems: MenuItem[] = [
         ],
       },
       { title: "Anjos na Sua Cidade", url: "" },
-      { title: "Veja todas as iniciativas", url: "" },
+      { title: "Veja todas as iniciativas", url: "/iniciativas" },
     ],
   },
   {

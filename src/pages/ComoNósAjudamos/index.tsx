@@ -6,6 +6,7 @@ import Text from "../Components/Text";
 import SubTitle from "../Components/SubTitle";
 import Button from "../Components/Button";
 import { BoxDescription, BoxTitle, PrimaryButton } from "./styles";
+import { Link } from "react-router-dom";
 
 const supports = [
   {
@@ -89,7 +90,9 @@ function HowWeHelp(): ReactNode {
           ))}
         </Box>
 
-        <PrimaryButton>Cadastre-se e seja Bike Anjo</PrimaryButton>
+        <Link to="">
+          <PrimaryButton>Cadastre-se e seja Bike Anjo</PrimaryButton>
+        </Link>
       </Box>
       <FollowLocalArticulations
         title="Conecte-se com uma articulação local"
@@ -124,7 +127,9 @@ function HowWeHelp(): ReactNode {
             margin: { xs: "32px auto 40px auto", lg: "32px auto 80px auto" },
           }}
         >
-          <Button center>Acesse a Playlist</Button>
+          <Link to="">
+            <Button center>Acesse a Playlist</Button>
+          </Link>
         </Box>
       </Box>
     </>

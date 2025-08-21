@@ -13,6 +13,7 @@ export function CampaignCards() {
         " O tradicional Dia Mundial Sem Carro ocorre sempre no dia 22 de setembro e mobiliza pessoas do mundo todo para desestimular o uso do carro e optar por se deslocar de forma mais sustentável. A Bike Anjo não poderia ficar de fora dessa e tem mobilizado sua rede para fazer ações em comum",
       textMobile: "Resumo até 110 caracteres",
       button: "Conhecer",
+      link: "/dia-mundial-sem-carro",
     },
     {
       id: "Card2",
@@ -20,7 +21,6 @@ export function CampaignCards() {
       textDesktop:
         "O tradicional Dia Mundial Sem Carro ocorre sempre no dia 22 de setembro e mobiliza pessoas do mundo todo para desestimular o uso do carro e optar por se deslocar de forma mais sustentável. A Bike Anjo não poderia ficar de fora dessa e tem mobilizado sua rede para fazer ações em comum",
       textMobile: "Resumo até 110 caracteres",
-      button: "Conhecer",
     },
     {
       id: "Card3",
@@ -28,7 +28,6 @@ export function CampaignCards() {
       textDesktop:
         "A Bike Anjo iniciou em 2015 um processo para pensarmos em conteúdos e ações direcionadas a “não ciclistas” pensando em mobilizar um público que não necessariamente usa a bicicleta cotidianamente, mas tem uma influência enorme sobre o conforto e motivação dos ciclistas nas ruas. São estes: motoristas comuns ou profissionais (de táxi, ônibus, vans e caminhões) e motociclistas. Neste início de campanha, compilamos uma série de materiais sobre como você pode engajar e sensibilizar este público. Confira AQUI.",
       textMobile: "Resumo até 110 caracteres",
-      button: "Conhecer",
     },
   ];
 
@@ -42,6 +41,7 @@ export function CampaignCards() {
             textDesktop={card.textDesktop}
             textMobile={card.textMobile}
             button={card.button}
+            link={card.link}
           />
         ))}
       </ContainerCards>

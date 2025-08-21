@@ -13,6 +13,7 @@ import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls } from "./style";
+import { Link } from "react-router-dom";
 
 function ProjectThatMoveUs(): ReactNode {
   const carrousel = useRef<HTMLDivElement | null>(null);
@@ -20,36 +21,43 @@ function ProjectThatMoveUs(): ReactNode {
     imageUrl: string;
     title: string;
     subtitle: string;
+    link: string;
   }[] = [
     {
       imageUrl: EBA,
       title: "Escola Bike Anjo",
       subtitle: "Aulas e oficinas para iniciantes",
+      link: "/escola-bike-anjo",
     },
     {
       imageUrl: bikeAnjas,
       title: "Bike Anjas",
       subtitle: "Apoio entre mulheres ciclistas",
+      link: "/bike-anjas",
     },
     {
       imageUrl: bikeAnje,
       title: "Bike Anje",
       subtitle: "Espaço seguro para pessoas LGBTQIAPN+",
+      link: "",
     },
     {
       imageUrl: bikeNaEscola,
       title: "Bike na Escola",
       subtitle: "Educação sobre bike nas escolas",
+      link: "",
     },
     {
       imageUrl: bikeNaPeriferia,
       title: "Bike na Periferia",
       subtitle: "Ações em territórios periféricos",
+      link: "",
     },
     {
       imageUrl: deBikeAoTrabalho,
       title: "De Bike ao Trabalho",
       subtitle: "Mobilidade no trajeto casa ao trabalho",
+      link: "",
     },
   ];
 
@@ -114,6 +122,8 @@ function ProjectThatMoveUs(): ReactNode {
                 {card.subtitle}
               </Typography>
               <Button
+                component={Link}
+                to={card.link}
                 sx={{
                   backgroundColor: "transparent",
                   color: "var(--mui-palette-title-main)",
@@ -137,6 +147,8 @@ function ProjectThatMoveUs(): ReactNode {
       </Controls>
 
       <Button
+        component={Link}
+        to="/iniciativas"
         sx={{
           backgroundColor: "var(--mui-palette-neutral-700)",
           color: "var(--mui-palette-neutral-100)",

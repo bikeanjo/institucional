@@ -5,6 +5,7 @@ import SubTitle from "../Components/SubTitle";
 import Text from "../Components/Text";
 import Partners from "../Components/Partners";
 import Button from "../Components/Button";
+import { Link } from "react-router-dom";
 
 const AjudeComoInstituicao = () => {
   return (
@@ -64,7 +65,9 @@ const AjudeComoInstituicao = () => {
             mais justas. O patrocínio torna possível ensinar pessoas a pedalar,
             realizar eventos gratuitos e expandir nossas ações em todo o país.
           </Text>
-          <Button>Entre em contato</Button>
+          <Link to="/contato">
+            <Button>Entre em contato</Button>
+          </Link>
 
           <Box
             sx={{
@@ -104,7 +107,9 @@ const AjudeComoInstituicao = () => {
                 }}
               >
                 <SubTitle mobileCenter>Faça da Bike Anjo sua pauta!</SubTitle>
-                <Button>Entre em contato</Button>
+                <Link to="/contato">
+                  <Button>Entre em contato</Button>
+                </Link>
               </Box>
               <Box
                 sx={{
@@ -118,7 +123,9 @@ const AjudeComoInstituicao = () => {
                 <SubTitle mobileCenter>
                   Matérias que mostram o impacto da nossa rede
                 </SubTitle>
-                <Button>Acessar matérias</Button>
+                <Link to="">
+                  <Button>Acessar matérias</Button>
+                </Link>
               </Box>
             </Box>
           </Box>

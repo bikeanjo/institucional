@@ -6,6 +6,7 @@ import Container from "../../components/Container";
 import RightArrow from "../../../../assets/images/arrow-right.png";
 import LeftArrow from "../../../../assets/images/arrow-left.png";
 import StepsCarousel from "../../../../assets/images/steps-carousel.png";
+import { Link } from "react-router-dom";
 
 function Carousel(): ReactNode {
   return (
@@ -79,6 +80,8 @@ function Carousel(): ReactNode {
         }}
       >
         <Button
+          component={Link}
+          to="/dicas-para-pedalar"
           sx={{
             backgroundColor: "var(--mui-palette-neutral-700)",
             color: "var(--mui-palette-neutral-100)",
@@ -96,11 +99,13 @@ function Carousel(): ReactNode {
           <Typography>Aprender a pedalar</Typography>
         </Button>
         <Button
+          component={Link}
+          to="/dicas-bike-anjo"
           sx={{
             backgroundColor: "var(--mui-palette-neutral-100)",
             color: "var(--mui-palette-neutral-900)",
-            padding: "12px 24px",
-            height: { xs: 40, xl: 56 },
+            padding: "16px 24px",
+            height: { xs: 40, lg: 56 },
             width: { xs: "100%", sm: 185, lg: 185 },
             borderRadius: { xs: "4px", lg: "8px" },
             textTransform: "none",

@@ -83,10 +83,34 @@ const Footer: React.FC = () => {
             gridArea="rede"
             justifyContent={{ xs: "end", lg: "start" }}
           >
-            <SocialIcon icon={faInstagram} url="" />
-            <SocialIcon icon={faFacebookF} url="" />
-            <SocialIcon icon={faYoutube} url="" />
-            <SocialIcon icon={faLinkedinIn} url="" />
+            <a
+              href="https://instagram.com/bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faInstagram} />
+            </a>
+            <a
+              href="https://facebook.com/bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faFacebookF} />
+            </a>
+            <a
+              href="https://youtube.com/@bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faYoutube} />
+            </a>
+            <a
+              href="https://linkedin.com/company/bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faLinkedinIn} />
+            </a>
           </Box>
         </Box>
         <Box

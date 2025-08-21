@@ -7,6 +7,7 @@ import { ProjectCards } from "./components/ProjectCards";
 import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
 import Button from "../Components/Button";
+import { Link } from "react-router-dom";
 
 const Iniciativas: React.FC = () => {
   return (
@@ -62,7 +63,9 @@ const Iniciativas: React.FC = () => {
             alignItems={{ xs: "center", md: "left" }}
             justifyContent={{ xs: "center", md: "left" }}
           >
-            <Button>Acessar a Playlist</Button>
+            <Link to="">
+              <Button>Acessar a Playlist</Button>
+            </Link>
           </Box>
         </Box>
       </Box>
