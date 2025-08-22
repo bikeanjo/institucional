@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 40px 202px;
-  max-width: 1248px;
+  margin: 40px auto;
   position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 export const Title = styled.h2`

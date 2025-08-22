@@ -1,5 +1,8 @@
+import { Box } from "@mui/material";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
 import { QuestionAccordion } from "../Accordion";
-import { AccordionWrapper, Sub, Title, Wrapper } from "./styles";
+import { AccordionWrapper } from "./styles";
 
 const accordionItems = [
   {
@@ -46,13 +49,23 @@ const accordionItems = [
 
 export default function RideWithVoice() {
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title>Pedale com voz!</Title>
-      <Sub>
+      <SubTitle>
         Pedalar é incrível, mas também é um ato de cidadania. Veja o que fazer
         em situações comuns no trânsito e como cobrar melhorias para uma cidade
         mais segura e justa pra todo mundo.
-      </Sub>
+      </SubTitle>
       <AccordionWrapper>
         {accordionItems.map((item) => (
           <QuestionAccordion
@@ -62,6 +75,6 @@ export default function RideWithVoice() {
           />
         ))}
       </AccordionWrapper>
-    </Wrapper>
+    </Box>
   );
 }

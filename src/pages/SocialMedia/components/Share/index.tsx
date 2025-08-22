@@ -1,4 +1,3 @@
-import { Sub, Title, Wrapper } from "./styles";
 import { Box, Stack } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import SendIcon from "@mui/icons-material/Send";
@@ -9,6 +8,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkIcon from "@mui/icons-material/Link";
+import Title from "../../../Components/Title";
+import SubTitle from "../../../Components/SubTitle";
 
 interface ShareProps {
   title: string;
@@ -28,9 +29,19 @@ const iconStyle = {
 
 export default function Share({ title, sub }: ShareProps) {
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
       <Stack direction="row" spacing={2} justifyContent="center">
         <a
           href="https://wa.me/seunumero"
@@ -114,6 +125,6 @@ export default function Share({ title, sub }: ShareProps) {
           </Box>
         </a>
       </Stack>
-    </Wrapper>
+    </Box>
   );
 }

@@ -5,6 +5,7 @@ import CarouselTeachingCards from "./components/CarouselTeachingCards";
 import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
+import { Box } from "@mui/material";
 
 const teachingSteps = [
   {
@@ -57,7 +58,8 @@ function CyclingTips(): ReactNode {
       <Header secondary>
         <h2>Dicas para Bike Anjo</h2>
       </Header>
-      <div>
+
+      <Box padding="20px">
         <CarouselTeachingCards
           title="Como ensinar alguém a pedalar"
           sub="Abaixo seguem algumas dicas praticas para você lembrar do que fazer durante as oficinas, mas é importante que o Bike Anjo passe pela CUBA para se capacitar como pessoa voluntária"
@@ -70,7 +72,7 @@ function CyclingTips(): ReactNode {
         <RideWithVoice />
         <SupportLinksSection />
         <SocialContent />
-      </div>
+      </Box>
     </>
   );
 }

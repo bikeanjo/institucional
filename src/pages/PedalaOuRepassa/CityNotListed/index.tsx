@@ -1,5 +1,8 @@
+import { Box } from "@mui/material";
+import SubTitle from "../../Components/SubTitle";
+import Title from "../../Components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
-import { StepItem, StepsContainer, Sub, Title, Wrapper } from "./styles";
+import { StepItem, StepsContainer } from "./styles";
 
 interface Step {
   number: number;
@@ -19,9 +22,19 @@ export default function CityNotListed({
   steps,
 }: CarouselStepsProps) {
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
 
       <StepsContainer>
         {steps.map((step) => (
@@ -35,6 +48,6 @@ export default function CityNotListed({
           </StepItem>
         ))}
       </StepsContainer>
-    </Wrapper>
+    </Box>
   );
 }

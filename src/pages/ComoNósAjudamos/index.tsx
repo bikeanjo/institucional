@@ -69,7 +69,8 @@ function HowWeHelp(): ReactNode {
                 backgroundColor: "#d9d9d9",
                 padding: "32px",
                 borderRadius: "16px",
-                height: "325px",
+                height: "fit-content",
+                minHeight: "100%",
                 display: "flex",
                 flexDirection: "column",
               }}

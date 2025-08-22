@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 40px 96px;
-  max-width: 1248px;
+  margin: 40px auto;
   position: relative;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 export const Description = styled.p`

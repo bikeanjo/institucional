@@ -2,7 +2,10 @@ import { useRef } from "react";
 import { StepCard } from "../Card";
 import ArrowBack from "../../../../assets/images/arrow-back.png";
 import ArrowForward from "../../../../assets/images/arrow-forward.png";
-import { Arrow, Cards, CarouselContainer, Sub, Title, Wrapper } from "./styles";
+import { Arrow, Cards, CarouselContainer } from "./styles";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
+import { Box } from "@mui/material";
 
 interface Step {
   number: number;
@@ -35,9 +38,19 @@ export default function CarouselTipCards({
   };
 
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
@@ -59,6 +72,6 @@ export default function CarouselTipCards({
           <img src={ArrowForward} alt="Seta para a direita" />
         </Arrow>
       </CarouselContainer>
-    </Wrapper>
+    </Box>
   );
 }

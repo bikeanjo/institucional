@@ -1,6 +1,9 @@
 import type { ReactNode } from "react";
-import { AccordionWrapper, Sub, Title, Wrapper } from "./styles";
+import { AccordionWrapper } from "./styles";
 import { QuestionAccordion } from "../../../DicasParaBikeAnjo/components/Accordion";
+import Title from "../../components/Title";
+import SubTitle from "../../../Components/SubTitle";
+import { Box } from "@mui/material";
 
 const accordionItems = [
   {
@@ -62,12 +65,22 @@ const accordionItems = [
 
 function FAQ(): ReactNode {
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title>Dúvidas Frequentes (FAQ)</Title>
-      <Sub>
+      <SubTitle>
         Abaixos respondemos algumas das principais duvidas sobre a Bike Anjo, e
         você sempre pode entrar em contato conosco caso precise! :)
-      </Sub>
+      </SubTitle>
       <AccordionWrapper>
         {accordionItems.map((item) => (
           <QuestionAccordion
@@ -77,7 +90,7 @@ function FAQ(): ReactNode {
           />
         ))}
       </AccordionWrapper>
-    </Wrapper>
+    </Box>
   );
 }
 

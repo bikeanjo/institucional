@@ -9,10 +9,10 @@ import {
   Tag,
   TagsWrapper,
   Title,
-  Wrapper,
 } from "./styles";
 import { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import { Box } from "@mui/material";
 
 const mockCities = [
   {
@@ -143,7 +143,17 @@ export default function FindLocalArticulation() {
   };
 
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title>Encontre uma Articulação Local</Title>
       <TagsWrapper>
         {regions.map((region) => (
@@ -241,6 +251,6 @@ export default function FindLocalArticulation() {
           );
         })}
       </CityList>
-    </Wrapper>
+    </Box>
   );
 }
