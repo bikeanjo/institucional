@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import Header from "../Components/Header";
 import LearningCarousel from "./components/LearningCarousel";
-import { Sub } from "./components/LearningCarousel/styles";
-import { Wrapper } from "../EscolaBikeAnjo/AboutEBA/styles";
+import SubTitle from "../Components/SubTitle";
+import { Box } from "@mui/material";
 
 const learnSteps = [
   {
@@ -52,16 +52,26 @@ function HowItWorks(): ReactNode {
       <Header secondary>
         <h2>Como Funciona</h2>
       </Header>
-      <Wrapper>
-        <Sub>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: { xs: "100%", lg: "1032px" },
+          margin: "40px auto",
+          position: "relative",
+          marginTop: { xs: "40px", lg: "80px" },
+          gap: { xs: "32px", lg: "20px" },
+        }}
+      >
+        <SubTitle>
           Através do nosso site conectamos quem quer aprender a pedalar com quem
           já pedala e quer ajudar. É simples, facil e o mais importante:
           gratuito. Escolha abaixo se você quer ensinar ou aprender e bora
           transformar a cidade juntos!
-        </Sub>
+        </SubTitle>
         <LearningCarousel title="Aprenda com a gente" steps={learnSteps} />
         <LearningCarousel title="Seja um Bike Anjo" steps={bikeAnjoSteps} />
-      </Wrapper>
+      </Box>
     </>
   );
 }

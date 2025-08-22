@@ -1,6 +1,9 @@
-import { MapImage, Sub, Title, Wrapper } from "./styles";
+import { MapImage } from "./styles";
 import articulationMap from "../../../../assets/images/articulation-map.png";
 import FindLocalArticulation from "./FindLocalArticulation";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
+import { Box } from "@mui/material";
 
 interface LocalArticulationsProps {
   title: string;
@@ -14,12 +17,22 @@ export default function FollowLocalArticulations({
   sub,
 }: LocalArticulationsProps) {
   return (
-    <Wrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: { xs: "100%", lg: "1032px" },
+        margin: "40px auto",
+        position: "relative",
+        marginTop: { xs: "40px", lg: "80px" },
+        gap: { xs: "32px", lg: "20px" },
+      }}
+    >
       <Title align={titleAlign}>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
       <MapImage src={articulationMap} alt="Local Articulations" />
 
       <FindLocalArticulation />
-    </Wrapper>
+    </Box>
   );
 }
