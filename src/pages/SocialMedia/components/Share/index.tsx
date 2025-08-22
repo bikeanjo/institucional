@@ -102,7 +102,7 @@ export default function Share({ title, sub }: ShareProps) {
           </Box>
         </a>
 
-        <a href="mailto:contato@seusite.com">
+        <a href="mailto:contato@bikeanjo.com">
           <Box sx={iconStyle}>
             <EmailIcon />
           </Box>
