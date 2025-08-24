@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Header from "../Components/Header";
-import ButtonBack from "./ButtonBack";
+import BackButton from "./ButtonBack";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
 
@@ -53,7 +53,7 @@ function PedalaOuRepassa(): ReactNode {
         <h2>Pedala ou Repassa</h2>
       </Header>
       <div>
-        <ButtonBack />
+        <BackButton />
         <AboutPedalaOuRepassa />
         <CityNotListed
           title="Como funciona??"

@@ -14,6 +14,7 @@ export function ProjectCards() {
       textMobile:
         "A Escola Bike Anjo é uma oficina de aprendizado para o mundo da bicicleta.",
       button: "Conhecer",
+      link: "/escola-bike-anjo",
     },
     {
       id: "Card2",
@@ -22,6 +23,7 @@ export function ProjectCards() {
         "Todo ano, no mês de maio, realizamos a campanha De Bike ao Trabalho inspirado no Bike To Work Day, evento anual realizado em vários cantos do mundo para promover a bicicleta como uma opção de transporte para o trabalho. No Brasil o evento é realizado pela Bike Anjo com a ajuda de muitos parceiros, sendo realizado sempre na segunda sexta-feira de Maio. Saiba mais sobre o De Bike ao Trabalho  e como se engajar aqui.",
       textMobile: "Resumo até 110 caracteres",
       button: "Conhecer",
+      link: "/bike-anjas",
     },
     {
       id: "Card3",
@@ -30,6 +32,7 @@ export function ProjectCards() {
         "Todo ano, no mês de maio, realizamos a campanha De Bike ao Trabalho inspirado no Bike To Work Day, evento anual realizado em vários cantos do mundo para promover a bicicleta como uma opção de transporte para o trabalho. No Brasil o evento é realizado pela Bike Anjo com a ajuda de muitos parceiros, sendo realizado sempre na segunda sexta-feira de Maio. Saiba mais sobre o De Bike ao Trabalho  e como se engajar aqui.",
       textMobile: "Resumo até 110 caracteres",
       button: "Conhecer",
+      link: "",
     },
     {
       id: "Card4",
@@ -38,6 +41,7 @@ export function ProjectCards() {
         "Pedala ou Repassa é um projeto contínuo que incentiva a doação de bicicletas que estão paradas para quem mais precisa. A ideia é simples: se você tem uma bike encostada, pode repassá-la para alguém que vai usá-la no dia a dia — seja para trabalhar, estudar ou se divertir. A rede de pessoas voluntárias da Bike Anjo realiza a triagem, pequenos reparos e encaminha a bicicleta para a nova pessoa. Saiba mais sobre o Pedala ou Repassa e como doar ou receber uma bicicleta aqui.",
       textMobile: "Resumo até 110 caracteres",
       button: "Conhecer",
+      link: "/pedala-ou-repassa",
     },
     {
       id: "Card5",
@@ -79,6 +83,7 @@ export function ProjectCards() {
             textDesktop={card.textDesktop}
             textMobile={card.textMobile}
             button={card.button}
+            link={card.link}
           />
         ))}
       </ContainerCards>

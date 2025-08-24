@@ -57,7 +57,7 @@ const UnavailablePage: React.FC = () => {
             underline="none"
             display={{ xs: "block", md: "inline" }}
           >
-            página incial?
+            página inicial?
           </Link>
         </Typography>
       </Box>

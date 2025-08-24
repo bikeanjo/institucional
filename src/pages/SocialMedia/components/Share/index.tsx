@@ -54,7 +54,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://t.me/seucanal"
+          href="https://t.me/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -64,7 +64,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://instagram.com/seuusuario"
+          href="https://instagram.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -74,7 +74,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://twitter.com/seuusuario"
+          href="https://x.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -84,7 +84,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://facebook.com/seupagina"
+          href="https://facebook.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -94,7 +94,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://youtube.com/@seucanal"
+          href="https://youtube.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -104,7 +104,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://linkedin.com/in/seuperfil"
+          href="https://linkedin.com/company/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -113,13 +113,17 @@ export default function Share({ title, sub }: ShareProps) {
           </Box>
         </a>
 
-        <a href="mailto:contato@seusite.com">
+        <a href="mailto:contato@bikeanjo.com">
           <Box sx={iconStyle}>
             <EmailIcon />
           </Box>
         </a>
 
-        <a href="https://seusite.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://bikeanjo.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Box sx={iconStyle}>
             <LinkIcon />
           </Box>

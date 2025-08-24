@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Header from "../Components/Header";
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
-import ButtonBack from "./ButtonBack";
+import BackButton from "./ButtonBack";
 import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
@@ -34,7 +34,7 @@ function EscolaBikeAnjo(): ReactNode {
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
       <div>
-        <ButtonBack />
+        <BackButton />
         <AboutEBA />
         <Map />
         <div style={{ margin: "16px 202px" }}>

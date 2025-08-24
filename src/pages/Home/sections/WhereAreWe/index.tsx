@@ -4,6 +4,7 @@ import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
 import map from "../../../../assets/images/map.png";
 import { Box, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function WhereAreWe(): ReactNode {
   return (
@@ -35,6 +36,8 @@ function WhereAreWe(): ReactNode {
         }}
       />
       <Button
+        component={Link}
+        to=""
         sx={{
           backgroundColor: "var(--mui-palette-neutral-700)",
           color: "var(--mui-palette-neutral-100)",

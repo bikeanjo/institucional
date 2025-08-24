@@ -13,6 +13,7 @@ import qrcode from "@assets/images/Doacao/QRCode.png";
 import apoiase from "@assets/images/Doacao/apoia-se.png";
 import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import { Link } from "react-router-dom";
 
 const Doacao = (): ReactNode => {
   return (
@@ -214,11 +215,14 @@ const Doacao = (): ReactNode => {
           sx={{
             display: "flex",
             flexDirection: "column",
+            alignItems: "center",
             width: { xs: "100%", lg: "1032px" },
             margin: { xs: "32px auto 40px auto", lg: "32px auto 80px auto" },
           }}
         >
-          <Button center>Veja nossas redes</Button>
+          <Link to="/social-media">
+            <Button>Veja nossas redes</Button>
+          </Link>
         </Box>
       </Box>
     </>

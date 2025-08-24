@@ -40,12 +40,22 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
           cursor: "pointer",
         }}
       >
-        <Box
-          onClick={handleOpenMenu}
-          sx={{ display: "flex", alignItems: "center", gap: "4px" }}
-        >
-          <Typography fontWeight={600}>{item.title}</Typography>
-          <span className="material-icons">keyboard_arrow_down</span>
+        <Box sx={{ display: "flex", alignItems: "center", gap: "4px" }}>
+          {item.url ? (
+            <Link to={item.url}>
+              <Typography fontWeight={600}>{item.title}</Typography>
+            </Link>
+          ) : (
+            <Box
+              onClick={handleOpenMenu}
+              sx={{ display: "flex", alignItems: "center", gap: "4px" }}
+            >
+              <Typography fontWeight={600}>{item.title}</Typography>
+              {item.children && item.children.length > 0 && (
+                <span className="material-icons">keyboard_arrow_down</span>
+              )}
+            </Box>
+          )}
         </Box>
 
         <Menu

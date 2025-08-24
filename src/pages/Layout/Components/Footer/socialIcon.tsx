@@ -5,7 +5,6 @@ import { Box } from "@mui/material";
 interface SocialIconProps {
   icon: IconDefinition;
   size?: number;
-  url: string;
 }
 
 export const SocialIcon = ({ icon, size = 20 }: SocialIconProps) => (

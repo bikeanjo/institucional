@@ -32,28 +32,32 @@ export default function FollowSocialMedia({ title, sub }: SocialMediaProps) {
           icon={<InstagramIcon sx={{ fontSize: 80, color: "#c3c3c3" }} />}
           title="Instagram"
           subtitle="Aqui você encontra a agenda de eventos, registros das atividades, campanhas, dicas de pedal."
-          onClick={() => window.open("https://instagram.com", "_blank")}
+          onClick={() =>
+            window.open("https://instagram.com/bikeanjo", "_blank")
+          }
         />
 
         <SocialCard
           icon={<FacebookIcon sx={{ fontSize: 80, color: "#c3c3c3" }} />}
           title="Facebook"
           subtitle="Acompanhe nossas ações, fotos, vídeos, eventos, notícias da rede e conteúdos que fortalecem quem já pedala e quem está começando agora. "
-          onClick={() => window.open("https://facebook.com", "_blank")}
+          onClick={() => window.open("https://facebook.com/bikeanjo", "_blank")}
         />
 
         <SocialCard
           icon={<LinkedInIcon sx={{ fontSize: 80, color: "#c3c3c3" }} />}
           title="LinkedIn"
           subtitle="Conecte-se à Bike Anjo no LinkedIn e acompanhe parcerias, eventos corporativos, cases de impacto e insights em mobilidade urbana. Inspirando quem já pedala e quem está começando!"
-          onClick={() => window.open("https://linkedin.com", "_blank")}
+          onClick={() =>
+            window.open("https://linkedin.com/company/bikeanjo", "_blank")
+          }
         />
 
         <SocialCard
           icon={<YouTubeIcon sx={{ fontSize: 80, color: "#c3c3c3" }} />}
           title="YouTube"
           subtitle="Quer aprender mais sobre mobilidade, segurança e dicas de pedal? No nosso canal você encontra vídeos educativos, tutoriais e histórias que inspiram e ensinam. Dá o play!"
-          onClick={() => window.open("https://youtube.com", "_blank")}
+          onClick={() => window.open("https://youtube.com/bikeanjo", "_blank")}
         />
       </Stack>
     </Box>

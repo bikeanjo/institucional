@@ -24,6 +24,7 @@ import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
+import { Link as ButtonLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
@@ -174,6 +175,8 @@ const Header: React.FC = () => {
         <Box display="flex" flexDirection={"row"} alignItems={"center"}>
           {/* Botão Doar */}
           <Button
+            component={ButtonLink}
+            to="/doacao"
             sx={{
               width: { xs: 72, xl: 130 },
               height: { xs: 25, xl: 43 },
