@@ -1,5 +1,5 @@
 import { QuestionAccordion } from "../../../DicasParaBikeAnjo/components/Accordion";
-import { Container, Accordion } from "./styles";
+import { Accordion } from "./styles";
 
 const accordionItems = [
   {
@@ -41,7 +41,7 @@ const accordionItems = [
 
 export default function FAC() {
   return (
-    <Container>
+    <>
       <Accordion>
         {accordionItems.map((item) => (
           <QuestionAccordion
@@ -51,6 +51,6 @@ export default function FAC() {
           />
         ))}
       </Accordion>
-    </Container>
+    </>
   );
 }

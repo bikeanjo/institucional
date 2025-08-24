@@ -5,7 +5,7 @@ interface ButtonProps {
   center?: boolean;
 }
 
-const Button = styled(MuiButton)<ButtonProps>(({ theme, center = false }) => ({
+const Button = styled(MuiButton)<ButtonProps>(({ theme }) => ({
   backgroundColor: "black",
   width: "fit-content",
   color: "white",
@@ -21,7 +21,6 @@ const Button = styled(MuiButton)<ButtonProps>(({ theme, center = false }) => ({
 
   [theme.breakpoints.up("lg")]: {
     padding: "16px 40px 16px 40px",
-    margin: center ? "auto" : 0,
   },
 }));
 

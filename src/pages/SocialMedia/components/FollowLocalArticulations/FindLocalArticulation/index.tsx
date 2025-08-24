@@ -12,7 +12,6 @@ import {
 } from "./styles";
 import { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import { Box } from "@mui/material";
 
 const mockCities = [
   {
@@ -143,17 +142,7 @@ export default function FindLocalArticulation() {
   };
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-      }}
-    >
+    <>
       <Title>Encontre uma Articulação Local</Title>
       <TagsWrapper>
         {regions.map((region) => (
@@ -170,7 +159,9 @@ export default function FindLocalArticulation() {
         type="text"
         placeholder="Digite o nome da cidade..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setSearch(e.target.value)
+        }
       />
 
       <CityList>
@@ -251,6 +242,6 @@ export default function FindLocalArticulation() {
           );
         })}
       </CityList>
-    </Box>
+    </>
   );
 }

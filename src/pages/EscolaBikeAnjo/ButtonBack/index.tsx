@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import { Container, StyledButton, StyledIcon } from "./styles";
 import { Link } from "react-router-dom";
 
-function BackButton(): ReactNode {
+function BackButton(): JSX.Element {
   return (
     <>
       <Container>

@@ -1,25 +1,10 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  margin: 40px auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
 export const Title = styled.h2`
   color: #000;
   font-size: 48px;
   font-weight: 600;
-  margin: 0;
-`;
-
-export const Sub = styled.p`
-  color: #000;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 80px 0 40px;
+  margin: auto;
 `;
 
 export const CarouselContainer = styled.div`
@@ -36,7 +21,10 @@ export const Cards = styled.div`
 
   .step-card {
     width: 100%;
-    max-width: 364px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
   }
 `;
 

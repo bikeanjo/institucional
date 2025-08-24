@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const ContainerCards = styled.section`
   display: flex;
   justify-content: flex-start;
-  padding: 24px 0;
   gap: 24px;
-  padding: 16px calc(14%);
   margin: 0 auto;
   scroll-behavior: smooth;
 
@@ -22,7 +20,6 @@ export const ContainerCards = styled.section`
 
   @media (max-width: 900px) {
     gap: 8px;
-    padding: 16px calc(50% - 140px);
   }
 `;
 

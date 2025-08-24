@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
@@ -8,7 +8,7 @@ import LeftArrow from "../../../../assets/images/arrow-left.png";
 import StepsCarousel from "../../../../assets/images/steps-carousel.png";
 import { Link } from "react-router-dom";
 
-function Carousel(): ReactNode {
+function Carousel(): JSX.Element {
   return (
     <Container secondary carrousel>
       <Box

@@ -1,10 +1,10 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Title from "../../components/Title";
 import { Grid, Typography } from "@mui/material";
 import GridItem from "./components/GridItem";
 import Container from "../../components/Container";
 
-function OurNumbers(): ReactNode {
+function OurNumbers(): JSX.Element {
   return (
     <Container gap="40px">
       <Title variant="h2">Nossos números</Title>

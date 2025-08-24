@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import SubTitle from "../../../Components/SubTitle";
 import Title from "../../../Components/Title";
 import { QuestionAccordion } from "../Accordion";
@@ -49,17 +48,7 @@ const accordionItems = [
 
 export default function RideWithVoice() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-      }}
-    >
+    <>
       <Title>Pedale com voz!</Title>
       <SubTitle>
         Pedalar é incrível, mas também é um ato de cidadania. Veja o que fazer
@@ -75,6 +64,6 @@ export default function RideWithVoice() {
           />
         ))}
       </AccordionWrapper>
-    </Box>
+    </>
   );
 }

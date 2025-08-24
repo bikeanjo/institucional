@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import SubTitle from "../../../Components/SubTitle";
 import Title from "../../../Components/Title";
 import { LinkItem, LinkList } from "./styles";
@@ -18,17 +17,7 @@ const links = [
 
 export default function SupportLinksSection() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-      }}
-    >
+    <>
       <Title>Links de Apoio</Title>
       <SubTitle>
         Abaixo alguns links que podem te ajudar na jornada como Bike Anjo
@@ -43,6 +32,6 @@ export default function SupportLinksSection() {
           </LinkItem>
         ))}
       </LinkList>
-    </Box>
+    </>
   );
 }

@@ -102,7 +102,9 @@ export function Form() {
           type="text"
           placeholder="Digite seu nome"
           value={formData.nome}
-          onChange={(e) => handleChange("nome", e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleChange("nome", e.target.value)
+          }
         />
         {errors.nome && <ErrorMessage>{errors.nome}</ErrorMessage>}
       </FieldWrapper>
@@ -114,7 +116,9 @@ export function Form() {
           type="email"
           placeholder="Digite seu email"
           value={formData.email}
-          onChange={(e) => handleChange("email", e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleChange("email", e.target.value)
+          }
         />
         {errors.email && <ErrorMessage>{errors.email}</ErrorMessage>}
       </FieldWrapper>
@@ -154,7 +158,9 @@ export function Form() {
         <Textarea
           id="mensagem"
           value={formData.mensagem}
-          onChange={(e) => handleChange("mensagem", e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleChange("mensagem", e.target.value)
+          }
         />
         {errors.mensagem && <ErrorMessage>{errors.mensagem}</ErrorMessage>}
       </FieldWrapper>

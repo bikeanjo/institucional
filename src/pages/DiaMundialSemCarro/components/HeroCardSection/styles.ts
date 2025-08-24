@@ -2,14 +2,8 @@ import styled from "styled-components";
 import { Button } from "@mui/material";
 
 export const Container = styled.section`
-  margin: 40px 192px;
-  max-width: 1440px;
   position: relative;
   justify-content: center;
-
-  @media (max-width: 900px) {
-    margin: 16px;
-  }
 `;
 
 export const HeroCard = styled.div`

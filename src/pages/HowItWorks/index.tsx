@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Header from "../Components/Header";
 import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "../Components/SubTitle";
-import { Box } from "@mui/material";
+import Container from "../Components/Container";
 
 const learnSteps = [
   {
@@ -46,23 +46,13 @@ const bikeAnjoSteps = [
   },
 ];
 
-function HowItWorks(): ReactNode {
+function HowItWorks(): JSX.Element {
   return (
     <>
       <Header secondary>
         <h2>Como Funciona</h2>
       </Header>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          width: { xs: "100%", lg: "1032px" },
-          margin: "40px auto",
-          position: "relative",
-          marginTop: { xs: "40px", lg: "80px" },
-          gap: { xs: "32px", lg: "20px" },
-        }}
-      >
+      <Container>
         <SubTitle>
           Através do nosso site conectamos quem quer aprender a pedalar com quem
           já pedala e quer ajudar. É simples, facil e o mais importante:
@@ -71,7 +61,7 @@ function HowItWorks(): ReactNode {
         </SubTitle>
         <LearningCarousel title="Aprenda com a gente" steps={learnSteps} />
         <LearningCarousel title="Seja um Bike Anjo" steps={bikeAnjoSteps} />
-      </Box>
+      </Container>
     </>
   );
 }

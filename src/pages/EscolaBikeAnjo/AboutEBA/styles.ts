@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  margin: 40px auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
 export const Description = styled.p`
   white-space: pre-line;
   color: #000;
@@ -22,10 +14,14 @@ export const EBAContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 24px 82px;
+  padding: 24px;
   border: 4px solid #d9d9d9;
   margin: 0 202px;
   border-radius: 16px;
+
+  img {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h2`

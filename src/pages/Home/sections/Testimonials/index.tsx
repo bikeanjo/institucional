@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
@@ -6,7 +6,7 @@ import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import julianaImage from "@assets/images/photoPlaceholder/juliana.jpg";
 import juliana2Image from "@assets/images/photoPlaceholder/jualiana2.png";
 
-function Testimonials(): ReactNode {
+function Testimonials(): JSX.Element {
   return (
     <Container secondary>
       <Title variant="h2">Depoimentos</Title>
