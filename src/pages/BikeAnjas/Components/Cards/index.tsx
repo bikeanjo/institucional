@@ -100,7 +100,7 @@ export function Cards() {
               textButton={card.textButton}
               secondary={card.secondary}
             >
-              {card.text}
+              <>{card.text}</>
             </MiniCard>
           ))}
         </ContainerCards>
