@@ -158,9 +158,9 @@ export function Form() {
         <Textarea
           id="mensagem"
           value={formData.mensagem}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleChange("mensagem", e.target.value)
-          }
+          onChange={(
+            e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+          ) => handleChange("mensagem", e.target.value)}
         />
         {errors.mensagem && <ErrorMessage>{errors.mensagem}</ErrorMessage>}
       </FieldWrapper>
