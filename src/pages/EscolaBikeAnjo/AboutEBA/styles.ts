@@ -16,7 +16,6 @@ export const EBAContainer = styled.div`
   gap: 24px;
   padding: 24px;
   border: 4px solid #d9d9d9;
-  margin: 0 202px;
   border-radius: 16px;
 
   img {

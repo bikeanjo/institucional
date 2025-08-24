@@ -20,14 +20,6 @@ export const Title = styled.h2<TitleProps>`
   text-align: ${({ align }) => align || "left"};
 `;
 
-export const Sub = styled.p`
-  color: #000;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 120%;
-  margin: 24px 0;
-`;
-
 export const MapImage = styled.img`
   width: 100%;
 `;

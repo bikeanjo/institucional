@@ -16,15 +16,6 @@ export const Title = styled.h2`
   text-align: center;
 `;
 
-export const Sub = styled.p`
-  white-space: pre-line;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 16px 0 40px;
-  text-align: center;
-`;
-
 export const StepsContainer = styled.div`
   margin: 40px auto;
   display: grid;

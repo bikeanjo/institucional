@@ -16,15 +16,6 @@ export const Title = styled.h2`
   margin: 0;
 `;
 
-export const Sub = styled.p`
-  color: #606060;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 130%;
-  margin: 16px 0 85px;
-  text-align: center;
-`;
-
 export const AccordionWrapper = styled.div`
   display: flex;
   flex-direction: column;
