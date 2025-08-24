@@ -25,4 +25,5 @@ export const PrimaryButton = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  margin: auto;
 `;

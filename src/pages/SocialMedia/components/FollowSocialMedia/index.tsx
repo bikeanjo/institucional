@@ -2,7 +2,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import { SocialCard } from "./SocialMediaCard";
 import Title from "../../../Components/Title";
 import SubTitle from "../../../Components/SubTitle";
@@ -14,17 +14,7 @@ interface SocialMediaProps {
 
 export default function FollowSocialMedia({ title, sub }: SocialMediaProps) {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-      }}
-    >
+    <>
       <Title>{title}</Title>
       <SubTitle>{sub}</SubTitle>
       <Stack spacing={3} sx={{ alignItems: "center", mx: "auto" }}>
@@ -60,6 +50,6 @@ export default function FollowSocialMedia({ title, sub }: SocialMediaProps) {
           onClick={() => window.open("https://youtube.com/bikeanjo", "_blank")}
         />
       </Stack>
-    </Box>
+    </>
   );
 }

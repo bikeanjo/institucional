@@ -4,7 +4,7 @@ import {
   Accordion as MuiAccordion,
   Typography,
 } from "@mui/material";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, type JSX } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
@@ -17,7 +17,7 @@ const Accordion = ({
 }: {
   title: string;
   gridItem: string;
-  children: ReactNode;
+  children: JSX.Element;
   contato: boolean;
 }) => {
   const theme = useTheme();

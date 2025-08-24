@@ -6,8 +6,8 @@ export const FormContainer = styled.form`
   background-color: #f8f8f8;
   padding: 12px 16px;
   border-radius: 16px;
-  max-width: 480px;
-  margin: 40px auto;
+  margin: auto;
+  width: 80%;
 `;
 
 export const FieldWrapper = styled.div`

@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
               key={idx + " menu-item"}
               contato={item.title === "Contato"}
             >
-              {Array.isArray(item.children) && item.children.length > 0 && (
+              {Array.isArray(item.children) && item.children.length > 0 ? (
                 <React.Fragment>
                   {item.children.map((subItem, subIdx) => (
                     <React.Fragment key={subIdx + " submenu-item"}>
@@ -171,6 +171,8 @@ const Footer: React.FC = () => {
                     </React.Fragment>
                   ))}
                 </React.Fragment>
+              ) : (
+                <></>
               )}
             </Accordion>
           ))}

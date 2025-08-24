@@ -1,4 +1,4 @@
-import { useRef, type ReactNode } from "react";
+import { useRef, type JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
@@ -15,7 +15,7 @@ import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls } from "./style";
 import { Link } from "react-router-dom";
 
-function ProjectThatMoveUs(): ReactNode {
+function ProjectThatMoveUs(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);
   const cardsInfo: {
     imageUrl: string;

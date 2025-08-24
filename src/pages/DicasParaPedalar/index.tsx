@@ -1,9 +1,10 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Header from "../Components/Header";
 import CarouselAttentionCards from "./components/CarouselAttentionCards";
 import SupportLinksSection from "./components/Links";
 import CarouselTipCards from "./components/CarouselTipCards";
 import SocialContent from "./components/SocialContent";
+import Container from "../Components/Container";
 
 const tipSteps = [
   {
@@ -74,13 +75,13 @@ const attentionSteps = [
   },
 ];
 
-function CyclingTips(): ReactNode {
+function CyclingTips(): JSX.Element {
   return (
     <>
       <Header secondary>
         <h2>Dicas para Pedalar</h2>
       </Header>
-      <div>
+      <Container>
         <CarouselTipCards
           title="Dicas para começar por conta própria"
           sub="Muita gente chega até a gente querendo aprender a pedalar — e isso nos deixa felizes demais! Pra dar aquela força desde o começo, preparamos um passo a passo simples e direto pra te ajudar a dar os primeiros giros por conta própria. Confia: você consegue sim!"
@@ -93,7 +94,7 @@ function CyclingTips(): ReactNode {
         />
         <SupportLinksSection />
         <SocialContent />
-      </div>
+      </Container>
     </>
   );
 }

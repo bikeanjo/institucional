@@ -1,16 +1,17 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Header from "../Components/Header";
-import { Typography, Box } from "@mui/material";
 import { Form } from "./components/Form";
+import Container from "../Components/Container";
+import Text from "../Components/Text";
 
-function Contact(): ReactNode {
+function Contact(): JSX.Element {
   return (
     <>
       <Header secondary>
         <h2>Contato</h2>
       </Header>
-      <Box sx={{ margin: "80px 204px", gap: "40px" }}>
-        <Typography sx={{ fontSize: { xs: 13, md: 16 } }} fontWeight={400}>
+      <Container>
+        <Text>
           Este é o canal direto com a equipe da associação Bike Anjo. Aqui você
           pode tirar dúvidas, enviar sugestões, propor parcerias ou pedir apoio,
           seja você uma pessoa voluntária, aprendiz, integrante de coletivo,
@@ -23,23 +24,24 @@ function Contact(): ReactNode {
           <br />
           <br />
           Nosso time responderá com todo cuidado assim que possível!
-        </Typography>
+        </Text>
         <Form />
-        <Typography align="center">
-          É uma dúvida? Pode ser que consultando no{" "}
+        <Text>
+          É uma dúvida? Pode ser que consultando no
           <a
             href="/faq"
             style={{
+              marginInline: "10px",
               textDecoration: "underline",
               color: "#000",
               fontWeight: "600",
             }}
           >
             FAQ (Dúvidas Frequentes)
-          </a>{" "}
+          </a>
           você a resolva :)
-        </Typography>
-      </Box>
+        </Text>
+      </Container>
     </>
   );
 }

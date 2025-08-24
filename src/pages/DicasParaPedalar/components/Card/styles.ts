@@ -7,6 +7,11 @@ export const Card = styled.div`
   border-radius: 16px;
   scroll-snap-align: start;
   flex-shrink: 0;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 export const TopSection = styled.div<{ $variant: "default" | "attention" }>`

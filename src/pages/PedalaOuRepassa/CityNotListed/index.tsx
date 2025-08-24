@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import Container from "../../Components/Container";
 import SubTitle from "../../Components/SubTitle";
 import Title from "../../Components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
@@ -22,17 +22,7 @@ export default function CityNotListed({
   steps,
 }: CarouselStepsProps) {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-      }}
-    >
+    <Container>
       <Title>{title}</Title>
       <SubTitle>{sub}</SubTitle>
 
@@ -48,6 +38,6 @@ export default function CityNotListed({
           </StepItem>
         ))}
       </StepsContainer>
-    </Box>
+    </Container>
   );
 }

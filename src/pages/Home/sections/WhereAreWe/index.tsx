@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
@@ -6,7 +6,7 @@ import map from "../../../../assets/images/map.png";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function WhereAreWe(): ReactNode {
+function WhereAreWe(): JSX.Element {
   return (
     <Container secondary gap="32px">
       <Box

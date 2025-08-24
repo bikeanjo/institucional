@@ -29,17 +29,7 @@ const iconStyle = {
 
 export default function Share({ title, sub }: ShareProps) {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-      }}
-    >
+    <>
       <Title>{title}</Title>
       <SubTitle>{sub}</SubTitle>
       <Stack direction="row" spacing={2} justifyContent="center">
@@ -129,6 +119,6 @@ export default function Share({ title, sub }: ShareProps) {
           </Box>
         </a>
       </Stack>
-    </Box>
+    </>
   );
 }

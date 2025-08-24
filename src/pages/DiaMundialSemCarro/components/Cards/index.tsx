@@ -98,7 +98,7 @@ export function Cards() {
               textButton={!card.secondary ? "Acessar" : undefined}
               secondary={card.secondary}
             >
-              {card.text}
+              <>{card.text}</>
             </MiniCard>
           ))}
         </ContainerCards>

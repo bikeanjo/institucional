@@ -6,11 +6,11 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Bundler mode */
     "composite": true,
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
+    "moduleResolution": "node",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "outDir": "dist",
@@ -19,9 +19,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src",

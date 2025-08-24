@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Components/Header";
 import Subtitle from "../Components/SubTitle";
 import Text from "../Components/Text";
@@ -8,6 +7,7 @@ import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
 import Button from "../Components/Button";
 import { Link } from "react-router-dom";
+import Container from "../Components/Container";
 
 const Iniciativas: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Iniciativas: React.FC = () => {
       <Header secondary>
         <h2>Iniciativas</h2>
       </Header>
-      <Box
+      <Container
         marginX={{ xs: "16px", md: "96px" }}
         marginY={{ xs: "16px", md: "40px" }}
         gap={{ xs: "8px", md: "40px" }}
@@ -68,7 +68,7 @@ const Iniciativas: React.FC = () => {
             </Link>
           </Box>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 };
