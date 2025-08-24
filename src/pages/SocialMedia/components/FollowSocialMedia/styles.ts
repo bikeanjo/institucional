@@ -14,11 +14,3 @@ export const Title = styled.h2`
   font-weight: 700;
   margin: 0;
 `;
-
-export const Sub = styled.p`
-  color: #000;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 120%;
-  margin: 24px 0 40px;
-`;

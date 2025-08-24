@@ -7,13 +7,6 @@ export const Title = styled.h2`
   margin: 0;
 `;
 
-export const Sub = styled.p`
-  color: #000;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 32px 0;
-`;
-
 export const CarouselContainer = styled.div`
   display: flex;
   align-items: center;
