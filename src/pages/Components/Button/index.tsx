@@ -6,7 +6,7 @@ interface ButtonProps {
 }
 
 const Button = styled(MuiButton)<ButtonProps>(({ theme, center }) => ({
-  backgroundColor: "black",
+  backgroundColor: "#4D7A18",
   width: "fit-content",
   color: "white",
   fontWeight: 700,
@@ -14,6 +14,11 @@ const Button = styled(MuiButton)<ButtonProps>(({ theme, center }) => ({
   borderRadius: "4px",
   textTransform: "none",
   padding: "15px 32px 15px 32px",
+  boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.15)",
+
+  "&:hover": {
+    backgroundColor: "#43700E",
+  },
 
   [theme.breakpoints.up("xs")]: {
     margin: "0 auto",

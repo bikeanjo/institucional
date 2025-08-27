@@ -1,10 +1,18 @@
-import { Typography } from "@mui/material";
+import { Typography, TypographyProps } from "@mui/material";
 import styled from "styled-components";
 
-const Title = styled(Typography)(({ theme }) => ({
+interface TitleProps extends TypographyProps {
+  pink?: boolean;
+  green?: boolean;
+}
+
+const Title = styled(Typography)<TitleProps>(({ theme, pink, green }) => ({
   color: "var(--mui-palette-title-main)",
   fontWeight: 600,
   display: "flex",
+
+  ...(pink && { color: "#E1216D" }),
+  ...(green && !pink && { color: "#4D7A18" }),
 
   [theme.breakpoints.up("xs")]: {
     fontSize: "32px",
