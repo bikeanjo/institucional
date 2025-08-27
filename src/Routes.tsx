@@ -16,6 +16,7 @@ import BikeAnjas from "./pages/BikeAnjas";
 import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
 import Iniciativas from "./pages/Iniciativas";
+import Volunteering from "./pages/Volunteering";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
           <Route path="/iniciativas" element={<Iniciativas />} />
+          <Route path="/voluntariado" element={<Volunteering />} />
         </Route>
       </Routes>
     </>
