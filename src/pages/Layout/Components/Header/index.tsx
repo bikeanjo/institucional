@@ -14,6 +14,7 @@ import {
   Autocomplete,
   TextField,
 } from "@mui/material";
+import { createFilterOptions } from "@mui/material/Autocomplete";
 import "material-icons/iconfont/material-icons.css";
 import logo from "../../../../assets/icons/logo-bike-anjo.svg";
 import Login from "./Login";
@@ -24,12 +25,19 @@ import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
-import { Link as ButtonLink } from "react-router-dom";
+import { Link as ButtonLink, useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
   const [open, setOpen] = React.useState(false);
   const [expanded, setExpanded] = React.useState<string | false>(false);
+  const navigate = useNavigate();
+
+  const filterOptions = createFilterOptions<{
+    label: string;
+    id: number;
+    url: string;
+  }>();
 
   const handleChange =
     (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
@@ -65,7 +73,11 @@ const Header: React.FC = () => {
     return { options, lastId: id };
   }
 
-  const { options } = extractOptions(menuItems);
+  const { options: extractedOptions } = extractOptions(menuItems);
+
+  const options = extractedOptions.sort((a, b) =>
+    a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" }),
+  );
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
@@ -115,7 +127,13 @@ const Header: React.FC = () => {
         <Autocomplete
           disablePortal
           options={options}
+          filterOptions={filterOptions}
           popupIcon={null}
+          onChange={(_, value) => {
+            if (value?.url) {
+              void navigate(value.url);
+            }
+          }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -149,11 +167,7 @@ const Header: React.FC = () => {
               }}
             />
           )}
-          renderOption={(props, option) => (
-            <li {...props}>
-              <Link to={option.url}>{option.label}</Link>
-            </li>
-          )}
+          renderOption={(props, option) => <li {...props}>{option.label}</li>}
           sx={{
             display: { xs: "none", lg: "flex" },
             alignItems: "center",
@@ -234,7 +248,13 @@ const Header: React.FC = () => {
           <Autocomplete
             disablePortal
             options={options}
+            filterOptions={filterOptions}
             popupIcon={null}
+            onChange={(_, value) => {
+              if (value?.url) {
+                void navigate(value.url);
+              }
+            }}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -268,11 +288,7 @@ const Header: React.FC = () => {
                 }}
               />
             )}
-            renderOption={(props, option) => (
-              <li {...props}>
-                <Link to={option.url}>{option.label}</Link>
-              </li>
-            )}
+            renderOption={(props, option) => <li {...props}>{option.label}</li>}
             sx={{
               display: { xs: "flex", lg: "none" },
               alignItems: "center",
