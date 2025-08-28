@@ -29,6 +29,17 @@ import { Link as ButtonLink } from "react-router-dom";
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
   const [open, setOpen] = React.useState(false);
+  const [expanded, setExpanded] = React.useState<string | false>(false);
+
+  const handleChange =
+    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+
+  const handleCloseDrawer = () => {
+    setOpen(false);
+    setExpanded(false);
+  };
 
   const toggleDrawer = () => () => {
     setOpen((prev) => !prev);
@@ -199,7 +210,7 @@ const Header: React.FC = () => {
       <Divider />
       <Drawer
         open={open}
-        onClose={toggleDrawer()}
+        onClose={handleCloseDrawer}
         anchor="top"
         ModalProps={{
           keepMounted: true,
@@ -279,6 +290,8 @@ const Header: React.FC = () => {
           {menuItems.map((item, idx) => {
             return (
               <Accordion
+                expanded={expanded === `panel-${idx}`}
+                onChange={handleChange(`panel-${idx}`)}
                 key={idx + " accordion-item"}
                 elevation={0}
                 disableGutters
@@ -362,7 +375,12 @@ const Header: React.FC = () => {
                               color="#486284"
                             >
                               {subItem.url ? (
-                                <Link to={subItem.url}>{subItem.title}</Link>
+                                <Link
+                                  to={subItem.url}
+                                  onClick={handleCloseDrawer}
+                                >
+                                  {subItem.title}
+                                </Link>
                               ) : (
                                 subItem.title
                               )}
@@ -388,7 +406,10 @@ const Header: React.FC = () => {
                                   color="#486284"
                                 >
                                   {lastItem.url ? (
-                                    <Link to={lastItem.url}>
+                                    <Link
+                                      to={lastItem.url}
+                                      onClick={handleCloseDrawer}
+                                    >
                                       {lastItem.title}
                                     </Link>
                                   ) : (

@@ -16,6 +16,9 @@ import BikeAnjas from "./pages/BikeAnjas";
 import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
 import Iniciativas from "./pages/Iniciativas";
+import FAQ from "./pages/Home/sections/FAQ";
+import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
+import Container from "./pages/Components/Container";
 
 function App() {
   return (
@@ -32,6 +35,7 @@ function App() {
           <Route path="/dicas-bike-anjo" element={<DicasParaBikeAnjo />} />
           <Route path="/doacao" element={<Doacao />} />
           <Route path="/contato" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/escola-bike-anjo" element={<EscolaBikeAnjo />} />
           <Route path="/pedala-ou-repassa" element={<PedalaOuRepassa />} />
           <Route path="/dicas-para-pedalar" element={<DicasParaPedalar />} />
@@ -44,6 +48,14 @@ function App() {
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
           <Route path="/iniciativas" element={<Iniciativas />} />
+          <Route
+            path="/onde-estamos"
+            element={
+              <Container>
+                <FindLocalArticulation />
+              </Container>
+            }
+          />
         </Route>
       </Routes>
     </>
