@@ -5,22 +5,27 @@ interface ButtonProps {
   center?: boolean;
 }
 
-const Button = styled(MuiButton)<ButtonProps>(({ theme }) => ({
-  backgroundColor: "black",
+const Button = styled(MuiButton)<ButtonProps>(({ theme, center }) => ({
+  backgroundColor: "#4D7A18",
   width: "fit-content",
   color: "white",
   fontWeight: 700,
   fontSize: "16px",
-  borderRadius: "8px",
+  borderRadius: "4px",
   textTransform: "none",
+  padding: "15px 32px 15px 32px",
+  boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.15)",
+
+  "&:hover": {
+    backgroundColor: "#43700E",
+  },
 
   [theme.breakpoints.up("xs")]: {
-    padding: "8px 24px 8px 24px",
-    margin: "auto",
+    margin: "0 auto",
   },
 
   [theme.breakpoints.up("lg")]: {
-    padding: "16px 40px 16px 40px",
+    margin: center ? "0 auto" : "0",
   },
 }));
 
