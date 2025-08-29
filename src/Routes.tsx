@@ -15,6 +15,7 @@ import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
 import BikeAnjas from "./pages/BikeAnjas";
 import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
+import Matérias from "./pages/Matérias";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/bike-anjas" element={<BikeAnjas />} />
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
+          <Route path="/materias" element={<Matérias />} />
         </Route>
       </Routes>
     </>
