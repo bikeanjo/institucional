@@ -13,7 +13,7 @@ function Timeline(): ReactNode {
 
   const [selectedYear, setSelectedYear] = useState<number>(availableYears[0]);
 
-  const currentYearData = useMemo<TimelineYear>(
+  const currentYearData = useMemo<TimelineYear | undefined>(
     () => timelineData.find((data) => data.year === selectedYear),
     [selectedYear],
   );
@@ -21,6 +21,8 @@ function Timeline(): ReactNode {
   const handleYearSelection = (year: number) => {
     setSelectedYear(year);
   };
+
+  if (!currentYearData) return null;
 
   return (
     <>
