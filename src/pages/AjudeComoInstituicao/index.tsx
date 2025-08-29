@@ -127,7 +127,7 @@ const AjudeComoInstituicao = () => {
                   <SubTitle mobileCenter>
                     Matérias que mostram o impacto da nossa rede
                   </SubTitle>
-                  <Link to="">
+                  <Link to="/materias">
                     <Button>Acessar matérias</Button>
                   </Link>
                 </Box>
