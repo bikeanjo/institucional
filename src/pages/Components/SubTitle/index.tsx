@@ -9,9 +9,9 @@ interface SubTitleProps {
 
 const SubTitle = styled(Typography)<SubTitleProps>(
   ({ theme, desktopOnly, mobileCenter = false, center = false }) => ({
-    fontWeight: 600,
     wordBreak: "break-word",
     color: "black",
+    textAlign: "center",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "24px",

@@ -15,10 +15,12 @@ import DiaMundialSemCarro from "./pages/DiaMundialSemCarro";
 import BikeAnjas from "./pages/BikeAnjas";
 import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
+import Matérias from "./pages/Matérias";
 import Iniciativas from "./pages/Iniciativas";
 import FAQ from "./pages/Home/sections/FAQ";
 import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import Container from "./pages/Components/Container";
+import Volunteering from "./pages/Volunteering";
 
 function App() {
   return (
@@ -47,6 +49,7 @@ function App() {
           <Route path="/bike-anjas" element={<BikeAnjas />} />
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
+          <Route path="/materias" element={<Matérias />} />
           <Route path="/iniciativas" element={<Iniciativas />} />
           <Route
             path="/onde-estamos"
@@ -56,6 +59,7 @@ function App() {
               </Container>
             }
           />
+          <Route path="/voluntariado" element={<Volunteering />} />
         </Route>
       </Routes>
     </>

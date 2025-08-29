@@ -5,6 +5,7 @@ import Container from "../../components/Container";
 import map from "../../../../assets/images/map.png";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
 function WhereAreWe(): JSX.Element {
   return (
@@ -17,8 +18,10 @@ function WhereAreWe(): JSX.Element {
           flexDirection: "column",
         }}
       >
-        <Title variant="h2">Onde estamos</Title>
-        <SubTitle fontSize={24}>
+        <Title variant="h2" color={Colors["Green-70"]}>
+          Onde estamos
+        </Title>
+        <SubTitle fontSize={24} fontWeight={400}>
           Saiba onde encontrar iniciativas para participar
         </SubTitle>
       </Box>
@@ -39,7 +42,7 @@ function WhereAreWe(): JSX.Element {
         component={Link}
         to="/onde-estamos"
         sx={{
-          backgroundColor: "var(--mui-palette-neutral-700)",
+          backgroundColor: Colors["Green-70"],
           color: "var(--mui-palette-neutral-100)",
           padding: "16px 24px",
           height: { xs: 56 },
