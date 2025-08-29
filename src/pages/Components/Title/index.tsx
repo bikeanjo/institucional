@@ -1,8 +1,8 @@
 import { Typography } from "@mui/material";
 import styled from "styled-components";
 
-const Title = styled(Typography)(({ theme }) => ({
-  color: "var(--mui-palette-title-main)",
+const Title = styled(Typography)(({ theme, color }) => ({
+  color: color,
   fontWeight: 600,
   display: "flex",
 

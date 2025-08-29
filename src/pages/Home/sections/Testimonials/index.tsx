@@ -5,11 +5,14 @@ import Container from "../../components/Container";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import julianaImage from "@assets/images/photoPlaceholder/juliana.jpg";
 import juliana2Image from "@assets/images/photoPlaceholder/jualiana2.png";
+import { Colors } from "../../../../styles/tokens/colors";
 
 function Testimonials(): JSX.Element {
   return (
     <Container secondary>
-      <Title variant="h2">Depoimentos</Title>
+      <Title variant="h2" color={Colors["Green-70"]}>
+        Depoimentos
+      </Title>
       <SubTitle>
         Histórias reais de quem já transformou sua relação com a bicicleta.
       </SubTitle>
@@ -26,6 +29,7 @@ function Testimonials(): JSX.Element {
           sx={{
             width: { xs: 299, lg: 499 },
             height: { xs: 308, lg: 249 },
+            border: `2px solid ${Colors["Green-70"]}`,
             marginTop: 5,
             padding: "21px 30px",
             borderRadius: 2,
@@ -94,6 +98,7 @@ function Testimonials(): JSX.Element {
           sx={{
             width: { xs: 299, lg: 499 },
             height: { xs: 308, lg: 249 },
+            border: `2px solid ${Colors["Green-70"]}`,
             marginTop: 5,
             padding: "21px 30px",
             borderRadius: 2,

@@ -15,7 +15,7 @@ import {
   TextField,
 } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
-import logo from "../../../../assets/icons/logo-bike-anjo.svg";
+import logo from "../../../../assets/icons/logo-bike-anjo.png";
 import Login from "./Login";
 import { NavMenu } from "./MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,6 +25,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
 import { Link as ButtonLink } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
@@ -85,18 +86,14 @@ const Header: React.FC = () => {
             }}
             onClick={toggleDrawer()}
           >
-            <FontAwesomeIcon icon={icon} fontSize={28} color="#4d5b7c" />
+            <FontAwesomeIcon
+              icon={icon}
+              fontSize={28}
+              color={Colors["Green-70"]}
+            />
           </Box>
           <Link to="/">
-            <Box
-              component="img"
-              src={logo}
-              alt="Logo Bike Anjo"
-              sx={{
-                width: { xs: 40.42, lg: 51.06 },
-                height: { xs: 38, lg: 48 },
-              }}
-            />
+            <Box component="img" src={logo} alt="Logo Bike Anjo" />
           </Link>
         </Box>
 
@@ -117,7 +114,7 @@ const Header: React.FC = () => {
                       className="material-icons"
                       style={{
                         fontSize: 24,
-                        color: "#486284",
+                        color: Colors["Green-70"],
                         fontWeight: "bold",
                       }}
                     >
@@ -180,7 +177,7 @@ const Header: React.FC = () => {
             sx={{
               width: { xs: 72, xl: 130 },
               height: { xs: 25, xl: 43 },
-              backgroundColor: "#486284",
+              backgroundColor: Colors["Orange-50"],
               borderRadius: "10px",
               padding: { xs: "0px", lg: "19px 48px" },
               fontWeight: 600,
@@ -236,7 +233,7 @@ const Header: React.FC = () => {
                         className="material-icons"
                         style={{
                           fontSize: 24,
-                          color: "#486284",
+                          color: Colors["Green-70"],
                           fontWeight: "bold",
                         }}
                       >
@@ -295,7 +292,7 @@ const Header: React.FC = () => {
                 <AccordionSummary
                   expandIcon={
                     Array.isArray(item.children) && item.children.length > 0 ? (
-                      <ExpandMoreIcon sx={{ color: "#486284" }} />
+                      <ExpandMoreIcon sx={{ color: Colors["Green-70"] }} />
                     ) : null
                   }
                   aria-controls="panel1-content"
@@ -319,7 +316,7 @@ const Header: React.FC = () => {
                     component="span"
                     fontWeight={600}
                     fontSize={"16px"}
-                    color="#486284"
+                    color={Colors["Green-70"]}
                   >
                     {item.title}
                   </Typography>
@@ -331,7 +328,7 @@ const Header: React.FC = () => {
                       flexDirection: "column",
                       padding: "8px 0px",
                       backgroundColor: "transparent",
-                      color: "#486284",
+                      color: Colors["Green-70"],
                     }}
                   >
                     <Box
@@ -359,7 +356,7 @@ const Header: React.FC = () => {
                               component="span"
                               fontWeight={600}
                               fontSize={"16px"}
-                              color="#486284"
+                              color={Colors["Green-70"]}
                             >
                               {subItem.url ? (
                                 <Link to={subItem.url}>{subItem.title}</Link>
@@ -385,7 +382,7 @@ const Header: React.FC = () => {
                                 <Typography
                                   component="span"
                                   fontSize={"16px"}
-                                  color="#486284"
+                                  color={Colors["Green-70"]}
                                 >
                                   {lastItem.url ? (
                                     <Link to={lastItem.url}>
