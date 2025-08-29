@@ -15,6 +15,7 @@ import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls, MobileControls, PaginationDot } from "./style";
 import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
 function ProjectThatMoveUs(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);
@@ -148,7 +149,7 @@ function ProjectThatMoveUs(): JSX.Element {
           flexDirection: "column",
         }}
       >
-        <Title pink variant="h2">
+        <Title variant="h2" color={Colors["Pink-50"]}>
           Iniciativas que nos movem
         </Title>
         <SubTitle>
@@ -231,10 +232,12 @@ function ProjectThatMoveUs(): JSX.Element {
         component={Link}
         to="/iniciativas"
         sx={{
-          backgroundColor: "#4D7A18",
-          color: "#fff",
-          padding: "15px 24px",
-          borderRadius: "4px",
+          backgroundColor: Colors["Green-70"],
+          color: "var(--mui-palette-neutral-100)",
+          padding: "16px 24px",
+          height: { xs: 40 },
+          width: { xs: "215px" },
+          borderRadius: { xs: "10px", lg: "8px" },
           textTransform: "none",
           boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.15)",
           "&:hover": {

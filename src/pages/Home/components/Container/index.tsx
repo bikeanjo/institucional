@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Hero from "../../../../assets/images/Home/placeholder/hero.jpg";
+import { Colors } from "../../../../styles/tokens/colors";
 
 declare module "styled-components" {
   export interface DefaultTheme {
@@ -26,9 +28,15 @@ const Container = styled.div<ContainerProps>`
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: ${({ theme, secondary }) =>
-    secondary ? theme.palette.secondary.main : "transparent"};
+  background-color: ${({ secondary }) =>
+    secondary ? Colors["Green-20"] : "transparent"};
+  border: ${({ secondary }) => secondary && `2px solid ${Colors["Green-70"]}`};
+  border-width: ${({ secondary }) => secondary && `2px 0px`};
   gap: ${({ gap }) => gap || "unset"};
+  background-image: ${({ carrousel }) => (carrousel ? `url(${Hero})` : "none")};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   ${({ theme }) => theme.breakpoints.up("xs")} {
     padding: 40px 0px;

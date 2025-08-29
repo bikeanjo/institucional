@@ -4,6 +4,7 @@ import { QuestionAccordion } from "../../../DicasParaBikeAnjo/components/Accordi
 import Title from "../../components/Title";
 import SubTitle from "../../../Components/SubTitle";
 import Container from "../../../Components/Container";
+import { Colors } from "../../../../styles/tokens/colors";
 
 const accordionItems = [
   {
@@ -66,10 +67,10 @@ const accordionItems = [
 function FAQ(): JSX.Element {
   return (
     <Container>
-      <Title>Dúvidas Frequentes (FAQ)</Title>
-      <SubTitle>
+      <Title color={Colors["Pink-50"]}>Conheça a Bike Anjo</Title>
+      <SubTitle center>
         Abaixos respondemos algumas das principais duvidas sobre a Bike Anjo, e
-        você sempre pode entrar em contato conosco caso precise! :)
+        você sempre pode entrar em contato conosco caso precise!
       </SubTitle>
       <AccordionWrapper>
         {accordionItems.map((item) => (

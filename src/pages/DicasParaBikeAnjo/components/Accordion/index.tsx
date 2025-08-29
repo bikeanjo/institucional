@@ -7,6 +7,7 @@ import {
 import { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { Colors } from "../../../../styles/tokens/colors";
 
 export function QuestionAccordion({
   title,
@@ -40,8 +41,8 @@ export function QuestionAccordion({
             <RemoveIcon
               sx={{
                 backgroundColor: "transparent",
-                color: "#fff",
-                border: "2px solid #fff",
+                color: Colors["G-Grey-100"],
+                border: `2px solid ${Colors["G-Grey-100"]}`,
                 borderRadius: "50%",
                 fontSize: 20,
               }}
@@ -50,8 +51,8 @@ export function QuestionAccordion({
             <AddIcon
               sx={{
                 backgroundColor: "transparent",
-                color: "#fff",
-                border: "2px solid #fff",
+                color: Colors["G-Grey-100"],
+                border: `2px solid ${Colors["G-Grey-100"]}`,
                 borderRadius: "50%",
                 fontSize: 20,
               }}
@@ -59,8 +60,8 @@ export function QuestionAccordion({
           )
         }
         sx={{
-          backgroundColor: "#787878",
-          color: "#fff",
+          backgroundColor: Colors["G-Grey-20"],
+          color: Colors["G-Grey-100"],
           padding: "16px",
           minHeight: "auto",
           "&.Mui-expanded": { minHeight: "auto" },
@@ -80,8 +81,8 @@ export function QuestionAccordion({
       </AccordionSummary>
       <AccordionDetails
         sx={{
-          backgroundColor: "#f8f8f8",
-          color: "#787878",
+          backgroundColor: Colors["G-Grey-10"],
+          color: Colors["G-Grey-100"],
           padding: "16px",
         }}
       >

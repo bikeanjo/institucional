@@ -7,6 +7,7 @@ import RightArrow from "../../../../assets/images/arrow-right.png";
 import LeftArrow from "../../../../assets/images/arrow-left.png";
 import StepsCarousel from "../../../../assets/images/steps-carousel.png";
 import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
 function Carousel(): JSX.Element {
   return (
@@ -43,10 +44,10 @@ function Carousel(): JSX.Element {
             gap: { xs: "24px", lg: "32px" },
           }}
         >
-          <Title variant="h2" carrousel>
+          <Title variant="h2" carrousel color={Colors["Green-10"]}>
             Uma comunidade que pedala por um futuro melhor
           </Title>
-          <SubTitle fontWeight={400} carrousel>
+          <SubTitle fontWeight={400} carrousel color={Colors["Green-10"]}>
             Conectamos pessoas dispostas a ajudar com quem precisa de apoio para
             pedalar, oferecendo orientação, rotas seguras e acompanhamento no
             percurso.
@@ -83,8 +84,8 @@ function Carousel(): JSX.Element {
           component={Link}
           to="/dicas-para-pedalar"
           sx={{
-            backgroundColor: "var(--mui-palette-neutral-700)",
-            color: "var(--mui-palette-neutral-100)",
+            backgroundColor: Colors["Green-70"],
+            color: Colors["G-White"],
             padding: "16px 24px",
             height: { xs: 40, lg: 56 },
             width: { xs: "100%", sm: 185, lg: 185 },
@@ -102,8 +103,8 @@ function Carousel(): JSX.Element {
           component={Link}
           to="/dicas-bike-anjo"
           sx={{
-            backgroundColor: "var(--mui-palette-neutral-100)",
-            color: "var(--mui-palette-neutral-900)",
+            backgroundColor: Colors["Green-70"],
+            color: Colors["G-White"],
             padding: "16px 24px",
             height: { xs: 40, lg: 56 },
             width: { xs: "100%", sm: 185, lg: 185 },
@@ -118,15 +119,7 @@ function Carousel(): JSX.Element {
           <Typography>Ensinar a pedalar</Typography>
         </Button>
       </Box>
-      <Box
-        component="img"
-        src={StepsCarousel}
-        alt="Passos do Carrossel"
-        sx={{
-          width: { xs: "48px", lg: "75px" },
-          height: { xs: "8px", lg: "15px" },
-        }}
-      />
+      <Box component="img" src={StepsCarousel} alt="Passos do Carrossel" />
     </Container>
   );
 }

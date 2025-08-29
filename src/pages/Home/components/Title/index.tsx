@@ -8,9 +8,10 @@ interface TitleProps extends TypographyProps {
 }
 
 const Title = styled(Typography)<TitleProps>(
-  ({ theme, carrousel, pink, green }) => ({
-    color: "var(--mui-palette-title-main)",
+  ({ theme, carrousel, pink, green, color }) => ({
+    color: color ? color : "var(--mui-palette-title-main)",
     fontWeight: 600,
+    textAlign: "center",
 
     ...(pink && { color: "#E1216D" }),
     ...(green && !pink && { color: "#4D7A18" }),
