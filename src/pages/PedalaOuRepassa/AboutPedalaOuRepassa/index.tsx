@@ -1,5 +1,6 @@
 import { Button, Description, Container, Paragraph, Title } from "./styles";
 import ImgCarousel from "../../../assets/images/img-carousel.png";
+import { Link } from "react-router-dom";
 
 export default function AboutPedalaOuRepassa() {
   return (
@@ -32,7 +33,9 @@ export default function AboutPedalaOuRepassa() {
           Preencha os dados no formulário abaixo e entraremos em contato com
           você!
         </Paragraph>
-        <Button>Formulário</Button>
+        <Link to="">
+          <Button>Formulário</Button>
+        </Link>
       </Container>
     </>
   );

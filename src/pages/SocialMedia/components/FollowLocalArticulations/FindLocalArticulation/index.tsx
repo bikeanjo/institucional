@@ -9,7 +9,6 @@ import {
   Tag,
   TagsWrapper,
   Title,
-  Wrapper,
 } from "./styles";
 import { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
@@ -143,7 +142,7 @@ export default function FindLocalArticulation() {
   };
 
   return (
-    <Wrapper>
+    <>
       <Title>Encontre uma Articulação Local</Title>
       <TagsWrapper>
         {regions.map((region) => (
@@ -160,7 +159,9 @@ export default function FindLocalArticulation() {
         type="text"
         placeholder="Digite o nome da cidade..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setSearch(e.target.value)
+        }
       />
 
       <CityList>
@@ -241,6 +242,6 @@ export default function FindLocalArticulation() {
           );
         })}
       </CityList>
-    </Wrapper>
+    </>
   );
 }

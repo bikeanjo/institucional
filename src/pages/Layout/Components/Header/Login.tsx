@@ -8,6 +8,8 @@ import {
   Typography,
 } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
+import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
 const menuItemStyle = {
   display: "flex",
@@ -40,7 +42,7 @@ export default function Login() {
           <Box
             component="span"
             className="material-icons-outlined"
-            sx={{ fontSize: { xs: 35, xl: 50 }, color: "#4d5b7c" }}
+            sx={{ fontSize: { xs: 35, xl: 50 }, color: Colors["Green-70"] }}
           >
             account_circle
           </Box>
@@ -92,6 +94,8 @@ export default function Login() {
 
         <MenuItem sx={menuItemStyle}>
           <Button
+            component={Link}
+            to=""
             sx={{
               width: 185,
               height: 39,
@@ -113,6 +117,8 @@ export default function Login() {
 
         <MenuItem sx={menuItemStyle}>
           <Button
+            component={Link}
+            to=""
             sx={(theme) => ({
               width: 185,
               height: 39,

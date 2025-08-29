@@ -1,15 +1,39 @@
 import styled from "styled-components";
+import { Button, Box } from "@mui/material";
+import { ArrowBack } from "@mui/icons-material";
 
-export const Button = styled.button`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background-color: transparent;
-  border: none;
-  color: #000;
-  cursor: pointer;
+export const Container = styled(Box)`
+  padding: 0px 72px;
+
+  @media (max-width: 900px) {
+    padding: 16px;
+  }
+`;
+
+export const StyledButton = styled(Button)`
+  text-transform: none;
   font-size: 16px;
   font-weight: 600;
-  padding: 16px 76px;
+  color: #000000;
+  background-color: transparent;
+  padding-top: 16px;
+
+  &:hover {
+    background-color: transparent;
+  }
+  &:active {
+    background-color: transparent;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+`;
+
+export const StyledIcon = styled(ArrowBack)`
+  font-size: 16px;
+
+  @media (max-width: 900px) {
+    font-size: 10.67px;
+  }
 `;

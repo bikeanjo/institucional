@@ -1,3 +1,6 @@
+import Container from "../../Components/Container";
+import SubTitle from "../../Components/SubTitle";
+import Title from "../../Components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
 import {
   Button,
@@ -5,9 +8,6 @@ import {
   ButtonText,
   StepItem,
   StepsContainer,
-  Sub,
-  Title,
-  Wrapper,
 } from "./styles";
 
 interface Step {
@@ -28,9 +28,9 @@ export default function CityNotListed({
   steps,
 }: CarouselStepsProps) {
   return (
-    <Wrapper>
+    <Container>
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
 
       <StepsContainer>
         {steps.map((step) => (
@@ -49,6 +49,6 @@ export default function CityNotListed({
         <ButtonText>Comece agora</ButtonText>
         <Button>Crie uma conta</Button>
       </ButtonContainer>
-    </Wrapper>
+    </Container>
   );
 }

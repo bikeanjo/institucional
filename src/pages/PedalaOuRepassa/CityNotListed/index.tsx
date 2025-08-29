@@ -1,5 +1,8 @@
+import Container from "../../Components/Container";
+import SubTitle from "../../Components/SubTitle";
+import Title from "../../Components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
-import { StepItem, StepsContainer, Sub, Title, Wrapper } from "./styles";
+import { StepItem, StepsContainer } from "./styles";
 
 interface Step {
   number: number;
@@ -19,9 +22,9 @@ export default function CityNotListed({
   steps,
 }: CarouselStepsProps) {
   return (
-    <Wrapper>
+    <Container>
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
 
       <StepsContainer>
         {steps.map((step) => (
@@ -35,6 +38,6 @@ export default function CityNotListed({
           </StepItem>
         ))}
       </StepsContainer>
-    </Wrapper>
+    </Container>
   );
 }

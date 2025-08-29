@@ -1,4 +1,6 @@
-import { Button, ButtonsContainer, Sub, Title, Wrapper } from "./styles";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
+import { Button, ButtonsContainer } from "./styles";
 
 interface EngageProps {
   title: string;
@@ -7,9 +9,9 @@ interface EngageProps {
 
 export default function EngageVolunteers({ title, sub }: EngageProps) {
   return (
-    <Wrapper>
+    <>
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
       <ButtonsContainer>
         <Button href="#" target="_blank" rel="noopener noreferrer">
           Veja aqui o Mini Manual
@@ -18,6 +20,6 @@ export default function EngageVolunteers({ title, sub }: EngageProps) {
           Fale a nossa mobilização
         </Button>
       </ButtonsContainer>
-    </Wrapper>
+    </>
   );
 }

@@ -2,7 +2,9 @@ import { useRef } from "react";
 import { StepCard } from "../Card";
 import ArrowBack from "../../../../assets/images/arrow-back.png";
 import ArrowForward from "../../../../assets/images/arrow-forward.png";
-import { Arrow, Cards, CarouselContainer, Sub, Title, Wrapper } from "./styles";
+import { Arrow, Cards, CarouselContainer } from "./styles";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
 
 interface Step {
   number: number;
@@ -36,9 +38,9 @@ export default function CarouselAttentionCards({
   };
 
   return (
-    <Wrapper>
+    <>
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
@@ -62,6 +64,6 @@ export default function CarouselAttentionCards({
           <img src={ArrowForward} alt="Seta para a direita" />
         </Arrow>
       </CarouselContainer>
-    </Wrapper>
+    </>
   );
 }

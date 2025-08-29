@@ -1,9 +1,10 @@
-import { Button, Paragraph, TextWrapper, Title, Wrapper } from "./styles";
+import { Button, Paragraph, TextWrapper } from "./styles";
 import YoutubeImage from "@assets/images/VideoYoutube.png";
+import Title from "../../../Components/Title";
 
 export default function SocialContent() {
   return (
-    <Wrapper>
+    <>
       <img src={YoutubeImage} alt="Canal do Youtube" />
 
       <TextWrapper>
@@ -22,6 +23,6 @@ export default function SocialContent() {
           Acessar Youtube
         </Button>
       </TextWrapper>
-    </Wrapper>
+    </>
   );
 }

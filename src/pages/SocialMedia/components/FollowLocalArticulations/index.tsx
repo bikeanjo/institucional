@@ -1,6 +1,8 @@
-import { MapImage, Sub, Title, Wrapper } from "./styles";
+import { MapImage } from "./styles";
 import articulationMap from "../../../../assets/images/articulation-map.png";
 import FindLocalArticulation from "./FindLocalArticulation";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
 
 interface LocalArticulationsProps {
   title: string;
@@ -14,12 +16,12 @@ export default function FollowLocalArticulations({
   sub,
 }: LocalArticulationsProps) {
   return (
-    <Wrapper>
+    <>
       <Title align={titleAlign}>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
       <MapImage src={articulationMap} alt="Local Articulations" />
 
       <FindLocalArticulation />
-    </Wrapper>
+    </>
   );
 }

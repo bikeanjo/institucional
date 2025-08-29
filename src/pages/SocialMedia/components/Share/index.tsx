@@ -1,4 +1,3 @@
-import { Sub, Title, Wrapper } from "./styles";
 import { Box, Stack } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import SendIcon from "@mui/icons-material/Send";
@@ -9,6 +8,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkIcon from "@mui/icons-material/Link";
+import Title from "../../../Components/Title";
+import SubTitle from "../../../Components/SubTitle";
 
 interface ShareProps {
   title: string;
@@ -28,9 +29,9 @@ const iconStyle = {
 
 export default function Share({ title, sub }: ShareProps) {
   return (
-    <Wrapper>
+    <>
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
       <Stack direction="row" spacing={2} justifyContent="center">
         <a
           href="https://wa.me/seunumero"
@@ -43,7 +44,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://t.me/seucanal"
+          href="https://t.me/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -53,7 +54,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://instagram.com/seuusuario"
+          href="https://instagram.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -63,7 +64,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://twitter.com/seuusuario"
+          href="https://x.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -73,7 +74,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://facebook.com/seupagina"
+          href="https://facebook.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -83,7 +84,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://youtube.com/@seucanal"
+          href="https://youtube.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -93,7 +94,7 @@ export default function Share({ title, sub }: ShareProps) {
         </a>
 
         <a
-          href="https://linkedin.com/in/seuperfil"
+          href="https://linkedin.com/company/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -102,18 +103,22 @@ export default function Share({ title, sub }: ShareProps) {
           </Box>
         </a>
 
-        <a href="mailto:contato@seusite.com">
+        <a href="mailto:contato@bikeanjo.com">
           <Box sx={iconStyle}>
             <EmailIcon />
           </Box>
         </a>
 
-        <a href="https://seusite.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://bikeanjo.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Box sx={iconStyle}>
             <LinkIcon />
           </Box>
         </a>
       </Stack>
-    </Wrapper>
+    </>
   );
 }

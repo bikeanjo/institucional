@@ -1,8 +1,8 @@
 import { Box, Typography, Button } from "@mui/material";
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 
 interface SocialCardProps {
-  icon: ReactNode;
+  icon: JSX.Element;
   title: string;
   subtitle: string;
   onClick?: () => void;
@@ -17,7 +17,7 @@ export function SocialCard({
   return (
     <Box
       sx={{
-        width: "750px",
+        maxWidth: "750px",
         height: "auto",
         padding: "32px",
         display: "flex",

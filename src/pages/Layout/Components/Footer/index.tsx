@@ -1,7 +1,7 @@
 /* eslint-disable react-x/no-array-index-key */
 import React from "react";
 import { Box, Typography, Divider } from "@mui/material";
-import Logo from "../../../../assets/icons/logo-bike-anjo.svg";
+import Logo from "../../../../assets/icons/logo-bike-anjo.png";
 import {
   faInstagram,
   faFacebookF,
@@ -59,13 +59,7 @@ const Footer: React.FC = () => {
             lg: "1fr",
           }}
         >
-          <Box
-            component="img"
-            src={Logo}
-            alt="Logo"
-            width={{ xs: 54, lg: 90 }}
-            gridArea="img"
-          />
+          <Box component="img" src={Logo} alt="Logo" gridArea="img" />
           <Typography
             width={{ xs: "100%", lg: 293 }}
             fontSize={"16px"}
@@ -83,10 +77,34 @@ const Footer: React.FC = () => {
             gridArea="rede"
             justifyContent={{ xs: "end", lg: "start" }}
           >
-            <SocialIcon icon={faInstagram} url="" />
-            <SocialIcon icon={faFacebookF} url="" />
-            <SocialIcon icon={faYoutube} url="" />
-            <SocialIcon icon={faLinkedinIn} url="" />
+            <a
+              href="https://instagram.com/bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faInstagram} />
+            </a>
+            <a
+              href="https://facebook.com/bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faFacebookF} />
+            </a>
+            <a
+              href="https://youtube.com/@bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faYoutube} />
+            </a>
+            <a
+              href="https://linkedin.com/company/bikeanjo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon icon={faLinkedinIn} />
+            </a>
           </Box>
         </Box>
         <Box
@@ -118,7 +136,7 @@ const Footer: React.FC = () => {
               key={idx + " menu-item"}
               contato={item.title === "Contato"}
             >
-              {Array.isArray(item.children) && item.children.length > 0 && (
+              {Array.isArray(item.children) && item.children.length > 0 ? (
                 <React.Fragment>
                   {item.children.map((subItem, subIdx) => (
                     <React.Fragment key={subIdx + " submenu-item"}>
@@ -147,6 +165,8 @@ const Footer: React.FC = () => {
                     </React.Fragment>
                   ))}
                 </React.Fragment>
+              ) : (
+                <></>
               )}
             </Accordion>
           ))}

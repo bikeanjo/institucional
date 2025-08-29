@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   display: flex;
   gap: 24px;
-  margin: 0 202px 160px;
-  max-width: 1248px;
+  margin: 40px auto;
   height: 281px;
 
   img {
@@ -15,7 +14,8 @@ export const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 80px 24px;
+    height: 100%;
+    padding: 20px;
 
     img {
       width: 100%;
@@ -31,10 +31,6 @@ export const TextWrapper = styled.div`
   height: 281px;
   display: flex;
   flex-direction: column;
-
-  @media (max-width: 768px) {
-    padding-right: 0;
-  }
 `;
 
 export const Title = styled.h2`

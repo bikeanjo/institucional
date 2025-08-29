@@ -1,8 +1,9 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Header from "../Components/Header";
-import ButtonBack from "./ButtonBack";
+import BackButton from "./ButtonBack";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
+import Container from "../Components/Container";
 
 function formatDescription(description: string) {
   return description
@@ -46,21 +47,21 @@ const findCitySteps = [
   },
 ];
 
-function PedalaOuRepassa(): ReactNode {
+function PedalaOuRepassa(): JSX.Element {
   return (
     <>
       <Header secondary>
         <h2>Pedala ou Repassa</h2>
       </Header>
-      <div>
-        <ButtonBack />
+      <BackButton />
+      <Container>
         <AboutPedalaOuRepassa />
         <CityNotListed
           title="Como funciona??"
           sub="Queremos dar nova vida a bicicletas esquecidas e levá-las até quem mais precisa! O processo é simples, colaborativo e transparente:"
           steps={findCitySteps}
         />
-      </div>
+      </Container>
     </>
   );
 }

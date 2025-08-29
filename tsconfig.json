@@ -9,7 +9,8 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"]
     },
     "outDir": "dist"
   }

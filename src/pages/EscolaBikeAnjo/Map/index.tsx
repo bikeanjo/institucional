@@ -1,11 +1,12 @@
-import { EBABrMap, Title, Wrapper } from "./styles";
+import { EBABrMap } from "./styles";
 import EBAMap from "../../../assets/images/eba-map.png";
+import Title from "../../Components/Title";
 
 export default function Map() {
   return (
-    <Wrapper>
+    <>
       <Title>EBA's pelo Brasil</Title>
       <EBABrMap src={EBAMap} alt="Mapa com as EBA's" />
-    </Wrapper>
+    </>
   );
 }

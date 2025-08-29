@@ -2,7 +2,9 @@ import { useRef } from "react";
 import { StepCard } from "../Card";
 import ArrowBack from "../../../../assets/images/arrow-back.png";
 import ArrowForward from "../../../../assets/images/arrow-forward.png";
-import { Arrow, Cards, CarouselContainer, Sub, Title, Wrapper } from "./styles";
+import { Arrow, Cards, CarouselContainer } from "./styles";
+import Title from "../../../Components/Title";
+import SubTitle from "../../../Components/SubTitle";
 
 interface Step {
   number: number;
@@ -35,9 +37,9 @@ export default function CarouselTeachingCards({
   };
 
   return (
-    <Wrapper>
+    <>
       <Title>{title}</Title>
-      <Sub>{sub}</Sub>
+      <SubTitle>{sub}</SubTitle>
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
@@ -59,6 +61,6 @@ export default function CarouselTeachingCards({
           <img src={ArrowForward} alt="Seta para a direita" />
         </Arrow>
       </CarouselContainer>
-    </Wrapper>
+    </>
   );
 }

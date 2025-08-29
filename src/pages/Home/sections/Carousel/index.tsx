@@ -1,13 +1,15 @@
 import { Box, Button, Typography } from "@mui/material";
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
 import RightArrow from "../../../../assets/images/arrow-right.png";
 import LeftArrow from "../../../../assets/images/arrow-left.png";
 import StepsCarousel from "../../../../assets/images/steps-carousel.png";
+import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
-function Carousel(): ReactNode {
+function Carousel(): JSX.Element {
   return (
     <Container secondary carrousel>
       <Box
@@ -42,10 +44,10 @@ function Carousel(): ReactNode {
             gap: { xs: "24px", lg: "32px" },
           }}
         >
-          <Title variant="h2" carrousel>
+          <Title variant="h2" carrousel color={Colors["Green-10"]}>
             Uma comunidade que pedala por um futuro melhor
           </Title>
-          <SubTitle fontWeight={400} carrousel>
+          <SubTitle fontWeight={400} carrousel color={Colors["Green-10"]}>
             Conectamos pessoas dispostas a ajudar com quem precisa de apoio para
             pedalar, oferecendo orientação, rotas seguras e acompanhamento no
             percurso.
@@ -79,9 +81,11 @@ function Carousel(): ReactNode {
         }}
       >
         <Button
+          component={Link}
+          to="/dicas-para-pedalar"
           sx={{
-            backgroundColor: "var(--mui-palette-neutral-700)",
-            color: "var(--mui-palette-neutral-100)",
+            backgroundColor: Colors["Green-70"],
+            color: Colors["G-White"],
             padding: "16px 24px",
             height: { xs: 40, lg: 56 },
             width: { xs: "100%", sm: 185, lg: 185 },
@@ -96,11 +100,13 @@ function Carousel(): ReactNode {
           <Typography>Aprender a pedalar</Typography>
         </Button>
         <Button
+          component={Link}
+          to="/dicas-bike-anjo"
           sx={{
-            backgroundColor: "var(--mui-palette-neutral-100)",
-            color: "var(--mui-palette-neutral-900)",
-            padding: "12px 24px",
-            height: { xs: 40, xl: 56 },
+            backgroundColor: Colors["Green-70"],
+            color: Colors["G-White"],
+            padding: "16px 24px",
+            height: { xs: 40, lg: 56 },
             width: { xs: "100%", sm: 185, lg: 185 },
             borderRadius: { xs: "4px", lg: "8px" },
             textTransform: "none",
@@ -113,15 +119,7 @@ function Carousel(): ReactNode {
           <Typography>Ensinar a pedalar</Typography>
         </Button>
       </Box>
-      <Box
-        component="img"
-        src={StepsCarousel}
-        alt="Passos do Carrossel"
-        sx={{
-          width: { xs: "48px", lg: "75px" },
-          height: { xs: "8px", lg: "15px" },
-        }}
-      />
+      <Box component="img" src={StepsCarousel} alt="Passos do Carrossel" />
     </Container>
   );
 }

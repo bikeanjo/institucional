@@ -1,10 +1,11 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Header from "../Components/Header";
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
-import ButtonBack from "./ButtonBack";
+import BackButton from "./ButtonBack";
 import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
+import Container from "../Components/Container";
 
 const findCitySteps = [
   {
@@ -27,25 +28,23 @@ const findCitySteps = [
   },
 ];
 
-function EscolaBikeAnjo(): ReactNode {
+function EscolaBikeAnjo(): JSX.Element {
   return (
     <>
       <Header secondary>
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
-      <div>
-        <ButtonBack />
+      <Container>
+        <BackButton />
         <AboutEBA />
         <Map />
-        <div style={{ margin: "16px 202px" }}>
-          <FindLocalArticulation />
-        </div>
+        <FindLocalArticulation />
         <CityNotListed
           title="Não encontrou sua cidade no mapa?"
           sub={`Caso sua cidade não esteja no mapa, você pode tentar o segundo caminho:\nCadastrar-se em nossa plataforma online e solicitar um Bike Anjo por lá.`}
           steps={findCitySteps}
         />
-      </div>
+      </Container>
     </>
   );
 }

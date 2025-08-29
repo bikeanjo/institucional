@@ -1,18 +1,16 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import { Container, StyledButton, StyledIcon } from "./styles";
+import { Link } from "react-router-dom";
 
-function BackButton(): ReactNode {
+function BackButton(): JSX.Element {
   return (
     <>
       <Container>
-        <StyledButton
-          disableRipple
-          variant="text"
-          href="#"
-          startIcon={<StyledIcon />}
-        >
-          Voltar as iniciativas
-        </StyledButton>
+        <Link to="/iniciativas">
+          <StyledButton disableRipple variant="text" startIcon={<StyledIcon />}>
+            Voltar as iniciativas
+          </StyledButton>
+        </Link>
       </Container>
     </>
   );

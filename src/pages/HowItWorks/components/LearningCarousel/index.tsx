@@ -7,6 +7,7 @@ import {
   Title,
 } from "./styles";
 import { StepCard } from "../../../DicasParaPedalar/components/Card";
+import { Link } from "react-router-dom";
 
 interface Step {
   number: number;
@@ -39,7 +40,9 @@ export default function LearningCarousel({ title, steps }: CarouselStepsProps) {
 
       <ButtonContainer>
         <ButtonText>Comece agora</ButtonText>
-        <Button>Crie uma conta</Button>
+        <Link to="">
+          <Button>Crie uma conta</Button>
+        </Link>
       </ButtonContainer>
     </>
   );

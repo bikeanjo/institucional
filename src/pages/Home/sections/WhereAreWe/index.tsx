@@ -1,11 +1,13 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
 import map from "../../../../assets/images/map.png";
 import { Box, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
-function WhereAreWe(): ReactNode {
+function WhereAreWe(): JSX.Element {
   return (
     <Container secondary gap="32px">
       <Box
@@ -16,8 +18,10 @@ function WhereAreWe(): ReactNode {
           flexDirection: "column",
         }}
       >
-        <Title variant="h2">Onde estamos</Title>
-        <SubTitle fontSize={24}>
+        <Title variant="h2" color={Colors["Green-70"]}>
+          Onde estamos
+        </Title>
+        <SubTitle fontSize={24} fontWeight={400}>
           Saiba onde encontrar iniciativas para participar
         </SubTitle>
       </Box>
@@ -35,8 +39,10 @@ function WhereAreWe(): ReactNode {
         }}
       />
       <Button
+        component={Link}
+        to=""
         sx={{
-          backgroundColor: "var(--mui-palette-neutral-700)",
+          backgroundColor: Colors["Green-70"],
           color: "var(--mui-palette-neutral-100)",
           padding: "16px 24px",
           height: { xs: 56 },

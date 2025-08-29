@@ -1,4 +1,6 @@
-import { LinkItem, LinkList, Sub, Title, Wrapper } from "./styles";
+import SubTitle from "../../../Components/SubTitle";
+import Title from "../../../Components/Title";
+import { LinkItem, LinkList } from "./styles";
 import ChainIcon from "@assets/images/link.png";
 
 const links = [
@@ -15,11 +17,11 @@ const links = [
 
 export default function SupportLinksSection() {
   return (
-    <Wrapper>
+    <>
       <Title>Links de Apoio</Title>
-      <Sub>
+      <SubTitle>
         Abaixo alguns links que podem te ajudar na jornada como Bike Anjo
-      </Sub>
+      </SubTitle>
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>
@@ -30,6 +32,6 @@ export default function SupportLinksSection() {
           </LinkItem>
         ))}
       </LinkList>
-    </Wrapper>
+    </>
   );
 }

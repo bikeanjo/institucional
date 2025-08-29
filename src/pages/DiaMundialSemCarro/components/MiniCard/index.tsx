@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import { Card, Image, AcessButton } from "./styles";
 
 interface MiniCardProps {
   title: string;
-  children: ReactNode;
+  children: JSX.Element;
   textButton?: string;
   secondary?: boolean;
 }
@@ -13,7 +13,7 @@ export function MiniCard({
   children,
   textButton,
   secondary = false,
-}: MiniCardProps): ReactNode {
+}: MiniCardProps): JSX.Element {
   return (
     <>
       <Card $secondary={secondary}>

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { JSX } from "react";
 import Header from "../Components/Header";
 import FollowLocalArticulations from "../SocialMedia/components/FollowLocalArticulations";
 import { Box } from "@mui/material";
@@ -6,6 +6,8 @@ import Text from "../Components/Text";
 import SubTitle from "../Components/SubTitle";
 import Button from "../Components/Button";
 import { BoxDescription, BoxTitle, PrimaryButton } from "./styles";
+import { Link } from "react-router-dom";
+import Container from "../Components/Container";
 
 const supports = [
   {
@@ -30,22 +32,13 @@ const supports = [
   },
 ];
 
-function HowWeHelp(): ReactNode {
+function HowWeHelp(): JSX.Element {
   return (
     <>
       <Header secondary>
         <h2>Como nós ajudamos</h2>
       </Header>
-      <Box
-        sx={{
-          maxWidth: "1032px",
-          margin: "80px auto",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "32px",
-        }}
-      >
+      <Container>
         <SubTitle center>Veja os nossos apoios</SubTitle>
         <Text>
           Veja o que a Bike Anjo oferece quem está começando a pedalar. Com
@@ -69,7 +62,8 @@ function HowWeHelp(): ReactNode {
                 backgroundColor: "#d9d9d9",
                 padding: "32px",
                 borderRadius: "16px",
-                height: "325px",
+                height: "fit-content",
+                minHeight: "100%",
                 display: "flex",
                 flexDirection: "column",
               }}
@@ -89,44 +83,49 @@ function HowWeHelp(): ReactNode {
           ))}
         </Box>
 
-        <PrimaryButton>Cadastre-se e seja Bike Anjo</PrimaryButton>
-      </Box>
-      <FollowLocalArticulations
-        title="Conecte-se com uma articulação local"
-        titleAlign="center"
-        sub="Encontre a articulação Bike Anjo mais próxima de você! Cada cidade tem pessoas voluntárias prontas para ajudar com dicas, eventos e orientações. Veja nosso mapa e use a busca abaixo, siga o perfil local e descubra como receber apoio pra pedalar com mais segurança e autonomia."
-      />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          width: { xs: "100%", lg: "1032px" },
-          margin: "auto",
-          marginTop: { xs: "40px", lg: "80px" },
-        }}
-      >
-        <SubTitle center style={{ marginBottom: "16px" }}>
-          Veja nossa playlist de dicas!
-        </SubTitle>
-        <Text center>
-          Seja você iniciante ou já com alguma experiência, nossa playlist de
-          vídeos tem dicas práticas pra tornar sua pedalada mais segura, leve e
-          divertida.
-          <br />
-          Aqui a gente compartilha o que aprendeu na rua, com carinho e sem
-          complicação, do jeitinho Bike Anjo.
-        </Text>
+        <Link to="">
+          <PrimaryButton>Cadastre-se e seja Bike Anjo</PrimaryButton>
+        </Link>
+
+        <FollowLocalArticulations
+          title="Conecte-se com uma articulação local"
+          titleAlign="center"
+          sub="Encontre a articulação Bike Anjo mais próxima de você! Cada cidade tem pessoas voluntárias prontas para ajudar com dicas, eventos e orientações. Veja nosso mapa e use a busca abaixo, siga o perfil local e descubra como receber apoio pra pedalar com mais segurança e autonomia."
+        />
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             width: { xs: "100%", lg: "1032px" },
-            margin: { xs: "32px auto 40px auto", lg: "32px auto 80px auto" },
+            margin: "auto",
+            marginTop: { xs: "40px", lg: "80px" },
           }}
         >
-          <Button center>Acesse a Playlist</Button>
+          <SubTitle center style={{ marginBottom: "16px" }}>
+            Veja nossa playlist de dicas!
+          </SubTitle>
+          <Text center>
+            Seja você iniciante ou já com alguma experiência, nossa playlist de
+            vídeos tem dicas práticas pra tornar sua pedalada mais segura, leve
+            e divertida.
+            <br />
+            Aqui a gente compartilha o que aprendeu na rua, com carinho e sem
+            complicação, do jeitinho Bike Anjo.
+          </Text>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              width: { xs: "100%", lg: "1032px" },
+              margin: { xs: "32px auto 40px auto", lg: "32px auto 80px auto" },
+            }}
+          >
+            <Link to="">
+              <Button center>Acesse a Playlist</Button>
+            </Link>
+          </Box>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 }
