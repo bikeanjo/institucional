@@ -26,7 +26,7 @@ const colors = {
   "neutral-1000": "#333333",
 };
 
-const Colors = {
+const Colors: Record<string, string> = {
   "Green-10": "#F6FBEF",
   "Green-20": "#DFF2C9",
   "Green-30": "#C0E694",
