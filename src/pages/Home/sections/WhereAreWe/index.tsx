@@ -40,7 +40,7 @@ function WhereAreWe(): JSX.Element {
       />
       <Button
         component={Link}
-        to=""
+        to="/onde-estamos"
         sx={{
           backgroundColor: Colors["Green-70"],
           color: "var(--mui-palette-neutral-100)",

@@ -34,8 +34,8 @@ function EscolaBikeAnjo(): JSX.Element {
       <Header secondary>
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
+      <BackButton />
       <Container>
-        <BackButton />
         <AboutEBA />
         <Map />
         <FindLocalArticulation />

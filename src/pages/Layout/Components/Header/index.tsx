@@ -14,6 +14,7 @@ import {
   Autocomplete,
   TextField,
 } from "@mui/material";
+import { createFilterOptions } from "@mui/material/Autocomplete";
 import "material-icons/iconfont/material-icons.css";
 import logo from "../../../../assets/icons/logo-bike-anjo.png";
 import Login from "./Login";
@@ -24,12 +25,30 @@ import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
-import { Link as ButtonLink } from "react-router-dom";
+import { Link as ButtonLink, useNavigate } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
   const [open, setOpen] = React.useState(false);
+  const [expanded, setExpanded] = React.useState<string | false>(false);
+  const navigate = useNavigate();
+
+  const filterOptions = createFilterOptions<{
+    label: string;
+    id: number;
+    url: string;
+  }>();
+
+  const handleChange =
+    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+
+  const handleCloseDrawer = () => {
+    setOpen(false);
+    setExpanded(false);
+  };
 
   const toggleDrawer = () => () => {
     setOpen((prev) => !prev);
@@ -55,7 +74,11 @@ const Header: React.FC = () => {
     return { options, lastId: id };
   }
 
-  const { options } = extractOptions(menuItems);
+  const { options: extractedOptions } = extractOptions(menuItems);
+
+  const options = extractedOptions.sort((a, b) =>
+    a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" }),
+  );
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
@@ -101,7 +124,13 @@ const Header: React.FC = () => {
         <Autocomplete
           disablePortal
           options={options}
+          filterOptions={filterOptions}
           popupIcon={null}
+          onChange={(_, value) => {
+            if (value?.url) {
+              void navigate(value.url);
+            }
+          }}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -135,11 +164,7 @@ const Header: React.FC = () => {
               }}
             />
           )}
-          renderOption={(props, option) => (
-            <li {...props}>
-              <Link to={option.url}>{option.label}</Link>
-            </li>
-          )}
+          renderOption={(props, option) => <li {...props}>{option.label}</li>}
           sx={{
             display: { xs: "none", lg: "flex" },
             alignItems: "center",
@@ -196,7 +221,7 @@ const Header: React.FC = () => {
       <Divider />
       <Drawer
         open={open}
-        onClose={toggleDrawer()}
+        onClose={handleCloseDrawer}
         anchor="top"
         ModalProps={{
           keepMounted: true,
@@ -220,7 +245,13 @@ const Header: React.FC = () => {
           <Autocomplete
             disablePortal
             options={options}
+            filterOptions={filterOptions}
             popupIcon={null}
+            onChange={(_, value) => {
+              if (value?.url) {
+                void navigate(value.url);
+              }
+            }}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -254,11 +285,7 @@ const Header: React.FC = () => {
                 }}
               />
             )}
-            renderOption={(props, option) => (
-              <li {...props}>
-                <Link to={option.url}>{option.label}</Link>
-              </li>
-            )}
+            renderOption={(props, option) => <li {...props}>{option.label}</li>}
             sx={{
               display: { xs: "flex", lg: "none" },
               alignItems: "center",
@@ -276,6 +303,8 @@ const Header: React.FC = () => {
           {menuItems.map((item, idx) => {
             return (
               <Accordion
+                expanded={expanded === `panel-${idx}`}
+                onChange={handleChange(`panel-${idx}`)}
                 key={idx + " accordion-item"}
                 elevation={0}
                 disableGutters
@@ -359,7 +388,12 @@ const Header: React.FC = () => {
                               color={Colors["Green-70"]}
                             >
                               {subItem.url ? (
-                                <Link to={subItem.url}>{subItem.title}</Link>
+                                <Link
+                                  to={subItem.url}
+                                  onClick={handleCloseDrawer}
+                                >
+                                  {subItem.title}
+                                </Link>
                               ) : (
                                 subItem.title
                               )}
@@ -385,7 +419,10 @@ const Header: React.FC = () => {
                                   color={Colors["Green-70"]}
                                 >
                                   {lastItem.url ? (
-                                    <Link to={lastItem.url}>
+                                    <Link
+                                      to={lastItem.url}
+                                      onClick={handleCloseDrawer}
+                                    >
                                       {lastItem.title}
                                     </Link>
                                   ) : (
