@@ -7,6 +7,7 @@ import Partners from "../Components/Partners";
 import Button from "../Components/Button";
 import { Link } from "react-router-dom";
 import Container from "../Components/Container";
+import { Colors } from "../../styles/tokens/colors";
 
 const AjudeComoInstituicao = () => {
   return (
@@ -48,7 +49,7 @@ const AjudeComoInstituicao = () => {
               gap: { xs: "16px", lg: "24px" },
             }}
           >
-            <Title>Empresas Parceiras</Title>
+            <Title color={Colors["Pink-50"]}>Empresas Parceiras</Title>
             <SubTitle>
               Patrocinar a Bike Anjo é investir em mobilidade, cidadania e
               impacto positivo.

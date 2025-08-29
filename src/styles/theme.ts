@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import colors from "./tokens/colors";
+import { colors, Colors } from "./tokens/colors";
 
 const { palette } = createTheme();
 const theme = createTheme({
@@ -18,6 +18,7 @@ const theme = createTheme({
   },
   palette: {
     ...colors,
+    ...Colors,
     title: palette.augmentColor({
       color: {
         main: "#486284",

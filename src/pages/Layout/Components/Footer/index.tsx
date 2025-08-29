@@ -1,7 +1,7 @@
 /* eslint-disable react-x/no-array-index-key */
 import React from "react";
 import { Box, Typography, Divider } from "@mui/material";
-import Logo from "../../../../assets/icons/logo-bike-anjo.svg";
+import Logo from "../../../../assets/icons/logo-bike-anjo.png";
 import {
   faInstagram,
   faFacebookF,
@@ -59,13 +59,7 @@ const Footer: React.FC = () => {
             lg: "1fr",
           }}
         >
-          <Box
-            component="img"
-            src={Logo}
-            alt="Logo"
-            width={{ xs: 54, lg: 90 }}
-            gridArea="img"
-          />
+          <Box component="img" src={Logo} alt="Logo" gridArea="img" />
           <Typography
             width={{ xs: "100%", lg: 293 }}
             fontSize={"16px"}

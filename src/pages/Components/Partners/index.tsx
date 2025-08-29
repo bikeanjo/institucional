@@ -7,11 +7,16 @@ import ccaImage from "@assets/images/Home/Partners/cca.png";
 import tembiciImage from "@assets/images/Home/Partners/tembici.png";
 import ccImage from "@assets/images/Home/Partners/cc.png";
 import ucbImage from "@assets/images/Home/Partners/ucb.png";
+import { Colors } from "../../../styles/tokens/colors";
 
 function Partners({ home }: { home?: boolean }): JSX.Element {
   return (
     <Container gap="48px">
-      <Title variant="h2" display={home ? "flex" : "none"}>
+      <Title
+        variant="h2"
+        display={home ? "flex" : "none"}
+        color={Colors["Pink-50"]}
+      >
         Parceiros
       </Title>
       <Grid

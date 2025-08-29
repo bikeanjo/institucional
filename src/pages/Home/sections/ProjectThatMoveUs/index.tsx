@@ -14,6 +14,7 @@ import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls } from "./style";
 import { Link } from "react-router-dom";
+import { Colors } from "../../../../styles/tokens/colors";
 
 function ProjectThatMoveUs(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);
@@ -87,7 +88,9 @@ function ProjectThatMoveUs(): JSX.Element {
           flexDirection: "column",
         }}
       >
-        <Title variant="h2">Iniciativas que nos movem</Title>
+        <Title variant="h2" color={Colors["Pink-50"]}>
+          Iniciativas que nos movem
+        </Title>
         <SubTitle>
           Cada projeto é uma forma de transformar cidades, conheça nosso
           trabalho. Além de ensinar a pedalar, atuamos em diversas frentes.
@@ -150,7 +153,7 @@ function ProjectThatMoveUs(): JSX.Element {
         component={Link}
         to="/iniciativas"
         sx={{
-          backgroundColor: "var(--mui-palette-neutral-700)",
+          backgroundColor: Colors["Green-70"],
           color: "var(--mui-palette-neutral-100)",
           padding: "16px 24px",
           height: { xs: 40 },
