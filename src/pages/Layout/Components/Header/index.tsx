@@ -1,5 +1,5 @@
 /* eslint-disable react-x/no-array-index-key */
-import React from "react";
+import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -13,6 +13,7 @@ import {
   AccordionDetails,
   Autocomplete,
   TextField,
+  FilterOptionsState,
 } from "@mui/material";
 import { createFilterOptions } from "@mui/material/Autocomplete";
 import "material-icons/iconfont/material-icons.css";
@@ -32,13 +33,34 @@ const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
   const [open, setOpen] = React.useState(false);
   const [expanded, setExpanded] = React.useState<string | false>(false);
+  const [focused, setFocused] = React.useState<boolean>(false);
   const navigate = useNavigate();
+  const [searchValue, setSearchValue] = useState("");
+  const [openDesktopAutocomplete, setOpenDesktopAutocomplete] = useState(false);
+  const [openMobileAutocomplete, setOpenMobileAutocomplete] = useState(false);
 
-  const filterOptions = createFilterOptions<{
-    label: string;
-    id: number;
-    url: string;
-  }>();
+  const filterOptions = (
+    options: { label: string; id: number; url: string }[],
+    state: FilterOptionsState<{ label: string; id: number; url: string }>,
+  ) => {
+    const defaultFilter = createFilterOptions<{
+      label: string;
+      id: number;
+      url: string;
+    }>({ limit: 3 });
+
+    const filtered = defaultFilter(options, state);
+
+    if (filtered.length < options.length) {
+      filtered.push({
+        label: "Ver mais resultados",
+        id: -1,
+        url: "/buscar",
+      });
+    }
+
+    return filtered;
+  };
 
   const handleChange =
     (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
@@ -85,12 +107,12 @@ const Header: React.FC = () => {
       <Toolbar
         sx={{
           justifyContent: "space-between",
-          borderBottomWidth: "1px",
+          borderBottom: `2px solid ${Colors["Green-70"]}`,
           height: { xs: "54px", lg: "80px" },
           py: 2,
           px: 5,
           gap: { xs: "16px", lg: "32px" },
-          backgroundColor: "white",
+          backgroundColor: "neutral-100",
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       >
@@ -125,16 +147,73 @@ const Header: React.FC = () => {
           disablePortal
           options={options}
           filterOptions={filterOptions}
+          open={openDesktopAutocomplete}
           popupIcon={null}
           onChange={(_, value) => {
-            if (value?.url) {
+            if (!value) return;
+            if (value?.id === -1) {
+              void navigate(`/buscar?q=${searchValue}}`);
+            } else if (value?.url) {
               void navigate(value.url);
             }
+            setOpenDesktopAutocomplete(false);
+          }}
+          onClose={() => setOpenDesktopAutocomplete(false)}
+          slotProps={{
+            popper: {
+              sx: {
+                "& .MuiAutocomplete-paper": {
+                  border: `2px solid ${Colors["Green-70"]}`,
+                  borderTop: "none",
+                  borderBottomLeftRadius: "8px",
+                  borderBottomRightRadius: "8px",
+                },
+                "& .MuiAutocomplete-listbox": {
+                  padding: 0,
+                  "& li": {
+                    borderBottom: `2px solid ${Colors["Green-20"]}`,
+                    "&:hover": {
+                      backgroundColor: Colors["Green-20"],
+                    },
+                    "&.Mui-focused": {
+                      backgroundColor: Colors["Green-20"],
+                    },
+                    "&[aria-selected='true']": {
+                      backgroundColor: Colors["Green-20"],
+                    },
+                  },
+                  "& li:first-of-type": {
+                    borderTop: `2px solid ${Colors["Green-20"]}`,
+                  },
+                },
+              },
+            },
           }}
           renderInput={(params) => (
             <TextField
               {...params}
-              placeholder="Buscar..."
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              placeholder={
+                focused
+                  ? "Digitando palavra chave..."
+                  : "Pesquise páginas, tópicos ou áreas..."
+              }
+              onClick={() => setOpenDesktopAutocomplete((prev) => !prev)}
+              onFocus={() => setFocused(true)}
+              onBlur={() => {
+                setFocused(false);
+                setOpenDesktopAutocomplete(false);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  if (searchValue.trim()) {
+                    void navigate(`/buscar?q=${searchValue}`);
+                  }
+                  setOpenDesktopAutocomplete(false);
+                }
+              }}
               InputProps={{
                 ...params.InputProps,
                 startAdornment: (
@@ -154,29 +233,95 @@ const Header: React.FC = () => {
                 ),
               }}
               sx={{
+                width: openDesktopAutocomplete ? 400 : 200,
+                transition: "width 0.3s ease",
+                "& input": {
+                  color: Colors["Green-70"],
+                },
+                "& input::placeholder": {
+                  color: Colors["Green-70"],
+                  opacity: 1,
+                },
                 "& .MuiOutlinedInput-root": {
-                  "& fieldset": { border: "none" },
-                  backgroundColor: "#E2E8F0",
-                  borderRadius: "8px",
+                  "& fieldset": {
+                    border: `2px solid ${Colors["Green-70"]}`,
+                    borderBottom: openDesktopAutocomplete
+                      ? "none"
+                      : `2px solid ${Colors["Green-70"]}`,
+                    borderRadius: "8px",
+                    borderBottomLeftRadius: openDesktopAutocomplete ? 0 : "8px",
+                    borderBottomRightRadius: openDesktopAutocomplete
+                      ? 0
+                      : "8px",
+                  },
+                  backgroundColor: "neutral-100",
                   height: "48px",
                   paddingLeft: "8px",
+                  "&:hover fieldset": {
+                    borderColor: Colors["Green-70"],
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: Colors["Green-70"],
+                  },
                 },
               }}
             />
           )}
-          renderOption={(props, option) => <li {...props}>{option.label}</li>}
+          renderOption={(props, option) => {
+            if (option.id === -1) {
+              return (
+                <li
+                  {...props}
+                  style={{
+                    fontWeight: 600,
+                    color: Colors["Green-70"],
+                    cursor: "pointer",
+                  }}
+                >
+                  Ver mais resultados
+                </li>
+              );
+            }
+            return (
+              <li
+                {...props}
+                style={{
+                  fontWeight: 400,
+                  color: Colors["Green-70"],
+                  cursor: "pointer",
+                }}
+              >
+                <Link to={option.url}>{option.label}</Link>
+              </li>
+            );
+          }}
+          PaperComponent={(props) => (
+            <Box
+              {...props}
+              sx={{
+                backgroundColor: "neutral-100",
+                borderBottomLeftRadius: "8px",
+                borderBottomRightRadius: "8px",
+                border: `2px solid ${Colors["Green-70"]}`,
+                borderTop: "none",
+                overflow: "hidden",
+                minWidth: "400px",
+              }}
+            />
+          )}
           sx={{
             display: { xs: "none", lg: "flex" },
             alignItems: "center",
-            width: 403,
+            width: "100%",
             height: "48px",
-            backgroundColor: "#E2E8F0",
+            backgroundColor: "neutral-100",
             borderRadius: "8px",
             py: 1.5,
             px: 2,
             gap: { xs: "16px", lg: 1.5 },
             border: "none",
           }}
+          fullWidth
         />
 
         {/* Nav */}
@@ -187,6 +332,7 @@ const Header: React.FC = () => {
             alignItems: "center",
             gap: "32px",
             whiteSpace: "nowrap",
+            color: Colors["Green-70"],
           }}
         >
           {menuItems.map((item, idx) => (
@@ -200,10 +346,10 @@ const Header: React.FC = () => {
             component={ButtonLink}
             to="/doacao"
             sx={{
-              width: { xs: 72, xl: 130 },
-              height: { xs: 25, xl: 43 },
+              width: { xs: 77, xl: 120 },
+              height: { xs: 48, xl: 48 },
               backgroundColor: Colors["Orange-50"],
-              borderRadius: "10px",
+              borderRadius: "4px",
               padding: { xs: "0px", lg: "19px 48px" },
               fontWeight: 600,
               textTransform: "none",
@@ -246,16 +392,71 @@ const Header: React.FC = () => {
             disablePortal
             options={options}
             filterOptions={filterOptions}
+            open={openMobileAutocomplete}
+            onOpen={() => setOpenMobileAutocomplete(true)}
+            onClose={() => setOpenMobileAutocomplete(false)}
             popupIcon={null}
             onChange={(_, value) => {
-              if (value?.url) {
+              if (!value) return;
+              if (value?.id === -1) {
+                void navigate(`/buscar?q=${searchValue}}`);
+              } else if (value?.url) {
                 void navigate(value.url);
               }
+              setOpenMobileAutocomplete(false);
+              handleCloseDrawer();
+            }}
+            slotProps={{
+              popper: {
+                sx: {
+                  "& .MuiAutocomplete-paper": {
+                    border: `2px solid ${Colors["Green-70"]}`,
+                    borderTop: "none",
+                    borderBottomLeftRadius: "8px",
+                    borderBottomRightRadius: "8px",
+                  },
+                  "& .MuiAutocomplete-listbox": {
+                    padding: 0,
+                    "& li": {
+                      borderBottom: `2px solid ${Colors["Green-20"]}`,
+                      "&:hover": {
+                        backgroundColor: Colors["Green-20"],
+                      },
+                      "&.Mui-focused": {
+                        backgroundColor: Colors["Green-20"],
+                      },
+                      "&[aria-selected='true']": {
+                        backgroundColor: Colors["Green-20"],
+                      },
+                    },
+                    "& li:first-of-type": {
+                      borderTop: `2px solid ${Colors["Green-20"]}`,
+                    },
+                  },
+                },
+              },
             }}
             renderInput={(params) => (
               <TextField
                 {...params}
-                placeholder="Buscar..."
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+                placeholder={
+                  focused
+                    ? "Digitando palavra chave..."
+                    : "Pesquise páginas, tópicos ou áreas..."
+                }
+                onFocus={() => setFocused(true)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    e.preventDefault();
+                    if (searchValue.trim()) {
+                      void navigate(`/buscar?q=${searchValue}`);
+                    }
+                    setOpenMobileAutocomplete(false);
+                    handleCloseDrawer();
+                  }
+                }}
                 InputProps={{
                   ...params.InputProps,
                   startAdornment: (
@@ -275,168 +476,270 @@ const Header: React.FC = () => {
                   ),
                 }}
                 sx={{
+                  "& input": {
+                    color: Colors["Green-70"],
+                  },
+                  "& input::placeholder": {
+                    color: Colors["Green-70"],
+                    opacity: 1,
+                  },
                   "& .MuiOutlinedInput-root": {
-                    "& fieldset": { border: "none" },
-                    backgroundColor: "#E2E8F0",
-                    borderRadius: "8px",
+                    "& fieldset": {
+                      border: `2px solid ${Colors["Green-70"]}`,
+                      borderBottom: openMobileAutocomplete
+                        ? "none"
+                        : `2px solid ${Colors["Green-70"]}`,
+                      borderRadius: "8px",
+                      borderBottomLeftRadius: openMobileAutocomplete
+                        ? 0
+                        : "8px",
+                      borderBottomRightRadius: openMobileAutocomplete
+                        ? 0
+                        : "8px",
+                    },
+                    backgroundColor: "neutral-100",
                     height: "48px",
                     paddingLeft: "8px",
+                    "&:hover fieldset": {
+                      borderColor: Colors["Green-70"],
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: Colors["Green-70"],
+                    },
                   },
                 }}
               />
             )}
-            renderOption={(props, option) => <li {...props}>{option.label}</li>}
+            renderOption={(props, option) => {
+              if (option.id === -1) {
+                return (
+                  <li
+                    {...props}
+                    style={{
+                      fontWeight: 600,
+                      color: Colors["Green-70"],
+                      cursor: "pointer",
+                    }}
+                  >
+                    Ver mais resultados
+                  </li>
+                );
+              }
+              return (
+                <li
+                  {...props}
+                  style={{
+                    fontWeight: 400,
+                    color: Colors["Green-70"],
+                    cursor: "pointer",
+                  }}
+                >
+                  <Link to={option.url}>{option.label}</Link>
+                </li>
+              );
+            }}
+            PaperComponent={(props) => (
+              <Box
+                {...props}
+                sx={{
+                  backgroundColor: "neutral-100",
+                  borderBottomLeftRadius: "8px",
+                  borderBottomRightRadius: "8px",
+                  border: `2px solid ${Colors["Green-70"]}`,
+                  borderTop: "none",
+                  overflow: "hidden",
+                }}
+              />
+            )}
             sx={{
               display: { xs: "flex", lg: "none" },
               alignItems: "center",
               width: "96%",
               height: "48px",
-              backgroundColor: "#E2E8F0",
-              borderRadius: "8px",
+              backgroundColor: "neutral-100",
               py: 1.5,
               px: 2,
               gap: { xs: "16px", lg: 1.5 },
-              border: "none",
-              margin: "auto",
+              margin: "8px auto 16px auto",
             }}
           />
           {menuItems.map((item, idx) => {
-            return (
-              <Accordion
-                expanded={expanded === `panel-${idx}`}
-                onChange={handleChange(`panel-${idx}`)}
-                key={idx + " accordion-item"}
-                elevation={0}
-                disableGutters
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  backgroundColor: "transparent",
-                  "&:before": {
-                    display: "none !important",
-                  },
-                }}
-              >
-                <AccordionSummary
-                  expandIcon={
-                    Array.isArray(item.children) && item.children.length > 0 ? (
-                      <ExpandMoreIcon sx={{ color: Colors["Green-70"] }} />
-                    ) : null
-                  }
-                  aria-controls="panel1-content"
-                  id="panel1-header"
+            if (Array.isArray(item.children) && item.children.length > 0) {
+              return (
+                <Accordion
+                  expanded={expanded === `panel-${idx}`}
+                  onChange={handleChange(`panel-${idx}`)}
+                  key={idx + " accordion-item"}
+                  elevation={0}
+                  disableGutters
                   sx={{
-                    height: "54px",
-                    padding: "0px 24px",
-                    margin: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
                     backgroundColor: "transparent",
-                    minHeight: 0,
-                    "&.Mui-expanded": {
-                      minHeight: "unset",
+                    "&:before": {
+                      display: "none !important",
                     },
-                    "& .MuiAccordionSummary-content.Mui-expanded": {
-                      margin: 0,
-                    },
+                    borderTop:
+                      idx === 0
+                        ? `2px solid ${Colors["Green-20"]}`
+                        : `1px solid ${Colors["Green-20"]}`,
+                    borderBottom: `1px solid ${Colors["Green-20"]}`,
                   }}
-                  slotProps={{ content: { sx: { margin: 0 } } }}
                 >
-                  <Typography
-                    component="span"
-                    fontWeight={600}
-                    fontSize={"16px"}
-                    color={Colors["Green-70"]}
-                  >
-                    {item.title}
-                  </Typography>
-                </AccordionSummary>
-                {Array.isArray(item.children) && item.children.length > 0 && (
-                  <AccordionDetails
+                  <AccordionSummary
+                    expandIcon={
+                      Array.isArray(item.children) &&
+                      item.children.length > 0 ? (
+                        <ExpandMoreIcon sx={{ color: Colors["Green-70"] }} />
+                      ) : null
+                    }
+                    aria-controls="panel1-content"
+                    id="panel1-header"
                     sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      padding: "8px 0px",
+                      height: "54px",
+                      padding: "0px 24px",
+                      margin: 0,
                       backgroundColor: "transparent",
-                      color: Colors["Green-70"],
+                      minHeight: 0,
+                      "&.Mui-expanded": {
+                        minHeight: "unset",
+                      },
+                      "& .MuiAccordionSummary-content.Mui-expanded": {
+                        margin: 0,
+                      },
                     }}
+                    slotProps={{ content: { sx: { margin: 0 } } }}
                   >
-                    <Box
+                    <Typography
+                      component="span"
+                      fontWeight={600}
+                      fontSize={"16px"}
+                      color={Colors["Green-70"]}
+                    >
+                      {item.title}
+                    </Typography>
+                  </AccordionSummary>
+                  {Array.isArray(item.children) && item.children.length > 0 && (
+                    <AccordionDetails
                       sx={{
-                        background: "#EDEDED",
-                        padding: "0px 24px",
                         display: "flex",
-                        alignContent: "center",
                         flexDirection: "column",
-                        justifyContent: "center",
+                        padding: "8px 0px",
+                        backgroundColor: "transparent",
+                        color: Colors["Green-70"],
                       }}
                     >
-                      {item.children.map((subItem, subIdx) => (
-                        <React.Fragment key={subIdx + " accordion-sub-item"}>
-                          <Box
-                            sx={{
-                              height: "54px",
-                              display: "flex",
-                              alignContent: "center",
-                              flexDirection: "column",
-                              justifyContent: "center",
-                            }}
-                          >
-                            <Typography
-                              component="span"
-                              fontWeight={600}
-                              fontSize={"16px"}
-                              color={Colors["Green-70"]}
+                      <Box
+                        sx={{
+                          background: "neutral-100",
+                          padding: "0px 24px",
+                          display: "flex",
+                          alignContent: "center",
+                          flexDirection: "column",
+                          justifyContent: "center",
+                        }}
+                      >
+                        {item.children.map((subItem, subIdx) => (
+                          <React.Fragment key={subIdx + " accordion-sub-item"}>
+                            <Box
+                              sx={{
+                                height: "54px",
+                                display: "flex",
+                                alignContent: "center",
+                                flexDirection: "column",
+                                justifyContent: "center",
+                              }}
                             >
-                              {subItem.url ? (
-                                <Link
-                                  to={subItem.url}
-                                  onClick={handleCloseDrawer}
-                                >
-                                  {subItem.title}
-                                </Link>
-                              ) : (
-                                subItem.title
-                              )}
-                            </Typography>
-                          </Box>
-                          {Array.isArray(subItem.children) &&
-                            subItem.children.length > 0 &&
-                            subItem.children.map((lastItem, lastIdx) => (
-                              <Box
-                                key={lastIdx + " accordion-last-item"}
-                                sx={{
-                                  height: "54px",
-                                  display: "flex",
-                                  padding: "0px 24px",
-                                  alignContent: "center",
-                                  flexDirection: "column",
-                                  justifyContent: "center",
-                                }}
+                              <Typography
+                                component="span"
+                                fontWeight={600}
+                                fontSize={"16px"}
+                                color={Colors["Green-70"]}
                               >
-                                <Typography
-                                  component="span"
-                                  fontSize={"16px"}
-                                  color={Colors["Green-70"]}
+                                {subItem.url ? (
+                                  <Link
+                                    to={subItem.url}
+                                    onClick={handleCloseDrawer}
+                                  >
+                                    {subItem.title}
+                                  </Link>
+                                ) : (
+                                  subItem.title
+                                )}
+                              </Typography>
+                            </Box>
+                            {Array.isArray(subItem.children) &&
+                              subItem.children.length > 0 &&
+                              subItem.children.map((lastItem, lastIdx) => (
+                                <Box
+                                  key={lastIdx + " accordion-last-item"}
+                                  sx={{
+                                    height: "54px",
+                                    display: "flex",
+                                    padding: "0px 24px",
+                                    alignContent: "center",
+                                    flexDirection: "column",
+                                    justifyContent: "center",
+                                  }}
                                 >
-                                  {lastItem.url ? (
-                                    <Link
-                                      to={lastItem.url}
-                                      onClick={handleCloseDrawer}
-                                    >
-                                      {lastItem.title}
-                                    </Link>
-                                  ) : (
-                                    lastItem.title
-                                  )}
-                                </Typography>
-                              </Box>
-                            ))}
-                        </React.Fragment>
-                      ))}
-                    </Box>
-                  </AccordionDetails>
-                )}
-              </Accordion>
+                                  <Typography
+                                    component="span"
+                                    fontSize={"16px"}
+                                    color={Colors["Green-70"]}
+                                  >
+                                    {lastItem.url ? (
+                                      <Link
+                                        to={lastItem.url}
+                                        onClick={handleCloseDrawer}
+                                      >
+                                        {lastItem.title}
+                                      </Link>
+                                    ) : (
+                                      lastItem.title
+                                    )}
+                                  </Typography>
+                                </Box>
+                              ))}
+                          </React.Fragment>
+                        ))}
+                      </Box>
+                    </AccordionDetails>
+                  )}
+                </Accordion>
+              );
+            }
+
+            return (
+              <Box
+                key={idx + " menu-item"}
+                sx={{
+                  borderTop:
+                    idx === 0
+                      ? `2px solid ${Colors["Green-20"]}`
+                      : `1px solid ${Colors["Green-20"]}`,
+                  borderBottom: `1px solid ${Colors["Green-20"]}`,
+                  height: "54px",
+                  display: "flex",
+                  alignItems: "center",
+                  px: "24px",
+                }}
+              >
+                <Typography
+                  component="span"
+                  fontWeight={600}
+                  fontSize={"16px"}
+                  color={Colors["Green-70"]}
+                >
+                  {item.url ? (
+                    <Link to={item.url} onClick={handleCloseDrawer}>
+                      {item.title}
+                    </Link>
+                  ) : (
+                    item.title
+                  )}
+                </Typography>
+              </Box>
             );
           })}
         </Box>

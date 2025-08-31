@@ -21,6 +21,7 @@ import FAQ from "./pages/Home/sections/FAQ";
 import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import Container from "./pages/Components/Container";
 import Volunteering from "./pages/Volunteering";
+import SearchResults from "./pages/Search/SearchResults";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/pedala-ou-repassa" element={<PedalaOuRepassa />} />
           <Route path="/dicas-para-pedalar" element={<DicasParaPedalar />} />
           <Route path="*" element={<UnavailablePage />} />
+          <Route path="/buscar" element={<SearchResults />} />
           <Route
             path="/dia-mundial-sem-carro"
             element={<DiaMundialSemCarro />}

@@ -34,7 +34,18 @@ export default function Login() {
       <Box sx={{ display: "flex", textAlign: "center" }}>
         <IconButton
           onClick={handleOpenMenu}
-          sx={{ ml: 2 }}
+          sx={{
+            ml: 2,
+            "&:hover": {
+              backgroundColor: Colors["Green-20"],
+            },
+            "&:active": {
+              backgroundColor: Colors["Green-20"],
+            },
+          }}
+          TouchRippleProps={{
+            style: { color: Colors["Green-20"] },
+          }}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
@@ -59,7 +70,7 @@ export default function Login() {
             elevation: 0,
             sx: {
               overflow: "visible",
-              backgroundColor: "#858585",
+              backgroundColor: Colors["Green-70"],
               width: 249,
               py: 5,
               px: 4,
@@ -76,7 +87,7 @@ export default function Login() {
                 height: 18,
                 right: 24,
                 top: 0,
-                backgroundColor: "#858585",
+                backgroundColor: Colors["Green-70"],
                 transform: "translateY(-20%) rotate(45deg)",
                 zIndex: 0,
               },
@@ -86,11 +97,11 @@ export default function Login() {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: 65, vertical: 90 }}
       >
-        <MenuItem sx={menuItemStyle}>
+        <Box sx={{ display: "flex", justifyContent: "center", mb: 1 }}>
           <Typography color={"neutral-100"}>
             Já faz parte da Bike Anjo?
           </Typography>
-        </MenuItem>
+        </Box>
 
         <MenuItem sx={menuItemStyle}>
           <Button
@@ -104,30 +115,30 @@ export default function Login() {
               backgroundColor: "neutral-100",
               textTransform: "none",
               fontSize: "16px",
-              color: "#858585",
+              color: Colors["Green-70"],
             }}
           >
             Faça Login
           </Button>
         </MenuItem>
 
-        <MenuItem sx={menuItemStyle}>
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 2, mb: 1 }}>
           <Typography color={"neutral-100"}>Ainda não tem cadastro?</Typography>
-        </MenuItem>
+        </Box>
 
         <MenuItem sx={menuItemStyle}>
           <Button
             component={Link}
             to=""
-            sx={(theme) => ({
+            sx={() => ({
               width: 185,
               height: 39,
               borderRadius: "4px",
               p: 1.25,
-              backgroundColor: theme.palette.secondary.main,
+              backgroundColor: Colors["Green-20"],
               textTransform: "none",
               fontSize: "16px",
-              color: "neutral-800",
+              color: Colors["Green-70"],
             })}
           >
             Crie uma Conta
