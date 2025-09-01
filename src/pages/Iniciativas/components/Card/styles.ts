@@ -1,18 +1,22 @@
 import styled from "styled-components";
 import { Button } from "@mui/material";
+import { Colors } from "../../../../styles/tokens/colors";
 
-export const ContainerCard = styled.div`
-  min-width: 612px;
+export const ContainerCard = styled.div<{ color?: string }>`
+  min-width: 343px;
+  max-width: 343px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 32px 16px;
   gap: 20px;
-  border: 4px solid var(--mui-palette-secondary-main);
+  border: 2px solid
+    ${(props) => (props.color ? props.color : Colors["Pink-50"])};
   border-radius: 16px;
   border-sizing: border-box;
 
   .content {
+    width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -57,8 +61,6 @@ export const Image = styled.img`
 
 export const Text = styled.p`
   font-size: 16px;
-  padding-top: 76px;
-  padding-inline: 66px;
   color: #000000;
   margin: 0;
 
@@ -70,12 +72,11 @@ export const Text = styled.p`
 `;
 
 export const CardButton = styled(Button)`
-  width: auto;
-  min-width: unset;
-  padding: 6px 40px;
+  width: 100%;
+  padding: 15px 32px;
   text-transform: none;
-  border-radius: 110px;
-  background-color: var(--mui-palette-title-main);
+  border-radius: 4px;
+  background-color: ${Colors["G-Grey-80"]};
 
   font-weight: 600;
   font-size: 16px;

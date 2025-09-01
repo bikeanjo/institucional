@@ -6,12 +6,13 @@ interface SubTitleProps {
   desktopOnly?: boolean;
   mobileCenter?: boolean;
   center?: boolean;
+  color?: string;
 }
 
 const SubTitle = styled(Typography)<SubTitleProps>(
-  ({ theme, desktopOnly, mobileCenter = false, center = false }) => ({
+  ({ theme, desktopOnly, mobileCenter = false, center = false, color }) => ({
     wordBreak: "break-word",
-    color: Colors["Pink-50"],
+    color: color ? color : Colors["Pink-50"],
     textAlign: "center",
 
     [theme.breakpoints.up("xs")]: {
