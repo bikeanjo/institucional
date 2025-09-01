@@ -4,9 +4,9 @@ import FollowSocialMedia from "./components/FollowSocialMedia";
 import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
 import Container from "@components/Container";
-import Hero from "../../assets/header/redes-sociais.webp";
 
 function SocialMedia(): JSX.Element {
+  const Hero = "/assets/header/redes-sociais.webp";
   return (
     <>
       <Header secondary Hero={Hero}>

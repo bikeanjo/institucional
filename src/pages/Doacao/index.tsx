@@ -9,15 +9,13 @@ import type { JSX } from "react";
 import SubTitle from "@components/SubTitle";
 import Text from "@components/Text";
 import Button from "@components/Button";
-import qrcode from "@assets/images/Doacao/QRCode.png";
-import apoiase from "@assets/images/Doacao/apoia-se.png";
 import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
-import Hero from "../../assets/header/doe.webp";
 
 const Doacao = (): JSX.Element => {
+  const Hero = "/assets/header/doe.webp";
   return (
     <>
       <Header secondary Hero={Hero}>
@@ -77,7 +75,7 @@ const Doacao = (): JSX.Element => {
             <Text center>Escaneie o QR Code</Text>
             <Box
               component="img"
-              src={qrcode}
+              src={"/assets/images/Doacao/QRCode.png"}
               alt="qrcode"
               sx={{
                 height: "215px",
@@ -158,7 +156,7 @@ const Doacao = (): JSX.Element => {
             <SubTitle center>Doe via Apoia-se</SubTitle>
             <Box
               component="img"
-              src={apoiase}
+              src={"/assets/images/Doacao/apoia-se.png"}
               alt="apoiase"
               sx={{
                 height: "56px",

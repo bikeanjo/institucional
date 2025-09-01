@@ -2,11 +2,6 @@ import type { JSX } from "react";
 import Title from "../../pages/Home/components/Title";
 import Container from "../../pages/Home/components/Container";
 import { Box, Grid } from "@mui/material";
-import itauImage from "@assets/images/Home/Partners/itau.png";
-import ccaImage from "@assets/images/Home/Partners/cca.png";
-import tembiciImage from "@assets/images/Home/Partners/tembici.png";
-import ccImage from "@assets/images/Home/Partners/cc.png";
-import ucbImage from "@assets/images/Home/Partners/ucb.png";
 import { Colors } from "../../styles/tokens/colors";
 
 function Partners({ home }: { home?: boolean }): JSX.Element {
@@ -37,21 +32,21 @@ function Partners({ home }: { home?: boolean }): JSX.Element {
         >
           <Box
             component="img"
-            src={itauImage}
+            src={"/assets/images/Home/Partners/itau.png"}
             alt="itauImage"
             height={{ xs: 44, lg: 88 }}
             width={{ xs: 44, lg: 88 }}
           />
           <Box
             component="img"
-            src={ccaImage}
+            src={"/assets/images/Home/Partners/cca.png"}
             alt="ccaImage"
             height={{ xs: 73, lg: 106 }}
             width={{ xs: 79.5, lg: 159 }}
           />
           <Box
             component="img"
-            src={tembiciImage}
+            src={"/assets/images/Home/Partners/tembici.png"}
             alt="tembiciImage"
             height={{ xs: 50.5, lg: 100 }}
             width={{ xs: 60.88, lg: 122 }}
@@ -66,14 +61,14 @@ function Partners({ home }: { home?: boolean }): JSX.Element {
         >
           <Box
             component="img"
-            src={ccImage}
+            src={"/assets/images/Home/Partners/cc.png"}
             alt="ccImage"
             height={{ xs: 23.5, lg: 47 }}
             width={{ xs: 152, lg: 304 }}
           />
           <Box
             component="img"
-            src={ucbImage}
+            src={"/assets/images/Home/Partners/ucb.png"}
             alt="ucbImage"
             height={{ xs: 44.5, lg: 89 }}
             width={{ xs: 61, lg: 122 }}

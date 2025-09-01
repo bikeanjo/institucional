@@ -1,5 +1,4 @@
 import { Description, EBAContainer, Paragraph, Title } from "./styles";
-import ImgCarousel from "../../../assets/images/img-carousel.png";
 
 export default function AboutEBA() {
   return (
@@ -9,7 +8,10 @@ export default function AboutEBA() {
         <br /> A gente vai te dar uma mãozinha!
       </Description>
       <EBAContainer>
-        <img src={ImgCarousel} alt="imagem ou carrossel" />
+        <img
+          src={"/assets/images/img-carousel.png"}
+          alt="imagem ou carrossel"
+        />
         <Title>O que é uma EBA?</Title>
         <Paragraph>
           As Escolhas Bike Anjo são oficinas gratuitas organizadas por grupos de

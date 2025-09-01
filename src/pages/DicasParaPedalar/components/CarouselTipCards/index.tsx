@@ -1,7 +1,5 @@
 import { useRef } from "react";
 import { StepCard } from "../Card";
-import ArrowBack from "../../../../assets/images/arrow-back.png";
-import ArrowForward from "../../../../assets/images/arrow-forward.png";
 import { Arrow, Cards, CarouselContainer } from "./styles";
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
@@ -43,7 +41,10 @@ export default function CarouselTipCards({
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
-          <img src={ArrowBack} alt="Seta para a esquerda" />
+          <img
+            src={"/assets/images/arrow-back.png"}
+            alt="Seta para a esquerda"
+          />
         </Arrow>
 
         <Cards ref={scrollRef}>
@@ -58,7 +59,10 @@ export default function CarouselTipCards({
         </Cards>
 
         <Arrow direction="right" onClick={() => scroll("right")}>
-          <img src={ArrowForward} alt="Seta para a direita" />
+          <img
+            src={"/assets/images/arrow-forward.png"}
+            alt="Seta para a direita"
+          />
         </Arrow>
       </CarouselContainer>
     </>

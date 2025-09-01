@@ -3,9 +3,6 @@ import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
-import RightArrow from "../../../../assets/images/arrow-right.png";
-import LeftArrow from "../../../../assets/images/arrow-left.png";
-import StepsCarousel from "../../../../assets/images/steps-carousel.png";
 import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
 
@@ -26,7 +23,7 @@ function Carousel(): JSX.Element {
       >
         <Box
           component="img"
-          src={LeftArrow}
+          src={"/assets/images/arrow-left.png"}
           alt="Seta para a esquerda"
           sx={{
             display: { xs: "none", lg: "flex" },
@@ -55,7 +52,7 @@ function Carousel(): JSX.Element {
         </Box>
         <Box
           component="img"
-          src={RightArrow}
+          src={"/assets/images/arrow-right.png"}
           alt="Seta para a direita"
           sx={{
             display: { xs: "none", lg: "flex" },
@@ -119,7 +116,11 @@ function Carousel(): JSX.Element {
           <Typography>Ensinar a pedalar</Typography>
         </Button>
       </Box>
-      <Box component="img" src={StepsCarousel} alt="Passos do Carrossel" />
+      <Box
+        component="img"
+        src={"/assets/images/steps-carousel.png"}
+        alt="Passos do Carrossel"
+      />
     </Container>
   );
 }

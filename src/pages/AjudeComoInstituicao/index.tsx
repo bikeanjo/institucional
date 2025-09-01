@@ -8,9 +8,9 @@ import Button from "@components/Button";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
-import Hero from "../../assets/header/ajude-como-instituicao.webp";
 
 const AjudeComoInstituicao = () => {
+  const Hero = "/assets/header/ajude-como-instituicao.webp";
   return (
     <>
       <Header secondary Hero={Hero}>

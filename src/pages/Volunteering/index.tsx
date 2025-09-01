@@ -7,11 +7,10 @@ import HowToJoinCards from "./components/HowToJoinCards";
 import { GridContainer } from "./components/HowToJoinCards/styles";
 import Button from "@components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
-import BikeAnjoKid from "../../assets/images/bike-anjo-kid.jpg";
 import Container from "@components/Container";
-import Hero from "../../assets/header/voluntariado.webp";
 
 function Volunteering(): ReactNode {
+  const Hero = "/assets/header/voluntariado.webp";
   return (
     <>
       <Header secondary Hero={Hero}>
@@ -68,7 +67,7 @@ function Volunteering(): ReactNode {
             }}
           >
             <img
-              src={BikeAnjoKid}
+              src={"/assets/images/bike-anjo-kid.jpg"}
               alt="Criança sorrindo enquanto pedala"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />

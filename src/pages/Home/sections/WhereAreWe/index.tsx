@@ -2,7 +2,6 @@ import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
-import map from "../../../../assets/images/map.png";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
@@ -27,7 +26,7 @@ function WhereAreWe(): JSX.Element {
       </Box>
       <Box
         component="img"
-        src={map}
+        src={"/assets/images/map.png"}
         alt="Mapa com as iniciativas da Bike Anjo"
         sx={{
           marginTop: { xs: "0px", lg: "8px" },

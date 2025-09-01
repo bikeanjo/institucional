@@ -1,5 +1,4 @@
 import { Button, Description, Container, Paragraph, Title } from "./styles";
-import ImgCarousel from "../../../assets/images/img-carousel.png";
 import { Link } from "react-router-dom";
 
 export default function AboutPedalaOuRepassa() {
@@ -11,7 +10,10 @@ export default function AboutPedalaOuRepassa() {
         que está parada, coloque ela para se mexer: ou pedala ou repassa!
       </Description>
       <Container>
-        <img src={ImgCarousel} alt="imagem ou carrossel" />
+        <img
+          src={"/assets/images/img-carousel.png"}
+          alt="imagem ou carrossel"
+        />
         <Title>O que é o Pedala ou Repassa?</Title>
         <Paragraph>
           “Pedala ou repassa” é uma iniciativa de doação de bicicletas para

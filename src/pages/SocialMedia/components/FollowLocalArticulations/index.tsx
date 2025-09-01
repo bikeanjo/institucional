@@ -1,5 +1,4 @@
 import { MapImage } from "./styles";
-import articulationMap from "../../../../assets/images/articulation-map.png";
 import FindLocalArticulation from "./FindLocalArticulation";
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
@@ -19,7 +18,10 @@ export default function FollowLocalArticulations({
     <>
       <Title align={titleAlign}>{title}</Title>
       <SubTitle>{sub}</SubTitle>
-      <MapImage src={articulationMap} alt="Local Articulations" />
+      <MapImage
+        src={"/assets/images/articulation-map.png"}
+        alt="Local Articulations"
+      />
 
       <FindLocalArticulation />
     </>

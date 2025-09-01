@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import genericImage from "@assets/header/header-image.webp";
 import { Colors } from "../../styles/tokens/colors";
 
 interface HeaderProps {
@@ -22,7 +21,7 @@ const Header = styled.div<HeaderProps>(
       : "transparent",
     gap: gap || "0",
     alignItems: "center",
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.7) 100%), url(${Hero ? Hero : genericImage})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.7) 100%), url(${Hero ? Hero : "/assets/header/header-image.webp"})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "50% 20%",

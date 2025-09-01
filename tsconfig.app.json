@@ -21,16 +21,15 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"]
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": [
     "src",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/pages/Components/SubTitle/index.tsx"
+    "src/pages/Components/SubTitle/index.tsx",
+    "public/assets"
   ]
 }

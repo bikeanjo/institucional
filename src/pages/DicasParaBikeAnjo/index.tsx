@@ -6,7 +6,6 @@ import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
 import Container from "@components/Container";
-import Hero from "../../assets/header/dicas-para-bike-anjo.webp";
 
 const teachingSteps = [
   {
@@ -54,6 +53,7 @@ const teachingSteps = [
 ];
 
 function CyclingTips(): JSX.Element {
+  const Hero = "/assets/header/dicas-para-bike-anjo.webp";
   return (
     <>
       <Header secondary Hero={Hero}>
