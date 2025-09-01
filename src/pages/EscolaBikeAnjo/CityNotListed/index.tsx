@@ -1,6 +1,6 @@
-import Container from "../../Components/Container";
-import SubTitle from "../../Components/SubTitle";
-import Title from "../../Components/Title";
+import Container from "@components/Container";
+import SubTitle from "@components/SubTitle";
+import Title from "@components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
 import {
   Button,

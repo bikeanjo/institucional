@@ -1,10 +1,10 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import CarouselAttentionCards from "./components/CarouselAttentionCards";
 import SupportLinksSection from "./components/Links";
 import CarouselTipCards from "./components/CarouselTipCards";
 import SocialContent from "./components/SocialContent";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 
 const tipSteps = [
   {

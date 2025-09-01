@@ -2,8 +2,8 @@ import type { JSX } from "react";
 import { AccordionWrapper } from "./styles";
 import { QuestionAccordion } from "../../../DicasParaBikeAnjo/components/Accordion";
 import Title from "../../components/Title";
-import SubTitle from "../../../Components/SubTitle";
-import Container from "../../../Components/Container";
+import SubTitle from "@components/SubTitle";
+import Container from "@components/Container";
 import { Colors } from "../../../../styles/tokens/colors";
 
 const accordionItems = [

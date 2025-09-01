@@ -8,9 +8,10 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
     "paths": {
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["components/*"],
+      "@assets/*": ["assets/*"]
     },
     "outDir": "dist"
   }

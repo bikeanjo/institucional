@@ -1,9 +1,9 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import LearningCarousel from "./components/LearningCarousel";
-import SubTitle from "../Components/SubTitle";
-import Container from "../Components/Container";
-import Hero from "../../assets/header/como-funciona.webp";
+import SubTitle from "@components/SubTitle";
+import Container from "@components/Container";
+import Hero from "@assets/header/como-funciona.webp";
 
 const learnSteps = [
   {

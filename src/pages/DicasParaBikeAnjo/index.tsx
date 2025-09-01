@@ -1,11 +1,11 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import SupportLinksSection from "./components/Links";
 import CarouselTeachingCards from "./components/CarouselTeachingCards";
 import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/dicas-para-bike-anjo.webp";
 
 const teachingSteps = [

@@ -1,12 +1,12 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import BackButton from "../DiaMundialSemCarro/components/BackButton";
 import { Paragraph } from "../DiaMundialSemCarro/components/Paragraph/Paragraph";
 import { HeroCardSection } from "../DiaMundialSemCarro/components/HeroCardSection/index";
 import { Cards } from "./Components/Cards";
 import { Title } from "../DiaMundialSemCarro/components/Title/Title";
 import Fac from "./Components/FAC";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/bike-anjas.webp";
 
 function BikeAnjas(): JSX.Element {

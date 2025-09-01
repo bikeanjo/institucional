@@ -1,5 +1,5 @@
-import SubTitle from "../../../Components/SubTitle";
-import Title from "../../../Components/Title";
+import SubTitle from "@components/SubTitle";
+import Title from "@components/Title";
 import { Button, ButtonsContainer } from "./styles";
 
 interface EngageProps {

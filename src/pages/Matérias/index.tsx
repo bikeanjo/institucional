@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import Timeline from "./components/Timeline";
-import Text from "../Components/Text";
-import Container from "../Components/Container";
+import Text from "@components/Text";
+import Container from "@components/Container";
 
 function Matérias(): ReactNode {
   return (

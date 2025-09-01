@@ -8,8 +8,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkIcon from "@mui/icons-material/Link";
-import Title from "../../../Components/Title";
-import SubTitle from "../../../Components/SubTitle";
+import Title from "@components/Title";
+import SubTitle from "@components/SubTitle";
 
 interface ShareProps {
   title: string;

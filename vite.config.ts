@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       "@mui/styled-engine": "@mui/styled-engine-sc",
       "@assets": path.resolve(__dirname, "src/assets"),
+      "@components": path.resolve(__dirname, "src/components"),
     },
   },
   plugins: [react()],

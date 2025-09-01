@@ -1,11 +1,11 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import BackButton from "./ButtonBack";
 import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/escola-bike-anjo.webp";
 
 const findCitySteps = [

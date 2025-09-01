@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import { Box } from "@mui/material";
-import Title from "../Components/Title";
-import Text from "../Components/Text";
+import Title from "@components/Title";
+import Text from "@components/Text";
 import HowToJoinCards from "./components/HowToJoinCards";
 import { GridContainer } from "./components/HowToJoinCards/styles";
-import Button from "../Components/Button";
+import Button from "@components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import BikeAnjoKid from "../../assets/images/bike-anjo-kid.jpg";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/voluntariado.webp";
 
 function Volunteering(): ReactNode {

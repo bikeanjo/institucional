@@ -1,6 +1,6 @@
 import { EBABrMap } from "./styles";
 import EBAMap from "../../../assets/images/eba-map.png";
-import Title from "../../Components/Title";
+import Title from "@components/Title";
 
 export default function Map() {
   return (
