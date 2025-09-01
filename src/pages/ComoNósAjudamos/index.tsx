@@ -5,32 +5,12 @@ import { Box } from "@mui/material";
 import Text from "@components/Text";
 import SubTitle from "@components/SubTitle";
 import Button from "@components/Button";
-import { BoxDescription, BoxTitle, PrimaryButton } from "./styles";
+import { PrimaryButton } from "./styles";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
-
-const supports = [
-  {
-    title: "Aprenda a Pedalar",
-    description:
-      "A Bike Anjo conecta quem quer aprender a pedalar com pessoas voluntárias que ensinam, de forma gratuita. O atendimento é individual, respeita o ritmo de cada pessoa e acontece em locais públicos da cidade.",
-  },
-  {
-    title: "Conheça Rotas Seguras",
-    description:
-      "Se você já pedala e quer encontrar caminhos mais seguros, pode pedir ajuda na plataforma. Uma pessoa voluntária vai indicar rotas pensando em segurança, conforto e praticidade para o seu trajeto.",
-  },
-  {
-    title: "Tenha acompanhamento no trânsito",
-    description:
-      "Se você quer começar a usar a bicicleta como transporte, pode contar com o apoio de uma pessoa voluntária. Ela pedala junto, ajuda a entender o fluxo das ruas e dá dicas para circular com mais segurança no dia a dia.",
-  },
-  {
-    title: "Pratique pedaladas",
-    description:
-      "Se você quer ganhar mais confiança na bike, pode encontrar uma pessoa voluntária para praticar. Esses encontros ajudam a melhorar o equilíbrio, o controle e a se sentir mais à vontade para pedalar na cidade.",
-  },
-];
+import { GridContainer } from "../Volunteering/components/HowToJoinCards/styles";
+import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
+import Title from "@components/Title";
 
 function HowWeHelp(): JSX.Element {
   return (
@@ -39,53 +19,18 @@ function HowWeHelp(): JSX.Element {
         <h2>Como nós ajudamos</h2>
       </Header>
       <Container>
-        <SubTitle center>Veja os nossos apoios</SubTitle>
+        <Title center>Veja os nossos apoios</Title>
         <Text>
           Veja o que a Bike Anjo oferece quem está começando a pedalar. Com
           pequenas ações, você ajuda a transformar trajetos em experiências
           seguras, acessíveis e inspiradoras.
         </Text>
 
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
-            gap: "24px",
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          {supports.map((item) => (
-            <Box
-              key={item.title}
-              sx={{
-                backgroundColor: "#d9d9d9",
-                padding: "32px",
-                borderRadius: "16px",
-                height: "fit-content",
-                minHeight: "100%",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <BoxTitle>{item.title}</BoxTitle>
-              <Box
-                sx={{
-                  backgroundColor: "#fff",
-                  padding: "20px 28px",
-                  borderRadius: "8px",
-                  marginTop: "auto",
-                }}
-              >
-                <BoxDescription>{item.description}</BoxDescription>
-              </Box>
-            </Box>
-          ))}
-        </Box>
+        <GridContainer>
+          <HowToJoinCards />
+        </GridContainer>
 
-        <Link to="">
-          <PrimaryButton>Cadastre-se e seja Bike Anjo</PrimaryButton>
-        </Link>
+        <PrimaryButton>Cadastre-se</PrimaryButton>
 
         <FollowLocalArticulations
           title="Conecte-se com uma articulação local"

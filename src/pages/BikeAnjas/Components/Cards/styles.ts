@@ -21,6 +21,7 @@ export const ContainerCards = styled.section`
 
   @media (max-width: 900px) {
     gap: 8px;
+    margin: 0px 50px;
   }
 `;
 
