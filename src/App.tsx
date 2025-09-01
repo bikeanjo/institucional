@@ -4,7 +4,7 @@ const AppWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
     const imagePaths = [
       "/assets/header/ajude-como-instituicao.webp",
-      "/assets/header/bika-anjas.webp",
+      "/assets/header/bike-anjas.webp",
       "/assets/header/bike-anjo-na-midia.webp",
       "/assets/header/como-funciona.webp",
       "/assets/header/dicas-para-bike-anjo.webp",
