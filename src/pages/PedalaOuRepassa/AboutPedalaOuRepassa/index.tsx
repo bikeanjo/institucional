@@ -1,44 +1,53 @@
-import { Button, Description, Container, Paragraph, Title } from "./styles";
-import { Link } from "react-router-dom";
+import Title from "@components/Title";
+import Text from "@components/Text";
+
+import { Box } from "@mui/material";
 
 export default function AboutPedalaOuRepassa() {
   return (
-    <>
-      <Description>
-        Bicicleta foi feita para estar em movimento. Se você tem uma bicicleta
-        <br />
-        que está parada, coloque ela para se mexer: ou pedala ou repassa!
-      </Description>
-      <Container>
-        <img
-          src={"/assets/images/img-carousel.png"}
-          alt="imagem ou carrossel"
-        />
-        <Title>O que é o Pedala ou Repassa?</Title>
-        <Paragraph>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        gap: "24px",
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "16px",
+          flex: 1,
+        }}
+      >
+        <Title center>Bicicleta foi feita para estar em movimento!</Title>
+        <Text>
           “Pedala ou repassa” é uma iniciativa de doação de bicicletas para
           pessoas que não têm dinheiro para comprar, mas que gostariam de usar a
           bicicleta no dia a dia, para trabalho, lazer, esporte, ...
-          <br />
-          <br />
+        </Text>
+        <Text>
           A Bike Anjo recebe doações de bicicletas que são frequentemente não
           utilizadas, portanto, precisa de pequenos reparos para uso diário.
           Estamos em busca de doações de peças e serviços de reparo para deixar
           a bicicleta pronta para uso por mais ciclistas da cidade!
-          <br />
-          <br />
-          Prometemos cuidar muito bem e fazer muita gente feliz com ela!
-          <br />
-          <br />
-          Tem uma bicicleta para doar?
-          <br />
-          Preencha os dados no formulário abaixo e entraremos em contato com
-          você!
-        </Paragraph>
-        <Link to="">
-          <Button>Formulário</Button>
-        </Link>
-      </Container>
-    </>
+        </Text>
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          borderRadius: "8px",
+          overflow: "hidden",
+          backgroundColor: "#4D7A18",
+          flex: 1,
+        }}
+      >
+        <img
+          src={"/assets/images/pedala-ou-repassa.jpg"}
+          alt="Criança sorrindo enquanto pedala"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </Box>
+    </Box>
   );
 }

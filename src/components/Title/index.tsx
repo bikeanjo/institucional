@@ -30,7 +30,7 @@ const Title = styled(Typography)<TitleProps>(
       padding: "0px",
       fontSize: "48px",
       alignItems: "flex-start",
-      margin: center ? "auto" : "unset",
+      margin: center ? "0px auto" : "unset",
       width: "fit-content",
     },
   }),
