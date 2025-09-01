@@ -1,15 +1,17 @@
 import { Typography, TypographyProps } from "@mui/material";
 import styled from "styled-components";
+import { Colors } from "../../styles/tokens/colors";
 
 interface TitleProps extends TypographyProps {
   pink?: boolean;
   green?: boolean;
   color?: string;
+  center?: boolean;
 }
 
 const Title = styled(Typography)<TitleProps>(
-  ({ theme, pink, green, color }) => ({
-    color: color,
+  ({ theme, pink, green, color, center }) => ({
+    color: color ? color : Colors["Pink-50"],
     fontWeight: 600,
     display: "flex",
 
@@ -26,6 +28,7 @@ const Title = styled(Typography)<TitleProps>(
     [theme.breakpoints.up("lg")]: {
       fontSize: "48px",
       alignItems: "flex-start",
+      margin: center ? "auto" : "unset",
       width: "fit-content",
     },
   }),

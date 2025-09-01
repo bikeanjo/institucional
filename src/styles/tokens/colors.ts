@@ -16,6 +16,7 @@ const Colors: Record<string, string> = {
   "Green-90": "#23380A",
   "Green-100": "#172902",
   "Blue-60": "#1C97C5",
+  "Orange-30": "#FFBF99",
   "Orange-50": "#ED601C",
   "Pink-10": "#FDF0F5",
   "Pink-50": "#E1216D",

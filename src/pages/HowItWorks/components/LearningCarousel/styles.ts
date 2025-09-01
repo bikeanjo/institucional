@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Colors } from "../../../../styles/tokens/colors";
 
 export const Title = styled.h2`
-  color: #000;
+  color: ${Colors["Pink-50"]};
   font-size: 48px;
   font-weight: 600;
   margin: auto;
@@ -43,8 +44,8 @@ export const ButtonText = styled.p`
 `;
 
 export const Button = styled.button`
-  background-color: #d9d9d9;
-  color: #000;
+  background-color: ${Colors["Green-70"]};
+  color: ${Colors["G-White"]};
   border: none;
   padding: 16px 32px;
   border-radius: 90px;

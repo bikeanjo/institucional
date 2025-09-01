@@ -10,6 +10,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkIcon from "@mui/icons-material/Link";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
+import { Colors } from "../../../../styles/tokens/colors";
 
 interface ShareProps {
   title: string;
@@ -19,8 +20,9 @@ interface ShareProps {
 const iconStyle = {
   width: 48,
   height: 48,
-  backgroundColor: "#656565",
-  color: "#c3c3c3",
+  backgroundColor: Colors["G-White"],
+  color: Colors["Green-70"],
+  border: `2px solid ${Colors["Green-70"]}`,
   borderRadius: "50%",
   display: "flex",
   alignItems: "center",

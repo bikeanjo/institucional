@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import styled from "styled-components";
+import { Colors } from "../../styles/tokens/colors";
 
 interface SubTitleProps {
   desktopOnly?: boolean;
@@ -10,7 +11,7 @@ interface SubTitleProps {
 const SubTitle = styled(Typography)<SubTitleProps>(
   ({ theme, desktopOnly, mobileCenter = false, center = false }) => ({
     wordBreak: "break-word",
-    color: "black",
+    color: Colors["Pink-50"],
     textAlign: "center",
 
     [theme.breakpoints.up("xs")]: {
