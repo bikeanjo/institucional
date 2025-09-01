@@ -6,6 +6,7 @@ export const ContainerCards = styled.section`
   gap: 24px;
   margin: 0 auto;
   scroll-behavior: smooth;
+  margin: 0px 200px;
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;

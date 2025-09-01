@@ -1,12 +1,14 @@
 import { useRef, useState } from "react";
-import { Title } from "../../../DiaMundialSemCarro/components/Title/Title";
 import {
   ContainerCards,
   PaginationContainer,
   Dot,
   ArrowButton,
 } from "./styles";
-import { MiniCard } from "../../../DiaMundialSemCarro/components/MiniCard/index";
+import { MiniCard } from "../MiniCard/index";
+import Title from "@components/Title";
+import { Colors } from "../../../../styles/tokens/colors";
+import { Box } from "@mui/material";
 
 export function Cards() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -78,8 +80,18 @@ export function Cards() {
   };
 
   return (
-    <>
-      <Title>Conheça mais sobre Bike Anjas</Title>
+    <Box
+      sx={{
+        margin: "40px 0px",
+        padding: "40px 0px",
+        backgroundColor: Colors["Green-20"],
+        border: `2px solid ${Colors["Green-70"]}`,
+        borderInline: 0,
+      }}
+    >
+      <Title color={Colors["Green-70"]} center>
+        Conheça mais sobre Bike Anjas
+      </Title>
 
       <div style={{ position: "relative" }}>
         <ArrowButton
@@ -122,6 +134,6 @@ export function Cards() {
           <Dot key={card.id} isActive={index === currentPage} />
         ))}
       </PaginationContainer>
-    </>
+    </Box>
   );
 }

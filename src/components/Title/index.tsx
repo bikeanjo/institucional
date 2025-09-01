@@ -23,9 +23,11 @@ const Title = styled(Typography)<TitleProps>(
       alignItems: "center",
       justifyContent: "center",
       width: "100%",
+      padding: "0px 16px",
     },
 
     [theme.breakpoints.up("lg")]: {
+      padding: "0px",
       fontSize: "48px",
       alignItems: "flex-start",
       margin: center ? "auto" : "unset",

@@ -1,12 +1,12 @@
 import type { JSX } from "react";
 import Header from "@components/Header";
-import BackButton from "../DiaMundialSemCarro/components/BackButton";
-import { Paragraph } from "../DiaMundialSemCarro/components/Paragraph/Paragraph";
-import { HeroCardSection } from "../DiaMundialSemCarro/components/HeroCardSection/index";
+import { Paragraph } from "./Components/Paragraph/Paragraph";
 import { Cards } from "./Components/Cards";
-import { Title } from "../DiaMundialSemCarro/components/Title/Title";
 import Fac from "./Components/FAC";
 import Container from "@components/Container";
+import { Box } from "@mui/material";
+import Title from "@components/Title";
+import Text from "@components/Text";
 
 function BikeAnjas(): JSX.Element {
   const Hero = "/assets/header/bike-anjas.webp";
@@ -16,51 +16,56 @@ function BikeAnjas(): JSX.Element {
         <h2> Bike Anjas </h2>
       </Header>
 
-      <BackButton />
-
       <Container>
-        <Paragraph>
-          As Anjas são uma rede de mulheres de diferentes cidades do Brasil que
-          se uniram dentro da rede Bike Anjo para pensar e agir quanto a sermos
-          minoria nos grupos de pedais locais e nacionais.
-        </Paragraph>
-
-        <HeroCardSection title="Porque Bike Anjas Existe?" button="Formulário">
-          <p>
-            Porque ainda é preciso.
-            <br />
-            <br />
-            As Bike Anjas nasceram da vontade de ver mais mulheres pedalando,
-            ocupando as ruas e fazendo parte da transformação das cidades. A
-            gente sabe que, pra muitas de nós, sair por aí de bicicleta não é só
-            uma questão de equilíbrio: é enfrentar medos, julgamentos e
-            barreiras que vêm de longe.
-            <br />
-            <br />
-            Enquanto os homens sempre estiveram livres pra ocupar os espaços
-            públicos (e de poder), muitas vezes nossa presença ainda é
-            questionada. Na rua, no trânsito, nos eventos. Até quando vamos
-            ajustar o selim da bike, aparece alguém querendo opinar – sem ser
-            chamado – como se soubesse mais.
-            <br />
-            <br />
-            E sobre mecânica? Sempre disseram que “mulher não entende”. Mas será
-            que é porque não sabemos... ou porque nunca deixaram a gente
-            aprender? Desde pequenas, ganhamos bonecas, fomos ensinadas a não
-            nos sujar e a cuidar dos outros. Enquanto isso, eles ganhavam
-            carrinhos, ferramentas, e o direito de fuçar e testar.
-            <br />
-            <br />
-            A verdade é: não faltou capacidade, faltou oportunidade.
-            <br />
-            E é por isso que existimos. Pra apoiar, ensinar, trocar e
-            fortalecer. Pra que cada mulher possa ocupar seu espaço – no
-            trânsito, na bike, na vida – com segurança, liberdade e confiança.
-            <br />
-            <br />
-            Somos muitas. E juntas, vamos mais longe. 💪💜
-          </p>
-        </HeroCardSection>
+        <Box sx={{ display: "flex" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "16px",
+              flex: 1,
+            }}
+          >
+            <Title center>
+              O que você pode fazer pelo Dia Mundial Sem Carro 2025?
+            </Title>
+            <Text>
+              Milhares de pessoas ao redor do mundo tomaram as ruas no dia 22 de
+              setembro, celebrando o Dia Mundial Sem Carro com atividades como
+              exposições, debates, oficinas de ciclismo, passeios de bicicleta e
+              maior uso do transporte coletivo.
+            </Text>
+            <Text>
+              No Brasil, o Bike Anjo movimenta as pessoas nas cidades, reunindo
+              atividades e incentivando a discussão dos benefícios econômicos,
+              sociais e ambientais que os transportes por propulsão humana e
+              coletivos oferecem. O objetivo é mostrar maneiras positivas de
+              conviver em grandes cidades, reduzindo barulho, poluição e
+              trânsito causados pelos automóveis particulares.
+            </Text>
+            <Text>
+              Para participar dessa festa, o Bike Anjo criou duas cartilhas com
+              dicas para deixar o carro em casa no dia 22, participar de eventos
+              durante setembro, mobilizar colegas de trabalho e usar a bicicleta
+              no Dia Mundial Sem Carro.
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              width: "100%",
+              borderRadius: "8px",
+              overflow: "hidden",
+              backgroundColor: "#4D7A18",
+              flex: 1,
+            }}
+          >
+            <img
+              src={"/assets/images/bike-anjas-main.png"}
+              alt="Criança sorrindo enquanto pedala"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </Box>
+        </Box>
         <Cards />
         <Title>Dicas Anjas</Title>
         <Paragraph>
