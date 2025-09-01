@@ -1,6 +1,5 @@
 import type { JSX } from "react";
 import Header from "@components/Header";
-import BackButton from "./ButtonBack";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
 import Container from "@components/Container";
@@ -54,7 +53,6 @@ function PedalaOuRepassa(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2>Pedala ou Repassa</h2>
       </Header>
-      <BackButton />
       <Container>
         <AboutPedalaOuRepassa />
         <CityNotListed

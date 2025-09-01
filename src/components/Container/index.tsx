@@ -1,9 +1,13 @@
 import { Box } from "@mui/material";
 import styled from "styled-components";
 
-const Container = styled(Box)(({ theme }) => ({
+interface ContainerProps {
+  inline?: boolean;
+}
+
+const Container = styled(Box)<ContainerProps>(({ theme, inline }) => ({
   display: "flex",
-  flexDirection: "column",
+  flexDirection: inline ? "column" : "row",
   width: "100%",
   margin: "40px auto",
   position: "relative",
@@ -12,8 +16,9 @@ const Container = styled(Box)(({ theme }) => ({
   padding: "20px",
 
   [theme.breakpoints.up("lg")]: {
-    padding: "0x",
-    width: "1032px",
+    flexDirection: inline ? "row" : "column",
+    width: "100%",
+    padding: "0px 96px",
     marginTop: "80px",
     gap: "20px",
   },

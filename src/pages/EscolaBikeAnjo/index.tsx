@@ -1,7 +1,6 @@
 import type { JSX } from "react";
 import Header from "@components/Header";
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
-import BackButton from "./ButtonBack";
 import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
@@ -35,7 +34,6 @@ function EscolaBikeAnjo(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
-      <BackButton />
       <Container>
         <AboutEBA />
         <Map />

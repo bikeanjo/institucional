@@ -38,7 +38,8 @@ const Header = styled.div<HeaderProps>(
 
       [theme.breakpoints.up("lg")]: {
         fontSize: "48px",
-        width: "1032px",
+        width: "100%",
+        padding: "0px 96px",
       },
     },
 
