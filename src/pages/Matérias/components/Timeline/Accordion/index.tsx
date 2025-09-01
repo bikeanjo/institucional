@@ -8,7 +8,6 @@ import {
   Button,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import LinkIcon from "../../../../../assets/images/link-icon.svg";
 import type { AccordionData } from "../data";
 
 function AccordionComponent({
@@ -113,7 +112,7 @@ function AccordionComponent({
                   href={item.link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  startIcon={<img src={LinkIcon} />}
+                  startIcon={<img src={"/assets/images/link-icon.svg"} />}
                   sx={{
                     textTransform: "none",
                     color: "#4d7a18",

@@ -1,9 +1,23 @@
 import React, { useEffect, PropsWithChildren } from "react";
-import * as images from "@assets/header";
 
 const AppWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
-    Object.values(images as { [key: string]: string }).forEach((src) => {
+    const imagePaths = [
+      "/assets/header/ajude-como-instituicao.webp",
+      "/assets/header/bike-anjas.webp",
+      "/assets/header/bike-anjo-na-midia.webp",
+      "/assets/header/como-funciona.webp",
+      "/assets/header/dicas-para-bike-anjo.webp",
+      "/assets/header/doe.webp",
+      "/assets/header/escola-bike-anjo.webp",
+      "/assets/header/faca-nosso-curso.webp",
+      "/assets/header/header-image.webp",
+      "/assets/header/pedala-ou-repassa.webp",
+      "/assets/header/quem-somos.webp",
+      "/assets/header/redes-sociais.webp",
+      "/assets/header/voluntariado.webp",
+    ];
+    Object.values(imagePaths).forEach((src) => {
       const img = new Image();
       img.src = src;
     });

@@ -3,8 +3,6 @@ import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
-import julianaImage from "@assets/images/photoPlaceholder/juliana.jpg";
-import juliana2Image from "@assets/images/photoPlaceholder/jualiana2.png";
 import { Colors } from "../../../../styles/tokens/colors";
 
 function Testimonials(): JSX.Element {
@@ -57,7 +55,7 @@ function Testimonials(): JSX.Element {
           <CardActions sx={{ height: "100%", padding: 0 }}>
             <Box sx={{ display: "flex", gap: 2 }}>
               <img
-                src={julianaImage}
+                src={"/assets/images/photoPlaceholder/juliana.jpg"}
                 alt="julianaImage"
                 title="julianaImage"
                 style={{
@@ -126,7 +124,7 @@ function Testimonials(): JSX.Element {
           <CardActions sx={{ height: "100%", padding: 0 }}>
             <Box sx={{ display: "flex", gap: 2 }}>
               <img
-                src={juliana2Image}
+                src={"/assets/images/photoPlaceholder/jualiana2.png"}
                 alt="juliana2Image"
                 title="juliana2Image"
                 style={{

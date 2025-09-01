@@ -7,9 +7,9 @@ import { Cards } from "./Components/Cards";
 import { Title } from "../DiaMundialSemCarro/components/Title/Title";
 import Fac from "./Components/FAC";
 import Container from "@components/Container";
-import Hero from "../../assets/header/bike-anjas.webp";
 
 function BikeAnjas(): JSX.Element {
+  const Hero = "/assets/header/bike-anjas.webp";
   return (
     <>
       <Header secondary Hero={Hero}>

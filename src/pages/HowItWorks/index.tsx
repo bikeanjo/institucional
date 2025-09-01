@@ -3,7 +3,6 @@ import Header from "@components/Header";
 import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "@components/SubTitle";
 import Container from "@components/Container";
-import Hero from "@assets/header/como-funciona.webp";
 
 const learnSteps = [
   {
@@ -48,6 +47,7 @@ const bikeAnjoSteps = [
 ];
 
 function HowItWorks(): JSX.Element {
+  const Hero = "/assets/header/como-funciona.webp";
   return (
     <>
       <Header secondary Hero={Hero}>

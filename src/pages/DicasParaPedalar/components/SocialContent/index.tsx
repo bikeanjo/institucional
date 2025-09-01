@@ -1,11 +1,10 @@
 import { Button, Paragraph, TextWrapper } from "./styles";
-import YoutubeImage from "@assets/images/VideoYoutube.png";
 import Title from "@components/Title";
 
 export default function SocialContent() {
   return (
     <>
-      <img src={YoutubeImage} alt="Canal do Youtube" />
+      <img src={"/assets/images/VideoYoutube.png"} alt="Canal do Youtube" />
 
       <TextWrapper>
         <div>

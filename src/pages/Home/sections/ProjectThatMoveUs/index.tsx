@@ -3,13 +3,6 @@ import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
 import { Box, Button, Typography } from "@mui/material";
-import EBA from "../../../../assets/images/ProjectsCarousel/eba.png";
-import BikeAnjas from "../../../../assets/images/ProjectsCarousel/bike-anjas.png";
-import PedalaOuRepassa from "../../../../assets/images/ProjectsCarousel/pedala-ou-repassa.png";
-import BicicletaNosPlanos from "../../../../assets/images/ProjectsCarousel/bicicleta-nos-planos.png";
-import DiaMundialSemCarro from "../../../../assets/images/ProjectsCarousel/dia-mundial-sem-carro.png";
-import DeBikeAoTrabalho from "../../../../assets/images/ProjectsCarousel/de-bike-ao-trabalho.png";
-import AnjosNaSuaCidade from "../../../../assets/images/ProjectsCarousel/anjos-na-sua-cidade.png";
 import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
@@ -32,7 +25,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 1,
       colorCard: "#1C97C5",
-      imageUrl: EBA,
+      imageUrl: "/assets/images/ProjectsCarousel/eba.png",
       title: "Escola Bike Anjo",
       subtitle: "Projetos",
       link: "/escola-bike-anjo",
@@ -40,7 +33,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 2,
       colorCard: "#ED601C",
-      imageUrl: BikeAnjas,
+      imageUrl: "/assets/images/ProjectsCarousel/bike-anjas.png",
       title: "Bike Anjas",
       subtitle: "Projetos",
       link: "/bike-anjas",
@@ -48,7 +41,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 3,
       colorCard: "#E1216D",
-      imageUrl: PedalaOuRepassa,
+      imageUrl: "/assets/images/ProjectsCarousel/pedala-ou-repassa.png",
       title: "Pedala ou Repassa",
       subtitle: "Projetos",
       link: "/pedala-ou-repassa",
@@ -56,7 +49,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 4,
       colorCard: "#1C97C5",
-      imageUrl: DeBikeAoTrabalho,
+      imageUrl: "/assets/images/ProjectsCarousel/de-bike-ao-trabalho.png",
       title: "De Bike Ao Trabalho",
       subtitle: "Projetos",
       link: "",
@@ -64,7 +57,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 5,
       colorCard: "#4D7A18",
-      imageUrl: DiaMundialSemCarro,
+      imageUrl: "/assets/images/ProjectsCarousel/dia-mundial-sem-carro.png",
       title: "Dia Mundial Sem Carro",
       subtitle: "Campanhas",
       link: "",
@@ -72,7 +65,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 6,
       colorCard: "#ED601C",
-      imageUrl: BicicletaNosPlanos,
+      imageUrl: "/assets/images/ProjectsCarousel/bicicleta-nos-planos.png",
       title: "Bicicleta nos Planos",
       subtitle: "Campanhas",
       link: "",
@@ -80,7 +73,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 7,
       colorCard: "#1C97C5",
-      imageUrl: AnjosNaSuaCidade,
+      imageUrl: "/assets/images/ProjectsCarousel/anjos-na-sua-cidade.png",
       title: "Anjos na sua Cidade",
       subtitle: "Articulações Locais",
       link: "",

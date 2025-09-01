@@ -1,6 +1,5 @@
 import type { JSX } from "react";
 import { Container, HeroCard, Image, CardButton } from "./styles";
-import ImgCarousel from "../../../../assets/images/img-carousel.png";
 
 interface CardProps {
   title: string;
@@ -17,7 +16,7 @@ export function HeroCardSection({
     <>
       <Container>
         <HeroCard>
-          <Image src={ImgCarousel} alt="lala" />
+          <Image src={"/assets/images/img-carousel.png"} alt="lala" />
           <h2>{title}</h2>
           <p>{children}</p>
           {button && <CardButton>{button}</CardButton>}

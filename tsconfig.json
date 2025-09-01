@@ -10,8 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"]
+      "@components/*": ["components/*"]
     },
     "outDir": "dist"
   }

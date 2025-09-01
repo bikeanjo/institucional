@@ -1,5 +1,4 @@
 import { Box, Typography, Link } from "@mui/material";
-import Bike from "../../assets/icons/Biker.svg";
 import Container from "@components/Container";
 import Text from "@components/Text";
 import { Colors } from "../../styles/tokens/colors";
@@ -33,7 +32,7 @@ const UnavailablePage: React.FC = () => {
             Enchendo o Pneu...
           </Typography>
           <Box sx={{ width: "79px", heigth: "72px" }}>
-            <img src={Bike} alt="ícone de bicicleta" />
+            <img src={"/assets/icons/Biker.svg"} alt="ícone de bicicleta" />
           </Box>
         </Box>
         <Text>

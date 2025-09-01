@@ -6,7 +6,6 @@ import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
 import Container from "@components/Container";
-import Hero from "../../assets/header/escola-bike-anjo.webp";
 
 const findCitySteps = [
   {
@@ -30,6 +29,7 @@ const findCitySteps = [
 ];
 
 function EscolaBikeAnjo(): JSX.Element {
+  const Hero = "/assets/header/escola-bike-anjo.webp";
   return (
     <>
       <Header secondary Hero={Hero}>

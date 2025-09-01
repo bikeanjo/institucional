@@ -7,8 +7,6 @@ import {
   ArrowButton,
 } from "./styles";
 import { MiniCard } from "../../../DiaMundialSemCarro/components/MiniCard/index";
-import ArrowLeft from "../../../../assets/images/diaMundialSemCarro/left.png";
-import ArrowRight from "../../../../assets/images/diaMundialSemCarro/right.png";
 
 export function Cards() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -89,7 +87,10 @@ export function Cards() {
           onClick={() => scrollToPage(currentPage - 1)}
           disabled={currentPage === 0}
         >
-          <img src={ArrowLeft} alt="Anterior" />
+          <img
+            src={"/assets/images/diaMundialSemCarro/left.png"}
+            alt="Anterior"
+          />
         </ArrowButton>
 
         <ContainerCards ref={scrollRef} onScroll={handleScroll}>
@@ -109,7 +110,10 @@ export function Cards() {
           onClick={() => scrollToPage(currentPage + 1)}
           disabled={currentPage === cards.length - 1}
         >
-          <img src={ArrowRight} alt="Próximo" />
+          <img
+            src={"/assets/images/diaMundialSemCarro/right.png"}
+            alt="Próximo"
+          />
         </ArrowButton>
       </div>
 

@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { LinkItem, LinkList } from "./styles";
-import ChainIcon from "@assets/images/link.png";
 
 const links = [
   { label: "Como escolher sua bicicleta", url: "#" },
@@ -37,7 +36,7 @@ export default function SupportLinksSection() {
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>
-            <img src={ChainIcon} alt="Chain Icon" />
+            <img src={"/assets/images/link.png"} alt="Chain Icon" />
             <a href={item.url} target="_blank" rel="noopener noreferrer">
               {item.label}
             </a>

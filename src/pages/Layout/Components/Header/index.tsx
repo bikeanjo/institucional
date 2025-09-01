@@ -16,7 +16,6 @@ import {
 } from "@mui/material";
 import { createFilterOptions } from "@mui/material/Autocomplete";
 import "material-icons/iconfont/material-icons.css";
-import logo from "../../../../assets/icons/logo-bike-anjo.png";
 import Login from "./Login";
 import { NavMenu } from "./MenuItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -137,7 +136,11 @@ const Header: React.FC = () => {
             />
           </Box>
           <Link to="/">
-            <Box component="img" src={logo} alt="Logo Bike Anjo" />
+            <Box
+              component="img"
+              src={"/assets/icons/logo-bike-anjo.png"}
+              alt="Logo Bike Anjo"
+            />
           </Link>
         </Box>
 

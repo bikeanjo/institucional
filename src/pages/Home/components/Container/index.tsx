@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Hero from "../../../../assets/images/Home/placeholder/hero.jpg";
 import { Colors } from "../../../../styles/tokens/colors";
 
 declare module "styled-components" {
@@ -33,7 +32,8 @@ const Container = styled.div<ContainerProps>`
   border: ${({ secondary }) => secondary && `2px solid ${Colors["Green-70"]}`};
   border-width: ${({ secondary }) => secondary && `2px 0px`};
   gap: ${({ gap }) => gap || "unset"};
-  background-image: ${({ carrousel }) => (carrousel ? `url(${Hero})` : "none")};
+  background-image: ${({ carrousel }) =>
+    carrousel ? `url(/assets/images/Home/placeholder/hero.jpg)` : "none"};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
