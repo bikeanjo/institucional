@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Typography, Menu, MenuItem } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 import { Link } from "../Link";
+import { Colors } from "../../../../styles/tokens/colors";
 
 export interface NavMenuItem {
   label: string;
@@ -84,7 +85,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
               elevation: 0,
               sx: {
                 overflow: "visible",
-                backgroundColor: "#F5F5F5",
+                backgroundColor: Colors["Green-20"],
                 borderRadius: "8px",
                 p: "16px 24px 24px 24px",
                 mt: "70px",
@@ -97,7 +98,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                   height: 18,
                   left: 24,
                   top: 0,
-                  backgroundColor: "#F5F5F5",
+                  backgroundColor: Colors["Green-20"],
                   transform: "translateY(-20%) rotate(45deg)",
                 },
               },
@@ -114,8 +115,8 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                   onClick={handleCloseMenu}
                   sx={{
                     p: 0,
-                    fontWeight: subItem.url ? 400 : 600,
-                    color: "#262626",
+                    fontWeight: 600,
+                    color: Colors["Green-70"],
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
@@ -149,7 +150,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                       sx={{
                         p: 0,
                         fontWeight: 400,
-                        color: "#262626",
+                        color: Colors["Green-70"],
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
