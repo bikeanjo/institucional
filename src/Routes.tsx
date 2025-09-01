@@ -19,7 +19,7 @@ import Matérias from "./pages/Matérias";
 import Iniciativas from "./pages/Iniciativas";
 import FAQ from "./pages/Home/sections/FAQ";
 import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
-import Container from "./pages/Components/Container";
+import Container from "@components/Container";
 import Volunteering from "./pages/Volunteering";
 import SearchResults from "./pages/Search/SearchResults";
 

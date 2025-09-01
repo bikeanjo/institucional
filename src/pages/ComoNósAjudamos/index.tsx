@@ -1,13 +1,13 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import FollowLocalArticulations from "../SocialMedia/components/FollowLocalArticulations";
 import { Box } from "@mui/material";
-import Text from "../Components/Text";
-import SubTitle from "../Components/SubTitle";
-import Button from "../Components/Button";
+import Text from "@components/Text";
+import SubTitle from "@components/SubTitle";
+import Button from "@components/Button";
 import { BoxDescription, BoxTitle, PrimaryButton } from "./styles";
 import { Link } from "react-router-dom";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 
 const supports = [
   {

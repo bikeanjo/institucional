@@ -9,7 +9,7 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Colors } from "../../styles/tokens/colors";
 import { useEffect, useMemo, useRef, useState } from "react";

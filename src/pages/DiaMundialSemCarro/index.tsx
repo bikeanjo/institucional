@@ -1,10 +1,10 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import { Paragraph } from "./components/Paragraph/Paragraph";
 import BackButton from "./components/BackButton";
 import { HeroCardSection } from "./components/HeroCardSection";
 import { Cards } from "./components/Cards";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 
 function DiaMundialSemCarro(): JSX.Element {
   return (

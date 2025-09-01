@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import genericImage from "../../../assets/header/header-image.webp";
-import { Colors } from "../../../styles/tokens/colors";
+import genericImage from "@assets/header/header-image.webp";
+import { Colors } from "../../styles/tokens/colors";
 
 interface HeaderProps {
   secondary?: boolean;

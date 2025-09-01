@@ -1,9 +1,9 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import FollowSocialMedia from "./components/FollowSocialMedia";
 import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/redes-sociais.webp";
 
 function SocialMedia(): JSX.Element {

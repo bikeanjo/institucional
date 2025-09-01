@@ -1,12 +1,12 @@
 import { Box } from "@mui/material";
-import Header from "../Components/Header";
-import Title from "../Components/Title";
-import SubTitle from "../Components/SubTitle";
-import Text from "../Components/Text";
-import Partners from "../Components/Partners";
-import Button from "../Components/Button";
+import Header from "@components/Header";
+import Title from "@components/Title";
+import SubTitle from "@components/SubTitle";
+import Text from "@components/Text";
+import Partners from "@components/Partners";
+import Button from "@components/Button";
 import { Link } from "react-router-dom";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
 import Hero from "../../assets/header/ajude-como-instituicao.webp";
 

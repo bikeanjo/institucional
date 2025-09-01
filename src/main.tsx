@@ -8,6 +8,7 @@ import "@fontsource/roboto/600.css";
 import "@fontsource/roboto/700.css";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./styles/theme";
+import App from "./App";
 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 createRoot(document.getElementById("root")!).render(
@@ -15,7 +16,9 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
-        <Routes />
+        <App>
+          <Routes />
+        </App>
       </BrowserRouter>
     </ThemeProvider>
   </StrictMode>,

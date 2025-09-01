@@ -1,7 +1,7 @@
 import { Box, Typography, Link } from "@mui/material";
 import Bike from "../../assets/icons/Biker.svg";
-import Container from "../Components/Container";
-import Text from "../Components/Text";
+import Container from "@components/Container";
+import Text from "@components/Text";
 import { Colors } from "../../styles/tokens/colors";
 
 const UnavailablePage: React.FC = () => {

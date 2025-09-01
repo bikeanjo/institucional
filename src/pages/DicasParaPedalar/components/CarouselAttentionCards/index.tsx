@@ -3,8 +3,8 @@ import { StepCard } from "../Card";
 import ArrowBack from "../../../../assets/images/arrow-back.png";
 import ArrowForward from "../../../../assets/images/arrow-forward.png";
 import { Arrow, Cards, CarouselContainer } from "./styles";
-import SubTitle from "../../../Components/SubTitle";
-import Title from "../../../Components/Title";
+import SubTitle from "@components/SubTitle";
+import Title from "@components/Title";
 
 interface Step {
   number: number;

@@ -1,8 +1,8 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import { Form } from "./components/Form";
-import Container from "../Components/Container";
-import Text from "../Components/Text";
+import Container from "@components/Container";
+import Text from "@components/Text";
 
 function Contact(): JSX.Element {
   return (

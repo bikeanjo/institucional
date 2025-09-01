@@ -1,6 +1,6 @@
 import { Button, Paragraph, TextWrapper } from "./styles";
 import YoutubeImage from "@assets/images/VideoYoutube.png";
-import Title from "../../../Components/Title";
+import Title from "@components/Title";
 
 export default function SocialContent() {
   return (

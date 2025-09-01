@@ -4,17 +4,17 @@ import {
   InputAdornment,
   Button as MuiButton,
 } from "@mui/material";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import type { JSX } from "react";
-import SubTitle from "../Components/SubTitle";
-import Text from "../Components/Text";
-import Button from "../Components/Button";
+import SubTitle from "@components/SubTitle";
+import Text from "@components/Text";
+import Button from "@components/Button";
 import qrcode from "@assets/images/Doacao/QRCode.png";
 import apoiase from "@assets/images/Doacao/apoia-se.png";
 import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/doe.webp";
 
 const Doacao = (): JSX.Element => {

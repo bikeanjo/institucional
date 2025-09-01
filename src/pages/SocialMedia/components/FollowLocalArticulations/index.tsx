@@ -1,8 +1,8 @@
 import { MapImage } from "./styles";
 import articulationMap from "../../../../assets/images/articulation-map.png";
 import FindLocalArticulation from "./FindLocalArticulation";
-import SubTitle from "../../../Components/SubTitle";
-import Title from "../../../Components/Title";
+import SubTitle from "@components/SubTitle";
+import Title from "@components/Title";
 
 interface LocalArticulationsProps {
   title: string;

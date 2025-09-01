@@ -1,13 +1,13 @@
-import Header from "../Components/Header";
-import Subtitle from "../Components/SubTitle";
-import Text from "../Components/Text";
+import Header from "@components/Header";
+import Subtitle from "@components/SubTitle";
+import Text from "@components/Text";
 import { Box } from "@mui/material";
 import { ProjectCards } from "./components/ProjectCards";
 import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
-import Button from "../Components/Button";
+import Button from "@components/Button";
 import { Link } from "react-router-dom";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 
 const Iniciativas: React.FC = () => {
   return (

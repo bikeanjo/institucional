@@ -4,8 +4,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Stack } from "@mui/material";
 import { SocialCard } from "./SocialMediaCard";
-import Title from "../../../Components/Title";
-import SubTitle from "../../../Components/SubTitle";
+import Title from "@components/Title";
+import SubTitle from "@components/SubTitle";
 
 interface SocialMediaProps {
   title: string;

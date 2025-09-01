@@ -1,9 +1,9 @@
 import type { JSX } from "react";
-import Header from "../Components/Header";
+import Header from "@components/Header";
 import BackButton from "./ButtonBack";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
-import Container from "../Components/Container";
+import Container from "@components/Container";
 import Hero from "../../assets/header/pedala-ou-repassa.webp";
 
 function formatDescription(description: string) {
