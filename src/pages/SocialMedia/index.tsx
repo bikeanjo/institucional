@@ -4,11 +4,12 @@ import FollowSocialMedia from "./components/FollowSocialMedia";
 import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/redes-sociais.png";
 
 function SocialMedia(): JSX.Element {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Redes Sociais</h2>
       </Header>
       <Container>

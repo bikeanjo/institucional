@@ -11,7 +11,7 @@ import { Colors } from "../../../../styles/tokens/colors";
 
 function Carousel(): JSX.Element {
   return (
-    <Container secondary carrousel>
+    <Container carrousel>
       <Box
         sx={{
           textAlign: "center",

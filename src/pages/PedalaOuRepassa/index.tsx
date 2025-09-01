@@ -4,6 +4,7 @@ import BackButton from "./ButtonBack";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/pedala-ou-repassa.png";
 
 function formatDescription(description: string) {
   return description
@@ -50,7 +51,7 @@ const findCitySteps = [
 function PedalaOuRepassa(): JSX.Element {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Pedala ou Repassa</h2>
       </Header>
       <BackButton />

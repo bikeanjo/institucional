@@ -6,6 +6,7 @@ import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/dicas-para-bike-anjo.png";
 
 const teachingSteps = [
   {
@@ -55,7 +56,7 @@ const teachingSteps = [
 function CyclingTips(): JSX.Element {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Dicas para Bike Anjo</h2>
       </Header>
 

@@ -15,11 +15,12 @@ import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/doe.png";
 
 const Doacao = (): JSX.Element => {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Doação</h2>
       </Header>
 
