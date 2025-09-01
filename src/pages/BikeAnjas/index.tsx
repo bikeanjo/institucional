@@ -18,7 +18,11 @@ function BikeAnjas(): JSX.Element {
 
       <Container>
         <Box
-          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            gap: "24px",
+          }}
         >
           <Box
             sx={{
