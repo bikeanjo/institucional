@@ -1,10 +1,12 @@
 import { Box, Typography, Button } from "@mui/material";
 import type { JSX } from "react";
+import { Colors } from "../../../../../styles/tokens/colors";
 
 interface SocialCardProps {
   icon: JSX.Element;
   title: string;
   subtitle: string;
+  color?: string;
   onClick?: () => void;
 }
 
@@ -12,6 +14,7 @@ export function SocialCard({
   icon,
   title,
   subtitle,
+  color,
   onClick,
 }: SocialCardProps) {
   return (
@@ -23,7 +26,8 @@ export function SocialCard({
         display: "flex",
         alignItems: "center",
         borderRadius: "8px",
-        backgroundColor: "#d9d9d9",
+        border: `2px solid ${Colors["G-Grey-30"]}`,
+        backgroundColor: Colors["G-Grey-10"],
       }}
     >
       <Box
@@ -34,7 +38,8 @@ export function SocialCard({
           alignItems: "center",
           justifyContent: "center",
           borderRadius: "50%",
-          backgroundColor: "#656565",
+          border: `5px solid ${color}`,
+          backgroundColor: Colors["G-Gray-30"],
           mr: "32px",
         }}
       >
@@ -53,7 +58,7 @@ export function SocialCard({
             fontSize: "24px",
             fontWeight: 700,
             lineHeight: "140%",
-            color: "#606060",
+            color: color,
           }}
         >
           {title}
@@ -73,13 +78,13 @@ export function SocialCard({
         <Box>
           <Button
             sx={{
-              backgroundColor: "#fff",
+              backgroundColor: Colors["G-Grey-80"],
               padding: "8px 24px",
               borderRadius: "8px",
               fontSize: "16px",
               fontWeight: "700",
               lineHeight: "100%",
-              color: "#486284",
+              color: Colors["G-White"],
               textTransform: "none",
             }}
             onClick={onClick}

@@ -5,17 +5,27 @@ import {
   Button as MuiButton,
 } from "@mui/material";
 import Header from "@components/Header";
-import type { JSX } from "react";
-import SubTitle from "@components/SubTitle";
+import { type JSX } from "react";
+import Title from "@components/Title";
 import Text from "@components/Text";
 import Button from "@components/Button";
 import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
+import { Colors } from "../../styles/tokens/colors";
 
 const Doacao = (): JSX.Element => {
   const Hero = "/assets/header/doe.webp";
+
+  const handleCopyCNPJ = async () => {
+    await navigator.clipboard.writeText("19.515.100/0001-89");
+    alert("19.515.100/0001-89 copiado!");
+  };
+  const handleCopyEmail = async () => {
+    await navigator.clipboard.writeText("19.515.100/0001-89");
+    alert("doe@bikeanjo.org copiado!");
+  };
   return (
     <>
       <Header secondary Hero={Hero}>
@@ -23,10 +33,10 @@ const Doacao = (): JSX.Element => {
       </Header>
 
       <Container>
-        <SubTitle>
+        <Title>
           A gente adoraria viver só de pedaladas mas existem custos que Bike
           Anjo que precisa de uma ajudinha.
-        </SubTitle>
+        </Title>
         <Text>
           Coisas como a manutenção deste site, o trabalho de articulação da rede
           e as atividades que promovemos pelo país dependem da sua ajuda.
@@ -41,7 +51,9 @@ const Doacao = (): JSX.Element => {
             marginTop: { xs: "40px", lg: "80px" },
           }}
         >
-          <SubTitle center>Apoie a Bike Anjo como preferir:</SubTitle>
+          <Title center color="black">
+            Apoie a Bike Anjo como preferir:
+          </Title>
           <Text center>
             Qualquer valor já ajuda a manter a Bike Anjo na rua, na rede e na
             vida de muita gente.
@@ -65,13 +77,16 @@ const Doacao = (): JSX.Element => {
               flexDirection: "column",
               alignItems: "center",
               flex: 1,
-              backgroundColor: "#D9D9D9",
+              backgroundColor: Colors["G-Grey-10"],
+              border: `3px solid ${Colors["G-Grey-30"]}`,
               borderRadius: "16px",
               padding: "32px",
               gap: "16px",
             }}
           >
-            <SubTitle center>Doe via Pix</SubTitle>
+            <Title center color="black">
+              Doe via Pix
+            </Title>
             <Text center>Escaneie o QR Code</Text>
             <Box
               component="img"
@@ -120,6 +135,7 @@ const Doacao = (): JSX.Element => {
                     ),
                   },
                 }}
+                onClick={() => void handleCopyCNPJ()}
               ></CopyInput>
               <CopyInput
                 placeholder="doe@bikeanjo.org"
@@ -137,6 +153,7 @@ const Doacao = (): JSX.Element => {
                     ),
                   },
                 }}
+                onClick={() => void handleCopyEmail()}
               ></CopyInput>
             </Box>
           </Box>
@@ -146,14 +163,17 @@ const Doacao = (): JSX.Element => {
               flexDirection: "column",
               alignItems: "center",
               flex: 1,
-              backgroundColor: "#D9D9D9",
+              backgroundColor: Colors["G-Grey-10"],
+              border: `3px solid ${Colors["G-Grey-30"]}`,
               borderRadius: "16px",
               padding: "32px",
               gap: "16px",
               height: "fit-content",
             }}
           >
-            <SubTitle center>Doe via Apoia-se</SubTitle>
+            <Title center color="black">
+              Doe via Apoia-se
+            </Title>
             <Box
               component="img"
               src={"/assets/images/Doacao/apoia-se.png"}
@@ -173,12 +193,13 @@ const Doacao = (): JSX.Element => {
               fullWidth
               sx={{
                 borderRadius: "8.4px",
-                backgroundColor: "#FFFFFF",
+                backgroundColor: Colors["Orange-50"],
                 padding: "18px",
-                color: "#606060",
+                color: Colors["G-White"],
                 fontWeight: 700,
                 fontSize: "16px",
                 textTransform: "none",
+                width: "221px",
               }}
             >
               Clique para continuar
@@ -195,7 +216,7 @@ const Doacao = (): JSX.Element => {
             marginTop: { xs: "40px", lg: "80px" },
           }}
         >
-          <SubTitle center>Compartilhar também é apoiar</SubTitle>
+          <Title center>Compartilhar também é apoiar</Title>
           <Text center>
             Quando você divulga a Bike Anjo, ajuda a levar nossa missão ainda
             mais longe. Sua rede pode ser o elo que conecta uma pessoa à sua
