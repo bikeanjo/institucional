@@ -98,9 +98,7 @@ export default function Login() {
         anchorOrigin={{ horizontal: 65, vertical: 90 }}
       >
         <Box sx={{ display: "flex", justifyContent: "center", mb: 1 }}>
-          <Typography color={"neutral-100"}>
-            Já faz parte da Bike Anjo?
-          </Typography>
+          <Typography color={"G-White"}>Já faz parte da Bike Anjo?</Typography>
         </Box>
 
         <MenuItem sx={menuItemStyle}>
@@ -112,7 +110,7 @@ export default function Login() {
               height: 39,
               borderRadius: "4px",
               p: 1.25,
-              backgroundColor: "neutral-100",
+              backgroundColor: "G-White",
               textTransform: "none",
               fontSize: "16px",
               color: Colors["Green-70"],
@@ -123,7 +121,7 @@ export default function Login() {
         </MenuItem>
 
         <Box sx={{ display: "flex", justifyContent: "center", mt: 2, mb: 1 }}>
-          <Typography color={"neutral-100"}>Ainda não tem cadastro?</Typography>
+          <Typography color={"G-White"}>Ainda não tem cadastro?</Typography>
         </Box>
 
         <MenuItem sx={menuItemStyle}>

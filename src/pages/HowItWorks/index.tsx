@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "../Components/SubTitle";
 import Container from "../Components/Container";
-import Hero from "../../assets/header/como-funciona.png";
+import Hero from "../../assets/header/como-funciona.webp";
 
 const learnSteps = [
   {

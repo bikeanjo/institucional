@@ -6,7 +6,7 @@ import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
 import Container from "../Components/Container";
-import Hero from "../../assets/header/escola-bike-anjo.png";
+import Hero from "../../assets/header/escola-bike-anjo.webp";
 
 const findCitySteps = [
   {

@@ -43,14 +43,14 @@ function WhereAreWe(): JSX.Element {
         to="/onde-estamos"
         sx={{
           backgroundColor: Colors["Green-70"],
-          color: "var(--mui-palette-neutral-100)",
+          color: "var(--mui-palette-G-White)",
           padding: "16px 24px",
           height: { xs: 56 },
           width: { xs: "188px" },
           borderRadius: { xs: "10px", lg: "8px" },
           textTransform: "none",
           "&:hover": {
-            backgroundColor: "var(--mui-palette-neutral-100)",
+            backgroundColor: "var(--mui-palette-G-White)",
             color: "var(--mui-palette-neutral-900)",
           },
         }}

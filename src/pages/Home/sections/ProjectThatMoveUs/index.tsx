@@ -233,7 +233,7 @@ function ProjectThatMoveUs(): JSX.Element {
         to="/iniciativas"
         sx={{
           backgroundColor: Colors["Green-70"],
-          color: "var(--mui-palette-neutral-100)",
+          color: "var(--mui-palette-G-White)",
           padding: "16px 24px",
           height: { xs: 40 },
           width: { xs: "215px" },

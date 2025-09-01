@@ -92,7 +92,7 @@ function Carousel(): JSX.Element {
             borderRadius: { xs: "4px", lg: "8px" },
             textTransform: "none",
             "&:hover": {
-              backgroundColor: "var(--mui-palette-neutral-100)",
+              backgroundColor: "var(--mui-palette-G-White)",
               color: "var(--mui-palette-neutral-900)",
             },
           }}
@@ -112,7 +112,7 @@ function Carousel(): JSX.Element {
             textTransform: "none",
             "&:hover": {
               backgroundColor: "var(--mui-palette-neutral-700)",
-              color: "var(--mui-palette-neutral-100)",
+              color: "var(--mui-palette-G-White)",
             },
           }}
         >

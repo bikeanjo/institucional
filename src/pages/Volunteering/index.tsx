@@ -9,7 +9,7 @@ import Button from "../Components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import BikeAnjoKid from "../../assets/images/bike-anjo-kid.jpg";
 import Container from "../Components/Container";
-import Hero from "../../assets/header/voluntariado.png";
+import Hero from "../../assets/header/voluntariado.webp";
 
 function Volunteering(): ReactNode {
   return (
