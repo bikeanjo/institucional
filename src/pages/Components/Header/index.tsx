@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import genericImage from "../../../assets/header/header-image.png";
+import genericImage from "../../../assets/header/header-image.webp";
 import { Colors } from "../../../styles/tokens/colors";
 
 interface HeaderProps {

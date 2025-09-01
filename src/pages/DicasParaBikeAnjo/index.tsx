@@ -6,7 +6,7 @@ import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
 import Container from "../Components/Container";
-import Hero from "../../assets/header/dicas-para-bike-anjo.png";
+import Hero from "../../assets/header/dicas-para-bike-anjo.webp";
 
 const teachingSteps = [
   {

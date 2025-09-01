@@ -173,7 +173,7 @@ const SearchResults: React.FC = () => {
                     left: 0,
                     right: 0,
                     maxWidth: "400px",
-                    bgcolor: "neutral-100",
+                    bgcolor: "G-White",
                     border: `2px solid ${Colors["Green-20"]}`,
                     borderRadius: "8px",
                     zIndex: 10,

@@ -15,7 +15,7 @@ import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
 import Container from "../Components/Container";
-import Hero from "../../assets/header/doe.png";
+import Hero from "../../assets/header/doe.webp";
 
 const Doacao = (): JSX.Element => {
   return (

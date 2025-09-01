@@ -111,7 +111,7 @@ const Header: React.FC = () => {
           py: 2,
           px: 5,
           gap: { xs: "16px", lg: "32px" },
-          backgroundColor: "neutral-100",
+          backgroundColor: "G-White",
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       >
@@ -253,7 +253,7 @@ const Header: React.FC = () => {
                       ? 0
                       : "8px",
                   },
-                  backgroundColor: "neutral-100",
+                  backgroundColor: "G-White",
                   height: "48px",
                   paddingLeft: "8px",
                   "&:hover fieldset": {
@@ -298,7 +298,7 @@ const Header: React.FC = () => {
             <Box
               {...props}
               sx={{
-                backgroundColor: "neutral-100",
+                backgroundColor: "G-White",
                 borderBottomLeftRadius: "8px",
                 borderBottomRightRadius: "8px",
                 border: `2px solid ${Colors["Green-70"]}`,
@@ -313,7 +313,7 @@ const Header: React.FC = () => {
             alignItems: "center",
             width: "100%",
             height: "48px",
-            backgroundColor: "neutral-100",
+            backgroundColor: "G-White",
             borderRadius: "8px",
             py: 1.5,
             px: 2,
@@ -353,7 +353,7 @@ const Header: React.FC = () => {
               fontWeight: 600,
               textTransform: "none",
               fontSize: { xs: "12px", lg: "16px" },
-              color: "neutral-100",
+              color: "G-White",
             }}
           >
             Doe
@@ -495,7 +495,7 @@ const Header: React.FC = () => {
                         ? 0
                         : "8px",
                     },
-                    backgroundColor: "neutral-100",
+                    backgroundColor: "G-White",
                     height: "48px",
                     paddingLeft: "8px",
                     "&:hover fieldset": {
@@ -540,7 +540,7 @@ const Header: React.FC = () => {
               <Box
                 {...props}
                 sx={{
-                  backgroundColor: "neutral-100",
+                  backgroundColor: "G-White",
                   borderBottomLeftRadius: "8px",
                   borderBottomRightRadius: "8px",
                   border: `2px solid ${Colors["Green-70"]}`,
@@ -554,7 +554,7 @@ const Header: React.FC = () => {
               alignItems: "center",
               width: "96%",
               height: "48px",
-              backgroundColor: "neutral-100",
+              backgroundColor: "G-White",
               py: 1.5,
               px: 2,
               gap: { xs: "16px", lg: 1.5 },
@@ -630,7 +630,7 @@ const Header: React.FC = () => {
                     >
                       <Box
                         sx={{
-                          background: "neutral-100",
+                          background: "G-White",
                           padding: "0px 24px",
                           display: "flex",
                           alignContent: "center",

@@ -7,7 +7,7 @@ import { Cards } from "./Components/Cards";
 import { Title } from "../DiaMundialSemCarro/components/Title/Title";
 import Fac from "./Components/FAC";
 import Container from "../Components/Container";
-import Hero from "../../assets/header/bike-anjas.png";
+import Hero from "../../assets/header/bike-anjas.webp";
 
 function BikeAnjas(): JSX.Element {
   return (

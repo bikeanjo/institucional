@@ -8,7 +8,7 @@ import Button from "../Components/Button";
 import { Link } from "react-router-dom";
 import Container from "../Components/Container";
 import { Colors } from "../../styles/tokens/colors";
-import Hero from "../../assets/header/ajude-como-instituicao.png";
+import Hero from "../../assets/header/ajude-como-instituicao.webp";
 
 const AjudeComoInstituicao = () => {
   return (
