@@ -7,11 +7,12 @@ import { Cards } from "./Components/Cards";
 import { Title } from "../DiaMundialSemCarro/components/Title/Title";
 import Fac from "./Components/FAC";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/bike-anjas.png";
 
 function BikeAnjas(): JSX.Element {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2> Bike Anjas </h2>
       </Header>
 

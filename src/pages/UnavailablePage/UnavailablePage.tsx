@@ -1,7 +1,8 @@
 import { Box, Typography, Link } from "@mui/material";
-import Bike from "../../assets/images/UnavailablePage/pedal_bike.svg";
+import Bike from "../../assets/icons/Biker.svg";
 import Container from "../Components/Container";
 import Text from "../Components/Text";
+import { Colors } from "../../styles/tokens/colors";
 
 const UnavailablePage: React.FC = () => {
   return (
@@ -24,14 +25,15 @@ const UnavailablePage: React.FC = () => {
           }}
         >
           <Typography
-            color="black"
+            color={Colors["Pink-50"]}
             fontWeight="700"
             fontSize={{ xs: "32px", lg: "64px" }}
+            whiteSpace="nowrap"
           >
             Enchendo o Pneu...
           </Typography>
-          <Box sx={{ width: "46px", heigth: "46px" }}>
-            <img src={Bike} alt="ícone de bicicleta" width="46px" />
+          <Box sx={{ width: "79px", heigth: "72px" }}>
+            <img src={Bike} alt="ícone de bicicleta" />
           </Box>
         </Box>
         <Text>
@@ -40,19 +42,26 @@ const UnavailablePage: React.FC = () => {
           Estamos calibrando tudo para que você tenha a melhor experiência
           possível.
         </Text>
-        <Text>
-          Enquanto isso, que tal voltar para a {""}
-          <Link
-            href="/"
-            color="title.main"
-            fontWeight="700"
-            underline="none"
-            display={{ xs: "block", md: "inline" }}
-            marginInline="10px"
-          >
-            página inicial?
-          </Link>
-        </Text>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", lg: "row" },
+          }}
+        >
+          <Text>Enquanto isso, que tal voltar para a {""}</Text>
+          <Text>
+            <Link
+              href="/"
+              color={Colors["Green-70"]}
+              fontWeight="700"
+              underline="none"
+              display={{ xs: "block", md: "inline" }}
+              marginInline="10px"
+            >
+              página inicial?
+            </Link>
+          </Text>
+        </Box>
       </Box>
     </Container>
   );

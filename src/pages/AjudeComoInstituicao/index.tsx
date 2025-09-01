@@ -8,11 +8,12 @@ import Button from "../Components/Button";
 import { Link } from "react-router-dom";
 import Container from "../Components/Container";
 import { Colors } from "../../styles/tokens/colors";
+import Hero from "../../assets/header/ajude-como-instituicao.png";
 
 const AjudeComoInstituicao = () => {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Ajude como Instituição</h2>
       </Header>
 

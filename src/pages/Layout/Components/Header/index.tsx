@@ -6,7 +6,6 @@ import {
   Box,
   Typography,
   Button,
-  Divider,
   Drawer,
   AccordionSummary,
   Accordion,
@@ -364,7 +363,6 @@ const Header: React.FC = () => {
           <Login />
         </Box>
       </Toolbar>
-      <Divider />
       <Drawer
         open={open}
         onClose={handleCloseDrawer}

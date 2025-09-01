@@ -9,11 +9,12 @@ import Button from "../Components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import BikeAnjoKid from "../../assets/images/bike-anjo-kid.jpg";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/voluntariado.png";
 
 function Volunteering(): ReactNode {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Voluntariado</h2>
       </Header>
 

@@ -6,6 +6,7 @@ import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/escola-bike-anjo.png";
 
 const findCitySteps = [
   {
@@ -31,7 +32,7 @@ const findCitySteps = [
 function EscolaBikeAnjo(): JSX.Element {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
       <BackButton />

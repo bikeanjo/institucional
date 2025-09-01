@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "../Components/SubTitle";
 import Container from "../Components/Container";
+import Hero from "../../assets/header/como-funciona.png";
 
 const learnSteps = [
   {
@@ -49,7 +50,7 @@ const bikeAnjoSteps = [
 function HowItWorks(): JSX.Element {
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Como Funciona</h2>
       </Header>
       <Container>
