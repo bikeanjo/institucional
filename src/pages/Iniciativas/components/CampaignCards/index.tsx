@@ -1,6 +1,7 @@
 import { ContainerCards } from "../ProjectCards/styles";
 import { useRef } from "react";
 import { Card } from "../Card/Index";
+import { Colors } from "../../../../styles/tokens/colors";
 
 export function CampaignCards() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -10,24 +11,27 @@ export function CampaignCards() {
       id: "Card1",
       title: "Dia Mundial Sem Carro",
       textDesktop:
-        " O tradicional Dia Mundial Sem Carro ocorre sempre no dia 22 de setembro e mobiliza pessoas do mundo todo para desestimular o uso do carro e optar por se deslocar de forma mais sustentável. A Bike Anjo não poderia ficar de fora dessa e tem mobilizado sua rede para fazer ações em comum",
+        "No Dia Mundial Sem Carro, a cidade respira diferente. A gente convida todo mundo a experimentar a cidade de outro jeito: com menos ruído, mais pedal e mais conexão. Um só dia que pode inspirar muitos!",
       textMobile: "Resumo até 110 caracteres",
       button: "Conhecer",
       link: "/dia-mundial-sem-carro",
+      color: Colors["Blue-60"],
     },
     {
       id: "Card2",
       title: "Bicicleta nos Planos",
       textDesktop:
-        "O tradicional Dia Mundial Sem Carro ocorre sempre no dia 22 de setembro e mobiliza pessoas do mundo todo para desestimular o uso do carro e optar por se deslocar de forma mais sustentável. A Bike Anjo não poderia ficar de fora dessa e tem mobilizado sua rede para fazer ações em comum",
+        "Mais bikes, menos blá-blá-blá! Lutamos por políticas públicas que priorizem a mobilidade ativa. Com dados, escuta e articulação, queremos a bicicleta nos planos das cidades.",
       textMobile: "Resumo até 110 caracteres",
+      color: Colors["Orange-50"],
     },
     {
       id: "Card3",
       title: "Ação para não ciclistas",
       textDesktop:
-        "A Bike Anjo iniciou em 2015 um processo para pensarmos em conteúdos e ações direcionadas a “não ciclistas” pensando em mobilizar um público que não necessariamente usa a bicicleta cotidianamente, mas tem uma influência enorme sobre o conforto e motivação dos ciclistas nas ruas. São estes: motoristas comuns ou profissionais (de táxi, ônibus, vans e caminhões) e motociclistas. Neste início de campanha, compilamos uma série de materiais sobre como você pode engajar e sensibilizar este público. Confira AQUI.",
+        "Tem espaço pra todo mundo na transformação das cidades. Aqui na Bike Anjo, ensinamos outras formas de ajudar a iniciativa da bicicleta mesmo que não pedalando",
       textMobile: "Resumo até 110 caracteres",
+      color: Colors["Green-70"],
     },
   ];
 
@@ -42,6 +46,7 @@ export function CampaignCards() {
             textMobile={card.textMobile}
             button={card.button}
             link={card.link}
+            color={card.color}
           />
         ))}
       </ContainerCards>

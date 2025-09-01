@@ -70,12 +70,14 @@ export const CityList = styled.div`
 `;
 
 export const CityCard = styled.div<ButtonProps>`
-  background-color: #fff;
+  background-color: ${Colors["G-White"]};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: ${({ expanded }) => (expanded ? "0" : "4px")};
   border-bottom-right-radius: ${({ expanded }) => (expanded ? "0" : "4px")};
   padding: 16px;
+  border: 2px solid ${Colors["G-Grey-30"]};
+  border-radius: 8px;
 
   .card-content {
     display: flex;
@@ -95,6 +97,7 @@ export const CityCard = styled.div<ButtonProps>`
     border-radius: 50%;
     object-fit: cover;
     background-color: #ddd;
+    border: 2px solid black;
   }
 
   h5 {

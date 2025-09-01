@@ -32,7 +32,15 @@ const Iniciativas: React.FC = () => {
           </Subtitle>
           <CampaignCards />
         </Box>
-        <Box paddingY={{ xs: "16px", md: "40px" }}>
+        <Box
+          sx={{
+            paddingY: { xs: "16px", md: "40px" },
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Subtitle>
             <h2>Eventos</h2>
           </Subtitle>
@@ -46,7 +54,14 @@ const Iniciativas: React.FC = () => {
           </Text>
           <Events />
         </Box>
-        <Box paddingY={{ xs: "16px", md: "40px" }}>
+        <Box
+          sx={{
+            paddingY: { xs: "16px", md: "40px" },
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <Subtitle>
             <h2>Veja nossa playlist de dicas!</h2>
           </Subtitle>

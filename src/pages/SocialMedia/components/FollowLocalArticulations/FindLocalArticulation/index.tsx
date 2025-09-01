@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { Box } from "@mui/material";
+import { Colors } from "../../../../../styles/tokens/colors";
 
 const mockCities = [
   {
@@ -25,6 +26,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/sao-paulo.png",
   },
   {
     name: "Aracaju",
@@ -36,6 +38,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/aracaju.png",
   },
   {
     name: "Belém",
@@ -47,6 +50,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
   {
     name: "Belo Horizonte",
@@ -58,6 +62,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
   {
     name: "Brasília",
@@ -69,6 +74,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
   {
     name: "Campina Grande",
@@ -80,6 +86,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
   {
     name: "Campinas",
@@ -91,6 +98,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
   {
     name: "Caruaru",
@@ -102,6 +110,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
   {
     name: "Contagem",
@@ -113,6 +122,7 @@ const mockCities = [
     date: "01/01/2023",
     time: "10:00",
     registration: "https://example.com/registration-abc",
+    url: "/assets/icons/abc.png",
   },
 ];
 
@@ -149,6 +159,10 @@ export default function FindLocalArticulation() {
         flexDirection: "column",
         gap: "8px",
         margin: "40px 0px",
+        border: `2px solid ${Colors["G-Grey-30"]}`,
+        borderRadius: "16px",
+        padding: "24px",
+        backgroundColor: Colors["G-Grey-10"],
       }}
     >
       <Title>Encontre uma Articulação Local</Title>
@@ -179,7 +193,7 @@ export default function FindLocalArticulation() {
           return (
             <CityCard key={city.name} expanded={isExpanded}>
               <div className="card-content">
-                <img src="" alt={`Logo de ${city.name}`} />
+                <img src={city.url} alt={`Logo de ${city.name}`} />
                 <div className="card-body">
                   <h5>{city.state}</h5>
                   <h4>{city.name}</h4>
