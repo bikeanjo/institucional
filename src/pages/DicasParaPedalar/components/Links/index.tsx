@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import SubTitle from "@components/SubTitle";
+import Text from "@components/Text";
 import Title from "@components/Title";
 import { LinkItem, LinkList } from "./styles";
 
@@ -30,9 +30,9 @@ export default function SupportLinksSection() {
       }}
     >
       <Title>Links de Apoio</Title>
-      <SubTitle>
+      <Text>
         Abaixo alguns links que podem te ajudar a dar os primeiros passos
-      </SubTitle>
+      </Text>
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../styles/tokens/colors";
 
 export const BoxTitle = styled.p`
   font-weight: 600;
@@ -17,8 +18,8 @@ export const BoxDescription = styled.p`
 `;
 
 export const PrimaryButton = styled.button`
-  background-color: #d9d9d9;
-  color: #000;
+  background-color: ${Colors["Green-70"]};
+  color: ${Colors["G-White"]};
   font-size: 24px;
   font-weight: 600;
   padding: 24px 40px;

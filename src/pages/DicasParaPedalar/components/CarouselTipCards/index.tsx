@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { StepCard } from "../Card";
 import { Arrow, Cards, CarouselContainer } from "./styles";
-import SubTitle from "@components/SubTitle";
+import Text from "@components/Text";
 import Title from "@components/Title";
 
 interface Step {
@@ -37,7 +37,7 @@ export default function CarouselTipCards({
   return (
     <>
       <Title>{title}</Title>
-      <SubTitle>{sub}</SubTitle>
+      <Text>{sub}</Text>
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
