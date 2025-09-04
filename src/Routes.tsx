@@ -22,6 +22,7 @@ import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArt
 import Container from "@components/Container";
 import Volunteering from "./pages/Volunteering";
 import SearchResults from "./pages/Search/SearchResults";
+import WhoWeAre from "./pages/WhoWeAre";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
             }
           />
           <Route path="/voluntariado" element={<Volunteering />} />
+          <Route path="/quem-somos" element={<WhoWeAre />} />
         </Route>
       </Routes>
     </>
