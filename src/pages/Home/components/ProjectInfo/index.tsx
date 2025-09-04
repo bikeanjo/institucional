@@ -10,7 +10,6 @@ const ProjectInfo = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 24px;
-  gap: 10px;
 `;
 
 export default ProjectInfo;
