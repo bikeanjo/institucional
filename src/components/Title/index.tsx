@@ -15,8 +15,8 @@ const Title = styled(Typography)<TitleProps>(
     fontWeight: 600,
     display: "flex",
 
-    ...(pink && { color: "#E1216D" }),
-    ...(green && !pink && { color: "#4D7A18" }),
+    ...(pink && { color: "var(--mui-palette-Pink-50)" }),
+    ...(green && !pink && { color: "var(--mui-palette-Green-70)" }),
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "32px",

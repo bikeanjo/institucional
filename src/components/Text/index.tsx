@@ -11,7 +11,7 @@ const Text = styled(Typography)<TextProps>(
     fontWeight: 400,
     display: "flex",
     wordBreak: "break-word",
-    color: "black",
+    color: "var(--mui-palette-G-Grey-100)",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "16px",

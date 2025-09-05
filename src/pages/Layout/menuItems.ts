@@ -48,7 +48,7 @@ export const menuItems: MenuItem[] = [
     title: "Sobre Nós",
     children: [
       { title: "Como funciona", url: "/como-funciona" },
-      { title: "Quem somos", url: "/404" },
+      { title: "Quem somos", url: "/quem-somos" },
       { title: "Redes Sociais", url: "/social-media" },
       { title: "Bike Anjo na Mídia", url: "/404" },
       { title: "Blog", url: "/404" },
