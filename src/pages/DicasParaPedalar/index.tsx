@@ -76,9 +76,14 @@ const attentionSteps = [
 ];
 
 function CyclingTips(): JSX.Element {
+  const Hero = {
+    url: "/assets/header/dicas-para-pedalar.jpg",
+    backgroundPositionDesktop: "50% 68%",
+    backgroundPositionMobile: "50% 80%",
+  };
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Dicas para Pedalar</h2>
       </Header>
       <Container>

@@ -10,9 +10,14 @@ import { Link } from "react-router-dom";
 import Container from "@components/Container";
 
 const Iniciativas: React.FC = () => {
+  const Hero = {
+    url: "/assets/header/iniciativas.jpg",
+    backgroundPositionDesktop: "50% 60%",
+    backgroundPositionMobile: "50% 70%",
+  };
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Iniciativas</h2>
       </Header>
       <Container

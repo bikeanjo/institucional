@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { Colors } from "../../styles/tokens/colors";
 
-interface HeaderProps {
+export interface HeaderProps {
   secondary?: boolean;
   gap?: string;
   padding?: string;
   height?: string;
-  Hero?: string;
+  Hero?: {
+    url: string;
+    backgroundPositionDesktop: string;
+    backgroundPositionMobile: string;
+  };
 }
 
 const Header = styled.div<HeaderProps>(
@@ -21,10 +25,10 @@ const Header = styled.div<HeaderProps>(
       : "transparent",
     gap: gap || "0",
     alignItems: "center",
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.7) 100%), url(${Hero ? Hero : "/assets/header/header-image.webp"})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.7) 100%), url(${Hero?.url ? Hero.url : "/assets/header/header-image.webp"})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "50% 20%",
+    backgroundPosition: Hero?.backgroundPositionMobile,
 
     "& h2": {
       color: Colors["G-White"],
@@ -49,6 +53,7 @@ const Header = styled.div<HeaderProps>(
 
     [theme.breakpoints.up("lg")]: {
       height: height || "320px",
+      backgroundPosition: Hero?.backgroundPositionDesktop,
     },
   }),
 );

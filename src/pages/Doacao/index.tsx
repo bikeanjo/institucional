@@ -16,7 +16,11 @@ import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
 
 const Doacao = (): JSX.Element => {
-  const Hero = "/assets/header/doe.webp";
+  const Hero = {
+    url: "/assets/header/doe.jpg",
+    backgroundPositionDesktop: "50% 40%",
+    backgroundPositionMobile: "50% 40%",
+  };
 
   const handleCopyCNPJ = async () => {
     await navigator.clipboard.writeText("19.515.100/0001-89");

@@ -5,10 +5,15 @@ import Text from "@components/Text";
 import Container from "@components/Container";
 
 function Matérias(): ReactNode {
+  const Hero = {
+    url: "/assets/header/bike-anjo-na-midia.webp",
+    backgroundPositionDesktop: "50% 60%",
+    backgroundPositionMobile: "30% 70%",
+  };
   return (
     <>
-      <Header secondary>
-        <h2>Matérias</h2>
+      <Header secondary Hero={Hero}>
+        <h2>Bike Anjo na Mídia</h2>
       </Header>
 
       <Container>

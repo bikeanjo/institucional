@@ -28,7 +28,11 @@ const findCitySteps = [
 ];
 
 function EscolaBikeAnjo(): JSX.Element {
-  const Hero = "/assets/header/escola-bike-anjo.webp";
+  const Hero = {
+    url: "/assets/header/escola-bike-anjo.webp",
+    backgroundPositionDesktop: "50% 40%",
+    backgroundPositionMobile: "50% 40%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

@@ -47,7 +47,11 @@ const bikeAnjoSteps = [
 ];
 
 function HowItWorks(): JSX.Element {
-  const Hero = "/assets/header/como-funciona.webp";
+  const Hero = {
+    url: "/assets/header/como-funciona.jpg",
+    backgroundPositionDesktop: "50% 40%",
+    backgroundPositionMobile: "50% 40%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

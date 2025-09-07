@@ -53,7 +53,11 @@ const teachingSteps = [
 ];
 
 function CyclingTips(): JSX.Element {
-  const Hero = "/assets/header/dicas-para-bike-anjo.webp";
+  const Hero = {
+    url: "/assets/header/dicas-para-bike-anjo.jpg",
+    backgroundPositionDesktop: "50% 40%",
+    backgroundPositionMobile: "50% 40%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

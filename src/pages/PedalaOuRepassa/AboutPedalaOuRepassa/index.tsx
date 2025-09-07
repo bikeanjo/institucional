@@ -43,7 +43,7 @@ export default function AboutPedalaOuRepassa() {
         }}
       >
         <img
-          src={"/assets/images/pedala-ou-repassa.jpg"}
+          src={"/assets/images/PedalaOuRepassa/pedala-ou-repassa.jpg"}
           alt="Criança sorrindo enquanto pedala"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />

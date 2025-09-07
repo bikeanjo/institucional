@@ -10,7 +10,11 @@ import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import Container from "@components/Container";
 
 function Volunteering(): ReactNode {
-  const Hero = "/assets/header/voluntariado.webp";
+  const Hero = {
+    url: "/assets/header/voluntariado.webp",
+    backgroundPositionDesktop: "50% 10%",
+    backgroundPositionMobile: "50% 10%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

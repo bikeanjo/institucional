@@ -6,9 +6,14 @@ import Title from "@components/Title";
 import { Box } from "@mui/material";
 
 function DiaMundialSemCarro(): JSX.Element {
+  const Hero = {
+    url: "/assets/header/dia-mundial-sem-carro.jpg",
+    backgroundPositionDesktop: "50% 10%",
+    backgroundPositionMobile: "50% 10%",
+  };
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2> Dia Mundial Sem Carro </h2>
       </Header>
 

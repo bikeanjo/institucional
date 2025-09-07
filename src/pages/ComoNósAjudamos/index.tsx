@@ -13,9 +13,14 @@ import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
 import Title from "@components/Title";
 
 function HowWeHelp(): JSX.Element {
+  const Hero = {
+    url: "/assets/header/como-nos-ajudamos.jpg",
+    backgroundPositionDesktop: "50% 70%",
+    backgroundPositionMobile: "50% 50%",
+  };
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Como nós ajudamos</h2>
       </Header>
       <Container>

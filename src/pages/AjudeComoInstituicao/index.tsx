@@ -10,7 +10,11 @@ import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
 
 const AjudeComoInstituicao = () => {
-  const Hero = "/assets/header/ajude-como-instituicao.webp";
+  const Hero = {
+    url: "/assets/header/ajude-como-instituicao.webp",
+    backgroundPositionDesktop: "50% 60%",
+    backgroundPositionMobile: "50% 10%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

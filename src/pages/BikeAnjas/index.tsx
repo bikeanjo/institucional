@@ -9,7 +9,11 @@ import Title from "@components/Title";
 import Text from "@components/Text";
 
 function BikeAnjas(): JSX.Element {
-  const Hero = "/assets/header/bike-anjas.webp";
+  const Hero = {
+    url: "/assets/header/bike-anjas.webp",
+    backgroundPositionDesktop: "50% 10%",
+    backgroundPositionMobile: "50% 10%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>
@@ -66,7 +70,7 @@ function BikeAnjas(): JSX.Element {
             }}
           >
             <img
-              src={"/assets/images/bike-anjas-main.png"}
+              src={"/assets/images/BikeAnjas/bike-anjas-main.png"}
               alt="Criança sorrindo enquanto pedala"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />

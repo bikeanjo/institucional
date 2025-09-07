@@ -6,7 +6,11 @@ import LocalArticulations from "./components/FollowLocalArticulations";
 import Container from "@components/Container";
 
 function SocialMedia(): JSX.Element {
-  const Hero = "/assets/header/redes-sociais.webp";
+  const Hero = {
+    url: "/assets/header/redes-sociais.webp",
+    backgroundPositionDesktop: "50% 10%",
+    backgroundPositionMobile: "10% 10%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>
