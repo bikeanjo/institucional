@@ -12,7 +12,11 @@ import OurStory from "./sections/OurStory";
 import Transparency from "./sections/Transparency";
 
 function WhoWeAre(): ReactNode {
-  const Hero = "/assets/header/quem-somos.webp";
+  const Hero = {
+    url: "/assets/header/quem-somos.webp",
+    backgroundPositionDesktop: "50% 10%",
+    backgroundPositionMobile: "50% 10%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

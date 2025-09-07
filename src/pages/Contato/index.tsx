@@ -5,9 +5,14 @@ import Container from "@components/Container";
 import Text from "@components/Text";
 
 function Contact(): JSX.Element {
+  const Hero = {
+    url: "/assets/header/contato.jpg",
+    backgroundPositionDesktop: "50% 90%",
+    backgroundPositionMobile: "50% 90%",
+  };
   return (
     <>
-      <Header secondary>
+      <Header secondary Hero={Hero}>
         <h2>Contato</h2>
       </Header>
       <Container>

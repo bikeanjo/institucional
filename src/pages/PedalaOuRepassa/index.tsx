@@ -47,7 +47,11 @@ const findCitySteps = [
 ];
 
 function PedalaOuRepassa(): JSX.Element {
-  const Hero = "/assets/header/pedala-ou-repassa.webp";
+  const Hero = {
+    url: "/assets/header/pedala-ou-repassa.webp",
+    backgroundPositionDesktop: "50% 60%",
+    backgroundPositionMobile: "10% 70%",
+  };
   return (
     <>
       <Header secondary Hero={Hero}>

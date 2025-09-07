@@ -42,7 +42,7 @@ export default function AboutEBA() {
         }}
       >
         <img
-          src={"/assets/images/eba.jpg"}
+          src={"/assets/images/EBA/eba.jpg"}
           alt="Criança sorrindo enquanto pedala"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
