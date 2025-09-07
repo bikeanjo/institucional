@@ -7,11 +7,15 @@ import {
   faYoutube,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { SocialIcon } from "./socialIcon";
 import "material-icons/iconfont/material-icons.css";
 import Accordion from "./components/accordion";
-import { menuItems } from "../../menuItems";
+import { MenuItem, menuItems } from "../../menuItems";
 import { Link } from "../Link";
+import { Link as RouterLink } from "react-router";
+import { Colors } from "../../../../styles/tokens/colors";
+import styled from "styled-components";
 
 const Footer: React.FC = () => {
   const gridNames: Record<string, string> = {
@@ -22,13 +26,36 @@ const Footer: React.FC = () => {
     Contato: "contato",
   };
 
+  const SocialLink = styled(RouterLink)`
+    text-decoration: none;
+    color: ${Colors["Green-70"]};
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  `;
+
+  const isFirstOrderTree = (items: MenuItem): boolean => {
+    if (!items.children) {
+      return true;
+    }
+    if (items.children.some((child) => child.children)) {
+      return false;
+    }
+    return true;
+  };
+
   return (
     <Box
       component="footer"
       sx={{
-        bgcolor: "#F8F8F8",
-        color: "#656565",
+        bgcolor: Colors["G-Grey-10"],
+        color: Colors["G-Grey-60"],
         padding: { xs: "16px 24px 0px 24px", lg: "40px 96px 0px 96px" },
+        fontWeight: 700,
+        borderTop: `2px solid ${Colors["Green-70"]}`,
       }}
     >
       <Box
@@ -60,55 +87,71 @@ const Footer: React.FC = () => {
         >
           <Box
             component="img"
-            src={"/assets/icons/logo-bike-anjo.png"}
+            src={"/assets/icons/logo-bike-anjo-laranjo.png"}
             alt="Logo"
             gridArea="img"
           />
           <Typography
             width={{ xs: "100%", lg: 293 }}
-            fontSize={"16px"}
-            fontWeight={500}
+            fontSize={"18px"}
             gridArea="texto"
+            color={Colors["G-Grey-100"]}
             textAlign={{ xs: "center", lg: "start" }}
           >
             Junte-se a uma comunidade que acredita na transformação por meio da
             bicicleta!
           </Typography>
-          <Box
-            display={"flex"}
-            height={"33.6px"}
-            gap={{ xs: "8px", lg: "16px" }}
-            gridArea="rede"
-            justifyContent={{ xs: "end", lg: "start" }}
-          >
-            <a
-              href="https://instagram.com/bikeanjo"
-              target="_blank"
-              rel="noopener noreferrer"
+          <Box sx={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <Box
+              display={"flex"}
+              height={"33.6px"}
+              gap={{ xs: "8px", lg: "16px" }}
+              gridArea="rede"
+              justifyContent={{ xs: "end", lg: "start" }}
             >
-              <SocialIcon icon={faInstagram} />
-            </a>
-            <a
-              href="https://facebook.com/bikeanjo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SocialIcon icon={faFacebookF} />
-            </a>
-            <a
-              href="https://youtube.com/@bikeanjo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SocialIcon icon={faYoutube} />
-            </a>
-            <a
-              href="https://linkedin.com/company/bikeanjo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SocialIcon icon={faLinkedinIn} />
-            </a>
+              <SocialIcon
+                icon={faInstagram}
+                title="instagram"
+                url="https://instagram.com/bikeanjo"
+                external
+              />
+              <SocialIcon
+                icon={faFacebookF}
+                title="facebook"
+                url="https://facebook.com/bikeanjo"
+                external
+              />
+              <SocialIcon
+                icon={faYoutube}
+                title="youtube"
+                url="https://youtube.com/@bikeanjo"
+                external
+              />
+              <Box
+                sx={{
+                  display: { xs: "none", lg: "flex" },
+                }}
+              >
+                <SocialIcon
+                  icon={faLinkedinIn}
+                  title="linkedin"
+                  url="https://linkedin.com/company/bikeanjo"
+                  external
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: { xs: "flex", lg: "none" },
+                }}
+              >
+                <SocialIcon
+                  icon={faPlus}
+                  url="/social-media"
+                  title="redes-sociais"
+                />
+              </Box>
+            </Box>
+            <SocialLink to="/social-media">Veja todas as Redes</SocialLink>
           </Box>
         </Box>
         <Box
@@ -122,7 +165,7 @@ const Footer: React.FC = () => {
                 `,
             lg: `
                   'offer iniciatives about'
-                  'receive iniciatives about'
+                  'receive iniciatives contato'
                 `,
           }}
           gridTemplateColumns={{
@@ -144,7 +187,10 @@ const Footer: React.FC = () => {
                 <React.Fragment>
                   {item.children.map((subItem, subIdx) => (
                     <React.Fragment key={subIdx + " submenu-item"}>
-                      <Typography fontWeight={600} fontSize={"15px"}>
+                      <Typography
+                        fontWeight={isFirstOrderTree(item) ? 400 : 600}
+                        fontSize={"15px"}
+                      >
                         {subItem.url ? (
                           <Link to={subItem.url}>{subItem.title}</Link>
                         ) : (
@@ -155,7 +201,6 @@ const Footer: React.FC = () => {
                         subItem.children.length > 0 &&
                         subItem.children.map((lastItem, lastIdx) => (
                           <Typography
-                            fontWeight={400}
                             fontSize={"15px"}
                             key={lastIdx + " submenu-item"}
                           >
@@ -180,7 +225,7 @@ const Footer: React.FC = () => {
         sx={{
           my: { xs: 1, lg: 4 },
           borderWidth: "1px",
-          borderColor: "#656565",
+          borderColor: Colors["G-Grey-30"],
         }}
       />
       <Typography

@@ -8,6 +8,9 @@ import { useEffect, useState, type JSX } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import { Colors } from "../../../../../../styles/tokens/colors";
+import { Link as RouterLink } from "react-router";
+import styled from "styled-components";
 
 const Accordion = ({
   title,
@@ -34,6 +37,12 @@ const Accordion = ({
     setExpanded((prev) => !prev);
   };
 
+  const Link = styled(RouterLink)`
+    text-decoration: none;
+    color: ${Colors["G-Grey-100"]};
+    width: 100%;
+  `;
+
   return (
     <MuiAccordion
       elevation={0}
@@ -41,7 +50,7 @@ const Accordion = ({
       expanded={expanded}
       onChange={handleChange}
       sx={{
-        display: { xs: "flex", lg: contato ? "none" : "flex" },
+        display: { xs: "flex", lg: "flex" },
         flexDirection: "column",
         gap: "16px",
         gridArea: gridItem,
@@ -58,8 +67,8 @@ const Accordion = ({
         sx={{
           padding: 0,
           margin: 0,
-          backgroundColor: "#F8F8F8",
-          color: "#656565",
+          backgroundColor: Colors["G-Grey-10"],
+          color: Colors["G-Grey-100"],
           minHeight: 0,
           "&.Mui-expanded": {
             minHeight: "unset",
@@ -70,17 +79,29 @@ const Accordion = ({
         }}
         slotProps={{ content: { sx: { margin: 0 } } }}
       >
-        <Typography component="span" fontWeight={600} fontSize={"15px"}>
-          {title}
-        </Typography>
+        <Link to={contato ? "/contato" : "#"}>
+          <Typography
+            component="span"
+            fontWeight={600}
+            fontSize={"16px"}
+            sx={{
+              color: {
+                xs: Colors["G-Grey-100"],
+                lg: contato ? Colors["Green-70"] : Colors["G-Grey-100"],
+              },
+            }}
+          >
+            {title}
+          </Typography>
+        </Link>
       </AccordionSummary>
       <AccordionDetails
         sx={{
           display: contato ? "none" : "flex",
           flexDirection: "column",
           padding: "8px 0px",
-          backgroundColor: "#F8F8F8",
-          color: "#656565",
+          backgroundColor: Colors["G-Grey-10"],
+          color: Colors["G-Grey-100"],
           gap: "16px",
         }}
       >
