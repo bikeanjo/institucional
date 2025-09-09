@@ -39,12 +39,12 @@ const Container = styled.div<ContainerProps>`
   background-position: center;
 
   ${({ theme }) => theme.breakpoints.up("xs")} {
-    padding: 40px 0px;
+    padding: 40px 16px;
     height: ${({ height }) => height || "auto"};
   }
 
   ${({ theme }) => theme.breakpoints.up("lg")} {
-    padding: ${({ carrousel }) => (carrousel ? "90px 202px 40px" : "64px 0px")};
+    padding: ${({ carrousel }) => (carrousel ? "90px 202px 40px" : "40px 0px")};
     height: ${({ carrousel }) => carrousel && "calc(100vh - 80px)"};
   }
 `;
