@@ -23,6 +23,7 @@ import Container from "@components/Container";
 import Volunteering from "./pages/Volunteering";
 import SearchResults from "./pages/Search/SearchResults";
 import WhoWeAre from "./pages/WhoWeAre";
+import TakeOurCourse from "./pages/TakeOurCourse";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
           />
           <Route path="/voluntariado" element={<Volunteering />} />
           <Route path="/quem-somos" element={<WhoWeAre />} />
+          <Route path="/faca-nosso-curso" element={<TakeOurCourse />} />
         </Route>
       </Routes>
     </>
