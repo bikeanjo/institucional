@@ -12,6 +12,7 @@ import TimelineCourse from "./components/TimelineCourse";
 import Accordion from "./components/Accordion";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";
+import BreadCrumb from "@components/BreadCrumb";
 
 function TakeOurCourse(): ReactNode {
   const Hero = {
@@ -42,6 +43,9 @@ function TakeOurCourse(): ReactNode {
       <Header secondary Hero={Hero}>
         <h2>Faça nosso Curso Bike Anjo</h2>
       </Header>
+
+      <BreadCrumb />
+
       <ContentContainer>
         <Content>
           <Title variant="h2" pink>

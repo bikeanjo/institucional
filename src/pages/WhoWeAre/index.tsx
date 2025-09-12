@@ -10,6 +10,7 @@ import { Box } from "@mui/material";
 import OurValues from "./sections/OurValues";
 import OurStory from "./sections/OurStory";
 import Transparency from "./sections/Transparency";
+import BreadCrumb from "@components/BreadCrumb";
 
 function WhoWeAre(): ReactNode {
   const Hero = {
@@ -22,6 +23,9 @@ function WhoWeAre(): ReactNode {
       <Header secondary Hero={Hero}>
         <h2>Quem Somos</h2>
       </Header>
+
+      <BreadCrumb />
+
       <WhatIsBikeAnjo />
       <HowWeOrganize />
       <Container secondary gap="32px">

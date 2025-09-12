@@ -6,6 +6,7 @@ import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
 const teachingSteps = [
   {
@@ -63,6 +64,8 @@ function CyclingTips(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2>Dicas para Bike Anjo</h2>
       </Header>
+
+      <BreadCrumb />
 
       <Container padding="20px">
         <CarouselTeachingCards

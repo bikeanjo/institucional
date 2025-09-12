@@ -8,6 +8,7 @@ import Events from "./components/Events";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
 const Iniciativas: React.FC = () => {
   const Hero = {
@@ -20,6 +21,9 @@ const Iniciativas: React.FC = () => {
       <Header secondary Hero={Hero}>
         <h2>Iniciativas</h2>
       </Header>
+
+      <BreadCrumb />
+
       <Container
         marginX={{ xs: "16px", md: "96px" }}
         marginY={{ xs: "16px", md: "40px" }}

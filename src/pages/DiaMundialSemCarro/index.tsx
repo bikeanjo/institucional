@@ -4,6 +4,7 @@ import Container from "@components/Container";
 import Text from "@components/Text";
 import Title from "@components/Title";
 import { Box } from "@mui/material";
+import BreadCrumb from "@components/BreadCrumb";
 
 function DiaMundialSemCarro(): JSX.Element {
   const Hero = {
@@ -16,6 +17,8 @@ function DiaMundialSemCarro(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2> Dia Mundial Sem Carro </h2>
       </Header>
+
+      <BreadCrumb />
 
       <Container inline>
         <Box
