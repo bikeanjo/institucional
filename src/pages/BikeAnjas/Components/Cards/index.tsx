@@ -85,8 +85,23 @@ export function Cards() {
         margin: "40px 0px",
         padding: "40px 0px",
         backgroundColor: Colors["Green-20"],
-        border: `2px solid ${Colors["Green-70"]}`,
-        borderInline: 0,
+        overflow: "visible",
+        position: "relative",
+        zIndex: 0,
+        "&::before": {
+          content: '" "',
+          position: "absolute",
+          top: 0,
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "300%",
+          height: "100%",
+          zIndex: -1,
+          background: Colors["Green-20"],
+          borderTop: `2px solid ${Colors["Green-70"]}`,
+          borderBottom: `2px solid ${Colors["Green-70"]}`,
+          borderRadius: 0,
+        },
       }}
     >
       <Title color={Colors["Green-70"]} center>
