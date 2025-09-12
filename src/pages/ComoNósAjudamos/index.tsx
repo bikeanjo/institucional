@@ -11,6 +11,7 @@ import Container from "@components/Container";
 import { GridContainer } from "../Volunteering/components/HowToJoinCards/styles";
 import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
 import Title from "@components/Title";
+import BreadCrumb from "@components/BreadCrumb";
 
 function HowWeHelp(): JSX.Element {
   const Hero = {
@@ -18,11 +19,15 @@ function HowWeHelp(): JSX.Element {
     backgroundPositionDesktop: "50% 70%",
     backgroundPositionMobile: "50% 50%",
   };
+
   return (
     <>
       <Header secondary Hero={Hero}>
         <h2>Como nós ajudamos</h2>
       </Header>
+
+      <BreadCrumb />
+
       <Container>
         <Title center>Veja os nossos apoios</Title>
         <Text>

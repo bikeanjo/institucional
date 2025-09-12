@@ -3,8 +3,9 @@ import Header from "@components/Header";
 import Timeline from "./components/Timeline";
 import Text from "@components/Text";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
-function Matérias(): ReactNode {
+function BikeAnjoNaMidia(): ReactNode {
   const Hero = {
     url: "/assets/header/bike-anjo-na-midia.webp",
     backgroundPositionDesktop: "50% 60%",
@@ -15,6 +16,8 @@ function Matérias(): ReactNode {
       <Header secondary Hero={Hero}>
         <h2>Bike Anjo na Mídia</h2>
       </Header>
+
+      <BreadCrumb />
 
       <Container>
         <Text>
@@ -27,4 +30,4 @@ function Matérias(): ReactNode {
     </>
   );
 }
-export default Matérias;
+export default BikeAnjoNaMidia;

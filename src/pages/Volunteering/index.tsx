@@ -8,6 +8,7 @@ import { GridContainer } from "./components/HowToJoinCards/styles";
 import Button from "@components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
 function Volunteering(): ReactNode {
   const Hero = {
@@ -20,6 +21,8 @@ function Volunteering(): ReactNode {
       <Header secondary Hero={Hero}>
         <h2>Voluntariado</h2>
       </Header>
+
+      <BreadCrumb />
 
       <Container>
         <Box display="flex" justifyContent="center">

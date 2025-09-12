@@ -4,6 +4,7 @@ import FollowSocialMedia from "./components/FollowSocialMedia";
 import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
 function SocialMedia(): JSX.Element {
   const Hero = {
@@ -16,6 +17,9 @@ function SocialMedia(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2>Redes Sociais</h2>
       </Header>
+
+      <BreadCrumb />
+
       <Container>
         <FollowSocialMedia
           title="Siga nossas redes sociais:"

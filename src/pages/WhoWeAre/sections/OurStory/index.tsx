@@ -4,7 +4,7 @@ import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import Text from "@components/Text";
 import Button from "@components/Button";
-import TimelineComponent from "../../../Matérias/components/Timeline/TimelineComponent";
+import TimelineComponent from "../../../BikeAnjoNaMidia/components/Timeline/TimelineComponent";
 import { timelineData, type TimelineYear } from "./data";
 import { Link } from "react-router-dom";
 

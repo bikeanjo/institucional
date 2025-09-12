@@ -8,6 +8,7 @@ import Button from "@components/Button";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
+import BreadCrumb from "@components/BreadCrumb";
 
 const AjudeComoInstituicao = () => {
   const Hero = {
@@ -20,6 +21,8 @@ const AjudeComoInstituicao = () => {
       <Header secondary Hero={Hero}>
         <h2>Ajude como Instituição</h2>
       </Header>
+
+      <BreadCrumb />
 
       <Container>
         <Box
@@ -108,7 +111,7 @@ const AjudeComoInstituicao = () => {
                 <SubTitle mobileCenter>
                   Matérias que mostram o impacto da nossa rede
                 </SubTitle>
-                <Link to="/materias">
+                <Link to="/bike-anjo-na-midia">
                   <Button>Acessar matérias</Button>
                 </Link>
               </Box>

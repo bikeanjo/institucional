@@ -5,6 +5,7 @@ import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
 import Map from "./Map";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
 const findCitySteps = [
   {
@@ -38,6 +39,9 @@ function EscolaBikeAnjo(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
+
+      <BreadCrumb />
+
       <Container>
         <AboutEBA />
         <Map />

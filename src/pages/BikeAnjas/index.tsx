@@ -7,6 +7,7 @@ import Container from "@components/Container";
 import { Box } from "@mui/material";
 import Title from "@components/Title";
 import Text from "@components/Text";
+import BreadCrumb from "@components/BreadCrumb";
 
 function BikeAnjas(): JSX.Element {
   const Hero = {
@@ -19,6 +20,8 @@ function BikeAnjas(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2> Bike Anjas </h2>
       </Header>
+
+      <BreadCrumb />
 
       <Container>
         <Box

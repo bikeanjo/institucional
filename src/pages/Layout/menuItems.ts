@@ -50,7 +50,7 @@ export const menuItems: MenuItem[] = [
       { title: "Como funciona", url: "/como-funciona" },
       { title: "Quem somos", url: "/quem-somos" },
       { title: "Redes Sociais", url: "/social-media" },
-      { title: "Bike Anjo na Mídia", url: "/404" },
+      { title: "Bike Anjo na Mídia", url: "/bike-anjo-na-midia" },
       { title: "Blog", url: "/404" },
     ],
   },

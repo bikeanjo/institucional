@@ -3,6 +3,7 @@ import Header from "@components/Header";
 import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "@components/SubTitle";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
 
 const learnSteps = [
   {
@@ -57,6 +58,9 @@ function HowItWorks(): JSX.Element {
       <Header secondary Hero={Hero}>
         <h2>Como Funciona</h2>
       </Header>
+
+      <BreadCrumb />
+
       <Container>
         <SubTitle>
           Através do nosso site conectamos quem quer aprender a pedalar com quem
