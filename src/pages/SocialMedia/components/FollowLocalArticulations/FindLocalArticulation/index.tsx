@@ -31,15 +31,18 @@ interface Articulation {
 }
 
 interface FindLocalArticulationProps {
-  articulations: Articulation[];
-  setSelectedCoords: React.Dispatch<
+  articulations?: Articulation[];
+  setSelectedCoords?: React.Dispatch<
     React.SetStateAction<[number, number] | null>
   >;
 }
 
+const defaultArticulations: Articulation[] = [];
+const noop = () => {};
+
 export default function FindLocalArticulation({
-  articulations,
-  setSelectedCoords,
+  articulations = defaultArticulations,
+  setSelectedCoords = noop,
 }: FindLocalArticulationProps) {
   const [search, setSearch] = useState<string>("");
   const [selectedRegion, setSelectedRegion] = useState<string>("Todas");
