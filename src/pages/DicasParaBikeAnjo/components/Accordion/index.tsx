@@ -8,13 +8,14 @@ import { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { Colors } from "../../../../styles/tokens/colors";
+import { ReactNode } from "react";
 
 export function QuestionAccordion({
   title,
   content,
 }: {
   title: string;
-  content: string | JSX.Element;
+  content: ReactNode;
 }) {
   const [expanded, setExpanded] = useState<string | false>(false);
 
@@ -86,16 +87,20 @@ export function QuestionAccordion({
           padding: "16px",
         }}
       >
-        <Typography
-          sx={{
-            margin: 0,
-            fontSize: "16px",
-            fontWeight: 600,
-            whiteSpace: "pre-line",
-          }}
-        >
-          {content}
-        </Typography>
+        {typeof content === "string" ? (
+          <Typography
+            sx={{
+              margin: 0,
+              fontSize: "16px",
+              fontWeight: 600,
+              whiteSpace: "pre-line",
+            }}
+          >
+            {content}
+          </Typography>
+        ) : (
+          content
+        )}
       </AccordionDetails>
     </Accordion>
   );
