@@ -44,7 +44,7 @@ export default function AboutPedalaOuRepassa() {
       >
         <img
           src={"/assets/images/PedalaOuRepassa/pedala-ou-repassa.jpg"}
-          alt="Criança sorrindo enquanto pedala"
+          alt="Oficina comunitária com várias bikes para revisar."
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </Box>
