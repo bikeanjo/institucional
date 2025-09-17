@@ -14,7 +14,7 @@ export function QuestionAccordion({
   content,
 }: {
   title: string;
-  content: string;
+  content: string | JSX.Element;
 }) {
   const [expanded, setExpanded] = useState<string | false>(false);
 

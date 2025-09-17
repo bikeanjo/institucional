@@ -5,9 +5,9 @@ import Title from "@components/Title";
 import { Box } from "@mui/material";
 
 interface LocalArticulationsProps {
-  title: string;
+  title?: string;
   titleAlign?: "left" | "center" | "right";
-  sub: string;
+  sub?: string;
 }
 
 export default function FollowLocalArticulations({
