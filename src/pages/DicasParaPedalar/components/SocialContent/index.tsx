@@ -4,7 +4,10 @@ import Title from "@components/Title";
 export default function SocialContent() {
   return (
     <>
-      <img src={"/assets/images/VideoYoutube.png"} alt="Canal do Youtube" />
+      <img
+        src={"/assets/images/VideoYoutube.png"}
+        alt="Mulher sorridente andando de bicicleta em rua urbana, representando pessoas que pedalam."
+      />
 
       <TextWrapper>
         <div>
