@@ -347,6 +347,8 @@ const Header: React.FC = () => {
           <Button
             component={ButtonLink}
             to="/doacao"
+            role="link"
+            aria-label="Ir para página de doação"
             sx={{
               width: { xs: 77, xl: 120 },
               height: { xs: 48, xl: 48 },
