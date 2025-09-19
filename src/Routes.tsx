@@ -17,13 +17,13 @@ import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
 import Iniciativas from "./pages/Iniciativas";
 import FAQ from "./pages/Home/sections/FAQ";
-import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import Container from "@components/Container";
 import Volunteering from "./pages/Volunteering";
 import SearchResults from "./pages/Search/SearchResults";
 import WhoWeAre from "./pages/WhoWeAre";
 import TakeOurCourse from "./pages/TakeOurCourse";
 import BikeAnjoNaMidia from "./pages/BikeAnjoNaMidia";
+import FollowLocalArticulations from "./pages/SocialMedia/components/FollowLocalArticulations";
 
 function App() {
   return (
@@ -59,7 +59,7 @@ function App() {
             path="/onde-estamos"
             element={
               <Container>
-                <FindLocalArticulation />
+                <FollowLocalArticulations />
               </Container>
             }
           />

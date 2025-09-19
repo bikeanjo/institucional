@@ -6,9 +6,9 @@ import { Box } from "@mui/material";
 import { useState } from "react";
 
 interface LocalArticulationsProps {
-  title: string;
+  title?: string;
   titleAlign?: "left" | "center" | "right";
-  sub: string;
+  sub?: string;
 }
 
 export default function FollowLocalArticulations({
