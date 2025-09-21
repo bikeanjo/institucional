@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
+import { Typography, TypographyOwnProps } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import React from "react";
 import { JSX } from "react";
 
-interface TitleContainerProps {
+interface TitleContainerProps extends TypographyOwnProps {
   carrousel?: boolean;
   pink?: boolean;
   green?: boolean;

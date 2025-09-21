@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../../../styles/tokens/colors";
+import { BoxProps } from "@mui/material";
 
 declare module "styled-components" {
   export interface DefaultTheme {
@@ -14,16 +15,14 @@ declare module "styled-components" {
   }
 }
 
-interface ContainerTemplateProps {
+interface ContainerTemplateProps extends BoxProps {
   secondary?: boolean;
   carrousel?: boolean;
   gap?: string;
   height?: string;
 }
 
-interface ContainerProps
-  extends ContainerTemplateProps,
-    Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "gap" | "height"> {
+interface ContainerProps extends ContainerTemplateProps {
   children: React.ReactNode;
 }
 

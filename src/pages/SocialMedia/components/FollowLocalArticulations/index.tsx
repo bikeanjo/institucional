@@ -450,7 +450,7 @@ export default function FollowLocalArticulations({
         gap: "16px",
       }}
     >
-      <Title align={titleAlign}>{title}</Title>
+      <Title align={titleAlign}>{title ?? ""}</Title>
       <SubTitle>{sub}</SubTitle>
 
       <MapInteractive

@@ -1,13 +1,11 @@
-import { Box } from "@mui/material";
+import { Box, BoxProps } from "@mui/material";
 import styled from "styled-components";
 
-interface ContainerTemplateProps {
+interface ContainerTemplateProps extends BoxProps {
   inline?: boolean;
 }
 
-interface ContainerProps
-  extends ContainerTemplateProps,
-    Omit<React.HTMLAttributes<HTMLDivElement>, "children" | "inline"> {
+interface ContainerProps extends ContainerTemplateProps {
   children: React.ReactNode;
 }
 
