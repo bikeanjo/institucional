@@ -41,6 +41,9 @@ function Volunteering(): ReactNode {
           <HowToJoinCards />
         </GridContainer>
         <Button center>Cadastre-se</Button>
+      </Container>
+
+      <Container>
         <Box
           width="100%"
           paddingTop={{ xs: "40px", md: "56px" }}
@@ -103,8 +106,8 @@ function Volunteering(): ReactNode {
             <Button>Entre em Contato</Button>
           </Box>
         </Box>
-        <ProjectThatMoveUs />
       </Container>
+      <ProjectThatMoveUs />
     </>
   );
 }

@@ -7,6 +7,7 @@ import { SocialCard } from "./SocialMediaCard";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import { Colors } from "../../../../styles/tokens/colors";
+import Container from "@components/Container";
 
 interface SocialMediaProps {
   title: string;
@@ -15,7 +16,7 @@ interface SocialMediaProps {
 
 export default function FollowSocialMedia({ title, sub }: SocialMediaProps) {
   return (
-    <>
+    <Container>
       <Title>{title}</Title>
       <SubTitle>{sub}</SubTitle>
       <Stack spacing={3} sx={{ alignItems: "center", mx: "auto" }}>
@@ -61,6 +62,6 @@ export default function FollowSocialMedia({ title, sub }: SocialMediaProps) {
           color={Colors["Pink-50"]}
         />
       </Stack>
-    </>
+    </Container>
   );
 }

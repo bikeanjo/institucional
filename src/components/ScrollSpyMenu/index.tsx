@@ -5,7 +5,7 @@ import { Colors } from "../../styles/tokens/colors";
 
 const HEADER_HEIGHT = 76;
 
-const ScrollSpyMenu = (): JSX.Element => {
+const ScrollSpyMenu = (): JSX.Element | null => {
   const [anchorElements, setAnchorElements] = useState<Element[]>([]);
   const linksToSections = useRef(new Map<Element, Element>());
 
@@ -29,7 +29,7 @@ const ScrollSpyMenu = (): JSX.Element => {
     setAnchorElements(links);
   }, []);
 
-  return (
+  return anchorElements.length > 0 ? (
     <Container>
       {anchorElements.map((el) => (
         <Button
@@ -48,7 +48,7 @@ const ScrollSpyMenu = (): JSX.Element => {
         </Button>
       ))}
     </Container>
-  );
+  ) : null;
 };
 
 const Button = styled(MuiButton)(() => ({
@@ -61,7 +61,7 @@ const Button = styled(MuiButton)(() => ({
   textTransform: "unset",
 }));
 
-const Container = styled(Box)(() => ({
+const Container = styled(Box)(({ theme }) => ({
   display: "flex",
   position: "sticky",
   top: 0,
@@ -71,6 +71,10 @@ const Container = styled(Box)(() => ({
   borderWidth: "2px 0px",
   gap: "24px",
   padding: "12px 20px",
+
+  [theme.breakpoints.up("lg")]: {
+    padding: "12px 0px 12px 96px",
+  },
 }));
 
 export default ScrollSpyMenu;

@@ -3,18 +3,12 @@ import { Box, Typography } from "@mui/material";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import ImgWhatIsBikeAnjo from "../../../../../public/assets/images/WhoWeAre/what-is-bike-anjo.png";
+import Container from "@components/Container";
 
 export function WhatIsBikeAnjo(): ReactNode {
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          paddingTop: { xs: "32px", md: "40px" },
-          px: { xs: "16px", md: "92px" },
-        }}
-      >
+      <Container>
         <Box
           sx={{
             display: "flex",
@@ -95,7 +89,7 @@ export function WhatIsBikeAnjo(): ReactNode {
             </Typography>
           </Box>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 }

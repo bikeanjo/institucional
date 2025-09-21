@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import type { ReactNode } from "react";
 import Title from "@components/Title";
-import { ContentContainer, Subtitle, SummaryBox, SummaryText } from "./styles";
+import { Subtitle, SummaryBox, SummaryText } from "./styles";
 import Text from "@components/Text";
 import ValueChart from "../../../../../public/assets/images/WhoWeAre/value-chart.png";
 import Accordion from "../../components/Accordions";
 import { Box } from "@mui/material";
+import Container from "@components/Container";
 
 function OurValues(): ReactNode {
   useEffect(() => {
@@ -26,7 +27,7 @@ function OurValues(): ReactNode {
   }, []);
 
   return (
-    <ContentContainer>
+    <Container>
       <Box>
         <Title variant="h2" pink>
           Nossos Valores
@@ -248,7 +249,7 @@ function OurValues(): ReactNode {
           <Accordion id="InteractionGuide" />
         </Box>
       </Box>
-    </ContentContainer>
+    </Container>
   );
 }
 export default OurValues;

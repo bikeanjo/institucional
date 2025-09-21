@@ -11,6 +11,7 @@ import LinkIcon from "@mui/icons-material/Link";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import { Colors } from "../../../../styles/tokens/colors";
+import Container from "@components/Container";
 
 interface ShareProps {
   title: string;
@@ -31,7 +32,7 @@ const iconStyle = {
 
 export default function Share({ title, sub }: ShareProps) {
   return (
-    <>
+    <Container>
       <Title>{title}</Title>
       <SubTitle>{sub}</SubTitle>
       <Stack direction="row" spacing={2} justifyContent="center">
@@ -141,6 +142,6 @@ export default function Share({ title, sub }: ShareProps) {
           </Box>
         </a>
       </Stack>
-    </>
+    </Container>
   );
 }

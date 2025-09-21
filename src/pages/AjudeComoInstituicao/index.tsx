@@ -58,65 +58,67 @@ const AjudeComoInstituicao = () => {
           <Link to="/contato">
             <Button>Entre em contato</Button>
           </Link>
+        </Box>
+      </Container>
+
+      <Container>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: { xs: "16px", lg: "24px" },
+            paddingTop: { xs: "40px", lg: "80px" },
+          }}
+        >
+          <Title>Imprensa Parceira</Title>
+          <SubTitle>
+            Dar visibilidade à Bike Anjo é ampliar o acesso à mobilidade
+          </SubTitle>
+          <Text>
+            A Bike Anjo transforma realidades com a força da bicicleta. Quando a
+            imprensa conta essa história, mais pessoas descobrem que podem
+            aprender a pedalar, se locomover com autonomia e participar da
+            cidade. Se você é de um veículo de comunicação, sua matéria pode
+            ajudar a levar esse impacto ainda mais longe.
+          </Text>
 
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
-              gap: { xs: "16px", lg: "24px" },
-              paddingTop: { xs: "40px", lg: "80px" },
+              padding: { xs: "40px 0px", lg: "80px 0px" },
+              gap: { xs: "32px", lg: "200px" },
+              flexDirection: { xs: "column", lg: "row" },
             }}
           >
-            <Title>Imprensa Parceira</Title>
-            <SubTitle>
-              Dar visibilidade à Bike Anjo é ampliar o acesso à mobilidade
-            </SubTitle>
-            <Text>
-              A Bike Anjo transforma realidades com a força da bicicleta. Quando
-              a imprensa conta essa história, mais pessoas descobrem que podem
-              aprender a pedalar, se locomover com autonomia e participar da
-              cidade. Se você é de um veículo de comunicação, sua matéria pode
-              ajudar a levar esse impacto ainda mais longe.
-            </Text>
-
             <Box
               sx={{
                 display: "flex",
-                padding: { xs: "40px 0px", lg: "80px 0px" },
-                gap: { xs: "32px", lg: "200px" },
-                flexDirection: { xs: "column", lg: "row" },
+                flex: 1,
+                flexDirection: "column",
+                justifyContent: "space-between",
+                gap: "16px",
               }}
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  flex: 1,
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  gap: "16px",
-                }}
-              >
-                <SubTitle mobileCenter>Faça da Bike Anjo sua pauta!</SubTitle>
-                <Link to="/contato">
-                  <Button>Entre em contato</Button>
-                </Link>
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  flex: 1,
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  gap: "16px",
-                }}
-              >
-                <SubTitle mobileCenter>
-                  Matérias que mostram o impacto da nossa rede
-                </SubTitle>
-                <Link to="/bike-anjo-na-midia">
-                  <Button>Acessar matérias</Button>
-                </Link>
-              </Box>
+              <SubTitle mobileCenter>Faça da Bike Anjo sua pauta!</SubTitle>
+              <Link to="/contato">
+                <Button>Entre em contato</Button>
+              </Link>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flex: 1,
+                flexDirection: "column",
+                justifyContent: "space-between",
+                gap: "16px",
+              }}
+            >
+              <SubTitle mobileCenter>
+                Matérias que mostram o impacto da nossa rede
+              </SubTitle>
+              <Link to="/bike-anjo-na-midia">
+                <Button>Acessar matérias</Button>
+              </Link>
             </Box>
           </Box>
         </Box>

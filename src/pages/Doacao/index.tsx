@@ -215,7 +215,9 @@ const Doacao = (): JSX.Element => {
             </MuiButton>
           </Box>
         </Box>
+      </Container>
 
+      <Container>
         <Box
           sx={{
             display: "flex",

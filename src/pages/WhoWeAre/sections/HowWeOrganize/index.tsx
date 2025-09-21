@@ -3,18 +3,12 @@ import { Box, Typography } from "@mui/material";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import ImgHowWeOrganize from "../../../../../public/assets/images/WhoWeAre/how-we-organize.png";
+import Container from "@components/Container";
 
 export function HowWeOrganize(): ReactNode {
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          paddingTop: { xs: "32px", md: "40px" },
-          px: { xs: "16px", md: "92px" },
-        }}
-      >
+      <Container>
         <Box
           sx={{
             display: "flex",
@@ -100,7 +94,7 @@ export function HowWeOrganize(): ReactNode {
             </Typography>
           </Box>
         </Box>
-      </Box>
+      </Container>
     </>
   );
 }

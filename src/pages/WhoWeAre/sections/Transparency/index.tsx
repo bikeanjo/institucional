@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import OurBylaws from "../../components/PopUps/OurBylaws";
 import FinancialReports from "../../components/PopUps/FinancialReports";
 import ActivityReports from "../../components/PopUps/ActivityReport";
+import Container from "@components/Container";
 
 function Transparency(): ReactNode {
   const [openModal, setOpenModal] = useState<string | null>(null);
@@ -14,16 +15,7 @@ function Transparency(): ReactNode {
 
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          paddingTop: { xs: "32px", md: "40px" },
-          paddingBottom: { xs: "40px", md: "80px" },
-          px: { xs: "16px", md: "92px" },
-          gap: { xs: "16px", md: "24px" },
-        }}
-      >
+      <Container>
         <Title variant="h2" pink>
           Transparência
         </Title>
@@ -71,7 +63,7 @@ function Transparency(): ReactNode {
             onClose={handleClose}
           />
         </Box>
-      </Box>
+      </Container>
     </>
   );
 }
