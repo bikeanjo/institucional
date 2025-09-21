@@ -12,6 +12,7 @@ import { GridContainer } from "../Volunteering/components/HowToJoinCards/styles"
 import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
 import Title from "@components/Title";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function HowWeHelp(): JSX.Element {
   const Hero = {
@@ -26,6 +27,7 @@ function HowWeHelp(): JSX.Element {
         <h2>Como nós ajudamos</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

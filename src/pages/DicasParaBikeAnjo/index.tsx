@@ -7,6 +7,7 @@ import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const teachingSteps = [
   {
@@ -65,6 +66,7 @@ function CyclingTips(): JSX.Element {
         <h2>Dicas para Bike Anjo</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container padding="20px">

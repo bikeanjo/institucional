@@ -5,6 +5,7 @@ import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function SocialMedia(): JSX.Element {
   const Hero = {
@@ -18,6 +19,7 @@ function SocialMedia(): JSX.Element {
         <h2>Redes Sociais</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const Doacao = (): JSX.Element => {
   const Hero = {
@@ -37,6 +38,7 @@ const Doacao = (): JSX.Element => {
         <h2>Doação</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

@@ -5,6 +5,7 @@ import Text from "@components/Text";
 import Title from "@components/Title";
 import { Box } from "@mui/material";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function DiaMundialSemCarro(): JSX.Element {
   const Hero = {
@@ -18,6 +19,7 @@ function DiaMundialSemCarro(): JSX.Element {
         <h2> Dia Mundial Sem Carro </h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container inline>

@@ -13,6 +13,7 @@ import Accordion from "./components/Accordion";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function TakeOurCourse(): ReactNode {
   const Hero = {
@@ -44,6 +45,7 @@ function TakeOurCourse(): ReactNode {
         <h2>Faça nosso Curso Bike Anjo</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <ContentContainer>

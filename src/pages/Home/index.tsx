@@ -6,11 +6,13 @@ import Carousel from "./sections/Carousel";
 import WhereAreWe from "./sections/WhereAreWe";
 import ProjectThatMoveUs from "./sections/ProjectThatMoveUs";
 import FAQ from "./sections/FAQ";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function Home(): JSX.Element {
   return (
     <>
       <Carousel />
+      <ScrollSpyMenu />
       <FAQ />
       <WhereAreWe />
       <ProjectThatMoveUs />

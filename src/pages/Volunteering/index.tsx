@@ -9,6 +9,7 @@ import Button from "@components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function Volunteering(): ReactNode {
   const Hero = {
@@ -22,6 +23,7 @@ function Volunteering(): ReactNode {
         <h2>Voluntariado</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

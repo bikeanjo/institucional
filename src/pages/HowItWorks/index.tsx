@@ -4,6 +4,7 @@ import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "@components/SubTitle";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const learnSteps = [
   {
@@ -59,6 +60,7 @@ function HowItWorks(): JSX.Element {
         <h2>Como Funciona</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

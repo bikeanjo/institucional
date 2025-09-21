@@ -9,6 +9,7 @@ import Button from "@components/Button";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const Iniciativas: React.FC = () => {
   const Hero = {
@@ -22,6 +23,7 @@ const Iniciativas: React.FC = () => {
         <h2>Iniciativas</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container

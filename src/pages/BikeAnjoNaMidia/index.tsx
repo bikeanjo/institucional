@@ -4,6 +4,7 @@ import Timeline from "./components/Timeline";
 import Text from "@components/Text";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function BikeAnjoNaMidia(): ReactNode {
   const Hero = {
@@ -17,6 +18,7 @@ function BikeAnjoNaMidia(): ReactNode {
         <h2>Bike Anjo na Mídia</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

@@ -11,6 +11,7 @@ import OurValues from "./sections/OurValues";
 import OurStory from "./sections/OurStory";
 import Transparency from "./sections/Transparency";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function WhoWeAre(): ReactNode {
   const Hero = {
@@ -24,6 +25,7 @@ function WhoWeAre(): ReactNode {
         <h2>Quem Somos</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <WhatIsBikeAnjo />

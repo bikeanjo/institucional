@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const AjudeComoInstituicao = () => {
   const Hero = {
@@ -22,6 +23,7 @@ const AjudeComoInstituicao = () => {
         <h2>Ajude como Instituição</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

@@ -8,6 +8,7 @@ import { Box } from "@mui/material";
 import Title from "@components/Title";
 import Text from "@components/Text";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function BikeAnjas(): JSX.Element {
   const Hero = {
@@ -21,6 +22,7 @@ function BikeAnjas(): JSX.Element {
         <h2> Bike Anjas </h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>
