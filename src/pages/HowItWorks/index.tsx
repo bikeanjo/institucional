@@ -71,11 +71,9 @@ function HowItWorks(): JSX.Element {
           gratuito. Escolha abaixo se você quer ensinar ou aprender e bora
           transformar a cidade juntos!
         </SubTitle>
-      </Container>
-      <>
         <LearningCarousel title="Aprenda com a gente" steps={learnSteps} />
         <LearningCarousel title="Seja um Bike Anjo" steps={bikeAnjoSteps} />
-      </>
+      </Container>
     </>
   );
 }

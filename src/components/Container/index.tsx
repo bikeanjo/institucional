@@ -1,41 +1,26 @@
 import { Box, BoxProps } from "@mui/material";
 import styled from "styled-components";
 
-interface ContainerTemplateProps extends BoxProps {
+interface ContainerProps extends BoxProps {
   inline?: boolean;
 }
 
-interface ContainerProps extends ContainerTemplateProps {
-  children: React.ReactNode;
-}
+const Container = styled(Box)<ContainerProps>(({ theme, inline }) => ({
+  display: "flex",
+  flexDirection: "column",
+  width: "100%",
+  margin: "0px auto",
+  position: "relative",
+  gap: "20px",
+  padding: "20px",
 
-const ContainerTemplate = styled(Box)<ContainerTemplateProps>(
-  ({ theme, inline }) => ({
-    display: "flex",
-    flexDirection: "column",
+  [theme.breakpoints.up("lg")]: {
+    flexDirection: inline ? "row" : "column",
     width: "100%",
-    margin: "40px auto",
-    position: "relative",
-    marginTop: "40px",
-    gap: "48px",
-    padding: "20px",
-
-    [theme.breakpoints.up("lg")]: {
-      flexDirection: inline ? "row" : "column",
-      width: "100%",
-      padding: "0px 96px",
-      marginTop: "80px",
-      gap: "32px",
-    },
-  }),
-);
-
-const Container = ({ children, ...props }: ContainerProps) => {
-  return (
-    <ContainerTemplate {...props} data-anchor-section>
-      {children}
-    </ContainerTemplate>
-  );
-};
+    paddingInline: "96px",
+    paddingBottom: "40px",
+    gap: "16px",
+  },
+}));
 
 export default Container;

@@ -3,7 +3,7 @@ import FindLocalArticulation from "./FindLocalArticulation";
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { useState } from "react";
-import Container from "@components/Container";
+import Section from "@components/Section";
 
 interface LocalArticulationsProps {
   title?: string;
@@ -443,7 +443,7 @@ export default function FollowLocalArticulations({
   ];
 
   return (
-    <Container>
+    <Section>
       <Title align={titleAlign}>{title ?? ""}</Title>
       <SubTitle>{sub}</SubTitle>
 
@@ -456,6 +456,6 @@ export default function FollowLocalArticulations({
         articulations={articulations}
         setSelectedCoords={setSelectedCoords}
       />
-    </Container>
+    </Section>
   );
 }

@@ -23,7 +23,7 @@ export const Cards = styled.div`
 `;
 
 export const ButtonContainer = styled.div`
-  margin: 40px auto 80px;
+  margin: 32px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

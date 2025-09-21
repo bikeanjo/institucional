@@ -96,7 +96,6 @@ export function Cards() {
           transform: "translateX(-50%)",
           width: "300%",
           height: "100%",
-          zIndex: -1,
           background: Colors["Green-20"],
           borderTop: `2px solid ${Colors["Green-70"]}`,
           borderBottom: `2px solid ${Colors["Green-70"]}`,

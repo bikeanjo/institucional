@@ -1,7 +1,6 @@
 import { useRef, useState, type JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
-import Container from "../../components/Container";
 import { Box, Button, Typography } from "@mui/material";
 import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
@@ -9,6 +8,7 @@ import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls, MobileControls, PaginationDot } from "./style";
 import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
+import Section from "@components/Section";
 
 function ProjectThatMoveUs(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);
@@ -133,13 +133,14 @@ function ProjectThatMoveUs(): JSX.Element {
   };
 
   return (
-    <Container gap="32px">
+    <Section gap="32px">
       <Box
         sx={{
           textAlign: "center",
           width: { xs: "343px", lg: "1036px" },
           display: "flex",
           flexDirection: "column",
+          margin: "auto",
         }}
       >
         <Title variant="h2" color={Colors["Pink-50"]}>
@@ -154,7 +155,7 @@ function ProjectThatMoveUs(): JSX.Element {
         ref={carrousel}
         onScroll={handleScroll}
         sx={{
-          width: { xs: "360px", md: "800px", lg: "1032px" },
+          width: { xs: "360px", md: "800px", lg: "1032px", margin: "auto" },
         }}
       >
         {cardsInfo.map((card) => (
@@ -232,6 +233,7 @@ function ProjectThatMoveUs(): JSX.Element {
           width: { xs: "215px" },
           borderRadius: { xs: "10px", lg: "8px" },
           textTransform: "none",
+          margin: "auto",
           boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.15)",
           "&:hover": {
             backgroundColor: "#43700E",
@@ -240,7 +242,7 @@ function ProjectThatMoveUs(): JSX.Element {
       >
         <Typography fontWeight={600}>Veja Nossas Iniciativas</Typography>
       </Button>
-    </Container>
+    </Section>
   );
 }
 
