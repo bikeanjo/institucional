@@ -4,11 +4,11 @@ import { Colors } from "../../../../styles/tokens/colors";
 export const Card = styled.div`
   min-width: 250px;
   max-width: 330px;
-  background-color: ${Colors["G-Grey-10"]};
+  background-color: ${Colors["Green-10"]};
   border-radius: 16px;
   scroll-snap-align: start;
   flex-shrink: 0;
-  border: 2px solid ${Colors["G-Grey-30"]};
+  border: 2px solid ${Colors["Green-70"]};
 
   @media screen and (max-width: 1200px) {
     max-width: 100%;
@@ -19,7 +19,7 @@ export const Card = styled.div`
 export const TopSection = styled.div<{ $variant: "default" | "attention" }>`
   width: 100%;
   background: ${({ $variant }) =>
-    $variant === "attention" ? Colors["G-Grey-10"] : "#f8f8f8"};
+    $variant === "attention" ? Colors["Green-10"] : Colors["Green-10"]};
   padding: 24px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -55,7 +55,7 @@ export const Description = styled.div`
   padding: 24px;
   font-size: 16px;
   font-weight: 400;
-  background: ${Colors["G-Grey-10"]};
+  background: ${Colors["Green-10"]};
   white-space: pre-line;
   margin: 0;
   border-bottom-left-radius: 16px;

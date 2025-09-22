@@ -2,6 +2,8 @@ import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { QuestionAccordion } from "../Accordion";
 import { AccordionWrapper } from "./styles";
+import Section from "@components/Section";
+import { Colors } from "../../../../styles/tokens/colors";
 
 const accordionItems = [
   {
@@ -48,9 +50,9 @@ const accordionItems = [
 
 export default function RideWithVoice() {
   return (
-    <>
+    <Section>
       <Title>Pedale com voz!</Title>
-      <SubTitle>
+      <SubTitle color={Colors["G-Grey-100"]}>
         Pedalar é incrível, mas também é um ato de cidadania. Veja o que fazer
         em situações comuns no trânsito e como cobrar melhorias para uma cidade
         mais segura e justa pra todo mundo.
@@ -64,6 +66,6 @@ export default function RideWithVoice() {
           />
         ))}
       </AccordionWrapper>
-    </>
+    </Section>
   );
 }

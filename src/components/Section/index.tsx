@@ -5,6 +5,7 @@ interface SectionTemplateProps extends BoxProps {
   inline?: boolean;
   borderColor?: string;
   backgroundColor?: string;
+  center?: boolean;
 }
 
 interface SectionProps extends SectionTemplateProps {
@@ -12,14 +13,17 @@ interface SectionProps extends SectionTemplateProps {
 }
 
 const SectionTemplate = styled(Box)<SectionTemplateProps>(
-  ({ theme, inline, borderColor, backgroundColor }) => ({
+  ({ theme, inline, borderColor, backgroundColor, center }) => ({
     display: "flex",
     flexDirection: "column",
     width: "100%",
     position: "relative",
-    paddingTop: "32px",
+    paddingTop: "20px",
+    paddingBottom: "20px",
     overflow: "visible",
+    gap: "20px",
     zIndex: 0,
+    alignItems: center ? "center" : "unset",
 
     [theme.breakpoints.up("lg")]: {
       flexDirection: inline ? "row" : "column",

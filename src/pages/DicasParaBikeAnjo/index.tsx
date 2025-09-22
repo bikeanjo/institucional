@@ -69,7 +69,7 @@ function CyclingTips(): JSX.Element {
       <ScrollSpyMenu />
       <BreadCrumb />
 
-      <Container padding="20px">
+      <Container>
         <CarouselTeachingCards
           title="Como ensinar alguém a pedalar"
           sub="Abaixo seguem algumas dicas praticas para você lembrar do que fazer durante as oficinas, mas é importante que o Bike Anjo passe pela CUBA para se capacitar como pessoa voluntária"

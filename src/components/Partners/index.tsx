@@ -2,10 +2,11 @@ import type { JSX } from "react";
 import Title from "../../pages/Home/components/Title";
 import { Box, Grid } from "@mui/material";
 import { Colors } from "../../styles/tokens/colors";
+import Container from "../../pages/Home/components/Container";
 
 function Partners({ home }: { home?: boolean }): JSX.Element {
   return (
-    <>
+    <Container>
       <Title
         variant="h2"
         display={home ? "flex" : "none"}
@@ -76,7 +77,7 @@ function Partners({ home }: { home?: boolean }): JSX.Element {
           />
         </Grid>
       </Grid>
-    </>
+    </Container>
   );
 }
 

@@ -25,7 +25,6 @@ export const Wrapper = styled.section`
 `;
 
 export const TextWrapper = styled.div`
-  background-color: #d9d9d9;
   border-radius: 16px;
   padding: 24px;
   height: 281px;

@@ -13,12 +13,12 @@ const Container = styled(Box)<ContainerProps>(({ theme, inline }) => ({
   position: "relative",
   gap: "20px",
   padding: "20px",
+  paddingBottom: "0px",
 
   [theme.breakpoints.up("lg")]: {
     flexDirection: inline ? "row" : "column",
     width: "100%",
     paddingInline: "96px",
-    paddingBottom: "40px",
     gap: "16px",
   },
 }));

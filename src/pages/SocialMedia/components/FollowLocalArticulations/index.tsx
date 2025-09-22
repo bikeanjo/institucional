@@ -4,6 +4,7 @@ import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { useState } from "react";
 import Section from "@components/Section";
+import { Colors } from "../../../../styles/tokens/colors";
 
 interface LocalArticulationsProps {
   title?: string;
@@ -445,7 +446,7 @@ export default function FollowLocalArticulations({
   return (
     <Section>
       <Title align={titleAlign}>{title ?? ""}</Title>
-      <SubTitle>{sub}</SubTitle>
+      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
 
       <MapInteractive
         articulations={articulations}
