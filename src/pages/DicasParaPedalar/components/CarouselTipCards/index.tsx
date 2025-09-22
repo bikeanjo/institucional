@@ -3,6 +3,7 @@ import { StepCard } from "../Card";
 import { Arrow, Cards, CarouselContainer } from "./styles";
 import Text from "@components/Text";
 import Title from "@components/Title";
+import Section from "@components/Section";
 
 interface Step {
   number: number;
@@ -35,7 +36,7 @@ export default function CarouselTipCards({
   };
 
   return (
-    <>
+    <Section>
       <Title>{title}</Title>
       <Text>{sub}</Text>
 
@@ -65,6 +66,6 @@ export default function CarouselTipCards({
           />
         </Arrow>
       </CarouselContainer>
-    </>
+    </Section>
   );
 }

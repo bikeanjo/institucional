@@ -1,13 +1,21 @@
-import { Typography, TypographyProps } from "@mui/material";
+import { Typography, TypographyOwnProps } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import React from "react";
+import { JSX } from "react";
 
-interface TitleProps extends TypographyProps {
+interface TitleContainerProps extends TypographyOwnProps {
   carrousel?: boolean;
   pink?: boolean;
   green?: boolean;
 }
 
-const Title = styled(Typography)<TitleProps>(
+interface TitleProps
+  extends TitleContainerProps,
+    Omit<React.HTMLAttributes<HTMLParagraphElement>, "children" | "color"> {
+  children: string;
+}
+
+const TitleContainer = styled(Typography)<TitleContainerProps>(
   ({ theme, carrousel, pink, green, color }) => ({
     color: color ? color : "var(--mui-palette-title-main)",
     fontWeight: 600,
@@ -25,5 +33,13 @@ const Title = styled(Typography)<TitleProps>(
     },
   }),
 );
+
+const Title = ({ children, ...props }: TitleProps): JSX.Element => {
+  return (
+    <TitleContainer {...props} data-anchor-link>
+      {children}
+    </TitleContainer>
+  );
+};
 
 export default Title;

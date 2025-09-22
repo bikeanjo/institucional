@@ -6,6 +6,7 @@ import CityNotListed from "./CityNotListed";
 import Map from "./Map";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const findCitySteps = [
   {
@@ -40,6 +41,7 @@ function EscolaBikeAnjo(): JSX.Element {
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

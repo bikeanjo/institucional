@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build && cp _redirects dist/",
     "lint": "eslint .",
     "pre-commit": "tsc -b",
-    "lint:fix": "eslint --fix --max-warnings=0 --ext .js,.jsx,.ts,.tsx . --ignore-pattern *.d.ts",
+    "lint:fix": "eslint --fix --max-warnings=0 --no-warn-ignored --ext .js,.jsx,.ts,.tsx . --ignore-pattern '**/*.css' --ignore-pattern '**/*.d.ts'",
     "preview": "vite preview",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",

@@ -3,7 +3,7 @@ import { AccordionWrapper } from "./styles";
 import { QuestionAccordion } from "../../../DicasParaBikeAnjo/components/Accordion";
 import Title from "../../components/Title";
 import SubTitle from "@components/SubTitle";
-import Container from "@components/Container";
+import Container from "../../components/Container";
 import { Colors } from "../../../../styles/tokens/colors";
 import { Link } from "react-router";
 

@@ -1,14 +1,13 @@
 import Header from "@components/Header";
-import Subtitle from "@components/SubTitle";
 import Text from "@components/Text";
-import { Box } from "@mui/material";
 import { ProjectCards } from "./components/ProjectCards";
 import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
-import Button from "@components/Button";
-import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
+import Section from "@components/Section";
+import Title from "@components/Title";
 
 const Iniciativas: React.FC = () => {
   const Hero = {
@@ -22,37 +21,21 @@ const Iniciativas: React.FC = () => {
         <h2>Iniciativas</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
-      <Container
-        marginX={{ xs: "16px", md: "96px" }}
-        marginY={{ xs: "16px", md: "40px" }}
-        gap={{ xs: "8px", md: "40px" }}
-      >
-        <Box>
-          <Subtitle>
-            <h2>Projetos</h2>
-          </Subtitle>
+      <Container>
+        <Section>
+          <Title>Projetos</Title>
           <ProjectCards />
-        </Box>
-        <Box paddingY={{ xs: "16px", md: "40px" }}>
-          <Subtitle>
-            <h2>Campanhas</h2>
-          </Subtitle>
+        </Section>
+        <Section>
+          <Title>Campanhas</Title>
           <CampaignCards />
-        </Box>
-        <Box
-          sx={{
-            paddingY: { xs: "16px", md: "40px" },
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Subtitle>
-            <h2>Eventos</h2>
-          </Subtitle>
+        </Section>
+
+        <Section>
+          <Title>Eventos</Title>
           <Text>
             <p>
               As atividades da Bike Anjo são organizadas pelas articulações
@@ -62,36 +45,7 @@ const Iniciativas: React.FC = () => {
             </p>
           </Text>
           <Events />
-        </Box>
-        <Box
-          sx={{
-            paddingY: { xs: "16px", md: "40px" },
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Subtitle>
-            <h2>Veja nossa playlist de dicas!</h2>
-          </Subtitle>
-          <Text>
-            <p>
-              Seja você iniciante ou já com alguma experiência, nossa playlist
-              de vídeos tem dicas práticas pra tornar sua pedalada mais segura,
-              leve e divertida. Aqui a gente compartilha o que aprendeu na rua,
-              com carinho e sem complicação, do jeitinho Bike Anjo.
-            </p>
-          </Text>
-          <Box
-            display={"flex"}
-            alignItems={{ xs: "center", md: "left" }}
-            justifyContent={{ xs: "center", md: "left" }}
-          >
-            <Link to="">
-              <Button>Acessar a Playlist</Button>
-            </Link>
-          </Box>
-        </Box>
+        </Section>
       </Container>
     </>
   );

@@ -15,9 +15,8 @@ export const Card = styled.section<CardProps>`
   gap: 20px;
   background-color: ${Colors["G-Grey-10"]};
   justify-content: space-between;
-  border: 2px solid ${Colors["G-Grey-30"]};
+  border: 2px solid ${Colors["Pink-50"]};
   border-radius: 16px;
-  border-sizing: border-box;
 
   .titleCard {
     display: flex;
@@ -29,7 +28,7 @@ export const Card = styled.section<CardProps>`
       font-size: 32px;
       font-weight: 600;
       line-height: 30px;
-      color: ${Colors["Green-70"]};
+      color: ${Colors["Pink-50"]};
       margin: 0;
     }
   }
@@ -118,7 +117,7 @@ export const AcessButton = styled(Button)`
   padding: 16px 40px;
   text-transform: none;
   border-radius: 4px;
-  background-color: ${Colors["Green-70"]};
+  background-color: ${Colors["G-Grey-80"]};
 
   font-weight: 600;
   font-size: 16px;

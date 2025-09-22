@@ -4,6 +4,7 @@ import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function formatDescription(description: string) {
   return description
@@ -59,6 +60,7 @@ function PedalaOuRepassa(): JSX.Element {
         <h2>Pedala ou Repassa</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

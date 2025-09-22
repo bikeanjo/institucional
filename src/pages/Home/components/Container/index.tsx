@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../../../styles/tokens/colors";
+import { BoxProps } from "@mui/material";
 
 declare module "styled-components" {
   export interface DefaultTheme {
@@ -14,14 +15,18 @@ declare module "styled-components" {
   }
 }
 
-interface ContainerProps {
+interface ContainerTemplateProps extends BoxProps {
   secondary?: boolean;
   carrousel?: boolean;
   gap?: string;
   height?: string;
 }
 
-const Container = styled.div<ContainerProps>`
+interface ContainerProps extends ContainerTemplateProps {
+  children: React.ReactNode;
+}
+
+const ContainerTemplate = styled.div<ContainerTemplateProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,9 +49,18 @@ const Container = styled.div<ContainerProps>`
   }
 
   ${({ theme }) => theme.breakpoints.up("lg")} {
-    padding: ${({ carrousel }) => (carrousel ? "90px 202px 40px" : "40px 0px")};
+    padding: ${({ carrousel }) =>
+      carrousel ? "90px 202px 40px" : "40px 20px"};
     height: ${({ carrousel }) => carrousel && "calc(100vh - 80px)"};
   }
 `;
+
+const Container = ({ children, ...props }: ContainerProps) => {
+  return (
+    <ContainerTemplate {...props} data-anchor-section>
+      {children}
+    </ContainerTemplate>
+  );
+};
 
 export default Container;

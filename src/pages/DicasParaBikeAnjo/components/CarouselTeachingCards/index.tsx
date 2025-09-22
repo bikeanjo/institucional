@@ -3,6 +3,8 @@ import { StepCard } from "../Card";
 import { Arrow, Cards, CarouselContainer } from "./styles";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
+import Section from "@components/Section";
+import { Colors } from "../../../../styles/tokens/colors";
 
 interface Step {
   number: number;
@@ -35,9 +37,9 @@ export default function CarouselTeachingCards({
   };
 
   return (
-    <>
+    <Section>
       <Title>{title}</Title>
-      <SubTitle>{sub}</SubTitle>
+      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
@@ -65,6 +67,6 @@ export default function CarouselTeachingCards({
           />
         </Arrow>
       </CarouselContainer>
-    </>
+    </Section>
   );
 }

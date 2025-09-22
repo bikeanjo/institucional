@@ -8,13 +8,15 @@ interface GridItemProps {
   height?: string;
   padding?: string;
   color?: string;
+  backgroundColor?: string;
 }
 
 const GridItem = styled.div<GridItemProps>`
   display: flex;
   height: ${(props) => props.height};
   flex-direction: ${(props) => (props.column ? "column" : "row")};
-  background-color: ${Colors["Pink-10"]};
+  background-color: ${(props) =>
+    props.backgroundColor ? props.backgroundColor : Colors["Pink-10"]};
   border: 2px solid
     ${(props) => (props.color ? props.color : Colors["Pink-50"])};
   border-radius: 1rem;

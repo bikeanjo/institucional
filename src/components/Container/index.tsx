@@ -1,7 +1,7 @@
-import { Box } from "@mui/material";
+import { Box, BoxProps } from "@mui/material";
 import styled from "styled-components";
 
-interface ContainerProps {
+interface ContainerProps extends BoxProps {
   inline?: boolean;
 }
 
@@ -9,18 +9,17 @@ const Container = styled(Box)<ContainerProps>(({ theme, inline }) => ({
   display: "flex",
   flexDirection: "column",
   width: "100%",
-  margin: "40px auto",
+  margin: "0px auto",
   position: "relative",
-  marginTop: "40px",
-  gap: "48px",
+  gap: "20px",
   padding: "20px",
+  paddingBottom: "0px",
 
   [theme.breakpoints.up("lg")]: {
     flexDirection: inline ? "row" : "column",
     width: "100%",
-    padding: "0px 96px",
-    marginTop: "80px",
-    gap: "32px",
+    paddingInline: "96px",
+    gap: "16px",
   },
 }));
 

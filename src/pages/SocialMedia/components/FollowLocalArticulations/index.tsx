@@ -2,8 +2,9 @@ import MapInteractive from "@components/Map";
 import FindLocalArticulation from "./FindLocalArticulation";
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
-import { Box } from "@mui/material";
 import { useState } from "react";
+import Section from "@components/Section";
+import { Colors } from "../../../../styles/tokens/colors";
 
 interface LocalArticulationsProps {
   title?: string;
@@ -443,15 +444,9 @@ export default function FollowLocalArticulations({
   ];
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "16px",
-      }}
-    >
-      <Title align={titleAlign}>{title}</Title>
-      <SubTitle>{sub}</SubTitle>
+    <Section>
+      <Title align={titleAlign}>{title ?? ""}</Title>
+      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
 
       <MapInteractive
         articulations={articulations}
@@ -462,6 +457,6 @@ export default function FollowLocalArticulations({
         articulations={articulations}
         setSelectedCoords={setSelectedCoords}
       />
-    </Box>
+    </Section>
   );
 }

@@ -6,6 +6,7 @@ import CarouselTipCards from "./components/CarouselTipCards";
 import SocialContent from "./components/SocialContent";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const tipSteps = [
   {
@@ -88,6 +89,7 @@ function CyclingTips(): JSX.Element {
         <h2>Dicas para Pedalar</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>

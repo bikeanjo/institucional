@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Carrousel = styled(Box)`
   display: flex;
+  justify-content: center;
   position: relative;
   overflow-y: auto;
   scroll-behavior: smooth;

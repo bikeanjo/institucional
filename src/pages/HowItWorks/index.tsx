@@ -4,6 +4,8 @@ import LearningCarousel from "./components/LearningCarousel";
 import SubTitle from "@components/SubTitle";
 import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
+import { Colors } from "../../styles/tokens/colors";
 
 const learnSteps = [
   {
@@ -59,10 +61,11 @@ function HowItWorks(): JSX.Element {
         <h2>Como Funciona</h2>
       </Header>
 
+      <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>
-        <SubTitle>
+        <SubTitle color={Colors["G-Grey-100"]}>
           Através do nosso site conectamos quem quer aprender a pedalar com quem
           já pedala e quer ajudar. É simples, facil e o mais importante:
           gratuito. Escolha abaixo se você quer ensinar ou aprender e bora

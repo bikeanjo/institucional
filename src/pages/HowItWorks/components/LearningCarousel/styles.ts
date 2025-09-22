@@ -1,13 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../../../styles/tokens/colors";
 
-export const Title = styled.h2`
-  color: ${Colors["Pink-50"]};
-  font-size: 48px;
-  font-weight: 600;
-  margin: auto;
-`;
-
 export const CarouselContainer = styled.div`
   display: flex;
   align-items: center;
@@ -30,7 +23,7 @@ export const Cards = styled.div`
 `;
 
 export const ButtonContainer = styled.div`
-  margin: 40px auto 80px;
+  margin: 32px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

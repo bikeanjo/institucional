@@ -23,7 +23,7 @@ const BreadCrumbContainer = styled(Box)<BoxProps>(({ theme }) => ({
     alignItems: "center",
     gap: "4px",
     [theme.breakpoints.up("lg")]: {
-      padding: "32px 0 16px 0",
+      paddingTop: "16px",
     },
   },
 

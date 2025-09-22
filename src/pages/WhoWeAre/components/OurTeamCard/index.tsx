@@ -131,7 +131,7 @@ function OurTeam(): JSX.Element {
         ref={carrousel}
         onScroll={handleScroll}
         sx={{
-          width: { xs: "360px", md: "800px", lg: "1032px" },
+          width: { xs: "360px", md: "800px", lg: "1032px", margin: "auto" },
         }}
       >
         {cardsInfo.map((card) => (

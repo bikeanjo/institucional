@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../../styles/tokens/colors";
 
 export const Wrapper = styled.div`
   margin: 40px auto;
@@ -9,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #486284;
+  color: ${Colors["Green-70"]};
   font-size: 24px;
   font-weight: 600;
   margin: 0;
