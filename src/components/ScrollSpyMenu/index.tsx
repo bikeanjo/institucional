@@ -71,6 +71,7 @@ const Container = styled(Box)(({ theme }) => ({
   borderWidth: "2px 0px",
   gap: "24px",
   padding: "12px 20px",
+  overflow: "scroll",
 
   [theme.breakpoints.up("lg")]: {
     padding: "12px 0px 12px 96px",
