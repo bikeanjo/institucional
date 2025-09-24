@@ -32,12 +32,13 @@ const SectionTemplate = styled(Box)<SectionTemplateProps>(
     },
 
     "&::before": {
+      display: backgroundColor || borderColor ? "unset" : "none",
       content: '" "',
-      position: "absolute",
+      position: backgroundColor || borderColor ? "absolute" : "relative",
       top: 0,
       left: "50%",
       transform: "translateX(-50%)",
-      width: "300%",
+      width: "100vw",
       height: "100%",
       zIndex: -1,
       background: backgroundColor ? backgroundColor : "transparent",
