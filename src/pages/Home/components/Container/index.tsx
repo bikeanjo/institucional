@@ -56,11 +56,7 @@ const ContainerTemplate = styled.div<ContainerTemplateProps>`
 `;
 
 const Container = ({ children, ...props }: ContainerProps) => {
-  return (
-    <ContainerTemplate {...props} data-anchor-section>
-      {children}
-    </ContainerTemplate>
-  );
+  return <ContainerTemplate {...props}>{children}</ContainerTemplate>;
 };
 
 export default Container;
