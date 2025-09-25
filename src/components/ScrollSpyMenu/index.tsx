@@ -27,7 +27,6 @@ const ScrollSpyMenu = (): JSX.Element | null => {
     );
     const sectionObserver = new IntersectionObserver(
       (entries) => {
-        console.log("---------------------------------------------");
         entries.forEach((section) => {
           if (section.isIntersecting) {
             setActiveSectionId(section.target.id);
