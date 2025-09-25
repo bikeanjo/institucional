@@ -2,12 +2,12 @@ import type { JSX } from "react";
 import Title from "../../components/Title";
 import { Grid, Typography } from "@mui/material";
 import GridItem from "./components/GridItem";
-import Container from "../../components/Container";
 import { Colors } from "../../../../styles/tokens/colors";
+import Section from "@components/Section";
 
 function OurNumbers(): JSX.Element {
   return (
-    <Container gap="40px">
+    <Section center>
       <Title variant="h2" color={Colors["Pink-50"]}>
         Nossos números
       </Title>
@@ -122,7 +122,7 @@ function OurNumbers(): JSX.Element {
           </GridItem>
         </Grid>
       </Grid>
-    </Container>
+    </Section>
   );
 }
 

@@ -1,50 +1,76 @@
 import { Box, Button as MuiButton } from "@mui/material";
-import { JSX, useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import styled from "styled-components";
 import { Colors } from "../../styles/tokens/colors";
 
 const HEADER_HEIGHT = 76;
 
+interface AnchorElementsProps {
+  link: Element | null;
+  section: Element;
+}
+
 const ScrollSpyMenu = (): JSX.Element | null => {
-  const [anchorElements, setAnchorElements] = useState<Element[]>([]);
-  const linksToSections = useRef(new Map<Element, Element>());
+  const [anchorElements, setAnchorElements] = useState<AnchorElementsProps[]>(
+    [],
+  );
+  const [activeSectionId, setActiveSectionId] = useState<string>("");
 
   useEffect(() => {
-    const links: Element[] = [];
+    console.log(activeSectionId);
+  }, [activeSectionId]);
+
+  useEffect(() => {
+    const links: AnchorElementsProps[] = [];
     const sections = Array.from(
       document.querySelectorAll("[data-anchor-section]"),
     );
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        console.log("---------------------------------------------");
+        entries.forEach((section) => {
+          if (section.isIntersecting) {
+            setActiveSectionId(section.target.id);
+          }
+        });
+      },
+      { threshold: [0.5] },
+    );
 
     sections.forEach((section) => {
-      const linkElements = section
-        ? Array.from(section.querySelectorAll("[data-anchor-link]"))
-        : [];
-
-      linkElements.forEach((link: Element) => {
-        linksToSections.current.set(link, section);
-        links.push(link);
+      links.push({
+        link: section.querySelector("[data-anchor-link]"),
+        section,
       });
+
+      sectionObserver.observe(section);
     });
 
     setAnchorElements(links);
+
+    return () => {
+      sections.forEach((section) => {
+        sectionObserver.unobserve(section);
+      });
+    };
   }, []);
 
   return anchorElements.length > 0 ? (
     <Container>
-      {anchorElements.map((el) => (
+      {anchorElements.map(({ link, section }) => (
         <Button
-          key={el.textContent}
+          key={link?.textContent}
           type="button"
+          className={section.id == activeSectionId ? "active" : ""}
           onClick={() => {
-            const top =
-              linksToSections.current.get(el)?.getBoundingClientRect().top ?? 0;
+            const top = section?.getBoundingClientRect().top ?? 0;
             window.scrollTo({
               behavior: "smooth",
               top: top + window.pageYOffset - HEADER_HEIGHT,
             });
           }}
         >
-          {el.textContent}
+          {link?.textContent}
         </Button>
       ))}
     </Container>
@@ -59,6 +85,11 @@ const Button = styled(MuiButton)(() => ({
   fontSize: "16px",
   fontWeight: 400,
   textTransform: "unset",
+
+  "&.active": {
+    backgroundColor: Colors["Blue-60"],
+    color: Colors["G-White"],
+  },
 }));
 
 const Container = styled(Box)(({ theme }) => ({

@@ -1,5 +1,6 @@
 import { Box, BoxProps } from "@mui/material";
 import styled from "styled-components";
+import { v4 as uuidv4 } from "uuid";
 
 interface SectionTemplateProps extends BoxProps {
   inline?: boolean;
@@ -50,8 +51,10 @@ const SectionTemplate = styled(Box)<SectionTemplateProps>(
 );
 
 const Section = ({ children, ...props }: SectionProps) => {
+  const uniqueId = uuidv4();
+
   return (
-    <SectionTemplate {...props} data-anchor-section>
+    <SectionTemplate {...props} data-anchor-section id={uniqueId}>
       {children}
     </SectionTemplate>
   );

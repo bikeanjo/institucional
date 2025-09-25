@@ -7,18 +7,21 @@ import WhereAreWe from "./sections/WhereAreWe";
 import ProjectThatMoveUs from "./sections/ProjectThatMoveUs";
 import FAQ from "./sections/FAQ";
 import ScrollSpyMenu from "@components/ScrollSpyMenu";
+import Container from "@components/Container";
 
 function Home(): JSX.Element {
   return (
     <>
       <Carousel />
       <ScrollSpyMenu />
-      <FAQ />
-      <WhereAreWe />
-      <ProjectThatMoveUs />
-      <OurNumbers />
-      <Testimonials />
-      <Partners home />
+      <Container>
+        <FAQ />
+        <WhereAreWe />
+        <ProjectThatMoveUs />
+        <OurNumbers />
+        <Testimonials />
+        <Partners home />
+      </Container>
     </>
   );
 }

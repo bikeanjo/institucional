@@ -3,9 +3,9 @@ import { AccordionWrapper } from "./styles";
 import { QuestionAccordion } from "../../../DicasParaBikeAnjo/components/Accordion";
 import Title from "../../components/Title";
 import SubTitle from "@components/SubTitle";
-import Container from "../../components/Container";
 import { Colors } from "../../../../styles/tokens/colors";
 import { Link } from "react-router";
+import Section from "@components/Section";
 
 const accordionItems = [
   {
@@ -90,7 +90,7 @@ const accordionItems = [
 
 function FAQ(): JSX.Element {
   return (
-    <Container>
+    <Section>
       <Title color={Colors["Pink-50"]}>Conheça a Bike Anjo</Title>
       <SubTitle center>
         Abaixo respondemos algumas das principais dúvidas sobre a Bike Anjo, e
@@ -105,7 +105,7 @@ function FAQ(): JSX.Element {
           />
         ))}
       </AccordionWrapper>
-    </Container>
+    </Section>
   );
 }
 

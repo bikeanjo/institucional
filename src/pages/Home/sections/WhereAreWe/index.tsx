@@ -1,14 +1,18 @@
 import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
-import Container from "../../components/Container";
 import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
+import Section from "@components/Section";
 
 function WhereAreWe(): JSX.Element {
   return (
-    <Container secondary gap="32px">
+    <Section
+      center
+      backgroundColor={Colors["Green-20"]}
+      borderColor={Colors["Green-70"]}
+    >
       <Box
         sx={{
           textAlign: "center",
@@ -56,7 +60,7 @@ function WhereAreWe(): JSX.Element {
       >
         <Typography fontWeight={600}>Veja Onde Estamos</Typography>
       </Button>
-    </Container>
+    </Section>
   );
 }
 
