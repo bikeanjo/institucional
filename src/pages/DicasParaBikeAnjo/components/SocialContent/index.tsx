@@ -1,10 +1,14 @@
+import Section from "@components/Section";
 import { Button, Paragraph, TextWrapper } from "./styles";
 import Title from "@components/Title";
 
 export default function SocialContent() {
   return (
-    <>
-      <img src={"/assets/images/VideoYoutube2.png"} alt="Canal do Youtube" />
+    <Section>
+      <img
+        src={"/assets/images/VideoYoutube2.png"}
+        alt="Homem sorridente usando óculos e mochila, representando pessoas que pedalam em ambiente urbano."
+      />
 
       <TextWrapper>
         <div>
@@ -23,6 +27,6 @@ export default function SocialContent() {
           Acessar Youtube
         </Button>
       </TextWrapper>
-    </>
+    </Section>
   );
 }

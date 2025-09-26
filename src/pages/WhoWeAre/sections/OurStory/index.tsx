@@ -4,9 +4,10 @@ import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import Text from "@components/Text";
 import Button from "@components/Button";
-import TimelineComponent from "../../../BikeAnjoInTheMedia/components/Timeline/TimelineComponent/index";
+import TimelineComponent from "../../../BikeAnjoNaMidia/components/Timeline/TimelineComponent";
 import { timelineData, type TimelineYear } from "./data";
 import { Link } from "react-router-dom";
+import Section from "@components/Section";
 
 function OurStory(): ReactNode {
   const availableYears = useMemo(
@@ -28,15 +29,7 @@ function OurStory(): ReactNode {
   if (!currentYearData) return null;
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        pTop: { xs: "32px", md: "40px" },
-        px: { xs: "16px", md: "92px" },
-        gap: { xs: "24px", md: "40px" },
-      }}
-    >
+    <Section>
       <Box
         sx={{
           display: "flex",
@@ -116,7 +109,7 @@ function OurStory(): ReactNode {
           </Button>
         </Box>
       </Box>
-    </Box>
+    </Section>
   );
 }
 

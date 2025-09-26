@@ -1,7 +1,7 @@
-import { Box } from "@mui/material";
 import Text from "@components/Text";
 import Title from "@components/Title";
 import { LinkItem, LinkList } from "./styles";
+import Section from "@components/Section";
 
 const links = [
   { label: "Como escolher sua bicicleta", url: "#" },
@@ -17,18 +17,7 @@ const links = [
 
 export default function SupportLinksSection() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: { xs: "100%", lg: "1032px" },
-        margin: "40px auto",
-        position: "relative",
-        marginTop: { xs: "40px", lg: "80px" },
-        gap: { xs: "32px", lg: "20px" },
-        padding: "20px",
-      }}
-    >
+    <Section>
       <Title>Links de Apoio</Title>
       <Text>
         Abaixo alguns links que podem te ajudar a dar os primeiros passos
@@ -43,6 +32,6 @@ export default function SupportLinksSection() {
           </LinkItem>
         ))}
       </LinkList>
-    </Box>
+    </Section>
   );
 }

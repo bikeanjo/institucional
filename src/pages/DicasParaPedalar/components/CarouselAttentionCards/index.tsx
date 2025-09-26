@@ -3,6 +3,7 @@ import { StepCard } from "../Card";
 import { Cards } from "./styles";
 import Text from "@components/Text";
 import Title from "@components/Title";
+import Section from "@components/Section";
 
 interface Step {
   number: number;
@@ -25,7 +26,7 @@ export default function CarouselAttentionCards({
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <>
+    <Section>
       <Title>{title}</Title>
       <Text>{sub}</Text>
 
@@ -41,6 +42,6 @@ export default function CarouselAttentionCards({
           />
         ))}
       </Cards>
-    </>
+    </Section>
   );
 }

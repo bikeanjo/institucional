@@ -1,4 +1,3 @@
-import Container from "@components/Container";
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
@@ -9,6 +8,8 @@ import {
   StepItem,
   StepsContainer,
 } from "./styles";
+import Section from "@components/Section";
+import { Colors } from "../../../styles/tokens/colors";
 
 interface Step {
   number: number;
@@ -28,9 +29,12 @@ export default function CityNotListed({
   steps,
 }: CarouselStepsProps) {
   return (
-    <Container>
-      <Title>{title}</Title>
-      <SubTitle>{sub}</SubTitle>
+    <Section
+      backgroundColor={Colors["Green-20"]}
+      borderColor={Colors["Green-70"]}
+    >
+      <Title color={Colors["Green-70"]}>{title}</Title>
+      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
 
       <StepsContainer>
         {steps.map((step) => (
@@ -49,6 +53,6 @@ export default function CityNotListed({
         <ButtonText>Comece agora</ButtonText>
         <Button>Crie uma conta</Button>
       </ButtonContainer>
-    </Container>
+    </Section>
   );
 }

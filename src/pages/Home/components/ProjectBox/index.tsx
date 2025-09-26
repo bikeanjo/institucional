@@ -7,6 +7,7 @@ const ProjectBox = styled.div<{ colorCard: string }>`
   align-items: center;
   width: 328px;
   height: auto;
+  margin: auto;
   border-radius: 16px;
   border: 2px solid ${(props) => props.colorCard};
   box-sizing: border-box;

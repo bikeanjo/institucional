@@ -1,19 +1,16 @@
-import { useRef, useState, type JSX } from "react";
+import { type JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
-import Container from "../../components/Container";
 import { Box, Button, Typography } from "@mui/material";
 import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
-import { Carrousel, Controls, MobileControls, PaginationDot } from "./style";
 import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
+import Section from "@components/Section";
+import Carrousel from "@components/Carrousel";
 
 function ProjectThatMoveUs(): JSX.Element {
-  const carrousel = useRef<HTMLDivElement | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   const cardsInfo: {
     id: number;
     colorCard: string;
@@ -80,66 +77,15 @@ function ProjectThatMoveUs(): JSX.Element {
     },
   ];
 
-  const gap = 40;
-  const cardWidth = 328;
-  const itensPerView = 2.8;
-
-  const turnLeft = () => {
-    if (carrousel.current) {
-      carrousel.current.scrollLeft -= (cardWidth + gap) * itensPerView;
-    }
-  };
-
-  const turnRight = () => {
-    if (carrousel.current) {
-      carrousel.current.scrollLeft += (cardWidth + gap) * itensPerView;
-    }
-  };
-
-  const mobileCardWidth = 328;
-  const mobileGap = 16;
-
-  const mobileTurn = (direction: "prev" | "next") => {
-    if (!carrousel.current) return;
-
-    const itemWidth = mobileCardWidth + mobileGap;
-    let targetIndex: number;
-
-    if (direction === "next") {
-      targetIndex = Math.min(currentIndex + 1, cardsInfo.length - 1);
-    } else {
-      targetIndex = Math.max(currentIndex - 1, 0);
-    }
-
-    carrousel.current.scrollTo({
-      left: targetIndex * itemWidth,
-      behavior: "smooth",
-    });
-
-    setCurrentIndex(targetIndex);
-  };
-
-  const handleScroll: React.UIEventHandler<HTMLDivElement> = (event) => {
-    setTimeout(() => {
-      const target = event.currentTarget;
-      const itemWidth = mobileCardWidth + mobileGap;
-
-      const newIndex: number = Math.round(target.scrollLeft / itemWidth);
-
-      if (Number.isFinite(newIndex) && newIndex !== currentIndex) {
-        setCurrentIndex(newIndex);
-      }
-    }, 150);
-  };
-
   return (
-    <Container gap="32px">
+    <Section gap="32px">
       <Box
         sx={{
           textAlign: "center",
           width: { xs: "343px", lg: "1036px" },
           display: "flex",
           flexDirection: "column",
+          margin: "auto",
         }}
       >
         <Title variant="h2" color={Colors["Pink-50"]}>
@@ -151,10 +97,13 @@ function ProjectThatMoveUs(): JSX.Element {
         </SubTitle>
       </Box>
       <Carrousel
-        ref={carrousel}
-        onScroll={handleScroll}
+        config={{
+          gap: 40,
+          width: 328,
+          itensPerView: 2,
+        }}
         sx={{
-          width: { xs: "360px", md: "800px", lg: "1032px" },
+          width: { xs: "328px", md: "736px", lg: "1104px", margin: "auto" },
         }}
       >
         {cardsInfo.map((card) => (
@@ -198,29 +147,6 @@ function ProjectThatMoveUs(): JSX.Element {
         ))}
       </Carrousel>
 
-      <Controls>
-        <span className="material-icons left" onClick={turnLeft}>
-          arrow_back_ios_new
-        </span>
-        <span className="material-icons right" onClick={turnRight}>
-          arrow_forward_ios
-        </span>
-      </Controls>
-
-      <MobileControls>
-        <span className="material-icons" onClick={() => mobileTurn("prev")}>
-          arrow_back_ios_new
-        </span>
-        <Box display="flex" gap="16px">
-          {cardsInfo.map((card, index) => (
-            <PaginationDot key={card.id} isActive={index === currentIndex} />
-          ))}
-        </Box>
-        <span className="material-icons" onClick={() => mobileTurn("next")}>
-          arrow_forward_ios
-        </span>
-      </MobileControls>
-
       <Button
         component={Link}
         to="/iniciativas"
@@ -232,6 +158,7 @@ function ProjectThatMoveUs(): JSX.Element {
           width: { xs: "215px" },
           borderRadius: { xs: "10px", lg: "8px" },
           textTransform: "none",
+          margin: "auto",
           boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.15)",
           "&:hover": {
             backgroundColor: "#43700E",
@@ -240,7 +167,7 @@ function ProjectThatMoveUs(): JSX.Element {
       >
         <Typography fontWeight={600}>Veja Nossas Iniciativas</Typography>
       </Button>
-    </Container>
+    </Section>
   );
 }
 

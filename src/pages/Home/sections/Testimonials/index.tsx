@@ -1,13 +1,17 @@
 import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
-import Container from "../../components/Container";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { Colors } from "../../../../styles/tokens/colors";
+import Section from "@components/Section";
 
 function Testimonials(): JSX.Element {
   return (
-    <Container secondary>
+    <Section
+      center
+      backgroundColor={Colors["Green-20"]}
+      borderColor={Colors["Green-70"]}
+    >
       <Title variant="h2" color={Colors["Green-70"]}>
         Depoimentos
       </Title>
@@ -162,7 +166,7 @@ function Testimonials(): JSX.Element {
           </CardActions>
         </Card>
       </Box>
-    </Container>
+    </Section>
   );
 }
 

@@ -5,18 +5,6 @@ interface SubtitleProps extends TypographyProps {
   component?: "h3" | "h4";
 }
 
-export const ContentContainer = styled(Box)`
-  display: flex;
-  flex-direction: column;
-  padding: 40px 96px;
-  gap: 24px;
-
-  @media (max-width: 900px) {
-    padding-inline: 16px;
-    gap: 16px;
-  }
-`;
-
 export const Subtitle = styled(Typography)<SubtitleProps>`
   font-size: 40px;
   font-weight: 700;

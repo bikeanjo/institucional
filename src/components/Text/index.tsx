@@ -1,7 +1,7 @@
-import { Typography } from "@mui/material";
+import { Typography, TypographyOwnProps } from "@mui/material";
 import styled from "styled-components";
 
-interface TextProps {
+interface TextProps extends TypographyOwnProps {
   center?: boolean;
   size?: string;
 }
@@ -18,7 +18,6 @@ const Text = styled(Typography)<TextProps>(
       alignItems: "center",
       justifyContent: "center",
       width: "100%",
-      padding: "0px 16px",
     },
 
     [theme.breakpoints.up("lg")]: {

@@ -1,19 +1,16 @@
 import type { JSX } from "react";
-import Title from "../../pages/Home/components/Title";
-import Container from "../../pages/Home/components/Container";
 import { Box, Grid } from "@mui/material";
 import { Colors } from "../../styles/tokens/colors";
+import Title from "@components/Title";
+import Section from "@components/Section";
 
-function Partners({ home }: { home?: boolean }): JSX.Element {
+function Partners(): JSX.Element {
   return (
-    <Container gap="48px">
-      <Title
-        variant="h2"
-        display={home ? "flex" : "none"}
-        color={Colors["Pink-50"]}
-      >
+    <Section>
+      <Title variant="h2" color={Colors["Pink-50"]} center>
         Parceiros
       </Title>
+
       <Grid
         container
         spacing={2}
@@ -21,6 +18,7 @@ function Partners({ home }: { home?: boolean }): JSX.Element {
         sx={{
           justifyContent: "center",
           alignItems: "center",
+          marginBlock: "60px",
         }}
       >
         <Grid
@@ -75,7 +73,7 @@ function Partners({ home }: { home?: boolean }): JSX.Element {
           />
         </Grid>
       </Grid>
-    </Container>
+    </Section>
   );
 }
 

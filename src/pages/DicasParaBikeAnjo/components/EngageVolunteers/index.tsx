@@ -1,6 +1,8 @@
 import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { Button, ButtonsContainer } from "./styles";
+import Section from "@components/Section";
+import { Colors } from "../../../../styles/tokens/colors";
 
 interface EngageProps {
   title: string;
@@ -9,9 +11,9 @@ interface EngageProps {
 
 export default function EngageVolunteers({ title, sub }: EngageProps) {
   return (
-    <>
+    <Section>
       <Title>{title}</Title>
-      <SubTitle>{sub}</SubTitle>
+      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
       <ButtonsContainer>
         <Button href="#" target="_blank" rel="noopener noreferrer">
           Veja aqui o Mini Manual
@@ -20,6 +22,6 @@ export default function EngageVolunteers({ title, sub }: EngageProps) {
           Fale a nossa mobilização
         </Button>
       </ButtonsContainer>
-    </>
+    </Section>
   );
 }

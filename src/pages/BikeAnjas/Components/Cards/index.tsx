@@ -8,7 +8,7 @@ import {
 import { MiniCard } from "../MiniCard/index";
 import Title from "@components/Title";
 import { Colors } from "../../../../styles/tokens/colors";
-import { Box } from "@mui/material";
+import Section from "@components/Section";
 
 export function Cards() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -80,18 +80,11 @@ export function Cards() {
   };
 
   return (
-    <Box
-      sx={{
-        margin: "40px 0px",
-        padding: "40px 0px",
-        backgroundColor: Colors["Green-20"],
-        border: `2px solid ${Colors["Green-70"]}`,
-        borderInline: 0,
-      }}
+    <Section
+      backgroundColor={Colors["Pink-20"]}
+      borderColor={Colors["Pink-70"]}
     >
-      <Title color={Colors["Green-70"]} center>
-        Conheça mais sobre Bike Anjas
-      </Title>
+      <Title>Conheça mais sobre Bike Anjas</Title>
 
       <div style={{ position: "relative" }}>
         <ArrowButton
@@ -134,6 +127,6 @@ export function Cards() {
           <Dot key={card.id} isActive={index === currentPage} />
         ))}
       </PaginationContainer>
-    </Box>
+    </Section>
   );
 }

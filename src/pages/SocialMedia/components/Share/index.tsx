@@ -11,6 +11,7 @@ import LinkIcon from "@mui/icons-material/Link";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import { Colors } from "../../../../styles/tokens/colors";
+import Section from "@components/Section";
 
 interface ShareProps {
   title: string;
@@ -31,7 +32,7 @@ const iconStyle = {
 
 export default function Share({ title, sub }: ShareProps) {
   return (
-    <>
+    <Section>
       <Title>{title}</Title>
       <SubTitle>{sub}</SubTitle>
       <Stack direction="row" spacing={2} justifyContent="center">
@@ -39,6 +40,8 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://wa.me/seunumero"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Entrar em contato pelo WhatsApp"
+          title="WhatsApp"
         >
           <Box sx={iconStyle}>
             <WhatsAppIcon />
@@ -49,6 +52,8 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://t.me/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Entrar em contato pelo Telegram"
+          title="Telegram"
         >
           <Box sx={iconStyle}>
             <SendIcon />
@@ -59,6 +64,8 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://instagram.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitar nosso perfil no Instagram"
+          title="Instagram"
         >
           <Box sx={iconStyle}>
             <InstagramIcon />
@@ -69,6 +76,8 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://x.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitar nosso perfil no X"
+          title="X"
         >
           <Box sx={iconStyle}>
             <XIcon />
@@ -79,6 +88,8 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://facebook.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitar nossa página no Facebook"
+          title="Facebook"
         >
           <Box sx={iconStyle}>
             <FacebookIcon />
@@ -89,6 +100,8 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://youtube.com/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitar nosso canal no YouTube"
+          title="YouTube"
         >
           <Box sx={iconStyle}>
             <YouTubeIcon />
@@ -99,13 +112,19 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://linkedin.com/company/bikeanjo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitar nosso perfil no LinkedIn"
+          title="LinkedIn"
         >
           <Box sx={iconStyle}>
             <LinkedInIcon />
           </Box>
         </a>
 
-        <a href="mailto:contato@bikeanjo.com">
+        <a
+          href="mailto:contato@bikeanjo.com"
+          aria-label="Enviar e-mail para a Bike Anjo"
+          title="E-mail"
+        >
           <Box sx={iconStyle}>
             <EmailIcon />
           </Box>
@@ -115,12 +134,14 @@ export default function Share({ title, sub }: ShareProps) {
           href="https://bikeanjo.org"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visitar nosso site oficial"
+          title="Site"
         >
           <Box sx={iconStyle}>
             <LinkIcon />
           </Box>
         </a>
       </Stack>
-    </>
+    </Section>
   );
 }

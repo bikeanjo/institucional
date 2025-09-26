@@ -17,13 +17,14 @@ import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
 import Iniciativas from "./pages/Iniciativas";
 import FAQ from "./pages/Home/sections/FAQ";
-import FindLocalArticulation from "./pages/SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import Container from "@components/Container";
 import Volunteering from "./pages/Volunteering";
 import SearchResults from "./pages/Search/SearchResults";
 import WhoWeAre from "./pages/WhoWeAre";
 import TakeOurCourse from "./pages/TakeOurCourse";
 import BikeAnjoInTheMedia from "./pages/BikeAnjoInTheMedia";
+import BikeAnjoNaMidia from "./pages/BikeAnjoNaMidia";
+import FollowLocalArticulations from "./pages/SocialMedia/components/FollowLocalArticulations";
 
 function App() {
   return (
@@ -54,12 +55,13 @@ function App() {
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
           <Route path="/bike-anjo-na-midia" element={<BikeAnjoInTheMedia />} />
+          <Route path="/bike-anjo-na-midia" element={<BikeAnjoNaMidia />} />
           <Route path="/iniciativas" element={<Iniciativas />} />
           <Route
             path="/onde-estamos"
             element={
               <Container>
-                <FindLocalArticulation />
+                <FollowLocalArticulations />
               </Container>
             }
           />

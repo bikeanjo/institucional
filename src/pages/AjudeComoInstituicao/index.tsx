@@ -8,6 +8,9 @@ import Button from "@components/Button";
 import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import { Colors } from "../../styles/tokens/colors";
+import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
+import Section from "@components/Section";
 
 const AjudeComoInstituicao = () => {
   const Hero = {
@@ -21,39 +24,60 @@ const AjudeComoInstituicao = () => {
         <h2>Ajude como Instituição</h2>
       </Header>
 
-      <Container>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            width: "100%",
-            gap: { xs: "16px", lg: "24px" },
-          }}
-        >
-          <Title color={Colors["Pink-50"]}>Empresas Parceiras</Title>
-          <SubTitle>
-            Patrocinar a Bike Anjo é investir em mobilidade, cidadania e impacto
-            positivo.
-          </SubTitle>
-          <Text>
-            Essas são as empresas que acreditam na bicicleta como ferramenta de
-            transformação e apoiam nossas ações em diversas cidades:
-          </Text>
-          <Partners />
-          <SubTitle desktopOnly display={{ xs: "none", lg: "flex" }}>
-            Faça parte deste quadro!
-          </SubTitle>
-          <Text>
-            Ao apoiar a Bike Anjo, sua empresa fortalece seu compromisso com a
-            mobilidade sustentável, o impacto social e a construção de cidades
-            mais justas. O patrocínio torna possível ensinar pessoas a pedalar,
-            realizar eventos gratuitos e expandir nossas ações em todo o país.
-          </Text>
-          <Link to="/contato">
-            <Button>Entre em contato</Button>
-          </Link>
+      <ScrollSpyMenu />
+      <BreadCrumb />
 
+      <Container>
+        <Section>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              width: "100%",
+              gap: { xs: "16px", lg: "24px" },
+            }}
+          >
+            <Title color={Colors["Pink-50"]}>Empresas Parceiras</Title>
+            <SubTitle>
+              Patrocinar a Bike Anjo é investir em mobilidade, cidadania e
+              impacto positivo.
+            </SubTitle>
+            <Text>
+              Essas são as empresas que acreditam na bicicleta como ferramenta
+              de transformação e apoiam nossas ações em diversas cidades:
+            </Text>
+            <Partners />
+          </Box>
+        </Section>
+
+        <Section>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              width: "100%",
+              gap: { xs: "16px", lg: "24px" },
+            }}
+          >
+            <Title display={{ xs: "none", lg: "flex" }}>
+              Faça parte deste quadro!
+            </Title>
+            <Text>
+              Ao apoiar a Bike Anjo, sua empresa fortalece seu compromisso com a
+              mobilidade sustentável, o impacto social e a construção de cidades
+              mais justas. O patrocínio torna possível ensinar pessoas a
+              pedalar, realizar eventos gratuitos e expandir nossas ações em
+              todo o país.
+            </Text>
+            <Link to="/contato">
+              <Button>Entre em contato</Button>
+            </Link>
+          </Box>
+        </Section>
+
+        <Section>
           <Box
             sx={{
               display: "flex",
@@ -108,13 +132,13 @@ const AjudeComoInstituicao = () => {
                 <SubTitle mobileCenter>
                   Matérias que mostram o impacto da nossa rede
                 </SubTitle>
-                <Link to="/materias">
+                <Link to="/bike-anjo-na-midia">
                   <Button>Acessar matérias</Button>
                 </Link>
               </Box>
             </Box>
           </Box>
-        </Box>
+        </Section>
       </Container>
     </>
   );

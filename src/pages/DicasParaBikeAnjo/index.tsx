@@ -6,6 +6,8 @@ import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
 import Container from "@components/Container";
+import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const teachingSteps = [
   {
@@ -64,7 +66,10 @@ function CyclingTips(): JSX.Element {
         <h2>Dicas para Bike Anjo</h2>
       </Header>
 
-      <Container padding="20px">
+      <ScrollSpyMenu />
+      <BreadCrumb />
+
+      <Container>
         <CarouselTeachingCards
           title="Como ensinar alguém a pedalar"
           sub="Abaixo seguem algumas dicas praticas para você lembrar do que fazer durante as oficinas, mas é importante que o Bike Anjo passe pela CUBA para se capacitar como pessoa voluntária"

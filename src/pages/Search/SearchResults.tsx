@@ -57,7 +57,7 @@ const SearchResults: React.FC = () => {
         path: "/como-nos-ajudamos",
       },
       { title: "Como Funciona", path: "/como-funciona" },
-      { title: "Matérias", path: "/materias" },
+      { title: "Bike Anjo na Mídia", path: "/bike-anjo-na-midia" },
       { title: "Iniciativas", path: "/iniciativas" },
       {
         title: "Voluntariado",

@@ -4,14 +4,17 @@ import Header from "@components/Header";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import Text from "@components/Text";
-import Container from "../Home/components/Container";
-import { ContentContainer, Content } from "./styles";
 import List from "./components/List";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import TimelineCourse from "./components/TimelineCourse";
 import Accordion from "./components/Accordion";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";
+import BreadCrumb from "@components/BreadCrumb";
+import ScrollSpyMenu from "@components/ScrollSpyMenu";
+import Section from "@components/Section";
+import { Colors } from "../../styles/tokens/colors";
+import Container from "@components/Container";
 
 function TakeOurCourse(): ReactNode {
   const Hero = {
@@ -42,8 +45,12 @@ function TakeOurCourse(): ReactNode {
       <Header secondary Hero={Hero}>
         <h2>Faça nosso Curso Bike Anjo</h2>
       </Header>
-      <ContentContainer>
-        <Content>
+
+      <ScrollSpyMenu />
+      <BreadCrumb />
+
+      <Container>
+        <Section>
           <Title variant="h2" pink>
             Sobre o Cuba
           </Title>
@@ -56,98 +63,93 @@ function TakeOurCourse(): ReactNode {
             essa jornada prepara novas pessoas voluntárias para atuarem com
             segurança, acolhimento e propósito em suas comunidades.
           </Text>
-        </Content>
-      </ContentContainer>
-      <Container secondary gap="24px">
-        <Title variant="h2" green textAlign={"center"}>
-          Formação de Pessoas Voluntárias Bike Anjo
-        </Title>
-        <List />
-        <Box py={"16px"}>
-          <Text variant="body1" size="16px">
-            Nosso programa é feito com atenção e compromisso para garantir a sua
-            preparação para atuar na rede com propósito.
-          </Text>
-        </Box>
-      </Container>
-      <Container gap="40px">
-        <Typography
-          variant="h2"
-          sx={{
-            fontSize: "40px",
-            fontWeight: "700",
-            color: "var(--mui-palette-G-Grey-100)",
-          }}
-        >
-          Etapas do Programa
-        </Typography>
+        </Section>
 
-        <TimelineCourse />
-      </Container>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          paddingInline: { xs: "16px", md: "92px" },
-          paddingTop: "40px",
-          gap: "30px",
-        }}
-      >
-        <SubTitle variant="h2" color="Pink-50" fontWeight={700}>
-          Módulos do Curso
-        </SubTitle>
-        <Accordion id="CourseModules" />
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          paddingInline: { xs: "16px", md: "92px" },
-          paddingTop: "40px",
-          gap: "32px",
-        }}
-      >
-        <SubTitle variant="h2" color="Pink-50" fontWeight={700}>
-          FAQ — Perguntas Frequentes
-        </SubTitle>
-        <Accordion id="FAC" />
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          paddingX: { xs: "16px", md: "92px" },
-          paddingY: "40px",
-          gap: "16px",
-        }}
-      >
-        <SubTitle variant="h2" color="Pink-50" fontWeight={700}>
-          Resultados Esperados
-        </SubTitle>
-        <Text variant="body1" size="16px" textAlign={"center"}>
-          Ao final do programa, você estará preparado para atuar como uma pessoa
-          voluntária na rede Bike Anjo, contribuindo para a transformação das
-          cidades através da mobilidade sustentável e ganha um certificado de
-          horas complementares.
-        </Text>
-      </Box>
-      <Container secondary>
-        <SubTitle variant="h3" fontWeight="700" color="Green-70">
-          Inscreva-se Agora!
-        </SubTitle>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingTop: "16px",
-            paddingBottom: "24px",
-            gap: "16px",
-          }}
+        <Section
+          center
+          backgroundColor={Colors["Green-20"]}
+          borderColor={Colors["Green-70"]}
         >
+          <Title variant="h2" green textAlign={"center"}>
+            Formação de Pessoas Voluntárias Bike Anjo
+          </Title>
+          <List />
+          <Box py={"16px"}>
+            <Text variant="body1" size="16px">
+              Nosso programa é feito com atenção e compromisso para garantir a
+              sua preparação para atuar na rede com propósito.
+            </Text>
+          </Box>
+        </Section>
+
+        <Section center>
+          <Title>Etapas do Programa</Title>
+          <TimelineCourse />
+        </Section>
+
+        <Section>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              paddingInline: { xs: "16px", md: "92px" },
+              paddingTop: "40px",
+              gap: "30px",
+            }}
+          >
+            <Title>Módulos do Curso</Title>
+            <Accordion id="CourseModules" />
+          </Box>
+        </Section>
+
+        <Section>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              paddingInline: { xs: "16px", md: "92px" },
+              paddingTop: "40px",
+              gap: "32px",
+            }}
+          >
+            <Title>FAQ — Perguntas Frequentes</Title>
+            <Accordion id="FAC" />
+          </Box>
+        </Section>
+
+        <Section>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              paddingX: { xs: "16px", md: "92px" },
+              paddingY: "40px",
+              gap: "16px",
+            }}
+          >
+            <SubTitle variant="h2" color="Pink-50" fontWeight={700}>
+              Resultados Esperados
+            </SubTitle>
+            <Text variant="body1" size="16px" textAlign={"center"}>
+              Ao final do programa, você estará preparado para atuar como uma
+              pessoa voluntária na rede Bike Anjo, contribuindo para a
+              transformação das cidades através da mobilidade sustentável e
+              ganha um certificado de horas complementares.
+            </Text>
+          </Box>
+        </Section>
+
+        <Section
+          backgroundColor={Colors["Green-20"]}
+          borderColor={Colors["Green-70"]}
+          center
+        >
+          <Title center color={Colors["Green-70"]}>
+            Inscreva-se Agora!
+          </Title>
           <Text variant="body1" size="16px" textAlign={"center"}>
             Bora construir cidades mais humanas e pedaláveis nos unindo?
             Inscreva-se no Programa de Formação Bike Anjo e venha transformar o
@@ -158,11 +160,11 @@ function TakeOurCourse(): ReactNode {
             <br />
             Vagas limitadas.
           </Text>
-        </Box>
-        <Button component={Link} to="/voluntariado" center>
-          {" "}
-          Voluntarie-se
-        </Button>
+          <Button component={Link} to="/voluntariado" center>
+            {" "}
+            Voluntarie-se
+          </Button>
+        </Section>
       </Container>
     </>
   );

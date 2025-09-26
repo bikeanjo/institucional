@@ -8,7 +8,9 @@ import "@fontsource/roboto/600.css";
 import "@fontsource/roboto/700.css";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./styles/theme";
+import "./styles/global.css";
 import App from "./App";
+import "leaflet/dist/leaflet.css";
 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 createRoot(document.getElementById("root")!).render(
