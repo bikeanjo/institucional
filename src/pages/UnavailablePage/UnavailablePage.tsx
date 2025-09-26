@@ -13,6 +13,7 @@ const UnavailablePage: React.FC = () => {
           width: { xs: "100%", md: "630px" },
           gap: "32px",
           mx: "auto",
+          my: 20,
         }}
       >
         <Box
