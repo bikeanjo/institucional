@@ -1,15 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import {
+  ArrowBackIosNewRounded,
+  ArrowForwardIosRounded,
+} from "@mui/icons-material";
 import {
   TimelineContainer,
-  ScrollableContainer,
-  HorizontalTimelineContainer,
-  ItemContainer,
-  YearAndDotContainer,
+  NavigationContainer,
+  Button,
+  ScrollContainer,
+  ScrollContent,
+  YearsContainer,
   Years,
   Dot,
-  NavButton,
-  Line,
+  Ball,
 } from "./styles";
 
 interface TimelineProps {
@@ -51,59 +54,60 @@ const Timeline: React.FC<TimelineProps> = ({ data, onYearSelect }) => {
 
   return (
     <TimelineContainer>
-      <NavButton
-        onClick={() => handleNavigation("left")}
-        disableRipple
-        sx={{
-          "&:hover": {
-            backgroundColor: "transparent",
-          },
-        }}
-      >
-        <ChevronLeft sx={{ fontSize: "46px" }} />
-      </NavButton>
+      <NavigationContainer>
+        <Button
+          onClick={() => handleNavigation("left")}
+          disableRipple
+          sx={{
+            "&:hover": {
+              backgroundColor: "transparent",
+            },
+          }}
+        >
+          <ArrowBackIosNewRounded sx={{ fontSize: "28px" }} />
+        </Button>
 
-      <ScrollableContainer ref={scrollRef}>
-        <HorizontalTimelineContainer>
+        <ScrollContainer ref={scrollRef}>
           {data.map((year, index) => {
             const isActive = index === activeIndex;
             return (
-              <ItemContainer
+              <ScrollContent
                 key={year}
                 ref={(el: HTMLDivElement | null) => {
                   itemRefs.current[index] = el;
                 }}
               >
-                <YearAndDotContainer>
+                <YearsContainer>
                   <Years
                     $isActive={isActive}
                     onClick={() => handleSelect(index)}
                   >
                     {year}
                   </Years>
-                  <Dot
-                    $isActive={isActive}
-                    onClick={() => handleSelect(index)}
-                  />
-                </YearAndDotContainer>
-                <Line />
-              </ItemContainer>
+                  <Dot>
+                    <Ball
+                      $isActive={isActive}
+                      onClick={() => handleSelect(index)}
+                    />
+                  </Dot>
+                </YearsContainer>
+              </ScrollContent>
             );
           })}
-        </HorizontalTimelineContainer>
-      </ScrollableContainer>
+        </ScrollContainer>
 
-      <NavButton
-        onClick={() => handleNavigation("right")}
-        disableRipple
-        sx={{
-          "&:hover": {
-            backgroundColor: "transparent",
-          },
-        }}
-      >
-        <ChevronRight sx={{ fontSize: "46px" }} />
-      </NavButton>
+        <Button
+          onClick={() => handleNavigation("right")}
+          disableRipple
+          sx={{
+            "&:hover": {
+              backgroundColor: "transparent",
+            },
+          }}
+        >
+          <ArrowForwardIosRounded sx={{ fontSize: "28px" }} />
+        </Button>
+      </NavigationContainer>
     </TimelineContainer>
   );
 };

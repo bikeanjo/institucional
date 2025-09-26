@@ -4,7 +4,7 @@ import Timeline from "./components/Timeline";
 import Text from "@components/Text";
 import Container from "@components/Container";
 
-function Matérias(): ReactNode {
+function BikeAnjoInTheMedia(): ReactNode {
   const Hero = {
     url: "/assets/header/bike-anjo-na-midia.webp",
     backgroundPositionDesktop: "50% 60%",
@@ -17,7 +17,7 @@ function Matérias(): ReactNode {
       </Header>
 
       <Container>
-        <Text>
+        <Text variant="body1">
           Nossa história já foi contada por diversos veículos de comunicação ao
           longo dos anos. Veja na linha do tempo como a Bike Anjo ganhou
           destaque na mídia e foi pedalando cada vez mais longe.
@@ -27,4 +27,4 @@ function Matérias(): ReactNode {
     </>
   );
 }
-export default Matérias;
+export default BikeAnjoInTheMedia;
