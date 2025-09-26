@@ -20,7 +20,7 @@ function Home(): JSX.Element {
         <ProjectThatMoveUs />
         <OurNumbers />
         <Testimonials />
-        <Partners home />
+        <Partners />
       </Container>
     </>
   );

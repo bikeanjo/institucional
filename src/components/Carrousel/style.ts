@@ -7,7 +7,6 @@ export const Container = styled(Box)`
   overflow-y: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  padding-bottom: 16px;
 
   .Carroussel::-webkit-scrollbar {
     display: none;
