@@ -8,9 +8,11 @@ import { Colors } from "../../../../styles/tokens/colors";
 import Carrousel from "@components/Carrousel";
 
 function Carousel(): JSX.Element {
+  const imageOne = "/assets/images/Home/placeholder/hero.jpg";
+  const imageTwo = "/assets/images/Home/placeholder/sobre.webp";
   return (
     <Carrousel config={{ fullWidth: true }}>
-      <Container carrousel>
+      <Container carrousel url={imageOne}>
         <Box
           sx={{
             textAlign: "center",
@@ -92,7 +94,7 @@ function Carousel(): JSX.Element {
           </Button>
         </Box>
       </Container>
-      <Container carrousel>
+      <Container carrousel url={imageTwo}>
         <Box
           sx={{
             textAlign: "center",
@@ -109,21 +111,23 @@ function Carousel(): JSX.Element {
               display: "flex",
               flexDirection: "column",
               gap: { xs: "24px", lg: "32px" },
+              width: { lg: "1036px" },
             }}
           >
             <Title variant="h2" carrousel color={Colors["Green-10"]}>
-              Uma comunidade que pedala por um futuro melhor
+              Sobre a Bike Anjo
             </Title>
             <SubTitle fontWeight={400} carrousel color={Colors["Green-10"]}>
-              Conectamos pessoas dispostas a ajudar com quem precisa de apoio
-              para pedalar, oferecendo orientação, rotas seguras e
-              acompanhamento no percurso.
+              A Bike Anjo é uma rede de pessoas voluntárias que ensina pessoas a
+              pedalar, indica rotas seguras e acompanha seus primeiros trajetos.
+              Acreditamos na bicicleta como ferramenta de transformação para
+              pessoas e cidades mais humanas.
             </SubTitle>
           </Box>
         </Box>
         <Box
           sx={{
-            marginTop: { xs: "24px", lg: "54px" },
+            marginTop: { xs: "200px", lg: "100px" },
             marginBottom: { xs: "24px", lg: "54px" },
             display: "flex",
             alignItems: "center",
@@ -136,7 +140,7 @@ function Carousel(): JSX.Element {
         >
           <Button
             component={Link}
-            to="/dicas-para-pedalar"
+            to="/como-funciona"
             sx={{
               backgroundColor: Colors["Green-70"],
               color: Colors["G-White"],
@@ -151,11 +155,11 @@ function Carousel(): JSX.Element {
               },
             }}
           >
-            <Typography>Aprender a pedalar</Typography>
+            <Typography>Como Funciona</Typography>
           </Button>
           <Button
             component={Link}
-            to="/dicas-bike-anjo"
+            to="/quem-somos"
             sx={{
               backgroundColor: Colors["Green-70"],
               color: Colors["G-White"],
@@ -170,7 +174,7 @@ function Carousel(): JSX.Element {
               },
             }}
           >
-            <Typography>Ensinar a pedalar</Typography>
+            <Typography>Quem Somos</Typography>
           </Button>
         </Box>
       </Container>
