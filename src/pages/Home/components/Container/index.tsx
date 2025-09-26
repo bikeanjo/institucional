@@ -29,9 +29,9 @@ interface ContainerProps extends ContainerTemplateProps {
 const ContainerTemplate = styled.div<ContainerTemplateProps>`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  flex-shrink: 0;
+  justify-content: center;
   background-color: ${({ secondary }) =>
     secondary ? Colors["Green-20"] : "transparent"};
   border: ${({ secondary }) => secondary && `2px solid ${Colors["Green-70"]}`};
@@ -44,7 +44,6 @@ const ContainerTemplate = styled.div<ContainerTemplateProps>`
   background-position: center;
 
   ${({ theme }) => theme.breakpoints.up("xs")} {
-    padding: 40px 16px;
     height: ${({ height }) => height || "auto"};
   }
 
