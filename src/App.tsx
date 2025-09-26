@@ -26,6 +26,7 @@ const AppWrapper: React.FC<PropsWithChildren> = ({ children }) => {
       "/assets/images/BikeAnjas/bike-anjas-main.png",
       "/assets/images/PedalaOuRepassa/pedala-ou-repassa.jpg",
       "/assets/images/WhoWeAre/what-is-bike-anjo.png",
+      "/assets/images/Home/placeholder/sobre.webp",
     ];
     Object.values(imagePaths).forEach((src) => {
       const img = new Image();

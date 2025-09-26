@@ -20,6 +20,7 @@ interface ContainerTemplateProps extends BoxProps {
   carrousel?: boolean;
   gap?: string;
   height?: string;
+  url?: string;
 }
 
 interface ContainerProps extends ContainerTemplateProps {
@@ -37,8 +38,10 @@ const ContainerTemplate = styled.div<ContainerTemplateProps>`
   border: ${({ secondary }) => secondary && `2px solid ${Colors["Green-70"]}`};
   border-width: ${({ secondary }) => secondary && `2px 0px`};
   gap: ${({ gap }) => gap || "unset"};
-  background-image: ${({ carrousel }) =>
-    carrousel ? `url(/assets/images/Home/placeholder/hero.jpg)` : "none"};
+  background-image: ${({ url }) =>
+    url
+      ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${url})`
+      : `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/Home/placeholder/hero.jpg)`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
