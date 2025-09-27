@@ -10,6 +10,12 @@
   <body>
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");
+
+      window.addEventListener('load', function () {
+        window.alert = function () {
+          console.warn("Alert suppressed by developer.");
+        };
+      });
     </script>
     <div id="root"></div>
     <div vw class="enabled">
@@ -18,6 +24,13 @@
         <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
+    <style>
+      [vw=""] {
+        transform: translateY(calc(-100% - 10px)) !important;
+        top: calc(100% - 30px) !important;
+        right: 30px !important;
+      }
+    </style>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
