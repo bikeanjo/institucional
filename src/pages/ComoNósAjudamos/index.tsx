@@ -4,8 +4,6 @@ import FollowLocalArticulations from "../SocialMedia/components/FollowLocalArtic
 import { Box } from "@mui/material";
 import Text from "@components/Text";
 import Button from "@components/Button";
-import { PrimaryButton } from "./styles";
-import { Link } from "react-router-dom";
 import Container from "@components/Container";
 import { GridContainer } from "../Volunteering/components/HowToJoinCards/styles";
 import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
@@ -41,7 +39,7 @@ function HowWeHelp(): JSX.Element {
           <GridContainer>
             <HowToJoinCards />
           </GridContainer>
-          <PrimaryButton>Cadastre-se</PrimaryButton>
+          <Button center>Cadastre-se</Button>
         </Section>
 
         <FollowLocalArticulations
@@ -69,9 +67,7 @@ function HowWeHelp(): JSX.Element {
               width: { xs: "100%", lg: "1032px" },
             }}
           >
-            <Link to="">
-              <Button center>Acesse a Playlist</Button>
-            </Link>
+            <Button center>Acesse a Playlist</Button>
           </Box>
         </Section>
       </Container>

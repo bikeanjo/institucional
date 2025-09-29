@@ -2,7 +2,6 @@ import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
 import {
-  Button,
   ButtonContainer,
   ButtonText,
   StepItem,
@@ -10,6 +9,7 @@ import {
 } from "./styles";
 import Section from "@components/Section";
 import { Colors } from "../../../styles/tokens/colors";
+import Button from "@components/Button";
 
 interface Step {
   number: number;
@@ -50,8 +50,8 @@ export default function CityNotListed({
       </StepsContainer>
 
       <ButtonContainer>
-        <ButtonText>Comece agora</ButtonText>
-        <Button>Crie uma conta</Button>
+        <ButtonText>Comece agora:</ButtonText>
+        <Button center>Crie uma conta</Button>
       </ButtonContainer>
     </Section>
   );

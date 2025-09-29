@@ -1,6 +1,7 @@
 import Section from "@components/Section";
-import { Button, Paragraph, TextWrapper } from "./styles";
+import { Paragraph, TextWrapper } from "./styles";
 import Title from "@components/Title";
+import Button from "@components/Button";
 
 export default function SocialContent() {
   return (
@@ -20,7 +21,6 @@ export default function SocialContent() {
         </div>
         <Button
           href="https://www.youtube.com/@bikeanjo"
-          target="_blank"
           rel="noopener noreferrer"
         >
           Acessar Youtube

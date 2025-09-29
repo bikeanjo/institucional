@@ -46,16 +46,3 @@ export const Paragraph = styled.p`
   margin-top: 16px;
   color: #000;
 `;
-
-export const Button = styled.a`
-  align-self: flex-end;
-  margin-top: auto;
-  background-color: #fff;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 16px 32px;
-  border-radius: 148px;
-  text-decoration: none;
-  cursor: pointer;
-`;

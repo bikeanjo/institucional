@@ -71,9 +71,9 @@ const AjudeComoInstituicao = () => {
               pedalar, realizar eventos gratuitos e expandir nossas ações em
               todo o país.
             </Text>
-            <Link to="/contato">
-              <Button>Entre em contato</Button>
-            </Link>
+            <Button component={Link} to="/contato">
+              Entre em contato
+            </Button>
           </Box>
         </Section>
 
@@ -116,9 +116,9 @@ const AjudeComoInstituicao = () => {
                 }}
               >
                 <SubTitle mobileCenter>Faça da Bike Anjo sua pauta!</SubTitle>
-                <Link to="/contato">
-                  <Button>Entre em contato</Button>
-                </Link>
+                <Button component={Link} to="/contato">
+                  Entre em contato
+                </Button>
               </Box>
               <Box
                 sx={{
@@ -132,9 +132,9 @@ const AjudeComoInstituicao = () => {
                 <SubTitle mobileCenter>
                   Matérias que mostram o impacto da nossa rede
                 </SubTitle>
-                <Link to="/bike-anjo-na-midia">
-                  <Button>Acessar matérias</Button>
-                </Link>
+                <Button component={Link} to="/bike-anjo-na-midia">
+                  Acessar matérias
+                </Button>
               </Box>
             </Box>
           </Box>

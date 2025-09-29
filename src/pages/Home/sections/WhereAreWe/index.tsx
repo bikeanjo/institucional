@@ -1,11 +1,12 @@
 import { useState, type JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
 import Section from "@components/Section";
 import MapInteractive from "@components/Map";
+import Button from "@components/Button";
 
 function WhereAreWe(): JSX.Element {
   const tupleCoords = (lat: number, lng: number): [number, number] => [
@@ -460,24 +461,8 @@ function WhereAreWe(): JSX.Element {
         selectedCoords={selectedCoords}
         setSelectedCoords={setSelectedCoords}
       />
-      <Button
-        component={Link}
-        to="/onde-estamos"
-        sx={{
-          backgroundColor: Colors["Green-70"],
-          color: "var(--mui-palette-G-White)",
-          padding: "16px 24px",
-          height: { xs: 56 },
-          width: { xs: "188px" },
-          borderRadius: { xs: "10px", lg: "8px" },
-          textTransform: "none",
-          "&:hover": {
-            backgroundColor: "var(--mui-palette-G-White)",
-            color: "var(--mui-palette-neutral-900)",
-          },
-        }}
-      >
-        <Typography fontWeight={600}>Veja Onde Estamos</Typography>
+      <Button component={Link} to="/onde-estamos">
+        Veja Onde Estamos
       </Button>
     </Section>
   );

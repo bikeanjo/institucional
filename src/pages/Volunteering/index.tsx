@@ -11,6 +11,7 @@ import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
 import ScrollSpyMenu from "@components/ScrollSpyMenu";
 import Section from "@components/Section";
+import { Link } from "react-router-dom";
 
 function Volunteering(): ReactNode {
   const Hero = {
@@ -105,7 +106,9 @@ function Volunteering(): ReactNode {
                 gestão ou colocando a mão na massa, mande uma mensagem e nos
                 conte como gostaria de contribuir.
               </Text>
-              <Button>Entre em Contato</Button>
+              <Button component={Link} to="/contato">
+                Entre em Contato
+              </Button>
             </Box>
           </Box>
         </Section>

@@ -1,5 +1,5 @@
 import { useRef, useState, type JSX } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ProjectBox from "../../../Home/components/ProjectBox";
 import ProjectInfo from "../../../Home/components/ProjectInfo";
 import AndersonPaz from "../../../../../public/assets/images/WhoWeAre/anderson-paz.png";
@@ -10,6 +10,7 @@ import MartinaHorvath from "../../../../../public/assets/images/WhoWeAre/martina
 import VicenteseSJunior from "../../../../../public/assets/images/WhoWeAre/vicentese-s-junior.png";
 import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls, MobileControls, PaginationDot } from "./styles";
+import Button from "@components/Button";
 
 function OurTeam(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);
@@ -166,18 +167,8 @@ function OurTeam(): JSX.Element {
                 {card.from}
               </Typography>
 
-              <Button
-                sx={{
-                  width: "100%",
-                  borderRadius: "4px",
-                  backgroundColor: "var(--mui-palette-G-Grey-80)",
-                  color: "var(--mui-palette-G-White)",
-                  textTransform: "none",
-                }}
-              >
-                <Typography fontWeight={700} fontSize={16}>
-                  Sobre
-                </Typography>
+              <Button fullWidthDesktop variantcolor="gray">
+                Sobre
               </Button>
             </ProjectInfo>
           </ProjectBox>

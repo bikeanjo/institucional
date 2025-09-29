@@ -1,9 +1,4 @@
-import {
-  Box,
-  Divider,
-  InputAdornment,
-  Button as MuiButton,
-} from "@mui/material";
+import { Box, Divider, InputAdornment } from "@mui/material";
 import Header from "@components/Header";
 import { type JSX } from "react";
 import Title from "@components/Title";
@@ -203,21 +198,14 @@ const Doacao = (): JSX.Element => {
                 Nesse link você contribui com a ONG todo mês e nos ajuda a
                 seguir transformando cidades com a bicicleta!
               </Text>
-              <MuiButton
-                fullWidth
+              <Button
+                variantcolor="orange"
                 sx={{
-                  borderRadius: "8.4px",
-                  backgroundColor: Colors["Orange-50"],
-                  padding: "18px",
-                  color: Colors["G-White"],
-                  fontWeight: 700,
-                  fontSize: "16px",
-                  textTransform: "none",
                   width: "221px",
                 }}
               >
                 Clique para continuar
-              </MuiButton>
+              </Button>
             </Box>
           </Box>
         </Section>
@@ -249,9 +237,9 @@ const Doacao = (): JSX.Element => {
                 },
               }}
             >
-              <Link to="/social-media">
-                <Button>Veja nossas redes</Button>
-              </Link>
+              <Button component={Link} to="/social-media">
+                Veja nossas redes
+              </Button>
             </Box>
           </Box>
         </Section>
