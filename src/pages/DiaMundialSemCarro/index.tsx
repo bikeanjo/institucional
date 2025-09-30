@@ -10,7 +10,7 @@ import Section from "@components/Section";
 
 function DiaMundialSemCarro(): JSX.Element {
   const Hero = {
-    url: "/assets/header/dia-mundial-sem-carro.jpg",
+    url: "/assets/header/dia-mundial-sem-carro.webp",
     backgroundPositionDesktop: "50% 10%",
     backgroundPositionMobile: "50% 10%",
   };

@@ -15,7 +15,7 @@ import Section from "@components/Section";
 
 const Doacao = (): JSX.Element => {
   const Hero = {
-    url: "/assets/header/doe.jpg",
+    url: "/assets/header/doe.webp",
     backgroundPositionDesktop: "50% 40%",
     backgroundPositionMobile: "50% 40%",
   };
