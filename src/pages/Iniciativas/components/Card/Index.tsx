@@ -1,8 +1,8 @@
 import SubTitle from "@components/SubTitle";
-import { ContainerCard, Image, Text, CardButton } from "./styles";
+import { ContainerCard, Image, Text } from "./styles";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Link } from "../../../Layout/Components/Link";
+import Button from "@components/Button";
 
 interface CardProps {
   title: string;
@@ -31,9 +31,15 @@ export function Card({
         <Text>{isMobile ? textMobile : textDesktop}</Text>
         <div className="content">
           {button && link && (
-            <Link to={link}>
-              <CardButton>{button}</CardButton>
-            </Link>
+            <Button
+              to={link}
+              variantcolor="gray"
+              fullWidthDesktop
+              fullWidthMobile
+              sx={{ height: "48px" }}
+            >
+              {button}
+            </Button>
           )}
         </div>
       </ContainerCard>
