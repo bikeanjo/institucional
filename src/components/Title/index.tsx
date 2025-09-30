@@ -26,7 +26,8 @@ const TitleContainer = styled(Typography)<TitleContainerProps>(
     ...(green && !pink && { color: "var(--mui-palette-Green-70)" }),
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "32px",
+      fontSize: "24px",
+      lineHeight: "120%",
       alignItems: "center",
       justifyContent: "center",
       width: "100%",
@@ -35,7 +36,8 @@ const TitleContainer = styled(Typography)<TitleContainerProps>(
 
     [theme.breakpoints.up("lg")]: {
       padding: "0px",
-      fontSize: "48px",
+      fontSize: "40px",
+      lineHeight: "120%",
       alignItems: "flex-start",
       margin: center ? "0px auto" : "unset",
       width: "fit-content",
