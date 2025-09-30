@@ -23,7 +23,6 @@ import SearchResults from "./pages/Search/SearchResults";
 import WhoWeAre from "./pages/WhoWeAre";
 import TakeOurCourse from "./pages/TakeOurCourse";
 import BikeAnjoInTheMedia from "./pages/BikeAnjoInTheMedia";
-import BikeAnjoNaMidia from "./pages/BikeAnjoNaMidia";
 import FollowLocalArticulations from "./pages/SocialMedia/components/FollowLocalArticulations";
 
 function App() {
@@ -55,7 +54,6 @@ function App() {
           <Route path="/como-nos-ajudamos" element={<HowWeHelp />} />
           <Route path="/como-funciona" element={<HowItWorks />} />
           <Route path="/bike-anjo-na-midia" element={<BikeAnjoInTheMedia />} />
-          <Route path="/bike-anjo-na-midia" element={<BikeAnjoNaMidia />} />
           <Route path="/iniciativas" element={<Iniciativas />} />
           <Route
             path="/onde-estamos"
