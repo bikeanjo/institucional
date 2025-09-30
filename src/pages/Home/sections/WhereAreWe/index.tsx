@@ -451,7 +451,7 @@ function WhereAreWe(): JSX.Element {
         <Title variant="h2" color={Colors["Green-70"]}>
           Onde estamos
         </Title>
-        <SubTitle fontSize={24} fontWeight={400}>
+        <SubTitle color={Colors["G-Grey-100"]} fontSize={24} fontWeight={400}>
           Saiba onde encontrar iniciativas para participar
         </SubTitle>
       </Box>

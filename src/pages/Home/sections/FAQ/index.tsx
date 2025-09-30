@@ -92,7 +92,7 @@ function FAQ(): JSX.Element {
   return (
     <Section>
       <Title color={Colors["Pink-50"]}>Conheça a Bike Anjo</Title>
-      <SubTitle center>
+      <SubTitle color={Colors["G-Grey-100"]} center>
         Abaixo respondemos algumas das principais dúvidas sobre a Bike Anjo, e
         você sempre pode entrar em contato conosco caso precise!
       </SubTitle>
