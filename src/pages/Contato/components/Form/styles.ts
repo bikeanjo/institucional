@@ -91,18 +91,6 @@ export const Textarea = styled.textarea`
   font-family: "Roboto", sans-serif;
 `;
 
-export const SubmitButton = styled.button`
-  padding: 9.5px 26px;
-  background-color: #171a1c;
-  color: #fafafa;
-  font-size: 14px;
-  font-weight: 700;
-  border: none;
-  border-radius: 8px;
-  align-self: flex-start;
-  cursor: pointer;
-`;
-
 export const ErrorMessage = styled.span`
   color: red;
   font-size: 0.875rem;
