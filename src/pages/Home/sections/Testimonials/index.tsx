@@ -44,7 +44,7 @@ function Testimonials(): JSX.Element {
           <CardContent sx={{ padding: 0, marginBottom: 4 }}>
             <Typography
               sx={{
-                color: "#606060",
+                color: Colors["G-Grey-100"],
                 fontSize: 16,
                 fontWeight: 400,
                 lineHeight: 1.6,
@@ -66,7 +66,7 @@ function Testimonials(): JSX.Element {
                   width: 50,
                   height: 50,
                   borderRadius: "50%",
-                  border: "2px solid #00AEEF",
+                  border: `2px solid ${Colors["Blue-60"]}`,
                 }}
               />
               <Box>
@@ -75,7 +75,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 16,
                     lineHeight: 1,
-                    color: "#000000",
+                    color: Colors["Blue-60"],
                     margin: "2px 0px",
                   }}
                 >
@@ -86,7 +86,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 14,
                     lineHeight: 1,
-                    color: "#909B99",
+                    color: Colors["G-Grey-100"],
                     margin: "10px 0px",
                   }}
                 >
@@ -113,7 +113,7 @@ function Testimonials(): JSX.Element {
           <CardContent sx={{ padding: 0, marginBottom: 4 }}>
             <Typography
               sx={{
-                color: "#606060",
+                color: Colors["G-Grey-100"],
                 fontSize: 16,
                 fontWeight: 400,
                 lineHeight: 1.6,
@@ -135,7 +135,7 @@ function Testimonials(): JSX.Element {
                   width: 50,
                   height: 50,
                   borderRadius: "50%",
-                  border: "2px solid #F26522",
+                  border: `2px solid ${Colors["Orange-50"]}`,
                 }}
               />
               <Box>
@@ -144,7 +144,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 16,
                     lineHeight: 1,
-                    color: "#000000",
+                    color: Colors["Orange-50"],
                     margin: "2px 0px",
                   }}
                 >
@@ -155,7 +155,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 14,
                     lineHeight: 1,
-                    color: "#909B99",
+                    color: Colors["G-Grey-100"],
                     margin: "10px 0px",
                   }}
                 >
