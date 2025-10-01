@@ -91,7 +91,13 @@ function ProjectThatMoveUs(): JSX.Element {
         <Title variant="h2" color={Colors["Pink-50"]}>
           Iniciativas que nos movem
         </Title>
-        <SubTitle>
+        <SubTitle
+          sx={{
+            fontSize: { xs: 18, lg: 24 },
+            alignSelf: { xs: "flex-start", lg: "center" },
+            textAlign: { xs: "left", lg: "center" },
+          }}
+        >
           Cada projeto é uma forma de transformar cidades, conheça nosso
           trabalho. Além de ensinar a pedalar, atuamos em diversas frentes.
         </SubTitle>
