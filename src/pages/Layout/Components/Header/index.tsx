@@ -1,5 +1,5 @@
 /* eslint-disable react-x/no-array-index-key */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -12,6 +12,8 @@ import {
   Autocomplete,
   TextField,
   FilterOptionsState,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { createFilterOptions } from "@mui/material/Autocomplete";
 import "material-icons/iconfont/material-icons.css";
@@ -36,6 +38,16 @@ const Header: React.FC = () => {
   const [searchValue, setSearchValue] = useState("");
   const [openDesktopAutocomplete, setOpenDesktopAutocomplete] = useState(false);
   const [openMobileAutocomplete, setOpenMobileAutocomplete] = useState(false);
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
+
+  useEffect(() => {
+    if (isDesktop && open) {
+      setOpen(false);
+      setExpanded(false);
+    }
+  }, [isDesktop, open]);
 
   const filterOptions = (
     options: { label: string; id: number; url: string }[],
