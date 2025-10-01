@@ -5,7 +5,6 @@ import {
   Toolbar,
   Box,
   Typography,
-  Button,
   Drawer,
   AccordionSummary,
   Accordion,
@@ -26,6 +25,7 @@ import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
 import { Link as ButtonLink, useNavigate } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
+import Button from "@components/Button";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
@@ -345,20 +345,13 @@ const Header: React.FC = () => {
         <Box display="flex" flexDirection={"row"} alignItems={"center"}>
           {/* Botão Doar */}
           <Button
+            variantcolor="orange"
             component={ButtonLink}
             to="/doacao"
-            role="link"
             aria-label="Ir para página de doação"
             sx={{
               width: { xs: 77, xl: 120 },
               height: { xs: 48, xl: 48 },
-              backgroundColor: Colors["Orange-50"],
-              borderRadius: "4px",
-              padding: { xs: "0px", lg: "19px 48px" },
-              fontWeight: 600,
-              textTransform: "none",
-              fontSize: { xs: "12px", lg: "16px" },
-              color: "G-White",
             }}
           >
             Doe

@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { Button } from "@mui/material";
 import { Colors } from "../../../../styles/tokens/colors";
 
 interface CardProps {
@@ -108,25 +107,5 @@ export const Image = styled.div`
   @media (max-width: 900px) {
     max-width: 187px;
     height: 150px;
-  }
-`;
-
-export const AcessButton = styled(Button)`
-  width: 100%;
-  min-width: unset;
-  padding: 16px 40px;
-  text-transform: none;
-  border-radius: 4px;
-  background-color: ${Colors["G-Grey-80"]};
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  color: #ffffff;
-
-  @media (max-width: 900px) {
-    padding: 4px 24px;
-    font-size: 12px;
-    border-radius: 8px;
   }
 `;

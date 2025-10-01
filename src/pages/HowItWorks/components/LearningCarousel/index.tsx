@@ -1,14 +1,13 @@
 import {
-  Button,
   ButtonContainer,
   ButtonText,
   Cards,
   CarouselContainer,
 } from "./styles";
 import { StepCard } from "../../../DicasParaPedalar/components/Card";
-import { Link } from "react-router-dom";
 import Title from "@components/Title";
 import Section from "@components/Section";
+import Button from "@components/Button";
 
 interface Step {
   number: number;
@@ -40,10 +39,8 @@ export default function LearningCarousel({ title, steps }: CarouselStepsProps) {
       </CarouselContainer>
 
       <ButtonContainer>
-        <ButtonText>Comece agora</ButtonText>
-        <Link to="">
-          <Button>Crie uma conta</Button>
-        </Link>
+        <ButtonText>Comece agora:</ButtonText>
+        <Button center>Crie uma conta</Button>
       </ButtonContainer>
     </Section>
   );

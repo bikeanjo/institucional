@@ -2,7 +2,6 @@ import {
   FormContainer,
   Input,
   Textarea,
-  SubmitButton,
   FieldWrapper,
   Label,
   AccordionHeader,
@@ -13,6 +12,7 @@ import {
 } from "./styles";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Button from "@components/Button";
 
 export function Form() {
   const [isOpen, setIsOpen] = useState(false);
@@ -165,7 +165,14 @@ export function Form() {
         {errors.mensagem && <ErrorMessage>{errors.mensagem}</ErrorMessage>}
       </FieldWrapper>
 
-      <SubmitButton type="submit">Send</SubmitButton>
+      <Button
+        fullWidthDesktop
+        fullWidthMobile
+        sx={{ borderRadius: "16px" }}
+        type="submit"
+      >
+        Enviar Mensagem
+      </Button>
       {successMessage && (
         <p style={{ color: "green", marginTop: "1rem" }}>{successMessage}</p>
       )}

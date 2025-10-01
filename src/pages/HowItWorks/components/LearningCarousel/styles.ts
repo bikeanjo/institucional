@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "../../../../styles/tokens/colors";
 
 export const CarouselContainer = styled.div`
   display: flex;
@@ -34,15 +33,4 @@ export const ButtonText = styled.p`
   font-size: 16px;
   font-weight: 600;
   margin: 0 100px 8px;
-`;
-
-export const Button = styled.button`
-  background-color: ${Colors["Green-70"]};
-  color: ${Colors["G-White"]};
-  border: none;
-  padding: 16px 32px;
-  border-radius: 90px;
-  font-size: 24px;
-  font-weight: 600;
-  cursor: pointer;
 `;
