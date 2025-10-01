@@ -93,7 +93,7 @@ export function Cards() {
           disabled={currentPage === 0}
         >
           <img
-            src={"/assets/images/diaMundialSemCarro/left.png"}
+            src={"/assets/images/diaMundialSemCarro/left.webp"}
             alt="Anterior"
           />
         </ArrowButton>
@@ -116,7 +116,7 @@ export function Cards() {
           disabled={currentPage === cards.length - 1}
         >
           <img
-            src={"/assets/images/diaMundialSemCarro/right.png"}
+            src={"/assets/images/diaMundialSemCarro/right.webp"}
             alt="Próximo"
           />
         </ArrowButton>

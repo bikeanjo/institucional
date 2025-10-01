@@ -7,7 +7,7 @@ export default function SocialContent() {
   return (
     <Section>
       <img
-        src={"/assets/images/VideoYoutube.png"}
+        src={"/assets/images/VideoYoutube.webp"}
         alt="Mulher sorridente andando de bicicleta em rua urbana, representando pessoas que pedalam."
       />
 

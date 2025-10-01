@@ -30,21 +30,21 @@ function Partners(): JSX.Element {
         >
           <Box
             component="img"
-            src={"/assets/images/Home/Partners/itau.png"}
+            src={"/assets/images/Home/Partners/itau.webp"}
             alt="itauImage"
             height={{ xs: 44, lg: 88 }}
             width={{ xs: 44, lg: 88 }}
           />
           <Box
             component="img"
-            src={"/assets/images/Home/Partners/cca.png"}
+            src={"/assets/images/Home/Partners/cca.webp"}
             alt="ccaImage"
             height={{ xs: 73, lg: 106 }}
             width={{ xs: 79.5, lg: 159 }}
           />
           <Box
             component="img"
-            src={"/assets/images/Home/Partners/tembici.png"}
+            src={"/assets/images/Home/Partners/tembici.webp"}
             alt="tembiciImage"
             height={{ xs: 50.5, lg: 100 }}
             width={{ xs: 60.88, lg: 122 }}
@@ -59,14 +59,14 @@ function Partners(): JSX.Element {
         >
           <Box
             component="img"
-            src={"/assets/images/Home/Partners/cc.png"}
+            src={"/assets/images/Home/Partners/cc.webp"}
             alt="ccImage"
             height={{ xs: 23.5, lg: 47 }}
             width={{ xs: 152, lg: 304 }}
           />
           <Box
             component="img"
-            src={"/assets/images/Home/Partners/ucb.png"}
+            src={"/assets/images/Home/Partners/ucb.webp"}
             alt="ucbImage"
             height={{ xs: 44.5, lg: 89 }}
             width={{ xs: 61, lg: 122 }}

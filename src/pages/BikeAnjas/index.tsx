@@ -83,7 +83,7 @@ function BikeAnjas(): JSX.Element {
               }}
             >
               <img
-                src={"/assets/images/BikeAnjas/bike-anjas-main.png"}
+                src={"/assets/images/BikeAnjas/bike-anjas-main.webp"}
                 alt="Bike com cartaz pendurado escrito Mulher, Autonomia, Bicicleta."
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />

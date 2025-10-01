@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Box, Typography } from "@mui/material";
 import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
-import ImgHowWeOrganize from "../../../../../public/assets/images/WhoWeAre/how-we-organize.png";
+import ImgHowWeOrganize from "../../../../../public/assets/images/WhoWeAre/how-we-organize.webp";
 import Section from "@components/Section";
 
 export function HowWeOrganize(): ReactNode {

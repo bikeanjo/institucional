@@ -21,10 +21,10 @@ const AppWrapper: React.FC<PropsWithChildren> = ({ children }) => {
       "/assets/header/quem-somos.webp",
       "/assets/header/redes-sociais.webp",
       "/assets/header/voluntariado.webp",
-      "/assets/images/EBA/eba.jpg",
-      "/assets/images/BikeAnjas/bike-anjas-main.png",
-      "/assets/images/PedalaOuRepassa/pedala-ou-repassa.jpg",
-      "/assets/images/WhoWeAre/what-is-bike-anjo.png",
+      "/assets/images/EBA/eba.webp",
+      "/assets/images/BikeAnjas/bike-anjas-main.webp",
+      "/assets/images/PedalaOuRepassa/pedala-ou-repassa.webp",
+      "/assets/images/WhoWeAre/what-is-bike-anjo.webp",
       "/assets/images/Home/placeholder/sobre.webp",
     ];
     Object.values(imagePaths).forEach((src) => {

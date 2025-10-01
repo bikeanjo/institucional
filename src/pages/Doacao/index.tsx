@@ -138,7 +138,7 @@ const Doacao = (): JSX.Element => {
               <Text center>Escaneie o QR Code</Text>
               <Box
                 component="img"
-                src={"/assets/images/Doacao/QRCode.png"}
+                src={"/assets/images/Doacao/QRCode.webp"}
                 alt="qrcode"
                 sx={{
                   height: "215px",
@@ -224,7 +224,7 @@ const Doacao = (): JSX.Element => {
               </Title>
               <Box
                 component="img"
-                src={"/assets/images/Doacao/apoia-se.png"}
+                src={"/assets/images/Doacao/apoia-se.webp"}
                 alt="apoiase"
                 sx={{
                   height: "56px",

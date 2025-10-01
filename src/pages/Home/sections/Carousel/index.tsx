@@ -9,7 +9,7 @@ import Carrousel from "@components/Carrousel";
 import Button from "@components/Button";
 
 function Carousel(): JSX.Element {
-  const imageOne = "/assets/images/Home/placeholder/hero.jpg";
+  const imageOne = "/assets/images/Home/placeholder/hero.webp";
   const imageTwo = "/assets/images/Home/placeholder/sobre.webp";
   return (
     <Carrousel config={{ fullWidth: true }}>

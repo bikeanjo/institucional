@@ -23,7 +23,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 1,
       colorCard: "#1C97C5",
-      imageUrl: "/assets/images/ProjectsCarousel/eba.png",
+      imageUrl: "/assets/images/ProjectsCarousel/eba.webp",
       title: "Escola Bike Anjo",
       subtitle: "Projetos",
       link: "/escola-bike-anjo",
@@ -31,7 +31,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 2,
       colorCard: "#ED601C",
-      imageUrl: "/assets/images/ProjectsCarousel/bike-anjas.png",
+      imageUrl: "/assets/images/ProjectsCarousel/bike-anjas.webp",
       title: "Bike Anjas",
       subtitle: "Projetos",
       link: "/bike-anjas",
@@ -39,7 +39,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 3,
       colorCard: "#E1216D",
-      imageUrl: "/assets/images/ProjectsCarousel/pedala-ou-repassa.png",
+      imageUrl: "/assets/images/ProjectsCarousel/pedala-ou-repassa.webp",
       title: "Pedala ou Repassa",
       subtitle: "Projetos",
       link: "/pedala-ou-repassa",
@@ -47,7 +47,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 4,
       colorCard: "#1C97C5",
-      imageUrl: "/assets/images/ProjectsCarousel/de-bike-ao-trabalho.png",
+      imageUrl: "/assets/images/ProjectsCarousel/de-bike-ao-trabalho.webp",
       title: "De Bike Ao Trabalho",
       subtitle: "Projetos",
       link: "",
@@ -55,7 +55,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 5,
       colorCard: "#4D7A18",
-      imageUrl: "/assets/images/ProjectsCarousel/dia-mundial-sem-carro.png",
+      imageUrl: "/assets/images/ProjectsCarousel/dia-mundial-sem-carro.webp",
       title: "Dia Mundial Sem Carro",
       subtitle: "Campanhas",
       link: "",
@@ -63,7 +63,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 6,
       colorCard: "#ED601C",
-      imageUrl: "/assets/images/ProjectsCarousel/bicicleta-nos-planos.png",
+      imageUrl: "/assets/images/ProjectsCarousel/bicicleta-nos-planos.webp",
       title: "Bicicleta nos Planos",
       subtitle: "Campanhas",
       link: "",
@@ -71,7 +71,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 7,
       colorCard: "#1C97C5",
-      imageUrl: "/assets/images/ProjectsCarousel/anjos-na-sua-cidade.png",
+      imageUrl: "/assets/images/ProjectsCarousel/anjos-na-sua-cidade.webp",
       title: "Anjos na sua Cidade",
       subtitle: "Articulações Locais",
       link: "",
