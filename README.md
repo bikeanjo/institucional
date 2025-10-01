@@ -2,68 +2,124 @@
   <img alt="Bike Anjo" src="./docs/bikeanjo.png" width="150">
 </p>
 
-# Bike Anjo
+<h1 align="center">Bike Anjo Institucional</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24e8262d-04a5-4bd3-a5c6-d93d156c279c/deploy-status)](https://app.netlify.com/projects/bikeanjo/deploys)
+<p align="center">
+  Site institucional da Associação Bike Anjo
+</p>
 
-# Technologies
+<p align="center">
+  <a href="https://bikeanjo.org">Site Oficial</a> •
+  <a href="https://github.com/bikeanjo/bikeanjo-institucional/issues">Reportar Bug</a> •
+  <a href="CONTRIBUTING.md">Contribuir</a>
+</p>
 
-- [Vite](https://vite.dev)
-- [React](https://react.dev)
-- [TypeScript](https://www.typescriptlang.org)
+---
 
-# Installation
+## Sobre o projeto
 
-Install project dependencies:
+Este é o site oficial da Associação Bike Anjo. Aqui você encontra informações sobre nossos projetos, como a Escola Bike Anjo, Bike Anjas, voluntariado e como se tornar parte do movimento.
+
+## Tecnologias
+
+- **React 18** - Interface de usuário
+- **TypeScript** - Tipagem estática  
+- **Vite** - Build tool e dev server
+- **Playwright** - Testes E2E
+- **Storybook** - Desenvolvimento de componentes
+
+## Como executar
 
 ```bash
+git clone https://github.com/bikeanjo/bikeanjo-institucional.git
+cd bikeanjo-institucional
 npm install
-```
-
-## Tests
-
-Install Playwright browsers:
-
-```bash
-npx playwright install
-```
-
-Install Playwright operating system dependencies:
-
-```bash
-sudo npx playwright install-deps
-```
-
-# Usage
-
-Run the project locally:
-
-```bash
 npm run dev
 ```
 
-## Tests
+O projeto estará disponível em `http://localhost:5173`
 
-Run unit tests:
+## Versão
+
+**Versão estática 2025**
+
+## Acessibilidade
+
+- **VLibras** - Tradução automática para LIBRAS
+
+## TODO
+
+- Mobile-first / Friendly
+- Ajustes em Botões de Cadastre-se / Login | ocultar por enquanto ou modal de contato
+
+## Scripts disponíveis
 
 ```bash
-npm run test
+npm run dev          # Desenvolvimento
+npm run build        # Build de produção
+npm run test         # Testes unitários
+npm run test:e2e     # Testes E2E
+npm run storybook    # Storybook
 ```
 
-Run E2E tests:
+
+## Estrutura do projeto
+
+```
+src/
+├── components/     # Componentes reutilizáveis
+├── pages/          # Páginas da aplicação
+├── hooks/          # Custom hooks
+├── styles/         # Estilos e temas
+└── Routes.tsx      # Configuração de rotas
+```
+
+## Testes
 
 ```bash
-npm run test:e2e
+npx playwright install
+npm run test         # Testes unitários
+npm run test:e2e     # Testes E2E
 ```
 
-## Storybook
+## Contribuindo
 
-To start Storybook and view the UI components in development, run:
+Contribuições são bem-vindas! Veja nosso [Guia de Contribuição](CONTRIBUTING.md) para detalhes.
 
-```bash
-npm run storybook
-```
+## Contato
 
-# License
+- Website: [bikeanjo.org](https://bikeanjo.org)
+- Email: contato@bikeanjo.org
 
-Code under license [GPL-3.0](LICENSE.md).
+## Licença
+
+Este projeto está sob a licença [GPL-3.0](LICENSE.md).
+
+---
+
+## Equipe
+
+### Design
+- **Teko** - Design e identidade visual
+
+### Desenvolvedoras
+- **Lucas Guima** - Desenvolvimento inicial
+- **Sarah Yukino Nakada** ([@sarassaura](https://github.com/sarassaura)) - Desenvolvimento principal
+- **Silvia Abe** ([@silviaabe](https://github.com/silviaabe)) - Layout e componentes
+- **Maria** ([@mariagmss](https://github.com/mariagmss)) - Bugs e ajustes
+
+
+### Coordenação
+- **Sarah** ([@sarahnakada](https://github.com/sarahnakada)) - Coordenação
+- **Julia Guzman** - Gerente de projeto
+- **Ian Thomaz** ([@ianthomaz](https://github.com/ianthomaz)) - Delivery
+
+---
+
+<p align="center">
+  Feito com ❤️ pela Associação Bike Anjo
+</p>
+
+<p align="center">
+  <a href="https://bikeanjo.org">🚴‍♀️ bikeanjo.org</a>
+</p>
