@@ -5,15 +5,10 @@ export const Card = styled.div`
   min-width: 250px;
   max-width: 330px;
   background-color: ${Colors["G-Grey-10"]};
+  border: 2px solid ${Colors["G-Grey-30"]};
   border-radius: 16px;
   scroll-snap-align: start;
   flex-shrink: 0;
-  border: 2px solid ${Colors["G-Grey-30"]};
-
-  @media screen and (max-width: 1200px) {
-    max-width: 100%;
-    width: 100%;
-  }
 `;
 
 export const TopSection = styled.div<{ $variant: "default" | "attention" }>`

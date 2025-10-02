@@ -8,17 +8,11 @@ export const CarouselContainer = styled.div`
 `;
 
 export const Cards = styled.div`
-  justify-content: center;
-  flex-direction: row;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 24px;
   scroll-behavior: smooth;
-
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
-  }
 
   &::-webkit-scrollbar {
     display: none;

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { StepCard } from "../Card";
-import { Cards } from "./styles";
+import { Arrow, Cards, CarouselContainer } from "./styles";
 import Text from "@components/Text";
 import Title from "@components/Title";
 import Section from "@components/Section";
@@ -25,23 +25,50 @@ export default function CarouselAttentionCards({
 }: CarouselStepsProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const container = scrollRef.current;
+      const scrollAmount = 280;
+      container.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <Section>
       <Title>{title}</Title>
       <Text>{sub}</Text>
 
-      <Cards ref={scrollRef}>
-        {steps.map((step) => (
-          <StepCard
-            key={step.number}
-            number={step.number}
-            title={step.title}
-            subtitle={step.subtitle}
-            description={step.description}
-            variant="attention"
+      <CarouselContainer>
+        <Arrow direction="left" onClick={() => scroll("left")}>
+          <img
+            src={"/assets/images/arrow-back.webp"}
+            alt="Seta para a esquerda"
           />
-        ))}
-      </Cards>
+        </Arrow>
+
+        <Cards ref={scrollRef}>
+          {steps.map((step) => (
+            <StepCard
+              key={step.number}
+              number={step.number}
+              title={step.title}
+              subtitle={step.subtitle}
+              description={step.description}
+              variant="attention"
+            />
+          ))}
+        </Cards>
+
+        <Arrow direction="right" onClick={() => scroll("right")}>
+          <img
+            src={"/assets/images/arrow-forward.webp"}
+            alt="Seta para a direita"
+          />
+        </Arrow>
+      </CarouselContainer>
     </Section>
   );
 }
