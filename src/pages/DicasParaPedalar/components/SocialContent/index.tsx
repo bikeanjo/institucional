@@ -1,12 +1,7 @@
-import {
-  GridWrapper,
-  TextBlock,
-  Image,
-  ButtonWrapper,
-  Paragraph,
-} from "./styles";
+import { GridWrapper, TextBlock, Image, ButtonWrapper } from "./styles";
 import Title from "@components/Title";
 import Button from "@components/Button";
+import Text from "@components/Text";
 
 export default function SocialContent() {
   return (
@@ -17,13 +12,11 @@ export default function SocialContent() {
       />
 
       <TextBlock>
-        <Title sx={{ lineHeight: "120%", alignItems: "self-start" }}>
-          E nosso conteúdo continua!
-        </Title>
-        <Paragraph>
+        <Title marginBottom="20px">E nosso conteúdo continua!</Title>
+        <Text>
           Temos um canal no Youtube recheado com dicas, depoimentos e tanto para
           quem pedala quanto para quem quer começar a pedalar.
-        </Paragraph>
+        </Text>
       </TextBlock>
 
       <ButtonWrapper>

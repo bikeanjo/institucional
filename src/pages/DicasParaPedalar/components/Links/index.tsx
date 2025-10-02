@@ -1,8 +1,7 @@
-import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
+import Text from "@components/Text";
 import { LinkItem, LinkList } from "./styles";
 import Section from "@components/Section";
-import { Colors } from "../../../../styles/tokens/colors";
 
 const links = [
   { label: "Como escolher sua bicicleta", url: "#" },
@@ -20,9 +19,9 @@ export default function SupportLinksSection() {
   return (
     <Section>
       <Title>Links de Apoio</Title>
-      <SubTitle color={Colors["G-Grey-100"]}>
-        Abaixo alguns links que podem te ajudar a dar os primeiros passos
-      </SubTitle>
+      <Text alignItems="flex-start">
+        Abaixo alguns links que podem te ajudar a dar os primeiros passos.
+      </Text>
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>

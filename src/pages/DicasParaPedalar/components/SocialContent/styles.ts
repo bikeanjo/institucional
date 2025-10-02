@@ -49,15 +49,3 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
   }
 `;
-
-export const Paragraph = styled.p`
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 120%;
-  margin-top: 16px;
-  color: #000;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`;
