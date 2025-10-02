@@ -79,7 +79,7 @@ const attentionSteps = [
 
 function CyclingTips(): JSX.Element {
   const Hero = {
-    url: "/assets/header/dicas-para-pedalar.jpg",
+    url: "/assets/header/dicas-para-pedalar.webp",
     backgroundPositionDesktop: "50% 68%",
     backgroundPositionMobile: "50% 80%",
   };

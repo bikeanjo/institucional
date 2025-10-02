@@ -15,8 +15,8 @@ import {
   BoxInfos,
   InfoName,
 } from "./styles";
-import CalendarIcon from "../../../../../public/assets/images/mediaIcons/calendar.svg";
-import LocationIcon from "../../../../../public/assets/images/mediaIcons/location.svg";
+import CalendarIcon from "../../../../../public/assets/images/mediaIcons/calendar.webp";
+import LocationIcon from "../../../../../public/assets/images/mediaIcons/location.webp";
 import TimelineComponent from "./TimelineComponent";
 import { mediaIcons } from "./midiaIcons";
 import { timelineData } from "./data";
@@ -69,7 +69,7 @@ function Timeline(): ReactNode {
                     <BoxMedia key={item.id}>
                       <MediaTitle>{item.title}</MediaTitle>
                       <LinkButton href={item.link.url}>
-                        <img src={"/assets/images/link-icon.svg"} />
+                        <img src={"/assets/images/link-icon.webp"} />
                         {item.link.text}
                       </LinkButton>
                       <Infos>

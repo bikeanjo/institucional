@@ -10,7 +10,7 @@ import Section from "@components/Section";
 
 function DiaMundialSemCarro(): JSX.Element {
   const Hero = {
-    url: "/assets/header/dia-mundial-sem-carro.jpg",
+    url: "/assets/header/dia-mundial-sem-carro.webp",
     backgroundPositionDesktop: "50% 10%",
     backgroundPositionMobile: "50% 10%",
   };
@@ -76,7 +76,7 @@ function DiaMundialSemCarro(): JSX.Element {
               }}
             >
               <img
-                src={"/assets/images/bike-anjo-kid.jpg"}
+                src={"/assets/images/bike-anjo-kid.webp"}
                 alt="Criança sorrindo enquanto pedala"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />

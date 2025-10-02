@@ -7,7 +7,7 @@ export default function SocialContent() {
   return (
     <Section>
       <img
-        src={"/assets/images/VideoYoutube2.png"}
+        src={"/assets/images/VideoYoutube2.webp"}
         alt="Homem sorridente usando óculos e mochila, representando pessoas que pedalam em ambiente urbano."
       />
 

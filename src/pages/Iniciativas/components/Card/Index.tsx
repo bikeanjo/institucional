@@ -26,7 +26,7 @@ export function Card({
   return (
     <>
       <ContainerCard color={color}>
-        <Image src="assets/images/bike-anjo-kid.jpg" />
+        <Image src="assets/images/bike-anjo-kid.webp" />
         <SubTitle color={color}>{title}</SubTitle>
         <Text>{isMobile ? textMobile : textDesktop}</Text>
         <div className="content">

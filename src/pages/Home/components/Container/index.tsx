@@ -41,7 +41,7 @@ const ContainerTemplate = styled.div<ContainerTemplateProps>`
   background-image: ${({ url }) =>
     url
       ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${url})`
-      : `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/Home/placeholder/hero.jpg)`};
+      : `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/Home/placeholder/hero.webp)`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

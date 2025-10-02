@@ -150,7 +150,7 @@ const Header: React.FC = () => {
           <Link to="/">
             <Box
               component="img"
-              src={"/assets/icons/logo-bike-anjo.png"}
+              src={"/assets/icons/logo-bike-anjo.webp"}
               alt="Logo Bike Anjo"
             />
           </Link>

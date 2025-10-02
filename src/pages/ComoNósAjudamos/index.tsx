@@ -14,7 +14,7 @@ import Section from "@components/Section";
 
 function HowWeHelp(): JSX.Element {
   const Hero = {
-    url: "/assets/header/como-nos-ajudamos.jpg",
+    url: "/assets/header/como-nos-ajudamos.webp",
     backgroundPositionDesktop: "50% 70%",
     backgroundPositionMobile: "50% 50%",
   };

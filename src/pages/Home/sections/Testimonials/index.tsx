@@ -59,7 +59,7 @@ function Testimonials(): JSX.Element {
           <CardActions sx={{ height: "100%", padding: 0 }}>
             <Box sx={{ display: "flex", gap: 2 }}>
               <img
-                src={"/assets/images/photoPlaceholder/juliana.jpg"}
+                src={"/assets/images/photoPlaceholder/juliana.webp"}
                 alt="julianaImage"
                 title="julianaImage"
                 style={{
@@ -128,7 +128,7 @@ function Testimonials(): JSX.Element {
           <CardActions sx={{ height: "100%", padding: 0 }}>
             <Box sx={{ display: "flex", gap: 2 }}>
               <img
-                src={"/assets/images/photoPlaceholder/jualiana2.png"}
+                src={"/assets/images/photoPlaceholder/jualiana2.webp"}
                 alt="juliana2Image"
                 title="juliana2Image"
                 style={{

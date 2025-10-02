@@ -16,7 +16,7 @@ export function HeroCardSection({
     <>
       <Container>
         <HeroCard>
-          <Image src={"/assets/images/img-carousel.png"} alt="lala" />
+          <Image src={"/assets/images/img-carousel.webp"} alt="lala" />
           <h2>{title}</h2>
           <p>{children}</p>
           {button && <CardButton>{button}</CardButton>}

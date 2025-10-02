@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import Title from "@components/Title";
 import { Subtitle, SummaryBox, SummaryText } from "./styles";
 import Text from "@components/Text";
-import ValueChart from "../../../../../public/assets/images/WhoWeAre/value-chart.png";
+import ValueChart from "../../../../../public/assets/images/WhoWeAre/value-chart.webp";
 import Accordion from "../../components/Accordions";
 import { Box } from "@mui/material";
 import Section from "@components/Section";

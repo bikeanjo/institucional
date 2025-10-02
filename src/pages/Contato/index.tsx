@@ -7,7 +7,7 @@ import Section from "@components/Section";
 
 function Contact(): JSX.Element {
   const Hero = {
-    url: "/assets/header/contato.jpg",
+    url: "/assets/header/contato.webp",
     backgroundPositionDesktop: "50% 90%",
     backgroundPositionMobile: "50% 90%",
   };

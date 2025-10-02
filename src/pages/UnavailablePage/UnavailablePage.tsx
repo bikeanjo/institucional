@@ -33,7 +33,7 @@ const UnavailablePage: React.FC = () => {
             Enchendo o Pneu...
           </Typography>
           <Box sx={{ width: "79px", heigth: "72px" }}>
-            <img src={"/assets/icons/Biker.svg"} alt="ícone de bicicleta" />
+            <img src={"/assets/icons/Biker.webp"} alt="ícone de bicicleta" />
           </Box>
         </Box>
         <Text>
