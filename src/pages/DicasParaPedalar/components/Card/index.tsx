@@ -2,6 +2,7 @@ import type { HTMLAttributes } from "react";
 import {
   Card,
   Description,
+  Divider,
   Number,
   Subtitle,
   Title,
@@ -31,6 +32,7 @@ export function StepCard({
         <Title>{title}</Title>
         {subtitle && <Subtitle>{subtitle}</Subtitle>}
       </TopSection>
+      <Divider />
       <Description>
         {description.split("\n\n").map((item) => (
           <p key={item}>{item}</p>

@@ -1,48 +1,63 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
-  display: flex;
+export const GridWrapper = styled.section`
+  display: grid;
   gap: 24px;
-  margin: 40px auto;
-  height: 281px;
+  margin: 32px auto 80px;
+  width: 100%;
 
-  img {
-    width: 50%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    height: 100%;
-    padding: 20px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    grid-template-columns: 1fr;
   }
 `;
 
-export const TextWrapper = styled.div`
-  border-radius: 16px;
-  padding: 24px;
-  height: 281px;
-  display: flex;
-  flex-direction: column;
+export const TextBlock = styled.div`
+  grid-row: 1;
+  grid-column: 2;
+
+  @media (max-width: 768px) {
+    grid-row: 1;
+    grid-column: 1;
+  }
 `;
 
-export const Title = styled.h2`
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-  color: #000;
+export const Image = styled.img`
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  @media (max-width: 768px) {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  grid-row: 2;
+  grid-column: 2;
+  align-self: flex-end;
+  @media (max-width: 768px) {
+    grid-row: 3;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const Paragraph = styled.p`
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 120%;
   margin-top: 16px;
   color: #000;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;

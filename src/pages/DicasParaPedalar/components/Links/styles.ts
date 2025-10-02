@@ -26,9 +26,9 @@ export const LinkList = styled.ul`
 `;
 
 export const LinkItem = styled.li`
-  img {
-    margin-right: 10px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
   a {
     font-size: 16px;

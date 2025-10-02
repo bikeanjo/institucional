@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const Title = styled.h2`
-  color: #000;
-  font-size: 48px;
-  font-weight: 600;
-  margin: 0;
-`;
-
 export const CarouselContainer = styled.div`
   display: flex;
   align-items: center;
