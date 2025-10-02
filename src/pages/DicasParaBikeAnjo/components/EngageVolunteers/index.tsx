@@ -1,8 +1,7 @@
-import SubTitle from "@components/SubTitle";
 import Title from "@components/Title";
+import Text from "@components/Text";
 import { ButtonsContainer } from "./styles";
 import Section from "@components/Section";
-import { Colors } from "../../../../styles/tokens/colors";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";
 
@@ -15,7 +14,7 @@ export default function EngageVolunteers({ title, sub }: EngageProps) {
   return (
     <Section>
       <Title>{title}</Title>
-      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
+      <Text>{sub}</Text>
       <ButtonsContainer>
         <Button>Veja o Mini Manual</Button>
         <Button component={Link} to="/contato">

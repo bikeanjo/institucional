@@ -1,11 +1,6 @@
-import {
-  GridWrapper,
-  TextBlock,
-  Image,
-  ButtonWrapper,
-  Paragraph,
-} from "./styles";
+import { GridWrapper, TextBlock, Image, ButtonWrapper } from "./styles";
 import Title from "@components/Title";
+import Text from "@components/Text";
 import Button from "@components/Button";
 
 export default function SocialContent() {
@@ -17,13 +12,19 @@ export default function SocialContent() {
       />
 
       <TextBlock>
-        <Title sx={{ lineHeight: "120%", alignItems: "self-start" }}>
+        <Title
+          sx={{
+            lineHeight: "120%",
+            alignItems: "self-start",
+            marginBottom: "20px",
+          }}
+        >
           E nosso conteúdo continua!
         </Title>
-        <Paragraph>
+        <Text>
           Temos um canal no Youtube recheado com dicas, depoimentos e conteúdo,
           tanto para quem pedala quanto para quem quer começar a pedalar.
-        </Paragraph>
+        </Text>
       </TextBlock>
 
       <ButtonWrapper>
