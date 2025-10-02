@@ -1,32 +1,34 @@
-import Section from "@components/Section";
-import { Button, Paragraph, TextWrapper } from "./styles";
+import { Paragraph, TextWrapper, Wrapper } from "./styles";
 import Title from "@components/Title";
+import Button from "@components/Button";
 
 export default function SocialContent() {
   return (
-    <Section>
+    <Wrapper>
       <img
-        src={"/assets/images/VideoYoutube2.png"}
-        alt="Homem sorridente usando óculos e mochila, representando pessoas que pedalam em ambiente urbano."
+        src={"/assets/images/riding-girl.png"}
+        alt="Mulher sorrindo andando de bicicleta"
       />
 
       <TextWrapper>
         <div>
-          <Title>E nosso conteúdo continua!</Title>
+          <Title sx={{ lineHeight: "120%", alignItems: "self-start" }}>
+            E nosso conteúdo continua!
+          </Title>
           <Paragraph>
             Temos um canal no Youtube recheado com dicas, depoimentos e
             conteúdo, tanto para quem pedala quanto para quem quer começar a
             pedalar.
           </Paragraph>
         </div>
+
         <Button
           href="https://www.youtube.com/@bikeanjo"
-          target="_blank"
           rel="noopener noreferrer"
         >
           Acessar Youtube
         </Button>
       </TextWrapper>
-    </Section>
+    </Wrapper>
   );
 }

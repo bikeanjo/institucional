@@ -3,59 +3,45 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   display: flex;
   gap: 24px;
-  margin: 40px auto;
-  height: 281px;
+  margin: 32px auto 80px;
+  height: auto;
 
   img {
     width: 50%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 100%;
+    height: auto;
     padding: 20px;
 
     img {
       width: 100%;
       height: auto;
+      order: 2;
     }
   }
 `;
 
 export const TextWrapper = styled.div`
   border-radius: 16px;
-  padding: 24px;
-  height: 281px;
+  height: auto;
   display: flex;
   flex-direction: column;
-`;
+  justify-content: space-between;
 
-export const Title = styled.h2`
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-  color: #000;
+  @media (max-width: 768px) {
+    height: auto;
+    order: 1;
+  }
 `;
 
 export const Paragraph = styled.p`
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 120%;
   margin-top: 16px;
   color: #000;
-`;
-
-export const Button = styled.a`
-  align-self: flex-end;
-  margin-top: auto;
-  background-color: #fff;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 16px 32px;
-  border-radius: 148px;
-  text-decoration: none;
-  cursor: pointer;
 `;

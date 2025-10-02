@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../../../styles/tokens/colors";
 
 export const LinkList = styled.ul`
   display: flex;
@@ -16,7 +17,7 @@ export const LinkItem = styled.li`
 
   a {
     font-size: 16px;
-    color: #000;
+    color: ${Colors["Blue-60"]};
     font-weight: 500;
     text-decoration: underline;
     cursor: pointer;
