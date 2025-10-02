@@ -38,7 +38,7 @@ export default function FollowLocalArticulations({
       time: "Das 14:00 às 17:00",
       registration:
         "Atendimento em ordem de chegada no local, sem pré inscrições.",
-      url: "/assets/icons/sao-paulo.png",
+      url: "/assets/icons/sao-paulo.webp",
       coords: tupleCoords(-23.656187, -46.532035),
     },
     {
@@ -54,7 +54,7 @@ export default function FollowLocalArticulations({
       time: "Nos meses de dias curtos, será das 15:00 as 17:00. Nos meses de dias longos, das 16:00 as 18:00",
       registration:
         "Ordem de chegada, limite para 10 podendo ser até 20 a depender da quantidade de anjos disponíveis.",
-      url: "/assets/icons/aracaju.png",
+      url: "/assets/icons/aracaju.webp",
       coords: tupleCoords(-10.943583, -37.054385),
     },
     {
@@ -69,7 +69,7 @@ export default function FollowLocalArticulations({
       date: "Último sábado do mês",
       time: "Das 09:00 às 11:00",
       registration: "Até às 10:00, na Praça da Bandeira no dia da EBA.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-1.454761, -48.499777),
     },
     {
@@ -85,7 +85,7 @@ export default function FollowLocalArticulations({
       time: "Das 09:00 às 12:00",
       registration:
         "Os alunos fazem inscrição no Sympla. São quatro vagas para cada hora. E também temos lista de espera no dia da EBA para as pessoas que não conseguiram se inscrever.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-19.928316, -43.927589),
     },
     {
@@ -100,7 +100,7 @@ export default function FollowLocalArticulations({
       time: "Das 15:00 às 18:00",
       registration:
         "Inscrições não são ilimitadas, se faz pelo formulário disponível no Instagram.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-15.807422, -47.901387),
     },
     {
@@ -115,7 +115,7 @@ export default function FollowLocalArticulations({
       date: "Último domingo do mês",
       time: "Das 15:00 às 18:00",
       registration: "Feitas por ordem de chegada.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-24.58626, -52.801075),
     },
     {
@@ -130,7 +130,7 @@ export default function FollowLocalArticulations({
       date: "Último domingo do mês",
       time: "Das 09:00 às 12:00",
       registration: "Pelas redes sociais e na hora (aula de 30min por aluno).",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-22.878374, -47.061901),
     },
     {
@@ -146,7 +146,7 @@ export default function FollowLocalArticulations({
       time: "Das 09:00 às 12:00",
       registration:
         "No local, pelo Instagram ou WhatsApp (as vagas não são limitadas).",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-8.274227, -35.973963),
     },
     {
@@ -161,7 +161,7 @@ export default function FollowLocalArticulations({
       date: "Último domingo do mês",
       time: "Das 09:00 às 12:00",
       registration: "Sympla ou no local e limitados a 25 vagas.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-19.940174, -44.039169),
     },
     {
@@ -176,7 +176,7 @@ export default function FollowLocalArticulations({
       date: "Primeiro domingo do mês (atualmente parado)",
       time: "Das 09:00 às 12:00",
       registration: "Atendimento por ordem de chegada.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-25.41436, -49.268329),
     },
     {
@@ -191,7 +191,7 @@ export default function FollowLocalArticulations({
       date: "1 domingo por mês, em data a definir a cada mês de acordo com disponibilidade das pessoas voluntárias",
       time: "Das 8:30 às 11:30",
       registration: "No local.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-3.730884, -38.525269),
     },
     {
@@ -206,7 +206,7 @@ export default function FollowLocalArticulations({
       date: "Último domingo do mês",
       time: "Das 10:00 às 13:00",
       registration: "No local.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-23.970583, -46.350045),
     },
     {
@@ -222,7 +222,7 @@ export default function FollowLocalArticulations({
       time: "Das 16:00 às 18:00",
       registration:
         "Inscrições limitadas, realizadas através de link disponibilizado no instagran do BAM.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-3.101852, -60.027098),
     },
     {
@@ -237,7 +237,7 @@ export default function FollowLocalArticulations({
       date: "Primeiro domingo do mês",
       time: "Das 15:00 às 17:30",
       registration: "No local da EBA.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-5.836744, -35.209369),
     },
     {
@@ -252,7 +252,7 @@ export default function FollowLocalArticulations({
       date: "Terceiro domingo do mês",
       time: "A partir das 9:00",
       registration: "Informação não disponível.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-22.88998, -43.128315),
     },
     {
@@ -268,7 +268,7 @@ export default function FollowLocalArticulations({
       time: "Das 9:00 as 12:00",
       registration:
         "Não necessita inscrição prévia, atendimento conforme a chegada.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-30.04947, -51.215476),
     },
     {
@@ -284,7 +284,7 @@ export default function FollowLocalArticulations({
       time: "Das 09:00 às 12:00 e das 09:00 às 14:00",
       registration:
         "Inscrições para os pré-cadastrados da plataforma, convite via sympla com aulas de 40min, 5min de intervalo entre turmas e o limite é a quantidade de bicicleta que temos disponíveis.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-8.055227, -34.876951),
     },
     {
@@ -300,7 +300,7 @@ export default function FollowLocalArticulations({
       time: "Das 9:00 às 12:00 ou das 15:30 às 18:00",
       registration:
         "As inscrições são feitas no local e por ordem de chegada no dia do evento, sendo limitadas de acordo com o número de pessoas voluntárias.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-22.905174, -43.221817),
     },
     {
@@ -316,7 +316,7 @@ export default function FollowLocalArticulations({
       time: "Das 08:00 às 11:00",
       registration:
         "As inscrições são feitas no local e por ordem de chegada no dia do evento, sendo limitadas de acordo com o número de pessoas voluntárias.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-12.988952, -38.521455),
     },
     {
@@ -331,7 +331,7 @@ export default function FollowLocalArticulations({
       time: "Das 16:00 às 19:00",
       registration:
         "Atendimento apenas mediante inscrição por formulário online, previamente divulgado.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-2.52371, -44.297062),
     },
     {
@@ -347,7 +347,7 @@ export default function FollowLocalArticulations({
       time: "Das 9:00 às 12:00",
       registration:
         "Aprender a Pedalar é com inscrição na hora, por ordem de chegada, Pedalar Pela Cidade tem inscrição prévia.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-23.567119, -46.694762),
     },
     {
@@ -363,7 +363,7 @@ export default function FollowLocalArticulations({
       time: "Das 17:00 às 19:00",
       registration:
         "Inscrições limitadas pelo link que disponibilizamos no grupo da Escola e pelo Instagram.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-5.086347, -42.790908),
     },
     {
@@ -378,7 +378,7 @@ export default function FollowLocalArticulations({
       time: "Das 09:00 às 12:00",
       registration:
         "Inscrições limitadas à 06 pessoas, aproximadamente, via redes sociais do BA Valença.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-13.372855, -39.071544),
     },
     {
@@ -393,7 +393,7 @@ export default function FollowLocalArticulations({
       time: "Das 9:30 às 11:30",
       registration:
         "Vagas somente com inscrição prévia pelo WhatsApp até meio-dia de sábado.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-20.356436, -40.430822),
     },
     {
@@ -407,7 +407,7 @@ export default function FollowLocalArticulations({
       date: "Último domingo do mês",
       time: "Das 08:00 as 11:00",
       registration: "No local da EBA.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-20.328288, -40.290906),
     },
     {
@@ -422,7 +422,7 @@ export default function FollowLocalArticulations({
       date: "Primeiro domingo do mês",
       time: "Das 08:00 as 11:00",
       registration: "No local da EBA.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-20.317139, -40.295047),
     },
     {
@@ -438,7 +438,7 @@ export default function FollowLocalArticulations({
       time: "Das 8:00 às 10:30 para o público e das 7h às 12h para voluntários",
       registration:
         "Limitadas. Divulgamos o link para solicitação de pré inscrição até uma semana antes do evento. Daí até dois dias antes enviamos a confirmação por e-mail e publicamos a lista dos pré-inscritos. Fazemos lista de espera no local para ocupar vagas caso haja desistências e de acordo com a disponibilidade de voluntários e bicicletas, para isso pedimos que os interessados cheguem cedo, antes das 8h.",
-      url: "/assets/icons/abc.png",
+      url: "/assets/icons/abc.webp",
       coords: tupleCoords(-22.489899, -44.088387),
     },
   ];

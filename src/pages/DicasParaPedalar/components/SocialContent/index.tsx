@@ -1,12 +1,13 @@
 import Section from "@components/Section";
-import { Button, Paragraph, TextWrapper } from "./styles";
+import { Paragraph, TextWrapper } from "./styles";
 import Title from "@components/Title";
+import Button from "@components/Button";
 
 export default function SocialContent() {
   return (
     <Section>
       <img
-        src={"/assets/images/VideoYoutube.png"}
+        src={"/assets/images/VideoYoutube.webp"}
         alt="Mulher sorridente andando de bicicleta em rua urbana, representando pessoas que pedalam."
       />
 
@@ -20,7 +21,6 @@ export default function SocialContent() {
         </div>
         <Button
           href="https://www.youtube.com/@bikeanjo"
-          target="_blank"
           rel="noopener noreferrer"
         >
           Acessar Youtube

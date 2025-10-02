@@ -1,7 +1,7 @@
 import { type JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
 import Section from "@components/Section";
 import Carrousel from "@components/Carrousel";
+import Button from "@components/Button";
 
 function ProjectThatMoveUs(): JSX.Element {
   const cardsInfo: {
@@ -22,7 +23,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 1,
       colorCard: "#1C97C5",
-      imageUrl: "/assets/images/ProjectsCarousel/eba.png",
+      imageUrl: "/assets/images/ProjectsCarousel/eba.webp",
       title: "Escola Bike Anjo",
       subtitle: "Projetos",
       link: "/escola-bike-anjo",
@@ -30,7 +31,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 2,
       colorCard: "#ED601C",
-      imageUrl: "/assets/images/ProjectsCarousel/bike-anjas.png",
+      imageUrl: "/assets/images/ProjectsCarousel/bike-anjas.webp",
       title: "Bike Anjas",
       subtitle: "Projetos",
       link: "/bike-anjas",
@@ -38,7 +39,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 3,
       colorCard: "#E1216D",
-      imageUrl: "/assets/images/ProjectsCarousel/pedala-ou-repassa.png",
+      imageUrl: "/assets/images/ProjectsCarousel/pedala-ou-repassa.webp",
       title: "Pedala ou Repassa",
       subtitle: "Projetos",
       link: "/pedala-ou-repassa",
@@ -46,7 +47,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 4,
       colorCard: "#1C97C5",
-      imageUrl: "/assets/images/ProjectsCarousel/de-bike-ao-trabalho.png",
+      imageUrl: "/assets/images/ProjectsCarousel/de-bike-ao-trabalho.webp",
       title: "De Bike Ao Trabalho",
       subtitle: "Projetos",
       link: "",
@@ -54,7 +55,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 5,
       colorCard: "#4D7A18",
-      imageUrl: "/assets/images/ProjectsCarousel/dia-mundial-sem-carro.png",
+      imageUrl: "/assets/images/ProjectsCarousel/dia-mundial-sem-carro.webp",
       title: "Dia Mundial Sem Carro",
       subtitle: "Campanhas",
       link: "",
@@ -62,7 +63,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 6,
       colorCard: "#ED601C",
-      imageUrl: "/assets/images/ProjectsCarousel/bicicleta-nos-planos.png",
+      imageUrl: "/assets/images/ProjectsCarousel/bicicleta-nos-planos.webp",
       title: "Bicicleta nos Planos",
       subtitle: "Campanhas",
       link: "",
@@ -70,7 +71,7 @@ function ProjectThatMoveUs(): JSX.Element {
     {
       id: 7,
       colorCard: "#1C97C5",
-      imageUrl: "/assets/images/ProjectsCarousel/anjos-na-sua-cidade.png",
+      imageUrl: "/assets/images/ProjectsCarousel/anjos-na-sua-cidade.webp",
       title: "Anjos na sua Cidade",
       subtitle: "Articulações Locais",
       link: "",
@@ -91,7 +92,13 @@ function ProjectThatMoveUs(): JSX.Element {
         <Title variant="h2" color={Colors["Pink-50"]}>
           Iniciativas que nos movem
         </Title>
-        <SubTitle>
+        <SubTitle
+          sx={{
+            fontSize: { xs: 18, lg: 24 },
+            alignSelf: { xs: "flex-start", lg: "center" },
+            textAlign: { xs: "left", lg: "center" },
+          }}
+        >
           Cada projeto é uma forma de transformar cidades, conheça nosso
           trabalho. Além de ensinar a pedalar, atuamos em diversas frentes.
         </SubTitle>
@@ -130,42 +137,22 @@ function ProjectThatMoveUs(): JSX.Element {
               <Button
                 component={Link}
                 to={card.link}
+                variantcolor="gray"
+                fullWidthMobile
+                fullWidthDesktop
                 sx={{
                   width: "100%",
-                  borderRadius: "4px",
-                  backgroundColor: " #393939",
-                  color: "#fff",
-                  textTransform: "none",
                 }}
               >
-                <Typography fontWeight={700} fontSize={16}>
-                  Sobre
-                </Typography>
+                Sobre
               </Button>
             </ProjectInfo>
           </ProjectBox>
         ))}
       </Carrousel>
 
-      <Button
-        component={Link}
-        to="/iniciativas"
-        sx={{
-          backgroundColor: Colors["Green-70"],
-          color: "var(--mui-palette-G-White)",
-          padding: "16px 24px",
-          height: { xs: 40 },
-          width: { xs: "215px" },
-          borderRadius: { xs: "10px", lg: "8px" },
-          textTransform: "none",
-          margin: "auto",
-          boxShadow: "0px 2px 6px 0px rgba(0, 0, 0, 0.15)",
-          "&:hover": {
-            backgroundColor: "#43700E",
-          },
-        }}
-      >
-        <Typography fontWeight={600}>Veja Nossas Iniciativas</Typography>
+      <Button component={Link} to="/iniciativas" center>
+        Veja Nossas Iniciativas
       </Button>
     </Section>
   );

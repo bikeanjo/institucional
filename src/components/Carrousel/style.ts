@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import styled from "styled-components";
+import { Colors } from "../../styles/tokens/colors";
 
 export const Container = styled(Box)`
   display: flex;
@@ -20,8 +21,8 @@ export const Controls = styled("div")`
     transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;
-    color: white;
-    background-color: #393939;
+    color: ${Colors["Green-70"]};
+    background-color: ${Colors["Green-10"]};
     border-radius: 100%;
     padding: 12px;
 

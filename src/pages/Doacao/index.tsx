@@ -1,9 +1,4 @@
-import {
-  Box,
-  Divider,
-  InputAdornment,
-  Button as MuiButton,
-} from "@mui/material";
+import { Box, Divider, InputAdornment } from "@mui/material";
 import Header from "@components/Header";
 import { type JSX } from "react";
 import Title from "@components/Title";
@@ -20,7 +15,7 @@ import Section from "@components/Section";
 
 const Doacao = (): JSX.Element => {
   const Hero = {
-    url: "/assets/header/doe.jpg",
+    url: "/assets/header/doe.webp",
     backgroundPositionDesktop: "50% 40%",
     backgroundPositionMobile: "50% 40%",
   };
@@ -36,21 +31,60 @@ const Doacao = (): JSX.Element => {
   return (
     <>
       <Header secondary Hero={Hero}>
-        <h2>Doação</h2>
+        <h2>Doe</h2>
       </Header>
 
       <ScrollSpyMenu />
       <BreadCrumb />
 
       <Container>
-        <Title>
-          A gente adoraria viver só de pedaladas mas existem custos que Bike
-          Anjo que precisa de uma ajudinha.
-        </Title>
-        <Text>
-          Coisas como a manutenção deste site, o trabalho de articulação da e as
-          atividades que promovemos pelo país dependem da sua ajuda.
-        </Text>
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: "1032px",
+            margin: "auto",
+            display: "grid",
+            gap: { xs: "16px", lg: "24px" },
+            gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
+          }}
+        >
+          <Box
+            sx={{
+              gridRow: { xs: 1, lg: 1 },
+              gridColumn: { xs: 1, lg: 1 },
+            }}
+          >
+            <Title>
+              A gente adoraria viver só de pedaladas mas existem custos que Bike
+              Anjo que precisa de uma ajudinha.
+            </Title>
+          </Box>
+          <Box
+            component="img"
+            src="/assets/images/Doacao/img-doe.png"
+            alt="Imagem de uma mulher ajudando outra mulher a pedalar"
+            sx={{
+              gridRow: { xs: 2, lg: "1 / span 2" },
+              gridColumn: { xs: 1, lg: 2 },
+              alignSelf: "center",
+              width: "100%",
+              maxHeight: { lg: "300px" },
+              objectFit: "cover",
+              borderRadius: "16px",
+            }}
+          />
+          <Box
+            sx={{
+              gridRow: { xs: 3, lg: 2 },
+              gridColumn: { xs: 1, lg: 1 },
+            }}
+          >
+            <Text>
+              Coisas como a manutenção deste site, o trabalho de articulação da
+              e as atividades que promovemos pelo país dependem da sua ajuda.
+            </Text>
+          </Box>
+        </Box>
 
         <Section
           borderColor={Colors["Orange-60"]}
@@ -104,7 +138,7 @@ const Doacao = (): JSX.Element => {
               <Text center>Escaneie o QR Code</Text>
               <Box
                 component="img"
-                src={"/assets/images/Doacao/QRCode.png"}
+                src={"/assets/images/Doacao/QRCode.webp"}
                 alt="qrcode"
                 sx={{
                   height: "215px",
@@ -190,7 +224,7 @@ const Doacao = (): JSX.Element => {
               </Title>
               <Box
                 component="img"
-                src={"/assets/images/Doacao/apoia-se.png"}
+                src={"/assets/images/Doacao/apoia-se.webp"}
                 alt="apoiase"
                 sx={{
                   height: "56px",
@@ -203,21 +237,14 @@ const Doacao = (): JSX.Element => {
                 Nesse link você contribui com a ONG todo mês e nos ajuda a
                 seguir transformando cidades com a bicicleta!
               </Text>
-              <MuiButton
-                fullWidth
+              <Button
+                variantcolor="orange"
                 sx={{
-                  borderRadius: "8.4px",
-                  backgroundColor: Colors["Orange-50"],
-                  padding: "18px",
-                  color: Colors["G-White"],
-                  fontWeight: 700,
-                  fontSize: "16px",
-                  textTransform: "none",
                   width: "221px",
                 }}
               >
                 Clique para continuar
-              </MuiButton>
+              </Button>
             </Box>
           </Box>
         </Section>
@@ -249,9 +276,9 @@ const Doacao = (): JSX.Element => {
                 },
               }}
             >
-              <Link to="/social-media">
-                <Button>Veja nossas redes</Button>
-              </Link>
+              <Button component={Link} to="/social-media">
+                Veja nossas redes
+              </Button>
             </Box>
           </Box>
         </Section>

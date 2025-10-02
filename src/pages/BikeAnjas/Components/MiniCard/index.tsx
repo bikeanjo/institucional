@@ -1,5 +1,6 @@
 import type { JSX } from "react";
-import { Card, AcessButton } from "./styles";
+import { Card } from "./styles";
+import Button from "@components/Button";
 
 interface MiniCardProps {
   title: string;
@@ -24,7 +25,16 @@ export function MiniCard({
         <div className="content">
           <p>{children}</p>
         </div>
-        {!secondary && <AcessButton>{textButton}</AcessButton>}
+        {!secondary && (
+          <Button
+            variantcolor="gray"
+            fullWidthDesktop
+            fullWidthMobile
+            sx={{ height: "48px" }}
+          >
+            {textButton}
+          </Button>
+        )}
       </Card>
     </>
   );

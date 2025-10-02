@@ -1,11 +1,10 @@
 /* eslint-disable react-x/no-array-index-key */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
   Box,
   Typography,
-  Button,
   Drawer,
   AccordionSummary,
   Accordion,
@@ -13,6 +12,8 @@ import {
   Autocomplete,
   TextField,
   FilterOptionsState,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { createFilterOptions } from "@mui/material/Autocomplete";
 import "material-icons/iconfont/material-icons.css";
@@ -26,6 +27,7 @@ import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
 import { Link as ButtonLink, useNavigate } from "react-router-dom";
 import { Colors } from "../../../../styles/tokens/colors";
+import Button from "@components/Button";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;
@@ -36,6 +38,16 @@ const Header: React.FC = () => {
   const [searchValue, setSearchValue] = useState("");
   const [openDesktopAutocomplete, setOpenDesktopAutocomplete] = useState(false);
   const [openMobileAutocomplete, setOpenMobileAutocomplete] = useState(false);
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
+
+  useEffect(() => {
+    if (isDesktop && open) {
+      setOpen(false);
+      setExpanded(false);
+    }
+  }, [isDesktop, open]);
 
   const filterOptions = (
     options: { label: string; id: number; url: string }[],
@@ -138,7 +150,7 @@ const Header: React.FC = () => {
           <Link to="/">
             <Box
               component="img"
-              src={"/assets/icons/logo-bike-anjo.png"}
+              src={"/assets/icons/logo-bike-anjo.webp"}
               alt="Logo Bike Anjo"
             />
           </Link>
@@ -345,20 +357,13 @@ const Header: React.FC = () => {
         <Box display="flex" flexDirection={"row"} alignItems={"center"}>
           {/* Botão Doar */}
           <Button
+            variantcolor="orange"
             component={ButtonLink}
             to="/doacao"
-            role="link"
             aria-label="Ir para página de doação"
             sx={{
               width: { xs: 77, xl: 120 },
               height: { xs: 48, xl: 48 },
-              backgroundColor: Colors["Orange-50"],
-              borderRadius: "4px",
-              padding: { xs: "0px", lg: "19px 48px" },
-              fontWeight: 600,
-              textTransform: "none",
-              fontSize: { xs: "12px", lg: "16px" },
-              color: "G-White",
             }}
           >
             Doe

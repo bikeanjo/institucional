@@ -43,7 +43,7 @@ export default function CarouselTipCards({
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
           <img
-            src={"/assets/images/arrow-back.png"}
+            src={"/assets/images/arrow-back.webp"}
             alt="Seta para a esquerda"
           />
         </Arrow>
@@ -61,7 +61,7 @@ export default function CarouselTipCards({
 
         <Arrow direction="right" onClick={() => scroll("right")}>
           <img
-            src={"/assets/images/arrow-forward.png"}
+            src={"/assets/images/arrow-forward.webp"}
             alt="Seta para a direita"
           />
         </Arrow>

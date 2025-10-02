@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Button } from "@mui/material";
 import { Colors } from "../../../../styles/tokens/colors";
 
 export const ContainerCard = styled.div<{ color?: string }>`
@@ -68,24 +67,5 @@ export const Text = styled.p`
     font-size: 12px;
     padding: 0px;
     white-space: pre-line;
-  }
-`;
-
-export const CardButton = styled(Button)`
-  width: 100%;
-  padding: 15px 32px;
-  text-transform: none;
-  border-radius: 4px;
-  background-color: ${Colors["G-Grey-80"]};
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  color: #ffffff;
-
-  @media (max-width: 900px) {
-    padding: 8px 24px;
-    font-size: 12px;
-    border-radius: 8px;
   }
 `;

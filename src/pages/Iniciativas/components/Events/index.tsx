@@ -5,7 +5,7 @@ export default function Events() {
   return (
     <Container>
       <MapImage
-        src={"/assets/images/articulation-map.png"}
+        src={"/assets/images/articulation-map.webp"}
         alt="Local Articulations"
       />
       <FindLocalArticulation />

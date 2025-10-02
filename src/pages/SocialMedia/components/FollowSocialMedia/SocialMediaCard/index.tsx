@@ -1,6 +1,7 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import type { JSX } from "react";
 import { Colors } from "../../../../../styles/tokens/colors";
+import Button from "@components/Button";
 
 interface SocialCardProps {
   icon: JSX.Element;
@@ -76,19 +77,7 @@ export function SocialCard({
           {subtitle}
         </Typography>
         <Box>
-          <Button
-            sx={{
-              backgroundColor: Colors["G-Grey-80"],
-              padding: "8px 24px",
-              borderRadius: "8px",
-              fontSize: "16px",
-              fontWeight: "700",
-              lineHeight: "100%",
-              color: Colors["G-White"],
-              textTransform: "none",
-            }}
-            onClick={onClick}
-          >
+          <Button variantcolor="gray" onClick={onClick} sx={{ height: "48px" }}>
             Acesse
           </Button>
         </Box>

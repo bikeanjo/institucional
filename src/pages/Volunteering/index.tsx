@@ -11,6 +11,7 @@ import Container from "@components/Container";
 import BreadCrumb from "@components/BreadCrumb";
 import ScrollSpyMenu from "@components/ScrollSpyMenu";
 import Section from "@components/Section";
+import { Link } from "react-router-dom";
 
 function Volunteering(): ReactNode {
   const Hero = {
@@ -81,8 +82,8 @@ function Volunteering(): ReactNode {
               }}
             >
               <img
-                src={"/assets/images/bike-anjo-kid.jpg"}
-                alt="Criança sorrindo enquanto pedala"
+                src={"/assets/images/Voluntariado/img-voluntariado.png"}
+                alt="Homem tirando foto de um grupo de bike anjos"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </Box>
@@ -105,7 +106,9 @@ function Volunteering(): ReactNode {
                 gestão ou colocando a mão na massa, mande uma mensagem e nos
                 conte como gostaria de contribuir.
               </Text>
-              <Button>Entre em Contato</Button>
+              <Button component={Link} to="/contato">
+                Entre em Contato
+              </Button>
             </Box>
           </Box>
         </Section>

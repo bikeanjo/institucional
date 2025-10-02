@@ -11,7 +11,7 @@ import Title from "@components/Title";
 
 const Iniciativas: React.FC = () => {
   const Hero = {
-    url: "/assets/header/iniciativas.jpg",
+    url: "/assets/header/iniciativas.webp",
     backgroundPositionDesktop: "50% 60%",
     backgroundPositionMobile: "50% 70%",
   };

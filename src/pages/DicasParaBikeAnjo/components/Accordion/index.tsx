@@ -5,8 +5,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import AddIcon from "@mui/icons-material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
+import { ChevronLeft } from "@mui/icons-material";
 import { Colors } from "../../../../styles/tokens/colors";
 import { ReactNode } from "react";
 
@@ -38,27 +37,15 @@ export function QuestionAccordion({
     >
       <AccordionSummary
         expandIcon={
-          expanded === "panel1" ? (
-            <RemoveIcon
-              sx={{
-                backgroundColor: "transparent",
-                color: Colors["G-Grey-100"],
-                border: `2px solid ${Colors["G-Grey-100"]}`,
-                borderRadius: "50%",
-                fontSize: 20,
-              }}
-            />
-          ) : (
-            <AddIcon
-              sx={{
-                backgroundColor: "transparent",
-                color: Colors["G-Grey-100"],
-                border: `2px solid ${Colors["G-Grey-100"]}`,
-                borderRadius: "50%",
-                fontSize: 20,
-              }}
-            />
-          )
+          <ChevronLeft
+            sx={{
+              color: Colors["Green-70"],
+              fontSize: 40,
+              transition: "transform 0.3s",
+              transform:
+                expanded === "panel1" ? "rotate(-90deg)" : "rotate(-90deg)",
+            }}
+          />
         }
         sx={{
           backgroundColor: Colors["G-Grey-20"],

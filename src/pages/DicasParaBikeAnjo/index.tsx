@@ -56,7 +56,7 @@ const teachingSteps = [
 
 function CyclingTips(): JSX.Element {
   const Hero = {
-    url: "/assets/header/dicas-para-bike-anjo.jpg",
+    url: "/assets/header/dicas-para-bike-anjo.webp",
     backgroundPositionDesktop: "50% 40%",
     backgroundPositionMobile: "50% 40%",
   };

@@ -58,7 +58,7 @@ function TakeOurCourse(): ReactNode {
             O Programa de Formação Bike Anjo é um convite para quem quer
             transformar a cidade com a bicicleta.
           </SubTitle>
-          <Text variant="body1" size="18px">
+          <Text style={{ color: "#2c2c2c" }} variant="body1" size="18px">
             Com encontros ao vivo, conteúdos exclusivos e certificação gratuita,
             essa jornada prepara novas pessoas voluntárias para atuarem com
             segurança, acolhimento e propósito em suas comunidades.
@@ -125,7 +125,7 @@ function TakeOurCourse(): ReactNode {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              paddingX: { xs: "16px", md: "92px" },
+              paddingX: { lg: "92px" },
               paddingY: "40px",
               gap: "16px",
             }}
@@ -133,7 +133,17 @@ function TakeOurCourse(): ReactNode {
             <SubTitle variant="h2" color="Pink-50" fontWeight={700}>
               Resultados Esperados
             </SubTitle>
-            <Text variant="body1" size="16px" textAlign={"center"}>
+            <Text
+              style={{ color: "#2c2c2c" }}
+              variant="body1"
+              size="16px"
+              sx={{
+                textAlign: {
+                  xs: "left",
+                  lg: "center",
+                },
+              }}
+            >
               Ao final do programa, você estará preparado para atuar como uma
               pessoa voluntária na rede Bike Anjo, contribuindo para a
               transformação das cidades através da mobilidade sustentável e
@@ -145,17 +155,23 @@ function TakeOurCourse(): ReactNode {
         <Section
           backgroundColor={Colors["Green-20"]}
           borderColor={Colors["Green-70"]}
-          center
         >
           <Title center color={Colors["Green-70"]}>
             Inscreva-se Agora!
           </Title>
-          <Text variant="body1" size="16px" textAlign={"center"}>
+          <Text
+            variant="body1"
+            size="16px"
+            sx={{
+              alignSelf: { xs: "flex-start", lg: "center" },
+              textAlign: { xs: "left", lg: "center" },
+            }}
+          >
             Bora construir cidades mais humanas e pedaláveis nos unindo?
             Inscreva-se no Programa de Formação Bike Anjo e venha transformar o
             mundo com a gente.
-          </Text>
-          <Text variant="body1" size="16px" textAlign={"center"}>
+            <br />
+            <br />
             Veja as inscrições para a próxima turma!
             <br />
             Vagas limitadas.
