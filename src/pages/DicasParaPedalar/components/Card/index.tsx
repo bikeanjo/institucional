@@ -14,6 +14,7 @@ interface StepCardProps {
   subtitle?: string;
   description: string;
   variant?: "default" | "attention";
+  className?: string;
 }
 
 export function StepCard({
@@ -22,9 +23,10 @@ export function StepCard({
   subtitle,
   description,
   variant = "default",
+  className,
 }: StepCardProps) {
   return (
-    <Card>
+    <Card className={className}>
       <TopSection $variant={variant}>
         <Number>{number}</Number>
         <Title>{title}</Title>
