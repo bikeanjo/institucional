@@ -17,7 +17,7 @@ export default function EngageVolunteers({ title, sub }: EngageProps) {
       <Title>{title}</Title>
       <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
       <ButtonsContainer>
-        <Button>Veja aqui o Mini Manual</Button>
+        <Button>Veja o Mini Manual</Button>
         <Button component={Link} to="/contato">
           Contate a mobilização
         </Button>
