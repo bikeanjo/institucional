@@ -12,7 +12,7 @@ export default function SocialContent() {
   return (
     <GridWrapper>
       <Image
-        src={"/assets/images/riding-girl.png"}
+        src={"/assets/images/riding-girl.webp"}
         alt="Mulher sorrindo andando de bicicleta"
       />
 

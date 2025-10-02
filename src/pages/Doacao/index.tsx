@@ -61,7 +61,7 @@ const Doacao = (): JSX.Element => {
           </Box>
           <Box
             component="img"
-            src="/assets/images/Doacao/img-doe.png"
+            src="/assets/images/Doacao/img-doe.webp"
             alt="Imagem de uma mulher ajudando outra mulher a pedalar"
             sx={{
               gridRow: { xs: 2, lg: "1 / span 2" },
