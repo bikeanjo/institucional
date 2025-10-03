@@ -1,19 +1,20 @@
-import type { HTMLAttributes } from "react";
 import {
   Card,
   Description,
+  Divider,
   Number,
   Subtitle,
   Title,
   TopSection,
 } from "./styles";
 
-interface StepCardProps extends HTMLAttributes<HTMLDivElement> {
+interface StepCardProps {
   number: number;
   title: string;
   subtitle?: string;
   description: string;
   variant?: "default" | "attention";
+  className?: string;
 }
 
 export function StepCard({
@@ -31,6 +32,7 @@ export function StepCard({
         <Title>{title}</Title>
         {subtitle && <Subtitle>{subtitle}</Subtitle>}
       </TopSection>
+      <Divider />
       <Description>
         {description.split("\n\n").map((item) => (
           <p key={item}>{item}</p>

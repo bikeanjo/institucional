@@ -1,5 +1,5 @@
-import Text from "@components/Text";
 import Title from "@components/Title";
+import Text from "@components/Text";
 import { LinkItem, LinkList } from "./styles";
 import Section from "@components/Section";
 
@@ -19,13 +19,13 @@ export default function SupportLinksSection() {
   return (
     <Section>
       <Title>Links de Apoio</Title>
-      <Text>
-        Abaixo alguns links que podem te ajudar a dar os primeiros passos
+      <Text alignItems="flex-start">
+        Abaixo alguns links que podem te ajudar a dar os primeiros passos.
       </Text>
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>
-            <img src={"/assets/images/link.webp"} alt="Chain Icon" />
+            <img src={"/assets/images/link-icon.webp"} alt="Chain Icon" />
             <a href={item.url} target="_blank" rel="noopener noreferrer">
               {item.label}
             </a>

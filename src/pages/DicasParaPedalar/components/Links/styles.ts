@@ -1,21 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../../../styles/tokens/colors";
 
-export const Wrapper = styled.section`
-  margin: 40px auto;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
-export const Title = styled.h2`
-  color: #000;
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-`;
-
 export const LinkList = styled.ul`
   display: flex;
   flex-direction: column;
@@ -26,9 +11,9 @@ export const LinkList = styled.ul`
 `;
 
 export const LinkItem = styled.li`
-  img {
-    margin-right: 10px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
   a {
     font-size: 16px;
