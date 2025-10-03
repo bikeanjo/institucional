@@ -2,9 +2,8 @@ import { useRef } from "react";
 import { StepCard } from "../Card";
 import { Arrow, Cards, CarouselContainer } from "./styles";
 import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
+import Text from "@components/Text";
 import Section from "@components/Section";
-import { Colors } from "../../../../styles/tokens/colors";
 
 interface Step {
   number: number;
@@ -39,7 +38,7 @@ export default function CarouselTeachingCards({
   return (
     <Section>
       <Title>{title}</Title>
-      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
+      <Text>{sub}</Text>
 
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>

@@ -72,12 +72,12 @@ function CyclingTips(): JSX.Element {
       <Container>
         <CarouselTeachingCards
           title="Como ensinar alguém a pedalar"
-          sub="Abaixo seguem algumas dicas praticas para você lembrar do que fazer durante as oficinas, mas é importante que o Bike Anjo passe pela CUBA para se capacitar como pessoa voluntária"
+          sub="Abaixo seguem algumas dicas praticas para você lembrar do que fazer durante as oficinas, mas é importante que o Bike Anjo passe pela CUBA para se capacitar como pessoa voluntária."
           steps={teachingSteps}
         />
         <EngageVolunteers
           title="Como chamar e engajar voluntários?"
-          sub="Manter o voluntário ativo é um desafio grande, mas aqui compilamos algumas atividades que podem trazer mais engajamento nas atividades presenciais e não presenciais. Entendemos que cada cidade tem seu modo particular de engajar os voluntários e o que propomos aqui são apenas ideias, ferramentas e materiais que são adaptáveis para as realidades locais"
+          sub="Manter o voluntário ativo é um desafio grande, mas aqui compilamos algumas atividades que podem trazer mais engajamento nas atividades presenciais e não presenciais. Entendemos que cada cidade tem seu modo particular de engajar os voluntários e o que propomos aqui são apenas ideias, ferramentas e materiais que são adaptáveis para as realidades locais."
         />
         <RideWithVoice />
         <SupportLinksSection />

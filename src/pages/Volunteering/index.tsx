@@ -82,7 +82,7 @@ function Volunteering(): ReactNode {
               }}
             >
               <img
-                src={"/assets/images/Voluntariado/img-voluntariado.png"}
+                src={"/assets/images/Voluntariado/img-voluntariado.webp"}
                 alt="Homem tirando foto de um grupo de bike anjos"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
