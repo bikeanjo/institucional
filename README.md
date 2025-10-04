@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://bikeanjo.org">Site Oficial</a> •
-  <a href="https://github.com/bikeanjo/bikeanjo-institucional/issues">Reportar Bug</a> •
+  <a href="https://github.com/bikeanjo/institucional/issues">Reportar Bug</a> •
   <a href="CONTRIBUTING.md">Contribuir</a>
 </p>
 
