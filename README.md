@@ -102,7 +102,7 @@ Este projeto está sob a licença [GPL-3.0](LICENSE.md).
 ### Design
 - **Teko** - Design e identidade visual
 
-### Desenvolvedoras
+### Desenvolvimento
 - **Lucas Guima** - Desenvolvimento inicial
 - **Sarah Yukino Nakada** ([@sarassaura](https://github.com/sarassaura)) - Desenvolvimento principal
 - **Silvia Abe** ([@silviaabe](https://github.com/silviaabe)) - Layout e componentes
