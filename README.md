@@ -32,7 +32,7 @@ Este é o site oficial da Associação Bike Anjo. Aqui você encontra informaç�
 
 ```bash
 git clone https://github.com/bikeanjo/bikeanjo-institucional.git
-cd bikeanjo-institucional
+cd institucional
 npm install
 npm run dev
 ```
