@@ -31,7 +31,7 @@ Este é o site oficial da Associação Bike Anjo. Aqui você encontra informaç�
 ## Como executar
 
 ```bash
-git clone https://github.com/bikeanjo/bikeanjo-institucional.git
+git clone https://github.com/bikeanjo/institucional.git
 cd institucional
 npm install
 npm run dev
