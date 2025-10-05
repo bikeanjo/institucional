@@ -27,7 +27,7 @@ function OurNumbers(): JSX.Element {
           >
             <Box
               component="img"
-              src="/assets/images/Home/OurNumbers/bike-rosa.webp"
+              src="/assets/icons/Home/OurNumbers/bike-rosa.webp"
               alt="Ícone de bike anjo na cor rosa"
               sx={{
                 width: { xs: 80, md: 120 },
@@ -74,7 +74,7 @@ function OurNumbers(): JSX.Element {
           >
             <Box
               component="img"
-              src="/assets/images/Home/OurNumbers/bike-laranja.webp"
+              src="/assets/icons/Home/OurNumbers/bike-laranja.webp"
               alt="Ícone de bike na cor laranja"
               sx={{
                 width: { xs: 80, md: 120 },
@@ -120,7 +120,7 @@ function OurNumbers(): JSX.Element {
             <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
               <Box
                 component="img"
-                src="/assets/images/Home/OurNumbers/recycling.webp"
+                src="/assets/icons/Home/OurNumbers/recycling.webp"
                 alt="Ícone de reciclagem"
                 sx={{
                   width: { xs: 40, md: 60, lg: 72 },
@@ -169,7 +169,7 @@ function OurNumbers(): JSX.Element {
             >
               <Box
                 component="img"
-                src="/assets/images/Home/OurNumbers/public.webp"
+                src="/assets/icons/Home/OurNumbers/public.webp"
                 alt="Ícone de um globo terrestre"
                 sx={{
                   width: { xs: 40, md: 60, lg: 64 },
@@ -208,7 +208,7 @@ function OurNumbers(): JSX.Element {
           >
             <Box
               component="img"
-              src="/assets/images/Home/OurNumbers/apartment.webp"
+              src="/assets/icons/Home/OurNumbers/apartment.webp"
               alt="Ícone de um prédio"
               sx={{
                 width: { xs: 54, lg: 64 },
