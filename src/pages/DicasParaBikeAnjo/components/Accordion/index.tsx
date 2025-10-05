@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { ChevronLeft } from "@mui/icons-material";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 import { ReactNode } from "react";
 
 export function QuestionAccordion({

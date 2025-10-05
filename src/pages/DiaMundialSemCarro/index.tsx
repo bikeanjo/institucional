@@ -1,12 +1,14 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
-import Container from "@components/Container";
-import Text from "@components/Text";
-import Title from "@components/Title";
+import {
+  Header,
+  Container,
+  Text,
+  Title,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+} from "@components";
 import { Box } from "@mui/material";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
 
 function DiaMundialSemCarro(): JSX.Element {
   const Hero = {

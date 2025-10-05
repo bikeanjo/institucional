@@ -5,9 +5,7 @@ import {
   CarouselContainer,
 } from "./styles";
 import { StepCard } from "../../../DicasParaPedalar/components/Card";
-import Title from "@components/Title";
-import Section from "@components/Section";
-import Button from "@components/Button";
+import { Title, Section, Button } from "@components";
 
 interface Step {
   number: number;

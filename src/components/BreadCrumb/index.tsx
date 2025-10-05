@@ -3,7 +3,7 @@ import { JSX } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import { MenuItem, menuItems } from "../../pages/Layout/menuItems";
-import { Colors } from "../../styles/tokens/colors";
+import { Colors } from "@colors";
 import { Link } from "react-router-dom";
 import { faHouse } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

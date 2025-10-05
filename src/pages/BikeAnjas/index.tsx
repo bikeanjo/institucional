@@ -1,14 +1,16 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import {
+  Header,
+  Container,
+  Title,
+  Text,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+} from "@components";
 import { Cards } from "./Components/Cards";
 import Fac from "./Components/FAC";
-import Container from "@components/Container";
 import { Box } from "@mui/material";
-import Title from "@components/Title";
-import Text from "@components/Text";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
 
 function BikeAnjas(): JSX.Element {
   const Hero = {

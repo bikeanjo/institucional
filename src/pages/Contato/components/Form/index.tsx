@@ -12,7 +12,7 @@ import {
 } from "./styles";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import Button from "@components/Button";
+import { Button } from "@components";
 
 export function Form() {
   const [isOpen, setIsOpen] = useState(false);

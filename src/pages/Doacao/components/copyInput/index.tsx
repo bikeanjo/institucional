@@ -1,5 +1,5 @@
 import { TextField, styled } from "@mui/material";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 const CopyInput = styled(TextField)(() => ({
   width: "100%",

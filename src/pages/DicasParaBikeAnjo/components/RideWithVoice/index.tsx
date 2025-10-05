@@ -1,8 +1,6 @@
-import Title from "@components/Title";
-import Text from "@components/Text";
+import { Title, Text, Section } from "@components";
 import { QuestionAccordion } from "../Accordion";
 import { AccordionWrapper } from "./styles";
-import Section from "@components/Section";
 
 const accordionItems = [
   {

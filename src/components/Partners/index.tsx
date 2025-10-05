@@ -1,8 +1,7 @@
 import type { JSX } from "react";
 import { Box, Grid } from "@mui/material";
-import { Colors } from "../../styles/tokens/colors";
-import Title from "@components/Title";
-import Section from "@components/Section";
+import { Colors } from "@colors";
+import { Title, Section } from "@components";
 
 function Partners(): JSX.Element {
   return (

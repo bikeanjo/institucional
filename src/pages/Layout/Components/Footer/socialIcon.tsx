@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { Box } from "@mui/material";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 import { Link } from "react-router-dom";
 
 interface SocialIconProps {

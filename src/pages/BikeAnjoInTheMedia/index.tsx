@@ -1,10 +1,7 @@
 import type { ReactNode } from "react";
-import Header from "@components/Header";
+import { Header, Text, BreadCrumb, ScrollSpyMenu } from "@components";
 import Timeline from "./components/Timeline";
-import Text from "@components/Text";
 import { Container } from "./styles";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function BikeAnjoInTheMedia(): ReactNode {
   const Hero = {

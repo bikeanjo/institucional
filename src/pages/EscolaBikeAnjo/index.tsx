@@ -1,12 +1,14 @@
 import { useState, type JSX } from "react";
-import Header from "@components/Header";
+import {
+  Header,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+  MapInteractive,
+} from "@components";
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
-import Container from "@components/Container";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import MapInteractive from "@components/Map";
 
 const findCitySteps = [
   {

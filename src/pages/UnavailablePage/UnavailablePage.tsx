@@ -1,7 +1,6 @@
 import { Box, Typography, Link } from "@mui/material";
-import Container from "@components/Container";
-import Text from "@components/Text";
-import { Colors } from "../../styles/tokens/colors";
+import { Container, Text } from "@components";
+import { Colors } from "@colors";
 
 const UnavailablePage: React.FC = () => {
   return (

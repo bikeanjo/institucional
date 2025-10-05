@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import type { ReactNode } from "react";
-import Title from "@components/Title";
+import { Title, Text, Section } from "@components";
 import { Subtitle, SummaryBox, SummaryText } from "./styles";
-import Text from "@components/Text";
 import ValueChart from "../../../../../public/assets/images/WhoWeAre/value-chart.webp";
 import Accordion from "../../components/Accordions";
 import { Box } from "@mui/material";
-import Section from "@components/Section";
 
 function OurValues(): ReactNode {
   useEffect(() => {

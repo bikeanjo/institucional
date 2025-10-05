@@ -23,7 +23,9 @@
 
     "paths": {
       "@components/*": ["./src/components/*"],
-      "@hooks/*": ["./src/hooks/*"]
+      "@components": ["./src/components"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@colors": ["./src/styles/tokens"]
     }
   },
   "include": [
@@ -31,6 +33,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/pages/Components/SubTitle/index.tsx",
-    "public/assets"
+    "public/assets",
+    "src/styles/tokens/colors.ts",
+    "src/styles/tokens/index.ts"
   ]
 }

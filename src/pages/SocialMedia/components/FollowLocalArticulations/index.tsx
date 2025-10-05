@@ -1,10 +1,7 @@
-import MapInteractive from "@components/Map";
+import { MapInteractive, SubTitle, Title, Section } from "@components";
 import FindLocalArticulation from "./FindLocalArticulation";
-import SubTitle from "@components/SubTitle";
-import Title from "@components/Title";
 import { useState } from "react";
-import Section from "@components/Section";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 interface LocalArticulationsProps {
   title?: string;

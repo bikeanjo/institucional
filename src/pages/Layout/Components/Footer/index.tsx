@@ -14,7 +14,7 @@ import Accordion from "./components/accordion";
 import { MenuItem, menuItems } from "../../menuItems";
 import { Link } from "../Link";
 import { Link as RouterLink } from "react-router";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 import styled from "styled-components";
 
 const Footer: React.FC = () => {

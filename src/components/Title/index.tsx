@@ -1,6 +1,6 @@
 import { Typography, TypographyOwnProps } from "@mui/material";
 import styled from "styled-components";
-import { Colors } from "../../styles/tokens/colors";
+import { Colors } from "@colors";
 import { JSX } from "react";
 
 interface TitleContainerProps extends TypographyOwnProps {

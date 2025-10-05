@@ -6,10 +6,8 @@ import ProjectBox from "../../components/ProjectBox";
 import ProjectInfo from "../../components/ProjectInfo";
 import "material-icons/iconfont/material-icons.css";
 import { Link } from "react-router-dom";
-import { Colors } from "../../../../styles/tokens/colors";
-import Section from "@components/Section";
-import Carrousel from "@components/Carrousel";
-import Button from "@components/Button";
+import { Colors } from "@colors";
+import { Section, Carrousel, Button } from "@components";
 
 function ProjectThatMoveUs(): JSX.Element {
   const cardsInfo: {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link as RouterLink } from "react-router";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 export const Link = styled(RouterLink)`
   text-decoration: none;

@@ -1,10 +1,8 @@
 import type { ReactNode } from "react";
 import { Box, Typography } from "@mui/material";
-import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
+import { Title, SubTitle, Section } from "@components";
 import ImgWhatIsBikeAnjo from "../../../../../public/assets/images/WhoWeAre/what-is-bike-anjo.webp";
-import Section from "@components/Section";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 export function WhatIsBikeAnjo(): ReactNode {
   return (

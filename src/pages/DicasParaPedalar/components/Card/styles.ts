@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 export const Card = styled.div`
   min-width: 250px;
   max-width: 330px;
-  background-color: ${Colors["G_Grey_10"]};
+  background-color: ${Colors["Green_10"]};
   border: 2px solid ${Colors["G_Grey_30"]};
   border-radius: 16px;
   scroll-snap-align: start;
@@ -36,7 +36,7 @@ export const Title = styled.h3`
 `;
 
 export const Subtitle = styled.h2`
-  color: ${Colors["Gray-100"]};
+  color: ${Colors["G_Grey_100"]};
   min-height: 84px;
   font-size: 24px;
   font-weight: 700;
@@ -56,7 +56,7 @@ export const Description = styled.div`
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
-  background: ${Colors["Gray-30"]};
+  background: ${Colors["Green_10"]};
   white-space: pre-line;
   margin: 0;
   border-bottom-left-radius: 16px;

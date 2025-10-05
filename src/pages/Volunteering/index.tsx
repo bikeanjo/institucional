@@ -1,16 +1,18 @@
 import type { ReactNode } from "react";
-import Header from "@components/Header";
+import {
+  Header,
+  Title,
+  Text,
+  Button,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+} from "@components";
 import { Box } from "@mui/material";
-import Title from "@components/Title";
-import Text from "@components/Text";
 import HowToJoinCards from "./components/HowToJoinCards";
 import { GridContainer } from "./components/HowToJoinCards/styles";
-import Button from "@components/Button";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
-import Container from "@components/Container";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
 import { Link } from "react-router-dom";
 
 function Volunteering(): ReactNode {

@@ -1,8 +1,7 @@
-import SubTitle from "@components/SubTitle";
+import { SubTitle, Button } from "@components";
 import { ContainerCard, Image, Text } from "./styles";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Button from "@components/Button";
 
 interface CardProps {
   title: string;

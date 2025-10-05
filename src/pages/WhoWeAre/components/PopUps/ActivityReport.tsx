@@ -10,7 +10,7 @@ import {
   CloseButton,
 } from "./styles";
 import { Box } from "@mui/material";
-import Button from "@components/Button";
+import { Button } from "@components";
 import CloseIcon from "@mui/icons-material/Close";
 
 interface PopupProps {

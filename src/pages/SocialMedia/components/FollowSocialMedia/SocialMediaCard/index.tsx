@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import type { JSX } from "react";
-import { Colors } from "../../../../../styles/tokens/colors";
-import Button from "@components/Button";
+import { Colors } from "@colors";
+import { Button } from "@components";
 
 interface SocialCardProps {
   icon: JSX.Element;
@@ -40,7 +40,7 @@ export function SocialCard({
           justifyContent: "center",
           borderRadius: "50%",
           border: `5px solid ${color}`,
-          backgroundColor: Colors["G-Gray-30"],
+          backgroundColor: Colors["G_Grey_10"],
           mr: "32px",
         }}
       >

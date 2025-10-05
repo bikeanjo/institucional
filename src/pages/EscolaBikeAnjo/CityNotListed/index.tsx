@@ -1,5 +1,4 @@
-import SubTitle from "@components/SubTitle";
-import Title from "@components/Title";
+import { SubTitle, Title, Section, Button } from "@components";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
 import {
   ButtonContainer,
@@ -7,9 +6,7 @@ import {
   StepItem,
   StepsContainer,
 } from "./styles";
-import Section from "@components/Section";
-import { Colors } from "../../../styles/tokens/colors";
-import Button from "@components/Button";
+import { Colors } from "@colors";
 
 interface Step {
   number: number;

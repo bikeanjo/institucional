@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Typography, Menu, MenuItem } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 import { Link } from "../Link";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 export interface NavMenuItem {
   label: string;

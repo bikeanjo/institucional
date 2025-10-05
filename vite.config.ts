@@ -9,6 +9,7 @@ export default defineConfig({
       "@mui/styled-engine": "@mui/styled-engine-sc",
       "@components": path.resolve(__dirname, "src/components"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
+      "@colors": path.resolve(__dirname, "src/styles/tokens"),
     },
   },
   plugins: [react()],

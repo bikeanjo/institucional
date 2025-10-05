@@ -1,9 +1,7 @@
 import { useRef } from "react";
 import { StepCard } from "../Card";
 import { Arrow, Cards, CarouselContainer } from "./styles";
-import Text from "@components/Text";
-import Title from "@components/Title";
-import Section from "@components/Section";
+import { Text, Title, Section } from "@components";
 
 interface Step {
   number: number;

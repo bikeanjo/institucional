@@ -1,7 +1,7 @@
 import { Box, Button as MuiButton } from "@mui/material";
 import { JSX, useEffect, useState } from "react";
 import styled from "styled-components";
-import { Colors } from "../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 const HEADER_HEIGHT = 76;
 

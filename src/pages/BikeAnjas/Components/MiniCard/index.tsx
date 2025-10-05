@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import { Card } from "./styles";
-import Button from "@components/Button";
+import { Button } from "@components";
 
 interface MiniCardProps {
   title: string;

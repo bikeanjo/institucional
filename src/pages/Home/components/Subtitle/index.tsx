@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 interface SubtitleProps {
   fontWeight?: string | number;

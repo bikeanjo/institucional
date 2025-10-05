@@ -1,20 +1,22 @@
 import type { ReactNode } from "react";
 import { useEffect } from "react";
-import Header from "@components/Header";
-import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
-import Text from "@components/Text";
+import {
+  Header,
+  Title,
+  SubTitle,
+  Text,
+  Button,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+  Container,
+} from "@components";
 import List from "./components/List";
 import { Box } from "@mui/material";
 import TimelineCourse from "./components/TimelineCourse";
 import Accordion from "./components/Accordion";
-import Button from "@components/Button";
 import { Link } from "react-router-dom";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
-import { Colors } from "../../styles/tokens/colors";
-import Container from "@components/Container";
+import { Colors } from "@colors";
 
 function TakeOurCourse(): ReactNode {
   const Hero = {
