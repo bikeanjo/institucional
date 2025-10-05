@@ -54,7 +54,7 @@ function TakeOurCourse(): ReactNode {
           <Title variant="h2" pink>
             Sobre o Cuba
           </Title>
-          <SubTitle variant="h3" color="Pink-50" fontWeight={700}>
+          <SubTitle variant="h3" color="Pink_50" fontWeight={700}>
             O Programa de Formação Bike Anjo é um convite para quem quer
             transformar a cidade com a bicicleta.
           </SubTitle>
@@ -67,8 +67,8 @@ function TakeOurCourse(): ReactNode {
 
         <Section
           center
-          backgroundColor={Colors["Green-20"]}
-          borderColor={Colors["Green-70"]}
+          backgroundColor={Colors["Green_20"]}
+          borderColor={Colors["Green_70"]}
         >
           <Title variant="h2" green textAlign={"center"}>
             Formação de Pessoas Voluntárias Bike Anjo
@@ -130,7 +130,7 @@ function TakeOurCourse(): ReactNode {
               gap: "16px",
             }}
           >
-            <SubTitle variant="h2" color="Pink-50" fontWeight={700}>
+            <SubTitle variant="h2" color="Pink_50" fontWeight={700}>
               Resultados Esperados
             </SubTitle>
             <Text
@@ -153,10 +153,10 @@ function TakeOurCourse(): ReactNode {
         </Section>
 
         <Section
-          backgroundColor={Colors["Green-20"]}
-          borderColor={Colors["Green-70"]}
+          backgroundColor={Colors["Green_20"]}
+          borderColor={Colors["Green_70"]}
         >
-          <Title center color={Colors["Green-70"]}>
+          <Title center color={Colors["Green_70"]}>
             Inscreva-se Agora!
           </Title>
           <Text

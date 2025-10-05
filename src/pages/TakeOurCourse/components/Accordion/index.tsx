@@ -31,9 +31,9 @@ function Accordions({ id }: Props): ReactNode {
             key={accordion.id}
             sx={{
               width: "100%",
-              border: "1px solid var(--mui-palette-G-Grey-30)",
+              border: "1px solid var(--mui-palette-G_Grey_30)",
               borderRadius: "8px",
-              backgroundColor: "var(--mui-palette-G-Grey-20)",
+              backgroundColor: "var(--mui-palette-G_Grey_20)",
               boxShadow: "0px 2px 6px rgba(0,0,0,0.15)",
             }}
           >
@@ -41,7 +41,7 @@ function Accordions({ id }: Props): ReactNode {
               expandIcon={
                 <ExpandMoreIcon
                   style={{
-                    color: "var(--mui-palette-Green-70)",
+                    color: "var(--mui-palette-Green_70)",
                     width: "40px",
                     height: "40px",
                   }}
@@ -53,7 +53,7 @@ function Accordions({ id }: Props): ReactNode {
                 component="span"
                 fontSize={"18px"}
                 fontWeight={"700"}
-                color="var(--mui-palette-G-Grey-100)"
+                color="var(--mui-palette-G_Grey_100)"
               >
                 {accordion.title}
               </Typography>
@@ -63,10 +63,10 @@ function Accordions({ id }: Props): ReactNode {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                backgroundColor: "var(--mui-palette-G-Grey-10)",
+                backgroundColor: "var(--mui-palette-G_Grey_10)",
                 padding: "24px",
                 gap: "16px",
-                borderTop: "1px solid var(--mui-palette-G-Grey-30)",
+                borderTop: "1px solid var(--mui-palette-G_Grey_30)",
                 borderBottomLeftRadius: "8px",
                 borderBottomRightRadius: "8px",
               }}
@@ -77,7 +77,7 @@ function Accordions({ id }: Props): ReactNode {
                   width={"100%"}
                   fontSize={"16px"}
                   whiteSpace={"pre-line"}
-                  color={"var(--mui-palette-G-Grey-100)"}
+                  color={"var(--mui-palette-G_Grey_100)"}
                 >
                   {item.text}
                 </Typography>

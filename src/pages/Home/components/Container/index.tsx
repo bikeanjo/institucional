@@ -34,8 +34,8 @@ const ContainerTemplate = styled.div<ContainerTemplateProps>`
   flex-shrink: 0;
   justify-content: center;
   background-color: ${({ secondary }) =>
-    secondary ? Colors["Green-20"] : "transparent"};
-  border: ${({ secondary }) => secondary && `2px solid ${Colors["Green-70"]}`};
+    secondary ? Colors["Green_20"] : "transparent"};
+  border: ${({ secondary }) => secondary && `2px solid ${Colors["Green_70"]}`};
   border-width: ${({ secondary }) => secondary && `2px 0px`};
   gap: ${({ gap }) => gap || "unset"};
   background-image: ${({ url }) =>

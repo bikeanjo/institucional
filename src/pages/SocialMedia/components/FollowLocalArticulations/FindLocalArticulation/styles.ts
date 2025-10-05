@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h3`
-  color: ${Colors["Green-70"]};
+  color: ${Colors["Green_70"]};
   font-size: 24px;
   font-weight: 700;
   margin: 0;
@@ -27,14 +27,14 @@ export const TagsWrapper = styled.div`
 `;
 
 export const Tag = styled.span`
-  background-color: ${Colors["G-White"]};
+  background-color: ${Colors["G_White"]};
   border-radius: 4px;
   padding: 10px 15px;
   margin: 0;
-  color: ${Colors["Green-70"]};
+  color: ${Colors["Green_70"]};
   font-size: 16px;
   cursor: pointer;
-  border: 2px solid ${Colors["Green-70"]};
+  border: 2px solid ${Colors["Green_70"]};
   border-radius: 30px;
   width: 130px;
   height: fit-content;
@@ -43,8 +43,8 @@ export const Tag = styled.span`
   transition: all 0.2s;
 
   &.active {
-    background-color: ${Colors["Green-70"]};
-    color: ${Colors["G-White"]};
+    background-color: ${Colors["Green_70"]};
+    color: ${Colors["G_White"]};
   }
 `;
 
@@ -52,14 +52,14 @@ export const FilterInput = styled.input`
   width: 100%;
   background-color: #fff;
   border-radius: 8px;
-  border: 2px solid ${Colors["Green-70"]};
+  border: 2px solid ${Colors["Green_70"]};
   padding: 11px;
   margin: 0 auto 20px;
   font-size: 16px;
-  color: ${Colors["Green-70"]};
+  color: ${Colors["Green_70"]};
 
   &::placeholder {
-    color: ${Colors["Green-70"]};
+    color: ${Colors["Green_70"]};
   }
 `;
 
@@ -70,13 +70,13 @@ export const CityList = styled.div`
 `;
 
 export const CityCard = styled.div<ButtonProps>`
-  background-color: ${Colors["G-White"]};
+  background-color: ${Colors["G_White"]};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: ${({ expanded }) => (expanded ? "0" : "4px")};
   border-bottom-right-radius: ${({ expanded }) => (expanded ? "0" : "4px")};
   padding: 16px;
-  border: 2px solid ${Colors["G-Grey-30"]};
+  border: 2px solid ${Colors["G_Grey_30"]};
   border-radius: 8px;
 
   .card-content {

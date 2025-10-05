@@ -438,8 +438,8 @@ function WhereAreWe(): JSX.Element {
   return (
     <Section
       center
-      backgroundColor={Colors["Green-20"]}
-      borderColor={Colors["Green-70"]}
+      backgroundColor={Colors["Green_20"]}
+      borderColor={Colors["Green_70"]}
     >
       <Box
         sx={{
@@ -449,10 +449,10 @@ function WhereAreWe(): JSX.Element {
           flexDirection: "column",
         }}
       >
-        <Title variant="h2" color={Colors["Green-70"]}>
+        <Title variant="h2" color={Colors["Green_70"]}>
           Onde estamos
         </Title>
-        <SubTitle color={Colors["G-Grey-100"]} fontSize={24} fontWeight={400}>
+        <SubTitle color={Colors["G_Grey_100"]} fontSize={24} fontWeight={400}>
           Saiba onde encontrar iniciativas para participar
         </SubTitle>
       </Box>

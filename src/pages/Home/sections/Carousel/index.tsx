@@ -18,11 +18,11 @@ function Carousel(): JSX.Element {
           sx={{
             textAlign: "center",
             position: "relative",
-            height: { xs: "133px", lg: "254px" },
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            height: "fit-content",
           }}
         >
           <Box
@@ -30,12 +30,14 @@ function Carousel(): JSX.Element {
               display: "flex",
               flexDirection: "column",
               gap: { xs: "24px", lg: "32px" },
+              paddingInline: "40px",
+              height: "fit-content",
             }}
           >
-            <Title variant="h2" carrousel color={Colors["Green-10"]}>
+            <Title variant="h2" carrousel color={Colors["Green_10"]}>
               Uma comunidade que pedala por um futuro melhor
             </Title>
-            <SubTitle fontWeight={400} carrousel color={Colors["Green-10"]}>
+            <SubTitle fontWeight={400} carrousel color={Colors["Green_10"]}>
               Conectamos pessoas dispostas a ajudar com quem precisa de apoio
               para pedalar, oferecendo orientação, rotas seguras e
               acompanhamento no percurso.
@@ -53,18 +55,10 @@ function Carousel(): JSX.Element {
             width: { xs: "100%", lg: "auto" },
             height: { xs: "96px", lg: "56px" },
             margin: "auto",
+            paddingInline: "40px",
           }}
         >
-          <Button
-            component={Link}
-            to="/dicas-para-pedalar"
-            fullWidthMobile
-            sx={{
-              "&:hover": {
-                color: "var(--mui-palette-neutral-900)",
-              },
-            }}
-          >
+          <Button component={Link} to="/dicas-para-pedalar" fullWidthMobile>
             Aprender a pedalar
           </Button>
           <Button component={Link} to="/dicas-bike-anjo" fullWidthMobile>
@@ -77,11 +71,11 @@ function Carousel(): JSX.Element {
           sx={{
             textAlign: "center",
             position: "relative",
-            height: { xs: "133px", lg: "254px" },
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            height: "fit-content",
           }}
         >
           <Box
@@ -90,12 +84,14 @@ function Carousel(): JSX.Element {
               flexDirection: "column",
               gap: { xs: "24px", lg: "32px" },
               width: { lg: "1036px" },
+              paddingInline: "40px",
+              height: "fit-content",
             }}
           >
-            <Title variant="h2" carrousel color={Colors["Green-10"]}>
+            <Title variant="h2" carrousel color={Colors["Green_10"]}>
               Sobre a Bike Anjo
             </Title>
-            <SubTitle fontWeight={400} carrousel color={Colors["Green-10"]}>
+            <SubTitle fontWeight={400} carrousel color={Colors["Green_10"]}>
               A Bike Anjo é uma rede de pessoas voluntárias que ensina pessoas a
               pedalar, indica rotas seguras e acompanha seus primeiros trajetos.
               Acreditamos na bicicleta como ferramenta de transformação para
@@ -105,53 +101,22 @@ function Carousel(): JSX.Element {
         </Box>
         <Box
           sx={{
-            marginTop: { xs: "200px", lg: "100px" },
+            marginTop: { xs: "100px", lg: "100px" },
             marginBottom: { xs: "24px", lg: "54px" },
             display: "flex",
             alignItems: "center",
             flexDirection: { xs: "column", lg: "row" },
             gap: { xs: "16px", lg: "255px" },
             width: { xs: "100%", lg: "auto" },
-            height: { xs: "96px", lg: "56px" },
+            height: { xs: "100%", lg: "56px" },
             margin: "auto",
+            paddingInline: "40px",
           }}
         >
-          <Button
-            component={Link}
-            to="/como-funciona"
-            sx={{
-              backgroundColor: Colors["Green-70"],
-              color: Colors["G-White"],
-              padding: "16px 24px",
-              height: { xs: 40, lg: 56 },
-              width: { xs: "100%", sm: 185, lg: 185 },
-              borderRadius: { xs: "4px", lg: "8px" },
-              textTransform: "none",
-              "&:hover": {
-                backgroundColor: "var(--mui-palette-G-White)",
-                color: "var(--mui-palette-neutral-900)",
-              },
-            }}
-          >
+          <Button component={Link} to="/como-funciona" fullWidthMobile>
             <Typography>Como Funciona</Typography>
           </Button>
-          <Button
-            component={Link}
-            to="/quem-somos"
-            sx={{
-              backgroundColor: Colors["Green-70"],
-              color: Colors["G-White"],
-              padding: "16px 24px",
-              height: { xs: 40, lg: 56 },
-              width: { xs: "100%", sm: 185, lg: 185 },
-              borderRadius: { xs: "4px", lg: "8px" },
-              textTransform: "none",
-              "&:hover": {
-                backgroundColor: "var(--mui-palette-neutral-700)",
-                color: "var(--mui-palette-G-White)",
-              },
-            }}
-          >
+          <Button component={Link} to="/quem-somos" fullWidthMobile>
             <Typography>Quem Somos</Typography>
           </Button>
         </Box>

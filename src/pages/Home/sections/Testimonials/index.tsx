@@ -9,10 +9,10 @@ function Testimonials(): JSX.Element {
   return (
     <Section
       center
-      backgroundColor={Colors["Green-20"]}
-      borderColor={Colors["Green-70"]}
+      backgroundColor={Colors["Green_20"]}
+      borderColor={Colors["Green_70"]}
     >
-      <Title variant="h2" color={Colors["Green-70"]}>
+      <Title variant="h2" color={Colors["Green_70"]}>
         Depoimentos
       </Title>
       <SubTitle>
@@ -31,7 +31,7 @@ function Testimonials(): JSX.Element {
           sx={{
             width: { xs: 299, lg: 499 },
             height: { xs: 308, lg: 249 },
-            border: `2px solid ${Colors["Green-70"]}`,
+            border: `2px solid ${Colors["Green_70"]}`,
             marginTop: 5,
             padding: "21px 30px",
             borderRadius: 2,
@@ -44,7 +44,7 @@ function Testimonials(): JSX.Element {
           <CardContent sx={{ padding: 0, marginBottom: 4 }}>
             <Typography
               sx={{
-                color: Colors["G-Grey-100"],
+                color: Colors["G_Grey_100"],
                 fontSize: 16,
                 fontWeight: 400,
                 lineHeight: 1.6,
@@ -66,7 +66,7 @@ function Testimonials(): JSX.Element {
                   width: 50,
                   height: 50,
                   borderRadius: "50%",
-                  border: `2px solid ${Colors["Blue-60"]}`,
+                  border: `2px solid ${Colors["Blue_60"]}`,
                 }}
               />
               <Box>
@@ -75,7 +75,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 16,
                     lineHeight: 1,
-                    color: Colors["Blue-60"],
+                    color: Colors["Blue_60"],
                     margin: "2px 0px",
                   }}
                 >
@@ -86,7 +86,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 14,
                     lineHeight: 1,
-                    color: Colors["G-Grey-100"],
+                    color: Colors["G_Grey_100"],
                     margin: "10px 0px",
                   }}
                 >
@@ -100,7 +100,7 @@ function Testimonials(): JSX.Element {
           sx={{
             width: { xs: 299, lg: 499 },
             height: { xs: 308, lg: 249 },
-            border: `2px solid ${Colors["Green-70"]}`,
+            border: `2px solid ${Colors["Green_70"]}`,
             marginTop: 5,
             padding: "21px 30px",
             borderRadius: 2,
@@ -113,7 +113,7 @@ function Testimonials(): JSX.Element {
           <CardContent sx={{ padding: 0, marginBottom: 4 }}>
             <Typography
               sx={{
-                color: Colors["G-Grey-100"],
+                color: Colors["G_Grey_100"],
                 fontSize: 16,
                 fontWeight: 400,
                 lineHeight: 1.6,
@@ -135,7 +135,7 @@ function Testimonials(): JSX.Element {
                   width: 50,
                   height: 50,
                   borderRadius: "50%",
-                  border: `2px solid ${Colors["Orange-50"]}`,
+                  border: `2px solid ${Colors["Orange_50"]}`,
                 }}
               />
               <Box>
@@ -144,7 +144,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 16,
                     lineHeight: 1,
-                    color: Colors["Orange-50"],
+                    color: Colors["Orange_50"],
                     margin: "2px 0px",
                   }}
                 >
@@ -155,7 +155,7 @@ function Testimonials(): JSX.Element {
                     fontWeight: 400,
                     fontSize: 14,
                     lineHeight: 1,
-                    color: Colors["G-Grey-100"],
+                    color: Colors["G_Grey_100"],
                     margin: "10px 0px",
                   }}
                 >

@@ -15,7 +15,7 @@ export function CampaignCards() {
       textMobile: "Resumo até 110 caracteres",
       button: "Conhecer",
       link: "/dia-mundial-sem-carro",
-      color: Colors["Blue-60"],
+      color: Colors["Blue_60"],
     },
     {
       id: "Card2",
@@ -23,7 +23,7 @@ export function CampaignCards() {
       textDesktop:
         "Mais bikes, menos blá-blá-blá! Lutamos por políticas públicas que priorizem a mobilidade ativa. Com dados, escuta e articulação, queremos a bicicleta nos planos das cidades.",
       textMobile: "Resumo até 110 caracteres",
-      color: Colors["Orange-50"],
+      color: Colors["Orange_50"],
     },
     {
       id: "Card3",
@@ -31,7 +31,7 @@ export function CampaignCards() {
       textDesktop:
         "Tem espaço pra todo mundo na transformação das cidades. Aqui na Bike Anjo, ensinamos outras formas de ajudar a iniciativa da bicicleta mesmo que não pedalando",
       textMobile: "Resumo até 110 caracteres",
-      color: Colors["Green-70"],
+      color: Colors["Green_70"],
     },
   ];
 

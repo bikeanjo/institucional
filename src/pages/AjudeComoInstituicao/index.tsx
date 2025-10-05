@@ -38,7 +38,7 @@ const AjudeComoInstituicao = () => {
               gap: { xs: "16px", lg: "24px" },
             }}
           >
-            <Title color={Colors["Pink-50"]}>Empresas Parceiras</Title>
+            <Title color={Colors["Pink_50"]}>Empresas Parceiras</Title>
             <SubTitle>
               Patrocinar a Bike Anjo é investir em mobilidade, cidadania e
               impacto positivo.

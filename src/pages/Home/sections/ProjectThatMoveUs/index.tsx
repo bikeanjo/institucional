@@ -89,7 +89,7 @@ function ProjectThatMoveUs(): JSX.Element {
           margin: "auto",
         }}
       >
-        <Title variant="h2" color={Colors["Pink-50"]}>
+        <Title variant="h2" color={Colors["Pink_50"]}>
           Iniciativas que nos movem
         </Title>
         <SubTitle

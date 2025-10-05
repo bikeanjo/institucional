@@ -25,7 +25,7 @@ const UnavailablePage: React.FC = () => {
           }}
         >
           <Typography
-            color={Colors["Pink-50"]}
+            color={Colors["Pink_50"]}
             fontWeight="700"
             fontSize={{ xs: "32px", lg: "64px" }}
             whiteSpace="nowrap"
@@ -52,7 +52,7 @@ const UnavailablePage: React.FC = () => {
           <Text>
             <Link
               href="/"
-              color={Colors["Green-70"]}
+              color={Colors["Green_70"]}
               fontWeight="700"
               underline="none"
               display={{ xs: "block", md: "inline" }}

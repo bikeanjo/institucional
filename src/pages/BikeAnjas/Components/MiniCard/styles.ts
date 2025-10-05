@@ -12,9 +12,9 @@ export const Card = styled.section<CardProps>`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: ${Colors["G-Grey-10"]};
+  background-color: ${Colors["G_Grey_10"]};
   justify-content: space-between;
-  border: 2px solid ${Colors["Pink-50"]};
+  border: 2px solid ${Colors["Pink_50"]};
   border-radius: 16px;
 
   .titleCard {
@@ -27,7 +27,7 @@ export const Card = styled.section<CardProps>`
       font-size: 32px;
       font-weight: 600;
       line-height: 30px;
-      color: ${Colors["Pink-50"]};
+      color: ${Colors["Pink_50"]};
       margin: 0;
     }
   }

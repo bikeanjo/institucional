@@ -30,11 +30,11 @@ export default function CityNotListed({
 }: CarouselStepsProps) {
   return (
     <Section
-      backgroundColor={Colors["Green-20"]}
-      borderColor={Colors["Green-70"]}
+      backgroundColor={Colors["Green_20"]}
+      borderColor={Colors["Green_70"]}
     >
-      <Title color={Colors["Green-70"]}>{title}</Title>
-      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
+      <Title color={Colors["Green_70"]}>{title}</Title>
+      <SubTitle color={Colors["G_Grey_100"]}>{sub}</SubTitle>
 
       <StepsContainer>
         {steps.map((step) => (

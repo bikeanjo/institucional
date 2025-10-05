@@ -39,7 +39,7 @@ export function QuestionAccordion({
         expandIcon={
           <ChevronLeft
             sx={{
-              color: Colors["Green-70"],
+              color: Colors["Green_70"],
               fontSize: 40,
               transition: "transform 0.3s",
               transform:
@@ -48,8 +48,8 @@ export function QuestionAccordion({
           />
         }
         sx={{
-          backgroundColor: Colors["G-Grey-20"],
-          color: Colors["G-Grey-100"],
+          backgroundColor: Colors["G_Grey_20"],
+          color: Colors["G_Grey_100"],
           padding: "16px",
           minHeight: "auto",
           "&.Mui-expanded": { minHeight: "auto" },
@@ -69,8 +69,8 @@ export function QuestionAccordion({
       </AccordionSummary>
       <AccordionDetails
         sx={{
-          backgroundColor: Colors["G-Grey-10"],
-          color: Colors["G-Grey-100"],
+          backgroundColor: Colors["G_Grey_10"],
+          color: Colors["G_Grey_100"],
           padding: "16px",
         }}
       >

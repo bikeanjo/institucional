@@ -36,7 +36,7 @@ export const SocialIcon = ({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        color: Colors["Green-70"],
+        color: Colors["Green_70"],
       }}
     >
       <FontAwesomeIcon icon={icon} style={{ fontSize: size }} />

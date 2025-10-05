@@ -18,12 +18,12 @@ interface TitleProps
 
 const TitleContainer = styled(Typography)<TitleContainerProps>(
   ({ theme, pink, green, color, center }) => ({
-    color: color ? color : Colors["Pink-50"],
+    color: color ? color : Colors["Pink_50"],
     fontWeight: 600,
     display: "flex",
 
-    ...(pink && { color: "var(--mui-palette-Pink-50)" }),
-    ...(green && !pink && { color: "var(--mui-palette-Green-70)" }),
+    ...(pink && { color: "var(--mui-palette-Pink_50)" }),
+    ...(green && !pink && { color: "var(--mui-palette-Green_70)" }),
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "24px",

@@ -50,7 +50,7 @@ export function HowWeOrganize(): ReactNode {
             height: { xs: "343px", md: "420.5px" },
             borderRadius: { xs: "8px", md: "10.8" },
             overflow: "hidden",
-            backgroundColor: "var(--mui-palette-Green-70)",
+            backgroundColor: "var(--mui-palette-Green_70)",
           }}
         >
           <img
@@ -76,7 +76,7 @@ export function HowWeOrganize(): ReactNode {
             sx={{
               textAlign: "left",
               fontSize: { xs: "16px", md: "24px" },
-              color: "var(--mui-palette-G-Grey-100)",
+              color: "var(--mui-palette-G_Grey_100)",
             }}
           >
             A Bike Anjo se organiza por articulações locais que promovem

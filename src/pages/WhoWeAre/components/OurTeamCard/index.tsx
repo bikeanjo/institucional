@@ -26,7 +26,7 @@ function OurTeam(): JSX.Element {
   }[] = [
     {
       id: 1,
-      colorCard: "var(--mui-palette-Green-70)",
+      colorCard: "var(--mui-palette-Green_70)",
       imageUrl: AndersonPaz,
       name: "Anderson Paz",
       position: "Diretor Presidente",
@@ -34,7 +34,7 @@ function OurTeam(): JSX.Element {
     },
     {
       id: 2,
-      colorCard: "var(--mui-palette-Orange-50)",
+      colorCard: "var(--mui-palette-Orange_50)",
       imageUrl: IanThomaz,
       name: "Ian Thomaz",
       position: "Diretor Financeiro",
@@ -42,7 +42,7 @@ function OurTeam(): JSX.Element {
     },
     {
       id: 3,
-      colorCard: "var(--mui-palette-Blue-60)",
+      colorCard: "var(--mui-palette-Blue_60)",
       imageUrl: MilvoRossarola,
       name: "Milvo Rossarola",
       position: "Diretor Administrativo",
@@ -50,7 +50,7 @@ function OurTeam(): JSX.Element {
     },
     {
       id: 4,
-      colorCard: "var(--mui-palette-Green-70)",
+      colorCard: "var(--mui-palette-Green_70)",
       imageUrl: VivianGarelli,
       name: "Vivian Garelli",
       position: "Conselheira Fiscal",
@@ -58,7 +58,7 @@ function OurTeam(): JSX.Element {
     },
     {
       id: 5,
-      colorCard: "var(--mui-palette-Pink-50)",
+      colorCard: "var(--mui-palette-Pink_50)",
       imageUrl: MartinaHorvath,
       name: "Martina Horvath",
       position: "Conselheira Fiscal",
@@ -66,7 +66,7 @@ function OurTeam(): JSX.Element {
     },
     {
       id: 6,
-      colorCard: "var(--mui-palette-Green-70)",
+      colorCard: "var(--mui-palette-Green_70)",
       imageUrl: VicenteseSJunior,
       name: "Vicentese S Junior",
       position: "Conselheiro Fiscal",
@@ -153,7 +153,7 @@ function OurTeam(): JSX.Element {
                 paddingBottom={{ xs: "16px", md: "0px" }}
                 fontWeight={500}
                 fontSize={{ xs: 18, md: 24 }}
-                color="var(--mui-palette-G-Grey-90)"
+                color="var(--mui-palette-G_Grey_90)"
               >
                 {card.position}
               </Typography>
@@ -162,7 +162,7 @@ function OurTeam(): JSX.Element {
                 paddingTop={{ xs: "0px", md: "16px" }}
                 paddingBottom={"24px"}
                 fontSize={{ xs: 14, md: 16 }}
-                color="var(--mui-palette-G-Grey-70)"
+                color="var(--mui-palette-G_Grey_70)"
               >
                 {card.from}
               </Typography>

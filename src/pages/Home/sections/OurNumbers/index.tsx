@@ -8,7 +8,7 @@ import Section from "@components/Section";
 function OurNumbers(): JSX.Element {
   return (
     <Section center>
-      <Title variant="h2" color={Colors["Pink-50"]}>
+      <Title variant="h2" color={Colors["Pink_50"]}>
         Nossos números
       </Title>
       <Grid
@@ -17,42 +17,58 @@ function OurNumbers(): JSX.Element {
         sx={{ width: { md: 800, lg: 1032 } }}
       >
         <Grid size={12}>
-          <GridItem gap="20px" center padding="16px">
+          <GridItem
+            gap="20px"
+            padding="16px"
+            sx={{
+              justifyContent: "center",
+              alignItems: { xs: "center", lg: "baseline" },
+            }}
+          >
             <Box
               component="img"
               src="/assets/images/Home/OurNumbers/bike-rosa.webp"
               alt="Ícone de bike anjo na cor rosa"
               sx={{
-                width: { xs: 80, lg: 120 },
+                width: { xs: 80, md: 120 },
               }}
             />
-            <Typography
-              color="tertiary"
-              sx={{ fontSize: { xs: 56, md: 104 } }}
-              lineHeight={1}
-              fontWeight={500}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column", lg: "row" },
+                alignItems: "baseline",
+                gap: { xs: "4px", lg: "20px" },
+              }}
             >
-              9450
-            </Typography>
-            <Typography
-              sx={{ fontSize: { xs: 16, md: 32 } }}
-              width={{ xs: 150, sm: "100%" }}
-            >
-              pessoas voluntárias cadastradas
-            </Typography>
+              <Typography
+                color="tertiary"
+                sx={{ fontSize: { xs: 56, md: 106 } }}
+                lineHeight={1}
+                fontWeight={500}
+              >
+                9450
+              </Typography>
+              <Typography
+                sx={{ fontSize: { xs: 16, md: 32 } }}
+                width={{ xs: 150, sm: "100%" }}
+              >
+                pessoas voluntárias cadastradas
+              </Typography>
+            </Box>
           </GridItem>
         </Grid>
-        <Grid size={8}>
+        <Grid size={{ xs: 12, lg: 8 }} order={{ xs: -1, lg: 0 }}>
           <GridItem
             padding="16px"
             height="100%"
-            color={Colors["Orange-50"]}
-            backgroundColor={Colors["Orange-10"]}
-            style={{
+            color={{ xs: Colors["Blue_60"], lg: Colors["Orange_50"] }}
+            backgroundColor={{ xs: Colors["Blue_10"], lg: Colors["Orange_10"] }}
+            sx={{
               display: "flex",
               flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "start",
+              alignItems: { xs: "center", lg: "center" },
+              justifyContent: { xs: "center", lg: "start" },
               gap: "16px",
             }}
           >
@@ -61,13 +77,22 @@ function OurNumbers(): JSX.Element {
               src="/assets/images/Home/OurNumbers/bike-laranja.webp"
               alt="Ícone de bike na cor laranja"
               sx={{
-                width: { xs: 80, lg: 120 },
+                width: { xs: 80, md: 120 },
               }}
             />
-            <div>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "column" },
+                alignItems: "baseline",
+                gap: { xs: "4px" },
+              }}
+            >
               <Typography
-                color={Colors["Orange-50"]}
-                sx={{ fontSize: { xs: 50, md: 136 } }}
+                sx={{
+                  fontSize: { xs: 50, md: 106, lg: 136 },
+                  color: { xs: Colors["Blue_60"], lg: Colors["Orange_50"] },
+                }}
                 lineHeight={{ xs: 0.9, md: 1 }}
                 fontWeight={500}
               >
@@ -76,35 +101,35 @@ function OurNumbers(): JSX.Element {
               <Typography sx={{ fontSize: { xs: 16, md: 32 } }}>
                 pessoas atendidas
               </Typography>
-            </div>
+            </Box>
           </GridItem>
         </Grid>
-        <Grid size={4}>
+        <Grid size={{ xs: 6, lg: 4 }}>
           <GridItem
-            column
-            center
             padding="16px"
             height="100%"
-            color={Colors["Green-70"]}
-            backgroundColor={Colors["Green-10"]}
-            style={{
+            color={Colors["Green_70"]}
+            backgroundColor={Colors["Green_10"]}
+            sx={{
               display: "flex",
-              alignItems: "flex-start",
+              flexDirection: "column",
+              alignItems: { xs: "center", lg: "baseline" },
               justifyContent: "center",
-              gap: "8px",
             }}
           >
-            <div style={{ display: "flex", gap: "10px" }}>
+            <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
               <Box
                 component="img"
                 src="/assets/images/Home/OurNumbers/recycling.webp"
                 alt="Ícone de reciclagem"
                 sx={{
                   width: { xs: 40, md: 60, lg: 72 },
+                  height: { xs: 40, md: 60, lg: 72 },
                 }}
               />
+
               <Typography
-                color={Colors["Green-70"]}
+                color={Colors["Green_70"]}
                 sx={{ fontSize: { xs: 42, md: 72 } }}
                 lineHeight={1}
                 fontWeight={500}
@@ -112,60 +137,73 @@ function OurNumbers(): JSX.Element {
               >
                 40KG
               </Typography>
-            </div>
+            </Box>
             <Typography sx={{ fontSize: { xs: 16, md: 24 } }}>
               a menos de CO&#8322; na atmosfera
             </Typography>
           </GridItem>
         </Grid>
-        <Grid size={{ xs: 6, md: 5.5 }}>
+        <Grid size={{ xs: 6, lg: 5.5 }}>
           <GridItem
             gap="8px"
-            center
             padding="16px"
-            color={Colors["Green-70"]}
-            backgroundColor={Colors["Green-10"]}
-            style={{
+            color={{ xs: Colors["Orange_50"], lg: Colors["Green_70"] }}
+            backgroundColor={{
+              xs: Colors["Orange_10"],
+              lg: Colors["Green_10"],
+            }}
+            sx={{
+              height: "100%",
               display: "flex",
-              flexDirection: "row",
-              alignItems: "end",
-              justifyContent: "start",
+              flexDirection: { xs: "column", lg: "row" },
+              alignItems: { xs: "center", lg: "baseline" },
+              justifyContent: { xs: "center", lg: "start" },
             }}
           >
             <Box
-              component="img"
-              src="/assets/images/Home/OurNumbers/public.webp"
-              alt="Ícone de um globo terrestre"
               sx={{
-                width: { xs: 54, lg: 64 },
+                display: "flex",
+                gap: 1,
+                alignItems: { xs: "center", lg: "baseline" },
               }}
-            />
-            <Typography
-              color={Colors["Green-70"]}
-              sx={{ fontSize: { xs: 42, md: 64 } }}
-              lineHeight={1}
-              fontWeight={500}
             >
-              40
-            </Typography>
+              <Box
+                component="img"
+                src="/assets/images/Home/OurNumbers/public.webp"
+                alt="Ícone de um globo terrestre"
+                sx={{
+                  width: { xs: 40, md: 60, lg: 64 },
+                  height: { xs: 40, md: 60, lg: 64 },
+                }}
+              />
+              <Typography
+                sx={{
+                  fontSize: { xs: 42, md: 64 },
+                  color: { xs: Colors["Orange_50"], lg: Colors["Green_70"] },
+                }}
+                lineHeight={1}
+                fontWeight={500}
+              >
+                40
+              </Typography>
+            </Box>
             <Typography sx={{ fontSize: { xs: 14, md: 16 } }} fontWeight={500}>
               países pedalando com a gente
             </Typography>
           </GridItem>
         </Grid>
-        <Grid size={{ xs: 6, md: 6.5 }}>
+        <Grid size={{ xs: 12, lg: 6.5 }}>
           <GridItem
             gap="8px"
-            center
             padding="16px"
             height="100%"
-            color={Colors["Blue-60"]}
-            backgroundColor={Colors["Blue-10"]}
-            style={{
+            color={Colors["Blue_60"]}
+            backgroundColor={Colors["Blue_10"]}
+            sx={{
               display: "flex",
               flexDirection: "row",
-              alignItems: "end",
-              justifyContent: "start",
+              alignItems: { xs: "center", lg: "baseline" },
+              justifyContent: { xs: "center", lg: "start" },
             }}
           >
             <Box
@@ -177,7 +215,7 @@ function OurNumbers(): JSX.Element {
               }}
             />
             <Typography
-              color={Colors["Blue-60"]}
+              color={Colors["Blue_60"]}
               sx={{ fontSize: { xs: 42, md: 64 } }}
               lineHeight={1}
               fontWeight={500}

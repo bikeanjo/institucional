@@ -120,7 +120,7 @@ const SearchResults: React.FC = () => {
           <>
             <Typography fontWeight={400} fontSize={{ xs: "24px", lg: "32px" }}>
               Resultado de busca para{" "}
-              <span style={{ color: Colors["Pink-50"], fontWeight: 700 }}>
+              <span style={{ color: Colors["Pink_50"], fontWeight: 700 }}>
                 "{searchQuery}"
               </span>
             </Typography>
@@ -130,7 +130,7 @@ const SearchResults: React.FC = () => {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  border: `2px solid ${Colors["Green-70"]}`,
+                  border: `2px solid ${Colors["Green_70"]}`,
                   borderRadius: "8px",
                   px: "9px",
                   py: "8px",
@@ -139,7 +139,7 @@ const SearchResults: React.FC = () => {
                   height: "48px",
                 }}
               >
-                <SearchIcon sx={{ color: Colors["Green-70"], width: "24px" }} />
+                <SearchIcon sx={{ color: Colors["Green_70"], width: "24px" }} />
                 <InputBase
                   placeholder="Pesquise páginas, tópicos ou áreas..."
                   value={inputValue}
@@ -153,14 +153,14 @@ const SearchResults: React.FC = () => {
                   sx={{
                     flex: 1,
                     "&::placeholder": {
-                      color: Colors["Green-70"],
+                      color: Colors["Green_70"],
                       opacity: 1,
                     },
                   }}
                 />
                 {inputValue && (
                   <IconButton onClick={() => setInputValue("")}>
-                    <CloseIcon sx={{ color: Colors["Green-70"] }} />
+                    <CloseIcon sx={{ color: Colors["Green_70"] }} />
                   </IconButton>
                 )}
               </Box>
@@ -173,8 +173,8 @@ const SearchResults: React.FC = () => {
                     left: 0,
                     right: 0,
                     maxWidth: "400px",
-                    bgcolor: "G-White",
-                    border: `2px solid ${Colors["Green-20"]}`,
+                    bgcolor: "G_White",
+                    border: `2px solid ${Colors["Green_20"]}`,
                     borderRadius: "8px",
                     zIndex: 10,
                   }}
@@ -188,8 +188,8 @@ const SearchResults: React.FC = () => {
                         display: "block",
                         px: "16px",
                         py: "12px",
-                        borderBottom: `2px solid ${Colors["Green-20"]}`,
-                        color: Colors["Green-70"],
+                        borderBottom: `2px solid ${Colors["Green_20"]}`,
+                        color: Colors["Green_70"],
                         fontWeight: 400,
                         "&:last-child": { borderBottom: "none" },
                         "&:hover": {
@@ -221,19 +221,19 @@ const SearchResults: React.FC = () => {
                     justifyContent: "space-between",
                     alignItems: "center",
                     p: "8px 24px",
-                    border: `2px solid ${Colors["Green-70"]}`,
+                    border: `2px solid ${Colors["Green_70"]}`,
                     borderRadius: "8px",
                   }}
                 >
                   <Typography
                     fontSize="18px"
-                    color={Colors["Green-70"]}
+                    color={Colors["Green_70"]}
                     fontWeight={700}
                   >
                     {result.title}
                   </Typography>
                   <ArrowForwardIosIcon
-                    sx={{ color: Colors["Green-70"], fontSize: "16px" }}
+                    sx={{ color: Colors["Green_70"], fontSize: "16px" }}
                   />
                 </Link>
               ))}
@@ -243,7 +243,7 @@ const SearchResults: React.FC = () => {
           <>
             <Typography fontWeight={400} fontSize={{ xs: "24px", lg: "32px" }}>
               Nenhum resultado para{" "}
-              <span style={{ color: Colors["Pink-50"], fontWeight: 700 }}>
+              <span style={{ color: Colors["Pink_50"], fontWeight: 700 }}>
                 "{searchQuery}"
               </span>
             </Typography>
@@ -252,7 +252,7 @@ const SearchResults: React.FC = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                border: `2px solid ${Colors["Green-70"]}`,
+                border: `2px solid ${Colors["Green_70"]}`,
                 borderRadius: "8px",
                 px: "9px",
                 py: "8px",
@@ -261,7 +261,7 @@ const SearchResults: React.FC = () => {
                 height: "48px",
               }}
             >
-              <SearchIcon sx={{ color: Colors["Green-70"], width: "24px" }} />
+              <SearchIcon sx={{ color: Colors["Green_70"], width: "24px" }} />
               <InputBase
                 placeholder="Pesquise páginas, tópicos ou áreas..."
                 value={inputValue}
@@ -272,14 +272,14 @@ const SearchResults: React.FC = () => {
                 sx={{
                   flex: 1,
                   "&::placeholder": {
-                    color: Colors["Green-70"],
+                    color: Colors["Green_70"],
                     opacity: 1,
                   },
                 }}
               />
               {inputValue && (
                 <IconButton onClick={() => setInputValue("")}>
-                  <CloseIcon sx={{ color: Colors["Green-70"] }} />
+                  <CloseIcon sx={{ color: Colors["Green_70"] }} />
                 </IconButton>
               )}
             </Box>
@@ -291,7 +291,7 @@ const SearchResults: React.FC = () => {
               Caso prefira,{" "}
               <a
                 style={{
-                  color: Colors["Green-70"],
+                  color: Colors["Green_70"],
                   fontWeight: 700,
                   textDecoration: "underline",
                 }}

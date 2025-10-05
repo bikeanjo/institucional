@@ -17,10 +17,6 @@ const ScrollSpyMenu = (): JSX.Element | null => {
   const [activeSectionId, setActiveSectionId] = useState<string>("");
 
   useEffect(() => {
-    console.log(activeSectionId);
-  }, [activeSectionId]);
-
-  useEffect(() => {
     const links: AnchorElementsProps[] = [];
     const sections = Array.from(
       document.querySelectorAll("[data-anchor-section]"),
@@ -77,7 +73,7 @@ const ScrollSpyMenu = (): JSX.Element | null => {
 };
 
 const Button = styled(MuiButton)(() => ({
-  border: `2px solid ${Colors["Blue-60"]}`,
+  border: `2px solid ${Colors["Blue_60"]}`,
   padding: "8px 16px",
   minWidth: "max-content",
   borderRadius: "30px",
@@ -86,8 +82,8 @@ const Button = styled(MuiButton)(() => ({
   textTransform: "unset",
 
   "&.active": {
-    backgroundColor: Colors["Blue-60"],
-    color: Colors["G-White"],
+    backgroundColor: Colors["Blue_60"],
+    color: Colors["G_White"],
   },
 }));
 
@@ -96,8 +92,8 @@ const Container = styled(Box)(({ theme }) => ({
   position: "sticky",
   top: 0,
   zIndex: 1,
-  backgroundColor: Colors["G-White"],
-  border: `solid ${Colors["G-Grey-20"]}`,
+  backgroundColor: Colors["G_White"],
+  border: `solid ${Colors["G_Grey_20"]}`,
   borderWidth: "2px 0px",
   gap: "24px",
   padding: "12px 20px",

@@ -39,7 +39,7 @@ const Accordion = ({
 
   const Link = styled(RouterLink)`
     text-decoration: none;
-    color: ${Colors["G-Grey-100"]};
+    color: ${Colors["G_Grey_100"]};
     width: 100%;
   `;
 
@@ -67,8 +67,8 @@ const Accordion = ({
         sx={{
           padding: 0,
           margin: 0,
-          backgroundColor: Colors["G-Grey-10"],
-          color: Colors["G-Grey-100"],
+          backgroundColor: Colors["G_Grey_10"],
+          color: Colors["G_Grey_100"],
           minHeight: 0,
           "&.Mui-expanded": {
             minHeight: "unset",
@@ -86,8 +86,8 @@ const Accordion = ({
             fontSize={"16px"}
             sx={{
               color: {
-                xs: Colors["G-Grey-100"],
-                lg: contato ? Colors["Green-70"] : Colors["G-Grey-100"],
+                xs: Colors["G_Grey_100"],
+                lg: contato ? Colors["Green_70"] : Colors["G_Grey_100"],
               },
             }}
           >
@@ -100,8 +100,8 @@ const Accordion = ({
           display: contato ? "none" : "flex",
           flexDirection: "column",
           padding: "8px 0px",
-          backgroundColor: Colors["G-Grey-10"],
-          color: Colors["G-Grey-100"],
+          backgroundColor: Colors["G_Grey_10"],
+          color: Colors["G_Grey_100"],
           gap: "16px",
         }}
       >

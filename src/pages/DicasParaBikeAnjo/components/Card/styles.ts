@@ -4,8 +4,8 @@ import { Colors } from "../../../../styles/tokens/colors";
 export const Card = styled.div`
   min-width: 250px;
   max-width: 330px;
-  background: ${Colors["G-Grey-10"]};
-  border: 2px solid ${Colors["G-Grey-30"]};
+  background: ${Colors["G_Grey_10"]};
+  border: 2px solid ${Colors["G_Grey_30"]};
   border-radius: 16px;
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -21,14 +21,14 @@ export const TopSection = styled.div<{ $variant: "default" | "attention" }>`
 `;
 
 export const Number = styled.div`
-  color: ${Colors["Green-70"]};
+  color: ${Colors["Green_70"]};
   font-size: 54px;
   font-weight: 900;
   line-height: 100%;
 `;
 
 export const Title = styled.h3`
-  color: ${Colors["Green-70"]};
+  color: ${Colors["Green_70"]};
   min-height: 76px;
   font-size: 32px;
   font-weight: 700;
@@ -47,12 +47,12 @@ export const Subtitle = styled.h2`
 
 export const Divider = styled.div`
   height: 2px;
-  background-color: ${Colors["G-Grey-30"]};
+  background-color: ${Colors["G_Grey_30"]};
   margin: 0 24px;
 `;
 
 export const Description = styled.p`
-  color: ${Colors["G-Grey-100"]};
+  color: ${Colors["G_Grey_100"]};
   padding: 24px;
   font-size: 16px;
   font-weight: 400;

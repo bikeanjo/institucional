@@ -7,7 +7,7 @@ import Section from "@components/Section";
 function Partners(): JSX.Element {
   return (
     <Section>
-      <Title variant="h2" color={Colors["Pink-50"]} center>
+      <Title variant="h2" color={Colors["Pink_50"]} center>
         Parceiros
       </Title>
 

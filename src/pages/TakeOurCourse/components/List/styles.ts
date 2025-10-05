@@ -27,16 +27,16 @@ export const Item = styled(ListItem)`
 export const Icon = styled(ListItemIcon)`
   min-width: auto;
   margin-right: 10px;
-  color: var(--mui-palette-Green-70);
+  color: var(--mui-palette-Green_70);
 
   @media (max-width: 900px) {
-    color: var(--mui-palette-G-Grey-100);
+    color: var(--mui-palette-G_Grey_100);
   }
 `;
 
 export const Text = styled(ListItemText)`
   font-size: 18px;
-  color: var(--mui-palette-G-Grey-100);
+  color: var(--mui-palette-G_Grey_100);
 
   @media (max-width: 900px) {
     text-align: center;

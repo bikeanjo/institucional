@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { colors, Colors } from "./tokens/colors";
+import { Colors } from "./tokens/colors";
 
 const { palette } = createTheme();
 const theme = createTheme({
@@ -17,7 +17,6 @@ const theme = createTheme({
     fontFamily: ["Roboto", "sans-serif"].join(","),
   },
   palette: {
-    ...colors,
     ...Colors,
     title: palette.augmentColor({
       color: {

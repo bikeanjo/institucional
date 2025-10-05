@@ -10,7 +10,7 @@ export const ContainerCard = styled.div<{ color?: string }>`
   padding: 32px 16px;
   gap: 20px;
   border: 2px solid
-    ${(props) => (props.color ? props.color : Colors["Pink-50"])};
+    ${(props) => (props.color ? props.color : Colors["Pink_50"])};
   border-radius: 16px;
   border-sizing: border-box;
 

@@ -34,8 +34,8 @@ function WhoWeAre(): ReactNode {
         <WhatIsBikeAnjo />
         <HowWeOrganize />
         <Section
-          borderColor={Colors["Green-70"]}
-          backgroundColor={Colors["Green-20"]}
+          borderColor={Colors["Green_70"]}
+          backgroundColor={Colors["Green_20"]}
         >
           <Box
             display={"flex"}

@@ -91,8 +91,8 @@ const accordionItems = [
 function FAQ(): JSX.Element {
   return (
     <Section>
-      <Title color={Colors["Pink-50"]}>Conheça a Bike Anjo</Title>
-      <SubTitle color={Colors["G-Grey-100"]} center>
+      <Title color={Colors["Pink_50"]}>Conheça a Bike Anjo</Title>
+      <SubTitle color={Colors["G_Grey_100"]} center>
         Abaixo respondemos algumas das principais dúvidas sobre a Bike Anjo, e
         você sempre pode entrar em contato conosco caso precise!
       </SubTitle>

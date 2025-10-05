@@ -15,7 +15,7 @@ export const Timeline = styled(Box)`
   &::after {
     width: 2px;
     height: 100%;
-    background: var(--mui-palette-G-Grey-50);
+    background: var(--mui-palette-G_Grey_50);
     content: "";
     position: absolute;
     top: 0;
@@ -63,8 +63,8 @@ export const Content = styled(Box)`
   padding-top: 25px;
   padding-inline: 27px;
   padding-bottom: 27px;
-  background-color: var(--mui-palette-Orange-10);
-  border: 2px solid var(--mui-palette-Orange-50);
+  background-color: var(--mui-palette-Orange_10);
+  border: 2px solid var(--mui-palette-Orange_50);
   border-radius: 15px;
   gap: 6px;
   box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.08);
@@ -78,7 +78,7 @@ export const Content = styled(Box)`
 export const Title = styled(Typography)`
   font-size: 24px;
   font-weight: 700;
-  color: var(--mui-palette-G-Grey-100);
+  color: var(--mui-palette-G_Grey_100);
 
   @media (max-width: 900px) {
     font-size: 18px;
@@ -87,7 +87,7 @@ export const Title = styled(Typography)`
 
 export const Text = styled(Typography)`
   font-size: 16px;
-  color: var(--mui-palette-G-Grey-100);
+  color: var(--mui-palette-G_Grey_100);
 `;
 
 export const ContainerDot = styled(Box)<BoxContentProps>`
@@ -115,8 +115,8 @@ export const Dot = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--mui-palette-G-White);
-  border: 2px solid var(--mui-palette-Orange-50);
+  background-color: var(--mui-palette-G_White);
+  border: 2px solid var(--mui-palette-Orange_50);
 `;
 
 export const Ball = styled(Box)`
@@ -124,5 +124,5 @@ export const Ball = styled(Box)`
   height: 16px;
   border-radius: 50%;
   position: relative;
-  background-color: var(--mui-palette-Orange-50);
+  background-color: var(--mui-palette-Orange_50);
 `;

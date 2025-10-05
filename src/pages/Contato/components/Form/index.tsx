@@ -79,8 +79,6 @@ export function Form() {
     const hasErrors = Object.values(newErrors).some((err) => err !== "");
     if (hasErrors) return;
 
-    console.log("Dados enviados:", formData);
-
     setFormData({
       nome: "",
       email: "",

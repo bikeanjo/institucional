@@ -46,7 +46,7 @@ function OurStory(): ReactNode {
         sx={{
           width: "100%",
           heigth: "auto",
-          border: "1px solid var(--mui-palette-G-Grey-30)",
+          border: "1px solid var(--mui-palette-G_Grey_30)",
           borderRadius: "8px",
           boxShadow: "0px 2px 6px rgba(0,0,0,0.15)",
           boxSizing: "border-box",
@@ -62,10 +62,10 @@ function OurStory(): ReactNode {
             width: "100%",
             height: "auto",
             padding: { xs: "24px", md: "40px" },
-            borderTop: "1px solid var(--mui-palette-G-Grey-30)",
+            borderTop: "1px solid var(--mui-palette-G_Grey_30)",
             borderBottomLeftRadius: "8px",
             borderBottomRightRadius: "8px",
-            backgroundColor: "var(--mui-palette-G-White)",
+            backgroundColor: "var(--mui-palette-G_White)",
           }}
         >
           <Box

@@ -4,14 +4,15 @@ import styled from "styled-components";
 interface TextProps extends TypographyOwnProps {
   center?: boolean;
   size?: string;
+  inline?: boolean;
 }
 
 const Text = styled(Typography)<TextProps>(
-  ({ theme, center = false, size }) => ({
+  ({ theme, center = false, size, inline = false }) => ({
     fontWeight: 400,
-    display: "flex",
+    display: inline ? "inline" : "flex",
     wordBreak: "break-word",
-    color: "var(--mui-palette-G-Grey-100)",
+    color: "var(--mui-palette-G_Grey_100)",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "16px",

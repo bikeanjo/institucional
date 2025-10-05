@@ -8,7 +8,7 @@ interface SubtitleProps extends TypographyProps {
 export const Subtitle = styled(Typography)<SubtitleProps>`
   font-size: 40px;
   font-weight: 700;
-  color: var(--mui-palette-Pink-50);
+  color: var(--mui-palette-Pink_50);
   margin: 0;
 
   ${(props) =>
@@ -16,7 +16,7 @@ export const Subtitle = styled(Typography)<SubtitleProps>`
     css`
       font-size: 24px;
       font-weight: 700;
-      color: var(--mui-palette-G-Grey-100);
+      color: var(--mui-palette-G_Grey_100);
     `}
 
   @media (max-width: 900px) {
@@ -40,12 +40,12 @@ export const SummaryBox = styled(Box)`
   flex-wrap: wrap;
   padding: 16px;
   gap: 16px;
-  border: 2px solid var(--mui-palette-G-Grey-30);
+  border: 2px solid var(--mui-palette-G_Grey_30);
   border-radius: 8px;
-  background-color: var(--mui-palette-G-Grey-20);
+  background-color: var(--mui-palette-G_Grey_20);
 `;
 
 export const SummaryText = styled(Typography)`
   font-size: 18px;
-  color: var(--mui-palette-G-Grey-60);
+  color: var(--mui-palette-G_Grey_60);
 `;

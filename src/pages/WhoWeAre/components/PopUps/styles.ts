@@ -23,8 +23,8 @@ export const Container = styled(Box)`
   padding: 24px;
   margin: 0 auto;
   gap: 40px;
-  background-color: var(--mui-palette-G-White);
-  border: 2px solid var(--mui-palette-G-Grey-20);
+  background-color: var(--mui-palette-G_White);
+  border: 2px solid var(--mui-palette-G_Grey_20);
   border-radius: 16px;
   box-shadow: 0px 6px 8px (0, 0, 0, 0.15);
 
@@ -38,7 +38,7 @@ export const Title = styled(Typography)`
   font-size: 40px;
   font-weight: 700;
   text-align: left;
-  color: var(--mui-palette-Pink-50);
+  color: var(--mui-palette-Pink_50);
 
   @media (max-width: 900px) {
     font-size: 32px;
@@ -48,13 +48,13 @@ export const Title = styled(Typography)`
 export const Subtitle = styled(Typography)`
   font-size: 24px;
   font-weight: 700;
-  color: var(--mui-palette-Pink-50);
+  color: var(--mui-palette-Pink_50);
 `;
 
 export const Text = styled(Typography)`
   font-size: 16px;
   text-align: left;
-  color: var(--mui-palette-G-Grey-100);
+  color: var(--mui-palette-G_Grey_100);
 `;
 
 export const ButtonBox = styled(Box)`
@@ -64,7 +64,7 @@ export const ButtonBox = styled(Box)`
   height: auto;
   padding: 16px;
   gap: 10px;
-  border: 2px solid var(--mui-palette-Green-70);
+  border: 2px solid var(--mui-palette-Green_70);
   border-radius: 8px;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -90,17 +90,17 @@ export const CloseButton = styled(IconButton)`
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 2px solid var(--mui-palette-G-Grey-30);
+  border: 2px solid var(--mui-palette-G_Grey_30);
 `;
 
 export const Label = styled(Typography)`
   font-size: 16px;
-  color: var(--mui-palette-G-Grey-70);
+  color: var(--mui-palette-G_Grey_70);
 `;
 
 export const Value = styled(Typography)`
   width: fit-content;
-  background-color: var(--mui-palette-G-Grey-10);
+  background-color: var(--mui-palette-G_Grey_10);
   padding: 4px 16px;
   border-radius: 50px;
   font-size: 16px;

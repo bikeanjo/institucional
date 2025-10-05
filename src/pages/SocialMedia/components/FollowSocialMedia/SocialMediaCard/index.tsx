@@ -27,8 +27,8 @@ export function SocialCard({
         display: "flex",
         alignItems: "center",
         borderRadius: "8px",
-        border: `2px solid ${Colors["G-Grey-30"]}`,
-        backgroundColor: Colors["G-Grey-10"],
+        border: `2px solid ${Colors["G_Grey_30"]}`,
+        backgroundColor: Colors["G_Grey_10"],
       }}
     >
       <Box
