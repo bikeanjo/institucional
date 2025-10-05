@@ -41,7 +41,6 @@ const Carrousel = ({
         ? carrousel.current.clientWidth / itensPerView
         : width;
       carrousel.current.scrollLeft += (cardSize + gap) * itensPerView;
-      console.log((cardSize + gap) * itensPerView);
     }
   };
 

@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
 
   const SocialLink = styled(RouterLink)`
     text-decoration: none;
-    color: ${Colors["Green-70"]};
+    color: ${Colors["Green_70"]};
     width: 100%;
     display: flex;
 
@@ -51,11 +51,11 @@ const Footer: React.FC = () => {
     <Box
       component="footer"
       sx={{
-        bgcolor: Colors["G-Grey-10"],
-        color: Colors["G-Grey-60"],
+        bgcolor: Colors["G_Grey_10"],
+        color: Colors["G_Grey_60"],
         padding: { xs: "16px 24px 0px 24px", lg: "40px 96px 0px 96px" },
         fontWeight: 700,
-        borderTop: `2px solid ${Colors["Green-70"]}`,
+        borderTop: `2px solid ${Colors["Green_70"]}`,
       }}
     >
       <Box
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
             width={{ xs: "100%", lg: 293 }}
             fontSize={"18px"}
             gridArea="texto"
-            color={Colors["G-Grey-100"]}
+            color={Colors["G_Grey_100"]}
             textAlign={{ xs: "center", lg: "start" }}
           >
             Junte-se a uma comunidade que acredita na transformação por meio da
@@ -225,7 +225,7 @@ const Footer: React.FC = () => {
         sx={{
           my: { xs: 1, lg: 4 },
           borderWidth: "1px",
-          borderColor: Colors["G-Grey-30"],
+          borderColor: Colors["G_Grey_30"],
         }}
       />
       <Typography

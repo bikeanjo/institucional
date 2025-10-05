@@ -85,7 +85,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
               elevation: 0,
               sx: {
                 overflow: "visible",
-                backgroundColor: Colors["Green-20"],
+                backgroundColor: Colors["Green_20"],
                 borderRadius: "8px",
                 p: "16px 24px 24px 24px",
                 mt: "70px",
@@ -98,7 +98,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                   height: 18,
                   left: 24,
                   top: 0,
-                  backgroundColor: Colors["Green-20"],
+                  backgroundColor: Colors["Green_20"],
                   transform: "translateY(-20%) rotate(45deg)",
                 },
               },
@@ -116,7 +116,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                   sx={{
                     p: 0,
                     fontWeight: 600,
-                    color: Colors["Green-70"],
+                    color: Colors["Green_70"],
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
@@ -150,7 +150,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                       sx={{
                         p: 0,
                         fontWeight: 400,
-                        color: Colors["Green-70"],
+                        color: Colors["Green_70"],
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",

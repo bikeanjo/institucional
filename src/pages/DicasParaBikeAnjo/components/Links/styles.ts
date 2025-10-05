@@ -17,7 +17,7 @@ export const LinkItem = styled.li`
 
   a {
     font-size: 16px;
-    color: ${Colors["Blue-60"]};
+    color: ${Colors["Blue_60"]};
     font-weight: 500;
     text-decoration: underline;
     cursor: pointer;

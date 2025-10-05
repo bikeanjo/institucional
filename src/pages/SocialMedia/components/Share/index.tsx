@@ -21,9 +21,9 @@ interface ShareProps {
 const iconStyle = {
   width: 48,
   height: 48,
-  backgroundColor: Colors["G-White"],
-  color: Colors["Green-70"],
-  border: `2px solid ${Colors["Green-70"]}`,
+  backgroundColor: Colors["G_White"],
+  color: Colors["Green_70"],
+  border: `2px solid ${Colors["Green_70"]}`,
   borderRadius: "50%",
   display: "flex",
   alignItems: "center",

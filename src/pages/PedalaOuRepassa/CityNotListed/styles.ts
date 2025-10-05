@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: ${Colors["Green-70"]};
+  color: ${Colors["Green_70"]};
   font-size: 24px;
   font-weight: 600;
   margin: 0;

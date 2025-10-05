@@ -4,6 +4,7 @@ import Title from "@components/Title";
 import SubTitle from "@components/SubTitle";
 import ImgWhatIsBikeAnjo from "../../../../../public/assets/images/WhoWeAre/what-is-bike-anjo.webp";
 import Section from "@components/Section";
+import { Colors } from "../../../../styles/tokens/colors";
 
 export function WhatIsBikeAnjo(): ReactNode {
   return (
@@ -50,7 +51,7 @@ export function WhatIsBikeAnjo(): ReactNode {
             height: { xs: "343px", md: "344.25px" },
             borderRadius: { xs: "8px", md: "10.8" },
             overflow: "hidden",
-            backgroundColor: "#4D7A18",
+            backgroundColor: Colors["Green_70"],
           }}
         >
           <img
@@ -76,7 +77,7 @@ export function WhatIsBikeAnjo(): ReactNode {
             sx={{
               textAlign: "left",
               fontSize: { xs: "16px", md: "24px" },
-              color: "var(--mui-palette-G-Grey-100)",
+              color: "var(--mui-palette-G_Grey_100)",
             }}
           >
             Bike Anjo é uma ONG que ajuda pessoas a aprender a pedalar ou

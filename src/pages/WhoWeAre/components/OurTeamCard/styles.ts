@@ -27,7 +27,7 @@ export const Controls = styled("div")`
     font-size: 24px;
     cursor: pointer;
     color: white;
-    background-color: var(--mui-palette-Green-70);
+    background-color: var(--mui-palette-Green_70);
     border-radius: 100%;
     padding: 12px;
 
@@ -69,7 +69,7 @@ export const PaginationDot = styled("div")<{ isActive: boolean }>`
   cursor: pointer;
   background-color: ${(props) =>
     props.isActive
-      ? "var(--mui-palette-Green-70)"
-      : "var(--mui-palette-G-Grey-40)"};
+      ? "var(--mui-palette-Green_70)"
+      : "var(--mui-palette-G_Grey_40)"};
   transition: background-color 0.3s ease;
 `;

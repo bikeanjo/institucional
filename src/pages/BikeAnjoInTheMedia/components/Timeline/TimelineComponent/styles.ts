@@ -5,7 +5,7 @@ export const TimelineContainer = styled(Box)`
   display: flex;
   padding: 16px 32px;
   position: relative;
-  background-color: var(--mui-palette-G-Grey-10);
+  background-color: var(--mui-palette-G_Grey_10);
   border-radius: 8px 8px 0 0;
   margin: 0 auto;
 `;
@@ -19,7 +19,7 @@ export const NavigationContainer = styled(Box)`
 `;
 
 export const Button = styled(IconButton)`
-  color: var(--mui-palette-G-Grey-50);
+  color: var(--mui-palette-G_Grey_50);
   padding: 5px 0px;
 `;
 
@@ -56,7 +56,7 @@ export const YearsContainer = styled(Box)`
   &::before {
     width: 100%;
     height: 2px;
-    background: var(--mui-palette-G-Grey-50);
+    background: var(--mui-palette-G_Grey_50);
     content: "";
     position: absolute;
     top: 80%;
@@ -69,7 +69,7 @@ export const Years = styled(Typography)<{ $isActive: boolean }>`
   font-size: 24px;
   text-align: center;
   font-weight: ${({ $isActive }) => ($isActive ? "bold" : "normal")};
-  color: var(--mui-palette-G-Grey-100);
+  color: var(--mui-palette-G_Grey_100);
   cursor: pointer;
 `;
 
@@ -80,8 +80,8 @@ export const Dot = styled(Box)`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid var(--mui-palette-Orange-50);
-  background-color: var(--mui-palette-G-White);
+  border: 2px solid var(--mui-palette-Orange_50);
+  background-color: var(--mui-palette-G_White);
   cursor: pointer;
   z-index: 1;
 `;
@@ -92,5 +92,5 @@ export const Ball = styled(Box)<{ $isActive: boolean }>`
   border-radius: 50%;
   position: relative;
   background-color: ${({ $isActive }) =>
-    $isActive ? "var(--mui-palette-Orange-50)" : "var(--mui-palette-G-White)"};
+    $isActive ? "var(--mui-palette-Orange_50)" : "var(--mui-palette-G_White)"};
 `;

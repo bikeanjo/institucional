@@ -446,7 +446,7 @@ export default function FollowLocalArticulations({
   return (
     <Section>
       <Title align={titleAlign}>{title ?? ""}</Title>
-      <SubTitle color={Colors["G-Grey-100"]}>{sub}</SubTitle>
+      <SubTitle color={Colors["G_Grey_100"]}>{sub}</SubTitle>
 
       <MapInteractive
         articulations={articulations}

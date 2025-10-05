@@ -37,14 +37,14 @@ export default function Login() {
           sx={{
             ml: 2,
             "&:hover": {
-              backgroundColor: Colors["Green-20"],
+              backgroundColor: Colors["Green_20"],
             },
             "&:active": {
-              backgroundColor: Colors["Green-20"],
+              backgroundColor: Colors["Green_20"],
             },
           }}
           TouchRippleProps={{
-            style: { color: Colors["Green-20"] },
+            style: { color: Colors["Green_20"] },
           }}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"
@@ -53,7 +53,7 @@ export default function Login() {
           <Box
             component="span"
             className="material-icons-outlined"
-            sx={{ fontSize: { xs: 35, xl: 50 }, color: Colors["Green-70"] }}
+            sx={{ fontSize: { xs: 35, xl: 50 }, color: Colors["Green_70"] }}
           >
             account_circle
           </Box>
@@ -70,7 +70,7 @@ export default function Login() {
             elevation: 0,
             sx: {
               overflow: "visible",
-              backgroundColor: Colors["Green-70"],
+              backgroundColor: Colors["Green_70"],
               width: 249,
               py: 5,
               px: 4,
@@ -87,7 +87,7 @@ export default function Login() {
                 height: 18,
                 right: 24,
                 top: 0,
-                backgroundColor: Colors["Green-70"],
+                backgroundColor: Colors["Green_70"],
                 transform: "translateY(-20%) rotate(45deg)",
                 zIndex: 0,
               },
@@ -98,7 +98,7 @@ export default function Login() {
         anchorOrigin={{ horizontal: 65, vertical: 90 }}
       >
         <Box sx={{ display: "flex", justifyContent: "center", mb: 1 }}>
-          <Typography color={"G-White"}>Já faz parte da Bike Anjo?</Typography>
+          <Typography color={"G_White"}>Já faz parte da Bike Anjo?</Typography>
         </Box>
 
         <MenuItem sx={menuItemStyle}>
@@ -110,10 +110,10 @@ export default function Login() {
               height: 39,
               borderRadius: "4px",
               p: 1.25,
-              backgroundColor: "G-White",
+              backgroundColor: "G_White",
               textTransform: "none",
               fontSize: "16px",
-              color: Colors["Green-70"],
+              color: Colors["Green_70"],
             }}
           >
             Faça Login
@@ -121,7 +121,7 @@ export default function Login() {
         </MenuItem>
 
         <Box sx={{ display: "flex", justifyContent: "center", mt: 2, mb: 1 }}>
-          <Typography color={"G-White"}>Ainda não tem cadastro?</Typography>
+          <Typography color={"G_White"}>Ainda não tem cadastro?</Typography>
         </Box>
 
         <MenuItem sx={menuItemStyle}>
@@ -133,10 +133,10 @@ export default function Login() {
               height: 39,
               borderRadius: "4px",
               p: 1.25,
-              backgroundColor: Colors["Green-20"],
+              backgroundColor: Colors["Green_20"],
               textTransform: "none",
               fontSize: "16px",
-              color: Colors["Green-70"],
+              color: Colors["Green_70"],
             })}
           >
             Crie uma Conta

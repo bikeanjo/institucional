@@ -16,7 +16,7 @@ export function ProjectCards() {
         "A Escola Bike Anjo é uma oficina de aprendizado para o mundo da bicicleta.",
       button: "Conheça",
       link: "/escola-bike-anjo",
-      color: Colors["Green-70"],
+      color: Colors["Green_70"],
     },
     {
       id: "Card2",
@@ -26,7 +26,7 @@ export function ProjectCards() {
       textMobile: "Resumo até 110 caracteres",
       button: "Conheça",
       link: "/bike-anjas",
-      color: Colors["Blue-60"],
+      color: Colors["Blue_60"],
     },
     {
       id: "Card3",
@@ -36,7 +36,7 @@ export function ProjectCards() {
       textMobile: "Resumo até 110 caracteres",
       button: "Conheça",
       link: "",
-      color: Colors["Orange-50"],
+      color: Colors["Orange_50"],
     },
     {
       id: "Card4",
@@ -46,7 +46,7 @@ export function ProjectCards() {
       textMobile: "Resumo até 110 caracteres",
       button: "Conheça",
       link: "/pedala-ou-repassa",
-      color: Colors["Pink-50"],
+      color: Colors["Pink_50"],
     },
     {
       id: "Card5",
@@ -54,7 +54,7 @@ export function ProjectCards() {
       textDesktop:
         "Escolas também pedalam com a gente! Levamos a cultura da bicicleta pra sala de aula, envolvendo estudantes, educadores e famílias num futuro mais sustentável. Aprender vai além da lousa!",
       textMobile: "Resumo até 110 caracteres",
-      color: Colors["Green-70"],
+      color: Colors["Green_70"],
     },
     {
       id: "Card6",
@@ -62,7 +62,7 @@ export function ProjectCards() {
       textDesktop:
         "Nas quebradas, a bike já é resistência! O projeto valoriza o que já existe e fortalece com oficinas, pedais e autonomia. É sobre empoderar e pedalar onde a cidade insiste em esquecer.",
       textMobile: "Resumo até 110 caracteres",
-      color: Colors["Blue-60"],
+      color: Colors["Blue_60"],
     },
     {
       id: "Card7",
@@ -70,7 +70,7 @@ export function ProjectCards() {
       textDesktop:
         "Mais do que um nome neutro, um chamado à diversidade. As Bike Anjes garantem um espaço seguro e acolhedor para quem pedala sendo quem é. Porque toda pessoa tem o direito de ocupar a cidade.",
       textMobile: "Resumo até 110 caracteres",
-      color: Colors["Orange-50"],
+      color: Colors["Orange_50"],
     },
     {
       id: "Card8",
@@ -78,7 +78,7 @@ export function ProjectCards() {
       textDesktop:
         "Pedalar com deficiência visual é possível! ODKV usa bikes adaptadas pra garantir inclusão, autonomia e alegria sobre duas rodas. Todo mundo tem o direito de sentir o vento no rosto.",
       textMobile: "Resumo até 110 caracteres",
-      color: Colors["Pink-50"],
+      color: Colors["Pink_50"],
     },
   ];
 

@@ -87,8 +87,8 @@ const Doacao = (): JSX.Element => {
         </Box>
 
         <Section
-          borderColor={Colors["Orange-60"]}
-          backgroundColor={Colors["Orange-30"]}
+          borderColor={Colors["Orange_60"]}
+          backgroundColor={Colors["Orange_30"]}
         >
           <Box
             sx={{
@@ -125,8 +125,8 @@ const Doacao = (): JSX.Element => {
                 flexDirection: "column",
                 alignItems: "center",
                 flex: 1,
-                backgroundColor: Colors["Orange-10"],
-                border: `3px solid ${Colors["Orange-60"]}`,
+                backgroundColor: Colors["Orange_10"],
+                border: `3px solid ${Colors["Orange_60"]}`,
                 borderRadius: "16px",
                 padding: "32px",
                 gap: "16px",
@@ -211,8 +211,8 @@ const Doacao = (): JSX.Element => {
                 flexDirection: "column",
                 alignItems: "center",
                 flex: 1,
-                backgroundColor: Colors["Orange-10"],
-                border: `3px solid ${Colors["Orange-60"]}`,
+                backgroundColor: Colors["Orange_10"],
+                border: `3px solid ${Colors["Orange_60"]}`,
                 borderRadius: "16px",
                 padding: "32px",
                 gap: "16px",

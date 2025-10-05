@@ -3,7 +3,7 @@ import { Box, Link, Typography } from "@mui/material";
 
 export const Container = styled(Box)`
   max-width: 1248px;
-  border: 1px solid var(--mui-palette-G-Grey-30);
+  border: 1px solid var(--mui-palette-G_Grey_30);
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
   boxs-sizing: border-box;
@@ -14,9 +14,9 @@ export const ContainerItems = styled(Box)`
   flex-direction: column;
   width: 100%;
   padding: 40px;
-  border-top: 1px solid var(--mui-palette-G-Grey-30);
+  border-top: 1px solid var(--mui-palette-G_Grey_30);
   border-radius: 0 0 8px 8px;
-  background-color: var(--mui-palette-G-White);
+  background-color: var(--mui-palette-G_White);
   gap: 16px;
 `;
 
@@ -94,7 +94,7 @@ export const BoxMedia = styled(Box)`
   flex-direction: column;
   width: 100%;
   padding: 10px 16px;
-  border: 2px solid var(--mui-palette-Blue-60);
+  border: 2px solid var(--mui-palette-Blue_60);
   border-radius: 8px;
   gap: 12px;
 `;
@@ -120,7 +120,7 @@ export const BoxInfos = styled(Box)`
 
 export const LinkButton = styled(Link)`
   text-transform: none;
-  color: var(--mui-palette-Blue-60);
+  color: var(--mui-palette-Blue_60);
   text-decoration: underline;
   padding: 0px;
   display: inline-flex;

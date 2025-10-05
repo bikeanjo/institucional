@@ -4,8 +4,8 @@ import { Colors } from "../../../../styles/tokens/colors";
 const CopyInput = styled(TextField)(() => ({
   width: "100%",
   backgroundColor: "#FFFFFF",
-  border: `2px solid ${Colors["Orange-50"]}`,
-  color: Colors["Orange-50"],
+  border: `2px solid ${Colors["Orange_50"]}`,
+  color: Colors["Orange_50"],
   borderRadius: 8,
   filter: "none",
   "& fieldset": {
@@ -19,19 +19,19 @@ const CopyInput = styled(TextField)(() => ({
   "& .MuiInputBase-root.Mui-disabled": {
     opacity: 1,
     filter: "none",
-    color: Colors["Orange-50"],
+    color: Colors["Orange_50"],
     cursor: "pointer",
     WebkitTextFillColor: "black",
   },
   "& .Mui-disabled": {
     opacity: 1,
     filter: "none",
-    color: Colors["Orange-50"],
+    color: Colors["Orange_50"],
     cursor: "pointer",
-    WebkitTextFillColor: Colors["Orange-50"],
+    WebkitTextFillColor: Colors["Orange_50"],
   },
   "& .MuiInputAdornment-root": {
-    color: Colors["Orange-50"],
+    color: Colors["Orange_50"],
   },
   "& .MuiInputBase-input": {
     filter: "none",
@@ -39,7 +39,7 @@ const CopyInput = styled(TextField)(() => ({
     position: "relative",
     backgroundColor: "#FFFFFF",
     fontSize: 16,
-    color: Colors["Orange-50"],
+    color: Colors["Orange_50"],
     fontWeight: 600,
     padding: "16px 24px",
     "&:focus, &:hover": {

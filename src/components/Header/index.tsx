@@ -31,7 +31,7 @@ const Header = styled.div<HeaderProps>(
     backgroundPosition: Hero?.backgroundPositionMobile,
 
     "& h2": {
-      color: Colors["G-White"],
+      color: Colors["G_White"],
       fontWeight: 600,
       lineHeight: "100%",
       margin: "0 0 4px",

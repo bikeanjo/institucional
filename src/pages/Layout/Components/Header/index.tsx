@@ -117,12 +117,12 @@ const Header: React.FC = () => {
       <Toolbar
         sx={{
           justifyContent: "space-between",
-          borderBottom: `2px solid ${Colors["Green-70"]}`,
+          borderBottom: `2px solid ${Colors["Green_70"]}`,
           height: { xs: "54px", lg: "80px" },
           py: 2,
           px: 5,
           gap: { xs: "16px", lg: "32px" },
-          backgroundColor: "G-White",
+          backgroundColor: "G_White",
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       >
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
             <FontAwesomeIcon
               icon={icon}
               fontSize={28}
-              color={Colors["Green-70"]}
+              color={Colors["Green_70"]}
             />
           </Box>
           <Link to="/">
@@ -177,7 +177,7 @@ const Header: React.FC = () => {
             popper: {
               sx: {
                 "& .MuiAutocomplete-paper": {
-                  border: `2px solid ${Colors["Green-70"]}`,
+                  border: `2px solid ${Colors["Green_70"]}`,
                   borderTop: "none",
                   borderBottomLeftRadius: "8px",
                   borderBottomRightRadius: "8px",
@@ -185,19 +185,19 @@ const Header: React.FC = () => {
                 "& .MuiAutocomplete-listbox": {
                   padding: 0,
                   "& li": {
-                    borderBottom: `2px solid ${Colors["Green-20"]}`,
+                    borderBottom: `2px solid ${Colors["Green_20"]}`,
                     "&:hover": {
-                      backgroundColor: Colors["Green-20"],
+                      backgroundColor: Colors["Green_20"],
                     },
                     "&.Mui-focused": {
-                      backgroundColor: Colors["Green-20"],
+                      backgroundColor: Colors["Green_20"],
                     },
                     "&[aria-selected='true']": {
-                      backgroundColor: Colors["Green-20"],
+                      backgroundColor: Colors["Green_20"],
                     },
                   },
                   "& li:first-of-type": {
-                    borderTop: `2px solid ${Colors["Green-20"]}`,
+                    borderTop: `2px solid ${Colors["Green_20"]}`,
                   },
                 },
               },
@@ -236,7 +236,7 @@ const Header: React.FC = () => {
                       className="material-icons"
                       style={{
                         fontSize: 24,
-                        color: Colors["Green-70"],
+                        color: Colors["Green_70"],
                         fontWeight: "bold",
                       }}
                     >
@@ -250,32 +250,32 @@ const Header: React.FC = () => {
                 width: openDesktopAutocomplete ? 400 : 200,
                 transition: "width 0.3s ease",
                 "& input": {
-                  color: Colors["Green-70"],
+                  color: Colors["Green_70"],
                 },
                 "& input::placeholder": {
-                  color: Colors["Green-70"],
+                  color: Colors["Green_70"],
                   opacity: 1,
                 },
                 "& .MuiOutlinedInput-root": {
                   "& fieldset": {
-                    border: `2px solid ${Colors["Green-70"]}`,
+                    border: `2px solid ${Colors["Green_70"]}`,
                     borderBottom: openDesktopAutocomplete
                       ? "none"
-                      : `2px solid ${Colors["Green-70"]}`,
+                      : `2px solid ${Colors["Green_70"]}`,
                     borderRadius: "8px",
                     borderBottomLeftRadius: openDesktopAutocomplete ? 0 : "8px",
                     borderBottomRightRadius: openDesktopAutocomplete
                       ? 0
                       : "8px",
                   },
-                  backgroundColor: "G-White",
+                  backgroundColor: "G_White",
                   height: "48px",
                   paddingLeft: "8px",
                   "&:hover fieldset": {
-                    borderColor: Colors["Green-70"],
+                    borderColor: Colors["Green_70"],
                   },
                   "&.Mui-focused fieldset": {
-                    borderColor: Colors["Green-70"],
+                    borderColor: Colors["Green_70"],
                   },
                 },
               }}
@@ -288,7 +288,7 @@ const Header: React.FC = () => {
                   {...props}
                   style={{
                     fontWeight: 600,
-                    color: Colors["Green-70"],
+                    color: Colors["Green_70"],
                     cursor: "pointer",
                   }}
                 >
@@ -301,7 +301,7 @@ const Header: React.FC = () => {
                 {...props}
                 style={{
                   fontWeight: 400,
-                  color: Colors["Green-70"],
+                  color: Colors["Green_70"],
                   cursor: "pointer",
                 }}
               >
@@ -313,10 +313,10 @@ const Header: React.FC = () => {
             <Box
               {...props}
               sx={{
-                backgroundColor: "G-White",
+                backgroundColor: "G_White",
                 borderBottomLeftRadius: "8px",
                 borderBottomRightRadius: "8px",
-                border: `2px solid ${Colors["Green-70"]}`,
+                border: `2px solid ${Colors["Green_70"]}`,
                 borderTop: "none",
                 overflow: "hidden",
                 minWidth: "400px",
@@ -328,7 +328,7 @@ const Header: React.FC = () => {
             alignItems: "center",
             width: "100%",
             height: "48px",
-            backgroundColor: "G-White",
+            backgroundColor: "G_White",
             borderRadius: "8px",
             py: 1.5,
             px: 2,
@@ -346,7 +346,7 @@ const Header: React.FC = () => {
             alignItems: "center",
             gap: "32px",
             whiteSpace: "nowrap",
-            color: Colors["Green-70"],
+            color: Colors["Green_70"],
           }}
         >
           {menuItems.map((item, idx) => (
@@ -418,7 +418,7 @@ const Header: React.FC = () => {
               popper: {
                 sx: {
                   "& .MuiAutocomplete-paper": {
-                    border: `2px solid ${Colors["Green-70"]}`,
+                    border: `2px solid ${Colors["Green_70"]}`,
                     borderTop: "none",
                     borderBottomLeftRadius: "8px",
                     borderBottomRightRadius: "8px",
@@ -426,19 +426,19 @@ const Header: React.FC = () => {
                   "& .MuiAutocomplete-listbox": {
                     padding: 0,
                     "& li": {
-                      borderBottom: `2px solid ${Colors["Green-20"]}`,
+                      borderBottom: `2px solid ${Colors["Green_20"]}`,
                       "&:hover": {
-                        backgroundColor: Colors["Green-20"],
+                        backgroundColor: Colors["Green_20"],
                       },
                       "&.Mui-focused": {
-                        backgroundColor: Colors["Green-20"],
+                        backgroundColor: Colors["Green_20"],
                       },
                       "&[aria-selected='true']": {
-                        backgroundColor: Colors["Green-20"],
+                        backgroundColor: Colors["Green_20"],
                       },
                     },
                     "& li:first-of-type": {
-                      borderTop: `2px solid ${Colors["Green-20"]}`,
+                      borderTop: `2px solid ${Colors["Green_20"]}`,
                     },
                   },
                 },
@@ -473,7 +473,7 @@ const Header: React.FC = () => {
                         className="material-icons"
                         style={{
                           fontSize: 24,
-                          color: Colors["Green-70"],
+                          color: Colors["Green_70"],
                           fontWeight: "bold",
                         }}
                       >
@@ -485,18 +485,18 @@ const Header: React.FC = () => {
                 }}
                 sx={{
                   "& input": {
-                    color: Colors["Green-70"],
+                    color: Colors["Green_70"],
                   },
                   "& input::placeholder": {
-                    color: Colors["Green-70"],
+                    color: Colors["Green_70"],
                     opacity: 1,
                   },
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
-                      border: `2px solid ${Colors["Green-70"]}`,
+                      border: `2px solid ${Colors["Green_70"]}`,
                       borderBottom: openMobileAutocomplete
                         ? "none"
-                        : `2px solid ${Colors["Green-70"]}`,
+                        : `2px solid ${Colors["Green_70"]}`,
                       borderRadius: "8px",
                       borderBottomLeftRadius: openMobileAutocomplete
                         ? 0
@@ -505,14 +505,14 @@ const Header: React.FC = () => {
                         ? 0
                         : "8px",
                     },
-                    backgroundColor: "G-White",
+                    backgroundColor: "G_White",
                     height: "48px",
                     paddingLeft: "8px",
                     "&:hover fieldset": {
-                      borderColor: Colors["Green-70"],
+                      borderColor: Colors["Green_70"],
                     },
                     "&.Mui-focused fieldset": {
-                      borderColor: Colors["Green-70"],
+                      borderColor: Colors["Green_70"],
                     },
                   },
                 }}
@@ -525,7 +525,7 @@ const Header: React.FC = () => {
                     {...props}
                     style={{
                       fontWeight: 600,
-                      color: Colors["Green-70"],
+                      color: Colors["Green_70"],
                       cursor: "pointer",
                     }}
                   >
@@ -538,7 +538,7 @@ const Header: React.FC = () => {
                   {...props}
                   style={{
                     fontWeight: 400,
-                    color: Colors["Green-70"],
+                    color: Colors["Green_70"],
                     cursor: "pointer",
                   }}
                 >
@@ -550,10 +550,10 @@ const Header: React.FC = () => {
               <Box
                 {...props}
                 sx={{
-                  backgroundColor: "G-White",
+                  backgroundColor: "G_White",
                   borderBottomLeftRadius: "8px",
                   borderBottomRightRadius: "8px",
-                  border: `2px solid ${Colors["Green-70"]}`,
+                  border: `2px solid ${Colors["Green_70"]}`,
                   borderTop: "none",
                   overflow: "hidden",
                 }}
@@ -564,7 +564,7 @@ const Header: React.FC = () => {
               alignItems: "center",
               width: "96%",
               height: "48px",
-              backgroundColor: "G-White",
+              backgroundColor: "G_White",
               py: 1.5,
               px: 2,
               gap: { xs: "16px", lg: 1.5 },
@@ -590,16 +590,16 @@ const Header: React.FC = () => {
                     },
                     borderTop:
                       idx === 0
-                        ? `2px solid ${Colors["Green-20"]}`
-                        : `1px solid ${Colors["Green-20"]}`,
-                    borderBottom: `1px solid ${Colors["Green-20"]}`,
+                        ? `2px solid ${Colors["Green_20"]}`
+                        : `1px solid ${Colors["Green_20"]}`,
+                    borderBottom: `1px solid ${Colors["Green_20"]}`,
                   }}
                 >
                   <AccordionSummary
                     expandIcon={
                       Array.isArray(item.children) &&
                       item.children.length > 0 ? (
-                        <ExpandMoreIcon sx={{ color: Colors["Green-70"] }} />
+                        <ExpandMoreIcon sx={{ color: Colors["Green_70"] }} />
                       ) : null
                     }
                     aria-controls="panel1-content"
@@ -623,7 +623,7 @@ const Header: React.FC = () => {
                       component="span"
                       fontWeight={600}
                       fontSize={"16px"}
-                      color={Colors["Green-70"]}
+                      color={Colors["Green_70"]}
                     >
                       {item.title}
                     </Typography>
@@ -635,12 +635,12 @@ const Header: React.FC = () => {
                         flexDirection: "column",
                         padding: "8px 0px",
                         backgroundColor: "transparent",
-                        color: Colors["Green-70"],
+                        color: Colors["Green_70"],
                       }}
                     >
                       <Box
                         sx={{
-                          background: "G-White",
+                          background: "G_White",
                           padding: "0px 24px",
                           display: "flex",
                           alignContent: "center",
@@ -663,7 +663,7 @@ const Header: React.FC = () => {
                                 component="span"
                                 fontWeight={600}
                                 fontSize={"16px"}
-                                color={Colors["Green-70"]}
+                                color={Colors["Green_70"]}
                               >
                                 {subItem.url ? (
                                   <Link
@@ -694,7 +694,7 @@ const Header: React.FC = () => {
                                   <Typography
                                     component="span"
                                     fontSize={"16px"}
-                                    color={Colors["Green-70"]}
+                                    color={Colors["Green_70"]}
                                   >
                                     {lastItem.url ? (
                                       <Link
@@ -724,9 +724,9 @@ const Header: React.FC = () => {
                 sx={{
                   borderTop:
                     idx === 0
-                      ? `2px solid ${Colors["Green-20"]}`
-                      : `1px solid ${Colors["Green-20"]}`,
-                  borderBottom: `1px solid ${Colors["Green-20"]}`,
+                      ? `2px solid ${Colors["Green_20"]}`
+                      : `1px solid ${Colors["Green_20"]}`,
+                  borderBottom: `1px solid ${Colors["Green_20"]}`,
                   height: "54px",
                   display: "flex",
                   alignItems: "center",
@@ -737,7 +737,7 @@ const Header: React.FC = () => {
                   component="span"
                   fontWeight={600}
                   fontSize={"16px"}
-                  color={Colors["Green-70"]}
+                  color={Colors["Green_70"]}
                 >
                   {item.url ? (
                     <Link to={item.url} onClick={handleCloseDrawer}>

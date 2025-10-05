@@ -28,18 +28,18 @@ const BreadCrumbContainer = styled(Box)<BoxProps>(({ theme }) => ({
   },
 
   "& .link": {
-    color: Colors["G-Grey-70"],
+    color: Colors["G_Grey_70"],
   },
 
   "& .leaf": {
-    color: Colors["G-Grey-100"],
+    color: Colors["G_Grey_100"],
     textDecoration: "underline",
     fontWeight: 700,
     textDecorationThickness: "12%",
   },
 
   "& .home, .icon": {
-    color: Colors["Blue-60"],
+    color: Colors["Blue_60"],
     textDecoration: "none",
   },
 

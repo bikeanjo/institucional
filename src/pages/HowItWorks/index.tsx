@@ -65,7 +65,7 @@ function HowItWorks(): JSX.Element {
       <BreadCrumb />
 
       <Container>
-        <SubTitle color={Colors["G-Grey-100"]}>
+        <SubTitle color={Colors["G_Grey_100"]}>
           Através do nosso site conectamos quem quer aprender a pedalar com quem
           já pedala e quer ajudar. É simples, facil e o mais importante:
           gratuito. Escolha abaixo se você quer ensinar ou aprender e bora

@@ -4,6 +4,7 @@ import { Form } from "./components/Form";
 import Container from "@components/Container";
 import Text from "@components/Text";
 import Section from "@components/Section";
+import { Colors } from "../../styles/tokens/colors";
 
 function Contact(): JSX.Element {
   const Hero = {
@@ -32,14 +33,14 @@ function Contact(): JSX.Element {
             <br />
             Nosso time responderá com todo cuidado assim que possível!
           </Text>
-          <Text>
+          <Text inline>
             É uma dúvida? Pode ser que consultando no
             <a
               href="/faq"
               style={{
-                marginInline: "10px",
+                marginInline: "5px",
                 textDecoration: "underline",
-                color: "#000",
+                color: Colors["Green_70"],
                 fontWeight: "600",
               }}
             >

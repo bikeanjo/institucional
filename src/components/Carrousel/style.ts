@@ -21,8 +21,8 @@ export const Controls = styled("div")`
     transform: translateY(-50%);
     font-size: 24px;
     cursor: pointer;
-    color: ${Colors["Green-70"]};
-    background-color: ${Colors["Green-10"]};
+    color: ${Colors["Green_70"]};
+    background-color: ${Colors["Green_10"]};
     border-radius: 100%;
     padding: 12px;
 

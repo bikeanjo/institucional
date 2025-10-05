@@ -81,8 +81,8 @@ export function Cards() {
 
   return (
     <Section
-      backgroundColor={Colors["Pink-20"]}
-      borderColor={Colors["Pink-70"]}
+      backgroundColor={Colors["Pink_20"]}
+      borderColor={Colors["Pink_70"]}
     >
       <Title>Conheça mais sobre Bike Anjas</Title>
 

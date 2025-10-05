@@ -80,10 +80,10 @@ export default function FindLocalArticulation({
         flexDirection: "column",
         gap: "8px",
         margin: "40px 0px",
-        border: `2px solid ${Colors["G-Grey-30"]}`,
+        border: `2px solid ${Colors["G_Grey_30"]}`,
         borderRadius: "16px",
         padding: "24px",
-        backgroundColor: Colors["G-Grey-10"],
+        backgroundColor: Colors["G_Grey_10"],
       }}
     >
       <Title>Encontre uma Articulação Local</Title>
