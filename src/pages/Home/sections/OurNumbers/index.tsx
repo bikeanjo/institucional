@@ -2,8 +2,8 @@ import type { JSX } from "react";
 import Title from "../../components/Title";
 import { Box, Grid, Typography } from "@mui/material";
 import GridItem from "./components/GridItem";
-import { Colors } from "../../../../styles/tokens/colors";
-import Section from "@components/Section";
+import { Colors } from "@colors";
+import { Section } from "@components";
 
 function OurNumbers(): JSX.Element {
   return (

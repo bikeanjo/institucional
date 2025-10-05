@@ -1,12 +1,9 @@
 import { useState, type ReactNode } from "react";
-import Title from "@components/Title";
-import Text from "@components/Text";
-import Button from "@components/Button";
+import { Title, Text, Button, Section } from "@components";
 import { Box } from "@mui/material";
 import OurBylaws from "../../components/PopUps/OurBylaws";
 import FinancialReports from "../../components/PopUps/FinancialReports";
 import ActivityReports from "../../components/PopUps/ActivityReport";
-import Section from "@components/Section";
 
 function Transparency(): ReactNode {
   const [openModal, setOpenModal] = useState<string | null>(null);

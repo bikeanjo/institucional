@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import "material-icons/iconfont/material-icons.css";
 import { Link } from "react-router-dom";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 const menuItemStyle = {
   display: "flex",

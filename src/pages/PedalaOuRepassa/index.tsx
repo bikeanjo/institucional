@@ -1,10 +1,7 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import { Header, Container, BreadCrumb, ScrollSpyMenu } from "@components";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
-import Container from "@components/Container";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 function formatDescription(description: string) {
   return description

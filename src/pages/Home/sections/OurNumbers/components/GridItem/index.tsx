@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "../../../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 import { Box, BoxProps } from "@mui/material";
 
 interface GridItemContainerProps extends BoxProps {

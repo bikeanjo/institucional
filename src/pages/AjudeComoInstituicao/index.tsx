@@ -1,16 +1,18 @@
 import { Box } from "@mui/material";
-import Header from "@components/Header";
-import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
-import Text from "@components/Text";
-import Partners from "@components/Partners";
-import Button from "@components/Button";
+import {
+  Header,
+  Title,
+  SubTitle,
+  Text,
+  Partners,
+  Button,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+} from "@components";
 import { Link } from "react-router-dom";
-import Container from "@components/Container";
-import { Colors } from "../../styles/tokens/colors";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
+import { Colors } from "@colors";
 
 const AjudeComoInstituicao = () => {
   const Hero = {

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 interface CardProps {
   $secondary?: boolean;

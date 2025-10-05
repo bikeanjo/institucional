@@ -5,24 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/bikeanjo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bike Anjo</title>
-    
+
     <!-- Google Analytics tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJZCV5VM24"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FJZCV5VM24"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-FJZCV5VM24');
+      gtag("config", "G-FJZCV5VM24");
     </script>
-    
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   </head>
   <body>
     <script>
       new window.VLibras.Widget("https://vlibras.gov.br/app");
 
-      window.addEventListener('load', function () {
+      window.addEventListener("load", function () {
         window.alert = function () {
           console.warn("Alert suppressed by developer.");
         };

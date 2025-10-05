@@ -1,11 +1,8 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import { Header, BreadCrumb, ScrollSpyMenu, Container } from "@components";
 import FollowSocialMedia from "./components/FollowSocialMedia";
 import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Container from "@components/Container";
 
 function SocialMedia(): JSX.Element {
   const Hero = {

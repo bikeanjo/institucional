@@ -1,7 +1,5 @@
-import Title from "@components/Title";
-import Text from "@components/Text";
+import { Title, Text, Section } from "@components";
 import { LinkItem, LinkList } from "./styles";
-import Section from "@components/Section";
 
 const links = [
   {

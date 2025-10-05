@@ -6,9 +6,8 @@ import {
   ArrowButton,
 } from "./styles";
 import { MiniCard } from "../MiniCard/index";
-import Title from "@components/Title";
-import { Colors } from "../../../../styles/tokens/colors";
-import Section from "@components/Section";
+import { Title, Section } from "@components";
+import { Colors } from "@colors";
 
 export function Cards() {
   const scrollRef = useRef<HTMLDivElement>(null);

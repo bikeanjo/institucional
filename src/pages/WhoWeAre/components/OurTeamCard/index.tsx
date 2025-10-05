@@ -10,7 +10,7 @@ import MartinaHorvath from "../../../../../public/assets/images/WhoWeAre/martina
 import VicenteseSJunior from "../../../../../public/assets/images/WhoWeAre/vicentese-s-junior.webp";
 import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls, MobileControls, PaginationDot } from "./styles";
-import Button from "@components/Button";
+import { Button } from "@components";
 
 function OurTeam(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);

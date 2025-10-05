@@ -8,10 +8,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkIcon from "@mui/icons-material/Link";
-import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
-import { Colors } from "../../../../styles/tokens/colors";
-import Section from "@components/Section";
+import { Title, SubTitle, Section } from "@components";
+import { Colors } from "@colors";
 
 interface ShareProps {
   title: string;
@@ -21,7 +19,6 @@ interface ShareProps {
 const iconStyle = {
   width: 48,
   height: 48,
-  backgroundColor: Colors["G_White"],
   color: Colors["Green_70"],
   border: `2px solid ${Colors["Green_70"]}`,
   borderRadius: "50%",

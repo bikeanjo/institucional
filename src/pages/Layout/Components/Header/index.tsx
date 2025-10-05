@@ -26,8 +26,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { menuItems, type MenuItem } from "../../menuItems";
 import { Link } from "../Link";
 import { Link as ButtonLink, useNavigate } from "react-router-dom";
-import { Colors } from "../../../../styles/tokens/colors";
-import Button from "@components/Button";
+import { Colors } from "@colors";
+import { Button } from "@components";
 
 const Header: React.FC = () => {
   const icon: IconDefinition = faBars;

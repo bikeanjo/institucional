@@ -1,10 +1,7 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import { Header, Container, Text, Section } from "@components";
 import { Form } from "./components/Form";
-import Container from "@components/Container";
-import Text from "@components/Text";
-import Section from "@components/Section";
-import { Colors } from "../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 function Contact(): JSX.Element {
   const Hero = {

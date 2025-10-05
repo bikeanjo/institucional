@@ -1,7 +1,5 @@
-import Title from "@components/Title";
-import Text from "@components/Text";
+import { Title, Text, Section } from "@components";
 import { Box } from "@mui/material";
-import Section from "@components/Section";
 
 export default function AboutEBA() {
   return (

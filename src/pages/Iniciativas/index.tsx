@@ -1,13 +1,15 @@
-import Header from "@components/Header";
-import Text from "@components/Text";
+import {
+  Header,
+  Text,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+  Title,
+} from "@components";
 import { ProjectCards } from "./components/ProjectCards";
 import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
-import Container from "@components/Container";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
-import Title from "@components/Title";
 
 const Iniciativas: React.FC = () => {
   const Hero = {

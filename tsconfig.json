@@ -10,7 +10,9 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@components": ["./src/components"],
+      "@colors": ["./src/styles/tokens"]
     },
     "outDir": "dist"
   }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 export const Card = styled.div`
   min-width: 250px;
@@ -37,7 +37,7 @@ export const Title = styled.h3`
 `;
 
 export const Subtitle = styled.h2`
-  color: ${Colors["Gray-100"]};
+  color: ${Colors["G_Grey_100"]};
   min-height: 84px;
   font-size: 24px;
   font-weight: 400;
@@ -57,7 +57,7 @@ export const Description = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
-  background: ${Colors["Gray-30"]};
+  background: ${Colors["G_Grey_10"]};
   white-space: pre-line;
   margin: 0;
   border-bottom-left-radius: 16px;

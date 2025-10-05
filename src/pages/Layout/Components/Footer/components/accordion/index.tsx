@@ -8,7 +8,7 @@ import { useEffect, useState, type JSX } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
-import { Colors } from "../../../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 import { Link as RouterLink } from "react-router";
 import styled from "styled-components";
 

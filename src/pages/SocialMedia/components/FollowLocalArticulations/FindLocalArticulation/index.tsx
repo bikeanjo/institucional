@@ -13,7 +13,7 @@ import {
 import { useState } from "react";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { Box } from "@mui/material";
-import { Colors } from "../../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 interface Articulation {
   id: string;

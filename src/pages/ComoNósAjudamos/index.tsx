@@ -1,16 +1,18 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import {
+  Header,
+  Text,
+  Button,
+  Container,
+  Title,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+} from "@components";
 import FollowLocalArticulations from "../SocialMedia/components/FollowLocalArticulations";
 import { Box } from "@mui/material";
-import Text from "@components/Text";
-import Button from "@components/Button";
-import Container from "@components/Container";
 import { GridContainer } from "../Volunteering/components/HowToJoinCards/styles";
 import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
-import Title from "@components/Title";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
 
 function HowWeHelp(): JSX.Element {
   const Hero = {

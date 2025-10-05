@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container } from "./styles";
-import MapInteractive from "@components/Map";
+import { MapInteractive } from "@components";
 import FindLocalArticulation from "../../../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 
 export default function Events() {

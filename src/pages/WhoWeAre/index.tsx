@@ -1,19 +1,21 @@
 import type { ReactNode } from "react";
-import Header from "@components/Header";
+import {
+  Header,
+  Title,
+  SubTitle,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+  Container,
+} from "@components";
 import { WhatIsBikeAnjo } from "./sections/WhatIsBikeAnjo";
 import { HowWeOrganize } from "./sections/HowWeOrganize";
-import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
 import OurTeam from "./components/OurTeamCard";
 import { Box } from "@mui/material";
 import OurValues from "./sections/OurValues";
 import OurStory from "./sections/OurStory";
 import Transparency from "./sections/Transparency";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
-import Container from "@components/Container";
-import { Colors } from "../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 function WhoWeAre(): ReactNode {
   const Hero = {

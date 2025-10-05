@@ -4,9 +4,8 @@ import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import Container from "../../components/Container";
 import { Link } from "react-router-dom";
-import { Colors } from "../../../../styles/tokens/colors";
-import Carrousel from "@components/Carrousel";
-import Button from "@components/Button";
+import { Colors } from "@colors";
+import { Carrousel, Button } from "@components";
 
 function Carousel(): JSX.Element {
   const imageOne = "/assets/images/Home/placeholder/hero.webp";

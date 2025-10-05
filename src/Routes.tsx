@@ -17,7 +17,7 @@ import HowWeHelp from "./pages/ComoNósAjudamos";
 import HowItWorks from "./pages/HowItWorks";
 import Iniciativas from "./pages/Iniciativas";
 import FAQ from "./pages/Home/sections/FAQ";
-import Container from "@components/Container";
+import { Container } from "@components";
 import Volunteering from "./pages/Volunteering";
 import SearchResults from "./pages/Search/SearchResults";
 import WhoWeAre from "./pages/WhoWeAre";

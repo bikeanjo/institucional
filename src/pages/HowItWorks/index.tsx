@@ -1,11 +1,13 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import {
+  Header,
+  SubTitle,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+} from "@components";
 import LearningCarousel from "./components/LearningCarousel";
-import SubTitle from "@components/SubTitle";
-import Container from "@components/Container";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import { Colors } from "../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 const learnSteps = [
   {

@@ -1,7 +1,5 @@
 import { GridWrapper, TextBlock, Image, ButtonWrapper } from "./styles";
-import Title from "@components/Title";
-import Button from "@components/Button";
-import Text from "@components/Text";
+import { Title, Button, Text } from "@components";
 
 export default function SocialContent() {
   return (

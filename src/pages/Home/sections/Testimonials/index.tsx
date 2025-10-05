@@ -2,8 +2,8 @@ import type { JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
-import { Colors } from "../../../../styles/tokens/colors";
-import Section from "@components/Section";
+import { Colors } from "@colors";
+import { Section } from "@components";
 
 function Testimonials(): JSX.Element {
   return (

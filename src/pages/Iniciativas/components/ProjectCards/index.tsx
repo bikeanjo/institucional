@@ -1,7 +1,7 @@
 import { ContainerCards } from "./styles";
 import { useRef } from "react";
 import { Card } from "../Card/Index";
-import { Colors } from "../../../../styles/tokens/colors";
+import { Colors } from "@colors";
 
 export function ProjectCards() {
   const scrollRef = useRef<HTMLDivElement>(null);

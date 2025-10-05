@@ -1,12 +1,9 @@
 import type { JSX } from "react";
-import Header from "@components/Header";
+import { Header, Container, BreadCrumb, ScrollSpyMenu } from "@components";
 import CarouselAttentionCards from "./components/CarouselAttentionCards";
 import SupportLinksSection from "./components/Links";
 import CarouselTipCards from "./components/CarouselTipCards";
 import SocialContent from "./components/SocialContent";
-import Container from "@components/Container";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
 
 const tipSteps = [
   {

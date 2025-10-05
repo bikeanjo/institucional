@@ -1,13 +1,9 @@
 import { type ReactNode, useState, useMemo } from "react";
 import { Box, Typography } from "@mui/material";
-import Title from "@components/Title";
-import SubTitle from "@components/SubTitle";
-import Text from "@components/Text";
-import Button from "@components/Button";
+import { Title, SubTitle, Text, Button, Section } from "@components";
 import TimelineComponent from "../../../BikeAnjoInTheMedia/components/Timeline/TimelineComponent";
 import { timelineData, type TimelineYear } from "./data";
 import { Link } from "react-router-dom";
-import Section from "@components/Section";
 
 function OurStory(): ReactNode {
   const availableYears = useMemo(

@@ -1,17 +1,19 @@
 import { Box, Divider, InputAdornment } from "@mui/material";
-import Header from "@components/Header";
+import {
+  Header,
+  Title,
+  Text,
+  Button,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Section,
+} from "@components";
 import { type JSX } from "react";
-import Title from "@components/Title";
-import Text from "@components/Text";
-import Button from "@components/Button";
 import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
-import Container from "@components/Container";
-import { Colors } from "../../styles/tokens/colors";
-import BreadCrumb from "@components/BreadCrumb";
-import ScrollSpyMenu from "@components/ScrollSpyMenu";
-import Section from "@components/Section";
+import { Colors } from "@colors";
 
 const Doacao = (): JSX.Element => {
   const Hero = {
