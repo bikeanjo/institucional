@@ -1,6 +1,7 @@
 import { Box, Typography, Link } from "@mui/material";
 import { Container, Text } from "@components";
 import { Colors } from "@colors";
+import { BikerIcon } from "@components/Icons/Biker";
 
 const UnavailablePage: React.FC = () => {
   return (
@@ -32,7 +33,7 @@ const UnavailablePage: React.FC = () => {
             Enchendo o Pneu...
           </Typography>
           <Box sx={{ width: "79px", heigth: "72px" }}>
-            <img src={"/assets/icons/Biker.webp"} alt="ícone de bicicleta" />
+            <BikerIcon />
           </Box>
         </Box>
         <Text>
