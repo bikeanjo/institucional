@@ -4,6 +4,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import GridItem from "./components/GridItem";
 import { Colors } from "@colors";
 import { Section } from "@components";
+import { BikerIcon } from "@components/Icons/Biker";
 
 function OurNumbers(): JSX.Element {
   return (
@@ -27,7 +28,7 @@ function OurNumbers(): JSX.Element {
           >
             <Box
               component="img"
-              src="/assets/icons/Home/OurNumbers/bike-rosa.webp"
+              src="/assets/icons/Home/OurNumbers/biker-anjo.svg"
               alt="Ícone de bike anjo na cor rosa"
               sx={{
                 width: { xs: 80, md: 120 },
@@ -72,14 +73,7 @@ function OurNumbers(): JSX.Element {
               gap: "16px",
             }}
           >
-            <Box
-              component="img"
-              src="/assets/icons/Home/OurNumbers/bike-laranja.webp"
-              alt="Ícone de bike na cor laranja"
-              sx={{
-                width: { xs: 80, md: 120 },
-              }}
-            />
+            <BikerIcon color={Colors["Orange_50"]} />
             <Box
               sx={{
                 display: "flex",
@@ -120,7 +114,7 @@ function OurNumbers(): JSX.Element {
             <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
               <Box
                 component="img"
-                src="/assets/icons/Home/OurNumbers/recycling.webp"
+                src="/assets/icons/Home/OurNumbers/recycling.svg"
                 alt="Ícone de reciclagem"
                 sx={{
                   width: { xs: 40, md: 60, lg: 72 },
@@ -169,7 +163,7 @@ function OurNumbers(): JSX.Element {
             >
               <Box
                 component="img"
-                src="/assets/icons/Home/OurNumbers/public.webp"
+                src="/assets/icons/Home/OurNumbers/public.svg"
                 alt="Ícone de um globo terrestre"
                 sx={{
                   width: { xs: 40, md: 60, lg: 64 },
@@ -208,7 +202,7 @@ function OurNumbers(): JSX.Element {
           >
             <Box
               component="img"
-              src="/assets/icons/Home/OurNumbers/apartment.webp"
+              src="/assets/icons/Home/OurNumbers/apartment.svg"
               alt="Ícone de um prédio"
               sx={{
                 width: { xs: 54, lg: 64 },

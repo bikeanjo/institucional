@@ -23,7 +23,7 @@ export default function SupportLinksSection() {
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>
-            <img src={"/assets/icons/link-icon.webp"} alt="Chain Icon" />
+            <img src={"/assets/icons/link-icon.svg"} alt="Chain Icon" />
             <a href={item.url} target="_blank" rel="noopener noreferrer">
               {item.label}
             </a>
