@@ -31,8 +31,10 @@ export function QuestionAccordion({
       elevation={0}
       square
       sx={{
+        border: "1px solid var(--mui-palette-G_Grey_30)",
         borderRadius: "8px",
         overflow: "hidden",
+        boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.15)",
       }}
     >
       <AccordionSummary
@@ -48,11 +50,15 @@ export function QuestionAccordion({
           />
         }
         sx={{
+          borderBottom: "none",
           backgroundColor: Colors["G_Grey_20"],
           color: Colors["G_Grey_100"],
           padding: "16px",
           minHeight: "auto",
-          "&.Mui-expanded": { minHeight: "auto" },
+          "&.Mui-expanded": {
+            minHeight: "auto",
+            borderBottom: "1px solid var(--mui-palette-G_Grey_30)",
+          },
           "& .MuiAccordionSummary-content": { margin: 0 },
           "& .MuiAccordionSummary-content.Mui-expanded": { margin: 0 },
         }}
