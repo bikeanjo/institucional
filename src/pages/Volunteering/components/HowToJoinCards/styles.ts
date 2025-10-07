@@ -56,7 +56,7 @@ export const GridContainer = styled.div`
 
 export const Title = styled.h3<{ cardColor: string }>`
   padding-inline: 24px;
-  font-weigth: 700;
+  font-weight: 700;
   font-size: 32px;
   color: ${(props) => props.cardColor};
   margin: 0;
@@ -67,4 +67,5 @@ export const Text = styled.p`
   font-size: 16px;
   color: #161616;
   margin: 0;
+  white-space: pre-wrap;
 `;

@@ -5,15 +5,17 @@ import {
   FilterInput,
   IconTextWrapper,
   Info,
+  InputWrapper,
   SocialMediaWrapper,
+  StyledSearchIcon,
   Tag,
   TagsWrapper,
   Title,
 } from "./styles";
 import { useState } from "react";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { Box } from "@mui/material";
 import { Colors } from "@colors";
+import { ChevronLeft } from "@mui/icons-material";
 
 interface Articulation {
   id: string;
@@ -100,23 +102,38 @@ export default function FindLocalArticulation({
         ))}
       </TagsWrapper>
 
-      <FilterInput
-        type="text"
-        placeholder="Digite o nome da cidade..."
-        value={search}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setSearch(e.target.value)
-        }
-      />
+      <InputWrapper>
+        <StyledSearchIcon />
+        <FilterInput
+          type="text"
+          placeholder="Digite o nome da cidade..."
+          value={search}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setSearch(e.target.value)
+          }
+        />
+      </InputWrapper>
 
       <CityList>
-        {filteredCities.map((art) => {
+        {filteredCities.slice(0, 3).map((art, index) => {
           const isExpanded = expandedCity === art.name;
+          const colorCycle = [
+            Colors["Blue_60"],
+            Colors["Orange_50"],
+            Colors["Green_70"],
+          ];
+          const currentColor = colorCycle[index % colorCycle.length];
 
           return (
-            <CityCard key={art.id} expanded={isExpanded}>
+            <CityCard
+              key={art.id}
+              expanded={isExpanded}
+              colorVariant={currentColor}
+            >
               <div className="card-content">
-                <img src={art.url} alt={`Logo de ${art.name}`} />
+                <div className="image-wrapper">
+                  <img src={art.url} alt={`Logo de ${art.name}`} />
+                </div>
                 <div className="card-body">
                   <h5
                     style={{ cursor: "pointer" }}
@@ -167,13 +184,28 @@ export default function FindLocalArticulation({
                   >
                     {isExpanded ? (
                       <>
-                        <span>Info</span>
+                        <span>Informações</span>
                         <IconTextWrapper>
-                          Mostrar menos <ExpandLessIcon />
+                          <ChevronLeft
+                            sx={{
+                              fontSize: 24,
+                              transform: "rotate(90deg)",
+                              transition: "transform 0.3s",
+                            }}
+                          />
                         </IconTextWrapper>
                       </>
                     ) : (
-                      "+ info"
+                      <>
+                        Informações{" "}
+                        <ChevronLeft
+                          sx={{
+                            fontSize: 24,
+                            transform: "rotate(-90deg)",
+                            transition: "transform 0.3s",
+                          }}
+                        />
+                      </>
                     )}
                   </Button>
 
