@@ -1,14 +1,10 @@
 import type { ReactNode } from "react";
 import { Container, Title, Text } from "./styles";
+import { Colors } from "@colors";
+import { DoubleBikersIcon } from "@components/Icons/DoubleBikersIcon";
 
 function HowToJoinCards(): ReactNode {
-  const cards: {
-    id: string;
-    imgUrl: string;
-    cardColor: string;
-    title: string;
-    text: string;
-  }[] = [
+  const cards = [
     {
       id: "card1",
       imgUrl: "/assets/icons/pink-icon-bike-anjo.webp",
@@ -25,8 +21,7 @@ function HowToJoinCards(): ReactNode {
     },
     {
       id: "card3",
-      imgUrl: "/assets/icons/orange-icon-bike-anjo.webp",
-      cardColor: "#ED601C",
+      cardColor: Colors["Orange_50"],
       title: "Companhia no Trânsito",
       text: "Se você quer começar a usar a bicicleta como transporte, pode contar com o apoio de uma pessoa voluntária. Ela pedala junto, ajuda a entender o fluxo das ruas e dá dicas para circular com mais segurança no dia a dia.",
     },
@@ -43,7 +38,7 @@ function HowToJoinCards(): ReactNode {
       {cards.map((card) => (
         <Container key={card.id} cardColor={card.cardColor}>
           <div className="titleBox">
-            <img src={card.imgUrl} />
+            <DoubleBikersIcon color={card.cardColor} width={105} height={64} />
             <Title cardColor={card.cardColor}>{card.title}</Title>
           </div>
           <hr />

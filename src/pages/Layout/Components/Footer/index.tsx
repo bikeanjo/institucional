@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
         >
           <Box
             component="img"
-            src={"/assets/icons/logo-bike-anjo-laranjo.webp"}
+            src={"/assets/icons/logo-bike-anjo-laranjo.svg"}
             alt="Logo"
             gridArea="img"
           />

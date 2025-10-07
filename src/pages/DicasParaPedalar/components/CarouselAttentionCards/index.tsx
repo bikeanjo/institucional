@@ -42,7 +42,7 @@ export default function CarouselAttentionCards({
       <CarouselContainer>
         <Arrow direction="left" onClick={() => scroll("left")}>
           <img
-            src={"/assets/icons/arrow-back.webp"}
+            src={"/assets/icons/arrow-back.svg"}
             alt="Seta para a esquerda"
           />
         </Arrow>
@@ -62,7 +62,7 @@ export default function CarouselAttentionCards({
 
         <Arrow direction="right" onClick={() => scroll("right")}>
           <img
-            src={"/assets/icons/arrow-forward.webp"}
+            src={"/assets/icons/arrow-forward.svg"}
             alt="Seta para a direita"
           />
         </Arrow>

@@ -91,7 +91,7 @@ export function Cards() {
           onClick={() => scrollToPage(currentPage - 1)}
           disabled={currentPage === 0}
         >
-          <img src={"/assets/icons/left.webp"} alt="Anterior" />
+          <img src={"/assets/icons/arrow-back.svg"} alt="Anterior" />
         </ArrowButton>
 
         <ContainerCards ref={scrollRef} onScroll={handleScroll}>
@@ -111,7 +111,7 @@ export function Cards() {
           onClick={() => scrollToPage(currentPage + 1)}
           disabled={currentPage === cards.length - 1}
         >
-          <img src={"/assets/icons/right.webp"} alt="Próximo" />
+          <img src={"/assets/icons/arrow-forward.svg"} alt="Próximo" />
         </ArrowButton>
       </div>
 
