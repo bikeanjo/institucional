@@ -38,7 +38,7 @@ function GoToCity({ coords }: { coords: [number, number] }) {
 }
 
 const logoIcon = new L.Icon({
-  iconUrl: "/assets/icons/logo-bike-anjo-verdanjo.webp",
+  iconUrl: "/assets/icons/logo-bike-anjo-verdanjo.svg",
   iconSize: [60, 60],
   iconAnchor: [20, 40],
   popupAnchor: [0, -40],

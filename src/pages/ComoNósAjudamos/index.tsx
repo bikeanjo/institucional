@@ -67,9 +67,10 @@ function HowWeHelp(): JSX.Element {
               display: "flex",
               flexDirection: "column",
               width: { xs: "100%", lg: "1032px" },
+              marginBottom: "80px",
             }}
           >
-            <Button center>Acesse a Playlist</Button>
+            <Button>Acesse a Playlist</Button>
           </Box>
         </Section>
       </Container>
