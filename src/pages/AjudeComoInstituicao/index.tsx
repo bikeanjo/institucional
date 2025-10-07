@@ -41,7 +41,7 @@ const AjudeComoInstituicao = () => {
             }}
           >
             <Title color={Colors["Pink_50"]}>Empresas Parceiras</Title>
-            <SubTitle>
+            <SubTitle fontWeight={700}>
               Patrocinar a Bike Anjo é investir em mobilidade, cidadania e
               impacto positivo.
             </SubTitle>
@@ -89,7 +89,7 @@ const AjudeComoInstituicao = () => {
             }}
           >
             <Title>Imprensa Parceira</Title>
-            <SubTitle>
+            <SubTitle fontWeight={700}>
               Dar visibilidade à Bike Anjo é ampliar o acesso à mobilidade
             </SubTitle>
             <Text>
@@ -104,7 +104,7 @@ const AjudeComoInstituicao = () => {
               sx={{
                 display: "flex",
                 padding: { xs: "40px 0px", lg: "80px 0px" },
-                gap: { xs: "32px", lg: "200px" },
+                gap: "16px",
                 flexDirection: { xs: "column", lg: "row" },
               }}
             >
@@ -115,10 +115,26 @@ const AjudeComoInstituicao = () => {
                   flexDirection: "column",
                   justifyContent: "space-between",
                   gap: "16px",
+                  backgroundColor: Colors["Green_20"],
+                  border: `1px solid ${Colors["Green_70"]}`,
+                  borderRadius: "8px",
+                  padding: { xs: "16px", lg: "24px" },
                 }}
               >
-                <SubTitle mobileCenter>Faça da Bike Anjo sua pauta!</SubTitle>
-                <Button component={Link} to="/contato">
+                <SubTitle color={Colors["Green_70"]} fontWeight={700} center>
+                  Faça da Bike Anjo sua pauta!
+                </SubTitle>
+                <Text marginBottom="16px">
+                  Mostre uma pauta que inspira e transforma. Cada história que
+                  contamos é uma chance de tocar o público com coragem, cuidado
+                  e mudança real. A próxima pode ser sua.
+                </Text>
+                <Button
+                  fullWidthMobile
+                  fullWidthDesktop
+                  component={Link}
+                  to="/contato"
+                >
                   Entre em contato
                 </Button>
               </Box>
@@ -129,12 +145,26 @@ const AjudeComoInstituicao = () => {
                   flexDirection: "column",
                   justifyContent: "space-between",
                   gap: "16px",
+                  backgroundColor: Colors["Green_20"],
+                  border: `1px solid ${Colors["Green_70"]}`,
+                  borderRadius: "8px",
+                  padding: { xs: "16px", lg: "24px" },
                 }}
               >
-                <SubTitle mobileCenter>
+                <SubTitle color={Colors["Green_70"]} fontWeight={700} center>
                   Matérias que mostram o impacto da nossa rede
                 </SubTitle>
-                <Button component={Link} to="/bike-anjo-na-midia">
+                <Text marginBottom="16px">
+                  A imprensa já pedalou com a gente e mostrou como a bicicleta
+                  muda vidas. Veja exemplos de matérias que ampliaram vozes e
+                  conectaram públicos a causas reais.
+                </Text>
+                <Button
+                  fullWidthMobile
+                  fullWidthDesktop
+                  component={Link}
+                  to="/bike-anjo-na-midia"
+                >
                   Acessar matérias
                 </Button>
               </Box>
