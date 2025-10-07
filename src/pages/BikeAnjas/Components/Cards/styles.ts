@@ -1,70 +1,120 @@
 import styled from "styled-components";
+import { Box, IconButton } from "@mui/material";
 
-export const ContainerCards = styled.section`
+export const Container = styled(Box)`
   display: flex;
-  justify-content: flex-start;
-  gap: 24px;
-  margin: 0 auto;
-  scroll-behavior: smooth;
-  margin: 0px 200px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+`;
 
+export const ContainerCard = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  padding: 0px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-
-  & > * {
-    scroll-snap-align: center;
-  }
+  scroll-behavior: smooth;
+  gap: 16px;
 
   &::-webkit-scrollbar {
     display: none;
   }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   @media (max-width: 900px) {
-    gap: 8px;
-    margin: 0px 50px;
+    flex-direction: column;
+    overflow-x: visible;
+    scroll-behavior: auto;
   }
 `;
 
-export const PaginationContainer = styled.div`
+export const Card = styled(Box)`
   display: flex;
-  justify-content: center;
-  padding: 16px 8px;
-`;
-
-export const Dot = styled.span<{ isActive: boolean }>`
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: ${(props) => (props.isActive ? "#000" : "#D9D9D9")};
-  margin: 0 8px;
-  transition: background-color 0.6s;
-`;
-
-export const ArrowButton = styled.button<{ left?: boolean }>`
-  position: absolute;
-  top: 50%;
-  ${(props) => (props.left ? "left: 124px" : "right: 124px")};
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 0px;
-  cursor: pointer;
-  z-index: 2;
-  display: block;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 238px;
+  padding: 16px;
+  background-color: var(--mui-palette-G_Grey_10);
+  border: 2px solid var(--mui-palette-Pink_50);
+  border-radius: 8px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  gap: 24px;
 
   @media (max-width: 900px) {
-    ${(props) => (props.left ? "left: 14px" : "right: 14px")};
+    width: 100%;
   }
+`;
 
-  img {
-    width: 36px;
-    height: 36px;
-    display: block;
-    pointer-events: none;
+export const TextBox = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 16px;
 
-    @media (max-width: 900px) {
-      width: 20px;
-      height: 20px;
+  @media (max-width: 900px) {
+    & > * {
+      justify-content: left;
+      padding: 0px;
     }
   }
+`;
+
+export const Controls = styled(IconButton)`
+  display: flex;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--mui-palette-Pink_50);
+  border-radius: 50px;
+  padding: 15px 12px;
+  box-shadow: none;
+
+  span {
+    &.left {
+      left: 90px;
+    }
+
+    &.right {
+      right: 90px;
+    }
+  }
+
+  &.MuiButtonBase-root {
+    &:hover {
+      background-color: var(--mui-palette-Pink_50);
+    }
+  }
+
+  &.Mui-focusVisible {
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--mui-palette-Pink_50);
+    color: white;
+    cursor: default;
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+`;
+
+export const Dot = styled(Box)<{ isActive: boolean }>`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: ${(props) =>
+    props.isActive
+      ? "var(--mui-palette-Pink_50)"
+      : "var(--mui-palette-G_Grey_40)"};
+  transition: background-color 0.3s ease;
 `;

@@ -8,6 +8,8 @@ interface TitleContainerProps extends TypographyOwnProps {
   green?: boolean;
   color?: string;
   center?: boolean;
+  sizeMobile?: string;
+  sizeDesktop?: string;
 }
 
 interface TitleProps
@@ -17,7 +19,7 @@ interface TitleProps
 }
 
 const TitleContainer = styled(Typography)<TitleContainerProps>(
-  ({ theme, pink, green, color, center }) => ({
+  ({ theme, pink, green, color, center, sizeMobile, sizeDesktop }) => ({
     color: color ? color : Colors["Pink_50"],
     fontWeight: 600,
     display: "flex",
@@ -26,7 +28,7 @@ const TitleContainer = styled(Typography)<TitleContainerProps>(
     ...(green && !pink && { color: "var(--mui-palette-Green_70)" }),
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "24px",
+      fontSize: sizeMobile ? sizeMobile : "24px",
       lineHeight: "120%",
       alignItems: "center",
       justifyContent: "center",
@@ -36,7 +38,7 @@ const TitleContainer = styled(Typography)<TitleContainerProps>(
 
     [theme.breakpoints.up("lg")]: {
       padding: "0px",
-      fontSize: "40px",
+      fontSize: sizeDesktop ? sizeDesktop : "40px",
       lineHeight: "120%",
       alignItems: "flex-start",
       margin: center ? "0px auto" : "unset",
