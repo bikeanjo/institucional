@@ -1,15 +1,10 @@
 import type { JSX } from "react";
 import { Box, Grid } from "@mui/material";
-import { Colors } from "@colors";
-import { Title, Section } from "@components";
+import { Section } from "@components";
 
 function Partners(): JSX.Element {
   return (
     <Section>
-      <Title variant="h2" color={Colors["Pink_50"]} center>
-        Parceiros
-      </Title>
-
       <Grid
         container
         spacing={2}
