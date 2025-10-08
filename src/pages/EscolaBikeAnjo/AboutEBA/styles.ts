@@ -1,40 +1,46 @@
 import styled from "styled-components";
+import { Box } from "@mui/material";
 
-export const Description = styled.p`
-  white-space: pre-line;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 8px 0 36px;
-  text-align: center;
-`;
+export const Grid = styled(Box)`
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+  gap: 40px;
 
-export const EBAContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 24px;
-  border: 4px solid #d9d9d9;
-  border-radius: 16px;
-
-  img {
-    width: 100%;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "textBox1"
+      "image"
+      "textBox2";
+    gap: 24px;
   }
 `;
 
-export const Title = styled.h2`
-  color: #486284;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-  text-align: center;
+export const TextContainer = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 900px) {
+    display: contents;
+    gap: 24px;
+  }
 `;
 
-export const Paragraph = styled.p`
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0;
+export const Content = styled(Box)`
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 900px) {
+    gap: 24px;
+  }
+`;
+
+export const Image = styled(Box)`
+  max-width: 604px;
+  border-radius: 8px;
 `;

@@ -39,12 +39,10 @@ const Iniciativas: React.FC = () => {
         <Section>
           <Title>Eventos</Title>
           <Text>
-            <p>
-              As atividades da Bike Anjo são organizadas pelas articulações
-              locais e divulgadas pelo Instagram. Quer descobrir o que está
-              rolando perto de você? Busque abaixo a articulação mais próxima e
-              acompanhe tudo que acontece na sua região.
-            </p>
+            As atividades da Bike Anjo são organizadas pelas articulações locais
+            e divulgadas pelo Instagram. Quer descobrir o que está rolando perto
+            de você? Busque abaixo a articulação mais próxima e acompanhe tudo
+            que acontece na sua região.
           </Text>
           <Events />
         </Section>

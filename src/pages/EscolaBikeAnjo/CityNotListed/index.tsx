@@ -1,4 +1,4 @@
-import { SubTitle, Title, Section, Button } from "@components";
+import { Text, Title, Section, Button } from "@components";
 import { StepCard } from "../../DicasParaPedalar/components/Card";
 import {
   ButtonContainer,
@@ -7,6 +7,7 @@ import {
   StepsContainer,
 } from "./styles";
 import { Colors } from "@colors";
+import { Box } from "@mui/material";
 
 interface Step {
   number: number;
@@ -15,23 +16,39 @@ interface Step {
 }
 
 interface CarouselStepsProps {
-  title: string;
-  sub: string;
   steps: Step[];
 }
 
-export default function CityNotListed({
-  title,
-  sub,
-  steps,
-}: CarouselStepsProps) {
+export default function CityNotListed({ steps }: CarouselStepsProps) {
   return (
     <Section
       backgroundColor={Colors["Green_20"]}
       borderColor={Colors["Green_70"]}
     >
-      <Title color={Colors["Green_70"]}>{title}</Title>
-      <SubTitle color={Colors["G_Grey_100"]}>{sub}</SubTitle>
+      <Title
+        center
+        color={Colors["Green_70"]}
+        sizeDesktop="48px"
+        sizeMobile="32px"
+      >
+        Não encontrou sua cidade no mapa?
+      </Title>
+      <Box
+        sx={{
+          color: Colors["G_Grey_100"],
+          alignSelf: { xs: "flex-start", lg: "center" },
+          textAlign: { xs: "left", lg: "center" },
+        }}
+      >
+        <Text>
+          Caso sua cidade não esteja no mapa, você pode tentar o segundo
+          caminho:
+          <br />
+          <br />
+          Cadastrar-se em nossa plataforma online e solicitar um Bike Anjo por
+          lá.
+        </Text>
+      </Box>
 
       <StepsContainer>
         {steps.map((step) => (

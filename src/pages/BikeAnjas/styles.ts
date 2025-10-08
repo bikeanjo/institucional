@@ -26,6 +26,7 @@ export const TextContainer = styled(Box)`
   @media (max-width: 900px) {
     display: contents;
     gap: 24px;
+  }
 `;
 
 export const Content = styled(Box)`
