@@ -4,7 +4,9 @@ import { Box, Grid, Typography } from "@mui/material";
 import GridItem from "./components/GridItem";
 import { Colors } from "@colors";
 import { Section } from "@components";
-import { BikerIcon } from "@components/Icons/Biker";
+import "./styles.css";
+import PublicIcon from "../../../../../public/assets/icons/Home/OurNumbers/public.svg?react";
+import BikerIcon from "../../../../../public/assets/icons/Home/OurNumbers/biker.svg?react";
 
 function OurNumbers(): JSX.Element {
   return (
@@ -73,7 +75,7 @@ function OurNumbers(): JSX.Element {
               gap: "16px",
             }}
           >
-            <BikerIcon color={Colors["Orange_50"]} />
+            <BikerIcon className="biker-icon" />
             <Box
               sx={{
                 display: "flex",
@@ -161,15 +163,7 @@ function OurNumbers(): JSX.Element {
                 alignItems: { xs: "center", lg: "baseline" },
               }}
             >
-              <Box
-                component="img"
-                src="/assets/icons/Home/OurNumbers/public.svg"
-                alt="Ícone de um globo terrestre"
-                sx={{
-                  width: { xs: 40, md: 60, lg: 64 },
-                  height: { xs: 40, md: 60, lg: 64 },
-                }}
-              />
+              <PublicIcon className="globe-icon" />
               <Typography
                 sx={{
                   fontSize: { xs: 42, md: 64 },

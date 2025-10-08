@@ -35,6 +35,7 @@
     "src/pages/Components/SubTitle/index.tsx",
     "public/assets",
     "src/styles/tokens/colors.ts",
-    "src/styles/tokens/index.ts"
+    "src/styles/tokens/index.ts",
+    "vite-env.d.ts"
   ]
 }

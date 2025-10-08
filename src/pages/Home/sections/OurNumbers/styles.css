@@ -1,0 +1,36 @@
+.globe-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--mui-palette-Orange_50);
+}
+
+.biker-icon {
+  width: 80px;
+  height: 80px;
+  color: var(--mui-palette-Blue_60);
+}
+
+@media (min-width: 900px) {
+  .globe-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .biker-icon {
+    width: 120px;
+    height: 120px;
+    color: var(--mui-palette-Blue_60);
+  }
+}
+
+@media (min-width: 1200px) {
+  .globe-icon {
+    width: 64px;
+    height: 64px;
+    color: var(--mui-palette-Green_70);
+  }
+  .biker-icon {
+    width: 160px;
+    height: 160px;
+    color: var(--mui-palette-Orange_50);
+  }
+}

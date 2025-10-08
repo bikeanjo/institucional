@@ -1,5 +1,6 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react-swc";
+import svgr from "vite-plugin-svgr";
 import path from "path";
 
 // https://vite.dev/config/
@@ -12,7 +13,14 @@ export default defineConfig({
       "@colors": path.resolve(__dirname, "src/styles/tokens"),
     },
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    svgr({
+      svgrOptions: {
+        icon: true,
+      },
+    }),
+  ],
   test: {
     globals: true,
     environment: "jsdom",

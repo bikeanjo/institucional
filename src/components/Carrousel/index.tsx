@@ -11,12 +11,17 @@ type CarrouselProps = React.PropsWithChildren<
       itensPerView?: number;
       fullWidth?: boolean;
     };
+    controls?: {
+      color: string;
+      backgroundColor: string;
+    };
   } & BoxProps
 >;
 
 const Carrousel = ({
   children,
   config,
+  controls,
   ...props
 }: CarrouselProps): JSX.Element => {
   const carrousel = useRef<HTMLDivElement | null>(null);
@@ -66,7 +71,10 @@ const Carrousel = ({
       <Container ref={carrousel} {...props}>
         {children}
       </Container>
-      <Controls>
+      <Controls
+        color={controls?.color}
+        backgroundColor={controls?.backgroundColor}
+      >
         <span className="material-icons left" onClick={turnLeft}>
           arrow_back_ios_new
         </span>

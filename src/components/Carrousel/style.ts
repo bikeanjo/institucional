@@ -1,6 +1,11 @@
-import { Box } from "@mui/material";
+import { Box, BoxProps } from "@mui/material";
 import styled from "styled-components";
 import { Colors } from "@colors";
+
+interface ControlsProps extends BoxProps {
+  backgroundColor?: string;
+  color?: string;
+}
 
 export const Container = styled(Box)`
   display: flex;
@@ -14,28 +19,35 @@ export const Container = styled(Box)`
   }
 `;
 
-export const Controls = styled("div")`
-  span {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    color: ${Colors["Green_70"]};
-    background-color: ${Colors["Green_10"]};
-    border-radius: 100%;
-    padding: 12px;
+export const Controls = styled(Box)<ControlsProps>(
+  ({ theme, backgroundColor, color }) => ({
+    "& span": {
+      position: "absolute",
+      top: "50%",
+      transform: "translateY(-50%)",
+      fontSize: "24px",
+      cursor: "pointer",
+      color: color ? color : Colors["G_White"],
+      backgroundColor: backgroundColor ? backgroundColor : Colors["G_Grey_80"],
+      borderRadius: "100%",
+      padding: "12px",
+      height: "48px",
+      width: "48px",
+      display: "none",
+    },
 
-    &.left {
-      left: 80px;
-    }
+    "& span.left": {
+      left: "80px",
+    },
 
-    &.right {
-      right: 90px;
-    }
-  }
+    "& span.right": {
+      right: "90px",
+    },
 
-  @media (max-width: 900px) {
-    display: none;
-  }
-`;
+    [theme.breakpoints.up("md")]: {
+      "& span": {
+        display: "flex",
+      },
+    },
+  }),
+);
