@@ -1,7 +1,17 @@
 import type { JSX } from "react";
-import { Header, Container, BreadCrumb, ScrollSpyMenu } from "@components";
+import {
+  Header,
+  Container,
+  BreadCrumb,
+  ScrollSpyMenu,
+  Title,
+  Text,
+  Section,
+  Button,
+} from "@components";
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
+import { Box } from "@mui/material";
 
 function formatDescription(description: string) {
   return description
@@ -62,11 +72,40 @@ function PedalaOuRepassa(): JSX.Element {
 
       <Container>
         <AboutPedalaOuRepassa />
-        <CityNotListed
-          title="Como funciona??"
-          sub="Queremos dar nova vida a bicicletas esquecidas e levá-las até quem mais precisa! O processo é simples, colaborativo e transparente:"
-          steps={findCitySteps}
-        />
+        <CityNotListed steps={findCitySteps} />
+
+        <Section>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              width: { xs: "100%", lg: "1032px" },
+              margin: "auto",
+            }}
+          >
+            <Title center marginBottom="16px">
+              Tem uma bicicleta para doar?
+            </Title>
+            <Text center>
+              Preencha os dados no formulário abaixo e entraremos em contato com
+              você!
+            </Text>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: { xs: "100%", lg: "1032px" },
+                margin: {
+                  xs: "32px auto 0px auto",
+                  lg: "32px auto 0px auto",
+                },
+              }}
+            >
+              <Button href="#">Acesse o formulário</Button>
+            </Box>
+          </Box>
+        </Section>
       </Container>
     </>
   );
