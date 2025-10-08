@@ -61,7 +61,16 @@ const Accordion = ({
       }}
     >
       <AccordionSummary
-        expandIcon={isLargeScreen || contato ? null : <ExpandMoreIcon />}
+        expandIcon={
+          isLargeScreen || contato ? null : (
+            <ExpandMoreIcon
+              sx={{
+                color: Colors["G_Grey_70"],
+                marginRight: "24px",
+              }}
+            />
+          )
+        }
         aria-controls="panel1-content"
         id="panel1-header"
         sx={{

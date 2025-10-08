@@ -71,8 +71,8 @@ const Footer: React.FC = () => {
           height="fit-content"
           gridTemplateAreas={{
             xs: `
-                  'img rede'
-                  'texto texto'
+                  'img texto'
+                  'rede rede'
                 `,
             lg: `
                   'img'
@@ -90,24 +90,34 @@ const Footer: React.FC = () => {
             src={"/assets/icons/logo-bike-anjo-laranjo.svg"}
             alt="Logo"
             gridArea="img"
+            alignSelf="center"
           />
           <Typography
             width={{ xs: "100%", lg: 293 }}
             fontSize={"18px"}
             gridArea="texto"
             color={Colors["G_Grey_100"]}
-            textAlign={{ xs: "center", lg: "start" }}
+            textAlign={{ xs: "left", lg: "start" }}
+            alignSelf="center"
           >
             Junte-se a uma comunidade que acredita na transformação por meio da
             bicicleta!
           </Typography>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "16px",
+              gridArea: "rede",
+              gridColumn: { xs: "1 / span 2", lg: "auto" },
+              mt: { xs: "32px", lg: "0" },
+              mb: "24px",
+            }}
+          >
             <Box
               display={"flex"}
-              height={"33.6px"}
               gap={{ xs: "8px", lg: "16px" }}
-              gridArea="rede"
-              justifyContent={{ xs: "end", lg: "start" }}
+              justifyContent={{ xs: "start", lg: "start" }}
             >
               <SocialIcon
                 icon={faInstagram}
@@ -229,7 +239,7 @@ const Footer: React.FC = () => {
         }}
       />
       <Typography
-        fontWeight={600}
+        fontWeight={400}
         fontSize={{ xs: "16px", lg: "24px" }}
         pb={{ xs: "16px", lg: "40px" }}
       >
