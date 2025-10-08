@@ -8,11 +8,25 @@ import { Colors } from "@colors";
 import { Carrousel, Button } from "@components";
 
 function Carousel(): JSX.Element {
-  const imageOne = "/assets/images/Home/placeholder/hero.webp";
-  const imageTwo = "/assets/images/Home/placeholder/sobre.webp";
+  const HeroOne = {
+    url: "/assets/images/Home/placeholder/hero.webp",
+    backgroundPositionDesktop: "50% 60%",
+    backgroundPositionMobile: "50% 10%",
+  };
+  const HeroTwo = {
+    url: "/assets/images/Home/placeholder/sobre.webp",
+    backgroundPositionDesktop: "50% 60%",
+    backgroundPositionMobile: "50% 30%",
+  };
   return (
-    <Carrousel config={{ fullWidth: true }}>
-      <Container carrousel url={imageOne}>
+    <Carrousel
+      config={{ fullWidth: true }}
+      controls={{
+        color: Colors["Green_70"],
+        backgroundColor: Colors["Green_10"],
+      }}
+    >
+      <Container Hero={HeroOne}>
         <Box
           sx={{
             textAlign: "center",
@@ -31,6 +45,7 @@ function Carousel(): JSX.Element {
               gap: { xs: "24px", lg: "32px" },
               paddingInline: "40px",
               height: "fit-content",
+              marginTop: { xs: "20px", lg: "80px" },
             }}
           >
             <Title variant="h2" carrousel color={Colors["Green_10"]}>
@@ -65,7 +80,7 @@ function Carousel(): JSX.Element {
           </Button>
         </Box>
       </Container>
-      <Container carrousel url={imageTwo}>
+      <Container Hero={HeroTwo}>
         <Box
           sx={{
             textAlign: "center",
@@ -85,6 +100,7 @@ function Carousel(): JSX.Element {
               width: { lg: "1036px" },
               paddingInline: "40px",
               height: "fit-content",
+              marginTop: { xs: "20px", lg: "80px" },
             }}
           >
             <Title variant="h2" carrousel color={Colors["Green_10"]}>

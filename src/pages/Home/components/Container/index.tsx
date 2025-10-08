@@ -1,14 +1,8 @@
 import styled from "styled-components";
-import { Colors } from "@colors";
 import { BoxProps } from "@mui/material";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    palette: {
-      secondary: {
-        main: string;
-      };
-    };
     breakpoints: {
       up: (key: string) => string;
     };
@@ -16,11 +10,11 @@ declare module "styled-components" {
 }
 
 interface ContainerTemplateProps extends BoxProps {
-  secondary?: boolean;
-  carrousel?: boolean;
-  gap?: string;
-  height?: string;
-  url?: string;
+  Hero?: {
+    url: string;
+    backgroundPositionDesktop: string;
+    backgroundPositionMobile: string;
+  };
 }
 
 interface ContainerProps extends ContainerTemplateProps {
@@ -33,27 +27,20 @@ const ContainerTemplate = styled.div<ContainerTemplateProps>`
   position: relative;
   flex-shrink: 0;
   justify-content: center;
-  background-color: ${({ secondary }) =>
-    secondary ? Colors["Green_20"] : "transparent"};
-  border: ${({ secondary }) => secondary && `2px solid ${Colors["Green_70"]}`};
-  border-width: ${({ secondary }) => secondary && `2px 0px`};
-  gap: ${({ gap }) => gap || "unset"};
-  background-image: ${({ url }) =>
-    url
-      ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${url})`
+  background-color: transparent;
+  background-image: ${({ Hero }) =>
+    Hero
+      ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Hero.url})`
       : `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/Home/placeholder/hero.webp)`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  ${({ theme }) => theme.breakpoints.up("xs")} {
-    height: ${({ height }) => height || "auto"};
-  }
+  background-position: ${({ Hero }) => Hero?.backgroundPositionMobile};
 
   ${({ theme }) => theme.breakpoints.up("lg")} {
-    padding: ${({ carrousel }) =>
-      carrousel ? "90px 202px 40px" : "40px 20px"};
-    height: ${({ carrousel }) => carrousel && "calc(100vh - 80px)"};
+    padding: 90px 100px 40px;
+    height: calc(100vh - 80px);
+    background-position: ${({ Hero }) => Hero?.backgroundPositionDesktop};
   }
 `;
 
