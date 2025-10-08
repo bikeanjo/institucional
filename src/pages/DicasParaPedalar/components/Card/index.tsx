@@ -13,6 +13,7 @@ interface StepCardProps {
   title: string;
   subtitle?: string;
   description: string;
+  variant?: "default" | "attention";
   className?: string;
 }
 
