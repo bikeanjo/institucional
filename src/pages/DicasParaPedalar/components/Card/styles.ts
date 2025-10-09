@@ -11,12 +11,9 @@ export const Card = styled.div`
   flex-shrink: 0;
 `;
 
-export const TopSection = styled.div<{ $variant: "default" | "attention" }>`
+export const TopSection = styled.div`
   width: 100%;
-  background: ${Colors["G_Grey_10"]};
   padding: 24px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 `;
 
 export const Number = styled.div`
@@ -56,11 +53,8 @@ export const Description = styled.div`
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
-  background: ${Colors["Green_10"]};
   white-space: pre-line;
   margin: 0;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
 
   p {
     margin: 0;

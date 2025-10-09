@@ -5,29 +5,17 @@ export const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-`;
-
-export const Title = styled.h2`
-  color: #486284;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-  text-align: center;
+  gap: 16px;
 `;
 
 export const StepsContainer = styled.div`
-  margin: 40px auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 24px;
 
   @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 `;
