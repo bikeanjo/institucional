@@ -1,16 +1,21 @@
 import {
   ButtonContainer,
   ButtonText,
-  Cards,
-  CarouselContainer,
+  Container,
+  CardsContainer,
+  Card,
+  Content,
+  Step,
+  Divider,
 } from "./styles";
-import { StepCard } from "../../../DicasParaPedalar/components/Card";
-import { Title, Section, Button } from "@components";
+import { Title, Button, Text } from "@components";
+import { Link } from "react-router-dom";
 
 interface Step {
-  number: number;
+  number: string;
   title: string;
   description: string;
+  button?: boolean;
 }
 
 interface CarouselStepsProps {
@@ -20,26 +25,41 @@ interface CarouselStepsProps {
 
 export default function LearningCarousel({ title, steps }: CarouselStepsProps) {
   return (
-    <Section>
-      <Title>{title}</Title>
-      <CarouselContainer>
-        <Cards>
-          {steps.map((step) => (
-            <StepCard
-              className="step-card"
-              key={step.number}
-              number={step.number}
-              title={step.title}
-              description={step.description}
-            />
-          ))}
-        </Cards>
-      </CarouselContainer>
+    <Container>
+      <Title sizeMobile="32px">{title}</Title>
+
+      <CardsContainer>
+        {steps.map((step) => (
+          <Card key={step.number}>
+            <Content>
+              <Step>
+                <Title sizeDesktop="56px" sizeMobile="40px">
+                  {step.number}
+                </Title>
+                <Title sizeDesktop="32px">{step.title}</Title>
+              </Step>
+              <Divider />
+              <Text size="16px">{step.description}</Text>
+            </Content>
+            {step.button && (
+              <Button
+                component={Link}
+                to={"/faca-nosso-curso"}
+                variantcolor="gray"
+                fullWidthMobile
+                fullWidthDesktop
+              >
+                Saiba mais
+              </Button>
+            )}
+          </Card>
+        ))}
+      </CardsContainer>
 
       <ButtonContainer>
         <ButtonText>Comece agora:</ButtonText>
-        <Button center>Crie uma conta</Button>
+        <Button fullWidthMobile>Cadastre-se</Button>
       </ButtonContainer>
-    </Section>
+    </Container>
   );
 }
