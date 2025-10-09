@@ -19,48 +19,62 @@ const UnavailablePage: React.FC = () => {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", md: "row-reverse" },
             alignItems: "center",
-            gap: { xs: "16px", md: "24px" },
-            margin: "auto",
+            gap: "24px",
+            justifyContent: { xs: "center", md: "start" },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
+          <BikerIcon width={79} height={72} />
           <Typography
             color={Colors["Pink_50"]}
             fontWeight="700"
-            fontSize={{ xs: "32px", lg: "64px" }}
+            fontSize={{ xs: "32px", lg: "56px" }}
             whiteSpace="nowrap"
           >
             Enchendo o Pneu...
           </Typography>
-          <Box sx={{ width: "79px", heigth: "72px" }}>
-            <BikerIcon />
-          </Box>
         </Box>
-        <Text>
-          A página que você procurou está fora do ar no momento.
-          <br />
-          Estamos calibrando tudo para que você tenha a melhor experiência
-          possível.
+
+        <Text fontSize={{ xs: "18px", lg: "24px" }}>
+          A página que você procurou está fora do ar no momento. Estamos
+          calibrando tudo para que você tenha a melhor experiência possível.
         </Text>
+
         <Box
           sx={{
             display: "flex",
             flexDirection: { xs: "column", lg: "row" },
+            justifyContent: { xs: "center", lg: "flex-start" },
+            alignItems: "center",
+            gap: "4px",
+            textAlign: { xs: "center", lg: "left" },
           }}
         >
-          <Text>Enquanto isso, que tal voltar para a {""}</Text>
-          <Text>
+          <Typography
+            sx={{
+              fontSize: { xs: "16px", md: "18px" },
+            }}
+          >
+            Enquanto isso, que tal voltar para a
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "16px", md: "18px" },
+            }}
+          >
             <Link
               href="/"
               color={Colors["Green_70"]}
               fontWeight="700"
-              underline="none"
-              display={{ xs: "block", md: "inline" }}
-              marginInline="10px"
+              sx={{
+                textDecoration: "underline",
+              }}
             >
               página inicial?
             </Link>
-          </Text>
+          </Typography>
         </Box>
       </Box>
     </Container>
