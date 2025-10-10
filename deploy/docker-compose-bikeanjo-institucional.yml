@@ -1,0 +1,45 @@
+version: '3.8'
+
+# Project name is set to bikeanjo-institucional
+name: bikeanjo-institucional
+
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    container_name: bikeanjo-institucional-frontend-${ENV:-stage}
+    ports:
+      # Stage: 0.0.0.0 (public) | Production: 127.0.0.1 (localhost only, nginx host proxies)
+      - "${FRONTEND_BIND:-0.0.0.0}:${FRONTEND_PORT:-80}:80"
+    networks:
+      - bikeanjo-network
+    restart: unless-stopped
+    depends_on:
+      - api
+
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.api
+    container_name: bikeanjo-institucional-api-${ENV:-stage}
+    env_file:
+      - ../api/.env
+    environment:
+      - NODE_ENV=${ENV:-stage}
+      - PORT=3000
+    ports:
+      # Stage: 0.0.0.0 (public) | Production: 127.0.0.1 (localhost only, nginx host proxies)
+      - "${API_BIND:-0.0.0.0}:${API_PORT:-3000}:3000"
+    networks:
+      - bikeanjo-network
+    restart: unless-stopped
+    volumes:
+      - ../api/templates:/app/templates:ro
+      - ../api/logs:/app/logs
+      - ../api/services:/app/services:ro
+
+networks:
+  bikeanjo-network:
+    driver: bridge
+

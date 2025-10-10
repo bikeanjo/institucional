@@ -18,11 +18,14 @@ export function Form() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const accordionRef = useRef<HTMLDivElement>(null);
 
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
+    telefone: "",
     assunto: "",
     mensagem: "",
   });
@@ -30,6 +33,7 @@ export function Form() {
   const [errors, setErrors] = useState({
     nome: "",
     email: "",
+    telefone: "",
     assunto: "",
     mensagem: "",
   });
@@ -64,31 +68,76 @@ export function Form() {
     setErrors((prev) => ({ ...prev, [field]: "" }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const newErrors = {
       nome: formData.nome ? "" : "Nome é obrigatório",
       email: formData.email ? "" : "Email é obrigatório",
+      telefone: "",
       assunto: formData.assunto ? "" : "Assunto é obrigatório",
       mensagem: formData.mensagem ? "" : "Mensagem é obrigatória",
     };
 
     setErrors(newErrors);
+    setErrorMessage("");
+    setSuccessMessage("");
 
     const hasErrors = Object.values(newErrors).some((err) => err !== "");
     if (hasErrors) return;
 
-    setFormData({
-      nome: "",
-      email: "",
-      assunto: "",
-      mensagem: "",
-    });
-    setSelectedOption("");
-    setSuccessMessage("Formulário enviado com sucesso!");
+    setIsSubmitting(true);
 
-    setTimeout(() => setSuccessMessage(""), 5000);
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": "men0sC2rr0s2025",
+        },
+        body: JSON.stringify({
+          to: "contato@bikeanjo.org",
+          subject: `Contato via site - ${formData.assunto}`,
+          template: "contato",
+          data: {
+            nome: formData.nome,
+            email: formData.email,
+            telefone: formData.telefone || "Não informado",
+            assunto: formData.assunto,
+            mensagem: formData.mensagem,
+            data: new Date().toLocaleDateString("pt-BR"),
+          },
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Erro ao enviar mensagem");
+      }
+
+      setFormData({
+        nome: "",
+        email: "",
+        telefone: "",
+        assunto: "",
+        mensagem: "",
+      });
+      setSelectedOption("");
+      setSuccessMessage("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+
+      setTimeout(() => setSuccessMessage(""), 7000);
+    } catch (error) {
+      console.error("Erro ao enviar formulário:", error);
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "Erro ao enviar mensagem. Tente novamente mais tarde."
+      );
+      setTimeout(() => setErrorMessage(""), 7000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -119,6 +168,20 @@ export function Form() {
           }
         />
         {errors.email && <ErrorMessage>{errors.email}</ErrorMessage>}
+      </FieldWrapper>
+
+      <FieldWrapper>
+        <Label htmlFor="telefone">Telefone (opcional)</Label>
+        <Input
+          id="telefone"
+          type="tel"
+          placeholder="(00) 00000-0000"
+          value={formData.telefone}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleChange("telefone", e.target.value)
+          }
+        />
+        {errors.telefone && <ErrorMessage>{errors.telefone}</ErrorMessage>}
       </FieldWrapper>
 
       <FieldWrapper>
@@ -168,11 +231,19 @@ export function Form() {
         fullWidthMobile
         sx={{ borderRadius: "16px" }}
         type="submit"
+        disabled={isSubmitting}
       >
-        Enviar Mensagem
+        {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
       </Button>
       {successMessage && (
-        <p style={{ color: "green", marginTop: "1rem" }}>{successMessage}</p>
+        <p style={{ color: "#2e7d32", marginTop: "1rem", fontWeight: "500" }}>
+          {successMessage}
+        </p>
+      )}
+      {errorMessage && (
+        <p style={{ color: "#d32f2f", marginTop: "1rem", fontWeight: "500" }}>
+          {errorMessage}
+        </p>
       )}
     </FormContainer>
   );

@@ -1,0 +1,19 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files from api directory
+COPY api/package.json api/package-lock.json ./
+
+# Install dependencies
+RUN npm install --omit=dev
+
+# Copy API source
+COPY api/ .
+
+# Expose port
+EXPOSE 3000
+
+# Start the API
+CMD ["npm", "start"]
+
