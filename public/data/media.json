@@ -1,0 +1,4664 @@
+[
+  {
+    "id": "2011-reports",
+    "year": 2011,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Enio Paipa",
+            "link": {
+              "text": "Bike Anjo",
+              "url": "http://originalpaipastyle.blogspot.com/p/bike-anjo.html"
+            },
+            "media": "site",
+            "date": "01/02/2011",
+            "location": "Recife - PE"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Folha de São Paulo",
+            "link": {
+              "text": "Com \"bicicletadas\", ativistas declaram guerra aos \"monstroristas\"",
+              "url": "https://www1.folha.uol.com.br/cotidiano/886188-com-bicicletadas-ativistas-declaram-guerra-aos-monstroristas.shtml"
+            },
+            "media": "jornal",
+            "date": "09/03/2011",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Folha de São Paulo",
+            "link": {
+              "text": "Bike Anjo acompanha ciclistas novatos no trânsito",
+              "url": "https://www1.folha.uol.com.br/folhateen/894857-bike-anjo-acompanha-ciclistas-novatos-no-transito.shtml"
+            },
+            "media": "jornal",
+            "date": "28/03/2011",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "Manhã Gazeta",
+            "link": {
+              "text": "Bike Anjo no Manhã Gazeta",
+              "url": "https://www.youtube.com/watch?v=toUNbzfsgXk&t=1s"
+            },
+            "media": "youtube",
+            "date": "31/03/2011",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-3",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Eu vou de Bike",
+            "link": {
+              "text": "Conheça o Bike Anjo",
+              "url": "http://euvoudebike.com/2011/04/conheca-o-bike-anjo/"
+            },
+            "media": "site",
+            "date": "04/04/2011",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Renata Falzoni",
+            "link": {
+              "text": "“Quer vir trabalhar de bicicleta e não sabe como? Siga as dicas da Renata Falzoni",
+              "url": "https://vimeo.com/22681214"
+            },
+            "media": "vimeo",
+            "date": "20/04/2011",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "G1 - Globo",
+            "link": {
+              "text": "Ciclista deve ficar atento às regras de trânsito",
+              "url": "https://g1.globo.com/sao-paulo/respirar/noticia/2011/05/ciclista-deve-ficar-atento-regras-de-transito.html"
+            },
+            "media": "jornal",
+            "date": "11/05/2011",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Bom Dia Brasil - Globo",
+            "link": {
+              "text": "‘Bike anjos’ ajudam a diminuir o trânsito e a poluição de São Paulo",
+              "url": "https://g1.globo.com/bom-dia-brasil/noticia/2011/05/bike-anjos-ajudam-diminuir-o-transito-e-poluicao-de-sao-paulo.html"
+            },
+            "media": "jornal",
+            "date": "31/05/2011",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-5",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Rede Brasil",
+            "link": {
+              "text": "Defensores do uso de bicicleta querem respeito e segurança para ciclistas",
+              "url": "https://www.redebrasilatual.com.br/radio/defensores-do-uso-de-bicicleta-querem-respeito-e-seguranca-para-ciclistas/?searchterm=ciclistas"
+            },
+            "media": "jornal",
+            "date": "15/06/2011",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-6",
+        "month": "JUL",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diário do Grande ABC",
+            "link": {
+              "text": "Anjos de Bike",
+              "url": "https://www.dgabc.com.br/Noticia/2591/anjos-de-bike"
+            },
+            "media": "jornal",
+            "date": "19/07/2011",
+            "location": "ABC - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-7",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Rede Brasil",
+            "link": {
+              "text": "Obstinados ciclistas",
+              "url": "http://www.redebrasilatual.com.br/revistas/62/bicicletas-comportamento-e-cidadania/"
+            },
+            "media": "jornal",
+            "date": "16/08/2011",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-8",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "UOL",
+            "link": {
+              "text": "\"Bike-anjos\" ajudam pessoas a trocar o carro pela bicicleta",
+              "url": "https://noticias.uol.com.br/ultnot/multi/2011/09/21/0402CC9C3360E4812326.jhtm?bikeanjos-ajudam-pessoas-a-trocar-o-carro-pela-bicicleta-0402CC9C3360E4812326&from=compartilhe-facebook&"
+            },
+            "media": "jornal",
+            "date": "21/09/2011",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Veja SP",
+            "link": {
+              "text": "Bike Buses: ciclistas experientes organizam “bondes” até o trabalho",
+              "url": "https://vejasp.abril.com.br/cidades/bike-buses-ciclistas-organizam-bondes-trabalho/"
+            },
+            "media": "jornal",
+            "date": "21/09/2011",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-9",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "OECO",
+            "link": {
+              "text": "\"Bike-anjos\" ajudam pessoas a trocar o carro pela bicicleta",
+              "url": "http://www.oeco.com.br/outrasvias/25387-doe-um-bicicletario-para-uma-escola-publica-e-ajude-os-bike-anjos"
+            },
+            "media": "site",
+            "date": "24/11/2011",
+            "location": "Bike Anjo"
+          },
+          {
+            "id": "item-2",
+            "title": "OECO",
+            "link": {
+              "text": "\"Bike-anjos\" ajudam pessoas a trocar o carro pela bicicleta",
+              "url": "https://vimeo.com/29399799"
+            },
+            "media": "site",
+            "date": "24/11/2011",
+            "location": "Bike Anjo"
+          }
+        ]
+      },
+      {
+        "id": "item-10",
+        "month": "DEZ",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Mobilize Brasil",
+            "link": {
+              "text": "Cidade ciclável: a bicicleta como meio de transporte ",
+              "url": "http://www.mobilize.org.br/noticias/1090/cidade-ciclavel-a-bicicleta-como-meio-de-transporte.html"
+            },
+            "media": "jornal",
+            "date": "05/12/2011",
+            "location": "9ª Bienal Internacional de Arquitetura de São Paulo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2012-reports",
+    "year": 2012,
+    "months": [
+      {
+        "id": " item-1",
+        "month": "JAN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Live Alon",
+            "link": {
+              "text": "Para peder o medo, \"bici-escola\"",
+              "url": "https://bikeanjo.files.wordpress.com/2012/03/bike-anjo-na-revista-living-alone-jan12.jpg"
+            },
+            "media": "revista",
+            "date": "01/01/2012",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Vivo Verde",
+            "link": {
+              "text": "Bike anjo – conheça os verdadeiros anjos das ruas",
+              "url": "https://vivoverde.com.br/bike-anjo-conheca-os-verdadeiros-anjos-das-ruas/"
+            },
+            "media": "site",
+            "date": "27/01/2012"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Folha de São Paulo",
+            "link": {
+              "text": "Para aprender a andar de bike no caos urbano",
+              "url": "https://bikeanjo.files.wordpress.com/2012/03/002.jpg"
+            },
+            "media": "jornal",
+            "date": "02/03/2012",
+            "location": "Niterói - RJ"
+          }
+        ]
+      },
+      {
+        "id": " item-3",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "CEBDS",
+            "link": {
+              "text": "Sobre mobilidade – 2 ",
+              "url": "https://blogdocebds.wordpress.com/2012/06/14/sobre-mobilidade-2/"
+            },
+            "media": "site",
+            "date": "14/06/2012"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "JUL",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Veja",
+            "link": {
+              "text": "Bike Anjo: professores sobre duas rodas",
+              "url": "https://vejasp.abril.com.br/cidades/bike-anjo/?utm_source=redesabril_vejasp&utm_medium=twitter&utm_campaign=redesabril_vejasp"
+            },
+            "media": "jornal",
+            "date": "13/07/2012",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": " item-5",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bike Anjo BH",
+            "link": {
+              "text": "Quero ser um Bike Anjo",
+              "url": "https://bikeanjobh.wordpress.com/quero-ser-um-bike-anjo/"
+            },
+            "media": "site",
+            "date": "23/08/2012",
+            "location": "Belo Horizonte - MG"
+          }
+        ]
+      },
+      {
+        "id": "item-6",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Estado de Minas",
+            "link": {
+              "text": "Voluntários ajudam pessoas de qualquer idade a vencer o medo e encarar a bicicleta",
+              "url": "https://www.em.com.br/app/noticia/gerais/2012/09/09/interna_gerais,316443/voluntarios-ajudam-pessoas-de-qualquer-idade-a-vencer-o-medo-e-encarar-a-bicicleta.shtml"
+            },
+            "media": "jornal",
+            "date": "09/09/2012",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-2",
+            "title": "Página 22",
+            "link": {
+              "text": "Mudança a caminho?",
+              "url": "https://pagina22.com.br/2012/09/10/mudanca-a-caminho/"
+            },
+            "media": "site",
+            "date": "10/09/2012",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "Anjo Floripa",
+            "link": {
+              "text": "BikeAnjo Floripa no programa \"it'sTV\"",
+              "url": "https://www.youtube.com/watch?v=CZyKBaL7FtI"
+            },
+            "media": "youtube",
+            "date": "26/09/2012",
+            "location": "Florianópolis - SC"
+          }
+        ]
+      },
+      {
+        "id": "item-9",
+        "month": "OUT",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Tv Cultura",
+            "link": {
+              "text": "Guia do Trânsito - Entrevista - Bicicleta na Cidade",
+              "url": "https://www.youtube.com/watch?v=ZuibW2W6vbI&t=724s"
+            },
+            "media": "youtube",
+            "date": "12/10/2012"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2013-reports",
+    "year": 2013,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "VeloVogue",
+            "link": {
+              "text": "Movimento Conviva Blogger and social media content and strategy freelancer",
+              "url": "http://www.velovogue.com/2013/02/vv-profile-lygia-de-luca.html"
+            },
+            "media": "site",
+            "date": "21/02/0201",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Portal Pedal",
+            "link": {
+              "text": "BIKE ANJO PROMOVE CAMPANHA ",
+              "url": "http://portaldopedal2012.blogspot.com/2013/02/bike-anjo-promove-campanha.html"
+            },
+            "media": "site",
+            "date": "22/02/2013",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": " item-2",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Revista da Cidade",
+            "link": {
+              "text": "Ciclismo na cidade de São Paulo 14-03-13",
+              "url": "https://www.youtube.com/watch?v=kmA99SNje94"
+            },
+            "media": "youtube",
+            "date": "14/03/2013",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Pronto",
+            "link": {
+              "text": "Sem medo de pedalar na cidade",
+              "url": "https://pronto2013.wordpress.com/2013/03/20/sem-medo-de-pedalar-na-cidade/"
+            },
+            "media": "site",
+            "date": "20/03/2013",
+            "location": "Nacional - BR"
+          }
+        ]
+      },
+      {
+        "id": "item-3",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Terra",
+            "link": {
+              "text": "SP: ciclofaixas ajudam a popularizar bicicleta como meio de transporte",
+              "url": "http://noticias.terra.com.br/brasil/cidades/ciclofaixas-ajudam-a-popularizar-bicicleta-como-meio-de-transporte-em-sp,7736e89a54bdd310VgnCLD2000000ec6eb0aRCRD.html"
+            },
+            "media": "site",
+            "date": "07/04/2013",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Terra",
+            "link": {
+              "text": "Cadeirinha e capacete são obrigatórios em passeio de bike",
+              "url": "http://mulher.terra.com.br/vida-de-mae/cadeirinha-e-capacete-sao-obrigatorios-em-passeio-de-bike,0c1f71d5934fd310VgnVCM4000009bcceb0aRCRD.html"
+            },
+            "media": "site",
+            "date": "11/04/2013",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "Catraca Livre",
+            "link": {
+              "text": "Empresas paulistanas incentivam funcionários a deixarem o carro em casa",
+              "url": "https://catracalivre.com.br/arquivo/empresas-paulistanas-incentivam-funcionarios-a-deixarem-o-carro-em-casa/"
+            },
+            "media": "site",
+            "date": "15/04/2013",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-4",
+            "title": "Vivo Verde",
+            "link": {
+              "text": "#Infográfico – Dicas do antes, durante e depois para quem pedala: Dia Internacional do Ciclista!!! ",
+              "url": "https://vivoverde.com.br/infografico-dicas-do-antes-durante-e-depois-para-quem-pedala-dia-internacional-do-ciclista/"
+            },
+            "media": "site",
+            "date": "15/04/2013",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-5",
+            "title": "Terra",
+            "link": {
+              "text": "Futurista, Brasília se reinventa para as bicicletas",
+              "url": "http://noticias.terra.com.br/ciencia/futurista-brasilia-se-reinventa-para-as-bicicletas,a9b8edc09424e310VgnCLD2000000ec6eb0aRCRD.html"
+            },
+            "media": "site",
+            "date": "25/04/2013",
+            "location": "Brasília - DF"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diário de Pernambuco",
+            "link": {
+              "text": "10 de maio é dia de ir de bike ao trabalho",
+              "url": "http://blogs.diariodepernambuco.com.br/mobilidadeurbana/tag/bike-anjo/"
+            },
+            "media": "jornal",
+            "date": "03/05/2013",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "Via Trolebus",
+            "link": {
+              "text": "Sexta-feira é dia de ir de Bike ao Trabalho",
+              "url": "https://viatrolebus.com.br/2013/05/sexta-feira-e-dia-de-ir-de-bike-ao-trabalho/"
+            },
+            "media": "site",
+            "date": "08/05/2013",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-3",
+            "title": "Vá de Bike",
+            "link": {
+              "text": "Dia “De Bike ao Trabalho”: atividades no Brasil no mundo",
+              "url": "https://vadebike.org/2013/05/atividades-acoes-dia-de-ir-de-bike-ao-trabalho/"
+            },
+            "media": "site",
+            "date": "09/05/2013",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-4",
+            "title": "GZH Geral",
+            "link": {
+              "text": "Um dia para Ir de Bike ao Trabalho",
+              "url": "https://gauchazh.clicrbs.com.br/geral/noticia/2013/05/um-dia-para-ir-de-bike-ao-trabalho-4132429.html"
+            },
+            "media": "site",
+            "date": "10/05/2013",
+            "location": "Porto Alegre - RS"
+          },
+          {
+            "id": "item-5",
+            "title": "Vá de Bike",
+            "link": {
+              "text": "Foi de bike ao trabalho? Conta pra gente!",
+              "url": "https://vadebike.org/2013/05/como-foi-dia-de-bike-ao-trabalho/"
+            },
+            "media": "site",
+            "date": "11/05/2013",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": " item-5",
+        "month": "DEZ",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Em movimento",
+            "link": {
+              "text": "Em Movimento: bike residentes",
+              "url": "https://globoplay.globo.com/v/3007594/"
+            },
+            "media": "tv",
+            "date": "09/12/2013",
+            "location": "Vitória - ES"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2014-reports",
+    "year": 2014,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bom dia Amazônia",
+            "link": {
+              "text": "Projeto 'Bike Anjo' ensina população a pedalar no trânsito em Manaus",
+              "url": "https://globoplay.globo.com/v/3785775/"
+            },
+            "media": "tv",
+            "date": "24/11/2014",
+            "location": "Manaus - AM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2015-reports",
+    "year": 2015,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "JAN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "A critica",
+            "link": {
+              "text": "Bike Anjo vai ensinar a pedalar",
+              "url": "https://www.acritica.com/channels/esportes/news/bike-anjo-vai-ensinar-a-pedalar-neste-domingo-25-no-passeio-do-mindu-em-manaus"
+            },
+            "media": "jornal",
+            "date": "25/01/2015",
+            "location": "Manaus - AM"
+          }
+        ]
+      },
+      {
+        "id": " item-2",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Vanguarda",
+            "link": {
+              "text": "Bike anjo",
+              "url": "https://globoplay.globo.com/v/4125256/"
+            },
+            "media": "tv",
+            "date": "21/04/2015",
+            "location": "São José dos Campos - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Bom Dia Amazônia",
+            "link": {
+              "text": "Projeto 'Bike Anjo' ensina população a pedalar no trânsito em Manaus",
+              "url": "https://globoplay.globo.com/v/4143089/"
+            },
+            "media": "tv",
+            "date": "29/04/2015",
+            "location": "Manaus - AM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2016-reports",
+    "year": 2016,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Mais caminhos",
+            "link": {
+              "text": "ONG 'Bike Anjo' ensina e estimua a prática do ciclismo nas cidades",
+              "url": "https://globoplay.globo.com/v/4874085/"
+            },
+            "media": "tv",
+            "date": "12/03/2016",
+            "location": "Campinas - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "AL TV 1ª Edição",
+            "link": {
+              "text": "Projeto 'De Bike ao Trabalho' busca mostrar as bicicletas como opção de transporte",
+              "url": "https://globoplay.globo.com/v/5022143/"
+            },
+            "media": "tv",
+            "date": "13/05/2016",
+            "location": "Maceió - AL"
+          },
+          {
+            "id": "item-2",
+            "title": "É de casa",
+            "link": {
+              "text": "Voluntários do grupo Bike Anjo ensinam adultos e crianças a andar de bicicleta",
+              "url": "https://globoplay.globo.com/v/5023592/"
+            },
+            "media": "tv",
+            "date": "14/05/2016",
+            "location": "Nacional - BR"
+          }
+        ]
+      },
+      {
+        "id": " item-3",
+        "month": "JUL",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "IAB/CE Gentileza Urbana",
+            "link": {
+              "text": "Menção Honrosa VII Prêmio IAB Gentileza Urbana",
+              "url": "https://www.portalin.com.br/coberturas/vii-premio-iab-ce-gentileza-urbana-e-entregue-no-museu-da-industria/"
+            },
+            "media": "mencaohonrosa",
+            "date": "26/07/2016",
+            "location": "Fortaleza - CE"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "JPB1",
+            "link": {
+              "text": "Voluntários do grupo Bike Anjo ensinam adultos e crianças a andar de bicicleta",
+              "url": "https://globoplay.globo.com/v/5273775/"
+            },
+            "media": "tv",
+            "date": "31/09/2016",
+            "location": "Campina Grande - PB"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2017-reports",
+    "year": 2017,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bom dia Paraíba",
+            "link": {
+              "text": "Hoje é o \"Dia Dedicado a Ir de Bike ao Trabalho\"",
+              "url": "https://globoplay.globo.com/v/5864019/"
+            },
+            "media": "tv",
+            "date": "12/05/2017",
+            "location": "João Pessoa - PB"
+          },
+          {
+            "id": "item-2",
+            "title": "O Globo",
+            "link": {
+              "text": "Prêmio Sou Niterói",
+              "url": "https://oglobo.globo.com/rio/bairros/conheca-os-nomes-dos-vencedores-do-premio-sou-de-niteroi-2017-21400540"
+            },
+            "media": "premio",
+            "date": "27/05/2017",
+            "location": "Niterói - RJ"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "JUL",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Estrelas",
+            "link": {
+              "text": "Caio Ribeiro se envolve com o projeto Bike Anjo",
+              "url": "https://globoplay.globo.com/v/5994383/"
+            },
+            "media": "tv",
+            "date": "08/07/2017",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": " item-3",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Em movimento",
+            "link": {
+              "text": "Em Movimento: 'Bike Anjo' é tema do 'EMME', 19",
+              "url": "https://globoplay.globo.com/v/6082889/"
+            },
+            "media": "tv",
+            "date": "16/08/2017",
+            "location": "Vitória - ES"
+          },
+          {
+            "id": "item-2",
+            "title": "Em movimento",
+            "link": {
+              "text": "Em Movimento: Projeto 'Bike Anjo' ajuda ciclistas em suas primeiras pedaladas",
+              "url": "https://globoplay.globo.com/v/6089570/"
+            },
+            "media": "tv",
+            "date": "19/08/2017",
+            "location": "Vila Velha - ES"
+          },
+          {
+            "id": "item-3",
+            "title": "Sesc SP",
+            "link": {
+              "text": "Sempre é tempo de Aprender a Pedalar",
+              "url": "https://www.sescsp.org.br/online/artigo/11393_SEMPRE+E+TEMPO+DE+APRENDER+A+PEDALAR"
+            },
+            "media": "site",
+            "date": "25/09/2017",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "ACICLICA",
+            "link": {
+              "text": "SEMANA DA MOBILIDADE (ACICLICA / BIKE ANJO)",
+              "url": "https://www.youtube.com/watch?v=7fe6wsFK1Pw&feature=youtu.be"
+            },
+            "media": "youtube",
+            "date": "30/09/2017",
+            "location": "Volta Redonda - RJ"
+          }
+        ]
+      },
+      {
+        "id": "item-5",
+        "month": "OUT",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diário Online",
+            "link": {
+              "text": "Projeto 'Pedala, Mana!' promove bate-papo entre ciclistas mulheres",
+              "url": "http://www.diarioonline.com.br/noticias/para/noticia-455718-.html"
+            },
+            "media": "site",
+            "date": "03/10/2017",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-2",
+            "title": "Globo",
+            "link": {
+              "text": "Professores ensinam as crianças a andarem de bicicleta sem rodinhas de forma segura",
+              "url": "https://globoplay.globo.com/v/6201163/programa/"
+            },
+            "media": "tv",
+            "date": "08/10/2017",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-3",
+            "title": "Bike é Legal",
+            "link": {
+              "text": "Conheça as Bike Anjas e pedale com elas!",
+              "url": "https://bikeelegal.com/2017/10/11/conheca-as-bike-anjas-e-pedale-com-elas/"
+            },
+            "media": "youtube",
+            "date": "11/10/2017",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-6",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Globo News",
+            "link": {
+              "text": "Falta de infraestrutura é o que mais impede os brasileiros de usar bicicleta, diz pesquisa",
+              "url": "http://g1.globo.com/globo-news/conta-corrente/videos/t/todos-os-videos/v/falta-de-infraestrutura-e-o-que-mais-impede-os-brasileiros-de-usar-bicicleta-diz-pesquisa/6275885/"
+            },
+            "media": "tv",
+            "date": "08/11/2017",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Wordpress",
+            "link": {
+              "text": "Bike Anjas participam de publicação sobre clima e gênero.",
+              "url": "https://bikeanjas.wordpress.com/"
+            },
+            "media": "premio",
+            "date": "22/11/2017",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "Juntos Nessa",
+            "link": {
+              "text": "Bike Mobilidade Urbana",
+              "url": "https://www.youtube.com/watch?v=RnQxjFdUPl8&feature=youtu.be"
+            },
+            "media": "tv",
+            "date": "27/11/2017",
+            "location": "São Paulo - SP"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2018-reports",
+    "year": 2018,
+    "months": [
+      {
+        "id": " item-1",
+        "month": "JAN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "O Povo",
+            "link": {
+              "text": "Bike Anjo ajuda mulheres a pedalar pela primeira vez",
+              "url": "https://www.opovo.com.br/jornal/cidades/2018/03/bike-anjo-ajuda-mulheres-a-pedalar-pela-primeira-vez.html"
+            },
+            "media": "site",
+            "date": "12/01/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-2",
+            "title": "FCP",
+            "link": {
+              "text": "Discussão sobre mobilidade urbana no Brasil ganha espaço na Casa das Artes",
+              "url": "http://www.fcp.pa.gov.br/noticias/3221-discussao-sobre-mobilidade-urbana-no-brasil-ganha-espaco-na-casa-das-artes"
+            },
+            "media": "site",
+            "date": "14/01/2018",
+            "location": "Belém - PA"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Gazeta do Povo",
+            "link": {
+              "text": "Fim de semana tem homenagem ao Dia da Mulher: corridas e feiras de adoção",
+              "url": "http://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/fim-de-semana-tem-homenagem-ao-dia-da-mulher-corridas-e-feiras-de-adocao/"
+            },
+            "media": "site",
+            "date": "28/02/2018",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-2",
+            "title": "A voz da Cidade",
+            "link": {
+              "text": "Nota: DIA DO ESPORTISTA",
+              "url": "https://avozdacidade.com/notas-notas-99/"
+            },
+            "media": "site",
+            "date": "27/02/2018",
+            "location": "Volta Redonda - RJ"
+          }
+        ]
+      },
+      {
+        "id": " item-3",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diario do Nordeste",
+            "link": {
+              "text": "Bike Anjo promove ação especial dedicada às mulheres neste domingo (11)",
+              "url": "https://diariodonordeste.verdesmares.com.br/metro/bike-anjo-promove-acao-especial-dedicada-as-mulheres-neste-domingo-11-1.1905804?page=5"
+            },
+            "media": "site",
+            "date": "09/03/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-2",
+            "title": "Belo Horizonte",
+            "link": {
+              "text": "Não sabe pedalar? Neste domingo a Escola Bike anjo te ensina",
+              "url": "http://belohorizonte.com.br/2018/03/08/nao-sabe-pedalar-neste-domingo-escola-bike-anjo-te-ensina/"
+            },
+            "media": "site",
+            "date": "09/03/2018",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-3",
+            "title": "Faxaju",
+            "link": {
+              "text": "Mobilidade: Estímulo Ao Uso De Bicicleta É Tema De Reunião Na Semict",
+              "url": "http://www.faxaju.com.br/index.php/2018/03/07/mobilidade-estimulo-ao-uso-de-bicicleta-e-tema-de-reuniao-na-semict/"
+            },
+            "media": "Site",
+            "date": "07/03/2018",
+            "location": "Aracaju - SE"
+          },
+          {
+            "id": "item-4",
+            "title": "Diario do Nordeste",
+            "link": {
+              "text": "Bike anjo' promove oficina feminina",
+              "url": "https://diariodonordeste.verdesmares.com.br/metro/bike-anjo-promove-oficina-feminina-1.1906872"
+            },
+            "media": "site",
+            "date": "12/03/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-5",
+            "title": "Jornal da Record",
+            "link": {
+              "text": "Bike Anjo no Jornal da Record",
+              "url": "https://noticias.r7.com/jornal-da-record/videos/assista-a-integra-do-jornal-da-record-deste-sabado-10-10032018"
+            },
+            "media": "site",
+            "date": "10/03/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-6",
+            "title": "Instituto Net Claro Embratel",
+            "link": {
+              "text": "ONG forma condutores e incentiva bicicleta nas cidades",
+              "url": "https://www.institutonetclaroembratel.org.br/cidadania/nossas-novidades/podcasts/ong-forma-condutores-e-incentiva-bicicleta-nas-cidades/"
+            },
+            "media": "site",
+            "date": "15/03/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-7",
+            "title": "CBN",
+            "link": {
+              "text": "Âncoras do CBN São Paulo topam desafio de ir até os estúdios da CBN de bicicleta",
+              "url": "http://cbn.globoradio.globo.com/media/audio/168691/ancoras-do-cbn-sao-paulo-topam-desafio-de-ir-ate-o.htm"
+            },
+            "media": "radio",
+            "date": "19/03/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Beco da Bike",
+            "link": {
+              "text": "Beco em Vídeo #11: Domingo na EBA - Escola Bike Anjo",
+              "url": "https://youtu.be/shDU2gMD6_4"
+            },
+            "media": "youtube",
+            "date": "21/03/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-9",
+            "title": "Vá de Bike",
+            "link": {
+              "text": "Aprenda a andar de bicicleta com um Bike Anjo",
+              "url": "http://vadebike.org/2013/01/aprenda-andar-de-bicicleta-pedalar-bike-anjo/"
+            },
+            "media": "site",
+            "date": "23/03/2018",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-10",
+            "title": "Correio24h",
+            "link": {
+              "text": "Laranjinhas turbinadas': Bike Salvador ganha novas bicicletas e mais estações",
+              "url": "http://www.correio24horas.com.br/noticia/nid/laranjinhas-turbinadas-bike-salvador-ganha-novas-bicicletas-e-mais-estacoes/"
+            },
+            "media": "site",
+            "date": "31/03/2018",
+            "location": "Salvador - BA"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bike é Legal",
+            "link": {
+              "text": "Sua empresa é amiga da bike? Saiba como ela pode ser premiada pela Rede Bike Anjo",
+              "url": "https://bikeelegal.com/sua-empresa-e-amiga-da-bike-saiba-como-ela-pode-ser-premiada-pela-rede-bike-anjo/"
+            },
+            "media": "site",
+            "date": "05/04/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Revista Bicicleta",
+            "link": {
+              "text": "Bike Anjo lança prêmio SP de bike ao trabalho para empresas em São Paulo",
+              "url": "http://www.revistabicicleta.com.br/bicicleta_noticia.php?bike_anjo_lanca_premio_sp_de_bike_ao_trabalho__para_empresas_em_sao_paulo&id=35530"
+            },
+            "media": "revista",
+            "date": "05/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-3",
+            "title": "Turismo é legal",
+            "link": {
+              "text": "Bike Anjo lança “Prêmio SP de Bike ao Trabalho” para empresas em SP",
+              "url": "http://www.turismoemfoco.com.br/v2017/2018/04/05/bike-anjo-lanca-premio-sp-de-bike-ao-trabalho-para-empresas-em-sp/"
+            },
+            "media": "site",
+            "date": "05/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-4",
+            "title": "Akatu",
+            "link": {
+              "text": "Bike Anjo lança Prêmio SP de Bike ao Trabalho para empresas em São Paulo",
+              "url": "https://www.akatu.org.br/noticia/bike-anjo-lanca-premio-sp-de-bike-ao-trabalho-para-empresas-em-sao-paulo/"
+            },
+            "media": "site",
+            "date": "05/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-5",
+            "title": "Revista Ecológico",
+            "link": {
+              "text": "Bike Anjo lança Prêmio SP de Bike ao Trabalho para empresas em São Paulo",
+              "url": "http://revistaecologico.com.br/noticia.php?id=5316"
+            },
+            "media": "revista",
+            "date": "06/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-6",
+            "title": "CBN",
+            "link": {
+              "text": "JP Amaral fala sobre os benefícios do uso da bicicleta no deslocamento para o trabalho.",
+              "url": "http://cbn.globoradio.globo.com/media/audio/173807/mais-de-80-dos-britanicos-que-vao-ao-trabalho-de-b.htm"
+            },
+            "media": "radio",
+            "date": "09/04/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-7",
+            "title": "netjen",
+            "link": {
+              "text": "Incentivo ao uso da bicicleta - nota",
+              "url": "http://jornalempresasenegocios.com.br/PDFs/3603/pagina_03_ed_3603.pdf"
+            },
+            "media": "site",
+            "date": "10/04/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Abril & Casa Cor",
+            "link": {
+              "text": "Bike Anjo lança Prêmio SP de Bike ao Trabalho para empresas em São Paulo",
+              "url": "http://www.portalrosachoque.com.br/noticias/5756/lancamento-premio-sp-de-bike-ao-trabalho-2018/"
+            },
+            "media": "site",
+            "date": "10/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-9",
+            "title": "Cebds",
+            "link": {
+              "text": "Bike Anjo lança Prêmio SP de Bike ao Trabalho para empresas em São Paulo",
+              "url": "http://cebds.org/noticias/bike-anjo-lanca-premio-sp-de-bike-ao-trabalho/#.Ws5p2fnwbIU"
+            },
+            "media": "site",
+            "date": "11/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-10",
+            "title": "Folha de São Paulo",
+            "link": {
+              "text": "Prêmio busca empresas que estimulam uso da bicicleta para ir ao trabalho",
+              "url": "http://avenidas.blogfolha.uol.com.br/2018/04/19/premio-busca-empresas-que-estimulam-uso-da-bicicleta-para-ir-ao-trabalho/"
+            },
+            "media": "site",
+            "date": "19/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-11",
+            "title": "iFato",
+            "link": {
+              "text": "Prêmio busca empresas que estimulam uso da bicicleta para ir ao trabalho",
+              "url": "https://ifato.com.br/noticias/ciclismo/premio-busca-empresas-que-estimulam-uso-da-bicicleta-para-ir-ao-trabalho/22612.html"
+            },
+            "media": "site",
+            "date": "19/04/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-12",
+            "title": "Mundo Livre FM",
+            "link": {
+              "text": "11 DE MAIO É DIA DE BIKE AO TRABALHO",
+              "url": "https://www.mundolivrefm.com.br/11-de-maio-e-dia-de-bike-ao-trabalho/"
+            },
+            "media": "radio",
+            "date": "19/04/2018",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-13",
+            "title": "ClimaInfo",
+            "link": {
+              "text": "Para inscrever a empresa",
+              "url": "http://climainfo.org.br/2018/04/20/climainfo-20-de-abril-2018/"
+            },
+            "media": "site",
+            "date": "20/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-14",
+            "title": "Catraca Livre",
+            "link": {
+              "text": "Projeto premiará empresas que estimularem uso da bike ao trabalho",
+              "url": "https://catracalivre.com.br/geral/cidadania/indicacao/projeto-premiara-empresas-que-estimularem-uso-da-bike-ao-trabalho/"
+            },
+            "media": "site",
+            "date": "23/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-15",
+            "title": "TV Câmara SP",
+            "link": {
+              "text": "Iniciativas incentivam o uso de bicicleta por paulistanos",
+              "url": "https://www.youtube.com/watch?v=FKWRk-Yg9m4"
+            },
+            "media": "tv",
+            "date": "24/04/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-15",
+            "title": "TV Brasil",
+            "link": {
+              "text": "Pesquisa mostra redução do risco de infarto em ciclistas",
+              "url": "http://tvbrasil.ebc.com.br/reporter-sao-paulo/2018/04/pesquisa-mostra-reducao-do-risco-de-morte-por-infarto-em-ciclistas"
+            },
+            "media": "tv",
+            "date": "20/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-16",
+            "title": "Portal do GIFE",
+            "link": {
+              "text": "Iniciativa reconhece ações de promoção da bicicleta como transporte para o trabalho",
+              "url": "https://gife.org.br/iniciativa-reconhece-acoes-de-promocao-da-bicicleta-como-transporte-para-o-trabalho/?utm_campaign=redegife_1028_30042018_mailing_site-_cadastro_newsletter&utm_medium=email&utm_source=RD+Station"
+            },
+            "media": "site",
+            "date": "30/04/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-17",
+            "title": "UFMG",
+            "link": {
+              "text": "Campus Pampulha recebe comunidade no domingo com atividades inclusivas",
+              "url": "https://ufmg.br/comunicacao/noticias/domingo-no-campus-tera-oficinas-inclusivas"
+            },
+            "media": "site",
+            "date": "05/04/2018",
+            "location": "Belo Horizonte - BH"
+          },
+          {
+            "id": "item-16",
+            "title": "Belo Horizonte",
+            "link": {
+              "text": "Projeto Bike Anjo acontece neste domingo em BH",
+              "url": "http://belohorizonte.com.br/2018/04/13/projeto-bike-anjo-acontece-neste-domingo-em-bh/"
+            },
+            "media": "site",
+            "date": "13/04/2018",
+            "location": "Belo Horizonte - BH"
+          },
+          {
+            "id": "item-17",
+            "title": "BC Noticias",
+            "link": {
+              "text": "“Bicicleata” vai reunir ciclistas em homenagem ao Dia Mundial da Bicicleta em Itajaí",
+              "url": "https://www.bcnoticias.com.br/bicicleata-vai-reunir-ciclistas-em-homenagem-ao-dia-mundial-da-bicicleta-em-itajai/"
+            },
+            "media": "site",
+            "date": "17/04/2018",
+            "location": "Itajaí - SC"
+          },
+          {
+            "id": "item-18",
+            "title": "ES Hoje",
+            "link": {
+              "text": "Quer aprender a andar de bicicleta? Voluntários dão aula de graça na Serra",
+              "url": "http://eshoje.com.br/quer-aprender-a-andar-de-bicicleta-voluntarios-dao-aula-de-graca-na-serra/"
+            },
+            "media": "site",
+            "date": "19/04/2018",
+            "location": "Serra - ES"
+          },
+          {
+            "id": "item-19",
+            "title": "OGlobo",
+            "link": {
+              "text": "CicloExperiência 2018: Um dia dedicado à bicicleta em Niterói",
+              "url": "https://oglobo.globo.com/rio/bairros/cicloexperiencia-2018-um-dia-dedicado-bicicleta-em-niteroi-22615294"
+            },
+            "media": "site",
+            "date": "21/04/2018",
+            "location": "Niterói - RJ"
+          }
+        ]
+      },
+      {
+        "id": " item-5",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Globo",
+            "link": {
+              "text": "Palestras educativas para o trânsito marcam campanha 'Maio Amarelo' em Fortaleza",
+              "url": "https://g1.globo.com/ce/ceara/noticia/palestras-educativas-para-o-transito-marcam-campanha-maio-amarelo-em-fortaleza.ghtml"
+            },
+            "media": "site",
+            "date": "08/05/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-2",
+            "title": "Campo Grande News",
+            "link": {
+              "text": "Bike Anjo convoca mamães para aprenderem de graça a pedalar",
+              "url": "https://www.campograndenews.com.br/lado-b/comportamento-23-08-2011-08/bike-anjo-convoca-mamaes-para-aprenderem-de-graca-a-pedalar"
+            },
+            "media": "site",
+            "date": "08/05/2018",
+            "location": "Campo Grande - MT"
+          },
+          {
+            "id": "item-3",
+            "title": "Globo",
+            "link": {
+              "text": "Estudo aponta que andar de bicicleta melhora taxas de colesterol, fôlego e resistência",
+              "url": "https://globoplay.globo.com/v/6728478/"
+            },
+            "media": "tv",
+            "date": "11/05/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-4",
+            "title": "Segs",
+            "link": {
+              "text": "No Dia De Bike ao Trabalho (11/05), campanha mobiliza empresas e indivíduos por todo o país",
+              "url": "http://www.segs.com.br/seguros/115238-no-dia-de-bike-ao-trabalho-11-05-campanha-mobiliza-empresas-e-individuos-por-todo-o-pais"
+            },
+            "media": "site",
+            "date": "11/05/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-5",
+            "title": "Rede Brasil Atual",
+            "link": {
+              "text": "Dia de Bike ao Trabalho estimula a bicicleta como meio de transporte nas cidades",
+              "url": "http://www.redebrasilatual.com.br/ambiente/2018/05/dia-de-bike-ao-trabalho-estimula-o-uso-da-bicicleta-como-meio-de-transporte-nas-cidades"
+            },
+            "media": "tv",
+            "date": "11/05/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-6",
+            "title": "Agencia Brasilia",
+            "link": {
+              "text": "Pedalada no DF marca Dia Mundial de Bike ao Trabalho",
+              "url": "https://www.agenciabrasilia.df.gov.br/2018/05/10/pedalada-no-df-marca-dia-mundial-de-bike-ao-trabalho/"
+            },
+            "media": "site",
+            "date": "11/05/2018",
+            "location": "Brasília - DF"
+          },
+          {
+            "id": "item-7",
+            "title": "SP/TV /Globo",
+            "link": {
+              "text": "InCor revela benefícios de quem deixou de ir ao trabalho de trem para ir de bicicleta",
+              "url": "http://g1.globo.com/sao-paulo/videos/t/sptv-2-edicao/v/incor-revela-beneficios-de-quem-deixou-de-ir-ao-trabalho-de-trem-para-ir-de-bicicleta/6730061/"
+            },
+            "media": "tv",
+            "date": "11/05/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Red Bull",
+            "link": {
+              "text": "De bike ao trabalho 2018: ações para incentivar você a adotar o meio de transporte sustentável",
+              "url": "https://www.redbull.com/br-pt/de-bike-ao-trabalho-2018-atividades-bike-anjo"
+            },
+            "media": "site",
+            "date": "11/05/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-9",
+            "title": "Tribuna Ceará",
+            "link": {
+              "text": "Mães têm a chance de aprender a pedalar neste domingo em Fortaleza",
+              "url": "http://tribunadoceara.uol.com.br/noticias/cotidiano-2/maes-tem-a-chance-de-aprender-a-pedalar-neste-domingo-em-fortaleza/"
+            },
+            "media": "site",
+            "date": "12/05/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-10",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Mães e filhos aprendem juntos a pedalar no Projeto Bike Anjo",
+              "url": "https://diariodonordeste.verdesmares.com.br/metro/maes-e-filhos-aprendem-juntos-a-pedalar-no-projeto-bike-anjo-1.1937925"
+            },
+            "media": "site",
+            "date": "12/05/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-12",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Música erudita e bike no Dia das Mães",
+              "url": "https://diariodonordeste.verdesmares.com.br/metro/musica-erudita-e-bike-no-dia-das-maes-1.1938146?page=1"
+            },
+            "media": "site",
+            "date": "12/05/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-13",
+            "title": "Bike Brasil Expo",
+            "link": {
+              "text": "Entrega do Prêmio SP De Bike ao Trabalho marca novo momento do ciclo-ativismo",
+              "url": "http://www.bikebrasilexpo.com.br/pt/noticias/noticias-do-mercado-e-industria/entrega-do-premio-sp-de-bike-ao-trabalho-marca-novo-momento-do-ciclo-ativismo"
+            },
+            "media": "site",
+            "date": "11/05/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-14",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Projeto ensinará mães e filhos a andarem de bicicleta neste domingo (13)",
+              "url": "https://diariodonordeste.verdesmares.com.br/metro/projeto-ensinara-maes-e-filhos-a-andarem-de-bicicleta-neste-domingo-13-1.1937369?page=5"
+            },
+            "media": "site",
+            "date": "11/05/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-15",
+            "title": "Redbull",
+            "link": {
+              "text": "Por que adotar a bike para ir ao trabalho?",
+              "url": "https://www.redbull.com/br-pt/de-bike-ao-trabalho-2018-atividades-bike-anjo"
+            },
+            "media": "site",
+            "date": "11/05/2018",
+            "location": "Nacional - BR"
+          }
+        ]
+      },
+      {
+        "id": "item-6",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "JC",
+            "link": {
+              "text": "As lições da crise dos combustíveis para a mobilidade urbana",
+              "url": "http://jc.ne10.uol.com.br/blogs/deolhonotransito/2018/06/03/as-licoes-da-crise-dos-combustiveis-gasolina-para-a-mobilidade-urbana/"
+            },
+            "media": "site",
+            "date": "03/06/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "Breathe Life",
+            "link": {
+              "text": "CYCLING GROWING IN POPULARITY IN BRAZILIAN MEGACITY SÃO PAULO: Bike To Work Day attracts public and companies as awareness of cycling benefits grows",
+              "url": "http://breathelife.staging.wpengine.com/news/cycling-growing-popularity-brazilian-megacity-sao-paulo/"
+            },
+            "media": "site",
+            "date": "03/06/2018",
+            "location": "Internacional"
+          },
+          {
+            "id": "item-3",
+            "title": "G1",
+            "link": {
+              "text": "Projeto promove passeios de bicicletas gratuitos para pessoas com deficiência em Belém",
+              "url": "https://g1.globo.com/pa/para/noticia/projeto-promove-passeios-de-bicicletas-gratuitos-para-pessoas-com-deficiencia-em-belem.ghtml"
+            },
+            "media": "site",
+            "date": "04/06/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-4",
+            "title": "G1",
+            "link": {
+              "text": "Projeto oferta bicicletas adaptadas para pessoas com dificuldades de mobilidade no Parque do Utinga",
+              "url": "https://g1.globo.com/pa/para/noticia/projeto-oferta-bicicletas-adaptadas-para-pessoas-com-dificuldades-de-mobilidade-no-parque-do-utinga.ghtml"
+            },
+            "media": "site",
+            "date": "04/06/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-5",
+            "title": "Cultura FM",
+            "link": {
+              "text": "Oficina ‘Bicicleta nos planos’ é promovida em Caruaru",
+              "url": "http://radioculturadonordeste.com.br/oficina-bicicleta-nos-planos-e-promovida-em-caruaru/"
+            },
+            "media": "site",
+            "date": "11/06/2020",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-6",
+            "title": "Folha de Londrina",
+            "link": {
+              "text": "Agende-se!",
+              "url": "https://www.folhadelondrina.com.br/cidades/agende-se-1008951.html"
+            },
+            "media": "site",
+            "date": "19/06/2018",
+            "location": "Londrina - PR"
+          }
+        ]
+      },
+      {
+        "id": " item-7",
+        "month": "JUL",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Prefeitura São Gonçalo RJ",
+            "link": {
+              "text": "Domingo é dia de Bike Anjo em SG",
+              "url": "https://www.saogoncalo.rj.gov.br/domingo-e-dia-de-bike-anjo-em-sg-2/"
+            },
+            "media": "site",
+            "date": "05/07/2018",
+            "location": "São Gonçalo - RJ"
+          },
+          {
+            "id": "item-2",
+            "title": "ORM",
+            "link": {
+              "text": "Trabalhadores optam por bicicletas como transporte",
+              "url": "http://www.orm.com.br/noticias/regiaometropolitana/MjI1NDU=/Trabalhadores-optam-por-bicicletas-como-transporte"
+            },
+            "media": "site",
+            "date": "05/07/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-3",
+            "title": "Bhaz",
+            "link": {
+              "text": "Se você ainda não desistiu de ser ciclista, tem aula de graça no Minas Shopping",
+              "url": "https://bhaz.com.br/2018/07/06/ciclista-aula-de-graca/"
+            },
+            "media": "site",
+            "date": "06/07/2018",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-4",
+            "title": "ORM",
+            "link": {
+              "text": "Lute como uma ciclista",
+              "url": "http://www.orm.com.br/noticias/regiaometropolitana/MjI1ODQ=/Lute-como-uma-ciclista"
+            },
+            "media": "site",
+            "date": "09/07/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-5",
+            "title": "ORM",
+            "link": {
+              "text": "Bike na Obra': uma mão na roda",
+              "url": "http://www.orm.com.br/noticias/regiaometropolitana/MjI3MTA=/Bike-na-Obra-uma-mao-na-roda"
+            },
+            "media": "site",
+            "date": "10/07/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-6",
+            "title": "Periferia em Movimento",
+            "link": {
+              "text": "Irene & Valéria: “Vou de bike”",
+              "url": "http://periferiaemmovimento.com.br/irene-valeria-vou-de-bike/"
+            },
+            "media": "site",
+            "date": "19/07/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-7",
+            "title": "OCP News",
+            "link": {
+              "text": "População tem opiniões diferentes sobre rebaixamento de calçadas em Jaraguá do Sul",
+              "url": "https://ocp.news/geral/populacao-tem-opinioes-diferentes-sobre-rebaixamento-de-calcadas-em-jaragua-do-sul"
+            },
+            "media": "site",
+            "date": "23/07/2018",
+            "location": "Jaraguá - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Ariquemes Online",
+            "link": {
+              "text": "I Fórum de Bicicletas de Rio Branco: Trilhando a Sustentabilidade",
+              "url": "https://www.ariquemesonline.com.br/noticia.asp?cod=351467&codDep=71"
+            },
+            "media": "site",
+            "date": "24/07/2018",
+            "location": "Rio Branco - AC"
+          },
+          {
+            "id": "item-9",
+            "title": "Cidade Verde",
+            "link": {
+              "text": "Grupos de ciclistas se mobilizam para a Pedalada do Bem",
+              "url": "https://cidadeverde.com/noticias/278545/grupos-de-ciclistas-se-mobilizam-para-a-pedalada-do-bem"
+            },
+            "media": "site",
+            "date": "25/07/2018",
+            "location": "Teresina - PI"
+          },
+          {
+            "id": "item-10",
+            "title": "TRT8",
+            "link": {
+              "text": "TRT8 e Rede Bike Anjos farão parceria pela segurança de trabalhadores da construção civil",
+              "url": "https://www.trt8.jus.br/noticias/2018/trt8-e-rede-bike-anjos-farao-parceria-pela-seguranca-de-trabalhadores-da-construcao"
+            },
+            "media": "site",
+            "date": "27/07/2018",
+            "location": "Belém - PA"
+          }
+        ]
+      },
+      {
+        "id": "item-8",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Surgiu",
+            "link": {
+              "text": "Shimano Fest 2018 recebe 1ª Mostra de Projetos de Mobilidade/Sustentabilidade por Bicicleta",
+              "url": "http://surgiu.com.br/2018/08/02/shimano-fest-2018-recebe-1a-mostra-de-projetos-de-mobilidade-sustentabilidade-por-bicicleta/"
+            },
+            "media": "site",
+            "date": "02/08/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Gazeta do Povo",
+            "link": {
+              "text": "Bazar terá 50 mil peças a partir de R$ 5 neste final de semana",
+              "url": "https://www.gazetadopovo.com.br/viver-bem/moda-e-beleza/bazar-tera-50-mil-pecas-a-partir-de-r-5-neste-final-de-semana/"
+            },
+            "media": "site",
+            "date": "02/08/2018",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-3",
+            "title": "O Globo",
+            "link": {
+              "text": "Plano de Mobilidade movimenta cicloativistas em Niterói",
+              "url": "https://oglobo.globo.com/rio/bairros/plano-de-mobilidade-movimenta-cicloativistas-em-niteroi-22947802"
+            },
+            "media": "site",
+            "date": "04/08/2018",
+            "location": "Niteroi - RJ"
+          },
+          {
+            "id": "item-4",
+            "title": "O Municipio",
+            "link": {
+              "text": "Guabiruba realiza 1º Fórum de Mobilidade Urbana",
+              "url": "https://omunicipio.com.br/guabiruba-realiza-1o-forum-de-mobilidade-urbana/"
+            },
+            "media": "site",
+            "date": "09/08/2018",
+            "location": "Guabiruba - RS"
+          },
+          {
+            "id": "item-5",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Márcia Travessoni: nossas homenagens",
+              "url": "http://diariodonordeste.verdesmares.com.br/suplementos/gente/coluna/marcia-travessoni-gente-1.1313544/marcia-travessoni-nossas-homenagens-1.1982490"
+            },
+            "media": "site",
+            "date": "11/08/2018",
+            "location": "Nacional"
+          },
+          {
+            "id": "item-6",
+            "title": "Hoje em Dia",
+            "link": {
+              "text": "Música, teatro e esporte: confira a programação gratuita deste fim de semana",
+              "url": "https://www.hojeemdia.com.br/almanaque/m%C3%BAsica-teatro-e-esporte-confira-a-programa%C3%A7%C3%A3o-gratuita-deste-fim-de-semana-1.647909"
+            },
+            "media": "site",
+            "date": "17/08/2018",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-7",
+            "title": "JC Online",
+            "link": {
+              "text": "Dia do Ciclista: dicas para inserir a bicicleta no seu cotidiano",
+              "url": "https://jconline.ne10.uol.com.br/canal/cidades/jc-transito/noticia/2018/08/19/dia-do-ciclista-dicas-para-inserir-a-bicicleta-no-seu-cotidiano-351321.php"
+            },
+            "media": "site",
+            "date": "19/08/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-8",
+            "title": "Pleno Online",
+            "link": {
+              "text": "Funcionários são incentivados a usar fazer uso de bicicletas",
+              "url": "https://pleno.news/comportamento/funcionarios-sao-incentivados-a-usar-fazer-uso-de-bicicletas.html"
+            },
+            "media": "site",
+            "date": "15/08/2018",
+            "location": "Nacional"
+          },
+          {
+            "id": "item-9",
+            "title": "Urban Taste",
+            "link": {
+              "text": "Da ciclovia à trilha: descubra o tipo de bike que mais combina com você...",
+              "url": "https://urbantaste.uol.com.br/noticias/redacao/2018/08/15/da-ciclovia-a-trilha-descubra-o-tipo-de-bike-que-mais-combina-com-voce.htm"
+            },
+            "media": "site",
+            "date": "15/08/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-10",
+            "title": "Diplomata FM",
+            "link": {
+              "text": "Guabiruba realiza 1ª Fórum Municipal de Mobilidade Urbana",
+              "url": "http://www.diplomatafm.com.br/portal/geral/detalhes.php?id=13494"
+            },
+            "media": "site",
+            "date": "21/08/2018",
+            "location": "Nacional"
+          },
+          {
+            "id": "item-11",
+            "title": "G1",
+            "link": {
+              "text": "Bicicletas usadas são arrecadadas para reforma e doação para crianças carentes no dia 12 de outubro em MT",
+              "url": "https://g1.globo.com/mt/mato-grosso/noticia/2018/08/24/bicicletas-usadas-sao-arrecadadas-para-reforma-e-doacao-para-criancas-carentes-no-dia-12-de-outubro-em-mt.ghtml"
+            },
+            "media": "site",
+            "date": "27/08/2018",
+            "location": "Manso - MT"
+          },
+          {
+            "id": "item-12",
+            "title": "UFMG",
+            "link": {
+              "text": "Feira agroecológica e 'labirinto feminista' são novidades do Domingo no Campus",
+              "url": "https://ufmg.br/comunicacao/noticias/domingo-no-campus-1"
+            },
+            "media": "site",
+            "date": "29/08/2018",
+            "location": "Nacional - MG"
+          },
+          {
+            "id": "item-13",
+            "title": "OCP",
+            "link": {
+              "text": "Bike Anjo procura voluntários para criação de novos projetos em Jaraguá do Sul",
+              "url": "https://ocp.news/esporte/bike-anjo-procura-voluntarios-para-criacao-de-novos-projetos"
+            },
+            "media": "site",
+            "date": "30/08/2018",
+            "location": "Jaraguá do Sul - SC"
+          },
+          {
+            "id": "item-14",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Escola Bike Anjo atrai novos aprendizes neste domingo (2)",
+              "url": "http://diariodonordeste.verdesmares.com.br/mobile/cadernos/cidade/online/escola-bike-anjo-atrai-novos-aprendizes-neste-domingo-2-1.1994113"
+            },
+            "media": "site",
+            "date": "31/08/2018",
+            "location": "Nacional - BR"
+          }
+        ]
+      },
+      {
+        "id": "item-9",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Mês da Mobilidade: 'Bike Anjo' realiza programação especial em setembro",
+              "url": "https://diariodonordeste.verdesmares.com.br/metro/mes-da-mobilidade-bike-anjo-realiza-programacao-especial-em-setembro-1.1993990?page=4"
+            },
+            "media": "site",
+            "date": "01/09/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-2",
+            "title": "Globoplay",
+            "link": {
+              "text": "Projeto 'Bike Anjo' promove ação para ensinar pessoas a andar de bicicleta",
+              "url": "https://globoplay.globo.com/v/7002817/"
+            },
+            "media": "tv",
+            "date": "07/09/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-3",
+            "title": "Tribuna do Ceara",
+            "link": {
+              "text": "Cidade da Criança recebe oficina para quem deseja aprender a pedalar",
+              "url": "http://tribunadoceara.uol.com.br/noticias/cotidiano-2/cidade-da-crianca-recebe-oficina-para-quem-deseja-aprender-a-pedalar/"
+            },
+            "media": "site",
+            "date": "08/09/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-4",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Projeto oferta oficina de mecânica de bicicletas para ciclistas mulheres",
+              "url": "http://diariodonordeste.verdesmares.com.br/cadernos/cidade/online/projeto-oferta-oficina-de-mecanica-de-bicicletas-para-ciclistas-mulheres-1.1999257"
+            },
+            "media": "site",
+            "date": "13/09/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-5",
+            "title": "uol",
+            "link": {
+              "text": "Rolê intermodal, debate e cinema no Dia Mundial sem Carro",
+              "url": "https://m.jc.ne10.uol.com.br/canal/cidades/geral/noticia/2018/09/22/role-intermodal-debate-e-cinema-no-dia-mundial-sem-carro-355703.php?utm_source=undefined&utm_medium=referral&utm_campaign=mobile-redirect"
+            },
+            "media": "site",
+            "date": "22/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-6",
+            "title": "Globo play",
+            "link": {
+              "text": "Passeio de bicicleta marca Dia Mundial Sem Carro em Curitiba",
+              "url": "https://globoplay.globo.com/v/7037677/"
+            },
+            "media": "tv",
+            "date": "22/09/2018",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-7",
+            "title": "Globo play",
+            "link": {
+              "text": "Para garantir direito de ir e vir grupo faz contagem de ciclistas",
+              "url": "https://globoplay.globo.com/v/7036673/?utm_source=whatsapp&utm_medium=share-bar"
+            },
+            "media": "tv",
+            "date": "22/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-8",
+            "title": "G1",
+            "link": {
+              "text": "Em São Paulo DMSC junta bicicletas e músicas",
+              "url": "https://g1.globo.com/jornal-nacional/noticia/2018/09/22/em-sao-paulo-dia-mundial-sem-carro-junta-bicicletas-e-musica.ghtml"
+            },
+            "media": "site",
+            "date": "22/09/2018",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-9",
+            "title": "OCP",
+            "link": {
+              "text": "Jaraguá do Sul integra o Dia Mundial da Limpeza neste sábado (15)",
+              "url": "https://ocp.news/geral/jaragua-do-sul-integra-o-dia-mundial-da-limpeza-neste-sabado-15"
+            },
+            "media": "site",
+            "date": "15/09/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-10",
+            "title": "Diario do Nordeste",
+            "link": {
+              "text": "Feitos por mulheres",
+              "url": "http://diariodonordeste.verdesmares.com.br/editorias/verso/feitos-por-mulheres-1.2000029"
+            },
+            "media": "site",
+            "date": "15/09/2018",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-11",
+            "title": "Folha PE",
+            "link": {
+              "text": "Dia Sem Carro tem eventos no Recife a partir desta quarta",
+              "url": "https://www.folhape.com.br/noticias/noticias/cotidiano/2018/09/19/NWS,81701,70,449,NOTICIAS,2190-DIA-SEM-CARRO-TEM-EVENTOS-RECIFE-PARTIR-DESTA-QUARTA.aspx"
+            },
+            "media": "site",
+            "date": "19/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-12",
+            "title": "Diário de Pernambuco",
+            "link": {
+              "text": "Dani Portela faz pedalada e assina compromisso sobre mobilidade ativa",
+              "url": "http://www.diariodepernambuco.com.br/app/noticia/politica/2018/09/30/interna_politica,764218/dani-portela-faz-pedalada-e-assina-compromisso-sobre-mobilidade-ativa.shtml"
+            },
+            "media": "site",
+            "date": "30/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-13",
+            "title": "Bonde",
+            "link": {
+              "text": "Coletivos se organizam para pedalar com segurança",
+              "url": "https://www.bonde.com.br/bondenews/londrina/coletivos-se-organizam-para-pedalar-com-seguranca-483926.html"
+            },
+            "media": "site",
+            "date": "29/09/2018",
+            "location": "Londrina - PR"
+          },
+          {
+            "id": "item-14",
+            "title": "Destak Jornal",
+            "link": {
+              "text": "Campinas recebe 1º Encontro de Ciclistas",
+              "url": "https://www.destakjornal.com.br/cidades/campinas/detalhe/campinas-recebe-1-encontro-de-ciclistas"
+            },
+            "media": "site",
+            "date": "21/09/2018",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-15",
+            "title": "JC",
+            "link": {
+              "text": "A revolução da ciclomobilidade de Fortaleza sob o olhar de um cicloativista",
+              "url": "https://jc.ne10.uol.com.br/colunas/mobilidade/2018/09/24/a-revolucao-da-ciclomobilidade-de-fortaleza-sob-o-olhar-de-um-cicloativista"
+            },
+            "media": "site",
+            "date": "24/09/2018",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-16",
+            "title": "Governo de Pernambuco",
+            "link": {
+              "text": "Passeio ciclístico reúne centenas de pessoas em defesa de um trânsito seguro",
+              "url": "https://www.olinda.pe.gov.br/passeio-ciclistico-reune-centenas-de-pessoas-em-defesa-de-um-transito-seguro/"
+            },
+            "media": "site",
+            "date": "24/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-17",
+            "title": "Folha PE",
+            "link": {
+              "text": "Desafio propõe novos modais para os recifenses",
+              "url": "https://www.folhape.com.br/noticias/desafio-propoe-novos-modais-para-os-recifenses/82640/"
+            },
+            "media": "site",
+            "date": "26/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-18",
+            "title": "Diário de Pernambuco",
+            "link": {
+              "text": "7° Desafio Intermodal acontece no Recife nesta quarta em direção à Zona Oeste",
+              "url": "http://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2018/09/26/interna_vidaurbana,763850/7-desafio-intermodal-acontece-no-recife-nesta-quarta-em-direcao-a-zon.shtml"
+            },
+            "media": "site",
+            "date": "26/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-19",
+            "title": "JC",
+            "link": {
+              "text": "Estreante, BRT mostra que é eficiente no Desafio Intermodal 2018",
+              "url": "https://jc.ne10.uol.com.br/blogs/deolhonotransito/2018/09/27/estreante-brt-mostra-que-e-eficiente-no-desafio-intermodal-2018/"
+            },
+            "media": "tv",
+            "date": "27/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-18",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Passeio ciclístico encerra programação especial do Mês da Mobilidade",
+              "url": "http://diariodonordeste.verdesmares.com.br/editorias/metro/online/passeio-ciclistico-encerra-programacao-especial-do-mes-da-mobilidade-1.2006366"
+            },
+            "media": "site",
+            "date": "28/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-19",
+            "title": "Governo de Pernambuco",
+            "link": {
+              "text": "Simulador de motocicletas e passeio ciclístico movimentam Semana do Trânsito em Olinda",
+              "url": "https://www.olinda.pe.gov.br/simulador-de-motocicletas-e-passeio-ciclistico-movimentam-semana-do-transito-em-olinda/"
+            },
+            "media": "site",
+            "date": "19/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-20",
+            "title": "Diário de Pernambuco",
+            "link": {
+              "text": "Nova contagem de ciclistas é realizada no Janga, no Paulista",
+              "url": "http://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2018/09/19/interna_vidaurbana,763228/nova-contagem-de-ciclistas-e-realizada-no-janga-no-paulista.shtml"
+            },
+            "media": "site",
+            "date": "19/09/2018",
+            "location": "Janga - PE"
+          },
+          {
+            "id": "item-21",
+            "title": "G1",
+            "link": {
+              "text": "Dia Mundial sem Carro tem passeios e shows gratuitos no Recife",
+              "url": "https://g1.globo.com/pe/pernambuco/noticia/2018/09/22/dia-mundial-sem-carro-tem-atividades-gratuitas-de-lazer-no-recife.ghtml"
+            },
+            "media": "site",
+            "date": "22/09/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-22",
+            "title": "JC Online",
+            "link": {
+              "text": "Rolê intermodal, debate e cinema no Dia Mundial sem Carro",
+              "url": "https://jconline.ne10.uol.com.br/canal/cidades/geral/noticia/2018/09/22/role-intermodal-debate-e-cinema-no-dia-mundial-sem-carro-355703.php"
+            },
+            "media": "site",
+            "date": "22/09/2018",
+            "location": "Recife - PE"
+          }
+        ]
+      },
+      {
+        "id": "item-10",
+        "month": "OUT",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "JCE",
+            "link": {
+              "text": "Confira quem são os candidatos a favor da mobilidade ativa",
+              "url": "https://jc.ne10.uol.com.br/blogs/deolhonotransito/2018/10/02/confira-quem-sao-os-candidatos-a-favor-da-mobilidade-ativa/"
+            },
+            "media": "site",
+            "date": "02/10/2018",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "FaxAju",
+            "link": {
+              "text": "VEREADORES APRECIAM 17 PROPOSITURAS NESTA TERÇA-FEIRA",
+              "url": "http://www.faxaju.com.br/index.php/2018/10/23/vereadores-apreciam-17-proposituras-nesta-terca-feira/"
+            },
+            "media": "site",
+            "date": "23/10/2018",
+            "location": "Aracaju - SE"
+          },
+          {
+            "id": "item-3",
+            "title": "Aqui Acontece",
+            "link": {
+              "text": "Capital alagoana irá sediar a 3ª edição do Fórum Nordestino da Bicicleta",
+              "url": "http://www.aquiacontece.com.br/noticia/maceio/29/10/2018/capital-alagoana-ira-sediar-a-3-edicao-do-forum-nordestino-da-bicicleta/134821"
+            },
+            "media": "site",
+            "date": "28/10/2018",
+            "location": "Maceió - AL"
+          },
+          {
+            "id": "item-4",
+            "title": "AEN",
+            "link": {
+              "text": "Ações do Governo do Paraná são destaques no Prêmio Sesi ODS",
+              "url": "http://www.aen.pr.gov.br/modules/noticias/article.php?storyid=99362"
+            },
+            "media": "site",
+            "date": "31/10/2018",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-5",
+            "title": "Rio de Boas Notícias",
+            "link": {
+              "text": "Voluntários ensinam adultos e crianças a andar de bicicleta",
+              "url": "http://riodeboasnoticias.com.br/inspiracao/voluntarios-ensinam-adultos-e-criancas-a-andar-de-bicicleta/"
+            },
+            "media": "site",
+            "date": "11/10/2018",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-6",
+            "title": "Eu Rio",
+            "link": {
+              "text": "Grupo de voluntários ensinam a andar de bicicleta em aulas gratuitas",
+              "url": "https://youtu.be/rDrMzfur9eY"
+            },
+            "media": "site",
+            "date": "09/10/2018",
+            "location": "Niterói - RJ"
+          }
+        ]
+      },
+      {
+        "id": " item-11",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Mobilize",
+            "link": {
+              "text": "Boletim Mobilize",
+              "url": "https://youtu.be/gwdm-Ot_BmU"
+            },
+            "media": "site",
+            "date": "12/11/2018",
+            "location": "Nacional"
+          },
+          {
+            "id": "item-2",
+            "title": "G1",
+            "link": {
+              "text": "Evento em Belém discute mobilidade urbana nas metrópoles do Brasil",
+              "url": "https://g1.globo.com/pa/para/noticia/2018/11/14/evento-em-belem-discute-mobilidade-urbana-nas-metropoles-do-brasil.ghtml"
+            },
+            "media": "site",
+            "date": "14/11/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-3",
+            "title": "O Liberal",
+            "link": {
+              "text": "Ciclistas participam do Encontro Nacional do Bike Anjo em Belém",
+              "url": "https://www.oliberal.com/belem/ciclistas-participam-do-encontro-nacional-do-bike-anjo-em-bel%C3%A9m-1.3278"
+            },
+            "media": "site",
+            "date": "15/11/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-4",
+            "title": "Couchsurfing",
+            "link": {
+              "text": "5 ENBA - Encontro Nacional Bike Anjo",
+              "url": "https://www.couchsurfing.com/events/5-enba-encontro-national-bike-anjo"
+            },
+            "media": "site",
+            "date": "14/11/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-5",
+            "title": "Evensi",
+            "link": {
+              "text": "5 ENBA em Belém, PA | 5º Encontro Nacional Bike Anjo",
+              "url": "https://www.evensi.com/5enba-em-bele-pa-5%C2%BA-encontro-nacional-bike-anjo/270162812"
+            },
+            "media": "site",
+            "date": "14/11/2018",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-6",
+            "title": "G1",
+            "link": {
+              "text": "Bike Anjos: projeto ensina pessoas a andarem de bicicleta",
+              "url": "https://g1.globo.com/pb/paraiba/edicao/2018/11/28/videos-jpb-2-edicao-tv-paraiba-de-quarta-feira-28-de-novembro.ghtml?utm_source=facebook&utm_medium=share-bar-desktop&utm_campaign=share-bar&&fbclid=IwAR3cBCVbdHzhUnHJhVmRzzjD0a5tRXYapL28pPEZcNyLkHxHjn3125cQpXg#video-7194939-id"
+            },
+            "media": "site",
+            "date": "28/11/2018",
+            "location": "Campina Grande - PB"
+          },
+          {
+            "id": "item-7",
+            "title": "Metro",
+            "link": {
+              "text": "A transformação pela bicicleta",
+              "url": "https://www.metrojornal.com.br/colunistas/2018/11/29/transformacao-pela-bicicleta.html"
+            },
+            "media": "jornal",
+            "date": "29/11/2018",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "TRT8",
+            "link": {
+              "text": "TRT da 8ª Região estabelece parceria inédita com a rede Bike Anjos",
+              "url": "https://www.trt8.jus.br/noticias/2018/trt-da-8a-regiao-estabelece-parceria-inedita-com-rede-bike-anjos"
+            },
+            "media": "site",
+            "date": "30/11/2018",
+            "location": "Belém - PA"
+          }
+        ]
+      },
+      {
+        "id": "item-12",
+        "month": "DEZ",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "G1",
+            "link": {
+              "text": "Projeto Circular chega na sua 24ª edição com programação neste domingo",
+              "url": "https://g1.globo.com/pa/para/noticia/2018/12/02/projeto-circular-chega-na-sua-24a-edicao-com-programacao-neste-domingo.ghtml"
+            },
+            "media": "site",
+            "date": "02/12/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-2",
+            "title": "Fantástico",
+            "link": {
+              "text": "Moradores de vila na periferia de Petrolina (PE) aprendem a andar de bicicleta",
+              "url": "https://globoplay.globo.com/v/7237639/"
+            },
+            "media": "tv",
+            "date": "16/12/2018",
+            "location": "Petrolina - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "G1",
+            "link": {
+              "text": "Moradores de vila na periferia de Petrolina (PE) aprendem a andar de bicicleta",
+              "url": "https://g1.globo.com/fantastico/noticia/2018/12/16/moradores-de-vila-na-periferia-de-petrolina-pe-recebem-bicicletas.ghtml"
+            },
+            "media": "site",
+            "date": "16/12/2018",
+            "location": "Petrolina - PE"
+          },
+          {
+            "id": "item-4",
+            "title": "GRTV",
+            "link": {
+              "text": "ONG ensina moradores de comunidade carente de Petrolina a andarem de bicicleta",
+              "url": "https://globoplay.globo.com/v/7239489/"
+            },
+            "media": "tv",
+            "date": "17/12/2018",
+            "location": "Petrolina - PE"
+          },
+          {
+            "id": "item-5",
+            "title": "Foco Regional",
+            "link": {
+              "text": "Bicicleta para cegos se torna realidade em Volta Redonda",
+              "url": "http://www.focoregional.com.br/Noticia/bicicleta-para-cegos-se-torna-realidade-em-vo"
+            },
+            "media": "site",
+            "date": "17/12/2018",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-6",
+            "title": "A voz da Cidade",
+            "link": {
+              "text": "Bicicleta para cegos se torna realidade em Volta Redonda",
+              "url": "https://avozdacidade.com/wp/bicicletas-para-cegos-e-deficientes-e-realidade-em-volta-redonda/"
+            },
+            "media": "site",
+            "date": "17/12/2018",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-7",
+            "title": "Casa Cidades",
+            "link": {
+              "text": "BIKE ANJO BELÉM RECEBE O 5º ENCONTRO NACIONAL DO BIKE ANJO (2018)",
+              "url": "https://casacidades.casa.org.br/bike-anjo-belem-recebe-o-5o-encontro-nacional-do-bike-anjo-2018/"
+            },
+            "media": "site",
+            "date": "17/12/2018",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-8",
+            "title": "29Horas",
+            "link": {
+              "text": "Rede Bike Anjo disponibiliza ciclistas experientes para ajudar solicitantes",
+              "url": "http://revista29horas.com.br/sao-paulo/anjo/"
+            },
+            "media": "site",
+            "date": "27/12/2018",
+            "location": "São Paulo - SP"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2019-reports",
+    "year": 2019,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "JAN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bom dia Rio",
+            "link": {
+              "text": "Bike para todos - Inclusão e mobilidade através da bicicleta",
+              "url": "https://globoplay.globo.com/v/7302704/programa/"
+            },
+            "media": "tv",
+            "date": "16/01/2019",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-2",
+            "title": "UOL",
+            "link": {
+              "text": "Empoderadas: espaços e serviços para mulheres na capital paulista.",
+              "url": "https://www.bol.uol.com.br/entretenimento/2019/01/15/empoderadas-espacos-e-servicos-para-mulheres-na-capital-paulista.htm"
+            },
+            "media": "internet",
+            "date": "15/01/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "Blog Adriano Luiz",
+            "link": {
+              "text": "CARUARU RECEBE OS VOLUNTÁRIOS DA BIKE ANJO NESTE FIM DE SEMANA",
+              "url": "http://www.blogdoadrianoluiz.com.br/2019/01/caruaru-recebe-os-voluntarios-da-bike.html"
+            },
+            "media": "site",
+            "date": "16/01/2019",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-4",
+            "title": "Thiago Lagos",
+            "link": {
+              "text": "Caruaru recebe escola Bike Anjo neste final de semana!",
+              "url": "https://www.thiagolagos.com.br/caruaru-recebe-escola-bike-anjo-neste-final-de-semana/"
+            },
+            "media": "site",
+            "date": "17/01/2019",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-5",
+            "title": "Pedal Livre Caruaru",
+            "link": {
+              "text": "BIKE ANJO - APRENDENDO A PEDALAR COM A EBA (ESCOLA BIKE ANJO)",
+              "url": "https://www.youtube.com/watch?v=aJPov-P9QNA"
+            },
+            "media": "site",
+            "date": "21/01/2019",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-6",
+            "title": "Risoni Santos Blog",
+            "link": {
+              "text": "Ação para ensinar pessoas a pedalar é promovida em Caruaru",
+              "url": "http://www.blogdarisonisantos.com/index.php/2189-acao-para-ensinar-pessoas-a-pedalar-e-promovida-em-caruaru"
+            },
+            "media": "site",
+            "date": "21/01/2019",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-7",
+            "title": "Blog Edvaldo Magalhães",
+            "link": {
+              "text": "Aprenda a pedalar em Caruaru neste domingo (20) com a Escola Bike Anjo",
+              "url": "https://blogdoedvaldomagalhaes.com.br/index.php/2019/01/20/aprenda-peladar-em-caruaru-neste/"
+            },
+            "media": "site",
+            "date": "21/01/2019",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-8",
+            "title": "-",
+            "link": {
+              "text": "Dica 10 - Dicas especiais para mulheres - Bike Anjas",
+              "url": "https://www.youtube.com/watch?v=cJifpDE4ZCE"
+            },
+            "media": "youtube",
+            "date": "22/01/2019",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-9",
+            "title": "-",
+            "link": {
+              "text": "25o. Pedal das Anjas",
+              "url": "https://www.bikerides.com.br/evento/2019-01-26-25o-pedal-das-anjas-1547809733"
+            },
+            "media": "site",
+            "date": "26/01/2019",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "G1/Globo",
+            "link": {
+              "text": "Projeto Bike Anjo ensina pessoas a andar de bicicleta em São Carlos",
+              "url": "https://g1.globo.com/sp/sao-carlos-regiao/noticia/2019/02/07/projeto-bike-anjo-ensina-pessoas-a-andar-de-bicicleta-em-sao-carlos.ghtml"
+            },
+            "media": "tv",
+            "date": "07/02/2019",
+            "location": "São Carlos - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "G1/Globo",
+            "link": {
+              "text": "Projeto 'Bike Anjo' ensina a andar de bicicleta sem medo e com segurança em São Carlos",
+              "url": "http://g1.globo.com/sp/sao-carlos-regiao/jornal-da-eptv-2edicao//videos/v/projeto-bike-anjo-ensina-a-andar-de-bicicleta-sem-medo-e-com-seguranca-em-sao-carlos/7360860/"
+            },
+            "media": "tv",
+            "date": "07/02/2019",
+            "location": "São Carlos - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "G1/Globo",
+            "link": {
+              "text": "Ong de Curitiba ensina pessoas a pedalarem de graça",
+              "url": "https://globoplay.globo.com/v/7368232/"
+            },
+            "media": "tv",
+            "date": "09/02/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-4",
+            "title": "G1/Globo",
+            "link": {
+              "text": "RPC: veja as informações adicionais das reportagens do dia 9/2/2019",
+              "url": "https://g1.globo.com/pr/parana/informacoes-adicionais-dos-telejornais/noticia/2019/02/09/rpc-veja-as-informacoes-adicionais-das-reportagens-do-dia-922019.ghtml"
+            },
+            "media": "internet",
+            "date": "09/02/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-5",
+            "title": "Maxpress",
+            "link": {
+              "text": "Projeto \"Escola Bike Anjo\" retoma atividades neste mês no Minas Shopping",
+              "url": "https://www.maxpress.com.br/Conteudo/1,971893,Projeto_Escola_Bike_Anjo_retoma_atividades_neste_mes_no_Minas_Shopping,971893,6.htm"
+            },
+            "media": "internet",
+            "date": "09/02/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-6",
+            "title": "BHAZ",
+            "link": {
+              "text": "Bike Anjo ensina pessoas de TODAS AS IDADES a andar de bicicleta em BH",
+              "url": "https://bhaz.com.br/2019/02/08/bike-anjo-andar-bicicleta-bh/"
+            },
+            "media": "internet",
+            "date": "09/02/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-7",
+            "title": "TRT8",
+            "link": {
+              "text": "TRT8 e rede Bike Anjo Belém iniciam 2019 com o projeto Bike na Obra",
+              "url": "https://www.trt8.jus.br/noticias/2019/trt8-e-rede-bike-anjo-belem-iniciam-2019-com-o-projeto-bike-na-obra"
+            },
+            "media": "internet",
+            "date": "12/02/2019",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-8",
+            "title": "Incrível",
+            "link": {
+              "text": "Ensine seu filho a pedalar com esta técnica simples e eficiente",
+              "url": "https://incrivel.club/inspiracao-dicas/ensine-seu-filho-a-pedalar-com-esta-tecnica-simples-e-eficiente-772260/?fbclid=IwAR2HHC-nXNJwhmyEOTvnriEZ8qzY0XCDhvFtHe9Cd2ZpD6Nqi0rqRlpL3Fw"
+            },
+            "media": "internet",
+            "date": "15/02/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-9",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Fortaleza registra anualmente 4.384 multas na malha cicloviária",
+              "url": "http://diariodonordeste.verdesmares.com.br/editorias/metro/fortaleza-registra-anualmente-4-384-multas-na-malha-cicloviaria-1.2063966"
+            },
+            "media": "internet",
+            "date": "15/02/2019",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-10",
+            "title": "EPTV 2ª Edição",
+            "link": {
+              "text": "Projeto 'Bike Anjo' ensina a andar de bicicleta sem medo e com segurança em São Carlos",
+              "url": "https://globoplay.globo.com/v/7360860/"
+            },
+            "media": "tv",
+            "date": "06/02/2019",
+            "location": "São Carlos/Araraquara - SP"
+          },
+          {
+            "id": "item-11",
+            "title": "Bom dia Sábado - Paraná",
+            "link": {
+              "text": "Ong de Curitiba ensina pessoas a pedalarem de graça",
+              "url": "https://globoplay.globo.com/v/7368232/"
+            },
+            "media": "12",
+            "date": "09/02/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-13",
+            "title": "Diário de Pernambuco",
+            "link": {
+              "text": "Santo Amaro vai receber nova contagem de ciclistas nesta quarta",
+              "url": "http://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2019/02/19/interna_vidaurbana,778082/santo-amaro-vai-receber-nova-contagem-de-ciclistas-nesta-quarta.shtml"
+            },
+            "media": "site",
+            "date": "19/02/2019",
+            "location": "Recife - PE"
+          }
+        ]
+      },
+      {
+        "id": " item-3",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "BH AZ",
+            "link": {
+              "text": "Projeto ensina pessoas de todas as idades a andar de bicicleta neste domingo; DE GRAÇA",
+              "url": "https://bhaz.com.br/2019/03/09/aprender-andar-de-bike-bh/"
+            },
+            "media": "site",
+            "date": "03/03/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-2",
+            "title": "JC NE",
+            "link": {
+              "text": "O circo usado como forma de protesto contra a morte de ciclistas no trânsito",
+              "url": "https://jc.ne10.uol.com.br/blogs/movecidade/2019/03/15/o-circo-usado-como-forma-de-protesto-contra-a-morte-de-ciclistas-no-transito/"
+            },
+            "media": "site",
+            "date": "15/03/2019",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "Diario do Nordeste",
+            "link": {
+              "text": "Escola Bike Anjo estreia no Parque Rio Branco",
+              "url": "https://diariodonordeste.verdesmares.com.br/editorias/verso/online/escola-bike-anjo-estreia-no-parque-rio-branco-1.2075396"
+            },
+            "media": "site",
+            "date": "15/03/2019",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-4",
+            "title": "Globo",
+            "link": {
+              "text": "Ciclistas usam arte circense para pedir respeito no trânsito no Recife",
+              "url": "https://g1.globo.com/pe/pernambuco/noticia/2019/03/16/ciclistas-usam-arte-circense-para-pedir-respeito-no-transito-no-recife.ghtml"
+            },
+            "media": "site",
+            "date": "16/03/2019",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-5",
+            "title": "A Voz da Cidade",
+            "link": {
+              "text": "Conteiner para bicicletas adaptadas",
+              "url": "https://avozdacidade.com/wp/notas-notas-23-de-marco-de-2019/"
+            },
+            "media": "site",
+            "date": "23/03/2019",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-6",
+            "title": "Globo",
+            "link": {
+              "text": "Pedalar pelo Recife é um desafio diário para as mulheres",
+              "url": "http://g1.globo.com/pernambuco/ne1/videos/t/edicoes/v/pedalar-pelo-recife-e-um-desafio-diario-para-as-mulheres/7487142/"
+            },
+            "media": "tv",
+            "date": "26/03/2019",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-7",
+            "title": "A Voz da Cidade",
+            "link": {
+              "text": "Rua do Lazer Especial movimenta a Radial Leste em Volta Redonda",
+              "url": "https://avozdacidade.com/wp/rua-do-lazer-especial-movimenta-a-radial-leste-em-volta-redonda/"
+            },
+            "media": "site",
+            "date": "31/03/2019",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-8",
+            "title": "Catraca Livre",
+            "link": {
+              "text": "Livro mapeia o uso da bike como transporte nas pequenas cidades",
+              "url": "https://catracalivre.com.br/cidadania/livro-mapeia-o-uso-da-bike-como-transporte-nas-pequenas-cidades/"
+            },
+            "media": "site",
+            "date": "29/03/2019",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-9",
+            "title": "iBahia",
+            "link": {
+              "text": "De graça: Bell Marques, Solange Almeida e Moraes Moreira se apresentam neste sábado",
+              "url": "https://www.ibahia.com/salvador/detalhe/noticia/de-graca-bell-marques-solange-almeida-e-moraes-moreira-se-apresentam-neste-sabado/"
+            },
+            "media": "site",
+            "date": "30/03/2019",
+            "location": "Salvador - BA"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diario de Pernambuco",
+            "link": {
+              "text": "Trecho entre a ponte do Janga e praia de Maria Farinha pode ganhar ciclofaixa",
+              "url": "https://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2019/04/05/interna_vidaurbana,783069/trecho-entre-a-ponte-do-janga-e-praia-de-maria-farinha-pode-ganhar-cic.shtml"
+            },
+            "media": "site",
+            "date": "05/04/2019",
+            "location": "Paulista - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "Bem Paraná",
+            "link": {
+              "text": "Sunday Funday: shopping de Curitiba aposta em evento ao ar livre na manhã de domingo",
+              "url": "https://www.bemparana.com.br/noticia/sunday-funday-shopping-de-curitiba-aposta-em-evento-ao-ar-livre-na-manha-de-domingo"
+            },
+            "media": "site",
+            "date": "05/04/2019",
+            "location": "Paulista - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "Massa News",
+            "link": {
+              "text": "Show, folclore e comida: o final de semana na capital",
+              "url": "https://massanews.com/entretenimento/diversao/show-folclore-e-comida-o-final-de-semana-na-capital-q7Y68.html"
+            },
+            "media": "site",
+            "date": "09/04/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-4",
+            "title": "Felipe Vieira",
+            "link": {
+              "text": "Workshop Café Fon Fon: Bicicleta, Arte & Comunicação são os temas do encontro com a jornalista e documentarista Denise Silveira em 1* de junho",
+              "url": "http://felipevieira.com.br/site/workshop-cafe-fon-fon-bicicleta-arte-comunicacao-sao-os-temas-do-encontro-com-a-jornalista-e-documentarista-denise-silveira-em-1-de-junho/"
+            },
+            "media": "site",
+            "date": "12/04/2019",
+            "location": "Curitiba - PR"
+          }
+        ]
+      },
+      {
+        "id": " item-5",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "O Dia",
+            "link": {
+              "text": "Grátis: Programação",
+              "url": "https://odia.ig.com.br/diversao/show-e-lazer/2019/05/5643248-gratis--programacao.html#foto=1"
+            },
+            "media": "site",
+            "date": "15/05/2019",
+            "location": "Porto Alegre - RS"
+          },
+          {
+            "id": "item-2",
+            "title": "Diario do Pará",
+            "link": {
+              "text": "Equador: Projeto Bike na Obra é apresentado no Fórum Mundial da Bicicleta",
+              "url": "http://digital.diariodopara.com.br/web/?state=zoom&data=26/05/2019&pagina=19"
+            },
+            "media": "site",
+            "date": "17/05/2019",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-3",
+            "title": "Bom Dia Paraná",
+            "link": {
+              "text": "Bicicletas do projeto Bike Anjo foram roubadas",
+              "url": "https://globoplay.globo.com/v/7650862/"
+            },
+            "media": "tv",
+            "date": "29/05/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-4",
+            "title": "Gazeta do Povo",
+            "link": {
+              "text": "Ladrões furtam bikes de ONG de Curitiba que ensina pessoas a pedalar",
+              "url": "https://www.gazetadopovo.com.br/curitiba/ladroes-furtam-bikes-de-ong-de-curitiba-que-ensina-pessoas-a-pedalar/"
+            },
+            "media": "site",
+            "date": "29/05/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-5",
+            "title": "Paraná Portal",
+            "link": {
+              "text": "RB | Alerta",
+              "url": "https://paranaportal.uol.com.br/colunas/coluna-social/rb-alerta-2/"
+            },
+            "media": "site",
+            "date": "29/05/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-6",
+            "title": "Massa News",
+            "link": {
+              "text": "Bicicletas de ONG são furtadas em Curitiba",
+              "url": "https://massanews.com/blogs/policial/plantao-190/bicicletas-de-ong-sao-furtadas-em-curitiba-G3kQl.html"
+            },
+            "media": "site",
+            "date": "29/05/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-7",
+            "title": "Bom Dia Paraná",
+            "link": {
+              "text": "RPC: veja as informações adicionais das reportagens do dia 29/05/2019",
+              "url": "https://g1.globo.com/pr/parana/informacoes-adicionais-dos-telejornais/noticia/2019/05/29/rpc-veja-as-informacoes-adicionais-das-reportagens-do-dia-29052019.ghtml"
+            },
+            "media": "site",
+            "date": "29/05/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-8",
+            "title": "O Povo",
+            "link": {
+              "text": "Liberdade em duas rodas",
+              "url": "https://www.opovo.com.br/jornal/veiculos/2019/05/29/liberdade-em-duas-rodas.html"
+            },
+            "media": "site",
+            "date": "30/05/2019",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-9",
+            "title": "A Crítica",
+            "link": {
+              "text": "Parque Sumaúma passa a abrir aos domingos com vasta programação gratuita",
+              "url": "https://www.acritica.com/channels/governo/news/parque-sumauma-passa-a-abrir-aos-domingos-com-vasta-programacao-gratuita"
+            },
+            "media": "site",
+            "date": "31/05/2019",
+            "location": "Manaus - AM"
+          }
+        ]
+      },
+      {
+        "id": "item-6",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Gaucha ZH",
+            "link": {
+              "text": " \"A pauta do ciclismo não pode ser partidarizada\" diz cicloativista",
+              "url": "https://gauchazh.clicrbs.com.br/porto-alegre/noticia/2019/06/a-pauta-do-ciclismo-nao-pode-ser-partidarizada-diz-cicloativista-cjwdy10h1021601qtj80uhhsk.html"
+            },
+            "media": "site",
+            "date": "01/06/2019",
+            "location": "Porto Alegre - RS"
+          },
+          {
+            "id": "item-2",
+            "title": "Maíra Lemos",
+            "link": {
+              "text": "Aprenda a andar de bicicleta com o BIKE ANJO",
+              "url": "https://www.youtube.com/watch?v=5FdqdLKsxFM"
+            },
+            "media": "youtube",
+            "date": "03/06/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-3",
+            "title": "Folha PE",
+            "link": {
+              "text": "Escola Bike Anjo estará neste domingo no município do Paulista",
+              "url": "https://www.folhape.com.br/noticias/noticias/cotidiano/2019/06/06/NWS,107155,70,449,NOTICIAS,2190-ESCOLA-BIKE-ANJO-ESTARA-NESTE-DOMINGO-MUNICIPIO-PAULISTA.aspx"
+            },
+            "media": "site",
+            "date": "06/06/2019",
+            "location": "Paulista - PE"
+          },
+          {
+            "id": "item-4",
+            "title": "Portal AM 24h",
+            "link": {
+              "text": "Projeto de Lei aumenta proteção aos ciclistas do Amazonas",
+              "url": "https://www.portalam24h.com/politica/projeto-de-lei-aumenta-protecao-aos-ciclistas-do-amazonas.shtml"
+            },
+            "media": "site",
+            "date": "08/06/2019",
+            "location": "Manaus - AM"
+          },
+          {
+            "id": "item-5",
+            "title": "Por Vir",
+            "link": {
+              "text": "Seminário Infâncias e Naturezas – Online",
+              "url": "http://porvir.org/acontece/seminario-infancias-e-naturezas-online/"
+            },
+            "media": "site",
+            "date": "10/06/2019",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-6",
+            "title": "Senado",
+            "link": {
+              "text": "Especialistas apresentam sugestões para regulamentação de patinetes",
+              "url": "https://www12.senado.leg.br/noticias/materias/2019/06/10/especialistas-apresentam-sugestoes-para-regulamentacao-de-patinetes"
+            },
+            "media": "site",
+            "date": "10/06/2019",
+            "location": "Brasília - DF"
+          },
+          {
+            "id": "item-7",
+            "title": "Diário da Amazônia",
+            "link": {
+              "text": "Senador Acir Gurgacz apresenta proposta para micromobilidade",
+              "url": "https://www.diariodaamazonia.com.br/senador-acir-gurgacz-apresenta-proposta-para-micromobilidade/"
+            },
+            "media": "site",
+            "date": "10/06/2019",
+            "location": "Brasília - DF"
+          },
+          {
+            "id": "item-8",
+            "title": "JB",
+            "link": {
+              "text": "Evento gratuito em Anchieta ensina a pedalar com segurança",
+              "url": "https://www.jb.com.br/rio/2019/06/1004091-evento-gratuito-em-anchieta-ensina-a-pedalar-com-seguranca.html"
+            },
+            "media": "site",
+            "date": "10/06/2019",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-9",
+            "title": "Tribuna",
+            "link": {
+              "text": "Domingo vai ser dia de muitas atividades gratuitas no ParkShoppingBarigüi",
+              "url": "https://www.tribunapr.com.br/mais-pop/domingo-vai-ser-dia-de-muitas-atividades-gratuitas-no-parkshoppingbarigui/"
+            },
+            "media": "site",
+            "date": "14/06/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-10",
+            "title": "Globo",
+            "link": {
+              "text": "Uso da Bicicleta como Meio de Transporte Pode Aliviar Stress no Trânsito",
+              "url": "http://g1.globo.com/pa/para/liberal-comunidade/videos/t/edicoes/v/uso-da-bicicleta-como-meio-de-transporte-pode-aliviar-estresse-no-transito/7728594/?fbclid=IwAR314TdWIAXpKFUTvmPaYr6h5e48lAbVH_0IwFkABTs3PmFs0qX2VWu1fWI"
+            },
+            "media": "site",
+            "date": "30/06/2019",
+            "location": "Belém - PA"
+          }
+        ]
+      },
+      {
+        "id": " item-7",
+        "month": "JUL",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Blog Vou de Bike e Salto Alto",
+            "link": {
+              "text": "Bike Anja: A experiência de quem ensina a pedalar",
+              "url": "https://www.voudebikeesaltoalto.com.br/bike-anja-a-experiencia-de-quem-ensina-a-pedalar"
+            },
+            "media": "site",
+            "date": "01/07/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-2",
+            "title": "Diario de Pernambuco",
+            "link": {
+              "text": "Cicloativistas realizam pedalada de conscientização neste sábado",
+              "url": "https://www.diariodepernambuco.com.br/noticia/vidaurbana/2019/07/cicloativistas-realizam-pedalada-de-conscientizacao-neste-sabado.html"
+            },
+            "media": "site",
+            "date": "03/07/2019",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "Blog Maria Vai e Faz",
+            "link": {
+              "text": "Ciclista faz da mobilidade urbana causa para vida",
+              "url": "https://mariavaiefaz.com.br/ciclista-causa-para-vida/"
+            },
+            "media": "site",
+            "date": "09/07/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-4",
+            "title": "Mais Minas",
+            "link": {
+              "text": "Inédito na Virada Cultural: Viradinha traz programação infantil",
+              "url": "https://maisminas.org/inedito-na-virada-cultural-viradinha-traz-programacao-infantil/"
+            },
+            "media": "site",
+            "date": "15/07/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-5",
+            "title": "MinutoMT",
+            "link": {
+              "text": "Papiro | Seleção dos projetos em Rondonópolis passa para fase das apresentações",
+              "url": "https://minutomt.com.br/geral/papiro-selecao-dos-projetos-em-rondonopolis-passa-para-fase-das-apresentacoes/"
+            },
+            "media": "site",
+            "date": "17/07/2019",
+            "location": "Rondonópolis - MT"
+          },
+          {
+            "id": "item-6",
+            "title": "Toda Hora",
+            "link": {
+              "text": "Virada Sustentável Manaus une esporte e sustentabilidade em programação gratuita",
+              "url": "https://todahora.com/articulos/virada-sustent%C3%A1vel-manaus-une-esporte-e-sustentabilidade-em-programa%C3%A7%C3%A3o-gratuita"
+            },
+            "media": "site",
+            "date": "18/07/2019",
+            "location": "Manaus - AM"
+          },
+          {
+            "id": "item-7",
+            "title": "Prefeitura de Olinda",
+            "link": {
+              "text": "Prefeitura de Olinda e ciclistas afinam medidas para o uso de bikes na cidade",
+              "url": "https://www.olinda.pe.gov.br/prefeitura-de-olinda-e-ciclistas-afinam-medidas-para-o-uso-de-bikes-na-cidade/"
+            },
+            "media": "site",
+            "date": "19/07/2019",
+            "location": "Olinda - PE"
+          },
+          {
+            "id": "item-8",
+            "title": "Fato Amazonico",
+            "link": {
+              "text": "Virada Sustentável Manaus une esporte e sustentabilidade com programação gratuita",
+              "url": "https://www.fatoamazonico.com/virada-sustentavel-manaus-ocupa-a-cidade-com-programacao-gratuita/"
+            },
+            "media": "site",
+            "date": "19/07/2019",
+            "location": "Manaus - AM"
+          },
+          {
+            "id": "item-9",
+            "title": "Globo",
+            "link": {
+              "text": "Quer aprender a andar de bicicleta? 'Plugue' encontra um grupo que ajuda nas primeiras pedaladas",
+              "url": "https://gshow.globo.com/TV-Rio-Sul/Plugue/noticia/quer-aprender-a-andar-de-bicicleta-plugue-encontra-um-grupo-que-ajuda-nas-primeiras-pedaladas.ghtml"
+            },
+            "media": "site",
+            "date": "22/07/2019",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-10",
+            "title": "G1",
+            "link": {
+              "text": "Virada Sustentável Manaus segue com programação nos espaços culturais até domingo",
+              "url": "https://g1.globo.com/am/amazonas/noticia/2019/07/27/virada-sustentavel-manaus-segue-com-programacao-nos-espacos-culturais-ate-domingo.ghtml"
+            },
+            "media": "site",
+            "date": "22/07/2019",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-11",
+            "title": "Diario de Pernambuco",
+            "link": {
+              "text": "Sistema cicloviário de Olinda será ampliado",
+              "url": "https://www.diariodepernambuco.com.br/noticia/vidaurbana/2019/07/sistema-cicloviario-de-olinda-sera-ampliado.html"
+            },
+            "media": "site",
+            "date": "27/07/2019",
+            "location": "Olinda - PE"
+          },
+          {
+            "id": "item-12",
+            "title": "JC NE",
+            "link": {
+              "text": "Sete anos depois: Brasil segue sem planos de mobilidade",
+              "url": "https://jc.ne10.uol.com.br/blogs/movecidade/2019/07/28/sete-anos-depois-brasil-segue-sem-planos-de-mobilidade/"
+            },
+            "media": "site",
+            "date": "28/07/2019",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-13",
+            "title": "TV Brasil",
+            "link": {
+              "text": "Bikes: novas rotas para a mobilidade",
+              "url": "http://tvbrasil.ebc.com.br/caminhos-da-reportagem/2019/07/bikes-novas-rotas-para-mobilidade"
+            },
+            "media": "tv",
+            "date": "30/07/2019",
+            "location": "Brasília - DF"
+          }
+        ]
+      },
+      {
+        "id": "item-8",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Campo Grande News",
+            "link": {
+              "text": "Grupo vai ao Centro aprender sobre acessibilidade para melhorar ruas da Capital",
+              "url": "https://www.campograndenews.com.br/cidades/capital/grupo-vai-ao-centro-aprender-sobre-acessibilidade-para-melhorar-ruas-da-capital"
+            },
+            "media": "site",
+            "date": "01/08/2019",
+            "location": "Campo Grande - MS"
+          },
+          {
+            "id": "item-2",
+            "title": "Correio Brasiliense",
+            "link": {
+              "text": "Projeto gera renda a pessoas em situação de vulnerabilidade social no DF",
+              "url": "https://www.correiobraziliense.com.br/app/noticia/cidades/2019/08/02/interna_cidadesdf,774999/a-proposta-da-iniciativa-bike-geracao-de-renda-e-incentivar-o-trabalho.shtml"
+            },
+            "media": "site",
+            "date": "02/08/2019",
+            "location": "Brasília - DF"
+          },
+          {
+            "id": "item-3",
+            "title": "Record",
+            "link": {
+              "text": "Aprender a pedalar",
+              "url": "https://noticias.r7.com/distrito-federal/balanco-geral-df/videos/assista-a-integra-do-balanco-geral-df-desta-segunda-feira-05-06082019?fbclid=IwAR0KnCjQoziLk4eh4iLSrt2vX-xWIN61hbxxI9y8tj6VOQj90cmWMg57D54"
+            },
+            "media": "tv",
+            "date": "05/08/2019",
+            "location": "Brasília - DF"
+          },
+          {
+            "id": "item-4",
+            "title": "Globo",
+            "link": {
+              "text": "Tem gente que aprendeu a pedalar com 70 anos",
+              "url": "https://globoplay.globo.com/v/7845327/?utm_source=whatsapp&utm_medium=share-bar&fbclid=IwAR0r8VkAlcBfcSKWOsp6MX9zl_M9xiNfq0r7Pwas6WaHAI7J-ASybju_DdA"
+            },
+            "media": "tv",
+            "date": "15/08/2019",
+            "location": "Brasília - DF"
+          },
+          {
+            "id": "item-5",
+            "title": "Campo Grande News",
+            "link": {
+              "text": "Ação social leva cultura, esporte e orientação para moradores no sábado",
+              "url": "https://www.campograndenews.com.br/cidades/capital/acao-social-leva-cultura-esporte-e-orientacao-para-moradores-no-sabado"
+            },
+            "media": "site",
+            "date": "14/08/2019",
+            "location": "Campo Grande - MS"
+          },
+          {
+            "id": "item-6",
+            "title": "G1",
+            "link": {
+              "text": "Pedalando: idosos aprendem a andar de bicicleta aos 70 anos no DF",
+              "url": "https://g1.globo.com/df/distrito-federal/noticia/2019/08/15/pedalando-idosos-aprendem-a-andar-de-bicicleta-aos-70-anos-no-df.ghtml"
+            },
+            "media": "site",
+            "date": "16/08/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-7",
+            "title": "Belo Horizonte.com.br",
+            "link": {
+              "text": "Evento gratuito que ensina crianças e adultos a pedalar será realizado no domingo (18) no Minas Shopping",
+              "url": "https://www.belohorizonte.com.br/evento-gratuito-que-ensina-criancas-e-adultos-a-pedalar-sera-realizado-no-domingo-18-no-minas-shopping/"
+            },
+            "media": "site",
+            "date": "19/08/2019",
+            "location": "Belém - PA"
+          },
+          {
+            "id": "item-8",
+            "title": "Spotify",
+            "link": {
+              "text": "#02: Um podcast sobre andar de bike em Belém (feat. Laura Quaresma)",
+              "url": "https://open.spotify.com/episode/780NatB4CNIJHMsRK4G65J?si=KSiECviPTDWvdoFyvDxcMg"
+            },
+            "media": "tv",
+            "date": "19/08/2019",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-9",
+            "title": "Record",
+            "link": {
+              "text": "Gustavo encara desafio no Dia do Ciclista",
+              "url": "https://www.youtube.com/watch?v=CzPmLIiWTM0"
+            },
+            "media": "tv",
+            "date": "19/08/2019",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-10",
+            "title": "Record",
+            "link": {
+              "text": "Conheça o Projeto Bike Anjo de Campinas",
+              "url": "https://www.youtube.com/watch?v=pUIimUP6I14"
+            },
+            "media": "site",
+            "date": "25/08/2019",
+            "location": "Campinas - SP"
+          }
+        ]
+      },
+      {
+        "id": " item-9",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Campinas.com.br",
+            "link": {
+              "text": "“Virada Esportiva” terá mais de 200 atividades espalhadas por 40 pontos de Campinas",
+              "url": "https://www.campinas.com.br/agenda/virada-esportiva-tera-mais-de-200-atividades-espalhadas-por-40-pontos-de-campinas/"
+            },
+            "media": "site",
+            "date": "09/09/2019",
+            "location": "Vitória - ES"
+          },
+          {
+            "id": "item-2",
+            "title": "Século Diário",
+            "link": {
+              "text": "Volta à Ilha de Vitória em bicicleta marcará o Dia Mundial Sem Carro",
+              "url": "https://seculodiario.com.br/public/jornal/materia/volta-a-ilha-de-vitoria-em-bicicleta-marcara-o-dia-mundial-sem-carro"
+            },
+            "media": "site",
+            "date": "16/09/2019",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "Campinas.com.br",
+            "link": {
+              "text": "Em comemoração ao Dia Mundial Sem Carro, encontro de ciclistas agita o Parque Ecológico neste domingo",
+              "url": "https://www.campinas.com.br/agenda/em-comemoracao-ao-dia-mundial-sem-carro-encontro-de-ciclistas-agita-o-parque-ecologico-neste-domingo/"
+            },
+            "media": "site",
+            "date": "17/09/2019",
+            "location": "Manaus - AM"
+          },
+          {
+            "id": "item-4",
+            "title": "Portal da Amazônia",
+            "link": {
+              "text": "Veículo sustentável: o incentivo ao uso da bicicleta nas cidades da Amazônia",
+              "url": "http://portalamazonia.com/noticias/veiculo-sustentavel-o-incentivo-ao-uso-da-bicicleta-nas-cidades-da-amazonia"
+            },
+            "media": "site",
+            "date": "18/09/2019",
+            "location": "Campina Grande - PB"
+          },
+          {
+            "id": "item-5",
+            "title": "Paraiba Online",
+            "link": {
+              "text": "STTP divulga programação em Campina Grande para o Dia Mundial sem Carro",
+              "url": "https://paraibaonline.com.br/2019/09/sttp-divulga-programacao-em-campina-grande-para-o-dia-mundial-sem-carro/"
+            },
+            "media": "site",
+            "date": "18/09/2019",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-6",
+            "title": "Pedal.com.br",
+            "link": {
+              "text": "Mês da Mobilidade 2019 - Confira a programação de eventos para Setembro em BH",
+              "url": "https://www.pedal.com.br/mes-da-mobilidade-2019-confira-a-programacao-de-eventos-para-setembro-em-bh_texto14040.html"
+            },
+            "media": "site",
+            "date": "20/09/2019",
+            "location": "Curitiba - PR"
+          },
+          {
+            "id": "item-7",
+            "title": "Diario do Transporte",
+            "link": {
+              "text": "Recuperando dados. Aguarde alguns segundos e tente cortar ou copiar novamente.",
+              "url": "https://diariodotransporte.com.br/2019/09/20/piraquara-na-grande-curitiba-adia-licitacao-para-contratacao-de-plano-de-mobilidade-urbana/"
+            },
+            "media": "site",
+            "date": "21/09/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Governo SP",
+            "link": {
+              "text": "Recuperando dados. Aguarde alguns segundos e tente cortar ou copiar novamente.",
+              "url": "http://www.portaldenoticias.saude.sp.gov.br/dia-mundial-sem-carro-mude-seus-habitos-e-garanta-uma-vida-mais-saudavel/"
+            },
+            "media": "site",
+            "date": "22/09/2019",
+            "location": "Campo Grande - MS"
+          },
+          {
+            "id": "item-9",
+            "title": "Hora MS",
+            "link": {
+              "text": "Para marcar o Dia Mundial Sem Carros, movimentos fecham avenida e pedem passe livre",
+              "url": "https://horams.com.br/para-marcar-o-dia-mundial-sem-carros-movimentos-fecham-avenida-e-pedem-passe-livre/"
+            },
+            "media": "site",
+            "date": "22/09/2019",
+            "location": "Campo Grande - MS"
+          },
+          {
+            "id": "item-10",
+            "title": "Midia Mix",
+            "link": {
+              "text": "‘Dia Mundial Sem Carro’ leva shows e artesanato para a avenida Mato Grosso",
+              "url": "https://www.midiamax.com.br/cotidiano/2019/dia-mundial-sem-carro-leva-shows-e-artesanato-para-a-avenida-mato-grosso"
+            },
+            "media": "site",
+            "date": "22/09/2019",
+            "location": "Campo Grande - MS"
+          },
+          {
+            "id": "item-11",
+            "title": "Correio Rac",
+            "link": {
+              "text": "Parque Ecológico recebe 2º Encontro de Ciclistas",
+              "url": "https://correio.rac.com.br/_conteudo/2019/09/esportes/866851-parque-ecologico-recebe-2-encontro-de-ciclistas.html"
+            },
+            "media": "site",
+            "date": "22/09/2019",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-12",
+            "title": "JCNet",
+            "link": {
+              "text": "Bicicleta nas escolas é tema de formação de professores em Bauru",
+              "url": "https://www.jcnet.com.br/noticias/geral/2019/09/697238-bicicleta-nas-escolas-e-tema-de-formacao-de-professores-em-bauru.html"
+            },
+            "media": "site",
+            "date": "23/09/2019",
+            "location": "Bauru - SP"
+          },
+          {
+            "id": "item-13",
+            "title": "to de Pernambú",
+            "link": {
+              "text": "Olinda monta 28 estandes para Feira de Educação no Trânsito no Carmo",
+              "url": "https://www.diariodepernambuco.com.br/noticia/vidaurbana/2019/09/olinda-monta-28-estandes-para-feira-de-educacao-no-transito.html"
+            },
+            "media": "site",
+            "date": "23/09/2019",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-14",
+            "title": "JC NE",
+            "link": {
+              "text": "As bicicletas pedem passagem no Recife",
+              "url": "https://jc.ne10.uol.com.br/blogs/movecidade/2019/09/30/as-bicicletas-pedem-passagem-no-recife/"
+            },
+            "media": "site",
+            "date": "30/09/2019",
+            "location": "Recife - PE"
+          }
+        ]
+      },
+      {
+        "id": "item-10",
+        "month": "OUT",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "OCP News",
+            "link": {
+              "text": "A realidade de quem usa a bicicleta para trabalho e lazer em Jaraguá do Sul",
+              "url": "https://ocp.news/geral/a-realidade-de-quem-usa-a-bicicleta-para-trabalho-e-lazer-em-jaragua-do-sul"
+            },
+            "media": "site",
+            "date": "01/10/2019",
+            "location": "Jaraguá do Sul - SC"
+          },
+          {
+            "id": "item-2",
+            "title": "A Crítica",
+            "link": {
+              "text": "Super Bazar das Crianças terá edição especial neste final de semana",
+              "url": "https://www.acritica.com/channels/entretenimento/news/super-bazar-das-criancas-tera-edicao-especial-neste-final-de-semana"
+            },
+            "media": "site",
+            "date": "01/10/2019",
+            "location": "Manaus - AM"
+          },
+          {
+            "id": "item-3",
+            "title": "Veja SP",
+            "link": {
+              "text": "CBN promove festival com música e mesa redonda para discutir a cidade",
+              "url": "https://vejasp.abril.com.br/cidades/cbn-festival-mais-sao-paulo/"
+            },
+            "media": "site",
+            "date": "02/10/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-4",
+            "title": "GIFE",
+            "link": {
+              "text": "Bike Anjo",
+              "url": "https://mostra.gife.org.br/#projetos"
+            },
+            "media": "site",
+            "date": "02/10/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-5",
+            "title": "G1",
+            "link": {
+              "text": "Centro Cultural recebe o Festival Mais São Paulo da CBN",
+              "url": "https://g1.globo.com/sp/sao-paulo/o-que-fazer-em-sao-paulo/noticia/2019/10/04/centro-cultural-recebe-o-festival-mais-sao-paulo-da-cbn.ghtml"
+            },
+            "media": "site",
+            "date": "04/10/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-6",
+            "title": "WSCom",
+            "link": {
+              "text": "Campina Grande terá passeio ciclístico e trilha ecológica neste domingo (6)",
+              "url": "https://www.wscom.com.br/campina-grande-tera-passeio-ciclistico-e-trilha-ecologica-neste-domingo-6/"
+            },
+            "media": "site",
+            "date": "04/10/2019",
+            "location": "Campina Grande - PB"
+          },
+          {
+            "id": "item-7",
+            "title": "iCS",
+            "link": {
+              "text": "Soluções conjuntas: 1ª Mostra GIFE de Inovação Social reuniu centenas de projetos",
+              "url": "https://www.climaesociedade.org/post/mostra-gife-solucoes-conjuntas"
+            },
+            "media": "site",
+            "date": "11/10/2019",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Brasil de Fato PB",
+            "link": {
+              "text": "Coletivo promove o empoderamento de mulheres ciclistas em Campina Grande (PB)",
+              "url": "https://www.brasildefatopb.com.br/2019/10/15/coletivo-promove-o-empoderamento-de-mulheres-ciclistas-em-campina-grande-pb"
+            },
+            "media": "site",
+            "date": "15/10/2019",
+            "location": "Campina Grande - PB"
+          }
+        ]
+      },
+      {
+        "id": " item-11",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Tv Liberti",
+            "link": {
+              "text": "Grupo de mulheres criam grupo de ciclismo como forma de resistência",
+              "url": "https://globoplay.globo.com/v/8073913/"
+            },
+            "media": "tv",
+            "date": "10/11/2019",
+            "location": "Belém - PA"
+          }
+        ]
+      },
+      {
+        "id": "item-12",
+        "month": "DEZ",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Voz da Cidade",
+            "link": {
+              "text": "Grupo Bike Anjo promove segunda Pedalada Ambiental",
+              "url": "https://avozdacidade.com/wp/grupo-bike-anjo-promove-segunda-pedalada-ambiental/"
+            },
+            "media": "site",
+            "date": "12/12/2019",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-2",
+            "title": "Diario de Pernambuco",
+            "link": {
+              "text": "Após atrasos, Ponte do Janga é inaugurada oficialmente",
+              "url": "https://www.diariodepernambuco.com.br/noticia/vidaurbana/2019/12/apos-atrasos-ponte-do-janga-e-inaugurada-oficialmente.html"
+            },
+            "media": "site",
+            "date": "13/12/2019",
+            "location": "Paulista - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "ECOA Uol",
+            "link": {
+              "text": "ONGs trabalham por mobilidade e no combate a holocausto urbano",
+              "url": "https://www.uol.com.br/ecoa/ultimas-noticias/2019/12/31/retro-2019-ongs-trabalham-por-mobilidade-e-no-combate-a-holocausto-urbano.htm"
+            },
+            "media": "site",
+            "date": "31/12/2019",
+            "location": "Niterói - RJ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2020-reports",
+    "year": 2020,
+    "months": [
+      {
+        "id": " item-1",
+        "month": "JAN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Diário do Nordeste",
+            "link": {
+              "text": "Pedal seguro",
+              "url": "https://diariodonordeste.verdesmares.com.br/projetos/levissimo/online/pedal-seguro-1.2195331"
+            },
+            "media": "internet",
+            "date": "06/01/2020",
+            "location": "Fortaleza - CE"
+          },
+          {
+            "id": "item-2",
+            "title": "Metro",
+            "link": {
+              "text": "Um mês para experimentar outros modais",
+              "url": "https://www.metrojornal.com.br/colunistas/2020/01/09/um-mes-para-experimentar-outros-modais.html"
+            },
+            "media": "internet",
+            "date": "09/01/2020",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Promoview",
+            "link": {
+              "text": "Bike Itaú celebra Dia Internacional da Mulher",
+              "url": "https://www.promoview.com.br/categoria/entretenimento/bike-itau-celebra-dia-internacional-da-mulher.html"
+            },
+            "media": "site",
+            "date": "08/02/2020",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Metro Jornal",
+            "link": {
+              "text": "Container da Bike Anjo é furtado no largo da Batata",
+              "url": "https://www.metrojornal.com.br/foco/2020/02/17/container-bike-anjo-e-furtado-na-zona-oeste.html"
+            },
+            "media": "site",
+            "date": "17/02/2020",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-3",
+            "title": "UOL",
+            "link": {
+              "text": "Contêiner da Bike Anjo é arrombado em SP e 25 bicicletas são furtadas...",
+              "url": "https://www.uol.com.br/carros/colunas/pedala/2020/02/17/conteiner-da-bike-anjo-e-arrombado-em-sp-e-25-bicicletas-sao-furtadas.htm"
+            },
+            "media": "site",
+            "date": "17/02/2020",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-4",
+            "title": "Agora São Paulo",
+            "link": {
+              "text": "Pelo menos 25 bicicletas são furtadas de ONG paulistana",
+              "url": "https://agora.folha.uol.com.br/sao-paulo/2020/02/pelo-menos-25-bicicletas-sao-furtadas-de-ong-paulistana.shtml"
+            },
+            "media": "site",
+            "date": "17/02/2020",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-5",
+            "title": "Pedal.com.br",
+            "link": {
+              "text": "Bike Anjo SP - Nota oficial sobre o arrombamento e furto no container",
+              "url": "https://www.pedal.com.br/nota-oficial-o-arrombamento-e-furto-do-container-bike-anjo-em-sp_texto14220.html"
+            },
+            "media": "site",
+            "date": "18/02/2020",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": " item-3",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Estado de Minas",
+            "link": {
+              "text": "Confira programação gratuita para o fim de semana em BH",
+              "url": "https://www.em.com.br/app/noticia/gerais/2020/03/06/interna_gerais,1126804/confira-programacao-gratuita-para-o-fim-de-semana-em-bh.shtml"
+            },
+            "media": "site",
+            "date": "06/03/2020",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-2",
+            "title": "Belo Horizonte",
+            "link": {
+              "text": "Evento gratuito ensina crianças e adultos a pedalar neste domingo (8 de março) no Minas Shopping",
+              "url": "https://www.belohorizonte.com.br/evento-gratuito-ensina-criancas-e-adultos-a-pedalar-neste-domingo-8-de-marco-no-minas-shopping/"
+            },
+            "media": "site",
+            "date": "06/03/2020",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-3",
+            "title": "Mobilize",
+            "link": {
+              "text": "Dia Internacional da Mulher: Domingo em SP tem bicicletada para elas",
+              "url": "https://www.mobilize.org.br/noticias/11990/domingo-8-em-sp-tem-bicicletada-para-mulheres.html"
+            },
+            "media": "site",
+            "date": "06/03/2020",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-4",
+            "title": "Campo Grande News",
+            "link": {
+              "text": "“Ninguém solta o guidão de ninguém”: é pela bike que elas querem mudar o mundo ",
+              "url": "https://www.campograndenews.com.br/lado-b/comportamento-23-08-2011-08/-ninguem-solta-o-guidao-de-ninguem-e-pela-bike-que-elas-querem-mudar-o-mundo"
+            },
+            "media": "site",
+            "date": "08/03/2020",
+            "location": "Campo Grande - MS"
+          },
+          {
+            "id": "item-5",
+            "title": "BHAZ",
+            "link": {
+              "text": "Ainda não sabe andar de bike? Projeto oferece aulas gratuitas para todas as idades em BH",
+              "url": "https://bhaz.com.br/2020/03/11/aulas-de-bicicleta-gratuitas-bh/"
+            },
+            "media": "site",
+            "date": "11/03/2020",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-6",
+            "title": "Belo Horizonte",
+            "link": {
+              "text": "Neste domingo: Shopping Cidade e Bike Anjo dão força para quem quer aprender a andar de bicicleta",
+              "url": "https://www.belohorizonte.com.br/neste-domingo-shopping-cidade-e-bike-anjo-dao-forca-para-quem-quer-aprender-a-andar-de-bicicleta/"
+            },
+            "media": "site",
+            "date": "13/03/2020",
+            "location": "Belo Horizonte - MG"
+          },
+          {
+            "id": "item-7",
+            "title": "Segs.com.br",
+            "link": {
+              "text": "Fundação Bunge leva o Multiculturalismo como temática em programa de voluntariado corporativo",
+              "url": "https://www.segs.com.br/seguros/223244-fundacao-bunge-leva-o-multiculturalismo-como-tematica-em-programa-de-voluntariado-corporativo"
+            },
+            "media": "site",
+            "date": "26/03/2020",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bom Dia PE",
+            "link": {
+              "text": "semana estadual de conscientização do motorista aos direitos do ciclista e incentivo ao ciclismo",
+              "url": "https://globoplay.globo.com/bom-dia-pe/t/dkGCdfzZHL/"
+            },
+            "media": "tv",
+            "date": "20/08/2020",
+            "location": "Recife - PE"
+          }
+        ]
+      },
+      {
+        "id": " item-9",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Brasil de Fato",
+            "link": {
+              "text": "Dia Mundial Sem Carro propõe mudança de hábitos e da relação com a cidade",
+              "url": "https://www.brasildefatope.com.br/2020/09/22/uso-consciente-do-carro-e-destaque-no-programa-brasil-de-fato-pernambuco"
+            },
+            "media": "site",
+            "date": "22/09/2020",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "Brasil de Fato",
+            "link": {
+              "text": "Dia Mundial Sem Carro propõe mudança de hábitos e da relação com a cidade",
+              "url": "https://www.brasildefatope.com.br/2020/09/23/dia-mundial-sem-carro-propoe-mudanca-de-habitos-e-da-relacao-com-a-cidade"
+            },
+            "media": "site",
+            "date": "23/09/2020",
+            "location": "Recife - PE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2021-reports",
+    "year": 2021,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "MAI",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Jornal da Bicicleta",
+            "link": {
+              "text": "Hoje é o Dia de Bike ao Trabalho: campanha da Bike Anjo para incentivar empresas a estimular a bicicleta em empregades",
+              "url": "https://jornalbicicleta.com.br/2021/05/14/hoje-e-o-dia-de-bike-ao-trabalho-campanha-da-bike-anjo-para-incentivar-empresas-a-estimular-a-bicicleta-em-empregades/"
+            },
+            "media": "site",
+            "date": "14/05/2021",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-2",
+            "title": "O Dia",
+            "link": {
+              "text": "Dia de Bike ao Trabalho será nesta quinta-feira (20)",
+              "url": "https://odia.ig.com.br/niteroi/2021/05/6149178-dia-de-bike-ao-trabalho-sera-nesta-quinta-feira.html"
+            },
+            "media": "site",
+            "date": "20/05/2021",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-3",
+            "title": "Prefeitura de Niterói",
+            "link": {
+              "text": "Niterói promove Dia de Bike ao Trabalho para incentivar o uso da bicicleta na rotina",
+              "url": "http://www.niteroi.rj.gov.br/2021/05/20/niteroi-promove-dia-de-bike-ao-trabalho-para-incentivar-o-uso-da-bicicleta-na-rotina/"
+            },
+            "media": "site",
+            "date": "20/05/2021",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-4",
+            "title": "O Fluminense",
+            "link": {
+              "text": "Dia de Bike ao Trabalho' incentiva niteroienses a usarem bicicletas",
+              "url": "https://www.ofluminense.com.br/cidades/niteroi/2021/05/1189546-dia-de-bike-ao-trabalho-incentiva-niteroienses-a-usarem-bicicletas.html"
+            },
+            "media": "site",
+            "date": "21/05/2021",
+            "location": "Niterói - RJ"
+          }
+        ]
+      },
+      {
+        "id": " item-2",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "TV Web Camara Municipal Recife",
+            "link": {
+              "text": "Audiência Pública - Tema: \"A Patrulha Ciclista e a Estrutura para garantir a segurança do ciclística nas vias.\"",
+              "url": "https://www.youtube.com/watch?v=mjDvwlwIaaE"
+            },
+            "media": "site",
+            "date": "06/08/2021",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "O Fluminense ",
+            "link": {
+              "text": "Niterói festeja o Dia Nacional do Ciclista",
+              "url": "https://www.ofluminense.com.br/cidades/2021/08/1208376-niteroi-festeja-o-dia-nacional-do-ciclista.html"
+            },
+            "media": "jornal",
+            "date": "18/08/2021",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-3",
+            "title": "Bom Dia Pernambuco",
+            "link": {
+              "text": "Dia Nacional do Ciclista ",
+              "url": "https://www.instagram.com/tv/CSxm8UoHisy/?utm_medium=share_sheet"
+            },
+            "media": "tv",
+            "date": "19/08/2021",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-4",
+            "title": "Jornal Liberal",
+            "link": {
+              "text": "Ciclistas continuam sendo as principais vítimas de acidentes de trânsito no Pará",
+              "url": "https://globoplay.globo.com/v/9783482/"
+            },
+            "media": "tv",
+            "date": "19/08/2021",
+            "location": "Belém - PA"
+          }
+        ]
+      },
+      {
+        "id": "item-3",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "O Estado do Piaui",
+            "link": {
+              "text": "Cicloativistas” ensinam e doam bicicletas para promover pedal",
+              "url": "https://oestadodopiaui.com/bike-anjo-teresina-cicloativistas-ensinam-e-doam-bicicletas-para-promover-pedal-na-cidade/"
+            },
+            "media": "jornal",
+            "date": "02/09/2021",
+            "location": "Teresina - PI"
+          },
+          {
+            "id": "item-2",
+            "title": "AB TV 2a edição ",
+            "link": {
+              "text": "Frota de veículos aumentou em 50% nos últimos 10 anos em Caruaru",
+              "url": "https://globoplay.globo.com/v/9838259/"
+            },
+            "media": "tv",
+            "date": "07/09/2021",
+            "location": "Caruaru - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "globo.com",
+            "link": {
+              "text": "Menina que nasceu prematura extremo supera dificuldade de equilíbrio e aprende a andar de bicicleta no Piauí",
+              "url": "https://g1.globo.com/pi/piaui/noticia/2021/09/21/menina-que-nasceu-prematura-extremo-supera-dificuldade-de-equilibrio-e-aprende-a-andar-de-bicicleta-no-piaui.ghtml"
+            },
+            "media": "jornal",
+            "date": "21/09/2021",
+            "location": "Teresina - PI"
+          },
+          {
+            "id": "item-4",
+            "title": "Jornal da Bicicleta ",
+            "link": {
+              "text": "No Dia Mundial Sem Carro saiba que há mulheres brigando por segurança viária no ABC Paulista",
+              "url": "https://jornalbicicleta.com.br/2021/09/22/no-dia-mundial-sem-carro-saiba-que-ha-mulheres-brigando-por-seguranca-viaria-no-abc-paulista/"
+            },
+            "media": "jornal",
+            "date": "22/09/2021",
+            "location": "ABC paulista - SP"
+          },
+          {
+            "id": "item-5",
+            "title": "Tv Brasil - Reporter Brasil",
+            "link": {
+              "text": "Uso dos meios de transporte é alterado durante a pandemia",
+              "url": "https://tvbrasil.ebc.com.br/reporter-brasil/2021/09/uso-dos-meios-de-transporte-e-alterado-durante-pandemia"
+            },
+            "media": "tv",
+            "date": "22/09/2021",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-6",
+            "title": "Bom Dia Rio Grande",
+            "link": {
+              "text": "Dia Mundial Sem Carro reforça uso de transporte sustentável",
+              "url": "https://globoplay.globo.com/v/9881414/"
+            },
+            "media": "tv",
+            "date": "22/09/2021",
+            "location": "Porto Alegre - RS"
+          },
+          {
+            "id": "item-7",
+            "title": "RF News",
+            "link": {
+              "text": "Ciclistas de Campinas realizam ação no Dia Mundial Sem Carro",
+              "url": "https://www.youtube.com/watch?v=I8z-55nfUZE"
+            },
+            "media": "tv",
+            "date": "22/09/2021",
+            "location": "Campinas - SP"
+          },
+          {
+            "id": "item-8",
+            "title": "Go Outside",
+            "link": {
+              "text": "Dia Mundial sem Carro: 5 dicas para você começar a pedalar hoje",
+              "url": "https://gooutside.com.br/dia-do-ciclista-5-dicas-para-voce-comecar-a-pedalar-hoje/"
+            },
+            "media": "site",
+            "date": "21/09/2021",
+            "location": "Nacional - BR"
+          },
+          {
+            "id": "item-9",
+            "title": "Educação Niteroi",
+            "link": {
+              "text": "Prefeitura de Niterói realiza diversas atividades no Dia Mundial Sem Carro",
+              "url": "https://www.educacaoniteroi.com.br/2021/09/23/prefeitura-de-niteroi-realiza-diversas-atividades-no-dia-mundial-sem-carro/"
+            },
+            "media": "site",
+            "date": "23/09/2021",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-10",
+            "title": "Portal do poder judiciario do estado do maranhão",
+            "link": {
+              "text": "De \"bike ao trabalho\" no Dia Mundial sem Carro incentiva servidoras e servidores",
+              "url": "https://www.tjma.jus.br/midia/portal/noticia/504866"
+            },
+            "media": "site",
+            "date": "22/09/2021",
+            "location": "São Luis - MA"
+          },
+          {
+            "id": "item-11",
+            "title": "Tupi FM",
+            "link": {
+              "text": "Ciclistas da Freguesia promoveram pedalada no Dia Mundial Sem Carro",
+              "url": "https://www.tupi.fm/sentinelas/ciclistas-da-freguesia-promoveram-pedalada-no-dia-mundial-sem-carro/"
+            },
+            "media": "jornal",
+            "date": "23/09/2021",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-12",
+            "title": "Vila Velo Bicicletaria",
+            "link": {
+              "text": "Dia Mundial Sem Carro – 22 de setembro",
+              "url": "https://vilavelobicicletaria.com.br/dia-mundial-sem-carro/"
+            },
+            "media": "site",
+            "date": "22/09/2021",
+            "location": "Porto Alegre - RS"
+          },
+          {
+            "id": "item-13",
+            "title": "Alô Gragoatá",
+            "link": {
+              "text": "Semana da Mobilidade Niterói 2021 acontecerá entre os dias 18 e 26 de setembro",
+              "url": "https://alogragoata.blogspot.com/2021/09/semana-da-mobilidade-niteroi-2021.html?m=1"
+            },
+            "media": "jornal",
+            "date": "10/09/2021",
+            "location": "Niterói - RJ"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "OUT",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "GShow",
+            "link": {
+              "text": "Sábado 2: conheça a história de baianos que fazem a diferença e transformam vidas através de ações sociais",
+              "url": "https://gshow.globo.com/noticia/sabado-2-conheca-a-historia-de-baianos-que-fazem-a-diferenca-e-transformam-vidas-atraves-de-acoes-sociais.ghtml"
+            },
+            "media": "site",
+            "date": "01/10/2021",
+            "location": "Salvador - BA"
+          },
+          {
+            "id": "item-2",
+            "title": "Mosaico Baiano",
+            "link": {
+              "text": "Mosaico Baiano | Pablo Vasconcelos conhece pessoas que se dedicam a ações sociais",
+              "url": "https://globoplay.globo.com/v/9911754"
+            },
+            "media": "tv",
+            "date": "02/10/2021",
+            "location": "Salvador - BA"
+          }
+        ]
+      },
+      {
+        "id": " item-4",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "TV cidade Record",
+            "link": {
+              "text": " EBA Rondonopolis",
+              "url": "https://www.instagram.com/p/CWoF8AYhzIy/"
+            },
+            "media": "tv",
+            "date": "23/11/2021",
+            "location": "Rondonoólis - MT"
+          }
+        ]
+      },
+      {
+        "id": "item-5",
+        "month": "DEZ",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Bom dia RJ",
+            "link": {
+              "text": "EBA Niterói",
+              "url": "https://g1.globo.com/rj/rio-de-janeiro/bom-dia-rio/video/voluntarios-ensinam-a-pedalar-e-incentivam-o-uso-da-bicicleta-no-rio-10142462.ghtml"
+            },
+            "media": "tv globo",
+            "date": "20/12/2021",
+            "location": "Niterói - RJ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2022-reports",
+    "year": 2022,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Jornal online",
+            "link": {
+              "text": "Vá de bike à escola: famílias de Niterói aderem ao uso da bicicleta na volta às aulas",
+              "url": "https://www.jornaldoestadodorio.com.br/va-de-bike-a-escola-familias-de-niteroi-aderem-ao-uso-da-bicicleta-na-volta-as-aulas/"
+            },
+            "media": "site",
+            "date": "11/02/2022",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-2",
+            "title": "Jornal online",
+            "link": {
+              "text": "Famílias de Niterói aderem ao uso da bicicleta na volta às aulas",
+              "url": "https://cidadedeniteroi.com/2022/02/13/familias-de-niteroi-aderem-ao-uso-da-bicicleta-na-volta-as-aulas/"
+            },
+            "media": "site",
+            "date": "13/02/2022",
+            "location": "Niterói - RJ"
+          },
+          {
+            "id": "item-3",
+            "title": "Globo",
+            "link": {
+              "text": "Confira dicas de segurança na hora de pedalar por lazer ou a trabalho",
+              "url": "https://gshow.globo.com/programas/e-de-casa/episodio/2022/02/19/videos-do-episodio-de-e-de-casa-de-sabado-19-de-fevereiro-de-2022.ghtml#video-10317312-id"
+            },
+            "media": "site",
+            "date": "19/02/2022",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "TV Diário",
+            "link": {
+              "text": "Série Mobilidade Urbana - Ep. 31",
+              "url": "https://www.youtube.com/watch?v=T76uPWnagDc"
+            },
+            "media": "tv",
+            "date": "24/04/2022",
+            "location": "Fortaleza - CE"
+          }
+        ]
+      },
+      {
+        "id": "item-3",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "BoaVontadeTV",
+            "link": {
+              "text": "PROJETO BIKE ANJO ENSINA PESSOAS A ANDAR DE BICICLETA",
+              "url": "Tá no canal pessoal dele ainda https://www.youtube.com/watch?v=bTu-fr7mABU"
+            },
+            "media": "tv",
+            "date": "20/09/2022",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "diariodorio",
+            "link": {
+              "text": "A Magrela que nos Seduz",
+              "url": "https://diariodorio.com/andrea-nakane-a-magrela-que-nos-seduz/"
+            },
+            "media": "tv",
+            "date": "23/09/2022",
+            "location": "Rio de Janeiro - RJ"
+          },
+          {
+            "id": "item-3",
+            "title": "PI TV 1 Edição",
+            "link": {
+              "text": "10 Anos Bike Anjo Teresina",
+              "url": "https://www.instagram.com/reel/Ci-lbIEgVmJ/?igshid=MDJmNzVkMjY="
+            },
+            "media": "tv",
+            "date": "30/09/2022",
+            "location": "Teresina - PI"
+          },
+          {
+            "id": "item-4",
+            "title": "Bom dia Paraíba",
+            "link": {
+              "text": "Projeto gratuito ajuda pessoas a aprender a andar de bicicleta",
+              "url": "https://globoplay.globo.com/v/11057382/"
+            },
+            "media": "tv",
+            "date": "25/09/2022",
+            "location": "João Pessoa - PB"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "OUT",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Revista Quale",
+            "link": {
+              "text": "Eu e minha magrela",
+              "url": "Tenho uma cópia impressa e tem esse link https://www.instagram.com/p/CjLYxAqLvsg/?igshid=YmMyMTA2M2Y%3D"
+            },
+            "media": "revista",
+            "date": "01/10/2022",
+            "location": "São Paulo - SP"
+          },
+          {
+            "id": "item-2",
+            "title": "Programa Combinado",
+            "link": {
+              "text": "Projeto 'Bike Anjo' foi destaque no Combinado",
+              "url": "https://redeglobo.globo.com/se/tvsergipe/combinado/noticia/projeto-bike-anjo-foi-destaque-no-combinado.ghtml"
+            },
+            "media": "tv",
+            "date": "29/10/2022",
+            "location": "Aracaju - SE"
+          },
+          {
+            "id": "item-3",
+            "title": "Bom Dia Piauí",
+            "link": {
+              "text": "Projeto Bike Anjo ",
+              "url": "https://www.instagram.com/reel/CjQ0FTZAJQi/?igshid=MDJmNzVkMjY="
+            },
+            "media": "tv",
+            "date": "05/10/2022",
+            "location": "Teresina - PI"
+          },
+          {
+            "id": "item-4",
+            "title": "TV Assembléia ",
+            "link": {
+              "text": "Projeto Bike Anjo ",
+              "url": "https://www.instagram.com/reel/Cj-rydDg2O3/?igshid=MDJmNzVkMjY="
+            },
+            "media": "tv",
+            "date": "10/10/2022",
+            "location": "Teresina - PI"
+          },
+          {
+            "id": "item-5",
+            "title": "TV Acritica - Programa Manhã no AR",
+            "link": {
+              "text": "Projeto Bike Anjo ",
+              "url": "https://www.youtube.com/watch?v=eaW_77oE_Vs"
+            },
+            "media": "tv",
+            "date": "05/10/2022",
+            "location": "Manaus - AM"
+          }
+        ]
+      },
+      {
+        "id": "item-5",
+        "month": "DEZ",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Tembici",
+            "link": {
+              "text": "Summit Tembici: Do micro para o macro: como a inovação da mobilidade sustentável pode transformar cidades inteiras.",
+              "url": "https://www.youtube.com/playlist?list=PL-yLuwEipOyx1Huc44KU0iSx06oW6QK1y"
+            },
+            "media": "youtube",
+            "date": "08/12/2022",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "Algomais",
+            "link": {
+              "text": "Estímulo a pedalar: Como tornar as bikes um transporte seguro e vantajoso nas cidades pernambucanas.",
+              "url": "https://www.instagram.com/p/CmESMpLunr7/"
+            },
+            "media": "revista",
+            "date": "12/12/2022",
+            "location": "Recife - PE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2023-reports",
+    "year": 2023,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "BOM DIA SERGIPE",
+            "link": {
+              "text": "Mobilidade' destaca projeto que ensina pessoas a andar de bicicleta ",
+              "url": "https://globoplay.globo.com/v/11402938/"
+            },
+            "media": "tv",
+            "date": "27/02/2023",
+            "location": "Aracaju - SE"
+          },
+          {
+            "id": "item-2",
+            "title": "PN TV",
+            "link": {
+              "text": "Passeio Ciclístico ",
+              "url": "https://www.potiguarnoticias.com.br/noticias/54917/programacao-da-operacao-verao-encerra-neste-domingo-26-com-passeio-ciclistico-na-rota-do-sol"
+            },
+            "media": "site",
+            "date": "26/02/2023",
+            "location": "Natal - RN"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "MAR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "HORA 1",
+            "link": {
+              "text": "É como andar de Biciclate",
+              "url": "https://globoplay.globo.com/v/11422226/?s=0s"
+            },
+            "media": "tv",
+            "date": "06/03/2023",
+            "location": "Aracaju - SE"
+          },
+          {
+            "id": "item-2",
+            "title": "NE 1ª Edição",
+            "link": {
+              "text": "Voluntários ensinam pessoas a andar de bicicleta no Recife",
+              "url": "https://globoplay.globo.com/v/11423137/"
+            },
+            "media": "tv",
+            "date": "06/03/2023",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-3",
+            "title": "UniRios",
+            "link": {
+              "text": "9º Passeio Ciclístico Solidário _ Semana da Água",
+              "url": "https://www.unirios.edu.br/noticias/6911/pedal-solidario-da-semana-da-agua"
+            },
+            "media": "artigo",
+            "date": "23/03/2023",
+            "location": "Paulo Afonso - BA"
+          },
+          {
+            "id": "item-4",
+            "title": "RJ1",
+            "link": {
+              "text": "Grupo de Volta Redonda ensina a andar de bicicleta gratuitamente",
+              "url": "https://globoplay.globo.com/v/11411094/"
+            },
+            "media": "tv",
+            "date": "01/03/2023",
+            "location": "Volta Redonda - RJ"
+          },
+          {
+            "id": "item-5",
+            "title": "RJ2",
+            "link": {
+              "text": "Volta Redonda realiza 'Projeto Amigos Especiais' para celebrar Dia da Síndrome de Down",
+              "url": "https://globoplay.globo.com/v/11468450/"
+            },
+            "media": "tv",
+            "date": "21/03/2023",
+            "location": "Volta Redonda - RJ"
+          }
+        ]
+      },
+      {
+        "id": "item-3",
+        "month": "ABR",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Orbi",
+            "link": {
+              "text": "Grupos de pedal são caminho para incluir a bicicleta no cotidiano",
+              "url": "https://orbi.band.uol.com.br/sao-paulo/grupos-de-pedal-sao-caminho-para-incluir-a-bicicleta-no-cotidiano-5120"
+            },
+            "media": "tv",
+            "date": "06/04/2023",
+            "location": "São Paulo - SP"
+          }
+        ]
+      },
+      {
+        "id": "item-4",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "DF2",
+            "link": {
+              "text": "Utilização da Praça Índio Pataxó Galdino Jesus dos Santos para ensinar pessoas a pedalar pela Bike Anjo DF",
+              "url": "https://g1.globo.com/df/distrito-federal/df2/video/df2-edicao-de-sabado-03062023-11672274.ghtml"
+            },
+            "media": "tv",
+            "date": "03/06/2023",
+            "location": "Brasília - DF"
+          }
+        ]
+      },
+      {
+        "id": "item-5",
+        "month": "AGO",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "TV Globo",
+            "link": {
+              "text": "As novidades e os serviços para quem ama bicicletas",
+              "url": "https://g1.globo.com/pe/pernambuco/bom-dia-pe/video/as-novidades-e-os-servicos-para-quem-ama-bicicletas-11883287.ghtml"
+            },
+            "media": "tv",
+            "date": "22/08/2023",
+            "location": "Recife - PE"
+          },
+          {
+            "id": "item-2",
+            "title": "TV Globo",
+            "link": {
+              "text": "Bom Dia Sergipe. Mobilidade: saiba as informações sobre o trânsito em Sergipe",
+              "url": "https://globoplay.globo.com/v/11886835/"
+            },
+            "media": "tv",
+            "date": "23/08/2023",
+            "location": "Aracaju - SE"
+          }
+        ]
+      },
+      {
+        "id": "item-6",
+        "month": "SET",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "TV ATALAIA",
+            "link": {
+              "text": "Corpo São",
+              "url": "https://www.youtube.com/watch?v=nByA527qzXg"
+            },
+            "media": "tv",
+            "date": "10/09/2023",
+            "location": "Aracaju - SE"
+          },
+          {
+            "id": "item-2",
+            "title": "SBTMS NOTÍCIAS",
+            "link": {
+              "text": "Semana do Trânsito tem primeira edição do projeto ‘Em duas rodas eu escolho segurança’",
+              "url": "https://www.youtube.com/watch?v=zVRRBcSlVSc"
+            },
+            "media": "youtube",
+            "date": "16/09/2023",
+            "location": "Campo Grande - MG"
+          },
+          {
+            "id": "item-3",
+            "title": "TV GUANANDI",
+            "link": {
+              "text": "AÇÕES EDUCATIVAS: DETRAN-MS LANÇOU NO SÁBADO A SEMANA NACIONAL DO TRÂNSITO",
+              "url": "https://youtu.be/WtX-98smWPU?si=AodumJO"
+            },
+            "media": "youtube",
+            "date": "16/09/2023",
+            "location": "Campo Grande - MG"
+          },
+          {
+            "id": "item-4",
+            "title": "TV Globo",
+            "link": {
+              "text": "Bicicleta é alternativa barata e saudável, mas desafios para ciclistas ainda persistem",
+              "url": "https://globoplay.globo.com/v/11957032/"
+            },
+            "media": "tv",
+            "date": "16/09/2023",
+            "location": "Campo Grande - MG"
+          },
+          {
+            "id": "item-5",
+            "title": "TV Globo",
+            "link": {
+              "text": "Segurança do ciclista e inauguração de ciclovia",
+              "url": "https://g1.globo.com/pe/pernambuco/bom-dia-pe/video/bom-dia-pe-segunda-feira-25092023-integra-11974153.ghtml"
+            },
+            "media": "tv",
+            "date": "25/09/2023",
+            "location": "Recife - PE"
+          }
+        ]
+      },
+      {
+        "id": "item-7",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Agência Econordeste",
+            "link": {
+              "text": "Tem espaço para bicicleta nas grandes cidades nordestinas?",
+              "url": "https://agenciaeconordeste.com.br/tem-espaco-para-bicicleta-nas-grandes-cidades-nordestinas/"
+            },
+            "media": "site",
+            "date": "22/11/2023",
+            "location": "Nordeste - CE, PE, BA"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2024-reports",
+    "year": 2024,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "FEV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "TVE Espirito Santo",
+            "link": {
+              "text": "BIKE ANJO NO ES",
+              "url": "https://www.youtube.com/live/o1KBkvUAko8?si=GFQYXdWvMy1K3Yfk&t=1029"
+            },
+            "media": "tv",
+            "date": "29/02/2024",
+            "location": "Vitória - ES"
+          }
+        ]
+      },
+      {
+        "id": "item-2",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Tribuna do Norte",
+            "link": {
+              "text": "EBA - ESCOLA BIKE ANJO",
+              "url": "https://tribunadonorte.com.br/natal/escola-bike-anjo-projeto-acontece-em-natal-neste-domingo/"
+            },
+            "media": "site",
+            "date": "05/06/2024",
+            "location": "Natal - RN"
+          }
+        ]
+      },
+      {
+        "id": "item-3",
+        "month": "NOV",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "Blog do FM",
+            "link": {
+              "text": "Natal recebe intercambistas da Associação de Ciclistas do Maine - EUA",
+              "url": "https://blogdofm.com.br/natal-recebe-intercambistas-da-associacao-de-ciclistas-do-maine-eua/"
+            },
+            "media": "blog do fm",
+            "date": "17/11/2024",
+            "location": "Natal - RN"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2025-reports",
+    "year": 2025,
+    "months": [
+      {
+        "id": "item-1",
+        "month": "JUN",
+        "items": [
+          {
+            "id": "item-1",
+            "title": "GLOBO",
+            "link": {
+              "text": "DIA MUNDIAL DA BICICLETA",
+              "url": "https://globoplay.globo.com/v/13650781/"
+            },
+            "media": "tv",
+            "date": "03/06/2025",
+            "location": "Recife - PE"
+          }
+        ]
+      }
+    ]
+  }
+]

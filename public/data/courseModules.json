@@ -1,0 +1,42 @@
+[
+  {
+    "id": "accordion1",
+    "title": "Encontro 1",
+    "items": [
+      {
+        "id": "item1",
+        "text": "Introdução ao Programa e ao Voluntariado\n\nCarta de Valores, Regimento, LGPD e Estrutura Organizacional"
+      }
+    ]
+  },
+  {
+    "id": "accordion2",
+    "title": "Encontro 2",
+    "items": [
+      {
+        "id": "item1",
+        "text": "Projetos Bike Anjo e ODS\n\nComo funciona a rede, comunicação e captação"
+      }
+    ]
+  },
+  {
+    "id": "accordion3",
+    "title": "Encontro 3",
+    "items": [
+      {
+        "id": "item6",
+        "text": "Escola Bike Anjo - EBA\n\nDiversidade, Equidade e Inclusão"
+      }
+    ]
+  },
+  {
+    "id": "accordion4",
+    "title": "Encontro 4",
+    "items": [
+      {
+        "id": "item4",
+        "text": "Oficina de Mecânica\n\nCertificação e troca de experiências na Formatura"
+      }
+    ]
+  }
+]

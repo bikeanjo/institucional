@@ -1,4 +1,4 @@
-import { type ReactNode, useState, useMemo } from "react";
+import { type ReactNode, useState, useMemo, useEffect } from "react";
 import {
   Container,
   ContainerItems,
@@ -19,20 +19,29 @@ import CalendarIcon from "../../../../../public/assets/icons/calendar.svg";
 import LocationIcon from "../../../../../public/assets/icons/location.svg";
 import TimelineComponent from "./TimelineComponent";
 import { mediaIcons } from "./midiaIcons";
-import { timelineData } from "./data";
+import { loadTextContent } from "@/textContent";
 import type { TimelineYear } from "./data";
 
 function Timeline(): ReactNode {
+  const [timelineData, setTimelineData] = useState<TimelineYear[]>([]);
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    void loadTextContent("media").then((data) =>
+      setTimelineData(data as TimelineYear[]),
+    );
+  }, []);
+
   const availableYears = useMemo(
     () => timelineData.map((data) => data.year),
-    [],
+    [timelineData],
   );
 
   const [selectedYear, setSelectedYear] = useState<number>(availableYears[0]);
 
   const currentYearData = useMemo<TimelineYear | undefined>(
     () => timelineData.find((data) => data.year === selectedYear),
-    [selectedYear],
+    [selectedYear, timelineData],
   );
 
   const handleYearSelection = (year: number) => {

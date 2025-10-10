@@ -1,11 +1,32 @@
-import type { JSX } from "react";
+import { useState, useEffect, type JSX } from "react";
 import Title from "../../components/Title";
 import SubTitle from "../../components/Subtitle";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { Colors } from "@colors";
 import { Section } from "@components";
+import { loadTextContent } from "@/textContent";
+
+type Testimonial = {
+  id: number;
+  text: string;
+  name: string;
+  role: string;
+  imageUrl: string;
+  borderColor: keyof typeof Colors;
+};
 
 function Testimonials(): JSX.Element {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    void loadTextContent("testimonials").then((data) =>
+      setTestimonials(data as Testimonial[]),
+    );
+  }, []);
+
+  // TODO: Layout currently shows only 2 testimonials.
+  // Consider adding carousel/scroll for multiple testimonials in the future.
   return (
     <Section
       center
@@ -27,144 +48,75 @@ function Testimonials(): JSX.Element {
           overflow: "hidden",
         }}
       >
-        <Card
-          sx={{
-            width: { xs: 299, lg: 499 },
-            height: { xs: 308, lg: 249 },
-            border: `2px solid ${Colors["Green_70"]}`,
-            marginTop: 5,
-            padding: "21px 30px",
-            borderRadius: 2,
-            display: "flex",
-            flexShrink: "0",
-            flexDirection: "column",
-            boxShadow: "none",
-          }}
-        >
-          <CardContent sx={{ padding: 0, marginBottom: 4 }}>
-            <Typography
-              sx={{
-                color: Colors["G_Grey_100"],
-                fontSize: 16,
-                fontWeight: 400,
-                lineHeight: 1.6,
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae
-              ligula sed urna sit sagittis interdum a. Blandit mattis mattis
-              lobortis orci. Facilisis dui sagittis tempor egestas pellentesque
-              eu maecenas. Risus lectus nisl.
-            </Typography>
-          </CardContent>
-          <CardActions sx={{ height: "100%", padding: 0 }}>
-            <Box sx={{ display: "flex", gap: 2 }}>
-              <img
-                src={"/assets/images/photoPlaceholder/juliana.webp"}
-                alt="julianaImage"
-                title="julianaImage"
-                style={{
-                  width: 50,
-                  height: 50,
-                  borderRadius: "50%",
-                  border: `2px solid ${Colors["Blue_60"]}`,
+        {testimonials.map((testimonial) => (
+          <Card
+            key={testimonial.id}
+            sx={{
+              width: { xs: 299, lg: 499 },
+              height: { xs: 308, lg: 249 },
+              border: `2px solid ${Colors["Green_70"]}`,
+              marginTop: 5,
+              padding: "21px 30px",
+              borderRadius: 2,
+              display: "flex",
+              flexShrink: "0",
+              flexDirection: "column",
+              boxShadow: "none",
+            }}
+          >
+            <CardContent sx={{ padding: 0, marginBottom: 4 }}>
+              <Typography
+                sx={{
+                  color: Colors["G_Grey_100"],
+                  fontSize: 16,
+                  fontWeight: 400,
+                  lineHeight: 1.6,
                 }}
-              />
-              <Box>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: 16,
-                    lineHeight: 1,
-                    color: Colors["Blue_60"],
-                    margin: "2px 0px",
+              >
+                {testimonial.text}
+              </Typography>
+            </CardContent>
+            <CardActions sx={{ height: "100%", padding: 0 }}>
+              <Box sx={{ display: "flex", gap: 2 }}>
+                <img
+                  src={testimonial.imageUrl}
+                  alt={testimonial.name}
+                  title={testimonial.name}
+                  style={{
+                    width: 50,
+                    height: 50,
+                    borderRadius: "50%",
+                    border: `2px solid ${Colors[testimonial.borderColor]}`,
                   }}
-                >
-                  Juliana, São Paulo
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: 14,
-                    lineHeight: 1,
-                    color: Colors["G_Grey_100"],
-                    margin: "10px 0px",
-                  }}
-                >
-                  Atendida
-                </Typography>
+                />
+                <Box>
+                  <Typography
+                    sx={{
+                      fontWeight: 400,
+                      fontSize: 16,
+                      lineHeight: 1,
+                      color: Colors[testimonial.borderColor],
+                      margin: "2px 0px",
+                    }}
+                  >
+                    {testimonial.name}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: 400,
+                      fontSize: 14,
+                      lineHeight: 1,
+                      color: Colors["G_Grey_100"],
+                      margin: "10px 0px",
+                    }}
+                  >
+                    {testimonial.role}
+                  </Typography>
+                </Box>
               </Box>
-            </Box>
-          </CardActions>
-        </Card>
-        <Card
-          sx={{
-            width: { xs: 299, lg: 499 },
-            height: { xs: 308, lg: 249 },
-            border: `2px solid ${Colors["Green_70"]}`,
-            marginTop: 5,
-            padding: "21px 30px",
-            borderRadius: 2,
-            display: "flex",
-            flexShrink: "0",
-            flexDirection: "column",
-            boxShadow: "none",
-          }}
-        >
-          <CardContent sx={{ padding: 0, marginBottom: 4 }}>
-            <Typography
-              sx={{
-                color: Colors["G_Grey_100"],
-                fontSize: 16,
-                fontWeight: 400,
-                lineHeight: 1.6,
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae
-              ligula sed urna sit sagittis interdum a. Blandit mattis mattis
-              lobortis orci. Facilisis dui sagittis tempor egestas pellentesque
-              eu maecenas. Risus lectus nisl.
-            </Typography>
-          </CardContent>
-          <CardActions sx={{ height: "100%", padding: 0 }}>
-            <Box sx={{ display: "flex", gap: 2 }}>
-              <img
-                src={"/assets/images/photoPlaceholder/jualiana2.webp"}
-                alt="juliana2Image"
-                title="juliana2Image"
-                style={{
-                  width: 50,
-                  height: 50,
-                  borderRadius: "50%",
-                  border: `2px solid ${Colors["Orange_50"]}`,
-                }}
-              />
-              <Box>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: 16,
-                    lineHeight: 1,
-                    color: Colors["Orange_50"],
-                    margin: "2px 0px",
-                  }}
-                >
-                  Juliana, São Paulo
-                </Typography>
-                <Typography
-                  sx={{
-                    fontWeight: 400,
-                    fontSize: 14,
-                    lineHeight: 1,
-                    color: Colors["G_Grey_100"],
-                    margin: "10px 0px",
-                  }}
-                >
-                  Atendida
-                </Typography>
-              </Box>
-            </Box>
-          </CardActions>
-        </Card>
+            </CardActions>
+          </Card>
+        ))}
       </Box>
     </Section>
   );

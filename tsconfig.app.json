@@ -12,6 +12,7 @@
     "composite": true,
     "moduleResolution": "node",
     "moduleDetection": "force",
+    "resolveJsonModule": true,
     "jsx": "react-jsx",
     "outDir": "dist",
 
@@ -25,7 +26,8 @@
       "@components/*": ["./src/components/*"],
       "@components": ["./src/components"],
       "@hooks/*": ["./src/hooks/*"],
-      "@colors": ["./src/styles/tokens"]
+      "@colors": ["./src/styles/tokens"],
+      "@/textContent": ["./src/textContent"]
     }
   },
   "include": [

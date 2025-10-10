@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import {
   Accordion,
   AccordionDetails,
@@ -7,14 +7,20 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { AccordionInfos } from "./data";
+import { loadAccordionData, type AccordionSection } from "./data";
 
 interface Props {
   id: string;
 }
 
 function Accordions({ id }: Props): ReactNode {
-  const section = AccordionInfos.find((sec) => sec.id === id);
+  const [accordionData, setAccordionData] = useState<AccordionSection[]>([]);
+
+  useEffect(() => {
+    void loadAccordionData().then((data) => setAccordionData(data));
+  }, []);
+
+  const section = accordionData.find((sec) => sec.id === id);
 
   if (!section) return null;
 

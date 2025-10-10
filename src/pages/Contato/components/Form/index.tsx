@@ -124,7 +124,9 @@ export function Form() {
         mensagem: "",
       });
       setSelectedOption("");
-      setSuccessMessage("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+      setSuccessMessage(
+        "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+      );
 
       setTimeout(() => setSuccessMessage(""), 7000);
     } catch (error) {
@@ -132,7 +134,7 @@ export function Form() {
       setErrorMessage(
         error instanceof Error
           ? error.message
-          : "Erro ao enviar mensagem. Tente novamente mais tarde."
+          : "Erro ao enviar mensagem. Tente novamente mais tarde.",
       );
       setTimeout(() => setErrorMessage(""), 7000);
     } finally {
@@ -141,6 +143,7 @@ export function Form() {
   };
 
   return (
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     <FormContainer onSubmit={handleSubmit}>
       <FieldWrapper>
         <Label htmlFor="nome">Nome</Label>

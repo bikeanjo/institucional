@@ -17,7 +17,7 @@ import { Box } from "@mui/material";
 import { Colors } from "@colors";
 import { ChevronLeft } from "@mui/icons-material";
 
-interface Articulation {
+interface LocalOrganization {
   id: string;
   name: string;
   state: string;
@@ -33,17 +33,17 @@ interface Articulation {
 }
 
 interface FindLocalArticulationProps {
-  articulations?: Articulation[];
+  localOrg?: LocalOrganization[];
   setSelectedCoords?: React.Dispatch<
     React.SetStateAction<[number, number] | null>
   >;
 }
 
-const defaultArticulations: Articulation[] = [];
+const defaultLocalOrg: LocalOrganization[] = [];
 const noop = () => {};
 
 export default function FindLocalArticulation({
-  articulations = defaultArticulations,
+  localOrg = defaultLocalOrg,
   setSelectedCoords = noop,
 }: FindLocalArticulationProps) {
   const [search, setSearch] = useState<string>("");
@@ -59,10 +59,10 @@ export default function FindLocalArticulation({
     "Sul",
   ];
 
-  const filteredCities = articulations.filter((art) => {
+  const filteredCities = localOrg.filter((org) => {
     const matchesRegion =
-      selectedRegion === "Todas" || art.region === selectedRegion;
-    const matchesSearch = art.name.toLowerCase().includes(search.toLowerCase());
+      selectedRegion === "Todas" || org.region === selectedRegion;
+    const matchesSearch = org.name.toLowerCase().includes(search.toLowerCase());
     return matchesRegion && matchesSearch;
   });
 
@@ -115,8 +115,8 @@ export default function FindLocalArticulation({
       </InputWrapper>
 
       <CityList>
-        {filteredCities.slice(0, 3).map((art, index) => {
-          const isExpanded = expandedCity === art.name;
+        {filteredCities.slice(0, 3).map((org, index) => {
+          const isExpanded = expandedCity === org.name;
           const colorCycle = [
             Colors["Blue_60"],
             Colors["Orange_50"],
@@ -126,26 +126,26 @@ export default function FindLocalArticulation({
 
           return (
             <CityCard
-              key={art.id}
+              key={org.id}
               expanded={isExpanded}
               colorVariant={currentColor}
             >
               <div className="card-content">
                 <div className="image-wrapper">
-                  <img src={art.url} alt={`Logo de ${art.name}`} />
+                  <img src={org.url} alt={`Logo de ${org.name}`} />
                 </div>
                 <div className="card-body">
                   <h5
                     style={{ cursor: "pointer" }}
-                    onClick={() => goToCity(art.coords)}
+                    onClick={() => goToCity(org.coords)}
                   >
-                    {art.state}
+                    {org.state}
                   </h5>
                   <h4
                     style={{ cursor: "pointer" }}
-                    onClick={() => goToCity(art.coords)}
+                    onClick={() => goToCity(org.coords)}
                   >
-                    {art.name}
+                    {org.name}
                   </h4>
 
                   <SocialMediaWrapper>
@@ -153,14 +153,14 @@ export default function FindLocalArticulation({
                       Instagram:{" "}
                       <span>
                         <a
-                          href={`https://www.instagram.com/${art.instagram.replace(
+                          href={`https://www.instagram.com/${org.instagram.replace(
                             "@",
                             "",
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {art.instagram}
+                          {org.instagram}
                         </a>
                       </span>
                     </p>
@@ -168,18 +168,18 @@ export default function FindLocalArticulation({
                       Facebook:{" "}
                       <span>
                         <a
-                          href={`https://www.facebook.com/${art.facebook}`}
+                          href={`https://www.facebook.com/${org.facebook}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {art.facebook}
+                          {org.facebook}
                         </a>
                       </span>
                     </p>
                   </SocialMediaWrapper>
 
                   <Button
-                    onClick={() => toggleCity(art.name)}
+                    onClick={() => toggleCity(org.name)}
                     expanded={isExpanded}
                   >
                     {isExpanded ? (
@@ -212,16 +212,16 @@ export default function FindLocalArticulation({
                   {isExpanded && (
                     <Info>
                       <p>
-                        <b>Local:</b> {art.location}
+                        <b>Local:</b> {org.location}
                       </p>
                       <p>
-                        <b>Data:</b> {art.date}
+                        <b>Data:</b> {org.date}
                       </p>
                       <p>
-                        <b>Horário:</b> {art.time}
+                        <b>Horário:</b> {org.time}
                       </p>
                       <p>
-                        <b>Inscrições:</b> {art.registration}
+                        <b>Inscrições:</b> {org.registration}
                       </p>
                     </Info>
                   )}

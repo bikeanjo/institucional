@@ -1,0 +1,42 @@
+[
+  {
+    "id": "itau",
+    "name": "Itaú",
+    "url": "https://www.itau.com.br",
+    "imageUrl": "/assets/images/Home/Partners/itau.webp",
+    "height": { "xs": 44, "lg": 88 },
+    "width": { "xs": 44, "lg": 88 }
+  },
+  {
+    "id": "cca",
+    "name": "Carfree Cities Alliance",
+    "url": "https://www.carfreealliance.org/",
+    "imageUrl": "/assets/images/Home/Partners/cca.webp",
+    "height": { "xs": 73, "lg": 106 },
+    "width": { "xs": 79.5, "lg": 159 }
+  },
+  {
+    "id": "tembici",
+    "name": "Tembici",
+    "url": "https://www.tembici.com.br/pt/",
+    "imageUrl": "/assets/images/Home/Partners/tembici.webp",
+    "height": { "xs": 50.5, "lg": 100 },
+    "width": { "xs": 60.88, "lg": 122 }
+  },
+  {
+    "id": "cycling-cities",
+    "name": "Cycling Cities",
+    "url": "https://www.cyclingcities.info/",
+    "imageUrl": "/assets/images/Home/Partners/cc.webp",
+    "height": { "xs": 23.5, "lg": 47 },
+    "width": { "xs": 152, "lg": 304 }
+  },
+  {
+    "id": "ucb",
+    "name": "União de Ciclistas do Brasil",
+    "url": "https://uniaodeciclistas.org.br/",
+    "imageUrl": "/assets/images/Home/Partners/ucb.webp",
+    "height": { "xs": 44.5, "lg": 89 },
+    "width": { "xs": 61, "lg": 122 }
+  }
+]
