@@ -1,21 +1,31 @@
-import { type ReactNode, useState, useMemo } from "react";
+import { type ReactNode, useState, useMemo, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import { Title, SubTitle, Text, Button, Section } from "@components";
 import TimelineComponent from "../../../BikeAnjoInTheMedia/components/Timeline/TimelineComponent";
-import { timelineData, type TimelineYear } from "./data";
+import { type TimelineYear } from "./data";
 import { Link } from "react-router-dom";
+import { loadTextContent } from "@/textContent";
 
 function OurStory(): ReactNode {
+  const [timelineData, setTimelineData] = useState<TimelineYear[]>([]);
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    void loadTextContent("ourStory").then((data) =>
+      setTimelineData(data as TimelineYear[]),
+    );
+  }, []);
+
   const availableYears = useMemo(
     () => timelineData.map((data) => data.year),
-    [],
+    [timelineData],
   );
 
   const [selectedYear, setSelectedYear] = useState<number>(availableYears[0]);
 
   const currentYearData = useMemo<TimelineYear | undefined>(
     () => timelineData.find((data) => data.year === selectedYear),
-    [selectedYear],
+    [selectedYear, timelineData],
   );
 
   const handleYearSelection = (year: number) => {

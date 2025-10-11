@@ -1,4 +1,4 @@
-import { useState, type JSX } from "react";
+import { useState, useEffect, type JSX } from "react";
 import {
   Header,
   Container,
@@ -12,7 +12,8 @@ import {
 import FindLocalArticulation from "../SocialMedia/components/FollowLocalArticulations/FindLocalArticulation";
 import AboutEBA from "./AboutEBA";
 import CityNotListed from "./CityNotListed";
-import { articulations } from "@components/Articulations";
+import { loadTextContent } from "@/textContent";
+import type { LocalOrganization } from "@components/Articulations";
 import { Colors } from "@colors";
 
 const findCitySteps = [
@@ -46,6 +47,14 @@ function EscolaBikeAnjo(): JSX.Element {
   const [selectedCoords, setSelectedCoords] = useState<[number, number] | null>(
     null,
   );
+  const [localOrg, setLocalOrg] = useState<LocalOrganization[]>([]);
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    void loadTextContent("localOrg").then((data) =>
+      setLocalOrg(data as LocalOrganization[]),
+    );
+  }, []);
 
   return (
     <>
@@ -70,12 +79,12 @@ function EscolaBikeAnjo(): JSX.Element {
             autonomia.
           </Text>
           <MapInteractive
-            articulations={articulations}
+            localOrg={localOrg}
             selectedCoords={selectedCoords}
             setSelectedCoords={setSelectedCoords}
           />
           <FindLocalArticulation
-            articulations={articulations}
+            localOrg={localOrg}
             setSelectedCoords={setSelectedCoords}
           />
         </Section>

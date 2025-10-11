@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "text": "Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a. Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu maecenas. Risus lectus nisl.",
+    "name": "Juliana, São Paulo",
+    "role": "Atendida",
+    "imageUrl": "/assets/images/photoPlaceholder/juliana.webp",
+    "borderColor": "Blue_60"
+  },
+  {
+    "id": 2,
+    "text": "Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a. Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu maecenas. Risus lectus nisl.",
+    "name": "Juliana, São Paulo",
+    "role": "Atendida",
+    "imageUrl": "/assets/images/photoPlaceholder/jualiana2.webp",
+    "borderColor": "Orange_50"
+  }
+]

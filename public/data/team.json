@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "colorCard": "var(--mui-palette-Green_70)",
+    "imageUrl": "/assets/images/WhoWeAre/anderson-paz.webp",
+    "name": "Anderson Paz",
+    "position": "Diretor Presidente",
+    "from": "Brasilia - Distrito Federal"
+  },
+  {
+    "id": 2,
+    "colorCard": "var(--mui-palette-Orange_50)",
+    "imageUrl": "/assets/images/WhoWeAre/ian-thomaz.webp",
+    "name": "Ian Thomaz",
+    "position": "Diretor Financeiro",
+    "from": "São Paulo - São Paulo"
+  },
+  {
+    "id": 3,
+    "colorCard": "var(--mui-palette-Blue_60)",
+    "imageUrl": "/assets/images/WhoWeAre/milvo-rossarola.webp",
+    "name": "Milvo Rossarola",
+    "position": "Diretor Administrativo",
+    "from": "Rio de Janeiro - RJ"
+  },
+  {
+    "id": 4,
+    "colorCard": "var(--mui-palette-Green_70)",
+    "imageUrl": "/assets/images/WhoWeAre/vivian-garelli.webp",
+    "name": "Vivian Garelli",
+    "position": "Conselheira Fiscal",
+    "from": "Niterói - RJ"
+  },
+  {
+    "id": 5,
+    "colorCard": "var(--mui-palette-Pink_50)",
+    "imageUrl": "/assets/images/WhoWeAre/martina-horvath.webp",
+    "name": "Martina Horvath",
+    "position": "Conselheira Fiscal",
+    "from": "Mairiporã - São Paulo"
+  },
+  {
+    "id": 6,
+    "colorCard": "var(--mui-palette-Green_70)",
+    "imageUrl": "/assets/images/WhoWeAre/vicentese-s-junior.webp",
+    "name": "Vicentese S Junior",
+    "position": "Conselheiro Fiscal",
+    "from": "Volta Redonda - RJ"
+  }
+]

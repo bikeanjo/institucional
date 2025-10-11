@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import L from "leaflet";
 import type { Map } from "leaflet";
 
-interface Articulation {
+interface LocalOrganization {
   id: string;
   name: string;
   state: string;
@@ -20,7 +20,7 @@ interface Articulation {
 }
 
 interface MapInteractiveProps {
-  articulations: Articulation[];
+  localOrg: LocalOrganization[];
   selectedCoords: [number, number] | null;
   setSelectedCoords: React.Dispatch<
     React.SetStateAction<[number, number] | null>
@@ -69,7 +69,7 @@ function MarkerWithZoom({
 }
 
 export default function MapInteractive({
-  articulations,
+  localOrg,
   selectedCoords,
 }: MapInteractiveProps) {
   return (
@@ -79,14 +79,14 @@ export default function MapInteractive({
       style={{ height: "400px", width: "100%", borderRadius: "12px" }}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      {articulations.map((art) => (
-        <MarkerWithZoom key={art.id} coords={art.coords}>
+      {localOrg.map((org) => (
+        <MarkerWithZoom key={org.id} coords={org.coords}>
           <Popup>
-            <strong>{art.name}</strong> <br />
-            {art.name} - {art.state} <br />
-            {art.location} <br />
-            Instagram: {art.instagram} <br />
-            Facebook: {art.facebook}
+            <strong>{org.name}</strong> <br />
+            {org.name} - {org.state} <br />
+            {org.location} <br />
+            Instagram: {org.instagram} <br />
+            Facebook: {org.facebook}
           </Popup>
         </MarkerWithZoom>
       ))}

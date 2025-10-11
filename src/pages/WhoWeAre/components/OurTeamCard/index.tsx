@@ -1,78 +1,32 @@
-import { useRef, useState, type JSX } from "react";
+import { useRef, useState, useEffect, type JSX } from "react";
 import { Box, Typography } from "@mui/material";
 import ProjectBox from "../../../Home/components/ProjectBox";
 import ProjectInfo from "../../../Home/components/ProjectInfo";
-import AndersonPaz from "../../../../../public/assets/images/WhoWeAre/anderson-paz.webp";
-import VivianGarelli from "../../../../../public/assets/images/WhoWeAre/vivian-garelli.webp";
-import IanThomaz from "../../../../../public/assets/images/WhoWeAre/ian-thomaz.webp";
-import MilvoRossarola from "../../../../../public/assets/images/WhoWeAre/milvo-rossarola.webp";
-import MartinaHorvath from "../../../../../public/assets/images/WhoWeAre/martina-horvath.webp";
-import VicenteseSJunior from "../../../../../public/assets/images/WhoWeAre/vicentese-s-junior.webp";
 import "material-icons/iconfont/material-icons.css";
 import { Carrousel, Controls, MobileControls, PaginationDot } from "./styles";
 import { Button } from "@components";
+import { loadTextContent } from "@/textContent";
+
+type TeamMember = {
+  id: number;
+  colorCard: string;
+  imageUrl: string;
+  name: string;
+  position: string;
+  from: string;
+};
 
 function OurTeam(): JSX.Element {
   const carrousel = useRef<HTMLDivElement | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardsInfo, setCardsInfo] = useState<TeamMember[]>([]);
 
-  const cardsInfo: {
-    id: number;
-    colorCard: string;
-    imageUrl: string;
-    name: string;
-    position: string;
-    from: string;
-  }[] = [
-    {
-      id: 1,
-      colorCard: "var(--mui-palette-Green_70)",
-      imageUrl: AndersonPaz,
-      name: "Anderson Paz",
-      position: "Diretor Presidente",
-      from: "Brasilia - Distrito Federal",
-    },
-    {
-      id: 2,
-      colorCard: "var(--mui-palette-Orange_50)",
-      imageUrl: IanThomaz,
-      name: "Ian Thomaz",
-      position: "Diretor Financeiro",
-      from: "São Paulo - São Paulo",
-    },
-    {
-      id: 3,
-      colorCard: "var(--mui-palette-Blue_60)",
-      imageUrl: MilvoRossarola,
-      name: "Milvo Rossarola",
-      position: "Diretor Administrativo",
-      from: "Rio de Janeiro - RJ",
-    },
-    {
-      id: 4,
-      colorCard: "var(--mui-palette-Green_70)",
-      imageUrl: VivianGarelli,
-      name: "Vivian Garelli",
-      position: "Conselheira Fiscal",
-      from: "Niterói - RJ",
-    },
-    {
-      id: 5,
-      colorCard: "var(--mui-palette-Pink_50)",
-      imageUrl: MartinaHorvath,
-      name: "Martina Horvath",
-      position: "Conselheira Fiscal",
-      from: "Mairiporã - São Paulo",
-    },
-    {
-      id: 6,
-      colorCard: "var(--mui-palette-Green_70)",
-      imageUrl: VicenteseSJunior,
-      name: "Vicentese S Junior",
-      position: "Conselheiro Fiscal",
-      from: "Volta Redonda - RJ",
-    },
-  ];
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    void loadTextContent("team").then((data) =>
+      setCardsInfo(data as TeamMember[]),
+    );
+  }, []);
 
   const gap = 40;
   const cardWidth = 328;

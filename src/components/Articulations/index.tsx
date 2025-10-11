@@ -1,8 +1,37 @@
+import { loadTextContent } from "@/textContent";
+
+export type LocalOrganization = {
+  id: string;
+  name: string;
+  state: string;
+  region: string;
+  instagram: string;
+  facebook: string;
+  location: string;
+  date: string;
+  time: string;
+  registration: string;
+  url: string;
+  coords: [number, number];
+};
+
+// Helper function for creating coordinate tuples
 export const tupleCoords = (lat: number, lng: number): [number, number] => [
   lat,
   lng,
 ];
 
+// Load local organizations from JSON
+// Note: This export is async. Use loadLocalOrg() or loadTextContent('localOrg') in components
+export let localOrg: LocalOrganization[] = [];
+
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+void loadTextContent("localOrg").then((data) => {
+  localOrg = data as LocalOrganization[];
+});
+
+// Deprecated: Use localOrg instead
+// @deprecated Use localOrg or loadTextContent('localOrg') in components
 export const articulations = [
   {
     id: "abc-sp",

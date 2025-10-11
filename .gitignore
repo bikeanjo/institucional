@@ -7,6 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# API logs (keep directory structure, ignore log files)
+api/logs/*.json
+!api/logs/.gitkeep
+
 # Dependency directories
 node_modules/
 
@@ -40,3 +44,6 @@ storybook-static
 *.njsproj
 *.sln
 *.sw?
+
+# Personal notes and configs
+/ianthomaz

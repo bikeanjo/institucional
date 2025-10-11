@@ -11,6 +11,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "src/components"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
       "@colors": path.resolve(__dirname, "src/styles/tokens"),
+      "@/textContent": path.resolve(__dirname, "src/textContent"),
     },
   },
   plugins: [

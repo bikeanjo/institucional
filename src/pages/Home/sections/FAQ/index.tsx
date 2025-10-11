@@ -6,6 +6,8 @@ import { SubTitle, Section } from "@components";
 import { Colors } from "@colors";
 import { Link } from "react-router";
 
+// NOTA: Este ABOUT (FAQ da Home) contém componentes React (<Link>).
+// Como são 12 perguntas que mudam raramente, por enquanto manter hardcoded.
 const accordionItems = [
   {
     title: "O que é a Bike Anjo?",
