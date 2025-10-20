@@ -17,6 +17,7 @@ import TimelineCourse from "./components/TimelineCourse";
 import Accordion from "./components/Accordion";
 import { Link } from "react-router-dom";
 import { Colors } from "@colors";
+import SEO from "@components/Seo/seo";
 
 function TakeOurCourse(): ReactNode {
   const Hero = {
@@ -44,6 +45,8 @@ function TakeOurCourse(): ReactNode {
 
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Faça nosso Curso Bike Anjo</h2>
       </Header>

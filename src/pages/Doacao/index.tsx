@@ -14,6 +14,7 @@ import CopyInput from "./components/copyInput";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { Link } from "react-router-dom";
 import { Colors } from "@colors";
+import SEO from "@components/Seo/seo";
 
 const Doacao = (): JSX.Element => {
   const Hero = {
@@ -32,6 +33,8 @@ const Doacao = (): JSX.Element => {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Doe</h2>
       </Header>

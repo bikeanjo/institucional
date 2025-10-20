@@ -13,6 +13,7 @@ import FollowLocalArticulations from "../SocialMedia/components/FollowLocalArtic
 import { Box } from "@mui/material";
 import { GridContainer } from "../Volunteering/components/HowToJoinCards/styles";
 import HowToJoinCards from "../Volunteering/components/HowToJoinCards";
+import SEO from "@components/Seo/seo";
 
 function HowWeHelp(): JSX.Element {
   const Hero = {
@@ -23,6 +24,8 @@ function HowWeHelp(): JSX.Element {
 
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Como nós ajudamos</h2>
       </Header>

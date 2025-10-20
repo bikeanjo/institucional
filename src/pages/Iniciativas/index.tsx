@@ -10,6 +10,7 @@ import {
 import { ProjectCards } from "./components/ProjectCards";
 import { CampaignCards } from "./components/CampaignCards";
 import Events from "./components/Events";
+import SEO from "@components/Seo/seo";
 
 const Iniciativas: React.FC = () => {
   const Hero = {
@@ -19,6 +20,8 @@ const Iniciativas: React.FC = () => {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Iniciativas</h2>
       </Header>

@@ -3,6 +3,7 @@ import { Header, BreadCrumb, ScrollSpyMenu, Container } from "@components";
 import FollowSocialMedia from "./components/FollowSocialMedia";
 import Share from "./components/Share";
 import LocalArticulations from "./components/FollowLocalArticulations";
+import SEO from "@components/Seo/seo";
 
 function SocialMedia(): JSX.Element {
   const Hero = {
@@ -12,6 +13,8 @@ function SocialMedia(): JSX.Element {
   };
   return (
     <>
+       <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Redes Sociais</h2>
       </Header>

@@ -4,6 +4,7 @@ import CarouselAttentionCards from "./components/CarouselAttentionCards";
 import SupportLinksSection from "./components/Links";
 import CarouselTipCards from "./components/CarouselTipCards";
 import SocialContent from "./components/SocialContent";
+import SEO from "@components/Seo/seo";
 
 const tipSteps = [
   {
@@ -82,6 +83,8 @@ function CyclingTips(): JSX.Element {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Dicas para Pedalar</h2>
       </Header>

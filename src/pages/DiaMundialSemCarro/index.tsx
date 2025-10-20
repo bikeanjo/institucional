@@ -9,6 +9,7 @@ import {
   Section,
 } from "@components";
 import { Box } from "@mui/material";
+import SEO from "@components/Seo/seo";
 
 function DiaMundialSemCarro(): JSX.Element {
   const Hero = {
@@ -18,6 +19,8 @@ function DiaMundialSemCarro(): JSX.Element {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2> Dia Mundial Sem Carro </h2>
       </Header>

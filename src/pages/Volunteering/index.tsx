@@ -14,6 +14,7 @@ import HowToJoinCards from "./components/HowToJoinCards";
 import { GridContainer } from "./components/HowToJoinCards/styles";
 import ProjectThatMoveUs from "../Home/sections/ProjectThatMoveUs";
 import { Link } from "react-router-dom";
+import SEO from "@components/Seo/seo";
 
 function Volunteering(): ReactNode {
   const Hero = {
@@ -23,6 +24,8 @@ function Volunteering(): ReactNode {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Voluntariado</h2>
       </Header>

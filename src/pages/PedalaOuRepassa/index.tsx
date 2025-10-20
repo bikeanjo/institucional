@@ -12,6 +12,7 @@ import {
 import AboutPedalaOuRepassa from "./AboutPedalaOuRepassa";
 import CityNotListed from "./CityNotListed";
 import { Box } from "@mui/material";
+import SEO from "@components/Seo/seo";
 
 function formatDescription(description: string) {
   return description
@@ -63,6 +64,8 @@ function PedalaOuRepassa(): JSX.Element {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Pedala ou Repassa</h2>
       </Header>

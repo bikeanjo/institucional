@@ -14,6 +14,7 @@ import { Box } from "@mui/material";
 import { Cards } from "./Components/Cards";
 import Fac from "./Components/FAC";
 import { Link } from "react-router-dom";
+import SEO from "@components/Seo/seo";
 
 function BikeAnjas(): JSX.Element {
   const Hero = {
@@ -23,6 +24,7 @@ function BikeAnjas(): JSX.Element {
   };
   return (
     <>
+      <SEO />
       <Header secondary Hero={Hero}>
         <h2> Bike Anjas </h2>
       </Header>

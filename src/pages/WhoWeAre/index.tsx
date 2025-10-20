@@ -16,6 +16,7 @@ import OurValues from "./sections/OurValues";
 import OurStory from "./sections/OurStory";
 import Transparency from "./sections/Transparency";
 import { Colors } from "@colors";
+import SEO from "@components/Seo/seo";
 
 function WhoWeAre(): ReactNode {
   const Hero = {
@@ -25,6 +26,8 @@ function WhoWeAre(): ReactNode {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Quem Somos</h2>
       </Header>

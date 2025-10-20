@@ -5,6 +5,7 @@ import CarouselTeachingCards from "./components/CarouselTeachingCards";
 import SocialContent from "./components/SocialContent";
 import EngageVolunteers from "./components/EngageVolunteers";
 import RideWithVoice from "./components/RideWithVoice";
+import SEO from "@components/Seo/seo";
 
 const teachingSteps = [
   {
@@ -59,6 +60,8 @@ function CyclingTips(): JSX.Element {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Dicas para Bike Anjo</h2>
       </Header>

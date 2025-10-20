@@ -2,6 +2,7 @@ import type { JSX } from "react";
 import { Header, Container, Text, Section } from "@components";
 import { Form } from "./components/Form";
 import { Colors } from "@colors";
+import SEO from "@components/Seo/seo";
 
 function Contact(): JSX.Element {
   const Hero = {
@@ -11,6 +12,8 @@ function Contact(): JSX.Element {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Contato</h2>
       </Header>

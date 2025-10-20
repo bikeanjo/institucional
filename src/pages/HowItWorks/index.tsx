@@ -8,6 +8,7 @@ import {
 } from "@components";
 import LearningCarousel from "./components/LearningCarousel";
 import { Box } from "@mui/material";
+import SEO from "@components/Seo/seo";
 
 const learnSteps = [
   {
@@ -60,6 +61,8 @@ function HowItWorks(): JSX.Element {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Como Funciona</h2>
       </Header>

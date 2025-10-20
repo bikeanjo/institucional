@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Header, Text, BreadCrumb, ScrollSpyMenu } from "@components";
 import Timeline from "./components/Timeline";
 import { Container } from "./styles";
+import SEO from "@components/Seo/seo";
 
 function BikeAnjoInTheMedia(): ReactNode {
   const Hero = {
@@ -11,6 +12,8 @@ function BikeAnjoInTheMedia(): ReactNode {
   };
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Bike Anjo na Mídia</h2>
       </Header>

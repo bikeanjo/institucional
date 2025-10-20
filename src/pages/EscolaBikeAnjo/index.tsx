@@ -15,6 +15,7 @@ import CityNotListed from "./CityNotListed";
 import { loadTextContent } from "@/textContent";
 import type { LocalOrganization } from "@components/Articulations";
 import { Colors } from "@colors";
+import SEO from "@components/Seo/seo";
 
 const findCitySteps = [
   {
@@ -58,6 +59,8 @@ function EscolaBikeAnjo(): JSX.Element {
 
   return (
     <>
+      <SEO />
+
       <Header secondary Hero={Hero}>
         <h2>Escola Bike Anjo (EBA)</h2>
       </Header>

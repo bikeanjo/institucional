@@ -23,7 +23,7 @@ const AjudeComoInstituicao = () => {
   };
   return (
     <>
-      < SEO />
+      <SEO />
       <Header secondary Hero={Hero}>
         <h2>Ajude como Instituição</h2>
       </Header>
