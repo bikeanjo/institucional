@@ -13,6 +13,7 @@ import {
 } from "@components";
 import { Link } from "react-router-dom";
 import { Colors } from "@colors";
+import SEO from "@components/Seo/seo";
 
 const AjudeComoInstituicao = () => {
   const Hero = {
@@ -22,6 +23,7 @@ const AjudeComoInstituicao = () => {
   };
   return (
     <>
+      < SEO />
       <Header secondary Hero={Hero}>
         <h2>Ajude como Instituição</h2>
       </Header>
