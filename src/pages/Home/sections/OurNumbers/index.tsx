@@ -5,8 +5,8 @@ import GridItem from "./components/GridItem";
 import { Colors } from "@colors";
 import { Section } from "@components";
 import "./styles.css";
-import PublicIcon from "../../../../../public/assets/icons/Home/OurNumbers/public.svg?react";
-import BikerIcon from "../../../../../public/assets/icons/Home/OurNumbers/biker.svg?react";
+import PublicIcon from "/assets/icons/Home/OurNumbers/public.svg?url";
+import BikerIcon from "/assets/icons/Home/OurNumbers/biker.svg?url";
 
 function OurNumbers(): JSX.Element {
   return (
@@ -75,7 +75,12 @@ function OurNumbers(): JSX.Element {
               gap: "16px",
             }}
           >
-            <BikerIcon className="biker-icon" />
+            <Box
+              component="img"
+              src={BikerIcon}
+              alt="Ícone de ciclista"
+              className="biker-icon"
+            />
             <Box
               sx={{
                 display: "flex",
@@ -163,7 +168,12 @@ function OurNumbers(): JSX.Element {
                 alignItems: { xs: "center", lg: "baseline" },
               }}
             >
-              <PublicIcon className="globe-icon" />
+              <Box
+                component="img"
+                src={PublicIcon}
+                alt="Ícone de público"
+                className="globe-icon"
+              />
               <Typography
                 sx={{
                   fontSize: { xs: 42, md: 64 },

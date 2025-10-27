@@ -59,7 +59,7 @@ function CyclingTips(): JSX.Element {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Dicas para Bike Anjo</h2>
       </Header>
 

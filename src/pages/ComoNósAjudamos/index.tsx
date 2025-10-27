@@ -23,7 +23,7 @@ function HowWeHelp(): JSX.Element {
 
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Como nós ajudamos</h2>
       </Header>
 

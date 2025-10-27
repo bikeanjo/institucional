@@ -12,7 +12,7 @@ import { Section, Carrousel, Button } from "@components";
 function ProjectThatMoveUs(): JSX.Element {
   const cardsInfo: {
     id: number;
-    colorCard: string;
+    $colorCard: string;
     imageUrl: string;
     title: string;
     subtitle: string;
@@ -20,7 +20,7 @@ function ProjectThatMoveUs(): JSX.Element {
   }[] = [
     {
       id: 1,
-      colorCard: "#1C97C5",
+      $colorCard: "#1C97C5",
       imageUrl: "/assets/images/ProjectsCarousel/eba.webp",
       title: "Escola Bike Anjo",
       subtitle: "Projetos",
@@ -28,7 +28,7 @@ function ProjectThatMoveUs(): JSX.Element {
     },
     {
       id: 2,
-      colorCard: "#ED601C",
+      $colorCard: "#ED601C",
       imageUrl: "/assets/images/ProjectsCarousel/bike-anjas.webp",
       title: "Bike Anjas",
       subtitle: "Projetos",
@@ -36,7 +36,7 @@ function ProjectThatMoveUs(): JSX.Element {
     },
     {
       id: 3,
-      colorCard: "#E1216D",
+      $colorCard: "#E1216D",
       imageUrl: "/assets/images/ProjectsCarousel/pedala-ou-repassa.webp",
       title: "Pedala ou Repassa",
       subtitle: "Projetos",
@@ -44,7 +44,7 @@ function ProjectThatMoveUs(): JSX.Element {
     },
     {
       id: 4,
-      colorCard: "#1C97C5",
+      $colorCard: "#1C97C5",
       imageUrl: "/assets/images/ProjectsCarousel/de-bike-ao-trabalho.webp",
       title: "De Bike Ao Trabalho",
       subtitle: "Projetos",
@@ -52,7 +52,7 @@ function ProjectThatMoveUs(): JSX.Element {
     },
     {
       id: 5,
-      colorCard: "#4D7A18",
+      $colorCard: "#4D7A18",
       imageUrl: "/assets/images/ProjectsCarousel/dia-mundial-sem-carro.webp",
       title: "Dia Mundial Sem Carro",
       subtitle: "Campanhas",
@@ -60,7 +60,7 @@ function ProjectThatMoveUs(): JSX.Element {
     },
     {
       id: 6,
-      colorCard: "#ED601C",
+      $colorCard: "#ED601C",
       imageUrl: "/assets/images/ProjectsCarousel/bicicleta-nos-planos.webp",
       title: "Bicicleta nos Planos",
       subtitle: "Campanhas",
@@ -68,7 +68,7 @@ function ProjectThatMoveUs(): JSX.Element {
     },
     {
       id: 7,
-      colorCard: "#1C97C5",
+      $colorCard: "#1C97C5",
       imageUrl: "/assets/images/ProjectsCarousel/anjos-na-sua-cidade.webp",
       title: "Anjos na sua Cidade",
       subtitle: "Articulações Locais",
@@ -112,7 +112,7 @@ function ProjectThatMoveUs(): JSX.Element {
         }}
       >
         {cardsInfo.map((card) => (
-          <ProjectBox key={card.id} colorCard={card.colorCard}>
+          <ProjectBox key={card.id} $colorCard={card.$colorCard}>
             <img src={card.imageUrl} alt={"Logo " + card.title} />
             <ProjectInfo>
               <Typography
@@ -127,7 +127,7 @@ function ProjectThatMoveUs(): JSX.Element {
                 paddingBottom={"24px"}
                 fontWeight={700}
                 fontSize={24}
-                color={card.colorCard}
+                color={card.$colorCard}
               >
                 {card.title}
               </Typography>

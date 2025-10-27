@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Box, Typography } from "@mui/material";
 import { Title, SubTitle, Section } from "@components";
-import ImgWhatIsBikeAnjo from "../../../../../public/assets/images/WhoWeAre/what-is-bike-anjo.webp";
+import ImgWhatIsBikeAnjo from "/assets/images/WhoWeAre/what-is-bike-anjo.webp";
 import { Colors } from "@colors";
 
 export function WhatIsBikeAnjo(): ReactNode {

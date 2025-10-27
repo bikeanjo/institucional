@@ -649,7 +649,7 @@ const Header: React.FC = () => {
                         }}
                       >
                         {item.children.map((subItem, subIdx) => (
-                          <React.Fragment key={subIdx + " accordion-sub-item"}>
+                          <div key={subIdx + " accordion-sub-item"}>
                             <Box
                               sx={{
                                 height: "54px",
@@ -709,7 +709,7 @@ const Header: React.FC = () => {
                                   </Typography>
                                 </Box>
                               ))}
-                          </React.Fragment>
+                          </div>
                         ))}
                       </Box>
                     </AccordionDetails>

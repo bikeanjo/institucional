@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 # Project name is set to bikeanjo-institucional
 name: bikeanjo-institucional
@@ -42,4 +42,3 @@ services:
 networks:
   bikeanjo-network:
     driver: bridge
-

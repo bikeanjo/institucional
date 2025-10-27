@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Colors } from "@colors";
 
 export interface HeaderProps {
-  secondary?: boolean;
+  $secondary?: boolean;
   gap?: string;
-  padding?: string;
-  height?: string;
-  Hero?: {
+  $padding?: string;
+  $height?: string;
+  $Hero?: {
     url: string;
     backgroundPositionDesktop: string;
     backgroundPositionMobile: string;
@@ -14,21 +14,21 @@ export interface HeaderProps {
 }
 
 const Header = styled.div<HeaderProps>(
-  ({ theme, secondary, gap, height, Hero }) => ({
+  ({ theme, $secondary, gap, $height, $Hero }) => ({
     width: "100%",
     paddingBottom: "32px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
-    backgroundColor: secondary
+    backgroundColor: $secondary
       ? "var(--mui-palette-secondary-main)"
       : "transparent",
     gap: gap || "0",
     alignItems: "center",
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.7) 100%), url(${Hero?.url ? Hero.url : "/assets/header/header-image.webp"})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.7) 100%), url(${$Hero?.url ? $Hero.url : "/assets/header/header-image.webp"})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: Hero?.backgroundPositionMobile,
+    backgroundPosition: $Hero?.backgroundPositionMobile,
 
     "& h2": {
       color: Colors["G_White"],
@@ -52,8 +52,8 @@ const Header = styled.div<HeaderProps>(
     },
 
     [theme.breakpoints.up("lg")]: {
-      height: height || "320px",
-      backgroundPosition: Hero?.backgroundPositionDesktop,
+      height: $height || "320px",
+      backgroundPosition: $Hero?.backgroundPositionDesktop,
     },
   }),
 );

@@ -70,6 +70,7 @@ API de email disponível no diretório `/api`.
 **Nota:** A API não funciona no Netlify - requer deploy separado em servidor.
 
 Deploy via Docker disponível através do `deploy/start.sh`:
+
 - `./deploy/start.sh -stage` - Testes locais
 - `./deploy/start.sh -prod` - Deploy em produção (requer credenciais e acesso ao servidor)
 
@@ -91,18 +92,22 @@ Este projeto está sob a licença [GPL-3.0](LICENSE.md).
 ## Equipe
 
 ### Design
-- **Teko** - Design e identidade visual 
+
+- **Teko** - Design e identidade visual
 
 ### Desenvolvimento
+
 - **Lucas Guima** ([@lguima](https://github.com/lguima)) - Desenvolvimento inicial
 - **Sarah Yukino Nakada** ([@sarassaura](https://github.com/sarassaura)) - Desenvolvimento principal
 - **Silvia Abe** ([@silviaabe](https://github.com/silviaabe)) - Layout e componentes
 
 ### Colaborações
+
 - [@mariagmss](https://github.com/mariagmss)
 - [@jamile-xavier](https://github.com/jamile-xavier)
 
 ### Coordenação
+
 - **Julia Guzman** - Gerente de projeto
 - **Ian Thomaz** ([@ianthomaz](https://github.com/ianthomaz)) - Delivery
 

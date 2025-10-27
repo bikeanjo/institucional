@@ -23,7 +23,7 @@ function Volunteering(): ReactNode {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Voluntariado</h2>
       </Header>
 
