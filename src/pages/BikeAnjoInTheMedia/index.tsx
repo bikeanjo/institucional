@@ -11,7 +11,7 @@ function BikeAnjoInTheMedia(): ReactNode {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Bike Anjo na Mídia</h2>
       </Header>
 

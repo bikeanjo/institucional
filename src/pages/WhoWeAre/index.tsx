@@ -25,7 +25,7 @@ function WhoWeAre(): ReactNode {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Quem Somos</h2>
       </Header>
 

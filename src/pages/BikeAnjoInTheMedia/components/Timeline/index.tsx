@@ -15,8 +15,8 @@ import {
   BoxInfos,
   InfoName,
 } from "./styles";
-import CalendarIcon from "../../../../../public/assets/icons/calendar.svg";
-import LocationIcon from "../../../../../public/assets/icons/location.svg";
+import CalendarIcon from "/assets/icons/calendar.svg";
+import LocationIcon from "/assets/icons/location.svg";
 import TimelineComponent from "./TimelineComponent";
 import { mediaIcons } from "./midiaIcons";
 import { loadTextContent } from "@/textContent";
@@ -27,9 +27,13 @@ function Timeline(): ReactNode {
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    void loadTextContent("media").then((data) =>
-      setTimelineData(data as TimelineYear[]),
-    );
+    void loadTextContent("media")
+      .then((data) => {
+        setTimelineData(data as TimelineYear[]);
+      })
+      .catch((error) => {
+        console.error("❌ Timeline: Erro ao carregar JSON media:", error);
+      });
   }, []);
 
   const availableYears = useMemo(
@@ -37,7 +41,16 @@ function Timeline(): ReactNode {
     [timelineData],
   );
 
-  const [selectedYear, setSelectedYear] = useState<number>(availableYears[0]);
+  const [selectedYear, setSelectedYear] = useState<number | undefined>(
+    undefined,
+  );
+
+  // Definir o primeiro ano quando os dados estiverem carregados
+  useEffect(() => {
+    if (availableYears.length > 0 && selectedYear === undefined) {
+      setSelectedYear(availableYears[0]);
+    }
+  }, [availableYears, selectedYear]);
 
   const currentYearData = useMemo<TimelineYear | undefined>(
     () => timelineData.find((data) => data.year === selectedYear),
@@ -48,8 +61,9 @@ function Timeline(): ReactNode {
     setSelectedYear(year);
   };
 
-  if (!currentYearData) return null;
-
+  if (!currentYearData) {
+    return null;
+  }
   return (
     <>
       <Container>

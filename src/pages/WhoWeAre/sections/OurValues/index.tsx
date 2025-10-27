@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import type { ReactNode } from "react";
 import { Title, Text, Section } from "@components";
 import { Subtitle, SummaryBox, SummaryText } from "./styles";
-import ValueChart from "../../../../../public/assets/images/WhoWeAre/value-chart.webp";
+import ValueChart from "/assets/images/WhoWeAre/value-chart.webp";
 import Accordion from "../../components/Accordions";
 import { Box } from "@mui/material";
 

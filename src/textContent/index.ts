@@ -29,13 +29,23 @@ export type ContentKey =
  *   Change base URL to: /api/cms/${key}
  */
 export async function loadTextContent(key: ContentKey): Promise<unknown> {
-  // Fetch JSON from public/data/ folder
-  // Files are NOT bundled, so you can update them without rebuild!
-  const response = await fetch(`/data/${key}.json`);
+  try {
+    // Fetch JSON from public/data/ folder
+    // Files are NOT bundled, so you can update them without rebuild!
+    const response = await fetch(`/data/${key}.json`);
 
-  if (!response.ok) {
-    throw new Error(`Failed to load content "${key}": ${response.statusText}`);
+    if (!response.ok) {
+      console.error(
+        `❌ Failed to load content "${key}": ${response.statusText}`,
+      );
+      throw new Error(
+        `Failed to load content "${key}": ${response.statusText}`,
+      );
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error(`❌ Error loading content "${key}":`, error);
+    throw error;
   }
-
-  return response.json();
 }

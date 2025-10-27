@@ -9,7 +9,7 @@ import { loadTextContent } from "@/textContent";
 
 type TeamMember = {
   id: number;
-  colorCard: string;
+  $colorCard: string;
   imageUrl: string;
   name: string;
   position: string;
@@ -90,14 +90,14 @@ function OurTeam(): JSX.Element {
         }}
       >
         {cardsInfo.map((card) => (
-          <ProjectBox key={card.id} colorCard={card.colorCard}>
+          <ProjectBox key={card.id} $colorCard={card.$colorCard}>
             <img src={card.imageUrl} />
             <ProjectInfo>
               <Typography
                 paddingTop={{ xs: "12px", md: "24px" }}
                 fontWeight={700}
                 fontSize={{ xs: 24, md: 32 }}
-                color={card.colorCard}
+                color={card.$colorCard}
                 align="center"
               >
                 {card.name}

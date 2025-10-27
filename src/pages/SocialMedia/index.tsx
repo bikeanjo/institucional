@@ -12,7 +12,7 @@ function SocialMedia(): JSX.Element {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Redes Sociais</h2>
       </Header>
 

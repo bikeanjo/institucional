@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Box, Typography } from "@mui/material";
 import { Title, SubTitle, Section } from "@components";
-import ImgHowWeOrganize from "../../../../../public/assets/images/WhoWeAre/how-we-organize.webp";
+import ImgHowWeOrganize from "/assets/images/WhoWeAre/how-we-organize.webp";
 
 export function HowWeOrganize(): ReactNode {
   return (

@@ -18,7 +18,7 @@ function DiaMundialSemCarro(): JSX.Element {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2> Dia Mundial Sem Carro </h2>
       </Header>
 

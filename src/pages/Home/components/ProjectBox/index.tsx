@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectBox = styled.div<{ colorCard: string }>`
+const ProjectBox = styled.div<{ $colorCard: string }>`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -9,7 +9,7 @@ const ProjectBox = styled.div<{ colorCard: string }>`
   height: auto;
   margin: auto;
   border-radius: 16px;
-  border: 2px solid ${(props) => props.colorCard};
+  border: 2px solid ${(props) => props.$colorCard};
   box-sizing: border-box;
   box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.15);
   padding: 24px;
@@ -20,7 +20,7 @@ const ProjectBox = styled.div<{ colorCard: string }>`
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    outline: 5px solid ${(props) => props.colorCard};
+    outline: 5px solid ${(props) => props.$colorCard};
     outline-offset: 5px;
   }
 

@@ -110,7 +110,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
           {Array.isArray(item.children) &&
             item.children.length > 0 &&
             item.children.map((subItem) => (
-              <React.Fragment key={subItem.title}>
+              <div key={subItem.title}>
                 <MenuItem
                   onClick={handleCloseMenu}
                   sx={{
@@ -176,7 +176,7 @@ export const NavMenu: React.FC<NavMenuProps> = ({ columns, item }) => {
                       </Box>
                     </MenuItem>
                   ))}
-              </React.Fragment>
+              </div>
             ))}
         </Menu>
       </Box>

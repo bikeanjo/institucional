@@ -11,7 +11,7 @@ function Contact(): JSX.Element {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Contato</h2>
       </Header>
       <Container>

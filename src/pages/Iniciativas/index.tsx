@@ -19,7 +19,7 @@ const Iniciativas: React.FC = () => {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Iniciativas</h2>
       </Header>
 

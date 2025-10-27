@@ -32,7 +32,7 @@ const Doacao = (): JSX.Element => {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Doe</h2>
       </Header>
 

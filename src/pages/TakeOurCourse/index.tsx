@@ -44,7 +44,7 @@ function TakeOurCourse(): ReactNode {
 
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Faça nosso Curso Bike Anjo</h2>
       </Header>
 

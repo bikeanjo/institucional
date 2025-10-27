@@ -23,7 +23,7 @@ function BikeAnjas(): JSX.Element {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2> Bike Anjas </h2>
       </Header>
 

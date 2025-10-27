@@ -60,7 +60,7 @@ function HowItWorks(): JSX.Element {
   };
   return (
     <>
-      <Header secondary Hero={Hero}>
+      <Header $secondary $Hero={Hero}>
         <h2>Como Funciona</h2>
       </Header>
 
