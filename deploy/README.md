@@ -30,12 +30,14 @@ Quick deployment guide. For full documentation, see [DEPLOY.md](DEPLOY.md).
 ## First Time Setup
 
 1. Configure API environment:
+
    ```bash
    cp ../api/.env.example ../api/.env
    # Edit ../api/.env with credentials
    ```
 
 2. Run locally:
+
    ```bash
    ./start.sh -stage
    ```
@@ -47,4 +49,3 @@ Quick deployment guide. For full documentation, see [DEPLOY.md](DEPLOY.md).
 ## Full Documentation
 
 See [DEPLOY.md](DEPLOY.md) for complete documentation.
-

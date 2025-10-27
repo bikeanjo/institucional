@@ -26,6 +26,7 @@ npm start
 Envia email usando template personalizado.
 
 **Body:**
+
 ```json
 {
   "to": "contato@bikeanjo.org",
@@ -43,6 +44,7 @@ Envia email usando template personalizado.
 ```
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -68,6 +70,7 @@ x-api-key: YOUR_API_KEY
 ```
 
 **Exemplo com curl:**
+
 ```bash
 curl -X POST http://localhost:3000/api/send-email \
   -H "Content-Type: application/json" \
@@ -94,6 +97,7 @@ api/
 Todos os emails enviados são registrados automaticamente em `logs/emails.json`:
 
 ### Estrutura do Log:
+
 ```json
 [
   {
@@ -118,6 +122,7 @@ Todos os emails enviados são registrados automaticamente em `logs/emails.json`:
 ```
 
 ### Características:
+
 - ✅ **Auto-gerenciado**: Criado automaticamente no primeiro envio
 - ✅ **Limitado**: Mantém apenas os últimos 1000 registros
 - ✅ **Persistente**: Arquivo real no host (não virtualizado no container)
@@ -129,6 +134,7 @@ Todos os emails enviados são registrados automaticamente em `logs/emails.json`:
 Templates HTML com variáveis `{{variavel}}` que são substituídas pelos dados enviados.
 
 **Exemplo de template:**
+
 ```html
 <h1>Olá {{nome}}!</h1>
 <p>Seu email: {{email}}</p>
@@ -139,6 +145,7 @@ Templates HTML com variáveis `{{variavel}}` que são substituídas pelos dados 
 ### Email SMTP
 
 Configurações em `services/emailService.js`:
+
 - **Host:** smtp.gmail.com
 - **Porta:** 587 (TLS)
 - **From:** Equipe Bike Anjo <noreply@bikeanjo.org>
