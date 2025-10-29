@@ -21,6 +21,7 @@ import TimelineComponent from "./TimelineComponent";
 import { mediaIcons } from "./midiaIcons";
 import { loadTextContent } from "@/textContent";
 import type { TimelineYear } from "./data";
+import LinkIcon from "@components/Icons/link-icon";
 
 function Timeline(): ReactNode {
   const [timelineData, setTimelineData] = useState<TimelineYear[]>([]);
@@ -92,7 +93,7 @@ function Timeline(): ReactNode {
                     <BoxMedia key={item.id}>
                       <MediaTitle>{item.title}</MediaTitle>
                       <LinkButton href={item.link.url}>
-                        <img src={"/assets/icons/link-icon.svg"} />
+                        <LinkIcon />
                         {item.link.text}
                       </LinkButton>
                       <Infos>
