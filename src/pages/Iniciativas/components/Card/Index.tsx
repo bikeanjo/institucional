@@ -10,6 +10,7 @@ interface CardProps {
   button?: string;
   link?: string;
   color?: string;
+  image: string;
 }
 export function Card({
   title,
@@ -18,6 +19,7 @@ export function Card({
   button,
   link,
   color,
+  image,
 }: CardProps) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -25,13 +27,15 @@ export function Card({
   return (
     <>
       <ContainerCard color={color}>
-        <Image src="assets/images/bike-anjo-kid.webp" />
-        <SubTitle color={color}>{title}</SubTitle>
+        <Image src={image} alt={title} />
+        <SubTitle color={color} sx={{ fontWeight: "bold" }}>
+          {title}
+        </SubTitle>
         <Text>{isMobile ? textMobile : textDesktop}</Text>
         <div className="content">
-          {button && link && (
+          {button && (
             <Button
-              to={link}
+              to={link || "#"}
               variantcolor="gray"
               fullWidthDesktop
               fullWidthMobile
