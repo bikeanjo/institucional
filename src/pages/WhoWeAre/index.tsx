@@ -32,33 +32,39 @@ function WhoWeAre(): ReactNode {
       <ScrollSpyMenu />
       <BreadCrumb />
 
-      <Container>
-        <WhatIsBikeAnjo />
-        <HowWeOrganize />
-        <Section
-          borderColor={Colors["Green_70"]}
-          backgroundColor={Colors["Green_20"]}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-            gap={"16px"}
-            alignItems={"center"}
+      <Box
+        sx={{
+          overflowX: "hidden",
+        }}
+      >
+        <Container>
+          <WhatIsBikeAnjo />
+          <HowWeOrganize />
+          <Section
+            borderColor={Colors["Green_70"]}
+            backgroundColor={Colors["Green_20"]}
           >
-            <Title variant="h2" green>
-              Nossa equipe
-            </Title>
-            <SubTitle variant="h3">
-              Nossa equipe institucional e diretoria
-            </SubTitle>
-          </Box>
-          <OurTeam />
-        </Section>
-        <OurValues />
-        <OurStory />
-        <Transparency />
-      </Container>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              justifyContent={"center"}
+              gap={"16px"}
+              alignItems={"center"}
+            >
+              <Title variant="h2" green>
+                Nossa equipe
+              </Title>
+              <SubTitle variant="h3" color="#000">
+                Nossa equipe institucional e diretoria
+              </SubTitle>
+            </Box>
+            <OurTeam />
+          </Section>
+          <OurValues />
+          <OurStory />
+          <Transparency />
+        </Container>
+      </Box>
     </>
   );
 }

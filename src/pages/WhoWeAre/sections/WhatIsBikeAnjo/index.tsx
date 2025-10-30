@@ -18,7 +18,7 @@ export function WhatIsBikeAnjo(): ReactNode {
         <Title variant="h2" pink>
           O que é Bike Anjo?
         </Title>
-        <SubTitle variant="h3" mobileCenter>
+        <SubTitle variant="h3" mobileCenter color="#000">
           Conheça um pouco do nosso trabalho
         </SubTitle>
       </Box>
