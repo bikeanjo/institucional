@@ -5,6 +5,8 @@ import {
   Container,
   BreadCrumb,
   ScrollSpyMenu,
+  Section,
+  Title,
 } from "@components";
 import LearningCarousel from "./components/LearningCarousel";
 import { Box } from "@mui/material";
@@ -80,11 +82,17 @@ function HowItWorks(): JSX.Element {
             display: "flex",
             flexDirection: "column",
             paddingBottom: { xs: "40px", md: "80px" },
-            gap: { xs: "32px", md: "38px" },
           }}
         >
-          <LearningCarousel title="Aprenda com a gente" steps={learnSteps} />
-          <LearningCarousel title="Seja um Bike Anjo" steps={bikeAnjoSteps} />
+          <Section>
+            <Title>Aprenda com a gente</Title>
+            <LearningCarousel title="Aprenda com a gente" steps={learnSteps} />
+          </Section>
+
+          <Section>
+            <Title>Seja Bike Anjo</Title>
+            <LearningCarousel title="Seja Bike Anjo" steps={bikeAnjoSteps} />
+          </Section>
         </Box>
       </Container>
     </>

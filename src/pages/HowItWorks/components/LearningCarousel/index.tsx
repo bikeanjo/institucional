@@ -19,15 +19,13 @@ interface Step {
 }
 
 interface CarouselStepsProps {
-  title: string;
+  title?: string;
   steps: Step[];
 }
 
-export default function LearningCarousel({ title, steps }: CarouselStepsProps) {
+export default function LearningCarousel({ steps }: CarouselStepsProps) {
   return (
     <Container>
-      <Title sizeMobile="32px">{title}</Title>
-
       <CardsContainer>
         {steps.map((step) => (
           <Card key={step.number}>
