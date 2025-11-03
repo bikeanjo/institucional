@@ -6,51 +6,51 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/24e8262d-04a5-4bd3-a5c6-d93d156c279c/deploy-status)](https://app.netlify.com/projects/bikeanjo/deploys)
 
-# Technologies
+# Tecnologias
 
 - [Vite](https://vite.dev)
 - [React](https://react.dev)
 - [TypeScript](https://www.typescriptlang.org)
 
-# Installation
+# Instalação
 
-Install project dependencies:
+Instalar dependências do projeto:
 
 ```bash
 npm install
 ```
 
-## Tests
+## Testes
 
-Install Playwright browsers:
+Instalar navegadores do Playwright:
 
 ```bash
 npx playwright install
 ```
 
-Install Playwright operating system dependencies:
+Instalar dependências do sistema operacional do Playwright:
 
 ```bash
 sudo npx playwright install-deps
 ```
 
-# Usage
+# Uso
 
-Run the project locally:
+Executar o projeto localmente:
 
 ```bash
 npm run dev
 ```
 
-## Tests
+## Testes
 
-Run unit tests:
+Executar testes unitários:
 
 ```bash
 npm run test
 ```
 
-Run E2E tests:
+Executar testes E2E:
 
 ```bash
 npm run test:e2e
@@ -58,7 +58,7 @@ npm run test:e2e
 
 ## Storybook
 
-To start Storybook and view the UI components in development, run:
+Para iniciar o Storybook e visualizar os componentes da UI em desenvolvimento, execute:
 
 ```bash
 npm run storybook
