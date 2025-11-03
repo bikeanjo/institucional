@@ -11,27 +11,54 @@ jobs:
     name: Deploy to Linode Server
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup SSH
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
         run: |
+          set -e
           mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          
+          # Save private key
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           
-          # Add server to known_hosts
-          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          # Verify key format
+          if ! grep -q "BEGIN.*PRIVATE KEY" ~/.ssh/deploy_key; then
+            echo "ERROR: SSH_PRIVATE_KEY does not appear to be a valid private key"
+            echo "Key should start with -----BEGIN and end with -----END"
+            exit 1
+          fi
           
-          # Test SSH connection
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "echo 'SSH connection successful'"
-      
+          # Add server to known_hosts
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+          chmod 600 ~/.ssh/known_hosts
+          
+          # Test SSH connection with verbose output for debugging
+          echo "Testing SSH connection to ${SSH_USER}@${SSH_HOST}..."
+          ssh -v -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=no \
+            -o UserKnownHostsFile=~/.ssh/known_hosts \
+            -o ConnectTimeout=10 \
+            ${SSH_USER}@${SSH_HOST} "echo 'SSH connection successful'" || {
+            echo "ERROR: SSH connection failed"
+            echo "Please verify:"
+            echo "  1. SSH_PRIVATE_KEY is correctly set in secrets"
+            echo "  2. SSH_HOST is correct: $SSH_HOST"
+            echo "  3. SSH_USER is correct: $SSH_USER"
+            echo "  4. Server is accessible and firewall allows SSH"
+            exit 1
+          }
+          
+          echo "✓ SSH connection successful"
+
       - name: Sync files to server
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -49,7 +76,7 @@ jobs:
             --exclude '.DS_Store' \
             --exclude '.github' \
             ./ ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/
-      
+
       - name: Copy production environment files
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -61,13 +88,13 @@ jobs:
             scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
               deploy/.env.prod ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/deploy/.env.prod
           fi
-          
+
           # Copy api/.env.prod if it exists locally
           if [ -f "api/.env.prod" ]; then
             scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
               api/.env.prod ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/api/.env
           fi
-      
+
       - name: Deploy on server
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -120,7 +147,7 @@ jobs:
             echo ""
             echo "  ✓ Docker deployment complete!"
           REMOTE_DEPLOY
-      
+
       - name: Configure Nginx
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -154,7 +181,7 @@ jobs:
             
             echo "  ✓ Nginx configured successfully"
           NGINX_SETUP
-      
+
       - name: Configure SSL (if needed)
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
@@ -196,28 +223,28 @@ jobs:
             systemctl start certbot.timer > /dev/null 2>&1 || true
             echo "  ✓ Auto-renewal configured"
           SSL_SETUP
-      
+
       - name: Health check
         env:
           DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
         run: |
           echo "  → Waiting for services to be ready..."
           sleep 10
-          
+
           echo "  → Testing frontend..."
           if curl -s --max-time 10 "http://${DOMAIN_PRIMARY}/" | grep -q "Bike Anjo" 2>/dev/null; then
             echo "  ✓ Frontend is responding"
           else
             echo "  ⚠ Frontend health check failed (may still be starting)"
           fi
-          
+
           echo "  → Testing API..."
           if curl -s --max-time 10 "http://${DOMAIN_PRIMARY}/api/health" | grep -q "OK" 2>/dev/null; then
             echo "  ✓ API is responding"
           else
             echo "  ⚠ API health check failed (may still be starting)"
           fi
-          
+
           echo ""
           echo "========================================="
           echo "✓ DEPLOYMENT COMPLETE!"
@@ -226,4 +253,3 @@ jobs:
           echo "Site URLs:"
           echo "  • HTTPS: https://${DOMAIN_PRIMARY}"
           echo "  • API:   https://${DOMAIN_PRIMARY}/api/health"
-
