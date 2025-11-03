@@ -103,10 +103,18 @@ jobs:
           DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
           SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
         run: |
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash << EOF
+          echo "DEPLOY_PATH value: ${DEPLOY_PATH}"
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash -s << EOF
             set -e
-            export DEPLOY_PATH="${DEPLOY_PATH}"
-            cd \${DEPLOY_PATH}/deploy
+            DEPLOY_PATH="${DEPLOY_PATH}"
+            echo "Remote DEPLOY_PATH: \${DEPLOY_PATH}"
+            cd "\${DEPLOY_PATH}/deploy" || {
+              echo "ERROR: Cannot cd to \${DEPLOY_PATH}/deploy"
+              echo "Current directory: \$(pwd)"
+              echo "Contents of \${DEPLOY_PATH}:"
+              ls -la "\${DEPLOY_PATH}" || echo "Directory does not exist"
+              exit 1
+            }
             
             # Load environment variables from .env.prod
             if [ -f .env.prod ]; then
