@@ -104,15 +104,18 @@ jobs:
           SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
         run: |
           echo "DEPLOY_PATH value: ${DEPLOY_PATH}"
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash -s << EOF
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "DEPLOY_PATH='${DEPLOY_PATH}' bash -s" << 'REMOTE_DEPLOY'
             set -e
-            DEPLOY_PATH="${DEPLOY_PATH}"
-            echo "Remote DEPLOY_PATH: \${DEPLOY_PATH}"
-            cd "\${DEPLOY_PATH}/deploy" || {
-              echo "ERROR: Cannot cd to \${DEPLOY_PATH}/deploy"
-              echo "Current directory: \$(pwd)"
-              echo "Contents of \${DEPLOY_PATH}:"
-              ls -la "\${DEPLOY_PATH}" || echo "Directory does not exist"
+            echo "Remote DEPLOY_PATH: $DEPLOY_PATH"
+            if [ -z "$DEPLOY_PATH" ]; then
+              echo "ERROR: DEPLOY_PATH is empty!"
+              exit 1
+            fi
+            cd "$DEPLOY_PATH/deploy" || {
+              echo "ERROR: Cannot cd to $DEPLOY_PATH/deploy"
+              echo "Current directory: $(pwd)"
+              echo "Listing $DEPLOY_PATH:"
+              ls -la "$DEPLOY_PATH" || echo "Directory does not exist"
               exit 1
             }
             
