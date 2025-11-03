@@ -103,9 +103,10 @@ jobs:
           DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
           SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
         run: |
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << 'REMOTE_DEPLOY'
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash << EOF
             set -e
-            cd ${DEPLOY_PATH}/deploy
+            export DEPLOY_PATH="${DEPLOY_PATH}"
+            cd \${DEPLOY_PATH}/deploy
             
             # Load environment variables from .env.prod
             if [ -f .env.prod ]; then
@@ -146,7 +147,7 @@ jobs:
             
             echo ""
             echo "  ✓ Docker deployment complete!"
-          REMOTE_DEPLOY
+          EOF
 
       - name: Configure Nginx
         env:
@@ -154,8 +155,9 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << 'NGINX_SETUP'
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash << EOF
             set -e
+            export DEPLOY_PATH="${DEPLOY_PATH}"
             
             echo "  → Checking nginx installation..."
             if ! command -v nginx &> /dev/null; then
@@ -167,7 +169,7 @@ jobs:
             fi
             
             echo "  → Copying nginx configuration..."
-            cp ${DEPLOY_PATH}/deploy/nginx-host.conf /etc/nginx/sites-available/bikeanjo-institucional
+            cp \${DEPLOY_PATH}/deploy/nginx-host.conf /etc/nginx/sites-available/bikeanjo-institucional
             
             echo "  → Enabling site..."
             ln -sf /etc/nginx/sites-available/bikeanjo-institucional /etc/nginx/sites-enabled/bikeanjo-institucional
@@ -180,7 +182,7 @@ jobs:
             systemctl reload nginx
             
             echo "  ✓ Nginx configured successfully"
-          NGINX_SETUP
+          EOF
 
       - name: Configure SSL (if needed)
         env:
@@ -189,8 +191,10 @@ jobs:
           DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
           SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
         run: |
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << SSL_SETUP
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash << EOF
             set -e
+            export DOMAIN_PRIMARY="${DOMAIN_PRIMARY}"
+            export SSL_EMAIL="${SSL_EMAIL}"
             
             echo "  → Checking certbot installation..."
             if ! command -v certbot &> /dev/null; then
@@ -205,24 +209,24 @@ jobs:
             systemctl enable nginx > /dev/null 2>&1
             systemctl start nginx > /dev/null 2>&1
             
-            echo "  → Checking SSL certificate for ${DOMAIN_PRIMARY}..."
-            if [ ! -d "/etc/letsencrypt/live/${DOMAIN_PRIMARY}" ]; then
+            echo "  → Checking SSL certificate for \${DOMAIN_PRIMARY}..."
+            if [ ! -d "/etc/letsencrypt/live/\${DOMAIN_PRIMARY}" ]; then
               echo "  → Obtaining SSL certificate from Let's Encrypt..."
               certbot --nginx \
-                -d ${DOMAIN_PRIMARY} \
+                -d \${DOMAIN_PRIMARY} \
                 --non-interactive \
                 --agree-tos \
-                --email ${SSL_EMAIL} \
+                --email \${SSL_EMAIL} \
                 --redirect || echo "  ⚠ SSL configuration skipped (certificate may already exist or DNS not ready)"
             else
-              echo "  ✓ SSL certificate already exists for ${DOMAIN_PRIMARY}"
+              echo "  ✓ SSL certificate already exists for \${DOMAIN_PRIMARY}"
             fi
             
             echo "  → Enabling automatic SSL renewal..."
             systemctl enable certbot.timer > /dev/null 2>&1 || true
             systemctl start certbot.timer > /dev/null 2>&1 || true
             echo "  ✓ Auto-renewal configured"
-          SSL_SETUP
+          EOF
 
       - name: Health check
         env:
