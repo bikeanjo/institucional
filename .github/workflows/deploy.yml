@@ -91,8 +91,8 @@ jobs:
           else
             echo "⚠ WARNING: deploy/.env.prod not found in repository (gitignored)"
             echo "Creating .env.prod on server with values from GitHub Secrets..."
-            ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} \
-              "cat > ${DEPLOY_PATH}/deploy/.env.prod << 'ENV_EOF'
+            ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash << EOF
+              cat > ${DEPLOY_PATH}/deploy/.env.prod << 'ENV_EOF'
 ENV=production
 FRONTEND_PORT=8080
 API_PORT=3000
@@ -104,7 +104,7 @@ DEPLOY_PATH=${{ secrets.DEPLOY_PATH }}
 DOMAIN_PRIMARY=${{ secrets.DOMAIN_PRIMARY }}
 SSL_EMAIL=${{ secrets.SSL_EMAIL }}
 ENV_EOF
-            "
+            EOF
           fi
 
           # Verify .env.prod exists on server
