@@ -1,0 +1,15 @@
+# Ignore CMS - runs separately on server, not on Netlify
+cms/
+
+# Ignore deploy scripts - only for server deployment
+deploy/
+
+# Ignore personal notes
+ianthomaz/
+
+# Ignore API - runs separately on server
+api/
+
+# Ignore node_modules (already ignored by default, but explicit)
+node_modules/
+
