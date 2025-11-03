@@ -104,18 +104,19 @@ jobs:
           SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
         run: |
           echo "DEPLOY_PATH value: ${DEPLOY_PATH}"
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "DEPLOY_PATH='${DEPLOY_PATH}' bash -s" << 'REMOTE_DEPLOY'
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} bash -s << EOF
             set -e
-            echo "Remote DEPLOY_PATH: $DEPLOY_PATH"
-            if [ -z "$DEPLOY_PATH" ]; then
+            export DEPLOY_PATH="${DEPLOY_PATH}"
+            echo "Remote DEPLOY_PATH: \$DEPLOY_PATH"
+            if [ -z "\$DEPLOY_PATH" ]; then
               echo "ERROR: DEPLOY_PATH is empty!"
               exit 1
             fi
-            cd "$DEPLOY_PATH/deploy" || {
-              echo "ERROR: Cannot cd to $DEPLOY_PATH/deploy"
-              echo "Current directory: $(pwd)"
-              echo "Listing $DEPLOY_PATH:"
-              ls -la "$DEPLOY_PATH" || echo "Directory does not exist"
+            cd "\$DEPLOY_PATH/deploy" || {
+              echo "ERROR: Cannot cd to \$DEPLOY_PATH/deploy"
+              echo "Current directory: \$(pwd)"
+              echo "Listing \$DEPLOY_PATH:"
+              ls -la "\$DEPLOY_PATH" || echo "Directory does not exist"
               exit 1
             }
             
@@ -127,34 +128,34 @@ jobs:
             COMPOSE_FILE="docker-compose-bikeanjo-institucional.yml"
             
             echo "  → Loading environment variables..."
-            export ENV=${ENV:-production}
-            export FRONTEND_PORT=${FRONTEND_PORT:-8080}
-            export API_PORT=${API_PORT:-3000}
-            export FRONTEND_BIND=${FRONTEND_BIND:-0.0.0.0}
-            export API_BIND=${API_BIND:-0.0.0.0}
-            echo "    ENV: $ENV"
-            echo "    Frontend: $FRONTEND_BIND:$FRONTEND_PORT"
-            echo "    API: $API_BIND:$API_PORT"
+            export ENV=\${ENV:-production}
+            export FRONTEND_PORT=\${FRONTEND_PORT:-8080}
+            export API_PORT=\${API_PORT:-3000}
+            export FRONTEND_BIND=\${FRONTEND_BIND:-0.0.0.0}
+            export API_BIND=\${API_BIND:-0.0.0.0}
+            echo "    ENV: \$ENV"
+            echo "    Frontend: \$FRONTEND_BIND:\$FRONTEND_PORT"
+            echo "    API: \$API_BIND:\$API_PORT"
             
             echo "  → Stopping existing containers..."
-            docker compose -f $COMPOSE_FILE down 2>/dev/null || true
+            docker compose -f \$COMPOSE_FILE down 2>/dev/null || true
             
             echo "  → Building containers (this may take a while)..."
             echo "    - Building API container..."
-            docker compose -f $COMPOSE_FILE build api
+            docker compose -f \$COMPOSE_FILE build api
             
             echo "    - Building Frontend container..."
-            docker compose -f $COMPOSE_FILE build frontend
+            docker compose -f \$COMPOSE_FILE build frontend
             
             echo "  → Starting containers..."
-            docker compose -f $COMPOSE_FILE up -d
+            docker compose -f \$COMPOSE_FILE up -d
             
             echo "  → Waiting for containers to be healthy..."
             sleep 5
             
             echo ""
             echo "=== Container Status ==="
-            docker compose -f $COMPOSE_FILE ps
+            docker compose -f \$COMPOSE_FILE ps
             
             echo ""
             echo "  ✓ Docker deployment complete!"
