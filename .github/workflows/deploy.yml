@@ -1,0 +1,229 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - stage
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Linode Server
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          
+          # Add server to known_hosts
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          
+          # Test SSH connection
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "echo 'SSH connection successful'"
+      
+      - name: Sync files to server
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            --exclude 'node_modules' \
+            --exclude 'dist' \
+            --exclude '.git' \
+            --exclude 'ianthomaz' \
+            --exclude '.env' \
+            --exclude '.env.stage' \
+            --exclude '.DS_Store' \
+            --exclude '.github' \
+            ./ ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/
+      
+      - name: Copy production environment files
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          # Copy deploy/.env.prod if it exists locally
+          if [ -f "deploy/.env.prod" ]; then
+            scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+              deploy/.env.prod ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/deploy/.env.prod
+          fi
+          
+          # Copy api/.env.prod if it exists locally
+          if [ -f "api/.env.prod" ]; then
+            scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+              api/.env.prod ${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/api/.env
+          fi
+      
+      - name: Deploy on server
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
+          SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
+        run: |
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << 'REMOTE_DEPLOY'
+            set -e
+            cd ${DEPLOY_PATH}/deploy
+            
+            # Load environment variables from .env.prod
+            if [ -f .env.prod ]; then
+              source .env.prod
+            fi
+            
+            COMPOSE_FILE="docker-compose-bikeanjo-institucional.yml"
+            
+            echo "  → Loading environment variables..."
+            export ENV=${ENV:-production}
+            export FRONTEND_PORT=${FRONTEND_PORT:-8080}
+            export API_PORT=${API_PORT:-3000}
+            export FRONTEND_BIND=${FRONTEND_BIND:-0.0.0.0}
+            export API_BIND=${API_BIND:-0.0.0.0}
+            echo "    ENV: $ENV"
+            echo "    Frontend: $FRONTEND_BIND:$FRONTEND_PORT"
+            echo "    API: $API_BIND:$API_PORT"
+            
+            echo "  → Stopping existing containers..."
+            docker compose -f $COMPOSE_FILE down 2>/dev/null || true
+            
+            echo "  → Building containers (this may take a while)..."
+            echo "    - Building API container..."
+            docker compose -f $COMPOSE_FILE build api
+            
+            echo "    - Building Frontend container..."
+            docker compose -f $COMPOSE_FILE build frontend
+            
+            echo "  → Starting containers..."
+            docker compose -f $COMPOSE_FILE up -d
+            
+            echo "  → Waiting for containers to be healthy..."
+            sleep 5
+            
+            echo ""
+            echo "=== Container Status ==="
+            docker compose -f $COMPOSE_FILE ps
+            
+            echo ""
+            echo "  ✓ Docker deployment complete!"
+          REMOTE_DEPLOY
+      
+      - name: Configure Nginx
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << 'NGINX_SETUP'
+            set -e
+            
+            echo "  → Checking nginx installation..."
+            if ! command -v nginx &> /dev/null; then
+              echo "  → Installing nginx..."
+              apt update -qq && apt install -y nginx > /dev/null
+              echo "  ✓ Nginx installed"
+            else
+              echo "  ✓ Nginx already installed"
+            fi
+            
+            echo "  → Copying nginx configuration..."
+            cp ${DEPLOY_PATH}/deploy/nginx-host.conf /etc/nginx/sites-available/bikeanjo-institucional
+            
+            echo "  → Enabling site..."
+            ln -sf /etc/nginx/sites-available/bikeanjo-institucional /etc/nginx/sites-enabled/bikeanjo-institucional
+            rm -f /etc/nginx/sites-enabled/default
+            
+            echo "  → Testing nginx configuration..."
+            nginx -t
+            
+            echo "  → Reloading nginx..."
+            systemctl reload nginx
+            
+            echo "  ✓ Nginx configured successfully"
+          NGINX_SETUP
+      
+      - name: Configure SSL (if needed)
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
+          SSL_EMAIL: ${{ secrets.SSL_EMAIL }}
+        run: |
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << SSL_SETUP
+            set -e
+            
+            echo "  → Checking certbot installation..."
+            if ! command -v certbot &> /dev/null; then
+              echo "  → Installing certbot..."
+              apt install -y certbot python3-certbot-nginx > /dev/null
+              echo "  ✓ Certbot installed"
+            else
+              echo "  ✓ Certbot already installed"
+            fi
+            
+            echo "  → Enabling nginx service..."
+            systemctl enable nginx > /dev/null 2>&1
+            systemctl start nginx > /dev/null 2>&1
+            
+            echo "  → Checking SSL certificate for ${DOMAIN_PRIMARY}..."
+            if [ ! -d "/etc/letsencrypt/live/${DOMAIN_PRIMARY}" ]; then
+              echo "  → Obtaining SSL certificate from Let's Encrypt..."
+              certbot --nginx \
+                -d ${DOMAIN_PRIMARY} \
+                --non-interactive \
+                --agree-tos \
+                --email ${SSL_EMAIL} \
+                --redirect || echo "  ⚠ SSL configuration skipped (certificate may already exist or DNS not ready)"
+            else
+              echo "  ✓ SSL certificate already exists for ${DOMAIN_PRIMARY}"
+            fi
+            
+            echo "  → Enabling automatic SSL renewal..."
+            systemctl enable certbot.timer > /dev/null 2>&1 || true
+            systemctl start certbot.timer > /dev/null 2>&1 || true
+            echo "  ✓ Auto-renewal configured"
+          SSL_SETUP
+      
+      - name: Health check
+        env:
+          DOMAIN_PRIMARY: ${{ secrets.DOMAIN_PRIMARY }}
+        run: |
+          echo "  → Waiting for services to be ready..."
+          sleep 10
+          
+          echo "  → Testing frontend..."
+          if curl -s --max-time 10 "http://${DOMAIN_PRIMARY}/" | grep -q "Bike Anjo" 2>/dev/null; then
+            echo "  ✓ Frontend is responding"
+          else
+            echo "  ⚠ Frontend health check failed (may still be starting)"
+          fi
+          
+          echo "  → Testing API..."
+          if curl -s --max-time 10 "http://${DOMAIN_PRIMARY}/api/health" | grep -q "OK" 2>/dev/null; then
+            echo "  ✓ API is responding"
+          else
+            echo "  ⚠ API health check failed (may still be starting)"
+          fi
+          
+          echo ""
+          echo "========================================="
+          echo "✓ DEPLOYMENT COMPLETE!"
+          echo "========================================="
+          echo ""
+          echo "Site URLs:"
+          echo "  • HTTPS: https://${DOMAIN_PRIMARY}"
+          echo "  • API:   https://${DOMAIN_PRIMARY}/api/health"
+
