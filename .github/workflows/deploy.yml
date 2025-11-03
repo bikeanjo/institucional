@@ -25,22 +25,22 @@ jobs:
           set -e
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          
+
           # Save private key
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          
+
           # Verify key format
           if ! grep -q "BEGIN.*PRIVATE KEY" ~/.ssh/deploy_key; then
             echo "ERROR: SSH_PRIVATE_KEY does not appear to be a valid private key"
             echo "Key should start with -----BEGIN and end with -----END"
             exit 1
           fi
-          
+
           # Add server to known_hosts
           ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
           chmod 600 ~/.ssh/known_hosts
-          
+
           # Test SSH connection with verbose output for debugging
           echo "Testing SSH connection to ${SSH_USER}@${SSH_HOST}..."
           ssh -v -i ~/.ssh/deploy_key \
@@ -56,7 +56,7 @@ jobs:
             echo "  4. Server is accessible and firewall allows SSH"
             exit 1
           }
-          
+
           echo "✓ SSH connection successful"
 
       - name: Sync files to server

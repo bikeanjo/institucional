@@ -6,86 +6,39 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/24e8262d-04a5-4bd3-a5c6-d93d156c279c/deploy-status)](https://app.netlify.com/projects/bikeanjo/deploys)
 
-# Technologies
+## Technologies
 
 - [Vite](https://vite.dev)
 - [React](https://react.dev)
 - [TypeScript](https://www.typescriptlang.org)
 
-# Installation
-
-Install project dependencies:
+## Installation
 
 ```bash
 npm install
 ```
 
-## Tests
-
-Install Playwright browsers:
+## Usage
 
 ```bash
-npx playwright install
-```
-
-Install Playwright operating system dependencies:
-
-```bash
-sudo npx playwright install-deps
-```
-
-# Usage
-
-Run the project locally:
-
-```bash
+# Development
 npm run dev
-```
 
-## Tests
-
-Run unit tests:
-
-```bash
+# Tests
 npm run test
-```
-
-Run E2E tests:
-
-```bash
 npm run test:e2e
-```
 
-## Storybook
-
-To start Storybook and view the UI components in development, run:
-
-```bash
+# Storybook
 npm run storybook
 ```
 
 ## API & Deploy
 
-API de email disponível no diretório `/api`.  
-**Nota:** A API não funciona no Netlify - requer deploy separado em servidor.
+API de email em `/api`. Deploy via Docker em `deploy/`. Veja [`deploy/README.md`](deploy/README.md).
 
-Deploy via Docker disponível através do `deploy/start.sh`:
+## License
 
-- `./deploy/start.sh -stage` - Testes locais
-- `./deploy/start.sh -prod` - Deploy em produção (requer credenciais e acesso ao servidor)
-
-Veja [`deploy/README.md`](deploy/README.md) para detalhes.
-
----
-
-## Contato
-
-- Website: [bikeanjo.org](https://bikeanjo.org)
-- Email: contato@bikeanjo.org
-
-## Licença
-
-Este projeto está sob a licença [GPL-3.0](LICENSE.md).
+[GPL-3.0](LICENSE.md)
 
 ---
 
