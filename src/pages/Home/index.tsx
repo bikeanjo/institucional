@@ -9,6 +9,9 @@ import FAQ from "./sections/FAQ";
 import { Helmet } from "react-helmet";
 
 function Home(): JSX.Element {
+  // TODO: deletar depois - stageV1
+  console.log("stageV1");
+  
   return (
     <>
       <Helmet>
