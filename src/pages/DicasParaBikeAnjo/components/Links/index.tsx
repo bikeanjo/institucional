@@ -1,5 +1,6 @@
 import { Title, Text, Section } from "@components";
 import { LinkItem, LinkList } from "./styles";
+import LinkIcon from "@components/Icons/link-icon";
 
 const links = [
   {
@@ -23,7 +24,7 @@ export default function SupportLinksSection() {
       <LinkList>
         {links.map((item) => (
           <LinkItem key={item.label}>
-            <img src={"/assets/icons/link-icon.svg"} alt="Chain Icon" />
+            <LinkIcon />
             <a href={item.url} target="_blank" rel="noopener noreferrer">
               {item.label}
             </a>
