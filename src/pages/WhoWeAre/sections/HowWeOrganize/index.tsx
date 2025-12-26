@@ -17,7 +17,7 @@ export function HowWeOrganize(): ReactNode {
         <Title variant="h2" pink>
           Como nos organizamos
         </Title>
-        <SubTitle variant="h3" mobileCenter>
+        <SubTitle variant="h3" color="#000">
           Nós somos como uma bicicleta, com diferentes peças que se encaixam
           para trabalharem juntas.
         </SubTitle>
@@ -80,12 +80,12 @@ export function HowWeOrganize(): ReactNode {
             A Bike Anjo se organiza por articulações locais que promovem
             oficinas e encontros presenciais, e por meio do nosso site, que
             conecta voluntários e aprendizes diretamente. Assim, quem quer
-            aprender encontra suporte fácil e prático onde estiver. <br />
+            aprender encontra suporte fácil e prático onde estiver. Nossa
+            coordenação nacional oferece materiais, diretrizes e apoio para
+            manter a qualidade e o impacto do nosso trabalho. <br />
             <br />
-            Nossa coordenação nacional oferece materiais, diretrizes e apoio
-            para manter a qualidade e o impacto do nosso trabalho. Além disso,
-            estamos nas redes sociais—Facebook, Instagram, LinkedIn e
-            YouTube—onde compartilhamos dicas, histórias de sucesso, eventos e
+            Além disso, estamos nas redes sociais—Facebook, Instagram, LinkedIn
+            e YouTube—onde compartilhamos dicas, histórias de sucesso, eventos e
             novidades para manter nossa comunidade sempre conectada e engajada.
           </Typography>
         </Box>

@@ -24,6 +24,7 @@ function Transparency(): ReactNode {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           gap: "8px",
+          marginBottom: "80px",
         }}
       >
         <Button

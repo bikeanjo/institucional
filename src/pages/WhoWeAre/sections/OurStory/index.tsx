@@ -8,12 +8,18 @@ import { loadTextContent } from "@/textContent";
 
 function OurStory(): ReactNode {
   const [timelineData, setTimelineData] = useState<TimelineYear[]>([]);
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    void loadTextContent("ourStory").then((data) =>
-      setTimelineData(data as TimelineYear[]),
-    );
+    void loadTextContent("ourStory").then((data) => {
+      const loadedData = data as TimelineYear[];
+      setTimelineData(loadedData);
+
+      if (loadedData.length > 0) {
+        setSelectedYear(loadedData[0].year);
+      }
+    });
   }, []);
 
   const availableYears = useMemo(
@@ -21,12 +27,12 @@ function OurStory(): ReactNode {
     [timelineData],
   );
 
-  const [selectedYear, setSelectedYear] = useState<number>(availableYears[0]);
-
   const currentYearData = useMemo<TimelineYear | undefined>(
     () => timelineData.find((data) => data.year === selectedYear),
     [selectedYear, timelineData],
   );
+
+  if (!timelineData.length || !selectedYear || !currentYearData) return null;
 
   const handleYearSelection = (year: number) => {
     setSelectedYear(year);
@@ -46,7 +52,9 @@ function OurStory(): ReactNode {
         <Title variant="h2" pink>
           Nossa História
         </Title>
-        <SubTitle variant="h3">Conheça nossa trajetória até agora</SubTitle>
+        <SubTitle variant="h3" color="#000">
+          Conheça nossa trajetória até agora
+        </SubTitle>
       </Box>
       <Box
         sx={{

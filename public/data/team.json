@@ -5,7 +5,8 @@
     "imageUrl": "/assets/images/WhoWeAre/anderson-paz.webp",
     "name": "Anderson Paz",
     "position": "Diretor Presidente",
-    "from": "Brasilia - Distrito Federal"
+    "from": "Brasilia - Distrito Federal",
+    "description": "Brasiliense, pedalante desde que se entende por gente e adepto da bicicleta como meio de transporte desde os 13 anos de idade. Atua na rede Bike Anjo, mais especificamente na Bike Anjo DF, desde 2013. Nesse meio tempo, já perdeu as contas de quantas pessoas ensinou a pedalar. Acredita na bicicleta como um meio de transporte econômico, sustentável e com o potencial de criar laços fortes de amizade e garantir saúde e qualidade de vida."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "imageUrl": "/assets/images/WhoWeAre/ian-thomaz.webp",
     "name": "Ian Thomaz",
     "position": "Diretor Financeiro",
-    "from": "São Paulo - São Paulo"
+    "from": "São Paulo - São Paulo",
+    "description": "Ciclista que utiliza a bicicleta como opção de mobilidade urbana desde criança, quando ia à escola, faz parte dos primórdios da Bike Anjo e atualmente atua como diretor financeiro da associação. Formado em cinema, é articulador e comunicador com grande interesse em tecnologia e inovação, e trabalha no mercado audiovisual, com publicidade e projetos diversos."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "imageUrl": "/assets/images/WhoWeAre/milvo-rossarola.webp",
     "name": "Milvo Rossarola",
     "position": "Diretor Administrativo",
-    "from": "Rio de Janeiro - RJ"
+    "from": "Rio de Janeiro - RJ",
+    "description": "Fluminense de nascimento e de futebol, formado em Letras, dublê de escritor, aeroviário e apaixonado pela aviação, por fotografias. Bike Anjo há mais de dez anos, acredito que a bicicleta transforma as cidades e a vida das pessoas. Nos últimos anos me dedico a deixar as ruas e as cidades seguras para ciclistas e pedestres."
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "imageUrl": "/assets/images/WhoWeAre/vivian-garelli.webp",
     "name": "Vivian Garelli",
     "position": "Conselheira Fiscal",
-    "from": "Niterói - RJ"
+    "from": "Niterói - RJ",
+    "description": "Bike Anja e cicloativista desde 2014 em Niterói-RJ. Cientista social e  mestre em antropologia, é também pesquisadora das áreas de gênero e  mobilidade urbana por bicicleta. Integra tambem a ACERJ, Gt genero e de  pesquisa da UCB, e coletivo minasnapixxta."
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "imageUrl": "/assets/images/WhoWeAre/martina-horvath.webp",
     "name": "Martina Horvath",
     "position": "Conselheira Fiscal",
-    "from": "Mairiporã - São Paulo"
+    "from": "Mairiporã - São Paulo",
+    "description": "Residente da Mata Atlântica localizada em Mairiporã, SP. Tenho como objetivo de vida preservar o meio ambiente, e foi nesse contexto que, em 2015, me tornei Bike Anjo — e, de lá para cá, aprendi muito sobre cidades, pessoas e sobre aproveitar cada instante em cima da bicicleta. Ao longo dos anos, também me dediquei a fortalecer mulheres ciclistas com iniciativas como as Bike Anjas."
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "imageUrl": "/assets/images/WhoWeAre/vicentese-s-junior.webp",
     "name": "Vicentese S Junior",
     "position": "Conselheiro Fiscal",
-    "from": "Volta Redonda - RJ"
+    "from": "Volta Redonda - RJ",
+    "description": "Fundador do Bike Anjo Volta Redonda desde 2015 🚲✨ 10 anos de cicloativismo, começando na inauguração da Ciclovia da Paulista! Apaixonado pela bicicleta e por TUDO que ela proporciona: Do cicloturismo ao #BikeAoTrabalho, até o simples ventinho no rosto 🌬️💚 Minha missão? Ensinar pessoas a pedalar! Carioca de berço, mas voltaredondense de coração há 22 anos ❤️"
   }
 ]
